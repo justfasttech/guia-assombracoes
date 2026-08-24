@@ -603,7 +603,7 @@ aBy(a){var s
 for(;a.firstChild!=null;){s=a.firstChild
 s.toString
 a.removeChild(s)}},
-O(a,b,c){a.setProperty(b,c,"")},
+P(a,b,c){a.setProperty(b,c,"")},
 wB(a,b){var s=a.getContext(b)
 return s},
 aBw(a,b){var s
@@ -844,7 +844,7 @@ s=A.anL()
 r=A.aK6()
 if($.amY().b.matches)q=32
 else q=0
-s=new A.Hv(new A.VH(p),o,new A.Ju(new A.wN(q),!1,!1,B.a6,r,s,"/",null),A.b([$.cR()],t.LE),v.G.window.matchMedia("(prefers-color-scheme: dark)"),B.az)
+s=new A.Hv(new A.VH(p),o,new A.Ju(new A.wN(q),!1,!1,B.a6,r,s,"/",null),A.b([$.cR()],t.LE),v.G.window.matchMedia("(prefers-color-scheme: dark)"),B.ay)
 s.Z0()
 return s},
 aBY(a){return new A.Zy($.an,a)},
@@ -877,8 +877,8 @@ avU(a,b){var s
 b.toString
 t.pE.a(b)
 s=A.bR(v.G.document,A.bv(b.h(0,"tagName")))
-A.O(s.style,"width","100%")
-A.O(s.style,"height","100%")
+A.P(s.style,"width","100%")
+A.P(s.style,"height","100%")
 return s},
 aJK(a){var s
 $label0$0:{if(0===a){s=1
@@ -936,11 +936,11 @@ if("computedStyleMap" in a){s=a.computedStyleMap().get("font-size")
 r=s==null?null:s.value}else r=null
 return r==null?A.ax1(A.anK(v.G.window,a).getPropertyValue("font-size")):r},
 aqR(a){var s=a===B.iG?"assertive":"polite",r=A.bR(v.G.document,"flt-announcement-"+s),q=r.style
-A.O(q,"position","fixed")
-A.O(q,"overflow","hidden")
-A.O(q,"transform","translate(-99999px, -99999px)")
-A.O(q,"width","1px")
-A.O(q,"height","1px")
+A.P(q,"position","fixed")
+A.P(q,"overflow","hidden")
+A.P(q,"transform","translate(-99999px, -99999px)")
+A.P(q,"width","1px")
+A.P(q,"height","1px")
 q=A.a4(s)
 q.toString
 r.setAttribute("aria-live",q)
@@ -1009,14 +1009,14 @@ s.toString
 q.setAttribute("aria-modal",s)
 return r},
 pq(a,b){var s,r=a.style
-A.O(r,"position","absolute")
-A.O(r,"overflow","visible")
+A.P(r,"position","absolute")
+A.P(r,"overflow","visible")
 r=b.k4
 s=A.a4("flt-semantic-node-"+r)
 s.toString
 a.setAttribute("id",s)
-if(r===0&&!A.d6().gDn()){A.O(a.style,"filter","opacity(0%)")
-A.O(a.style,"color","rgba(0,0,0,0)")}if(A.d6().gDn())A.O(a.style,"outline","1px solid green")
+if(r===0&&!A.d6().gDn()){A.P(a.style,"filter","opacity(0%)")
+A.P(a.style,"color","rgba(0,0,0,0)")}if(A.d6().gDn())A.P(a.style,"outline","1px solid green")
 return a},
 aoG(a,b){var s
 switch(b.a){case 0:a.removeAttribute("aria-invalid")
@@ -1033,8 +1033,8 @@ atW(a){var s=a.style
 s.removeProperty("transform-origin")
 s.removeProperty("transform")
 if($.bc().gd7()===B.aX||$.bc().gd7()===B.bQ){s=a.style
-A.O(s,"top","0px")
-A.O(s,"left","0px")}else{s=a.style
+A.P(s,"top","0px")
+A.P(s,"left","0px")}else{s=a.style
 s.removeProperty("top")
 s.removeProperty("left")}},
 dA(){var s,r,q=v.G,p=A.bR(q.document,"flt-announcement-host")
@@ -1069,7 +1069,7 @@ else s=!1
 if(s)return r
 return $.L0=new A.a9T(a,A.b([],t.Up),$,$,$,null,null)},
 ap2(){var s=new Uint8Array(0),r=new DataView(new ArrayBuffer(8))
-return new A.aco(new A.AN(s,0),r,J.qb(B.as.gbS(r)))},
+return new A.aco(new A.AN(s,0),r,J.qb(B.ar.gbS(r)))},
 aJx(a,b,c){var s,r,q,p,o,n,m,l,k=A.b([],t._f)
 c.adoptText(b)
 c.first()
@@ -1124,7 +1124,7 @@ case"TextInputType.multiline":return B.AW
 case"TextInputType.none":return c?B.AX:B.B_
 case"TextInputType.text":default:return B.Bi}},
 apO(){var s=A.bR(v.G.document,"textarea")
-A.O(s.style,"scrollbar-width","none")
+A.P(s.style,"scrollbar-width","none")
 return s},
 aFx(a){var s
 if(a==="TextCapitalization.words")s=B.yT
@@ -1133,22 +1133,22 @@ else s=a==="TextCapitalization.sentences"?B.yU:B.lh
 return new A.Ak(s)},
 aI0(a){},
 UX(a,b,c,d){var s="transparent",r="none",q=a.style
-A.O(q,"white-space","pre-wrap")
-A.O(q,"padding","0")
-A.O(q,"opacity","1")
-A.O(q,"color",s)
-A.O(q,"background-color",s)
-A.O(q,"background",s)
-A.O(q,"outline",r)
-A.O(q,"border",r)
-A.O(q,"resize",r)
-A.O(q,"text-shadow",s)
-A.O(q,"transform-origin","0 0 0")
-if(b){A.O(q,"top","-9999px")
-A.O(q,"left","-9999px")}if(d){A.O(q,"width","0")
-A.O(q,"height","0")}if(c)A.O(q,"pointer-events",r)
+A.P(q,"white-space","pre-wrap")
+A.P(q,"padding","0")
+A.P(q,"opacity","1")
+A.P(q,"color",s)
+A.P(q,"background-color",s)
+A.P(q,"background",s)
+A.P(q,"outline",r)
+A.P(q,"border",r)
+A.P(q,"resize",r)
+A.P(q,"text-shadow",s)
+A.P(q,"transform-origin","0 0 0")
+if(b){A.P(q,"top","-9999px")
+A.P(q,"left","-9999px")}if(d){A.P(q,"width","0")
+A.P(q,"height","0")}if(c)A.P(q,"pointer-events",r)
 if($.bc().gdA()===B.cA||$.bc().gdA()===B.b9)a.classList.add("transparentTextEditing")
-A.O(q,"caret-color",s)},
+A.P(q,"caret-color",s)},
 aI9(a,b){var s,r=a.isConnected
 if(!(r==null?!1:r))return
 s=$.aG().gd2().rH(a)
@@ -1418,7 +1418,7 @@ if(n===1)q.D(0,m)
 else q.m(0,m,n-1)}return q.a===0},
 aoc(a,b){var s=A.apq(a.h(0,b))
 return s==null?null:B.d.ha(s)},
-jC(a,b,c){A.O(a.style,b,c)},
+jC(a,b,c){A.P(a.style,b,c)},
 axa(a){var s=v.G,r=s.document.querySelector("#flutterweb-theme")
 if(a!=null){if(r==null){r=A.bR(s.document,"meta")
 r.id="flutterweb-theme"
@@ -3929,7 +3929,7 @@ r=A.aJ5(a)
 if(r!=null)return r
 if(s===8){q=a.x
 if(a.y.every(A.q8)){a.f="$i"+q
-if(q==="L")return A.aIB
+if(q==="M")return A.aIB
 if(a===t.m)return A.aIA
 return A.aIL}}else if(s===10){p=A.aJT(a.x,a.y)
 return p==null?A.aw5:p}return A.aIf},
@@ -4591,7 +4591,7 @@ if(b==null&&!c.b(null))throw A.i(A.hn(null,"computation","The type parameter is 
 s=new A.aI($.an,c.i("aI<0>"))
 A.c9(a,new A.a_M(b,s,c))
 return s},
-o8(a,b){var s,r,q,p,o,n,m,l,k,j,i={},h=null,g=!1,f=new A.aI($.an,b.i("aI<L<0>>"))
+o8(a,b){var s,r,q,p,o,n,m,l,k,j,i={},h=null,g=!1,f=new A.aI($.an,b.i("aI<M<0>>"))
 i.a=null
 i.b=0
 i.c=i.d=null
@@ -4611,9 +4611,9 @@ m=new A.d7(m,k==null?A.VL(m):k)
 n.nZ(m)
 return n}else{i.d=p
 i.c=o}}return f},
-alE(a,b){if($.an===B.az)return null
+alE(a,b){if($.an===B.ay)return null
 return null},
-aw2(a,b){if($.an!==B.az)A.alE(a,b)
+aw2(a,b){if($.an!==B.ay)A.alE(a,b)
 if(b==null)if(t.Lt.b(a)){b=a.gpT()
 if(b==null){A.atx(a,B.e2)
 b=B.e2}}else b=B.e2
@@ -4718,7 +4718,7 @@ s.b=q
 $.Fe=r.b=s
 if(q==null)$.Fd=s}},
 eM(a){var s=null,r=$.an
-if(B.az===r){A.uX(s,s,B.az,a)
+if(B.ay===r){A.uX(s,s,B.ay,a)
 return}A.uX(s,s,r,r.CN(a))},
 aNg(a){A.nb(a,"stream",t.K)
 return new A.Sv()},
@@ -4742,10 +4742,10 @@ A.eM(s.ga72())
 if(a!=null)s.c=a
 return s},
 c9(a,b){var s=$.an
-if(s===B.az)return A.aoW(a,b)
+if(s===B.ay)return A.aoW(a,b)
 return A.aoW(a,s.CN(b))},
 aut(a,b){var s=$.an
-if(s===B.az)return A.auu(a,b)
+if(s===B.ay)return A.auu(a,b)
 return A.auu(a,s.aci(b,t.qe))},
 uW(a,b){A.aJ3(new A.alW(a,b))},
 awg(a,b,c,d){var s,r=$.an
@@ -4766,7 +4766,7 @@ $.an=c
 s=r
 try{r=d.$2(e,f)
 return r}finally{$.an=s}},
-uX(a,b,c,d){if(B.az!==c){d=c.CN(d)
+uX(a,b,c,d){if(B.ay!==c){d=c.CN(d)
 d=d}A.awn(d)},
 acY:function acY(a){this.a=a},
 acX:function acX(a,b,c){this.a=a
@@ -6478,7 +6478,7 @@ atz(a,b,c,d,e,f,g,h){return new A.j7(a,b,c,d,g.a,g.b,h.a,h.b,f.a,f.b,e.a,e.b)},
 aoy(a,b,c,d,e){return new A.j7(a.a,a.b,a.c,a.d,d.a,d.b,e.a,e.b,c.a,c.b,b.a,b.b)},
 aEb(a,b,c,d,e,f,g,h,i,j,k,l){return new A.j7(f,j,g,c,h,i,k,l,d,e,a,b)},
 aEc(a,b,c,d,e,f,g,h,i,j,k,l,m){return new A.rN(m,f,j,g,c,h,i,k,l,d,e,a,b)},
-N(a,b,c){var s
+O(a,b,c){var s
 if(a!=b){s=a==null?null:isNaN(a)
 if(s===!0){s=b==null?null:isNaN(b)
 s=s===!0}else s=!1}else s=!0
@@ -6614,7 +6614,7 @@ if(r&&b==null)return null
 r=r?null:a.a
 if(r==null)r=3
 s=b==null?null:b.a
-r=A.N(r,s==null?3:s,c)
+r=A.O(r,s==null?3:s,c)
 r.toString
 return B.nT[A.aJC(B.d.aE(r),0,8)]},
 as6(a,b,c){var s=a==null,r=s?null:a.a,q=b==null
@@ -6622,7 +6622,7 @@ if(r==(q?null:b.a))s=s&&q
 else s=!0
 if(s)return c<0.5?a:b
 s=a.a
-r=A.N(a.b,b.b,c)
+r=A.O(a.b,b.b,c)
 r.toString
 return new A.iQ(s,A.D(r,-32768,32767.99998474121))},
 auq(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,a0,a1,a2){var s
@@ -7015,7 +7015,7 @@ _.r=g},
 Y(a,b){return new A.tj(b,a)},
 tj:function tj(a,b){this.a=a
 this.b=b},
-P(a,b){return new A.tk(b,a)},
+L(a,b){return new A.tk(b,a)},
 tk:function tk(a,b){this.a=a
 this.b=b},
 r3:function r3(a,b,c){this.c=a
@@ -7475,7 +7475,7 @@ this.b=b},
 arw(a,b,c,d,e,f,g,h,i){return new A.wd(c,h,d,e,g,f,i,b,a,null)},
 arx(){var s,r=A.ay()
 $label0$0:{if(B.G===r||B.af===r||B.bt===r){s=70
-break $label0$0}if(B.aI===r||B.be===r||B.bf===r){s=0
+break $label0$0}if(B.aH===r||B.be===r||B.bf===r){s=0
 break $label0$0}s=null}return s},
 qJ:function qJ(a,b){this.a=a
 this.b=b},
@@ -7936,7 +7936,7 @@ _.y=l
 _.z=m},
 NL:function NL(){},
 bq(a){var s=A.b([a],t.jl)
-return new A.qU(null,null,!1,s,null,B.aO)},
+return new A.qU(null,null,!1,s,null,B.aN)},
 iM(a){var s=A.b([a],t.jl)
 return new A.Hx(null,null,!1,s,null,B.CZ)},
 wP(a){var s=A.b([a],t.jl)
@@ -8049,7 +8049,7 @@ _.H$=0
 _.M$=b
 _.a3$=_.an$=0},
 arF(a,b){var s=null
-return A.hX("",s,b,B.bl,a,s,s,B.aO,!1,!1,!0,B.ji,s)},
+return A.hX("",s,b,B.bl,a,s,s,B.aN,!1,!1,!0,B.ji,s)},
 hX(a,b,c,d,e,f,g,h,i,j,k,l,m){var s
 if(g==null)s=i?"MISSING":null
 else s=g
@@ -8107,7 +8107,7 @@ C2:function C2(a,b){this.a=a
 this.b=b},
 f2:function f2(a,b){this.a=a
 this.b=b},
-acp(a){var s=new DataView(new ArrayBuffer(8)),r=J.qb(B.as.gbS(s))
+acp(a){var s=new DataView(new ArrayBuffer(8)),r=J.qb(B.ar.gbS(s))
 return new A.acn(new Uint8Array(a),s,r)},
 acn:function acn(a,b,c){var _=this
 _.a=a
@@ -9339,7 +9339,7 @@ Mm:function Mm(){},
 aqS(a){return new A.FM(a.gad3(),a.gad2(),null)},
 anh(a,b){var s=b.c
 if(s!=null)return s
-switch(A.M(a).w.a){case 2:case 4:return A.arA(a,b)
+switch(A.N(a).w.a){case 2:case 4:return A.arA(a,b)
 case 0:case 1:case 3:case 5:A.j0(a,B.cf,t.c4).toString
 switch(b.b.a){case 0:s="Cut"
 break
@@ -9363,7 +9363,7 @@ case 9:s=""
 break
 default:s=null}return s}},
 aA3(a,b){var s,r,q,p,o,n,m=null
-switch(A.M(a).w.a){case 2:return new A.a0(b,new A.Vt(),A.R(b).i("a0<1,f>"))
+switch(A.N(a).w.a){case 2:return new A.a0(b,new A.Vt(),A.R(b).i("a0<1,f>"))
 case 1:case 0:s=A.b([],t.p)
 for(r=0;q=b.length,r<q;++r){p=b[r]
 o=A.aFK(r,q)
@@ -9456,14 +9456,14 @@ _.ch=r},
 aqZ(a,b,c,d,e,f,g){var s=a==null?null:a
 return new A.vy(d,s,e,f,b,g,c==null?B.N5:c,null)},
 ar0(a){var s=a.az(t.qH),r=s==null?null:s.giH()
-return r==null?A.M(a).p3:r},
+return r==null?A.N(a).p3:r},
 ar_(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q){return new A.iB(c,f,e,i,j,l,k,g,a,d,n,h,p,q,o,m,b)},
 aAb(a,b,c){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d
 if(a===b)return a
 s=A.r(a.gcN(),b.gcN(),c)
 r=A.r(a.gcI(),b.gcI(),c)
-q=A.N(a.c,b.c,c)
-p=A.N(a.d,b.d,c)
+q=A.O(a.c,b.c,c)
+p=A.O(a.d,b.d,c)
 o=A.r(a.gbD(),b.gbD(),c)
 n=A.r(a.gc7(),b.gc7(),c)
 m=A.cP(a.r,b.r,c)
@@ -9471,9 +9471,9 @@ l=A.k6(a.geH(),b.geH(),c)
 k=A.k6(a.gkn(),b.gkn(),c)
 j=c<0.5
 i=j?a.y:b.y
-h=A.N(a.z,b.z,c)
-g=A.N(a.Q,b.Q,c)
-f=A.N(a.as,b.as,c)
+h=A.O(a.z,b.z,c)
+g=A.O(a.Q,b.Q,c)
+f=A.O(a.as,b.as,c)
 e=A.b7(a.gm5(),b.gm5(),c)
 d=A.b7(a.gm4(),b.gm4(),c)
 j=j?a.ay:b.ay
@@ -9534,8 +9534,8 @@ aAf(a,b,c){var s,r,q,p,o,n,m
 if(a===b)return a
 s=A.r(a.a,b.a,c)
 r=A.r(a.b,b.b,c)
-q=A.N(a.c,b.c,c)
-p=A.N(a.d,b.d,c)
+q=A.O(a.c,b.c,c)
+p=A.O(a.d,b.d,c)
 o=A.b7(a.e,b.e,c)
 n=A.cw(a.f,b.f,c)
 m=A.no(a.r,b.r,c)
@@ -9563,10 +9563,10 @@ Py:function Py(){},
 aAh(a,b,c){var s,r,q,p,o,n
 if(a===b)return a
 s=A.r(a.a,b.a,c)
-r=A.N(a.b,b.b,c)
+r=A.O(a.b,b.b,c)
 if(c<0.5)q=a.c
 else q=b.c
-p=A.N(a.d,b.d,c)
+p=A.O(a.d,b.d,c)
 o=A.r(a.e,b.e,c)
 n=A.r(a.f,b.f,c)
 return new A.vI(s,r,q,p,o,n,A.cw(a.r,b.r,c))},
@@ -9582,7 +9582,7 @@ MX:function MX(){},
 aAi(a,b,c){var s,r,q,p,o,n,m,l,k,j,i,h,g,f
 if(a===b)return a
 s=A.r(a.a,b.a,c)
-r=A.N(a.b,b.b,c)
+r=A.O(a.b,b.b,c)
 q=A.k6(a.c,b.c,c)
 p=A.k6(a.d,b.d,c)
 o=A.r(a.e,b.e,c)
@@ -9623,11 +9623,11 @@ aAj(a,b,c){var s,r,q,p,o,n,m,l,k,j,i,h
 if(a===b)return a
 s=A.r(a.a,b.a,c)
 r=A.r(a.b,b.b,c)
-q=A.N(a.c,b.c,c)
+q=A.O(a.c,b.c,c)
 p=A.r(a.d,b.d,c)
 o=A.r(a.e,b.e,c)
 n=A.r(a.f,b.f,c)
-m=A.N(a.r,b.r,c)
+m=A.O(a.r,b.r,c)
 l=A.cP(a.w,b.w,c)
 k=c<0.5
 if(k)j=a.x
@@ -9661,8 +9661,8 @@ if(s)q=a.b
 else q=b.b
 if(s)p=a.c
 else p=b.c
-o=A.N(a.d,b.d,c)
-n=A.N(a.e,b.e,c)
+o=A.O(a.d,b.d,c)
+n=A.O(a.e,b.e,c)
 m=A.cw(a.f,b.f,c)
 if(s)l=a.r
 else l=b.r
@@ -9878,7 +9878,7 @@ else s=b.a
 r=A.r(a.b,b.b,c)
 q=A.r(a.c,b.c,c)
 p=A.r(a.d,b.d,c)
-o=A.N(a.e,b.e,c)
+o=A.O(a.e,b.e,c)
 n=A.cw(a.f,b.f,c)
 return new A.qs(s,r,q,p,o,n,A.cP(a.r,b.r,c))},
 qs:function qs(a,b,c,d,e,f,g){var _=this
@@ -9893,7 +9893,7 @@ N6:function N6(){},
 aAu(a,b,c){var s,r,q,p
 if(a===b)return a
 s=A.r(a.b,b.b,c)
-r=A.N(a.c,b.c,c)
+r=A.O(a.c,b.c,c)
 q=t.KX.a(A.cP(a.d,b.d,c))
 p=A.aD(a.e,b.e,c,A.bz(),t._)
 return new A.vR(A.nU(a.a,b.a,c),s,r,q,p)},
@@ -9913,7 +9913,7 @@ q=t._
 p=A.aD(a.b,b.b,c,A.bz(),q)
 o=A.aD(a.c,b.c,c,A.bz(),q)
 q=A.aD(a.d,b.d,c,A.bz(),q)
-n=A.N(a.e,b.e,c)
+n=A.O(a.e,b.e,c)
 if(s)m=a.f
 else m=b.f
 if(s)s=a.r
@@ -10167,8 +10167,8 @@ c=A.b7(a3.ay,a4.ay,a5)
 b=A.b7(a3.ch,a4.ch,a5)
 if(j){j=a3.CW
 if(j==null)j=B.a6}else{j=a4.CW
-if(j==null)j=B.a6}a=A.N(a3.cx,a4.cx,a5)
-a0=A.N(a3.cy,a4.cy,a5)
+if(j==null)j=B.a6}a=A.O(a3.cx,a4.cx,a5)
+a0=A.O(a3.cy,a4.cy,a5)
 a1=a3.db
 if(a1==null)a2=a4.db!=null
 else a2=!0
@@ -10756,16 +10756,16 @@ if(a===b)return a
 s=A.Xx(a.a,b.a,c)
 r=t._
 q=A.aD(a.b,b.b,c,A.bz(),r)
-p=A.N(a.c,b.c,c)
-o=A.N(a.d,b.d,c)
+p=A.O(a.c,b.c,c)
+o=A.O(a.d,b.d,c)
 n=A.b7(a.e,b.e,c)
 r=A.aD(a.f,b.f,c,A.bz(),r)
-m=A.N(a.r,b.r,c)
+m=A.O(a.r,b.r,c)
 l=A.b7(a.w,b.w,c)
-k=A.N(a.x,b.x,c)
-j=A.N(a.y,b.y,c)
-i=A.N(a.z,b.z,c)
-h=A.N(a.Q,b.Q,c)
+k=A.O(a.x,b.x,c)
+j=A.O(a.y,b.y,c)
+i=A.O(a.z,b.z,c)
+h=A.O(a.Q,b.Q,c)
 g=c<0.5
 f=g?a.as:b.as
 e=g?a.at:b.at
@@ -10791,7 +10791,7 @@ NO:function NO(){},
 aBa(c1,c2,c3){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,c0
 if(c1===c2)return c1
 s=A.r(c1.a,c2.a,c3)
-r=A.N(c1.b,c2.b,c3)
+r=A.O(c1.b,c2.b,c3)
 q=A.r(c1.c,c2.c,c3)
 p=A.r(c1.d,c2.d,c3)
 o=A.cP(c1.e,c2.e,c3)
@@ -10816,7 +10816,7 @@ a3=A.aD(c1.db,c2.db,c3,A.bz(),h)
 a4=A.aD(c1.dx,c2.dx,c3,A.bz(),h)
 d=A.aD(c1.dy,c2.dy,c3,A.UY(),d)
 a5=A.r(c1.fr,c2.fr,c3)
-a6=A.N(c1.fx,c2.fx,c3)
+a6=A.O(c1.fx,c2.fx,c3)
 a7=A.r(c1.fy,c2.fy,c3)
 a8=A.r(c1.go,c2.go,c3)
 a9=A.cP(c1.id,c2.id,c3)
@@ -10889,14 +10889,14 @@ Ha:function Ha(a,b,c){this.c=a
 this.d=b
 this.a=c},
 aBi(a,b,c){var s=null
-return new A.qN(b,A.aZ(c,s,B.aJ,s,B.z4.bF(A.M(a).ax.a===B.a3?B.k:B.O),s,s),s)},
+return new A.qN(b,A.aZ(c,s,B.aI,s,B.z4.bF(A.N(a).ax.a===B.a3?B.k:B.O),s,s),s)},
 qN:function qN(a,b,c){this.c=a
 this.d=b
 this.a=c},
 aBn(a,b,c){var s,r,q,p,o,n,m,l,k,j,i,h,g
 if(a===b)return a
 s=A.r(a.a,b.a,c)
-r=A.N(a.b,b.b,c)
+r=A.O(a.b,b.b,c)
 q=A.r(a.c,b.c,c)
 p=A.r(a.d,b.d,c)
 o=A.cP(a.e,b.e,c)
@@ -10927,7 +10927,7 @@ _.as=m
 _.at=n},
 O2:function O2(){},
 aBq(a,b,c){var s,r,q,p,o=A.arO(a)
-A.M(a)
+A.N(a)
 s=A.auU(a)
 if(b==null){r=o.a
 q=r}else q=b
@@ -10950,14 +10950,14 @@ _.f=g},
 aBp(a,b,c){var s,r,q,p,o
 if(a===b)return a
 s=A.r(a.a,b.a,c)
-r=A.N(a.b,b.b,c)
-q=A.N(a.c,b.c,c)
-p=A.N(a.d,b.d,c)
-o=A.N(a.e,b.e,c)
+r=A.O(a.b,b.b,c)
+q=A.O(a.c,b.c,c)
+p=A.O(a.d,b.d,c)
+o=A.O(a.e,b.e,c)
 return new A.nT(s,r,q,p,o,A.fg(a.f,b.f,c))},
 arO(a){var s
 a.az(t.Jj)
-s=A.M(a)
+s=A.N(a)
 return s.p},
 nT:function nT(a,b,c,d,e,f){var _=this
 _.a=a
@@ -10971,12 +10971,12 @@ aBF(a,b,c){var s,r,q,p,o,n,m,l,k
 if(a===b)return a
 s=A.r(a.a,b.a,c)
 r=A.r(a.b,b.b,c)
-q=A.N(a.c,b.c,c)
+q=A.O(a.c,b.c,c)
 p=A.r(a.d,b.d,c)
 o=A.r(a.e,b.e,c)
 n=A.cP(a.f,b.f,c)
 m=A.cP(a.r,b.r,c)
-l=A.N(a.w,b.w,c)
+l=A.O(a.w,b.w,c)
 if(c<0.5)k=a.x
 else k=b.x
 return new A.wF(s,r,q,p,o,n,m,l,k)},
@@ -11136,21 +11136,21 @@ r=A.r(a2.b,a3.b,a4)
 q=A.r(a2.c,a3.c,a4)
 p=A.r(a2.d,a3.d,a4)
 o=A.r(a2.e,a3.e,a4)
-n=A.N(a2.f,a3.f,a4)
-m=A.N(a2.r,a3.r,a4)
-l=A.N(a2.w,a3.w,a4)
-k=A.N(a2.x,a3.x,a4)
-j=A.N(a2.y,a3.y,a4)
+n=A.O(a2.f,a3.f,a4)
+m=A.O(a2.r,a3.r,a4)
+l=A.O(a2.w,a3.w,a4)
+k=A.O(a2.x,a3.x,a4)
+j=A.O(a2.y,a3.y,a4)
 i=A.cP(a2.z,a3.z,a4)
 h=a4<0.5
 if(h)g=a2.Q
 else g=a3.Q
-f=A.N(a2.as,a3.as,a4)
+f=A.O(a2.as,a3.as,a4)
 e=A.fP(a2.at,a3.at,a4)
 d=A.fP(a2.ax,a3.ax,a4)
 c=A.fP(a2.ay,a3.ay,a4)
 b=A.fP(a2.ch,a3.ch,a4)
-a=A.N(a2.CW,a3.CW,a4)
+a=A.O(a2.CW,a3.CW,a4)
 a0=A.cw(a2.cx,a3.cx,a4)
 a1=A.b7(a2.cy,a3.cy,a4)
 if(h)h=a2.db
@@ -11371,7 +11371,7 @@ aCC(a,b,c){if(a===b)return a
 return new A.k5(A.iE(a.a,b.a,c))},
 In(a,b){return new A.xj(b,a,null)},
 ao1(a){var s=a.az(t.g5),r=s==null?null:s.w
-return r==null?A.M(a).M:r},
+return r==null?A.N(a).M:r},
 k5:function k5(a){this.a=a},
 xj:function xj(a,b,c){this.w=a
 this.b=b
@@ -11568,7 +11568,7 @@ break $label0$0}s="FloatingLabelAlignment(x: "+B.i.aa(a,1)+")"
 break $label0$0}return s},
 hO(a,b){var s=a==null?null:a.ap(B.aW,b,a.gbT())
 return s==null?0:s},
-uA(a,b){var s=a==null?null:a.ap(B.aL,b,a.gbE())
+uA(a,b){var s=a==null?null:a.ap(B.aK,b,a.gbE())
 return s==null?0:s},
 uB(a,b){var s=a==null?null:a.ap(B.b0,b,a.gbY())
 return s==null?0:s},
@@ -11579,10 +11579,10 @@ return s==null?a.gn().b:s},
 aGR(a,b){var s=a.eN(b,B.p)
 return s==null?a.ap(B.K,b,a.gc8()).b:s},
 aso(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,c0,c1,c2,c3,c4,c5,c6,c7,c8,c9,d0,d1,d2,d3,d4,d5,d6,d7){return new A.Iu(b5,b6,b9,c1,c0,a0,a4,a7,a6,a5,b2,a8,b1,b3,b0,a9,!0,!0,k,o,n,m,s,r,b8,d,b7,c5,c7,c4,c9,c8,c6,d2,d1,d6,d5,d3,d4,g,e,f,q,p,a1,b4,l,a2,a3,h,j,b,!0,d0,a,c,d7)},
-asp(a,b,c,d,e,f,g,h,i){var s=b==null?B.ao:b
+asp(a,b,c,d,e,f,g,h,i){var s=b==null?B.an:b
 return new A.xv(d,i,B.k2,B.iK,!1,c,!1,g===!0,f,h,e,a,!1,s,null)},
 asq(a){var s=a.az(t.lA),r=s==null?null:s.giH()
-return r==null?A.M(a).e:r},
+return r==null?A.N(a).e:r},
 aCH(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7){return new A.lE(a9,p,a1,a0,a4,a2,a3,k,j,o,n,!1,e,!1,a6,b3,b1,b2,b6,b4,b5,f,m,l,b0,a,q,a5,i,r,s,g,h,c,!1,d,b7)},
 Cb:function Cb(a){var _=this
 _.a=null
@@ -11915,10 +11915,10 @@ j=A.b7(a3.x,a4.x,a5)
 i=A.cw(a3.y,a4.y,a5)
 h=A.r(a3.z,a4.z,a5)
 g=A.r(a3.Q,a4.Q,a5)
-f=A.N(a3.as,a4.as,a5)
-e=A.N(a3.at,a4.at,a5)
-d=A.N(a3.ax,a4.ax,a5)
-c=A.N(a3.ay,a4.ay,a5)
+f=A.O(a3.as,a4.as,a5)
+e=A.O(a3.at,a4.at,a5)
+d=A.O(a3.ax,a4.ax,a5)
+c=A.O(a3.ay,a4.ay,a5)
 if(s)b=a3.ch
 else b=a4.ch
 if(s)a=a3.CW
@@ -12149,9 +12149,9 @@ this.b=b},
 PH:function PH(){},
 aDu(a,b,c){var s,r,q,p,o,n,m,l,k,j,i
 if(a===b)return a
-s=A.N(a.a,b.a,c)
+s=A.O(a.a,b.a,c)
 r=A.r(a.b,b.b,c)
-q=A.N(a.c,b.c,c)
+q=A.O(a.c,b.c,c)
 p=A.r(a.d,b.d,c)
 o=A.r(a.e,b.e,c)
 n=A.r(a.f,b.f,c)
@@ -12178,9 +12178,9 @@ _.Q=l},
 PQ:function PQ(){},
 aDv(a,b,c){var s,r,q,p,o,n,m,l,k
 if(a===b)return a
-s=A.N(a.a,b.a,c)
+s=A.O(a.a,b.a,c)
 r=A.r(a.b,b.b,c)
-q=A.N(a.c,b.c,c)
+q=A.O(a.c,b.c,c)
 p=A.r(a.d,b.d,c)
 o=A.r(a.e,b.e,c)
 n=A.r(a.f,b.f,c)
@@ -12204,7 +12204,7 @@ PR:function PR(){},
 aDw(a,b,c){var s,r,q,p,o,n,m,l,k,j,i,h
 if(a===b)return a
 s=A.r(a.a,b.a,c)
-r=A.N(a.b,b.b,c)
+r=A.O(a.b,b.b,c)
 q=A.b7(a.c,b.c,c)
 p=A.b7(a.d,b.d,c)
 o=a.e
@@ -12217,7 +12217,7 @@ if(n==null)m=b.f==null
 else m=!1
 if(m)n=null
 else n=A.k6(n,b.f,c)
-m=A.N(a.r,b.r,c)
+m=A.O(a.r,b.r,c)
 l=c<0.5
 if(l)k=a.w
 else k=b.w
@@ -12225,8 +12225,8 @@ if(l)l=a.x
 else l=b.x
 j=A.r(a.y,b.y,c)
 i=A.cP(a.z,b.z,c)
-h=A.N(a.Q,b.Q,c)
-return new A.ym(s,r,q,p,o,n,m,k,l,j,i,h,A.N(a.as,b.as,c))},
+h=A.O(a.Q,b.Q,c)
+return new A.ym(s,r,q,p,o,n,m,k,l,j,i,h,A.O(a.as,b.as,c))},
 ym:function ym(a,b,c,d,e,f,g,h,i,j,k,l,m){var _=this
 _.a=a
 _.b=b
@@ -12247,8 +12247,8 @@ return new A.yt(A.iE(a.a,b.a,c))},
 yt:function yt(a){this.a=a},
 Q0:function Q0(){},
 aD5(a,b,c,d,e){var s,r
-A.M(a)
-s=B.ho.h(0,A.M(a).w)
+A.N(a)
+s=B.ho.h(0,A.N(a).w)
 r=(s==null?B.dc:s).giI().$5(a,b,c,d,e)
 return r},
 y2:function y2(){},
@@ -12295,7 +12295,7 @@ _.e=s
 _.f=a0
 _.$ti=a1},
 EX:function EX(){},
-auN(a,b,c,d,e,f,g){var s=g==null?A.M(a).ax.k2:g
+auN(a,b,c,d,e,f,g){var s=g==null?A.N(a).ax.k2:g
 return new A.qP(new A.ic(c,new A.aV(A.b([],t.W),t.d),0),new A.acq(e,!0,s),new A.acr(e),d,null)},
 avV(a,b,c,d,a0){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e
 if(c<=0||d<=0)return
@@ -12448,7 +12448,7 @@ if(a===b)return a
 s=A.r(a.a,b.a,c)
 r=A.cP(a.b,b.b,c)
 q=A.cw(a.c,b.c,c)
-p=A.N(a.d,b.d,c)
+p=A.O(a.d,b.d,c)
 o=A.r(a.e,b.e,c)
 n=A.r(a.f,b.f,c)
 m=A.b7(a.r,b.r,c)
@@ -12461,7 +12461,7 @@ else i=b.y
 if(k)k=a.z
 else k=b.z
 h=A.r(a.Q,b.Q,c)
-return new A.yA(s,r,q,p,o,n,m,l,j,i,k,h,A.N(a.as,b.as,c))},
+return new A.yA(s,r,q,p,o,n,m,l,j,i,k,h,A.O(a.as,b.as,c))},
 yA:function yA(a,b,c,d,e,f,g,h,i,j,k,l,m){var _=this
 _.a=a
 _.b=b
@@ -12481,19 +12481,19 @@ aEa(a,b,c){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e
 if(a===b)return a
 s=A.r(a.a,b.a,c)
 r=A.r(a.b,b.b,c)
-q=A.N(a.c,b.c,c)
+q=A.O(a.c,b.c,c)
 p=A.r(a.d,b.d,c)
 o=A.r(a.e,b.e,c)
 n=A.fg(a.f,b.f,c)
 m=A.r(a.r,b.r,c)
-l=A.N(a.w,b.w,c)
-k=A.N(a.x,b.x,c)
-j=A.N(a.y,b.y,c)
+l=A.O(a.w,b.w,c)
+k=A.O(a.x,b.x,c)
+j=A.O(a.y,b.y,c)
 i=c<0.5
 if(i)h=a.z
 else h=b.z
 g=A.fP(a.Q,b.Q,c)
-f=A.N(a.as,b.as,c)
+f=A.O(a.as,b.as,c)
 e=A.cw(a.at,b.at,c)
 if(i)i=a.ax
 else i=b.ax
@@ -12525,7 +12525,7 @@ p=A.aD(a.b,b.b,c,A.bz(),q)
 if(s)o=a.e
 else o=b.e
 n=A.aD(a.c,b.c,c,A.bz(),q)
-m=A.N(a.d,b.d,c)
+m=A.O(a.d,b.d,c)
 if(s)s=a.f
 else s=b.f
 return new A.yD(r,p,n,m,o,s,A.aD(a.r,b.r,c,A.bz(),q))},
@@ -12739,9 +12739,9 @@ n=t._
 m=A.aD(a.f,b.f,c,A.bz(),n)
 l=A.aD(a.r,b.r,c,A.bz(),n)
 n=A.aD(a.w,b.w,c,A.bz(),n)
-k=A.N(a.x,b.x,c)
-j=A.N(a.y,b.y,c)
-return new A.zo(r,q,s,p,o,m,l,n,k,j,A.N(a.z,b.z,c))},
+k=A.O(a.x,b.x,c)
+j=A.O(a.y,b.y,c)
+return new A.zo(r,q,s,p,o,m,l,n,k,j,A.O(a.z,b.z,c))},
 aIQ(a,b,c){return c<0.5?a:b},
 zo:function zo(a,b,c,d,e,f,g,h,i,j,k){var _=this
 _.a=a
@@ -12793,11 +12793,11 @@ RW:function RW(){},
 aEV(a,b,c){var s,r,q,p,o,n,m,l,k,j,i,h
 if(a===b)return a
 s=A.r(a.a,b.a,c)
-r=A.N(a.b,b.b,c)
+r=A.O(a.b,b.b,c)
 q=A.r(a.c,b.c,c)
 p=A.aEU(a.d,b.d,c)
 o=A.atg(a.e,b.e,c)
-n=A.N(a.f,b.f,c)
+n=A.O(a.f,b.f,c)
 m=a.r
 l=b.r
 k=A.b7(m,l,c)
@@ -12868,7 +12868,7 @@ this.b=b},
 ajw:function ajw(a){this.a=a},
 aFc(b7,b8,b9){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6
 if(b7===b8)return b7
-s=A.N(b7.a,b8.a,b9)
+s=A.O(b7.a,b8.a,b9)
 r=A.r(b7.b,b8.b,b9)
 q=A.r(b7.c,b8.c,b9)
 p=A.r(b7.d,b8.d,b9)
@@ -12897,13 +12897,13 @@ a6=b?b7.fx:b8.fx
 a7=b?b7.fy:b8.fy
 a8=b?b7.go:b8.go
 a9=A.b7(b7.id,b8.id,b9)
-b0=A.N(b7.k1,b8.k1,b9)
+b0=A.O(b7.k1,b8.k1,b9)
 b1=b?b7.k2:b8.k2
 b2=b?b7.k3:b8.k3
 b3=b?b7.k4:b8.k4
 b4=A.cw(b7.ok,b8.ok,b9)
 b5=A.aD(b7.p1,b8.p1,b9,A.va(),t.tW)
-b6=A.N(b7.p2,b8.p2,b9)
+b6=A.O(b7.p2,b8.p2,b9)
 return new A.zN(s,r,q,p,o,m,n,l,k,j,i,h,g,f,e,d,c,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b?b7.p3:b8.p3)},
 zN:function zN(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6){var _=this
 _.a=a
@@ -12951,15 +12951,15 @@ s=A.r(a.a,b.a,c)
 r=A.r(a.b,b.b,c)
 q=A.r(a.c,b.c,c)
 p=A.b7(a.d,b.d,c)
-o=A.N(a.e,b.e,c)
+o=A.O(a.e,b.e,c)
 n=A.cP(a.f,b.f,c)
 m=c<0.5
 if(m)l=a.r
 else l=b.r
-k=A.N(a.w,b.w,c)
+k=A.O(a.w,b.w,c)
 j=A.nU(a.x,b.x,c)
 i=A.r(a.z,b.z,c)
-h=A.N(a.Q,b.Q,c)
+h=A.O(a.Q,b.Q,c)
 g=A.r(a.as,b.as,c)
 f=A.r(a.at,b.at,c)
 if(m)m=a.ax
@@ -12994,7 +12994,7 @@ else m=b.e
 if(n)l=a.f
 else l=b.f
 s=A.aD(a.r,b.r,c,A.bz(),s)
-k=A.N(a.w,b.w,c)
+k=A.O(a.w,b.w,c)
 if(n)n=a.x
 else n=b.x
 return new A.A6(r,q,p,o,m,l,s,k,n,A.cw(a.y,b.y,c))},
@@ -13073,11 +13073,11 @@ j=a4==null?g:new A.bt(a4,t.W7)
 i=a9==null?g:new A.bt(a9,t.y2)
 h=a8==null?g:new A.bt(a8,t.dy)
 return A.vP(a,b,g,s,m,a1,g,g,o,g,r,g,j,k,new A.kJ(A.av([B.C,f,B.mc,a2],t.zo,t.WV),t.VP),q,l,n,h,i,b0,g,b1,p,b3)},
-aJ2(a){var s=A.M(a).ok.as,r=s==null?null:s.r
+aJ2(a){var s=A.N(a).ok.as,r=s==null?null:s.r
 if(r==null)r=14
 s=A.c3(a,B.bE)
 s=s==null?null:s.gcq()
-s=(s==null?B.aM:s).aD(r)
+s=(s==null?B.aL:s).aD(r)
 return A.are(B.mV,B.fR,B.dj,s/14)},
 tv:function tv(a,b,c,d,e,f,g,h,i,j,k,l,m){var _=this
 _.c=a
@@ -13149,7 +13149,7 @@ aFw(a,b,c){if(a===b)return a
 return new A.Aj(A.iE(a.a,b.a,c))},
 aug(a){var s
 a.az(t.if)
-s=A.M(a)
+s=A.N(a)
 return s.fT},
 Aj:function Aj(a){this.a=a},
 SQ:function SQ(){},
@@ -13413,7 +13413,7 @@ _.as=m
 _.at=n
 _.ax=o},
 T6:function T6(){},
-M(a){var s,r,q,p,o,n,m=null,l=a.az(t.Nr),k=A.j0(a,B.cf,t.c4)==null?m:B.xL
+N(a){var s,r,q,p,o,n,m=null,l=a.az(t.Nr),k=A.j0(a,B.cf,t.c4)==null?m:B.xL
 if(k==null)k=B.xL
 s=a.az(t.ri)
 r=l==null?m:l.w.c
@@ -13486,7 +13486,7 @@ d=e
 j=d
 h=j}if(g==null)g=m?B.C1:B.hr
 c=A.abG(g)
-b=m?B.aA:B.mz
+b=m?B.az:B.mz
 a=m?B.l:B.mC
 a0=c===B.a3
 a1=m?A.as(31,B.k.B()>>>16&255,B.k.B()>>>8&255,B.k.B()&255):A.as(31,B.l.B()>>>16&255,B.l.B()>>>8&255,B.l.B()&255)
@@ -13614,7 +13614,7 @@ c1=A.r(b8.b,b9.b,h2)
 c2=A.r(b8.c,b9.c,h2)
 c3=A.r(b8.d,b9.d,h2)
 c4=A.b7(b8.e,b9.e,h2)
-c5=A.N(b8.f,b9.f,h2)
+c5=A.O(b8.f,b9.f,h2)
 c6=A.cw(b8.r,b9.r,h2)
 b8=A.cw(b8.w,b9.w,h2)
 b9=A.aAh(h0.RG,h1.RG,h2)
@@ -13670,13 +13670,13 @@ if(s==null)s=a.bG.c
 return new A.IS(a,b,B.lz,b.a,b.b,b.c,b.d,b.e,b.f,s,b.w)},
 aGa(a){var s
 $label0$0:{if(B.af===a||B.G===a||B.bt===a){s=B.f5
-break $label0$0}if(B.be===a||B.aI===a||B.bf===a){s=B.TJ
+break $label0$0}if(B.be===a||B.aH===a||B.bf===a){s=B.TJ
 break $label0$0}s=null}return s},
 aGb(a,b,c){var s,r
 if(a===b)return a
-s=A.N(a.a,b.a,c)
+s=A.O(a.a,b.a,c)
 s.toString
-r=A.N(a.b,b.b,c)
+r=A.O(a.b,b.b,c)
 r.toString
 return new A.kI(s,r)},
 oB:function oB(a,b){this.a=a
@@ -13817,7 +13817,7 @@ k=A.r(a4.x,a5.x,a6)
 j=A.r(a4.y,a5.y,a6)
 i=A.r(a4.z,a5.z,a6)
 h=A.b7(a4.Q,a5.Q,a6)
-g=A.N(a4.as,a5.as,a6)
+g=A.O(a4.as,a5.as,a6)
 f=A.r(a4.at,a5.at,a6)
 e=A.b7(a4.ax,a5.ax,a6)
 d=A.r(a4.ay,a5.ay,a6)
@@ -13873,7 +13873,7 @@ i=A.r(a.z,b.z,c)
 h=A.r(a.Q,b.Q,c)
 g=A.r(a.as,b.as,c)
 f=A.hT(a.ax,b.ax,c)
-return new A.AE(s,r,q,p,o,n,m,l,j,k,i,h,g,A.N(a.at,b.at,c),f)},
+return new A.AE(s,r,q,p,o,n,m,l,j,k,i,h,g,A.O(a.at,b.at,c),f)},
 AE:function AE(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o){var _=this
 _.a=a
 _.b=b
@@ -13898,7 +13898,7 @@ if($.pI.length!==0){s=A.b($.pI.slice(0),A.R($.pI))
 for(r=s.length,q=0;q<s.length;s.length===r||(0,A.C)(s),++q)s[q].qH(B.z)
 return!0}return!1},
 aux(a){var s
-$label0$0:{if(B.aI===a||B.be===a||B.bf===a){s=12
+$label0$0:{if(B.aH===a||B.be===a||B.bf===a){s=12
 break $label0$0}if(B.af===a||B.bt===a||B.G===a){s=14
 break $label0$0}s=null}return s},
 Op:function Op(a,b,c,d,e,f){var _=this
@@ -13969,11 +13969,11 @@ _.a=o},
 Ec:function Ec(){},
 aFY(a,b,c){var s,r,q,p,o,n,m,l,k,j
 if(a===b)return a
-s=A.N(a.a,b.a,c)
+s=A.O(a.a,b.a,c)
 r=A.fP(a.b,b.b,c)
 q=A.cw(a.c,b.c,c)
 p=A.cw(a.d,b.d,c)
-o=A.N(a.e,b.e,c)
+o=A.O(a.e,b.e,c)
 n=c<0.5
 if(n)m=a.f
 else m=b.f
@@ -14006,7 +14006,7 @@ break
 case B.bf:b=B.S5
 c=B.RX
 break
-case B.aI:b=B.S8
+case B.aH:b=B.S8
 c=B.RV
 break
 case B.be:b=B.S4
@@ -14032,18 +14032,18 @@ if(a==null)return b.a1(0,c)
 if(b==null)return a.a1(0,1-c)
 if(a instanceof A.dx&&b instanceof A.dx)return A.aA5(a,b,c)
 if(a instanceof A.fe&&b instanceof A.fe)return A.aA4(a,b,c)
-s=A.N(a.gjm(),b.gjm(),c)
+s=A.O(a.gjm(),b.gjm(),c)
 s.toString
-r=A.N(a.gjf(),b.gjf(),c)
+r=A.O(a.gjf(),b.gjf(),c)
 r.toString
-q=A.N(a.gjn(),b.gjn(),c)
+q=A.O(a.gjn(),b.gjn(),c)
 q.toString
 return new A.Cp(s,r,q)},
 aA5(a,b,c){var s,r
 if(a===b)return a
-s=A.N(a.a,b.a,c)
+s=A.O(a.a,b.a,c)
 s.toString
-r=A.N(a.b,b.b,c)
+r=A.O(a.b,b.b,c)
 r.toString
 return new A.dx(s,r)},
 anj(a,b){var s,r,q,p,o,n,m,l,k,j,i,h,g=null
@@ -14115,9 +14115,9 @@ break $label0$0}p="Alignment("+B.d.aa(a,1)+", "+B.d.aa(b,1)+")"
 break $label0$0}return p},
 aA4(a,b,c){var s,r
 if(a===b)return a
-s=A.N(a.a,b.a,c)
+s=A.O(a.a,b.a,c)
 s.toString
-r=A.N(a.b,b.b,c)
+r=A.O(a.b,b.b,c)
 r.toString
 return new A.fe(s,r)},
 ani(a,b){var s,r,q,p,o,n,m,l,k,j,i,h,g=null
@@ -14203,7 +14203,7 @@ case 1:s=B.bj
 break
 default:s=null}return s},
 ba(a){var s
-$label0$0:{if(B.Z===a||B.ap===a){s=B.bk
+$label0$0:{if(B.Z===a||B.ao===a){s=B.bk
 break $label0$0}if(B.bi===a||B.cj===a){s=B.bj
 break $label0$0}s=null}return s},
 aq5(a){var s
@@ -14213,7 +14213,7 @@ case 1:s=B.cj
 break
 default:s=null}return s},
 awJ(a){var s
-switch(a.a){case 0:s=B.ap
+switch(a.a){case 0:s=B.ao
 break
 case 1:s=B.bi
 break
@@ -14224,7 +14224,7 @@ break
 default:s=null}return s},
 Ff(a){var s
 $label0$0:{if(B.Z===a||B.bi===a){s=!0
-break $label0$0}if(B.ap===a||B.cj===a){s=!1
+break $label0$0}if(B.ao===a||B.cj===a){s=!1
 break $label0$0}s=null}return s},
 yN:function yN(a,b){this.a=a
 this.b=b},
@@ -14270,13 +14270,13 @@ _.e=e
 _.f=f
 _.r=g
 _.w=h},
-hU(a,b){var s=a.c,r=s===B.at&&a.b===0,q=b.c===B.at&&b.b===0
+hU(a,b){var s=a.c,r=s===B.as&&a.b===0,q=b.c===B.as&&b.b===0
 if(r&&q)return B.t
 if(r)return b
 if(q)return a
 return new A.aP(a.a,a.b+b.b,s,Math.max(a.d,b.d))},
 jK(a,b){var s,r=a.c
-if(!(r===B.at&&a.b===0))s=b.c===B.at&&b.b===0
+if(!(r===B.as&&a.b===0))s=b.c===B.as&&b.b===0
 else s=!0
 if(s)return!0
 return r===b.c&&a.a.j(0,b.a)},
@@ -14284,7 +14284,7 @@ aE(a,b,c){var s,r,q,p,o
 if(a===b)return a
 if(c===0)return a
 if(c===1)return b
-s=A.N(a.b,b.b,c)
+s=A.O(a.b,b.b,c)
 s.toString
 if(s<0)return B.t
 r=a.c
@@ -14303,7 +14303,7 @@ default:q=null}p=a.d
 o=b.d
 if(p!==o){r=A.r(r,q,c)
 r.toString
-o=A.N(p,o,c)
+o=A.O(p,o,c)
 o.toString
 return new A.aP(r,s,B.v,o)}r=A.r(r,q,c)
 r.toString
@@ -14530,9 +14530,9 @@ s=A.r(a.a,b.a,c)
 s.toString
 r=A.lV(a.b,b.b,c)
 r.toString
-q=A.N(a.c,b.c,c)
+q=A.O(a.c,b.c,c)
 q.toString
-p=A.N(a.d,b.d,c)
+p=A.O(a.d,b.d,c)
 p.toString
 o=a.e
 return new A.dz(p,o===B.dX?b.e:o,s,r,q)},
@@ -14612,17 +14612,17 @@ if(a==null)return b.a1(0,c)
 if(b==null)return a.a1(0,1-c)
 if(a instanceof A.ao&&b instanceof A.ao)return A.nU(a,b,c)
 if(a instanceof A.dc&&b instanceof A.dc)return A.aBH(a,b,c)
-s=A.N(a.gey(),b.gey(),c)
+s=A.O(a.gey(),b.gey(),c)
 s.toString
-r=A.N(a.gez(),b.gez(),c)
+r=A.O(a.gez(),b.gez(),c)
 r.toString
-q=A.N(a.gfK(),b.gfK(),c)
+q=A.O(a.gfK(),b.gfK(),c)
 q.toString
-p=A.N(a.gfH(),b.gfH(),c)
+p=A.O(a.gfH(),b.gfH(),c)
 p.toString
-o=A.N(a.gaS(),b.gaS(),c)
+o=A.O(a.gaS(),b.gaS(),c)
 o.toString
-n=A.N(a.gaT(),b.gaT(),c)
+n=A.O(a.gaT(),b.gaT(),c)
 n.toString
 return new A.mQ(s,r,q,p,o,n)},
 Yk(a,b){return new A.ao(a.a/b,a.b/b,a.c/b,a.d/b)},
@@ -14630,24 +14630,24 @@ nU(a,b,c){var s,r,q,p
 if(a==b)return a
 if(a==null)return b.a1(0,c)
 if(b==null)return a.a1(0,1-c)
-s=A.N(a.a,b.a,c)
+s=A.O(a.a,b.a,c)
 s.toString
-r=A.N(a.b,b.b,c)
+r=A.O(a.b,b.b,c)
 r.toString
-q=A.N(a.c,b.c,c)
+q=A.O(a.c,b.c,c)
 q.toString
-p=A.N(a.d,b.d,c)
+p=A.O(a.d,b.d,c)
 p.toString
 return new A.ao(s,r,q,p)},
 aBH(a,b,c){var s,r,q,p
 if(a===b)return a
-s=A.N(a.a,b.a,c)
+s=A.O(a.a,b.a,c)
 s.toString
-r=A.N(a.b,b.b,c)
+r=A.O(a.b,b.b,c)
 r.toString
-q=A.N(a.c,b.c,c)
+q=A.O(a.c,b.c,c)
 q.toString
-p=A.N(a.d,b.d,c)
+p=A.O(a.d,b.d,c)
 p.toString
 return new A.dc(s,r,q,p)},
 cv:function cv(){},
@@ -14866,7 +14866,7 @@ q=r
 p=!q
 if(p){o=B.i3===a
 n=o}else{o=g
-n=!0}if(n){m=B.aC===b
+n=!0}if(n){m=B.aB===b
 q=m
 l=b}else{l=g
 m=l
@@ -14887,7 +14887,7 @@ if(q)if(n)q=m
 else{if(j)q=l
 else{q=b
 l=q
-j=!0}m=B.aC===q
+j=!0}m=B.aB===q
 q=m}else q=!1
 if(q){s=1
 break $label0$0}if(h)if(k)q=i
@@ -15023,22 +15023,22 @@ l=m&&a8.ch==null?A.r(a7.c,a8.c,a9):a6
 k=a7.r
 j=k==null?a8.r:k
 i=a8.r
-k=A.N(j,i==null?k:i,a9)
+k=A.O(j,i==null?k:i,a9)
 j=A.anS(a7.w,a8.w,a9)
 i=s?a7.x:a8.x
 h=a7.y
 g=h==null?a8.y:h
 f=a8.y
-h=A.N(g,f==null?h:f,a9)
+h=A.O(g,f==null?h:f,a9)
 g=a7.z
 f=g==null?a8.z:g
 e=a8.z
-g=A.N(f,e==null?g:e,a9)
+g=A.O(f,e==null?g:e,a9)
 f=s?a7.Q:a8.Q
 e=a7.as
 d=e==null?a8.as:e
 c=a8.as
-e=A.N(d,c==null?e:c,a9)
+e=A.O(d,c==null?e:c,a9)
 d=s?a7.at:a8.at
 c=s?a7.ax:a8.ax
 if(!p||a8.ay!=null)if(s){if(p){$.a7()
@@ -15063,7 +15063,7 @@ a1=s?a7.cy:a8.cy
 a2=a7.db
 a3=a2==null?a8.db:a2
 a4=a8.db
-a2=A.N(a3,a4==null?a2:a4,a9)
+a2=A.O(a3,a4==null?a2:a4,a9)
 a3=s?a7.gmu():a8.gmu()
 a4=s?a7.e:a8.e
 a5=s?a7.f:a8.f
@@ -15284,16 +15284,16 @@ if(a==b)return a
 if(a==null)return b.a1(0,c)
 if(b==null)return a.a1(0,1-c)
 s=a.a
-if(isFinite(s)){s=A.N(s,b.a,c)
+if(isFinite(s)){s=A.O(s,b.a,c)
 s.toString}else s=1/0
 r=a.b
-if(isFinite(r)){r=A.N(r,b.b,c)
+if(isFinite(r)){r=A.O(r,b.b,c)
 r.toString}else r=1/0
 q=a.c
-if(isFinite(q)){q=A.N(q,b.c,c)
+if(isFinite(q)){q=A.O(q,b.c,c)
 q.toString}else q=1/0
 p=a.d
-if(isFinite(p)){p=A.N(p,b.d,c)
+if(isFinite(p)){p=A.O(p,b.d,c)
 p.toString}else p=1/0
 return new A.ac(s,r,q,p)},
 ano(a){return new A.ld(a.a,a.b,a.c)},
@@ -15472,19 +15472,19 @@ q.sahk(r.gakd())
 r.gagM()
 q.saha(r.gagM())
 r.gEL()
-q.xr=new A.cE(r.gEL(),B.aF)
+q.xr=new A.cE(r.gEL(),B.aE)
 q.r=!0
 r.gu()
-q.y1=new A.cE(r.gu(),B.aF)
+q.y1=new A.cE(r.gu(),B.aE)
 q.r=!0
 r.gagP()
-q.y2=new A.cE(r.gagP(),B.aF)
+q.y2=new A.cE(r.gagP(),B.aE)
 q.r=!0
 r.gaen()
-q.aH=new A.cE(r.gaen(),B.aF)
+q.aH=new A.cE(r.gaen(),B.aE)
 q.r=!0
 r.gEs()
-q.aO=new A.cE(r.gEs(),B.aF)
+q.aO=new A.cE(r.gEs(),B.aE)
 q.r=!0
 r.gagL()
 q.x1=r.gagL()
@@ -15500,7 +15500,7 @@ r.gad4()
 q.a3=r.gad4()
 q.r=!0
 r.gEs()
-q.aO=new A.cE(r.gEs(),B.aF)
+q.aO=new A.cE(r.gEs(),B.aE)
 q.r=!0
 r.gbJ()
 q.X=r.gbJ()
@@ -15795,7 +15795,7 @@ a=new A.a5(Math.max(A.nc(m),A.nc(k)),Math.max(A.nc(l),p))
 p=a
 break $label0$0}p=d}return p},
 aEo(a,b,c,d,e,f,g,h,i){var s,r=null,q=A.ab(),p=J.asv(4,t.iy)
-for(s=0;s<4;++s)p[s]=new A.As(r,B.b_,B.aC,new A.hj(1),r,r,r,r,B.b7,r)
+for(s=0;s<4;++s)p[s]=new A.As(r,B.b_,B.aB,new A.hj(1),r,r,r,r,B.b7,r)
 q=new A.yS(c,d,e,b,h,i,g,a,f,q,p,!0,0,r,r,new A.aM(),A.ab())
 q.aL()
 q.P(0,r)
@@ -16414,7 +16414,7 @@ atD(a){var s=new A.rX(a,null,new A.aM(),A.ab())
 s.aL()
 s.saW(null)
 return s},
-aEr(a,b,c,d,e,f){var s=b==null?B.aE:b
+aEr(a,b,c,d,e,f){var s=b==null?B.aD:b
 s=new A.yU(!0,c,e,d,a,s,null,new A.aM(),A.ab())
 s.aL()
 s.saW(null)
@@ -17017,9 +17017,9 @@ s=b.b
 r=a.b
 if(!(s<=r))s=s<=a.d&&b.a<=a.a
 else s=!0
-if(s)return c===B.aC?new A.h(a.a,r):new A.h(a.c,r)
+if(s)return c===B.aB?new A.h(a.a,r):new A.h(a.c,r)
 else{s=a.d
-return c===B.aC?new A.h(a.c,s):new A.h(a.a,s)}},
+return c===B.aB?new A.h(a.c,s):new A.h(a.a,s)}},
 a8H(a,b){return new A.zv(a,b==null?B.li:b,B.Lq)},
 a8G(a,b){return new A.zv(a,b==null?B.li:b,B.cr)},
 mf:function mf(a,b){this.a=a
@@ -17548,15 +17548,15 @@ n=null}}B.b.iw(o)
 s=t.IX
 s=A.Q(new A.em(o,new A.alm(),s),s.i("t.E"))
 return s},
-fA(){return new A.et(A.q(t._S,t.HT),A.q(t.I7,t.M),B.kT,new A.cE("",B.aF),new A.cE("",B.aF),new A.cE("",B.aF),new A.cE("",B.aF),new A.cE("",B.aF),B.hS,B.xZ,B.hR)},
+fA(){return new A.et(A.q(t._S,t.HT),A.q(t.I7,t.M),B.kT,new A.cE("",B.aE),new A.cE("",B.aE),new A.cE("",B.aE),new A.cE("",B.aE),new A.cE("",B.aE),B.hS,B.xZ,B.hR)},
 avQ(a,b,c,d){var s
 if(a.a.length===0)return c
-if(d!=b&&b!=null){switch(b.a){case 0:s=new A.cE("\u202b",B.aF)
+if(d!=b&&b!=null){switch(b.a){case 0:s=new A.cE("\u202b",B.aE)
 break
-case 1:s=new A.cE("\u202a",B.aF)
+case 1:s=new A.cE("\u202a",B.aE)
 break
-default:s=null}a=s.O(0,a).O(0,new A.cE("\u202c",B.aF))}if(c.a.length===0)return a
-return c.O(0,new A.cE("\n",B.aF)).O(0,a)},
+default:s=null}a=s.O(0,a).O(0,new A.cE("\u202c",B.aE))}if(c.a.length===0)return a
+return c.O(0,new A.cE("\n",B.aE)).O(0,a)},
 apF(a){var s=a.a?1:0
 if(a.b)s|=2
 if(a.c)s|=4
@@ -17864,13 +17864,13 @@ Wc:function Wc(){},
 GB(a){var s=0,r=A.V(t.H)
 var $async$GB=A.W(function(b,c){if(b===1)return A.S(c,r)
 while(true)switch(s){case 0:s=2
-return A.Z(B.aH.cg("Clipboard.setData",A.av(["text",a.a],t.N,t.z),t.H),$async$GB)
+return A.Z(B.aG.cg("Clipboard.setData",A.av(["text",a.a],t.N,t.z),t.H),$async$GB)
 case 2:return A.T(null,r)}})
 return A.U($async$GB,r)},
 X0(a){var s=0,r=A.V(t.VA),q,p
 var $async$X0=A.W(function(b,c){if(b===1)return A.S(c,r)
 while(true)switch(s){case 0:s=3
-return A.Z(B.aH.cg("Clipboard.getData",a,t.a),$async$X0)
+return A.Z(B.aG.cg("Clipboard.getData",a,t.a),$async$X0)
 case 3:p=c
 if(p==null){q=null
 s=1
@@ -18084,7 +18084,7 @@ this.b=b},
 aaL(a){var s=0,r=A.V(t.H)
 var $async$aaL=A.W(function(b,c){if(b===1)return A.S(c,r)
 while(true)switch(s){case 0:s=2
-return A.Z(B.aH.cg(u.p,A.av(["label",a.a,"primaryColor",a.b],t.N,t.z),t.H),$async$aaL)
+return A.Z(B.aG.cg(u.p,A.av(["label",a.a,"primaryColor",a.b],t.N,t.z),t.H),$async$aaL)
 case 2:return A.T(null,r)}})
 return A.U($async$aaL,r)},
 aoQ(a){if($.tr!=null){$.tr=a
@@ -18108,7 +18108,7 @@ aaK:function aaK(){},
 A9(a){var s=0,r=A.V(t.H)
 var $async$A9=A.W(function(b,c){if(b===1)return A.S(c,r)
 while(true)switch(s){case 0:s=2
-return A.Z(B.aH.cg("SystemSound.play",a.J(),t.H),$async$A9)
+return A.Z(B.aG.cg("SystemSound.play",a.J(),t.H),$async$A9)
 case 2:return A.T(null,r)}})
 return A.U($async$A9,r)},
 Lv:function Lv(a,b){this.a=a
@@ -18732,7 +18732,7 @@ aCS(a,b,c){return new A.II(c,b,a,null)},
 awN(a,b,c){var s
 switch(b.a){case 0:s=A.aq5(a.az(t.I).w)
 return s
-case 1:return B.ap}},
+case 1:return B.ao}},
 tm(a,b,c,d){return new A.Ll(a,d,c,b,null)},
 aow(a,b,c,d,e,f,g,h){return new A.p0(e,g,f,a,h,c,b,d)},
 aDY(a,b,c,d,e,f,g,h){var s,r,q,p
@@ -18755,7 +18755,7 @@ $label0$0:{s=!1
 s=1===b
 r=b
 if(s){s=a
-break $label0$0}s=B.aM.j(0,a)
+break $label0$0}s=B.aL.j(0,a)
 if(s)r=r
 if(s){s=new A.hj(r)
 break $label0$0}s=a
@@ -19272,7 +19272,7 @@ m.a=B.Jy
 s=A.b([],t.RW)
 r=A.ay()
 $label0$0:{if(B.af===r||B.G===r){q=!0
-break $label0$0}if(B.bt===r||B.be===r||B.aI===r||B.bf===r){q=!1
+break $label0$0}if(B.bt===r||B.be===r||B.aH===r||B.bf===r){q=!1
 break $label0$0}q=p}return new A.lo(new A.cb(!0,o),new A.br(p,n),new A.TO(B.iP,B.iQ,o),new A.br(p,n),new A.xL(),new A.xL(),new A.xL(),m,s,q,p,p,p)},
 aBK(a){var s=a==null,r=s?null:a.a,q=s||a.j(0,B.f1)
 s=r==null
@@ -20340,19 +20340,19 @@ if(a==b&&a!=null)return a
 s=a==null
 r=s?i:a.a
 q=b==null
-r=A.N(r,q?i:b.a,c)
+r=A.O(r,q?i:b.a,c)
 p=s?i:a.b
-p=A.N(p,q?i:b.b,c)
+p=A.O(p,q?i:b.b,c)
 o=s?i:a.c
-o=A.N(o,q?i:b.c,c)
+o=A.O(o,q?i:b.c,c)
 n=s?i:a.d
-n=A.N(n,q?i:b.d,c)
+n=A.O(n,q?i:b.d,c)
 m=s?i:a.e
-m=A.N(m,q?i:b.e,c)
+m=A.O(m,q?i:b.e,c)
 l=s?i:a.f
 l=A.r(l,q?i:b.f,c)
 k=s?i:a.gd0()
-k=A.N(k,q?i:b.gd0(),c)
+k=A.O(k,q?i:b.gd0(),c)
 j=s?i:a.w
 j=A.atY(j,q?i:b.w,c)
 if(c<0.5)s=s?i:a.x
@@ -23087,9 +23087,9 @@ _.c=c
 _.$ti=d},
 UM:function UM(){},
 auI(a,b){switch(b.a){case 0:return A.aq5(a.az(t.I).w)
-case 1:return B.ap
+case 1:return B.ao
 case 2:return A.aq5(a.az(t.I).w)
-case 3:return B.ap}},
+case 3:return B.ao}},
 AX:function AX(a,b,c,d,e,f,g,h,i){var _=this
 _.e=a
 _.r=b
@@ -24479,7 +24479,7 @@ case 0:s=B.G
 break
 case 2:s=B.be
 break
-case 4:s=B.aI
+case 4:s=B.aH
 break
 case 3:s=B.bf
 break
@@ -24682,25 +24682,25 @@ return A.U($async$a9S,r)},
 a0m(){var s=0,r=A.V(t.H)
 var $async$a0m=A.W(function(a,b){if(a===1)return A.S(b,r)
 while(true)switch(s){case 0:s=2
-return A.Z(B.aH.fW("HapticFeedback.vibrate",t.H),$async$a0m)
+return A.Z(B.aG.fW("HapticFeedback.vibrate",t.H),$async$a0m)
 case 2:return A.T(null,r)}})
 return A.U($async$a0m,r)},
 HY(){var s=0,r=A.V(t.H)
 var $async$HY=A.W(function(a,b){if(a===1)return A.S(b,r)
 while(true)switch(s){case 0:s=2
-return A.Z(B.aH.cg("HapticFeedback.vibrate","HapticFeedbackType.mediumImpact",t.H),$async$HY)
+return A.Z(B.aG.cg("HapticFeedback.vibrate","HapticFeedbackType.mediumImpact",t.H),$async$HY)
 case 2:return A.T(null,r)}})
 return A.U($async$HY,r)},
 a0k(){var s=0,r=A.V(t.H)
 var $async$a0k=A.W(function(a,b){if(a===1)return A.S(b,r)
 while(true)switch(s){case 0:s=2
-return A.Z(B.aH.cg("HapticFeedback.vibrate","HapticFeedbackType.heavyImpact",t.H),$async$a0k)
+return A.Z(B.aG.cg("HapticFeedback.vibrate","HapticFeedbackType.heavyImpact",t.H),$async$a0k)
 case 2:return A.T(null,r)}})
 return A.U($async$a0k,r)},
 a0l(){var s=0,r=A.V(t.H)
 var $async$a0l=A.W(function(a,b){if(a===1)return A.S(b,r)
 while(true)switch(s){case 0:s=2
-return A.Z(B.aH.cg("HapticFeedback.vibrate","HapticFeedbackType.selectionClick",t.H),$async$a0l)
+return A.Z(B.aG.cg("HapticFeedback.vibrate","HapticFeedbackType.selectionClick",t.H),$async$a0l)
 case 2:return A.T(null,r)}})
 return A.U($async$a0l,r)},
 a8m(){var s=0,r=A.V(t.y),q,p
@@ -24723,7 +24723,7 @@ return A.U($async$aoR,r)},
 aaR(){var s=0,r=A.V(t.H)
 var $async$aaR=A.W(function(a,b){if(a===1)return A.S(b,r)
 while(true)switch(s){case 0:s=2
-return A.Z(B.aH.cg("SystemNavigator.pop",null,t.H),$async$aaR)
+return A.Z(B.aG.cg("SystemNavigator.pop",null,t.H),$async$aaR)
 case 2:return A.T(null,r)}})
 return A.U($async$aaR,r)},
 aud(a,b,c){return B.hw.cg("routeInformationUpdated",A.av(["uri",c.k(0),"state",b,"replace",a],t.N,t.z),t.H)},
@@ -25944,7 +25944,7 @@ r=$.cR()
 q=r.d
 if(q==null)q=r.gc4()
 r=a.ay
-A.O(a.as.style,"transform","translate(0px, "+A.m(s.b/q-r/q)+"px)")
+A.P(a.as.style,"transform","translate(0px, "+A.m(s.b/q-r/q)+"px)")
 r=a.a.a.getCanvas()
 r.clear(A.apC($.an5(),B.D))
 B.b.ao(b,new A.ho(r).gQf())
@@ -26017,7 +26017,7 @@ A.a5x.prototype={
 $0(){var s=A.bR(v.G.document,"flt-canvas-container"),r=A.apM(null,null),q=new A.rW(s,r),p=A.a4("true")
 p.toString
 r.setAttribute("aria-hidden",p)
-A.O(r.style,"position","absolute")
+A.P(r.style,"position","absolute")
 q.mF()
 s.append(r)
 return q},
@@ -26148,8 +26148,8 @@ if(o==null)o=p.gc4()
 p=q.c
 s=q.d
 r=q.b.style
-A.O(r,"width",A.m(p/o)+"px")
-A.O(r,"height",A.m(s/o)+"px")
+A.P(r,"width",A.m(p/o)+"px")
+A.P(r,"height",A.m(s/o)+"px")
 q.r=o},
 Js(a){var s,r=this,q=a.a
 if(q===r.c&&a.b===r.d){q=$.cR()
@@ -26378,8 +26378,8 @@ if(o==null)o=p.gc4()
 p=q.ax
 s=q.ay
 r=q.as.style
-A.O(r,"width",A.m(p/o)+"px")
-A.O(r,"height",A.m(s/o)+"px")
+A.P(r,"width",A.m(p/o)+"px")
+A.P(r,"height",A.m(s/o)+"px")
 q.ch=o},
 af_(){if(this.a!=null)return
 this.rh(B.zW)},
@@ -26436,7 +26436,7 @@ i.Q=null
 if(i.c){h=A.a4("true")
 h.toString
 m.setAttribute("aria-hidden",h)
-A.O(i.as.style,"position","absolute")
+A.P(i.as.style,"position","absolute")
 h=i.as
 h.toString
 i.at.append(h)
@@ -27879,7 +27879,7 @@ q.d.GF(r)
 a.ew(a3,B.a_.bV([A.b([!0],t.HZ)]))
 break}return
 case"flutter/assets":a2.toString
-a.qq(B.ac.hA(J.qb(B.as.gbS(a2))),a3)
+a.qq(B.ac.hA(J.qb(B.ar.gbS(a2))),a3)
 return
 case"flutter/platform":s=B.b1.i2(a2)
 switch(s.a){case"SystemNavigator.pop":q=a.gd2().b
@@ -27939,7 +27939,7 @@ q.w=new A.a4O()}h=B.In.h(0,A.cA(m.h(0,"kind")))
 if(h==null)h="default"
 q=v.G
 if(h==="default")q.document.body.style.removeProperty("cursor")
-else A.O(q.document.body.style,"cursor",h)}break}return
+else A.P(q.document.body.style,"cursor",h)}break}return
 case"flutter/web_test_e2e":a.ew(a3,B.a_.bV([A.aIn(B.b1,a2)]))
 return
 case"flutter/platform_views":g=B.db.i2(a2)
@@ -28299,8 +28299,8 @@ r.toString
 if(t._a.b(r))q=A.e0(r.$2$params(n,p.e))
 else{t.xA.a(r)
 q=A.e0(r.$1(n))}if(q.style.getPropertyValue("height").length===0){$.e4().$1("Height of Platform View type: ["+s+"] may not be set. Defaulting to `height: 100%`.\nSet `style.height` to any appropriate value to stop this message.")
-A.O(q.style,"height","100%")}if(q.style.getPropertyValue("width").length===0){$.e4().$1("Width of Platform View type: ["+s+"] may not be set. Defaulting to `width: 100%`.\nSet `style.width` to any appropriate value to stop this message.")
-A.O(q.style,"width","100%")}o.append(q)
+A.P(q.style,"height","100%")}if(q.style.getPropertyValue("width").length===0){$.e4().$1("Width of Platform View type: ["+s+"] may not be set. Defaulting to `width: 100%`.\nSet `style.width` to any appropriate value to stop this message.")
+A.P(q.style,"width","100%")}o.append(q)
 return o},
 $S:98}
 A.a6_.prototype={
@@ -28370,7 +28370,7 @@ a0X(){var s,r,q=this
 if(!q.c)return
 s=q.a.a
 r=s[2]
-q.a=new A.CV([s[0],!0,r,A.c9(B.aq,q.ga7k())])},
+q.a=new A.CV([s[0],!0,r,A.c9(B.ap,q.ga7k())])},
 a7l(){if(!this.c)return
 this.AD()},
 a9X(a){var s,r=this.b
@@ -28438,8 +28438,8 @@ switch(J.aA(a0.deltaMode)){case 1:o=$.avK
 if(o==null){o=v.G
 n=A.bR(o.document,"div")
 m=n.style
-A.O(m,"font-size","initial")
-A.O(m,"display","none")
+A.P(m,"font-size","initial")
+A.P(m,"display","none")
 o.document.body.append(n)
 o=A.anK(o.window,n).getPropertyValue("font-size")
 if(B.c.t(o,"px"))l=A.atu(A.aq4(o,"px",""))
@@ -28574,7 +28574,7 @@ if(!r.ga4(r))return r}return A.b([a],t.O)},
 LK(a){var s
 $label0$0:{if("mouse"===a){s=B.bs
 break $label0$0}if("pen"===a){s=B.aQ
-break $label0$0}if("touch"===a){s=B.an
+break $label0$0}if("touch"===a){s=B.am
 break $label0$0}s=B.bc
 break $label0$0}return s},
 o7(a){var s,r=a.pointerType
@@ -28583,7 +28583,7 @@ s=this.LK(r)
 $label0$0:{if(B.bs===s){r=-1
 break $label0$0}if(B.aQ===s||B.bR===s){r=-4
 break $label0$0}r=B.aY===s?A.ae(A.dB("Unreachable")):null
-if(B.an===s||B.bc===s){r=a.pointerId
+if(B.am===s||B.bc===s){r=a.pointerId
 r.toString
 r=J.aA(r)
 break $label0$0}}return r}}
@@ -28723,7 +28723,7 @@ p.toString
 if(c===B.xC){g=p.b
 h=p.c}if(n.Bc(d,g,h))a.push(n.lq(s.b,B.hA,d,0,0,e,!1,0,g,h,0,i,j,0,0,0,0,0,k,l,m,0,a1,a2,a3))
 a.push(n.o6(b,c,d,0,0,e,!1,0,g,h,0,i,j,0,0,0,0,0,k,l,m,a0,0,a1,a2,a3))
-if(e===B.an){a.push(n.lq(0,B.Km,d,0,0,e,!1,0,g,h,0,0,j,0,0,0,0,0,k,l,m,0,a1,a2,a3))
+if(e===B.am){a.push(n.lq(0,B.Km,d,0,0,e,!1,0,g,h,0,0,j,0,0,0,0,0,k,l,m,0,a1,a2,a3))
 q.D(0,d)}break
 case 2:s=$.jD().a
 o=s.h(0,d)
@@ -28806,7 +28806,7 @@ OG(a,b){var s=this,r=s.ac6(b),q=A.bR(v.G.document,"div"),p=s.c?a+"\xa0":a
 q.textContent=p
 s.c=!s.c
 r.append(q)
-A.c9(B.aB,new A.Vh(q))}}
+A.c9(B.aA,new A.Vh(q))}}
 A.Vh.prototype={
 $0(){return this.a.remove()},
 $S:0}
@@ -29004,9 +29004,9 @@ s=!0}return s===!0}}
 A.a8Y.prototype={
 bU(){var s=this.c.gaeM(),r=A.bR(v.G.document,"h"+s)
 s=r.style
-A.O(s,"margin","0")
-A.O(s,"padding","0")
-A.O(s,"font-size","10px")
+A.P(s,"margin","0")
+A.P(s,"padding","0")
+A.P(s,"font-size","10px")
 return r},
 aJ(){if(this.c.a.dx){var s=this.e
 if(s!=null){s.aJ()
@@ -29025,13 +29025,13 @@ r=r!=null&&!B.bz.ga4(r)}else r=!1
 if(r){if(p.w==null){p.w=A.bR(v.G.document,"flt-semantics-img")
 r=s.dy
 if(r!=null&&!B.bz.ga4(r)){r=p.w.style
-A.O(r,"position","absolute")
-A.O(r,"top","0")
-A.O(r,"left","0")
+A.P(r,"position","absolute")
+A.P(r,"top","0")
+A.P(r,"left","0")
 q=s.y
-A.O(r,"width",A.m(q.c-q.a)+"px")
+A.P(r,"width",A.m(q.c-q.a)+"px")
 s=s.y
-A.O(r,"height",A.m(s.d-s.b)+"px")}A.O(p.w.style,"font-size","6px")
+A.P(r,"height",A.m(s.d-s.b)+"px")}A.P(p.w.style,"font-size","6px")
 s=p.w
 s.toString
 r=p.a
@@ -29163,10 +29163,10 @@ break
 case 2:s=A.bR(v.G.document,"span")
 r=new A.zL(s,B.ev,a)
 q=s.style
-A.O(q,"display","inline-block")
-A.O(q,"white-space","nowrap")
-A.O(q,"transform-origin","0 0 0")
-A.O(q,"pointer-events","none")
+A.P(q,"display","inline-block")
+A.P(q,"white-space","nowrap")
+A.P(q,"transform-origin","0 0 0")
+A.P(q,"pointer-events","none")
 q=a.c.ry.a
 q===$&&A.a()
 q.appendChild(s)
@@ -29209,7 +29209,7 @@ if(!q)r.c.textContent=a
 if(!q||s)r.abs(p)
 r.d=a
 r.e=p},
-abs(a){if(a==null){A.O(this.c.style,"transform","")
+abs(a){if(a==null){A.P(this.c.style,"transform","")
 return}if($.L8==null){$.L8=A.b([],t.L7)
 this.b.c.ok.x.push(A.aI2())}$.L8.push(new A.R_(this,a))},
 w9(){this.c.remove()},
@@ -29308,7 +29308,7 @@ else{s.aJ()
 s=!0}return s===!0}}
 A.a92.prototype={
 bU(){var s=A.bR(v.G.document,"a")
-A.O(s.style,"display","block")
+A.P(s.style,"display","block")
 return s},
 cU(){var s,r,q
 this.fG()
@@ -29528,15 +29528,15 @@ r[1]=0}o=B.bW.bV(r)
 $.aG().pc(s.ok.a,s.k4,B.xY,o)}},
 aI(){var s=this.c,r=s.ry.a
 r===$&&A.a()
-A.O(r.style,"overflow","")
+A.P(r.style,"overflow","")
 s=s.ry.a
 s===$&&A.a()
-A.O(s.style,"scrollbar-width","none")
+A.P(s.style,"scrollbar-width","none")
 s=this.x
 r=s.style
-A.O(r,"position","absolute")
-A.O(r,"transform-origin","0 0 0")
-A.O(r,"pointer-events","none")
+A.P(r,"position","absolute")
+A.P(r,"transform-origin","0 0 0")
+A.P(r,"pointer-events","none")
 r=this.a
 r===$&&A.a()
 r.append(s)},
@@ -29546,7 +29546,7 @@ p.c.ok.x.push(new A.a9k(p))
 p.NM()
 if(p.y==null){s=p.a
 s===$&&A.a()
-A.O(s.style,"touch-action","none")
+A.P(s.style,"touch-action","none")
 r=new A.a9l(p)
 p.w=r
 q=$.by;(q==null?$.by=A.dA():q).w.push(r)
@@ -29572,23 +29572,23 @@ p=(q&32)===0
 o=!p||(q&16)!==0?i.d-i.b:i.c-i.a
 n=s-r+o
 if(!p||(q&16)!==0){q=m.x.style
-A.O(q,l,"1px")
-A.O(q,k,B.d.aa(n,1)+"px")
+A.P(q,l,"1px")
+A.P(q,k,B.d.aa(n,1)+"px")
 q=m.a
 q===$&&A.a()
 j.to=q.scrollTop
 j.x1=0}else{q=(q&4)!==0||(q&8)!==0
 p=m.x
 if(q){q=p.style
-A.O(q,l,B.d.aa(n,1)+"px")
-A.O(q,k,"1px")
+A.P(q,l,B.d.aa(n,1)+"px")
+A.P(q,k,"1px")
 j.to=0
 q=m.a
 q===$&&A.a()
 j.x1=q.scrollLeft}else{q=p.style
-A.O(q,"transform","translate(0px,0px)")
-A.O(q,l,"0px")
-A.O(q,k,"0px")
+A.P(q,"transform","translate(0px,0px)")
+A.P(q,l,"0px")
+A.P(q,k,"0px")
 q=m.a
 q===$&&A.a()
 q.scrollLeft=0
@@ -29600,15 +29600,15 @@ p.toString
 if((p&32)!==0||(p&16)!==0){p=r.a
 p===$&&A.a()
 p.style.removeProperty("overflow")
-A.O(p.style,"overflow-y","scroll")}else{p=(p&4)!==0||(p&8)!==0
+A.P(p.style,"overflow-y","scroll")}else{p=(p&4)!==0||(p&8)!==0
 s=r.a
 if(p){s===$&&A.a()
 s.style.removeProperty("overflow")
-A.O(s.style,"overflow-x","scroll")}else{s===$&&A.a()
-A.O(s.style,q,"hidden")}}break
+A.P(s.style,"overflow-x","scroll")}else{s===$&&A.a()
+A.P(s.style,q,"hidden")}}break
 case 0:p=r.a
 p===$&&A.a()
-A.O(p.style,q,"hidden")
+A.P(p.style,q,"hidden")
 break}},
 l(){var s,r,q,p=this
 p.pZ()
@@ -30195,9 +30195,9 @@ yh(){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5=this,a6=a5.ry.a
 a6===$&&A.a()
 a6=a6.style
 s=a5.y
-A.O(a6,"width",A.m(s.c-s.a)+"px")
+A.P(a6,"width",A.m(s.c-s.a)+"px")
 s=a5.y
-A.O(a6,"height",A.m(s.d-s.b)+"px")
+A.P(a6,"height",A.m(s.d-s.b)+"px")
 a6=a5.y
 r=a6.b===0&&a6.a===0
 q=a5.dx
@@ -30243,8 +30243,8 @@ l=p}a6=a5.ry
 if(!l){a6=a6.a
 a6===$&&A.a()
 a6=a6.style
-A.O(a6,"transform-origin","0 0 0")
-A.O(a6,"transform",A.awK(o.b0().a))}else{a6=a6.a
+A.P(a6,"transform-origin","0 0 0")
+A.P(a6,"transform",A.awK(o.b0().a))}else{a6=a6.a
 a6===$&&A.a()
 A.atW(a6)}},
 Tx(){var s,r,q,p=A.ax(t.UF)
@@ -30478,11 +30478,11 @@ s=A.a4("Enable accessibility")
 s.toString
 r.setAttribute("aria-label",s)
 s=r.style
-A.O(s,"position","absolute")
-A.O(s,"left","-1px")
-A.O(s,"top","-1px")
-A.O(s,"width","1px")
-A.O(s,"height","1px")
+A.P(s,"position","absolute")
+A.P(s,"left","-1px")
+A.P(s,"top","-1px")
+A.P(s,"width","1px")
+A.P(s,"height","1px")
 return r},
 l(){var s=this.a
 if(s!=null)s.remove()
@@ -30518,7 +30518,7 @@ l=q.top
 k=r.b0().a-(s+(p-o)/2)
 j=r.b0().b-(n+(m-l)/2)
 if(k*k+j*j<1){i.d=!0
-i.a=A.c9(B.aB,new A.a4I(i))
+i.a=A.c9(B.aA,new A.a4I(i))
 return!1}return!0},
 SA(){var s,r=this.b=A.bR(v.G.document,"flt-semantics-placeholder")
 r.addEventListener("click",A.aN(new A.a4H(this)),!0)
@@ -30529,11 +30529,11 @@ s=A.a4("Enable accessibility")
 s.toString
 r.setAttribute("aria-label",s)
 s=r.style
-A.O(s,"position","absolute")
-A.O(s,"left","0")
-A.O(s,"top","0")
-A.O(s,"right","0")
-A.O(s,"bottom","0")
+A.P(s,"position","absolute")
+A.P(s,"left","0")
+A.P(s,"top","0")
+A.P(s,"right","0")
+A.P(s,"bottom","0")
 return r},
 l(){var s=this.b
 if(s!=null)s.remove()
@@ -30686,7 +30686,7 @@ s.focus($.dK())
 return!0},
 a5E(){var s,r,q,p,o=this,n=o.c
 if(n.a.cy){s=A.apO()
-if(n.a.z)A.O(s.style,"-webkit-text-security","circle")
+if(n.a.z)A.P(s.style,"-webkit-text-security","circle")
 r=s}else r=A.bR(v.G.document,"input")
 o.w!==$&&A.bg()
 o.w=r
@@ -30702,13 +30702,13 @@ q=A.a4("text-field")
 q.toString
 r.setAttribute("data-semantics-role",q)
 q=r.style
-A.O(q,"position","absolute")
-A.O(q,"top","0")
-A.O(q,"left","0")
+A.P(q,"position","absolute")
+A.P(q,"top","0")
+A.P(q,"left","0")
 p=n.y
-A.O(q,"width",A.m(p.c-p.a)+"px")
+A.P(q,"width",A.m(p.c-p.a)+"px")
 n=n.y
-A.O(q,"height",A.m(n.d-n.b)+"px")
+A.P(q,"height",A.m(n.d-n.b)+"px")
 n=o.a
 n===$&&A.a()
 n.append(r)
@@ -30723,9 +30723,9 @@ s===$&&A.a()
 r=s.style
 q=o.c
 p=q.y
-A.O(r,"width",A.m(p.c-p.a)+"px")
+A.P(r,"width",A.m(p.c-p.a)+"px")
 p=q.y
-A.O(r,"height",A.m(p.d-p.b)+"px")
+A.P(r,"height",A.m(p.d-p.b)+"px")
 if(q.a.f){if(!J.d(v.G.document.activeElement,s)&&q.a.w)q.ok.x.push(new A.a9w(o))
 r=$.L0
 if(r!=null)r.abK(o)}r=q.z
@@ -30858,7 +30858,7 @@ k(a){return A.p(this).k(0)+"("+this.a+", "+A.m(this.b)+")"}}
 A.a16.prototype={
 bV(a){return J.vd(B.I.gbS(B.cE.dB(B.ck.wI(a))))},
 fl(a){if(a==null)return a
-return B.ck.hA(B.dP.dB(J.qb(B.as.gbS(a))))}}
+return B.ck.hA(B.dP.dB(J.qb(B.ar.gbS(a))))}}
 A.a18.prototype={
 iM(a){return B.a_.bV(A.av(["method",a.a,"args",a.b],t.N,t.z))},
 i2(a){var s,r,q=null,p=B.a_.fl(a)
@@ -30886,16 +30886,16 @@ a.l9(8)
 r=a.c
 q=$.dk()
 r.$flags&2&&A.aj(r,13)
-r.setFloat64(0,b,B.aw===q)
+r.setFloat64(0,b,B.av===q)
 s.P(0,a.d)}else if(A.n8(b)){s=-2147483648<=b&&b<=2147483647
 r=a.b
 q=a.c
 if(s){r.ek(3)
 s=$.dk()
 q.$flags&2&&A.aj(q,8)
-q.setInt32(0,b,B.aw===s)
+q.setInt32(0,b,B.av===s)
 r.vD(0,a.d,0,4)}else{r.ek(4)
-B.as.GB(q,0,b,$.dk())}}else if(typeof b=="string"){s=a.b
+B.ar.GB(q,0,b,$.dk())}}else if(typeof b=="string"){s=a.b
 s.ek(7)
 p=B.cE.dB(b)
 o.fB(a,p.length)
@@ -30927,7 +30927,7 @@ case 1:s=!0
 break
 case 2:s=!1
 break
-case 3:r=b.a.getInt32(b.b,B.aw===$.dk())
+case 3:r=b.a.getInt32(b.b,B.av===$.dk())
 b.b+=4
 s=r
 break
@@ -30937,7 +30937,7 @@ case 5:q=j.eK(b)
 s=A.fb(B.dP.dB(b.nH(q)),16)
 break
 case 6:b.l9(8)
-r=b.a.getFloat64(b.b,B.aw===$.dk())
+r=b.a.getFloat64(b.b,B.av===$.dk())
 b.b+=8
 s=r
 break
@@ -30949,7 +30949,7 @@ break
 case 9:q=j.eK(b)
 b.l9(4)
 p=b.a
-o=J.aqK(B.as.gbS(p),p.byteOffset+b.b,q)
+o=J.aqK(B.ar.gbS(p),p.byteOffset+b.b,q)
 b.b=b.b+4*q
 s=o
 break
@@ -30958,7 +30958,7 @@ break
 case 11:q=j.eK(b)
 b.l9(8)
 p=b.a
-o=J.aqJ(B.as.gbS(p),p.byteOffset+b.b,q)
+o=J.aqJ(B.ar.gbS(p),p.byteOffset+b.b,q)
 b.b=b.b+8*q
 s=o
 break
@@ -30991,17 +30991,17 @@ p=r.$flags|0
 if(b<=65535){s.ek(254)
 o=$.dk()
 p&2&&A.aj(r,10)
-r.setUint16(0,b,B.aw===o)
+r.setUint16(0,b,B.av===o)
 s.vD(0,q,0,2)}else{s.ek(255)
 o=$.dk()
 p&2&&A.aj(r,11)
-r.setUint32(0,b,B.aw===o)
+r.setUint32(0,b,B.av===o)
 s.vD(0,q,0,4)}}},
 eK(a){var s,r=a.nG(0)
-$label0$0:{if(254===r){r=a.a.getUint16(a.b,B.aw===$.dk())
+$label0$0:{if(254===r){r=a.a.getUint16(a.b,B.av===$.dk())
 a.b+=2
 s=r
-break $label0$0}if(255===r){r=a.a.getUint32(a.b,B.aw===$.dk())
+break $label0$0}if(255===r){r=a.a.getUint32(a.b,B.av===$.dk())
 a.b+=4
 s=r
 break $label0$0}s=r
@@ -31036,14 +31036,14 @@ lB(){var s=this.b
 return J.ve(B.I.gbS(s.a),0,s.b*s.a.BYTES_PER_ELEMENT)}}
 A.JK.prototype={
 nG(a){return this.a.getUint8(this.b++)},
-yM(a){B.as.G8(this.a,this.b,$.dk())},
-nH(a){var s=this.a,r=J.iz(B.as.gbS(s),s.byteOffset+this.b,a)
+yM(a){B.ar.G8(this.a,this.b,$.dk())},
+nH(a){var s=this.a,r=J.iz(B.ar.gbS(s),s.byteOffset+this.b,a)
 this.b+=a
 return r},
 yN(a){var s,r,q=this
 q.l9(8)
 s=q.a
-r=J.an9(B.as.gbS(s),s.byteOffset+q.b,a)
+r=J.an9(B.ar.gbS(s),s.byteOffset+q.b,a)
 q.b=q.b+8*a
 return r},
 l9(a){var s=this.b,r=B.i.bC(s,a)
@@ -31288,23 +31288,23 @@ q.CF(a)
 n=q.c
 n.classList.add("flt-text-editing")
 s=n.style
-A.O(s,"forced-color-adjust",p)
-A.O(s,"white-space","pre-wrap")
-A.O(s,"position","absolute")
-A.O(s,"top","0")
-A.O(s,"left","0")
-A.O(s,"padding","0")
-A.O(s,"opacity","1")
-A.O(s,"color",o)
-A.O(s,"background-color",o)
-A.O(s,"background",o)
-A.O(s,"caret-color",o)
-A.O(s,"outline",p)
-A.O(s,"border",p)
-A.O(s,"resize",p)
-A.O(s,"text-shadow",p)
-A.O(s,"overflow","hidden")
-A.O(s,"transform-origin","0 0 0")
+A.P(s,"forced-color-adjust",p)
+A.P(s,"white-space","pre-wrap")
+A.P(s,"position","absolute")
+A.P(s,"top","0")
+A.P(s,"left","0")
+A.P(s,"padding","0")
+A.P(s,"opacity","1")
+A.P(s,"color",o)
+A.P(s,"background-color",o)
+A.P(s,"background",o)
+A.P(s,"caret-color",o)
+A.P(s,"outline",p)
+A.P(s,"border",p)
+A.P(s,"resize",p)
+A.P(s,"text-shadow",p)
+A.P(s,"overflow","hidden")
+A.P(s,"transform-origin","0 0 0")
 if($.bc().gdA()===B.cA||$.bc().gdA()===B.b9)n.classList.add("transparentTextEditing")
 n=q.r
 if(n!=null){r=q.c
@@ -31437,7 +31437,7 @@ q=q.x
 q.toString
 s=this.c
 s.toString
-if($.vc().ghM() instanceof A.t6)A.O(s.style,"pointer-events","all")
+if($.vc().ghM() instanceof A.t6)A.P(s.style,"pointer-events","all")
 r=q.a
 if(!r.contains(s))r.insertBefore(s,q.d)
 A.alD(r,q.f)
@@ -31536,7 +31536,7 @@ if(s.x!=null)r.tb()
 s=r.c
 s.toString
 a.y.Gx(s)},
-rT(){A.O(this.c.style,"transform","translate(-9999px, -9999px)")
+rT(){A.P(this.c.style,"transform","translate(-9999px, -9999px)")
 this.p3=!1},
 qT(){var s,r,q=this,p=q.d
 p===$&&A.a()
@@ -31837,13 +31837,13 @@ $.aG().ie("flutter/textinput",B.b1.iM(new A.hz("TextInputClient.performAction",[
 $S:349}
 A.Z3.prototype={
 em(a){var s=this,r=a.style
-A.O(r,"text-align",A.aL1(s.d,s.e))
-A.O(r,"font",s.b+" "+A.m(s.a)+"px "+A.m(A.aJA(s.c)))}}
+A.P(r,"text-align",A.aL1(s.d,s.e))
+A.P(r,"font",s.b+" "+A.m(s.a)+"px "+A.m(A.aJA(s.c)))}}
 A.Yl.prototype={
 em(a){var s=A.awK(this.c),r=a.style
-A.O(r,"width",A.m(this.a)+"px")
-A.O(r,"height",A.m(this.b)+"px")
-A.O(r,"transform",s)}}
+A.P(r,"width",A.m(this.a)+"px")
+A.P(r,"height",A.m(this.b)+"px")
+A.P(r,"transform",s)}}
 A.Ym.prototype={
 $1(a){return A.eh(a)},
 $S:351}
@@ -31982,12 +31982,12 @@ A.Xp.prototype={
 gyP(){var s=this.b
 s===$&&A.a()
 return s},
-OW(a){A.O(a.style,"width","100%")
-A.O(a.style,"height","100%")
-A.O(a.style,"display","block")
-A.O(a.style,"overflow","hidden")
-A.O(a.style,"position","relative")
-A.O(a.style,"touch-action","none")
+OW(a){A.P(a.style,"width","100%")
+A.P(a.style,"height","100%")
+A.P(a.style,"display","block")
+A.P(a.style,"overflow","hidden")
+A.P(a.style,"position","relative")
+A.P(a.style,"touch-action","none")
 this.a.appendChild(a)
 $.an2()
 this.b!==$&&A.bg()
@@ -31996,11 +31996,11 @@ gp9(){return this.a}}
 A.a_K.prototype={
 gyP(){return v.G.window},
 OW(a){var s=a.style
-A.O(s,"position","absolute")
-A.O(s,"top","0")
-A.O(s,"right","0")
-A.O(s,"bottom","0")
-A.O(s,"left","0")
+A.P(s,"position","absolute")
+A.P(s,"top","0")
+A.P(s,"right","0")
+A.P(s,"bottom","0")
+A.P(s,"left","0")
 this.a.append(a)
 $.an2()},
 ZQ(){var s,r,q,p
@@ -32138,12 +32138,12 @@ o.append(n)
 A.aua(k,q,"flt-text-editing-stylesheet",A.d6().gSe())
 A.aua("",o,"flt-internals-stylesheet",A.d6().gSe())
 o=A.d6().gDn()
-A.O(n.style,"pointer-events","none")
-if(o)A.O(n.style,"opacity","0.3")
+A.P(n.style,"pointer-events","none")
+if(o)A.P(n.style,"opacity","0.3")
 r=l.style
-A.O(r,"position","absolute")
-A.O(r,"transform-origin","0 0 0")
-A.O(l.style,"transform","scale("+A.m(1/s)+")")
+A.P(r,"position","absolute")
+A.P(r,"transform-origin","0 0 0")
+A.P(l.style,"transform","scale("+A.m(1/s)+")")
 this.y!==$&&A.aC()
 j=this.y=new A.Y1(q,n,m,l)}return j},
 gyY(){var s,r=this,q=r.as
@@ -32157,7 +32157,7 @@ Ab(){var s=this.ch.D6()
 return s},
 a0I(a){var s,r=this,q=r.gf1(),p=$.cR(),o=p.d
 p=o==null?p.gc4():o
-A.O(q.f.style,"transform","scale("+A.m(1/p)+")")
+A.P(q.f.style,"transform","scale("+A.m(1/p)+")")
 s=r.Ab()
 if(!B.y8.t(0,$.bc().gd7())&&!r.a5Q(s)&&$.vc().c)r.IR(!0)
 else{r.at=s
@@ -32528,7 +32528,7 @@ return-1},
 gdq(a){return A.bF(A.R(a))},
 $iak:1,
 $it:1,
-$iL:1}
+$iM:1}
 J.Iw.prototype={
 akn(a){var s,r,q
 if(!Array.isArray(a))return null
@@ -32779,7 +32779,7 @@ return A.jM(J.azV(this.a,b,c),s.c,s.y[1])},
 c6(a,b,c,d,e){var s=this.$ti
 J.azZ(this.a,b,c,A.jM(d,s.y[1],s.c),e)},
 $iak:1,
-$iL:1}
+$iM:1}
 A.ej.prototype={
 eD(a,b){return new A.ej(this.a,this.$ti.i("@<1>").bq(b).i("ej<1,2>"))},
 ghr(){return this.a}}
@@ -33776,7 +33776,7 @@ if(t.jW.b(d)){this.MR(a,b,c,d,e)
 return}this.H9(a,b,c,d,e)},
 $iak:1,
 $it:1,
-$iL:1}
+$iM:1}
 A.h3.prototype={
 m(a,b,c){a.$flags&2&&A.aj(a)
 A.l1(b,a,a.length)
@@ -33787,7 +33787,7 @@ return}this.H9(a,b,c,d,e)},
 iv(a,b,c,d){return this.c6(a,b,c,d,0)},
 $iak:1,
 $it:1,
-$iL:1}
+$iM:1}
 A.yd.prototype={
 gdq(a){return B.SH},
 cs(a,b,c){return new Float32Array(a.subarray(b,A.n5(b,c,a.length)))},
@@ -34173,7 +34173,7 @@ return p}catch(s){if(t.ns.b(A.az(s))){if((this.c&1)!==0)throw A.i(A.dy("The erro
 throw A.i(A.dy("The error handler of Future.catchError must return a value of the future's type","onError"))}else throw s}}}
 A.aI.prototype={
 hJ(a,b,c){var s,r,q=$.an
-if(q===B.az){if(b!=null&&!t.Hg.b(b)&&!t.C_.b(b))throw A.i(A.hn(b,"onError",u.w))}else if(b!=null)b=A.awe(b,q)
+if(q===B.ay){if(b!=null&&!t.Hg.b(b)&&!t.C_.b(b))throw A.i(A.hn(b,"onError",u.w))}else if(b!=null)b=A.awe(b,q)
 s=new A.aI(q,c.i("aI<0>"))
 r=b==null?1:3
 this.q7(new A.jq(s,r,a,b,this.$ti.i("@<1>").bq(c).i("jq<1,2>")))
@@ -34183,7 +34183,7 @@ Np(a,b,c){var s=new A.aI($.an,c.i("aI<0>"))
 this.q7(new A.jq(s,19,a,b,this.$ti.i("@<1>").bq(c).i("jq<1,2>")))
 return s},
 acB(a,b){var s=this.$ti,r=$.an,q=new A.aI(r,s)
-if(r!==B.az)a=A.awe(a,r)
+if(r!==B.ay)a=A.awe(a,r)
 this.q7(new A.jq(q,2,b,a,s.i("jq<1,1>")))
 return q},
 CV(a){return this.acB(a,null)},
@@ -34588,18 +34588,18 @@ $0(){A.as0(this.a,this.b)},
 $S:0}
 A.aiV.prototype={
 tp(a){var s,r,q
-try{if(B.az===$.an){a.$0()
+try{if(B.ay===$.an){a.$0()
 return}A.awg(null,null,this,a)}catch(q){s=A.az(q)
 r=A.b_(q)
 A.uW(s,r)}},
 ak1(a,b){var s,r,q
-try{if(B.az===$.an){a.$1(b)
+try{if(B.ay===$.an){a.$1(b)
 return}A.awi(null,null,this,a,b)}catch(q){s=A.az(q)
 r=A.b_(q)
 A.uW(s,r)}},
 tq(a,b){return this.ak1(a,b,t.z)},
 ajY(a,b,c){var s,r,q
-try{if(B.az===$.an){a.$2(b,c)
+try{if(B.ay===$.an){a.$2(b,c)
 return}A.awh(null,null,this,a,b,c)}catch(q){s=A.az(q)
 r=A.b_(q)
 A.uW(s,r)}},
@@ -34609,14 +34609,14 @@ OZ(a,b,c){return new A.aiZ(this,a,c,b)},
 ach(a,b,c,d){return new A.aiW(this,a,c,d,b)},
 CN(a){return new A.aiX(this,a)},
 aci(a,b){return new A.aiY(this,a,b)},
-ajV(a){if($.an===B.az)return a.$0()
+ajV(a){if($.an===B.ay)return a.$0()
 return A.awg(null,null,this,a)},
 fv(a){return this.ajV(a,t.z)},
-ak0(a,b){if($.an===B.az)return a.$1(b)
+ak0(a,b){if($.an===B.ay)return a.$1(b)
 return A.awi(null,null,this,a,b)},
 yp(a,b){var s=t.z
 return this.ak0(a,b,s,s)},
-ajX(a,b,c){if($.an===B.az)return a.$2(b,c)
+ajX(a,b,c){if($.an===B.ay)return a.$2(b,c)
 return A.awh(null,null,this,a,b,c)},
 Te(a,b,c){var s=t.z
 return this.ajX(a,b,c,s,s,s)},
@@ -35127,7 +35127,7 @@ r.m(a,b,c)}},
 k(a){return A.lH(a,"[","]")},
 $iak:1,
 $it:1,
-$iL:1}
+$iM:1}
 A.b1.prototype={
 jy(a,b,c){var s=A.l(this)
 return A.asU(this,s.i("b1.K"),s.i("b1.V"),b,c)},
@@ -36968,7 +36968,7 @@ UC(a,b){var s=this.a.bu(a,new A.WF()),r=s.e
 s.e=new A.adT(b,$.an)
 if(r==null&&!s.d){s.d=!0
 A.eM(s.gJl())}},
-afT(a){var s,r,q,p,o,n,m,l="Invalid arguments for 'resize' method sent to dev.flutter/channel-buffers (arguments must be a two-element list, channel name and new capacity)",k="Invalid arguments for 'overflow' method sent to dev.flutter/channel-buffers (arguments must be a two-element list, channel name and flag state)",j=J.iz(B.as.gbS(a),a.byteOffset,a.byteLength)
+afT(a){var s,r,q,p,o,n,m,l="Invalid arguments for 'resize' method sent to dev.flutter/channel-buffers (arguments must be a two-element list, channel name and new capacity)",k="Invalid arguments for 'overflow' method sent to dev.flutter/channel-buffers (arguments must be a two-element list, channel name and flag state)",j=J.iz(B.ar.gbS(a),a.byteOffset,a.byteLength)
 if(j[0]===7){s=j[1]
 if(s>=254)throw A.i(A.dB("Unrecognized message sent to dev.flutter/channel-buffers (method name too long)"))
 r=2+s
@@ -36982,7 +36982,7 @@ if(o>=254)throw A.i(A.dB("Invalid arguments for 'resize' method sent to dev.flut
 r=p+o
 n=B.ac.hA(B.I.cs(j,p,r))
 if(j[r]!==3)throw A.i(A.dB("Invalid arguments for 'resize' method sent to dev.flutter/channel-buffers (second argument must be an integer in the range 0 to 2147483647)"))
-this.T5(n,a.getUint32(r+1,B.aw===$.dk()))
+this.T5(n,a.getUint32(r+1,B.av===$.dk()))
 break
 case"overflow":if(j[r]!==12)throw A.i(A.dB(k))
 p=r+1
@@ -37722,19 +37722,19 @@ this.b.fN()},
 $S:14}
 A.ab2.prototype={}
 A.G8.prototype={
-N(a){var s,r,q,p,o,n,m,l=null,k=A.pF(l,B.a3,l,l,l,l,l,l,l,l),j=A.bW(12),i=A.aqZ(B.D,!0,l,l,0,B.Et,A.jB().$3$color$fontSize$fontWeight(B.aN,20,B.a7))
+N(a){var s,r,q,p,o,n,m,l=null,k=A.pF(l,B.a3,l,l,l,l,l,l,l,l),j=A.bW(12),i=A.aqZ(B.D,!0,l,l,0,B.Et,A.jB().$3$color$fontSize$fontWeight(B.aM,20,B.a7))
 k=A.aDD(k.ok)
-s=A.jB().$3$color$fontSize$fontWeight(B.aN,32,B.a7)
-r=A.jB().$3$color$fontSize$fontWeight(B.aN,28,B.a7)
-q=A.jB().$3$color$fontSize$fontWeight(B.aN,24,B.a7)
-p=A.jB().$3$color$fontSize$fontWeight(B.aN,20,B.cJ)
-o=A.jB().$3$color$fontSize$fontWeight(B.aN,18,B.cJ)
-n=A.v7().$3$color$fontSize$fontWeight(B.aN,18,B.cJ)
-m=A.v7().$3$color$fontSize$fontWeight(B.aN,16,B.V)
-m=k.adE(A.v7().$3$color$fontSize$height(B.aN,16,1.6),A.v7().$3$color$fontSize$height(B.aA,14,1.5),s,r,q,p,o,A.v7().$3$color$fontSize$fontWeight(B.aN,14,B.cJ),n,m)
-n=A.v7().$1$color(B.aA)
+s=A.jB().$3$color$fontSize$fontWeight(B.aM,32,B.a7)
+r=A.jB().$3$color$fontSize$fontWeight(B.aM,28,B.a7)
+q=A.jB().$3$color$fontSize$fontWeight(B.aM,24,B.a7)
+p=A.jB().$3$color$fontSize$fontWeight(B.aM,20,B.cJ)
+o=A.jB().$3$color$fontSize$fontWeight(B.aM,18,B.cJ)
+n=A.v7().$3$color$fontSize$fontWeight(B.aM,18,B.cJ)
+m=A.v7().$3$color$fontSize$fontWeight(B.aM,16,B.V)
+m=k.adE(A.v7().$3$color$fontSize$height(B.aM,16,1.6),A.v7().$3$color$fontSize$height(B.az,14,1.5),s,r,q,p,o,A.v7().$3$color$fontSize$fontWeight(B.aM,14,B.cJ),n,m)
+n=A.v7().$1$color(B.az)
 n=A.asp(new A.fx(4,A.bW(12),B.fi),l,B.mX,l,new A.fx(4,A.bW(12),B.fi),B.bv,!0,new A.fx(4,A.bW(12),B.A6),n)
-m=A.pF(i,B.a3,new A.qs(l,B.bv,l,l,0,B.bJ,new A.cI(j,B.fi)),A.arh(l,B.bv,l,l,l,l,l,l,l,l,l,A.v7().$2$color$fontSize(B.aN,13),B.jp,l,l,l,B.a1,l,l,new A.cI(A.bW(20),B.fi),l,l,l),B.BL,B.D4,n,B.fq,m,!0)
+m=A.pF(i,B.a3,new A.qs(l,B.bv,l,l,0,B.bJ,new A.cI(j,B.fi)),A.arh(l,B.bv,l,l,l,l,l,l,l,l,l,A.v7().$2$color$fontSize(B.aM,13),B.jp,l,l,l,B.a1,l,l,new A.cI(A.bW(20),B.fi),l,l,l),B.BL,B.D4,n,B.fq,m,!0)
 return new A.rp($.azN(),"Betrayal - Guia de Assombra\xe7\xf5es",m,!1,l)}}
 A.a0v.prototype={
 $2(a,b){return B.i.ba(a.a,b.a)},
@@ -37753,43 +37753,42 @@ A.OT.prototype={
 N(a){var s,r,q,p,o,n=this,m=null,l=n.a,k=l.c
 l=l.d
 s=(k===B.er?$.aqF():$.aqG()).h(0,l)
-if(s==null)return A.Kt(m,A.fh(A.co(A.b([B.EE,B.bB,A.aZ("Assombra\xe7\xe3o #"+n.a.d+" n\xe3o encontrada",m,m,m,A.M(a).ok.e,m,m),B.N3,A.ab3(!1,B.Se,m,m,m,m,m,m,new A.afT(n,a),m,m)],t.p),B.T,B.L,B.cT),m,m))
+if(s==null)return A.Kt(m,A.fh(A.co(A.b([B.EE,B.bB,A.aZ("Assombra\xe7\xe3o #"+n.a.d+" n\xe3o encontrada",m,m,m,A.N(a).ok.e,m,m),B.N3,A.ab3(!1,B.Se,m,m,m,m,m,m,new A.afT(n,a),m,m)],t.p),B.T,B.L,B.cT),m,m))
 l=t.p
 k=A.b([n.a_7(a),B.bB],l)
 r=s.c
 if(r!==B.m)k.push(n.ZZ(a,s))
 q=A.aZ("Assombra\xe7\xe3o "+B.c.pp(B.i.k(s.a),2,"0"),m,m,m,A.jB().$3$color$fontSize$letterSpacing(B.bn,14,2),m,m)
 p=s.b
-o=A.M(a).ok.b
+o=A.N(a).ok.b
 if(o==null)o=m
 else o=o.rb(A.bC(a,B.fb,t.w).w.a.a<600?22:28)
 k.push(new A.bn(B.el,A.co(A.b([q,B.la,A.aZ(p,m,m,m,o,m,m)],l),B.Y,B.L,B.A),m))
 o=A.bW(10)
 p=A.ex(B.ba,1)
 l=A.b([new A.un("Traidor",s.d,m)],l)
-q=s.f
-if(q!=null)l.push(new A.un("Press\xe1gio",q,m))
+l.push(new A.un("Press\xe1gio",s.f,m))
 l.push(new A.un("Cart\xe3o de Cen\xe1rio",s.e,m))
 k.push(A.c2(m,A.auM(l,10,24),B.r,m,m,new A.bx(B.bv,m,p,o,m,m,B.N),m,m,B.Dx,B.fQ,m,m,1/0))
 l=s.r
-if(l.length!==0){q=A.M(a).ok.y
-k.push(A.pl(B.a1,A.aZ(l,m,m,m,q==null?m:q.ae0(B.aA,B.ep,1.7),m,m),"Introdu\xe7\xe3o"))}if(s.w.length!==0)k.push(n.a_e(a,s))
+if(l.length!==0){q=A.N(a).ok.y
+k.push(A.pl(B.a1,A.aZ(l,m,m,m,q==null?m:q.ae0(B.az,B.ep,1.7),m,m),"Introdu\xe7\xe3o"))}if(s.w.length!==0)k.push(n.a_e(a,s))
 k.push(new A.Bk(s.x,m))
 k.push(n.a_1(a,s))
 if(s.z.length!==0)k.push(n.a_g(a,s))
 if(s.Q.length!==0)k.push(n.a_f(a,s))
 if(s.as.length!==0)k.push(n.a_6(a,s))
 l=s.at
-if(l!=null&&l.length!==0){q=A.M(a).ok.y
+if(l!=null&&l.length!==0){q=A.N(a).ok.y
 k.push(A.pl(B.bw,A.aZ(l,m,m,m,q==null?m:q.PF(B.ep,1.7),m,m),"Se Voc\xea Vencer"))}l=s.ax
 if(l!=null&&l.length!==0){r=r===B.cm?"Se o Traidor Vencer":"Se Voc\xea Perder"
-q=A.M(a).ok.y
+q=A.N(a).ok.y
 k.push(A.pl(B.j6,A.aZ(l,m,m,m,q==null?m:q.PF(B.ep,1.7),m,m),r))}k.push(B.l9)
 return A.Kt(m,A.a87(!0,A.aoB(A.aoJ(A.co(k,B.Y,B.L,B.A),B.DB,B.bk),700),!0))},
-a_7(a){var s,r,q,p=null,o=this.a.c===B.er,n=A.aoS(B.nE,B.z5,new A.afO(a),A.LC(p,p,p,p,p,p,p,p,p,B.aA,p,p,p,p,p,p,p,p,p,p)),m=A.aoS(B.EC,B.Sc,new A.afP(this,a),A.LC(p,p,p,p,p,p,p,p,p,B.aA,p,p,p,p,p,p,p,p,p,p)),l=o?B.BY.bp(0.3):B.a1.bp(0.3),k=A.bW(20),j=A.ex(o?B.bw.bp(0.5):B.bn.bp(0.5),1),i=o?B.k9:B.k8
+a_7(a){var s,r,q,p=null,o=this.a.c===B.er,n=A.aoS(B.nE,B.z5,new A.afO(a),A.LC(p,p,p,p,p,p,p,p,p,B.az,p,p,p,p,p,p,p,p,p,p)),m=A.aoS(B.EC,B.Sc,new A.afP(this,a),A.LC(p,p,p,p,p,p,p,p,p,B.az,p,p,p,p,p,p,p,p,p,p)),l=o?B.BY.bp(0.3):B.a1.bp(0.3),k=A.bW(20),j=A.ex(o?B.bw.bp(0.5):B.bn.bp(0.5),1),i=o?B.k9:B.k8
 i=A.of(i,o?B.bw:B.bn,p,14)
 s=this.a.c
-r=A.M(a).ok.as
+r=A.N(a).ok.as
 if(r==null)r=p
 else r=r.ku(o?B.bw:B.bn,12)
 q=t.p
@@ -37804,10 +37803,10 @@ q=r.bp(0.1)
 p=A.bW(10)
 o=A.ex(r.bp(0.3),1)
 n=A.of(B.El,r,j,20)
-m=A.M(a).ok.as
+m=A.N(a).ok.as
 m=m==null?j:m.bF(r)
 m=A.aZ(i.c,j,j,j,m,j,j)
-l=A.M(a).ok.z
+l=A.N(a).ok.z
 l=l==null?j:l.ku(r.bp(0.8),13)
 k=t.p
 return A.c2(j,A.es(A.b([n,B.yA,A.fS(A.co(A.b([m,B.l8,A.aZ(s.b,j,j,j,l,j,j)],k),B.Y,B.L,B.A),1)],k),B.T,B.A,0),B.r,j,j,new A.bx(q,j,o,p,j,j,B.N),j,j,B.el,B.fQ,j,j,1/0)},
@@ -37822,13 +37821,13 @@ k=A.Q(new A.a0(s,new A.afL(this,a),A.R(s).i("a0<1,f>")),t.l7)
 if(r!=null){j=B.ba.bp(0.5)
 p=A.of(B.Es,B.bH.bp(0.8),l,16)
 o=B.c.fw(r)
-n=A.M(a).ok.x
+n=A.N(a).ok.x
 m=t.p
 m=A.b([B.i2,new A.wx(l,j,l),B.cY,A.es(A.b([p,B.f0,A.fS(A.aZ(o,l,l,l,n==null?l:n.oM(B.bH,13,B.a7),l,l),1)],m),B.T,B.A,0),B.cY],m)
 B.b.P(m,new A.a0(q,new A.afM(this,a),A.R(q).i("a0<1,f>")))
 B.b.P(k,m)}return A.pl(B.fu,A.co(k,B.Y,B.L,B.A),"Tokens Necess\xe1rios")},
 Lf(a,b,c){var s=null
-return new A.bn(B.jo,A.es(A.b([A.c2(s,s,B.r,s,s,new A.bx(c.bp(0.8),s,s,s,s,s,B.d8),s,6,B.mT,s,s,s,6),A.fS(A.aZ(B.c.fw(b),s,s,s,A.M(a).ok.y,s,s),1)],t.p),B.Y,B.A,0),s)},
+return new A.bn(B.jo,A.es(A.b([A.c2(s,s,B.r,s,s,new A.bx(c.bp(0.8),s,s,s,s,s,B.d8),s,6,B.mT,s,s,s,6),A.fS(A.aZ(B.c.fw(b),s,s,s,A.N(a).ok.y,s,s),1)],t.p),B.Y,B.A,0),s)},
 a_g(a,b){var s=b.z,r=A.R(s).i("a0<1,iG>")
 s=A.Q(new A.a0(s,new A.afS(a),r),r.i("aq.E"))
 return A.pl(B.fz,A.co(s,B.Y,B.L,B.A),"Regras Especiais")},
@@ -37850,9 +37849,9 @@ $0(){var s=this.a.a.c
 return A.iR(this.b).it("/"+s.d,null)},
 $S:0}
 A.afQ.prototype={
-$1(a){var s=null,r=B.a1.bp(0.2),q=this.a,p=A.M(q).ok.z
+$1(a){var s=null,r=B.a1.bp(0.2),q=this.a,p=A.N(q).ok.z
 p=p==null?s:p.oM(B.bn,12,B.a7)
-return new A.bn(B.Dw,A.es(A.b([A.c2(B.ag,A.aZ(""+(a.a+1),s,s,s,p,s,s),B.r,s,s,new A.bx(r,s,s,s,s,s,B.d8),s,24,B.Dz,s,s,s,24),A.fS(new A.k2(a.b,A.M(q).ok.y,!1,s),1)],t.p),B.Y,B.A,0),s)},
+return new A.bn(B.Dw,A.es(A.b([A.c2(B.ag,A.aZ(""+(a.a+1),s,s,s,p,s,s),B.r,s,s,new A.bx(r,s,s,s,s,s,B.d8),s,24,B.Dz,s,s,s,24),A.fS(new A.k2(a.b,A.N(q).ok.y,!1,s),1)],t.p),B.Y,B.A,0),s)},
 $S:238}
 A.afJ.prototype={
 $1(a){return B.c.fw(a).length!==0},
@@ -37867,20 +37866,20 @@ A.afM.prototype={
 $1(a){return this.a.Lf(this.b,a,B.bH)},
 $S:114}
 A.afS.prototype={
-$1(a){var s=null,r=A.bW(8),q=A.ex(B.ba,1),p=B.fz.bp(0.12),o=A.bW(6),n=this.a,m=A.M(n).ok.w
+$1(a){var s=null,r=A.bW(8),q=A.ex(B.ba,1),p=B.fz.bp(0.12),o=A.bW(6),n=this.a,m=A.N(n).ok.w
 m=m==null?s:m.oM(B.fz,14,B.a7)
 o=A.c2(s,A.aZ(a.a,s,s,s,m,s,s),B.r,s,s,new A.bx(p,s,s,o,s,s,B.N),s,s,s,B.mU,s,s,s)
-n=A.M(n).ok.y
+n=A.N(n).ok.y
 p=n==null?s:n.rb(14)
 return A.c2(s,A.co(A.b([o,B.N2,new A.k2(a.b,p,!0,s)],t.p),B.Y,B.L,B.A),B.r,s,s,new A.bx(B.fq,s,q,r,s,s,B.N),s,s,B.ek,B.fQ,s,s,1/0)},
 $S:242}
 A.afR.prototype={
-$1(a){var s=null,r=A.bW(8),q=A.ex(B.ba,1),p=B.bw.bp(0.1),o=A.bW(4),n=A.ex(B.bw.bp(0.3),1),m=this.a,l=A.M(m).ok.Q
+$1(a){var s=null,r=A.bW(8),q=A.ex(B.ba,1),p=B.bw.bp(0.1),o=A.bW(4),n=A.ex(B.bw.bp(0.3),1),m=this.a,l=A.N(m).ok.Q
 p=A.c2(s,A.aZ("Uma vez durante sua vez, voc\xea pode:",s,s,s,l==null?s:l.oM(B.bw,11,B.V),s,s),B.r,s,s,new A.bx(p,s,n,o,s,s,B.N),s,s,B.jo,B.mZ,s,s,s)
-o=A.M(m).ok.w
+o=A.N(m).ok.w
 o=o==null?s:o.Px(B.a7)
 o=A.aZ(a.a,s,s,s,o,s,s)
-m=A.M(m).ok.y
+m=A.N(m).ok.y
 n=m==null?s:m.rb(14)
 return A.c2(s,A.co(A.b([p,o,B.cY,new A.k2(a.b,n,!0,s)],t.p),B.Y,B.L,B.A),B.r,s,s,new A.bx(B.fq,s,q,r,s,s,B.N),s,s,B.ek,B.fQ,s,s,1/0)},
 $S:111}
@@ -37888,9 +37887,9 @@ A.afN.prototype={
 $1(a){return new A.oI(a,null)},
 $S:263}
 A.un.prototype={
-N(a){var s=null,r=A.M(a).ok.z
-r=r==null?s:r.ku(B.aA,11)
-return A.co(A.b([A.aZ(this.c,s,s,s,r,s,s),B.l8,A.aZ(this.d,s,s,s,A.M(a).ok.w,s,s)],t.p),B.Y,B.L,B.A)}}
+N(a){var s=null,r=A.N(a).ok.z
+r=r==null?s:r.ku(B.az,11)
+return A.co(A.b([A.aZ(this.c,s,s,s,r,s,s),B.l8,A.aZ(this.d,s,s,s,A.N(a).ok.w,s,s)],t.p),B.Y,B.L,B.A)}}
 A.Bk.prototype={
 ar(){return new A.Bl(null,null)}}
 A.Bl.prototype={
@@ -37906,7 +37905,7 @@ s===$&&A.a()
 s.l()
 this.Yt()},
 aaC(){this.aq(new A.ae_(this))},
-N(a){var s,r,q=this,p=null,o=A.b([B.a1.bp(0.15),B.iS.bp(0.1)],t.t_),n=A.bW(12),m=A.ex(B.a1.bp(0.3),1),l=A.bW(11),k=A.M(a).ok.r
+N(a){var s,r,q=this,p=null,o=A.b([B.a1.bp(0.15),B.iS.bp(0.1)],t.t_),n=A.bW(12),m=A.ex(B.a1.bp(0.3),1),l=A.bW(11),k=A.N(a).ok.r
 k=A.fS(A.aZ("Objetivo",p,p,p,k==null?p:k.bF(B.bn),p,p),1)
 s=q.f
 s===$&&A.a()
@@ -37914,7 +37913,7 @@ r=t.p
 s=A.lx(p,A.c2(p,A.es(A.b([B.Ez,B.f0,k,A.a7I(A.of(B.nB,B.bn.bp(0.7),p,22),s)],r),B.T,B.A,0),B.r,p,p,p,p,p,p,B.jq,p,p,1/0),B.al,!1,p,p,p,p,p,p,p,p,p,p,p,p,q.gaaB(),p,p,p)
 k=q.r
 k===$&&A.a()
-return A.c2(p,A.arj(l,A.co(A.b([s,A.WU(A.jI(k,new A.ae0(q),new A.bn(B.DJ,new A.k2(q.a.c,A.M(a).ok.y,!0,p),p)),B.a0)],r),B.Y,B.L,B.A)),B.r,p,p,new A.bx(p,p,m,n,p,new A.os(B.ff,B.iA,B.cu,o,p,p),B.N),p,p,B.el,p,p,p,1/0)}}
+return A.c2(p,A.arj(l,A.co(A.b([s,A.WU(A.jI(k,new A.ae0(q),new A.bn(B.DJ,new A.k2(q.a.c,A.N(a).ok.y,!0,p),p)),B.a0)],r),B.Y,B.L,B.A)),B.r,p,p,new A.bx(p,p,m,n,p,new A.os(B.ff,B.iA,B.cu,o,p,p),B.N),p,p,B.el,p,p,p,1/0)}}
 A.ae_.prototype={
 $0(){var s=this.a,r=!s.d
 s.d=r
@@ -37952,17 +37951,17 @@ ga2u(){var s,r,q,p,o,n=this.ga1v(),m=A.q(t.jb,t.Ys)
 for(s=A.R(n).i("aF<1>"),r=s.i("t.E"),q=0;q<4;++q){p=B.G6[q]
 o=A.Q(new A.aF(n,new A.afW(p),s),r)
 if(o.length!==0)m.m(0,p,o)}return m},
-N(a){var s,r=this,q=null,p=r.ga2u(),o=A.aoS(B.nE,B.z5,new A.ag1(a),A.LC(q,q,q,q,q,q,q,q,q,B.aA,q,q,q,q,q,q,q,q,q,q)),n=B.a1.bp(0.15),m=A.bW(20),l=A.ex(B.a1.bp(0.3),1),k=r.a.c,j=A.M(a).ok.as
+N(a){var s,r=this,q=null,p=r.ga2u(),o=A.aoS(B.nE,B.z5,new A.ag1(a),A.LC(q,q,q,q,q,q,q,q,q,B.az,q,q,q,q,q,q,q,q,q,q)),n=B.a1.bp(0.15),m=A.bW(20),l=A.ex(B.a1.bp(0.3),1),k=r.a.c,j=A.N(a).ok.as
 j=j==null?q:j.ku(B.bn,13)
 s=t.p
 m=A.es(A.b([o,B.yH,A.c2(q,A.aZ(k.c,q,q,q,j,q,q),B.r,q,q,new A.bx(n,q,l,m,q,q,B.N),q,q,q,B.jp,q,q,q)],s),B.T,B.A,0)
-l=A.aZ("Assombra\xe7\xf5es",q,q,q,A.M(a).ok.d,q,q)
+l=A.aZ("Assombra\xe7\xf5es",q,q,q,A.N(a).ok.d,q,q)
 o=A.aso(q,q,q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,q,"Buscar pelo n\xfamero ou nome da assombra\xe7\xe3o",q,q,q,q,q,q,q,q,q,!0,!0,q,B.Ew,q,q,q,q,q,q,r.d.length!==0?A.ao0(q,q,B.Ex,q,q,new A.ag2(r),q,q,q):q,q,q,q,q,q)
 o=A.b([new A.jd(new A.bn(B.DC,m,q),q),new A.jd(new A.bn(B.ek,l,q),q),new A.jd(new A.bn(B.ek,new A.Ao(r.f,o,B.z2,B.yE,B.yF,new A.ag3(r),!0,q),q),q),new A.jd(new A.bn(B.el,new A.JE(r.e,new A.ag4(r),q),q),q)],s)
-if(p.a===0){n=A.M(a).ok.y
-o.push(new A.jd(new A.bn(B.DF,A.fh(A.co(A.b([B.EB,B.bB,A.aZ("Nenhuma assombra\xe7\xe3o encontrada",q,q,q,n==null?q:n.bF(B.aA),q,q)],s),B.T,B.L,B.A),q,q),q),q))}else{n=A.l(p).i("dn<1,2>")
+if(p.a===0){n=A.N(a).ok.y
+o.push(new A.jd(new A.bn(B.DF,A.fh(A.co(A.b([B.EB,B.bB,A.aZ("Nenhuma assombra\xe7\xe3o encontrada",q,q,q,n==null?q:n.bF(B.az),q,q)],s),B.T,B.L,B.A),q,q),q),q))}else{n=A.l(p).i("dn<1,2>")
 B.b.P(o,new A.em(new A.dn(p,n),new A.ag5(r),n.i("em<t.E,f>")))}o.push(B.N8)
-return A.Kt(q,A.a87(!0,A.aoB(new A.GX(o,B.bk,!1,q,q,B.zN,q,!1,q,0,q,q,B.N7,B.al,q,q,B.a0,B.aE,q),700),!0))}}
+return A.Kt(q,A.a87(!0,A.aoB(new A.GX(o,B.bk,!1,q,q,B.zN,q,!1,q,0,q,q,B.N7,B.al,q,q,B.a0,B.aD,q),700),!0))}}
 A.afU.prototype={
 $1(a){var s=this.a
 return B.c.t(B.i.k(a.a),s)||B.c.t(a.b.toLowerCase(),s)},
@@ -38012,17 +38011,17 @@ $0(){var s=this.a.a.c
 return A.iR(this.b).it("/"+s.d+"/"+this.c.a,null)},
 $S:0}
 A.I4.prototype={
-N(a){var s=null,r="Sobrevivente",q="Consulte as regras e objetivos para os her\xf3is",p="Consulte as regras e objetivos para o traidor",o=A.bC(a,B.fb,t.w).w.a.a>=600,n=A.aZ("BETRAYAL",s,s,s,A.jB().$4$color$fontSize$fontWeight$letterSpacing(B.a1,o?48:36,B.a7,8),s,s),m=A.aZ("AT HOUSE ON THE HILL",s,s,s,A.jB().$4$color$fontSize$fontWeight$letterSpacing(B.aA,o?16:12,B.o,6),s,s),l=A.c2(s,s,B.r,B.a1,s,s,s,2,s,s,s,s,60),k=A.aZ("Guia de Assombra\xe7\xf5es",s,s,s,A.jB().$2$color$fontSize(B.aN,o?20:16),s,s),j=t.p
-k=A.b([B.l9,n,B.la,m,B.cY,l,B.i2,k,B.yD,A.aZ("Quem voc\xea \xe9 nesta noite?",s,s,s,A.jB().$3$color$fontSize$fontStyle(B.aA,o?22:18,B.ep),B.ct,s),B.yC],j)
+N(a){var s=null,r="Sobrevivente",q="Consulte as regras e objetivos para os her\xf3is",p="Consulte as regras e objetivos para o traidor",o=A.bC(a,B.fb,t.w).w.a.a>=600,n=A.aZ("BETRAYAL",s,s,s,A.jB().$4$color$fontSize$fontWeight$letterSpacing(B.a1,o?48:36,B.a7,8),s,s),m=A.aZ("AT HOUSE ON THE HILL",s,s,s,A.jB().$4$color$fontSize$fontWeight$letterSpacing(B.az,o?16:12,B.o,6),s,s),l=A.c2(s,s,B.r,B.a1,s,s,s,2,s,s,s,s,60),k=A.aZ("Guia de Assombra\xe7\xf5es",s,s,s,A.jB().$2$color$fontSize(B.aM,o?20:16),s,s),j=t.p
+k=A.b([B.l9,n,B.la,m,B.cY,l,B.i2,k,B.yD,A.aZ("Quem voc\xea \xe9 nesta noite?",s,s,s,A.jB().$3$color$fontSize$fontStyle(B.az,o?22:18,B.ep),B.ct,s),B.yC],j)
 if(o)k.push(A.es(A.b([A.fS(new A.mb(r,q,B.k9,new A.a0D(a),s),1),B.N0,A.fS(new A.mb("Traidor",p,B.k8,new A.a0E(a),s),1)],j),B.T,B.A,0))
 else k.push(A.co(A.b([new A.mb(r,q,B.k9,new A.a0F(a),s),B.bB,new A.mb("Traidor",p,B.k8,new A.a0G(a),s)],j),B.T,B.L,B.A))
 k.push(B.yD)
 n=A.bW(12)
 m=A.ex(B.ba,1)
-k.push(A.c2(s,A.co(A.b([A.aZ("Como usar este guia",s,s,s,A.M(a).ok.f,s,s),B.yB,new A.ui("1","Descubra qual assombra\xe7\xe3o foi ativada no jogo",s),B.bB,new A.ui("2","Selecione seu papel: Sobrevivente ou Traidor",s),B.bB,new A.ui("3","Encontre a assombra\xe7\xe3o pelo n\xfamero e leia as regras",s)],j),B.T,B.L,B.A),B.r,s,s,new A.bx(B.bv,s,m,n,s,s,B.N),s,s,s,B.DQ,s,s,s))
+k.push(A.c2(s,A.co(A.b([A.aZ("Como usar este guia",s,s,s,A.N(a).ok.f,s,s),B.yB,new A.ui("1","Descubra qual assombra\xe7\xe3o foi ativada no jogo",s),B.bB,new A.ui("2","Selecione seu papel: Sobrevivente ou Traidor",s),B.bB,new A.ui("3","Encontre a assombra\xe7\xe3o pelo n\xfamero e leia as regras",s)],j),B.T,B.L,B.A),B.r,s,s,new A.bx(B.bv,s,m,n,s,s,B.N),s,s,s,B.DQ,s,s,s))
 k.push(B.l9)
-n=A.M(a).ok.z
-k.push(new A.bn(B.mW,A.aZ("Este \xe9 um site n\xe3o-oficial mantido por f\xe3s, sem fins lucrativos. Betrayal at House on the Hill \xe9 propriedade de Avalon Hill / Hasbro.",s,s,s,n==null?s:n.ku(B.aA.bp(0.6),11),B.ct,s),s))
+n=A.N(a).ok.z
+k.push(new A.bn(B.mW,A.aZ("Este \xe9 um site n\xe3o-oficial mantido por f\xe3s, sem fins lucrativos. Betrayal at House on the Hill \xe9 propriedade de Avalon Hill / Hasbro.",s,s,s,n==null?s:n.ku(B.az.bp(0.6),11),B.ct,s),s))
 return A.Kt(s,A.aoJ(A.aoB(new A.bn(B.DE,A.co(k,B.T,B.L,B.A),s),700),s,B.bk))}}
 A.a0D.prototype={
 $0(){return A.iR(this.a).it("/sobrevivente",null)},
@@ -38037,17 +38036,17 @@ A.a0G.prototype={
 $0(){return A.iR(this.a).it("/traidor",null)},
 $S:0}
 A.ui.prototype={
-N(a){var s=null,r=B.a1.bp(0.2),q=A.ex(B.a1,1),p=A.M(a).ok.as
+N(a){var s=null,r=B.a1.bp(0.2),q=A.ex(B.a1,1),p=A.N(a).ok.as
 p=p==null?s:p.bF(B.bn)
-return A.es(A.b([A.c2(B.ag,A.aZ(this.c,s,s,s,p,s,s),B.r,s,s,new A.bx(r,s,q,s,s,s,B.d8),s,32,s,s,s,s,32),B.N_,A.fS(A.aZ(this.d,s,s,s,A.M(a).ok.y,s,s),1)],t.p),B.T,B.A,0)}}
+return A.es(A.b([A.c2(B.ag,A.aZ(this.c,s,s,s,p,s,s),B.r,s,s,new A.bx(r,s,q,s,s,s,B.d8),s,32,s,s,s,s,32),B.N_,A.fS(A.aZ(this.d,s,s,s,A.N(a).ok.y,s,s),1)],t.p),B.T,B.A,0)}}
 A.amL.prototype={
-$2(a,b){return A.GY(null,B.Ef,b.y,null,null,B.aB,B.aB,new A.amK(),t.z)},
+$2(a,b){return A.GY(null,B.Ef,b.y,null,null,B.aA,B.aA,new A.amK(),t.z)},
 $S:52}
 A.amK.prototype={
 $4(a,b,c,d){return new A.de(b,!1,d,null)},
 $S:51}
 A.amM.prototype={
-$2(a,b){return A.GY(null,B.Ee,b.y,null,null,B.aB,B.aB,new A.amJ(),t.z)},
+$2(a,b){return A.GY(null,B.Ee,b.y,null,null,B.aA,B.aA,new A.amJ(),t.z)},
 $S:52}
 A.amJ.prototype={
 $4(a,b,c,d){return new A.de(b,!1,d,null)},
@@ -38055,13 +38054,13 @@ $S:51}
 A.amN.prototype={
 $2(a,b){var s=null,r=b.r.h(0,"id")
 r.toString
-return A.GY(s,new A.r3(B.er,A.fb(r,s),s),b.y,s,s,B.aB,B.aB,new A.amI(),t.z)},
+return A.GY(s,new A.r3(B.er,A.fb(r,s),s),b.y,s,s,B.aA,B.aA,new A.amI(),t.z)},
 $S:52}
 A.amI.prototype={
 $4(a,b,c,d){return new A.de(b,!1,d,null)},
 $S:51}
 A.amO.prototype={
-$2(a,b){return A.GY(null,B.Ed,b.y,null,null,B.aB,B.aB,new A.amH(),t.z)},
+$2(a,b){return A.GY(null,B.Ed,b.y,null,null,B.aA,B.aA,new A.amH(),t.z)},
 $S:52}
 A.amH.prototype={
 $4(a,b,c,d){return new A.de(b,!1,d,null)},
@@ -38069,7 +38068,7 @@ $S:51}
 A.amP.prototype={
 $2(a,b){var s=null,r=b.r.h(0,"id")
 r.toString
-return A.GY(s,new A.r3(B.ny,A.fb(r,s),s),b.y,s,s,B.aB,B.aB,new A.amG(),t.z)},
+return A.GY(s,new A.r3(B.ny,A.fb(r,s),s),b.y,s,s,B.aA,B.aA,new A.amG(),t.z)},
 $S:52}
 A.amG.prototype={
 $4(a,b,c,d){return new A.de(b,!1,d,null)},
@@ -38084,25 +38083,25 @@ break
 case 3:s=B.iT
 break
 default:s=null}return s},
-N(a){var s=this,r=null,q=A.c2(r,r,B.r,r,r,new A.bx(s.gzC(),r,r,A.bW(2),r,r,B.N),r,24,r,r,r,r,4),p=A.fS(A.aZ(s.c.c,r,r,r,A.M(a).ok.f,r,r),1),o=s.gzC().bp(0.15),n=A.bW(12),m=A.M(a).ok.z
+N(a){var s=this,r=null,q=A.c2(r,r,B.r,r,r,new A.bx(s.gzC(),r,r,A.bW(2),r,r,B.N),r,24,r,r,r,r,4),p=A.fS(A.aZ(s.c.c,r,r,r,A.N(a).ok.f,r,r),1),o=s.gzC().bp(0.15),n=A.bW(12),m=A.N(a).ok.z
 m=m==null?r:m.Dh(s.gzC(),B.a7)
 return new A.bn(B.DD,A.es(A.b([q,B.yA,p,A.c2(r,A.aZ(""+s.d,r,r,r,m,r,r),B.r,r,r,new A.bx(o,r,r,n,r,r,B.N),r,r,r,B.mU,r,r,r)],t.p),B.T,B.A,0),r)}}
 A.k2.prototype={
 N(a){var s,r,q=this,p=null,o=q.d
-if(o==null){s=A.M(a).ok.y
+if(o==null){s=A.N(a).ok.y
 s.toString
 o=s}r=A.aCl(q.c)
 if(B.c.t(r,"\u2022"))return q.a_m(a,r,o)
 if(!q.e)return A.aZ(r,p,p,p,o,p,p)
 return q.zP(a,r,o)},
 a_m(a,b,c){var s,r,q,p,o,n,m,l=this,k=null,j=new A.a0(A.b(b.split("\u2022"),t.s),new A.a_y(),t.a4).u0(0,new A.a_z()),i=A.Q(j,j.$ti.i("t.E"))
-if(i.length===0)return B.ao
+if(i.length===0)return B.an
 s=B.c.bX(B.c.Tr(b),"\u2022")
 j=t.p
 r=A.b([],j)
 if(!s&&i.length!==0){r.push(l.e?l.zP(a,i[0],c):A.aZ(i[0],k,k,k,c,k,k))
 if(i.length>1)r.push(B.cY)}q=s?0:1
-for(p=l.e,o=c.b,n=q;n<i.length;++n){m=A.c2(k,k,B.r,k,k,new A.bx((o==null?B.aN:o).bp(0.6),k,k,k,k,k,B.d8),k,6,B.mT,k,k,k,6)
+for(p=l.e,o=c.b,n=q;n<i.length;++n){m=A.c2(k,k,B.r,k,k,new A.bx((o==null?B.aM:o).bp(0.6),k,k,k,k,k,B.d8),k,6,B.mT,k,k,k,6)
 r.push(new A.bn(B.DS,A.es(A.b([m,new A.wR(1,B.k1,p?l.zP(a,i[n],c):A.aZ(i[n],k,k,k,c,k,k),k)],j),B.Y,B.A,0),k))}return A.co(r,B.Y,B.L,B.A)},
 zP(a,b,c){var s,r,q,p,o,n,m=null,l=A.aCm(b)
 if(l.length===1&&l[0] instanceof A.mW)return A.aZ(l[0].gPu(),m,m,m,c,m,m)
@@ -38148,12 +38147,12 @@ gPu(){return this.a+" "+this.b}}
 A.pP.prototype={
 N(a){var s,r=null,q=this.c,p=q.c?B.bw:B.j6,o=p.bp(0.08),n=A.bW(8),m=A.ex(p.bp(0.2),1),l=p.bp(0.15)
 l=A.c2(r,A.aZ(q.a,r,r,r,A.il(r,r,p,r,r,r,r,r,r,r,r,14,r,r,B.a7,r,r,!0,r,r,r,r,r,r,r,r),B.ct,r),B.r,r,r,new A.bx(l,r,r,B.A2,r,r,B.N),r,r,r,B.DU,r,r,52)
-s=A.M(a).ok.z
-s=s==null?r:s.ku(B.aN,13)
+s=A.N(a).ok.z
+s=s==null?r:s.ku(B.aM,13)
 return A.c2(r,A.es(A.b([l,A.fS(new A.bn(B.DH,A.aZ(q.b,r,r,r,s,r,r),r),1)],t.p),B.Y,B.A,0),B.r,r,r,new A.bx(o,r,m,n,r,r,B.N),r,r,B.Dy,r,r,r,r)}}
 A.HZ.prototype={
-N(a){var s=null,r=A.bW(12),q=A.bW(12),p=A.ex(B.ba,1),o=B.a1.bp(0.15),n=A.bW(10),m=this.c,l=B.c.pp(B.i.k(m.a),2,"0"),k=A.M(a).ok.r,j=t.p
-return A.oz(!1,B.aq,!0,s,A.ao7(!1,r,!0,A.c2(s,A.es(A.b([A.c2(B.ag,A.aZ(l,s,s,s,k==null?s:k.Dh(B.bn,B.a7),s,s),B.r,s,s,new A.bx(o,s,s,n,s,s,B.N),s,44,s,s,s,s,44),B.MZ,A.fS(A.co(A.b([A.aZ(m.b,2,B.aJ,s,A.M(a).ok.w,s,s),B.la,new A.I0(m.d,m.c,s)],j),B.Y,B.L,B.A),1),B.f0,B.ED],j),B.T,B.A,0),B.r,s,s,new A.bx(B.bv,s,p,q,s,s,B.N),s,s,s,B.mX,s,s,s),s,!0,s,s,s,s,s,s,s,this.d,s,s,s,s,s,s),B.r,B.D,0,s,s,s,s,s,B.cU)}}
+N(a){var s=null,r=A.bW(12),q=A.bW(12),p=A.ex(B.ba,1),o=B.a1.bp(0.15),n=A.bW(10),m=this.c,l=B.c.pp(B.i.k(m.a),2,"0"),k=A.N(a).ok.r,j=t.p
+return A.oz(!1,B.ap,!0,s,A.ao7(!1,r,!0,A.c2(s,A.es(A.b([A.c2(B.ag,A.aZ(l,s,s,s,k==null?s:k.Dh(B.bn,B.a7),s,s),B.r,s,s,new A.bx(o,s,s,n,s,s,B.N),s,44,s,s,s,s,44),B.MZ,A.fS(A.co(A.b([A.aZ(m.b,2,B.aI,s,A.N(a).ok.w,s,s),B.la,new A.I0(m.d,m.c,s)],j),B.Y,B.L,B.A),1),B.f0,B.ED],j),B.T,B.A,0),B.r,s,s,new A.bx(B.bv,s,p,q,s,s,B.N),s,s,s,B.mX,s,s,s),s,!0,s,s,s,s,s,s,s,this.d,s,s,s,s,s,s),B.r,B.D,0,s,s,s,s,s,B.cU)}}
 A.I0.prototype={
 gZT(){var s,r=this.d
 $label0$0:{if(B.co===r){s=B.j_.bp(0.2)
@@ -38167,11 +38166,11 @@ break $label0$0}if(B.cm===r){s=B.Ct
 break $label0$0}if(B.cn===r){s=B.BZ
 break $label0$0}s=B.bn
 break $label0$0}return s},
-N(a){var s=null,r=this.gZT(),q=A.bW(6),p=A.M(a).ok.z
+N(a){var s=null,r=this.gZT(),q=A.bW(6),p=A.N(a).ok.z
 p=p==null?s:p.oM(this.gaak(),11,B.V)
-return A.c2(s,A.aZ(this.c,1,B.aJ,s,p,s,s),B.r,s,s,new A.bx(r,s,s,q,s,s,B.N),s,s,s,B.mZ,s,s,s)}}
+return A.c2(s,A.aZ(this.c,1,B.aI,s,p,s,s),B.r,s,s,new A.bx(r,s,s,q,s,s,B.N),s,s,s,B.mZ,s,s,s)}}
 A.oI.prototype={
-N(a){var s,r,q,p,o=null,n=A.bW(12),m=A.ex(B.a1.bp(0.3),1),l=this.c,k=A.M(a).ok.r
+N(a){var s,r,q,p,o=null,n=A.bW(12),m=A.ex(B.a1.bp(0.3),1),l=this.c,k=A.N(a).ok.r
 k=k==null?o:k.bF(B.bH)
 s=t.p
 k=A.b([A.es(A.b([B.EA,B.f0,A.fS(A.aZ(l.a,o,o,o,k,o,o),1)],s),B.T,B.A,0)],s)
@@ -38186,25 +38185,25 @@ if(r!=null)p.push(new A.q3("Sanidade",r,B.bw,o))
 r=l.e
 if(r!=null)p.push(new A.q3("Conhecimento",r,B.fz,o))
 B.b.P(k,A.b([B.bB,A.auM(p,12,12)],s))}r=l.f
-if(r!=null){q=A.M(a).ok.y
+if(r!=null){q=A.N(a).ok.y
 B.b.P(k,A.b([B.i2,new A.k2(r,q==null?o:q.rb(14),!0,o)],s))}l=l.r
-if(l.length!==0){r=A.M(a).ok.w
+if(l.length!==0){r=A.N(a).ok.w
 s=A.b([B.bB,B.D6,B.i2,A.aZ("Habilidades do Monstro (uma vez no turno)",o,o,o,r==null?o:r.oM(B.bH,14,B.a7),o,o),B.cY],s)
 B.b.P(s,new A.a0(l,new A.a4N(a),A.R(l).i("a0<1,f>")))
 B.b.P(k,s)}return A.c2(o,A.co(k,B.Y,B.L,B.A),B.r,o,o,new A.bx(B.Cj,o,m,n,o,o,B.N),o,o,B.ek,B.jq,o,o,o)}}
 A.a4N.prototype={
-$1(a){var s=null,r=A.bW(8),q=A.ex(B.bH.bp(0.2),1),p=this.a,o=A.M(p).ok.x
+$1(a){var s=null,r=A.bW(8),q=A.ex(B.bH.bp(0.2),1),p=this.a,o=A.N(p).ok.x
 o=o==null?s:o.Px(B.a7)
 o=A.aZ(a.a,s,s,s,o,s,s)
-p=A.M(p).ok.z
+p=A.N(p).ok.z
 p=p==null?s:p.rb(13)
 return A.c2(s,A.co(A.b([o,B.N4,new A.k2(a.b,p,!0,s)],t.p),B.Y,B.L,B.A),B.r,s,s,new A.bx(B.fq,s,q,r,s,s,B.N),s,s,B.mS,B.DI,s,s,1/0)},
 $S:111}
 A.q3.prototype={
-N(a){var s,r=null,q=this.e,p=q.bp(0.1),o=A.bW(8),n=A.ex(q.bp(0.3),1),m=A.M(a).ok.r
+N(a){var s,r=null,q=this.e,p=q.bp(0.1),o=A.bW(8),n=A.ex(q.bp(0.3),1),m=A.N(a).ok.r
 m=m==null?r:m.Dh(q,B.a7)
 m=A.aZ(this.d,r,r,r,m,r,r)
-s=A.M(a).ok.z
+s=A.N(a).ok.z
 q=s==null?r:s.ku(q.bp(0.8),11)
 return A.c2(r,A.co(A.b([m,B.l8,A.aZ(this.c,r,r,r,q,r,r)],t.p),B.T,B.L,B.A),B.r,r,r,new A.bx(p,r,n,o,r,r,B.N),r,r,r,B.mV,r,r,r)}}
 A.JE.prototype={
@@ -38214,7 +38213,7 @@ return A.aoJ(A.es(s,B.T,B.A,0),null,B.bj)}}
 A.a6j.prototype={
 $1(a){var s,r,q,p=null,o=this.a,n=a.a,m=o.c===n
 n=A.aZ(""+n+"-"+a.b,p,p,p,p,p,p)
-s=m?B.k:B.aA
+s=m?B.k:B.az
 s=A.il(p,p,s,p,p,p,p,p,p,p,p,p,p,p,m?B.a7:B.o,p,p,!0,p,p,p,p,p,p,p,p)
 r=A.bW(20)
 q=m?B.a1:B.ba
@@ -38243,12 +38242,12 @@ r=r?A.b([new A.dz(2,B.dX,B.a1.bp(0.3),B.h,20)],p):A.b([],p)
 p=k.a
 o=p.e
 o=A.of(o,k.d?B.bH:B.a1,j,48)
-p=A.aZ(p.c,j,j,j,A.M(a).ok.e,B.ct,j)
-n=A.aZ(k.a.d,j,j,j,A.M(a).ok.z,B.ct,j)
+p=A.aZ(p.c,j,j,j,A.N(a).ok.e,B.ct,j)
+n=A.aZ(k.a.d,j,j,j,A.N(a).ok.z,B.ct,j)
 m=A.bW(8)
-l=A.M(a).ok.as
+l=A.N(a).ok.as
 p=A.co(A.b([o,B.bB,p,B.cY,n,B.yB,A.c2(j,A.aZ("Entrar",j,j,j,l==null?j:l.bF(B.k),j,j),B.r,j,j,new A.bx(B.a1,j,j,m,j,j,B.N),j,j,j,B.DP,j,j,j)],t.p),B.T,B.L,B.cT)
-return A.i5(A.lx(j,new A.vh(p,B.DR,new A.bx(j,j,q,s,r,new A.os(B.ci,B.zM,B.cu,h,j,j),B.N),j,g,B.ag,B.jc,B.aq,j,j),B.al,!1,j,j,j,j,j,j,j,j,j,j,j,j,i,j,j,j),B.bG,j,new A.aiR(k),new A.aiS(k),j)}}
+return A.i5(A.lx(j,new A.vh(p,B.DR,new A.bx(j,j,q,s,r,new A.os(B.ci,B.zM,B.cu,h,j,j),B.N),j,g,B.ag,B.jc,B.ap,j,j),B.al,!1,j,j,j,j,j,j,j,j,j,j,j,j,i,j,j,j),B.bG,j,new A.aiR(k),new A.aiS(k),j)}}
 A.aiR.prototype={
 $1(a){var s=this.a
 return s.aq(new A.aiQ(s))},
@@ -38286,7 +38285,7 @@ i=i?new A.aP(B.ba,1,B.v,-1):B.t
 s=o.a
 r=s.e
 s=s.c
-q=A.M(a).ok.r
+q=A.N(a).ok.r
 s=A.fS(A.aZ(s,n,n,n,q==null?n:q.adM(16,B.a7),n,n),1)
 q=o.f
 q===$&&A.a()
@@ -38767,7 +38766,7 @@ j.uf()
 return A.aoV()}k=j.x
 k===$&&A.a()
 return j.BV(new A.agC(o*r/1e6,k,a,b,B.c9))},
-I_(a){return this.jg(a,B.ay,null)},
+I_(a){return this.jg(a,B.ax,null)},
 afr(a){var s,r,q,p,o,n,m=this,l=$.az2(),k=a<0
 m.z=k?B.ie:B.aR
 s=k?m.a-0.01:m.b+0.01
@@ -39146,7 +39145,7 @@ A.Bu.prototype={
 aI(){var s,r,q,p=this
 p.aY()
 p.r=!1
-s=A.bG(null,B.aq,null,0,p)
+s=A.bG(null,B.ap,null,0,p)
 p.e=s
 r=t.v
 q=p.d
@@ -39273,7 +39272,7 @@ a4=a6.f
 a4===$&&A.a()
 a5=a1.d
 if(a5==null)a5=B.DO
-return A.i5(new A.o2(b0,a7,!1,a,a6.ga79(),a7,new A.i9(A.cy(!0,new A.eQ(new A.ac(a3,1/0,a2,1/0),new A.de(a4,!1,A.wp(new A.bn(a5,new A.fO(a1.ax,1,1,A.nO(A.Io(a1.c,d,a7),a7,a7,B.dN,!0,e,a7,a7,B.b7),a7),a7),new A.hH(a9,a7,a7,a7,a8),B.dh),a7),a7),!1,a7,a7,!1,!1,a7,a7,a7,a7,a7,a7,a7,a7,a7,a7,a7,a7,a7,a7,a7,a7,a7,a7,a7,a7,a7,a7,a7,a7,a7,a7),o,B.aE,!1,a7),a7),b,a7,a7,a7,a7)}}
+return A.i5(new A.o2(b0,a7,!1,a,a6.ga79(),a7,new A.i9(A.cy(!0,new A.eQ(new A.ac(a3,1/0,a2,1/0),new A.de(a4,!1,A.wp(new A.bn(a5,new A.fO(a1.ax,1,1,A.nO(A.Io(a1.c,d,a7),a7,a7,B.dN,!0,e,a7,a7,B.b7),a7),a7),new A.hH(a9,a7,a7,a7,a8),B.dh),a7),a7),!1,a7,a7,!1,!1,a7,a7,a7,a7,a7,a7,a7,a7,a7,a7,a7,a7,a7,a7,a7,a7,a7,a7,a7,a7,a7,a7,a7,a7,a7,a7),o,B.aD,!1,a7),a7),b,a7,a7,a7,a7)}}
 A.aea.prototype={
 $1(a){var s=a.t(0,B.C)
 return!s?B.cZ:B.bG},
@@ -39474,7 +39473,7 @@ A.NB.prototype={}
 A.NA.prototype={}
 A.Xe.prototype={
 pI(a){return B.J},
-w_(a,b,c,d){return B.ao},
+w_(a,b,c,d){return B.an},
 pH(a,b){return B.h}}
 A.TZ.prototype={}
 A.GP.prototype={
@@ -39488,7 +39487,7 @@ ar(){return new A.Bv()}}
 A.Bv.prototype={
 a6R(a){this.aq(new A.aei(this))},
 a6T(a){this.aq(new A.aej(this))},
-N(a){var s=this,r=null,q=s.a.f,p=A.aZ(q,r,B.aJ,r,B.z4.bF(s.d?A.lj(a).gil():B.fN.cp(a)),r,r)
+N(a){var s=this,r=null,q=s.a.f,p=A.aZ(q,r,B.aI,r,B.z4.bF(s.d?A.lj(a).gil():B.fN.cp(a)),r,r)
 q=s.d?A.lj(a).gd8():r
 return A.pu(A.i5(A.arw(B.ff,B.iI,p,q,B.CP,0,s.a.c,B.DV,0.7),B.bG,r,s.ga6Q(),s.ga6S(),r),r,1/0)}}
 A.aei.prototype={
@@ -40352,7 +40351,7 @@ p=q.f
 if(p==null){q=q.e
 q.toString
 q=A.arA(a,q)}else q=p
-s=A.aZ(q,r,B.aJ,r,B.PW.bF(this.a.d!=null?B.fN.cp(a):B.dg),r,r)
+s=A.aZ(q,r,B.aI,r,B.PW.bF(this.a.d!=null?B.fN.cp(a):B.dg),r,r)
 q=this.a.e
 switch(q==null?r:q.b){case B.fE:case B.fF:case B.fG:case B.fH:case B.mF:case B.j7:case B.j8:case B.fI:case B.ja:case null:case void 0:return s
 case B.j9:q=B.fN.cp(a)
@@ -40518,7 +40517,7 @@ A.mH.prototype={
 tr(a,b){var s=A.iJ.prototype.gu.call(this)
 s.toString
 return J.aqM(s)},
-k(a){return this.tr(0,B.aO)}}
+k(a){return this.tr(0,B.aN)}}
 A.qU.prototype={}
 A.Hx.prototype={}
 A.Hw.prototype={}
@@ -40642,7 +40641,7 @@ skj(a){return this.an$=a},
 slm(a){return this.a3$=a}}
 A.WC.prototype={
 $0(){var s=null,r=this.a
-return A.b([A.hX("The "+A.p(r).k(0)+" sending notification was",r,!0,B.bl,s,s,s,B.aO,!1,!0,!0,B.bI,s)],t.E)},
+return A.b([A.hX("The "+A.p(r).k(0)+" sending notification was",r,!0,B.bl,s,s,s,B.aN,!1,!0,!0,B.bI,s)],t.E)},
 $S:20}
 A.mP.prototype={
 Y(a){var s,r,q
@@ -40663,7 +40662,7 @@ J(){return"DiagnosticsTreeStyle."+this.b}}
 A.ahh.prototype={}
 A.db.prototype={
 tr(a,b){return this.l7(0)},
-k(a){return this.tr(0,B.aO)}}
+k(a){return this.tr(0,B.aN)}}
 A.iJ.prototype={
 gu(){this.a6e()
 return this.at},
@@ -40674,7 +40673,7 @@ A.a_.prototype={
 cT(){return"<optimized out>#"+A.bj(this)},
 tr(a,b){var s=this.cT()
 return s},
-k(a){return this.tr(0,B.aO)}}
+k(a){return this.tr(0,B.aN)}}
 A.XJ.prototype={
 cT(){return"<optimized out>#"+A.bj(this)}}
 A.hr.prototype={
@@ -40891,14 +40890,14 @@ return s}}
 A.yH.prototype={
 nG(a){return this.a.getUint8(this.b++)},
 yM(a){var s=this.b,r=$.dk()
-B.as.G8(this.a,s,r)},
-nH(a){var s=this.a,r=J.iz(B.as.gbS(s),s.byteOffset+this.b,a)
+B.ar.G8(this.a,s,r)},
+nH(a){var s=this.a,r=J.iz(B.ar.gbS(s),s.byteOffset+this.b,a)
 this.b+=a
 return r},
 yN(a){var s,r,q=this
 q.je(8)
 s=q.a
-r=J.an9(B.as.gbS(s),s.byteOffset+q.b,a)
+r=J.an9(B.ar.gbS(s),s.byteOffset+q.b,a)
 q.b=q.b+8*a
 return r},
 je(a){var s=this.b,r=B.i.bC(s,a)
@@ -41018,7 +41017,7 @@ r=s.d
 s=r==null?s.gc4():r}return s},
 acA(a){var s=this.aH$
 if(s.b===s.c&&this.c<=0)A.eM(this.ga1J())
-s.vG(A.atn(0,0,0,0,0,B.an,!1,0,a,B.h,1,1,0,0,0,0,0,0,B.z,0))},
+s.vG(A.atn(0,0,0,0,0,B.am,!1,0,a,B.h,1,1,0,0,0,0,0,0,B.z,0))},
 AF(){for(var s=this.aH$;!s.ga4(0);)this.Ec(s.tm())},
 Ec(a){this.gMa().fe()
 this.KD(a)},
@@ -41052,11 +41051,11 @@ if(r===$){$.FB()
 r=s.ac$=new A.aiO(A.q(t.S,t.GG),B.z,new A.A0(),s.ga3V(),s.ga4f(),B.Df)}return r}}
 A.a_U.prototype={
 $0(){var s=null
-return A.b([A.hX("Event",this.a,!0,B.bl,s,s,s,B.aO,!1,!0,!0,B.bI,s)],t.E)},
+return A.b([A.hX("Event",this.a,!0,B.bl,s,s,s,B.aN,!1,!0,!0,B.bI,s)],t.E)},
 $S:20}
 A.a_V.prototype={
 $0(){var s=null
-return A.b([A.hX("Event",this.a,!0,B.bl,s,s,s,B.aO,!1,!0,!0,B.bI,s),A.hX("Target",this.b.a,!0,B.bl,s,s,s,B.aO,!1,!0,!0,B.bI,s)],t.E)},
+return A.b([A.hX("Event",this.a,!0,B.bl,s,s,s,B.aN,!1,!0,!0,B.bI,s),A.hX("Target",this.b.a,!0,B.bl,s,s,s,B.aN,!1,!0,!0,B.bI,s)],t.E)},
 $S:20}
 A.x2.prototype={}
 A.a62.prototype={
@@ -41383,7 +41382,7 @@ J(){return"_ForceState."+this.b}}
 A.o6.prototype={}
 A.i_.prototype={
 ht(a){var s=this
-if(a.gte()<=1)s.a6(B.ar)
+if(a.gte()<=1)s.a6(B.aq)
 else{s.u1(a)
 if(s.dy===B.lB){s.dy=B.ig
 s.db=new A.dT(a.gcR(),a.gbl())}}},
@@ -41392,14 +41391,14 @@ if(t.g.b(a)||t.pY.b(a)){s=A.as7(a.gy9(),a.gte(),a.gSD())
 r.db=new A.dT(a.gcR(),a.gbl())
 r.dx=s
 if(r.dy===B.ig)if(s>0.4){r.dy=B.ih
-r.a6(B.bL)}else if(a.gmS().grt()>A.nd(a.gci(),r.b))r.a6(B.ar)
+r.a6(B.bL)}else if(a.gmS().grt()>A.nd(a.gci(),r.b))r.a6(B.aq)
 if(s>0.4&&r.dy===B.zs){r.dy=B.ih
 if(r.at!=null)r.co("onStart",new A.a_v(r,s))}}r.zf(a)},
 hW(a){var s=this,r=s.dy
 if(r===B.ig)r=s.dy=B.zs
 if(s.at!=null&&r===B.ih)s.co("onStart",new A.a_t(s))},
 rr(a){var s=this,r=s.dy,q=r===B.ih||r===B.Uc
-if(r===B.ig){s.a6(B.ar)
+if(r===B.ig){s.a6(B.aq)
 return}if(q&&s.ch!=null)if(s.ch!=null)s.co("onEnd",new A.a_u(s))
 s.dy=B.lB},
 hI(a){this.ix(a)
@@ -41504,11 +41503,11 @@ r.Z=s
 s.vJ(a.gj7(),a.gcR())}if(t.g.b(a)){s=r.Z
 s.toString
 s.vJ(a.gj7(),a.gcR())}}if(t.l.b(a)){if(r.k2)r.a_G(a)
-else r.a6(B.ar)
+else r.a6(B.aq)
 r.Bd()}else if(t.Ko.b(a)){r.Ir()
 r.Bd()}else if(t.pY.b(a)){r.k3=new A.dT(a.gcR(),a.gbl())
 r.k4=a.gdj()
-r.a_F(a)}else if(t.g.b(a))if(a.gdj()!==r.k4&&!r.k2){r.a6(B.ar)
+r.a_F(a)}else if(t.g.b(a))if(a.gdj()!==r.k4&&!r.k2){r.a6(B.aq)
 s=r.CW
 s.toString
 r.ix(s)}else if(r.k2)r.a_H(a)},
@@ -41549,7 +41548,7 @@ Bd(){var s=this
 s.k2=!1
 s.Z=s.k4=s.k3=null},
 a6(a){var s=this
-if(a===B.ar)if(s.k2)s.Bd()
+if(a===B.aq)if(s.k2)s.Bd()
 else s.Ir()
 s.Hj(a)},
 hW(a){}}
@@ -41754,7 +41753,7 @@ if(!s.fr||s.p1)s.Io(a)},
 hI(a){this.AM(a)},
 rr(a){var s,r=this
 switch(r.fy.a){case 0:break
-case 1:r.a6(B.ar)
+case 1:r.a6(B.aq)
 s=r.cy
 if(s!=null)r.co("onCancel",s)
 break
@@ -41766,7 +41765,7 @@ r.fy=B.ch},
 AM(a){var s,r=this
 r.ix(a)
 s=r.RG
-if(!B.b.D(s,a))r.yn(a,B.ar)
+if(!B.b.D(s,a))r.yn(a,B.aq)
 r.p3.D(0,a)
 if(r.rx===a)r.rx=s.length!==0?B.b.ga5(s):null},
 a6p(){var s,r=this
@@ -41934,7 +41933,7 @@ $.en.aO$.OC(r,m.guV(),o)}},
 a6v(a){var s,r=this,q=r.z,p=q.h(0,a.gb9())
 p.toString
 if(t.l.b(a)){s=r.y
-if(s==null){if(r.x==null)r.x=A.c9(B.aB,r.ga6w())
+if(s==null){if(r.x==null)r.x=A.c9(B.aA,r.ga6w())
 s=p.b
 $.en.p$.xm(s)
 p.ix(r.guV())
@@ -41958,7 +41957,7 @@ if(q!=null)r.qE(q)},
 qE(a){var s,r=this,q=r.z
 q.D(0,a.b)
 s=a.c
-s.a.oj(s.b,s.c,B.ar)
+s.a.oj(s.b,s.c,B.aq)
 a.ix(r.guV())
 s=r.y
 if(s!=null)if(a===s)r.mx()
@@ -42044,7 +42043,7 @@ co(a,b){return this.Rx(a,b,null,t.z)},
 ah_(a,b,c){return this.Rx(a,b,c,t.z)}}
 A.ys.prototype={
 ht(a){this.tV(a.gb9(),a.gbK())},
-p7(a){this.a6(B.ar)},
+p7(a){this.a6(B.aq)},
 hW(a){},
 hI(a){},
 a6(a){var s,r,q=this.f,p=A.Q(new A.b3(q,A.l(q).i("b3<2>")),t.Q)
@@ -42055,7 +42054,7 @@ yn(a,b){var s=this.f,r=s.h(0,a)
 if(r!=null){s.D(0,a)
 r.a.oj(r.b,r.c,b)}},
 l(){var s,r,q,p,o,n,m,l=this
-l.a6(B.ar)
+l.a6(B.aq)
 for(s=l.r,r=A.l(s),q=new A.fF(s,s.o0(),r.i("fF<1>")),r=r.c;q.q();){p=q.d
 if(p==null)p=r.a(p)
 o=$.en.aO$
@@ -42104,7 +42103,7 @@ r.toString
 r=p>r
 o=r}}if(t.g.b(a))r=s||o
 else r=!1
-if(r){n.a6(B.ar)
+if(r){n.a6(B.aq)
 r=n.CW
 r.toString
 n.ix(r)}else n.QY(a)}n.zf(a)},
@@ -42145,15 +42144,15 @@ s.k4=a}if(s.k4!=null)s.W9(a)},
 tV(a,b){this.W4(a,b)},
 QY(a){var s,r=this
 if(t.l.b(a)){r.ok=a
-r.Iv()}else if(t.Ko.b(a)){r.a6(B.ar)
+r.Iv()}else if(t.Ko.b(a)){r.a6(B.aq)
 if(r.k2){s=r.k4
 s.toString
-r.xg(a,s,"")}r.qG()}else if(a.gdj()!==r.k4.gdj()){r.a6(B.ar)
+r.xg(a,s,"")}r.qG()}else if(a.gdj()!==r.k4.gdj()){r.a6(B.aq)
 s=r.CW
 s.toString
 r.ix(s)}else if(t.g.b(a))r.R1(a)},
 a6(a){var s,r=this
-if(r.k3&&a===B.ar){s=r.k4
+if(r.k3&&a===B.aq){s=r.k4
 s.toString
 r.xg(null,s,"spontaneous")
 r.qG()}r.Hj(a)},
@@ -42258,7 +42257,7 @@ r=q.wV$
 if(a.gbl().S(0,r.b).gcm()>s){q.uk()
 q.rD$=q.rC$=null}}else if(t.l.b(a)){q.p0$=a
 if(q.kx$!=null){q.uk()
-if(q.n2$==null)q.n2$=A.c9(B.aB,q.ga0b())}}else if(t.Ko.b(a))q.vp()},
+if(q.n2$==null)q.n2$=A.c9(B.aA,q.ga0b())}}else if(t.Ko.b(a))q.vp()},
 hI(a){this.vp()},
 a5t(a){var s=this.rC$
 s.toString
@@ -42311,15 +42310,15 @@ r.u9(s)}s=r.p0$
 if(s!=null)r.Iu(s)},
 rr(a){var s,r=this
 switch(r.k2.a){case 0:r.Nd()
-r.a6(B.ar)
+r.a6(B.aq)
 break
-case 1:if(r.fr)if(r.fy){if(r.kx$!=null){if(!r.R8.D(0,a))r.yn(a,B.ar)
+case 1:if(r.fr)if(r.fy){if(r.kx$!=null){if(!r.R8.D(0,a))r.yn(a,B.aq)
 r.k2=B.dT
 s=r.kx$
 s.toString
 r.u9(s)
 r.Ip()}}else{r.Nd()
-r.a6(B.ar)}else{s=r.p0$
+r.a6(B.aq)}else{s=r.p0$
 if(s!=null)r.Iu(s)}break
 case 2:r.Ip()
 break}r.vm()
@@ -42401,7 +42400,7 @@ q=a.gcR()
 p=o.jE$
 if(o.cx!=null)o.co("onTapUp",new A.W0(o,new A.Af(r,q,s,p)))
 o.v7()
-if(!o.R8.D(0,a.gb9()))o.yn(a.gb9(),B.ar)},
+if(!o.R8.D(0,a.gb9()))o.yn(a.gb9(),B.aq)},
 a_C(a){var s,r,q,p=this
 if(p.cy!=null){s=a.gj7()
 r=p.k4
@@ -42439,7 +42438,7 @@ if(s!=null)r.co("onCancel",s)
 r.v6()
 r.v7()},
 C_(a){this.ix(a)
-if(!this.R8.D(0,a))this.yn(a,B.ar)},
+if(!this.R8.D(0,a))this.yn(a,B.aq)},
 v7(){this.fy=this.fx=!1
 this.go=null},
 v6(){return},
@@ -42628,7 +42627,7 @@ $S:0}
 A.pK.prototype={
 N(a){var s,r,q,p
 a.az(t.vH)
-s=A.M(a)
+s=A.N(a)
 r=this.c.$1(s.p2)
 if(r!=null)return r.$1(a)
 q=this.d.$1(a)
@@ -42722,9 +42721,9 @@ return b instanceof A.qe}}
 A.Mm.prototype={}
 A.FM.prototype={
 N(a){var s,r,q=this,p=q.c.length===0
-if(p)return B.ao
+if(p)return B.an
 s=J.FI(A.aA3(a,q.c))
-switch(A.M(a).w.a){case 2:p=q.e
+switch(A.N(a).w.a){case 2:p=q.e
 r=p.a
 p=p.b
 return A.aB0(r,p==null?r:p,s)
@@ -42752,13 +42751,13 @@ A.a20.prototype={
 $2(a,b){return new A.rr(a,b)},
 $S:476}
 A.a4t.prototype={
-ja(a){return A.M(a).w},
+ja(a){return A.N(a).w},
 w3(a,b,c){switch(A.ba(c.a).a){case 0:return b
-case 1:switch(A.M(a).w.a){case 3:case 4:case 5:return new A.KO(b,c.b,null)
+case 1:switch(A.N(a).w.a){case 3:case 4:case 5:return new A.KO(b,c.b,null)
 case 0:case 1:case 2:return b}break}},
-w0(a,b,c){A.M(a)
-switch(A.M(a).w.a){case 2:case 3:case 4:case 5:return b
-case 0:switch(0){case 0:return new A.A3(c.a,c.d,b,null)}case 1:break}return A.asc(c.a,b,A.M(a).ax.y)}}
+w0(a,b,c){A.N(a)
+switch(A.N(a).w.a){case 2:case 3:case 4:case 5:return b
+case 0:switch(0){case 0:return new A.A3(c.a,c.d,b,null)}case 1:break}return A.asc(c.a,b,A.N(a).ax.y)}}
 A.Cl.prototype={
 aI(){this.aY()
 this.d=A.asV()},
@@ -42791,10 +42790,10 @@ m=n.b
 if(m==null)m=s.b.bo(0.4)
 l=n.a
 if(l==null)l=s.b
-k=b==null?B.ao:b
+k=b==null?B.an:b
 j.a.toString
 s=A.Xz(k,l,i,i,m)
-k=A.aqW(new A.ze(s,i),B.ay,o,B.aq)
+k=A.aqW(new A.ze(s,i),B.ax,o,B.ap)
 return k},
 a_l(a){var s,r,q=this,p=null,o=q.a,n=o.db
 n=n.dx
@@ -42861,7 +42860,7 @@ default:q=s}if(q!==s)p.aq(new A.acW())}},
 Mb(a,b,c,d){var s=t._,r=A.ch(b,a,s)
 s=r==null?A.ch(c,a,s):r
 return s==null?A.ch(d,a,t.G):s},
-N(c1){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3=this,b4=null,b5=A.M(c1),b6=A.ao1(c1),b7=A.ar0(c1),b8=new A.MF(c1,b4,b4,0,3,b4,b4,b4,b4,b4,b4,16,b4,64,b4,b4,b4,b4),b9=c1.kC(t.Np),c0=A.IZ(c1,b4,t.X)
+N(c1){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3=this,b4=null,b5=A.N(c1),b6=A.ao1(c1),b7=A.ar0(c1),b8=new A.MF(c1,b4,b4,0,3,b4,b4,b4,b4,b4,b4,16,b4,64,b4,b4,b4,b4),b9=c1.kC(t.Np),c0=A.IZ(c1,b4,t.X)
 c1.az(t.KL)
 s=A.ax(t.EK)
 r=b3.e
@@ -42880,7 +42879,7 @@ if(n==null)n=56
 m=b3.Mb(s,b4,b7.gcN(),b8.gcN())
 b3.a.toString
 l=b7.gcN()
-k=A.M(c1).ax
+k=A.N(c1).ax
 j=k.p4
 i=b3.Mb(s,b4,l,j==null?k.k2:j)
 h=s.t(0,B.lv)?i:m
@@ -42932,9 +42931,9 @@ a5=new A.MI(a4,b4)
 a6=b5.w
 $label0$0:{s=b4
 if(B.af===a6||B.bt===a6||B.be===a6||B.bf===a6){s=!0
-break $label0$0}if(B.G===a6||B.aI===a6)break $label0$0}a4=A.cy(b4,a5,!1,b4,b4,!1,!1,b4,b4,!0,b4,b4,b4,b4,b4,b4,s,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4)
+break $label0$0}if(B.G===a6||B.aH===a6)break $label0$0}a4=A.cy(b4,a5,!1,b4,b4,!1,!1,b4,b4,!0,b4,b4,b4,b4,b4,b4,s,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4)
 a0.toString
-a4=A.aDb(A.nO(a4,b4,b4,B.aJ,!1,a0,b4,b4,B.b7),1.34)
+a4=A.aDb(A.nO(a4,b4,b4,B.aI,!1,a0,b4,b4,B.b7),1.34)
 if(r===!0){s=d.a
 a7=new A.Hr(b4,b4,b4,B.E_,b4,b4,b4,b4,A.xk(b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,s==null?24:s,b4,b4,b4,b4,b4,b4),b4)}else a7=b4
 if(a7!=null){if(b.j(0,b8.gkn()))a8=b6
@@ -42960,7 +42959,7 @@ q=r.aH
 r=q==null?r.b:q}b3.a.toString
 q=b7.r
 if(q==null)q=b4
-return A.cy(b4,A.aAa(A.oz(!1,B.aq,!0,b4,A.cy(b4,new A.fO(B.zL,b4,b4,b0,b4),!1,b4,b4,!1,!0,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4),B.r,h,e,b4,s,q,r,b4,B.cU),b2,t.lu),!0,b4,b4,!1,!1,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4)}}
+return A.cy(b4,A.aAa(A.oz(!1,B.ap,!0,b4,A.cy(b4,new A.fO(B.zL,b4,b4,b0,b4),!1,b4,b4,!1,!0,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4),B.r,h,e,b4,s,q,r,b4,B.cU),b2,t.lu),!0,b4,b4,!1,!1,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4,b4)}}
 A.acW.prototype={
 $0(){},
 $S:0}
@@ -42985,7 +42984,7 @@ s.fy=r.a(A.z.prototype.ga8.call(s)).b2(s.C$.gn())
 s.CB()}}
 A.MF.prototype={
 gNo(){var s,r=this,q=r.cx
-if(q===$){s=A.M(r.CW)
+if(q===$){s=A.N(r.CW)
 r.cx!==$&&A.aC()
 r.cx=s
 q=s}return q},
@@ -43093,7 +43092,7 @@ s.toString
 return s}s=o.f
 if(s==null||o.r==null){s=A.lV(o.a,o.b,a)
 s.toString
-return s}s=A.N(s,o.r,a)
+return s}s=A.O(s,o.r,a)
 s.toString
 r=Math.cos(s)
 q=o.e
@@ -43354,7 +43353,7 @@ if(s!=null){s.M$=$.am()
 s.H$=0}s=r.d
 if(s!=null)s.l()
 r.Ys()},
-N(c8){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8=this,b9=null,c0=A.M(c8),c1=A.a0U(c8),c2=b8.a,c3=c2.r,c4=c2.Tf(c8),c5=b8.a.wt(c8),c6=new A.adO(c3,c4,c5),c7=new A.adP(b8,c6)
+N(c8){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8=this,b9=null,c0=A.N(c8),c1=A.a0U(c8),c2=b8.a,c3=c2.r,c4=c2.Tf(c8),c5=b8.a.wt(c8),c6=new A.adO(c3,c4,c5),c7=new A.adP(b8,c6)
 c2=t.PM
 s=c7.$1$1(new A.adp(),c2)
 r=c7.$1$1(new A.adq(),t.p8)
@@ -43422,7 +43421,7 @@ b4=b1.d
 b5=b1.e
 b6=b1.x
 b1=b1.f
-b2=A.aqW(A.ao7(!1,b9,b3!=null,b2,e.iG(f),a,b6,B.D,b9,new A.PJ(new A.adE(c6)),b1,b5,b4,b3,b9,b9,new A.bL(new A.adF(c6),t.b),b9,a2,b8.gcr()),B.ay,q,b)
+b2=A.aqW(A.ao7(!1,b9,b3!=null,b2,e.iG(f),a,b6,B.D,b9,new A.PJ(new A.adE(c6)),b1,b5,b4,b3,b9,b9,new A.bL(new A.adF(c6),t.b),b9,a2,b8.gcr()),B.ax,q,b)
 q=b8.a
 b1=q.at
 if(b1!=null)b2=A.auw(b2,b1)
@@ -43577,7 +43576,7 @@ bg(a){var s=this.C$
 if(s!=null)return Math.max(s.ap(B.b0,a,s.gbY()),this.A.b)
 return 0},
 bd(a){var s=this.C$
-if(s!=null)return Math.max(s.ap(B.aL,a,s.gbE()),this.A.a)
+if(s!=null)return Math.max(s.ap(B.aK,a,s.gbE()),this.A.a)
 return 0},
 bc(a){var s=this.C$
 if(s!=null)return Math.max(s.ap(B.bh,a,s.gc1()),this.A.b)
@@ -43771,9 +43770,9 @@ abF(a,b,c){if(!b||c==null)return a
 return A.auw(a,c)},
 a__(a,b,c,d){this.a.toString
 return null},
-N(d2){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,c0,c1,c2,c3,c4,c5,c6,c7,c8,c9=this,d0=null,d1=A.M(d2)
+N(d2){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,c0,c1,c2,c3,c4,c5,c6,c7,c8,c9=this,d0=null,d1=A.N(d2)
 d2.az(t.aL)
-s=A.M(d2).y1
+s=A.N(d2).y1
 r=s.CW
 if(r==null)r=d1.ax.a
 q=c9.a
@@ -43818,7 +43817,7 @@ a=d.r
 if(a==null)a=14
 g=A.c3(d2,B.bE)
 g=g==null?d0:g.gcq()
-A.nU(B.fR,B.dj,A.D((g==null?B.aM:g).aD(a)/14-1,0,1)).toString
+A.nU(B.fR,B.dj,A.D((g==null?B.aL:g).aD(a)/14-1,0,1)).toString
 c9.a.toString
 a0=s.Q
 if(a0==null)a0=p.gpf()
@@ -44009,13 +44008,13 @@ p=p.r.gbi()
 s=this.c3$
 r=s.h(0,B.aS)
 r.toString
-r=r.ap(B.aL,a,r.gbE())
+r=r.ap(B.aK,a,r.gbE())
 q=s.h(0,B.b8)
 q.toString
-q=q.ap(B.aL,a,q.gbE())
+q=q.ap(B.aK,a,q.gbE())
 s=s.h(0,B.bS)
 s.toString
-return o+p+r+q+s.ap(B.aL,a,s.gbE())},
+return o+p+r+q+s.ap(B.aK,a,s.gbE())},
 bg(a){var s,r,q=this.a3,p=q.e,o=p.gaS()
 p=p.gaT()
 q=q.r
@@ -44390,11 +44389,11 @@ $S:9}
 A.adV.prototype={}
 A.adU.prototype={
 gle(){var s,r=this,q=r.fy
-if(q===$){s=A.M(r.fr)
+if(q===$){s=A.N(r.fr)
 r.fy!==$&&A.aC()
 q=r.fy=s.ax}return q},
 gfY(){var s,r,q,p=this,o=p.go
-if(o===$){s=A.M(p.fr)
+if(o===$){s=A.N(p.fr)
 p.go!==$&&A.aC()
 o=p.go=s.ok}s=o.as
 if(s==null)s=null
@@ -44426,7 +44425,7 @@ gpf(){var s=this.gfY(),r=s==null?null:s.r
 if(r==null)r=14
 s=A.c3(this.fr,B.bE)
 s=s==null?null:s.gcq()
-s=A.nU(B.fR,B.dj,A.D((s==null?B.aM:s).aD(r)/14-1,0,1))
+s=A.nU(B.fR,B.dj,A.D((s==null?B.aL:s).aD(r)/14-1,0,1))
 s.toString
 return s}}
 A.EY.prototype={
@@ -44836,15 +44835,15 @@ A.NQ.prototype={}
 A.O0.prototype={}
 A.XI.prototype={
 pI(a){return B.J},
-w_(a,b,c,d){return B.ao},
+w_(a,b,c,d){return B.an},
 pH(a,b){return B.h}}
 A.U_.prototype={}
 A.Ha.prototype={
 N(a){var s=null,r=A.bC(a,B.bu,t.w).w.r.b+8
-return new A.bn(new A.ao(8,r,8,8),new A.jQ(new A.Hb(this.c.S(0,new A.h(8,r))),A.pu(A.oz(!1,B.aq,!0,B.A5,A.co(this.d,B.T,B.L,B.cT),B.bX,s,1,s,s,s,s,s,B.eJ),s,222),s),s)}}
+return new A.bn(new A.ao(8,r,8,8),new A.jQ(new A.Hb(this.c.S(0,new A.h(8,r))),A.pu(A.oz(!1,B.ap,!0,B.A5,A.co(this.d,B.T,B.L,B.cT),B.bX,s,1,s,s,s,s,s,B.eJ),s,222),s),s)}}
 A.qN.prototype={
 N(a){var s=null
-return A.pu(A.ab3(!1,this.d,s,s,s,s,s,s,this.c,s,A.LC(B.ff,s,s,s,s,B.bd,s,s,B.bd,A.M(a).ax.a===B.a3?B.k:B.O,s,B.MT,B.DN,s,B.hF,s,s,s,s,s)),s,1/0)}}
+return A.pu(A.ab3(!1,this.d,s,s,s,s,s,s,this.c,s,A.LC(B.ff,s,s,s,s,B.bd,s,s,B.bd,A.N(a).ax.a===B.a3?B.k:B.O,s,B.MT,B.DN,s,B.hF,s,s,s,s,s)),s,1/0)}}
 A.wu.prototype={
 gv(a){var s=this
 return A.bi([s.a,s.b,s.c,s.d,s.e,s.f,s.y,s.r,s.w,s.x,s.z,s.Q,s.as,s.at])},
@@ -44858,7 +44857,7 @@ return s}}
 A.O2.prototype={}
 A.wx.prototype={
 N(a){var s,r,q,p,o,n,m,l=null
-A.M(a)
+A.N(a)
 s=A.arO(a)
 r=A.auU(a)
 q=this.c
@@ -44878,7 +44877,7 @@ m=q}q=s.f
 if(q==null)q=r.f
 return A.pu(A.fh(A.c2(l,l,B.r,l,l,new A.bx(l,l,new A.d8(B.t,B.t,A.aBq(a,this.w,o),B.t),q,l,l,B.N),l,o,new A.dc(n,0,m,0),l,l,l,l),l,l),p,l)}}
 A.aeW.prototype={
-gcH(){var s=A.M(this.r).ax,r=s.to
+gcH(){var s=A.N(this.r).ax,r=s.to
 if(r==null){r=s.p
 s=r==null?s.k3:r}else s=r
 return s}}
@@ -44946,14 +44945,14 @@ A.adW.prototype={
 J(){return"_ChipVariant."+this.b}}
 A.HB.prototype={
 N(a){var s,r,q=this,p=null
-A.M(a)
+A.N(a)
 s=q.r
-A.M(a)
+A.N(a)
 r=B.Ey
 return new A.yF(new A.afa(a,!0,s,B.cx,p,p,p,p,p,p,p,p,p,!0,p,p,p,p,B.xG,p,p,p,p,p,p,p,p),p,q.d,q.e,p,r,p,p,p,q.w,p,s,!0,p,q.ax,p,p,q.CW,B.r,p,!1,p,q.dy,p,p,p,p,p,p,p,p,p,q.k4,B.iO,p,p,p,p,p)}}
 A.afa.prototype={
 gdI(){var s,r=this,q=r.id
-if(q===$){s=A.M(r.fr)
+if(q===$){s=A.N(r.fr)
 r.id!==$&&A.aC()
 q=r.id=s.ax}return q},
 gdf(){if(this.go===B.cx)var s=0
@@ -44961,7 +44960,7 @@ else s=this.fx?1:0
 return s},
 gtd(){return 1},
 gfY(){var s,r,q,p=this,o=p.k1
-if(o===$){s=A.M(p.fr)
+if(o===$){s=A.N(p.fr)
 p.k1!==$&&A.aC()
 o=p.k1=s.ok}s=o.as
 if(s==null)s=null
@@ -45009,7 +45008,7 @@ gpf(){var s=this.gfY(),r=s==null?null:s.r
 if(r==null)r=14
 s=A.c3(this.fr,B.bE)
 s=s==null?null:s.gcq()
-s=A.nU(B.fR,B.dj,A.D((s==null?B.aM:s).aD(r)/14-1,0,1))
+s=A.nU(B.fR,B.dj,A.D((s==null?B.aL:s).aD(r)/14-1,0,1))
 s.toString
 return s}}
 A.afb.prototype={
@@ -45080,7 +45079,7 @@ A.agf.prototype={
 J(){return"_IconButtonVariant."+this.b}}
 A.xi.prototype={
 N(a){var s,r,q,p,o,n=this,m=null
-A.M(a)
+A.N(a)
 s=n.dy
 r=s==null
 q=r?m:new A.H(s.a,s.c)
@@ -45119,13 +45118,13 @@ s.H$=0
 this.aK()}}
 A.P2.prototype={
 wt(a){var s,r=null
-switch(this.ch.a){case 1:s=new A.Ou(a,this.CW,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.aq,!0,B.ag,r,r,r)
+switch(this.ch.a){case 1:s=new A.Ou(a,this.CW,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.ap,!0,B.ag,r,r,r)
 break
-case 2:s=new A.Ov(a,this.CW,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.aq,!0,B.ag,r,r,r)
+case 2:s=new A.Ov(a,this.CW,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.ap,!0,B.ag,r,r,r)
 break
-case 3:s=new A.Q1(a,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.aq,!0,B.ag,r,r,r)
+case 3:s=new A.Q1(a,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.ap,!0,B.ag,r,r,r)
 break
-case 0:s=new A.P1(a,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.aq,!0,B.ag,r,r,r)
+case 0:s=new A.P1(a,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,B.ap,!0,B.ag,r,r,r)
 break
 default:s=r}return s},
 Tf(a){var s,r,q=null,p=A.a0U(a),o=p.a,n=p.f
@@ -45140,7 +45139,7 @@ o=o==null?q:o.b5(r)
 return o==null?r:o}}
 A.P1.prototype={
 gaV(){var s,r=this,q=r.id
-if(q===$){s=A.M(r.fy)
+if(q===$){s=A.N(r.fy)
 r.id!==$&&A.aC()
 q=r.id=s.ax}return q},
 gcN(){return B.TL},
@@ -45157,8 +45156,8 @@ gdR(){return null},
 gdv(){return B.f8},
 gh1(){return new A.bL(new A.agd(),t.B_)},
 ghd(){return B.f5},
-gh8(){return A.M(this.fy).f},
-gfF(){return A.M(this.fy).y}}
+gh8(){return A.N(this.fy).f},
+gfF(){return A.N(this.fy).y}}
 A.agc.prototype={
 $1(a){var s,r
 if(a.t(0,B.C)){s=this.a.gaV().k3
@@ -45188,7 +45187,7 @@ return B.cZ},
 $S:47}
 A.Ou.prototype={
 gaV(){var s,r=this,q=r.id
-if(q===$){s=A.M(r.fy)
+if(q===$){s=A.N(r.fy)
 r.id!==$&&A.aC()
 q=r.id=s.ax}return q},
 gcN(){return new A.bL(new A.af2(this),t.b)},
@@ -45205,8 +45204,8 @@ gdR(){return null},
 gdv(){return B.f8},
 gh1(){return new A.bL(new A.af4(),t.B_)},
 ghd(){return B.f5},
-gh8(){return A.M(this.fy).f},
-gfF(){return A.M(this.fy).y}}
+gh8(){return A.N(this.fy).f},
+gfF(){return A.N(this.fy).y}}
 A.af2.prototype={
 $1(a){var s,r
 if(a.t(0,B.C)){s=this.a.gaV().k3
@@ -45242,7 +45241,7 @@ return B.cZ},
 $S:47}
 A.Ov.prototype={
 gaV(){var s,r=this,q=r.id
-if(q===$){s=A.M(r.fy)
+if(q===$){s=A.N(r.fy)
 r.id!==$&&A.aC()
 q=r.id=s.ax}return q},
 gcN(){return new A.bL(new A.af6(this),t.b)},
@@ -45259,8 +45258,8 @@ gdR(){return null},
 gdv(){return B.f8},
 gh1(){return new A.bL(new A.af8(),t.B_)},
 ghd(){return B.f5},
-gh8(){return A.M(this.fy).f},
-gfF(){return A.M(this.fy).y}}
+gh8(){return A.N(this.fy).f},
+gfF(){return A.N(this.fy).y}}
 A.af6.prototype={
 $1(a){var s,r
 if(a.t(0,B.C)){s=this.a.gaV().k3
@@ -45323,7 +45322,7 @@ return B.cZ},
 $S:47}
 A.Q1.prototype={
 gaV(){var s,r=this,q=r.id
-if(q===$){s=A.M(r.fy)
+if(q===$){s=A.N(r.fy)
 r.id!==$&&A.aC()
 q=r.id=s.ax}return q},
 gcN(){return new A.bL(new A.ahj(this),t.b)},
@@ -45340,8 +45339,8 @@ gdR(){return new A.bL(new A.ahn(this),t.jY)},
 gdv(){return B.f8},
 gh1(){return new A.bL(new A.ahl(),t.B_)},
 ghd(){return B.f5},
-gh8(){return A.M(this.fy).f},
-gfF(){return A.M(this.fy).y}}
+gh8(){return A.N(this.fy).f},
+gfF(){return A.N(this.fy).y}}
 A.ahj.prototype={
 $1(a){var s,r
 if(a.t(0,B.C)){if(a.t(0,B.ak)){s=this.a.gaV().k3
@@ -45566,7 +45565,7 @@ s.bP()
 s=this.db
 s===$&&A.a()
 s.z=B.aR
-s.jg(1,B.ay,B.mQ)},
+s.jg(1,B.ax,B.mQ)},
 b_(){var s,r=this,q=r.cx
 q===$&&A.a()
 q.fe()
@@ -45578,7 +45577,7 @@ q===$&&A.a()
 q.su(s)
 if(s<1){q=r.db
 q.z=B.aR
-q.jg(1,B.ay,B.ej)}},
+q.jg(1,B.ax,B.ej)}},
 a5H(a){if(a===B.ab)this.l()},
 l(){var s=this,r=s.ch
 r===$&&A.a()
@@ -45630,7 +45629,7 @@ m.CW=r
 p=t.Y
 o=t.v
 m.ch=new A.aJ(o.a(r),new A.at(0,l,p),p.i("aJ<ap.T>"))
-s=A.bG(n,B.aq,n,n,s)
+s=A.bG(n,B.ap,n,n,s)
 s.bf()
 s.ce$.E(0,q)
 s.bf()
@@ -45792,7 +45791,7 @@ r.aK()},
 gty(){if(!this.gagI()){var s=this.d
 s=s!=null&&s.a!==0}else s=!0
 return s},
-TS(a){switch(a.a){case 0:return B.aq
+TS(a){switch(a.a){case 0:return B.ap
 case 1:case 2:this.a.toString
 return B.Dm}},
 FI(a,b,c){var s,r,q,p,o,n,m,l,k,j,i,h=this,g=null,f=h.r,e=f.h(0,a),d=a.a
@@ -45810,15 +45809,15 @@ q=s.a.$1(q)
 r=q}if(r==null){switch(d){case 0:s=h.a.fr
 if(s==null){s=h.c
 s.toString
-s=A.M(s).cx}break
+s=A.N(s).cx}break
 case 2:s=h.a.dx
 if(s==null){s=h.c
 s.toString
-s=A.M(s).CW}break
+s=A.N(s).CW}break
 case 1:s=h.a.dy
 if(s==null){s=h.c
 s.toString
-s=A.M(s).db}break
+s=A.N(s).db}break
 default:s=g}r=s}s=h.c.gV()
 s.toString
 t.x.a(s)
@@ -45887,7 +45886,7 @@ p=q.a.$1(p)
 q=p}o=q==null?k.a.fy:q
 if(o==null){q=k.c
 q.toString
-o=A.M(q).id}q=k.a
+o=A.N(q).id}q=k.a
 n=q.ch?q.p2.$1(s):null
 q=k.a
 m=q.cy
@@ -45896,7 +45895,7 @@ j.a=null
 q=q.go
 if(q==null){q=k.c
 q.toString
-q=A.M(q).y}p=k.a
+q=A.N(q).y}p=k.a
 return j.a=q.PK(m,o,p.ch,i,l,new A.agi(j,k),r,p.cx,n,s,k.c.az(t.I).w)},
 afK(a){if(this.c==null)return
 this.aq(new A.agl(this))},
@@ -46013,7 +46012,7 @@ break $label0$0}if(B.ht===s){q=!0
 break $label0$0}q=null}return q},
 N(a1){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a=this,a0=null
 a.zj(a1)
-s=A.M(a1)
+s=A.N(a1)
 r=a.gcr().a.f0(B.LX)
 q=t.EK
 p=A.dS(r,q)
@@ -46031,7 +46030,7 @@ if(p==null)p=a0
 else{o=a.gcr().a
 o=p.a.$1(o)
 p=o}if(p==null)p=a.a.fy
-q.scH(p==null?A.M(a1).id:p)}q=a.a.ay
+q.scH(p==null?A.N(a1).id:p)}q=a.a.ay
 if(q==null)q=B.V9
 l=A.ch(q,a.gcr().a,t.Pb)
 k=a.w
@@ -46054,7 +46053,7 @@ e=a.hq(o)?a.gagd():a0
 d=a.hq(o)?a.gagf():a0
 c=a.hq(o)?a.gag9():a0
 b=a.hq(o)?a.gagb():a0
-return new A.CK(a,A.qf(k,A.qX(!1,p,A.i5(A.aBf(A.cy(a0,A.lx(B.aE,o.c,B.al,!0,a0,a0,a0,a0,a0,a0,a0,a0,c,b,e,d,g,f,i,h),!1,a0,a0,!1,!1,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,m,a0,a0,a0,a0,a0,a0,a0),l),l,a0,a.gafV(),a.gafX(),a0),a0,a0,a0,q,!0,a0,a.gafL(),a0,a0,a0,a0)),a0)},
+return new A.CK(a,A.qf(k,A.qX(!1,p,A.i5(A.aBf(A.cy(a0,A.lx(B.aD,o.c,B.al,!0,a0,a0,a0,a0,a0,a0,a0,a0,c,b,e,d,g,f,i,h),!1,a0,a0,!1,!1,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,m,a0,a0,a0,a0,a0,a0,a0),l),l,a0,a.gafV(),a.gafX(),a0),a0,a0,a0,q,!0,a0,a.gafL(),a0,a0,a0,a0)),a0)},
 $iapd:1}
 A.agn.prototype={
 $1(a){return a!=null},
@@ -46136,7 +46135,7 @@ r=A.hT(this.b,a.b,b)
 r.toString
 return new A.im(r,s)}return this.u6(a,b)},
 xZ(a,b,c,d,e,f){var s,r,q,p,o,n=this.a,m=n.c
-if(m===B.at)return
+if(m===B.as)return
 s=this.b
 r=s.c
 q=!r.j(0,B.y)||!s.d.j(0,B.y)
@@ -46185,7 +46184,7 @@ a7=a7.b/2
 s=a9.c5(-a7)
 if(b4==null||b2<=0||b3===0)b0.a.dZ(s,a8)
 else{r=this.b
-q=A.N(0,b2+r*2,b3)
+q=A.O(0,b2+r*2,b3)
 q.toString
 switch(b5.a){case 0:r=b4+r-q
 break
@@ -46279,7 +46278,7 @@ r.d=s
 r.f=A.cu(B.ah,s,new A.lr(B.ah))
 s=r.a.c
 r.r=new A.Cc(s,s)
-r.w=A.cu(B.ay,r.e,q)
+r.w=A.cu(B.ax,r.e,q)
 s=r.a.r
 r.x=new A.dN(A.as(0,s.B()>>>16&255,s.B()>>>8&255,s.B()&255),r.a.r)},
 l(){var s=this,r=s.d
@@ -46365,7 +46364,7 @@ r=s.e
 r.toString
 q=s.f
 p=s.c
-p=A.aZ(r,s.r,B.aJ,o,q,p,o)
+p=A.aZ(r,s.r,B.aI,o,q,p,o)
 return A.cy(o,new A.de(new A.aJ(m,new A.at(1,0,n),n.i("aJ<ap.T>")),!1,p,o),!0,o,o,!1,!1,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o,o)},
 qb(){var s=this.a
 return new A.e5(new A.ag6(this,s.w,s.x),null)},
@@ -46374,16 +46373,16 @@ p===$&&A.a()
 if(p.gaN()===B.H){q.f=null
 if(q.guG())return q.e=q.ue()
 else{q.e=null
-return B.ao}}if(p.gaN()===B.ab){q.e=null
+return B.an}}if(p.gaN()===B.ab){q.e=null
 if(q.glj())return q.f=q.qb()
 else{q.f=null
-return B.ao}}s=q.e
+return B.an}}s=q.e
 if(s==null&&q.glj())return q.qb()
 r=q.f
 if(r==null&&q.guG())return q.ue()
 if(q.glj()){r=t.Y
 return A.tm(B.fe,A.b([new A.de(new A.aJ(p,new A.at(1,0,r),r.i("aJ<ap.T>")),!1,s,null),q.qb()],t.p),B.a0,B.dM)}if(q.guG())return A.tm(B.fe,A.b([q.ue(),new A.de(p,!1,r,null)],t.p),B.a0,B.dM)
-return B.ao}}
+return B.an}}
 A.ag7.prototype={
 $0(){},
 $S:0}
@@ -46399,7 +46398,7 @@ p.toString
 s=s.a
 o=s.y
 n=s.c
-n=A.aZ(p,s.z,B.aJ,m,o,n,m)
+n=A.aZ(p,s.z,B.aI,m,o,n,m)
 return A.cy(m,new A.de(r,!1,A.as8(n,!0,q),m),!0,m,m,!1,!1,m,m,m,m,m,m,l!==!0,m,m,m,m,m,m,m,m,m,m,m,m,m,m,m,m,m,m,m)},
 $S:221}
 A.x1.prototype={
@@ -46424,13 +46423,13 @@ return A.J(s.a,s.c,s.d,s.e,s.f,s.r,!1,s.x,s.y,s.z,s.Q,!0,s.at,s.ax,s.ay,s.ch,s.C
 A.aid.prototype={}
 A.CZ.prototype={
 gi0(){var s,r=this.c3$,q=r.h(0,B.bD),p=A.b([],t.Ik)
-if(r.h(0,B.av)!=null){s=r.h(0,B.av)
+if(r.h(0,B.au)!=null){s=r.h(0,B.au)
 s.toString
-p.push(s)}if(r.h(0,B.aK)!=null){s=r.h(0,B.aK)
+p.push(s)}if(r.h(0,B.aJ)!=null){s=r.h(0,B.aJ)
 s.toString
 p.push(s)}if(r.h(0,B.a2)!=null){s=r.h(0,B.a2)
 s.toString
-p.push(s)}if(r.h(0,B.aD)!=null){s=r.h(0,B.aD)
+p.push(s)}if(r.h(0,B.aC)!=null){s=r.h(0,B.aC)
 s.toString
 p.push(s)}if(r.h(0,B.aU)!=null){s=r.h(0,B.aU)
 s.toString
@@ -46463,7 +46462,7 @@ sDV(a){return},
 gB9(){var s=this.p.f.gnd()
 return s},
 eM(a){var s,r=this.c3$
-if(r.h(0,B.av)!=null){s=r.h(0,B.av)
+if(r.h(0,B.au)!=null){s=r.h(0,B.au)
 s.toString
 a.$1(s)}if(r.h(0,B.aU)!=null){s=r.h(0,B.aU)
 s.toString
@@ -46475,9 +46474,9 @@ a.$1(s)}if(r.h(0,B.aT)!=null)if(this.Z){s=r.h(0,B.aT)
 s.toString
 a.$1(s)}else if(r.h(0,B.a4)==null){s=r.h(0,B.aT)
 s.toString
-a.$1(s)}if(r.h(0,B.aK)!=null){s=r.h(0,B.aK)
+a.$1(s)}if(r.h(0,B.aJ)!=null){s=r.h(0,B.aJ)
 s.toString
-a.$1(s)}if(r.h(0,B.aD)!=null){s=r.h(0,B.aD)
+a.$1(s)}if(r.h(0,B.aC)!=null){s=r.h(0,B.aC)
 s.toString
 a.$1(s)}if(r.h(0,B.aV)!=null){s=r.h(0,B.aV)
 s.toString
@@ -46512,9 +46511,9 @@ l=i?4:8
 k=Math.max(s.b,o)
 i=i?4:8
 return new A.R0(j+n,m+l,k+i)},
-Ba(d2,d3,d4){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,c0,c1,c2=this,c3=d2.b,c4=d2.d,c5=new A.ac(0,c3,0,c4),c6=c2.c3$,c7=c6.h(0,B.av),c8=c7==null?0:d4.$2(c7,c5).a,c9=c5.mR(new A.ao(c8,0,0,0)),d0=c9.mR(new A.ao(c2.p.a.gbi(),0,0,0)),d1=c2.a0a(d0,d3,d4)
+Ba(d2,d3,d4){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,c0,c1,c2=this,c3=d2.b,c4=d2.d,c5=new A.ac(0,c3,0,c4),c6=c2.c3$,c7=c6.h(0,B.au),c8=c7==null?0:d4.$2(c7,c5).a,c9=c5.mR(new A.ao(c8,0,0,0)),d0=c9.mR(new A.ao(c2.p.a.gbi(),0,0,0)),d1=c2.a0a(d0,d3,d4)
 c7=c6.h(0,B.a2)
-s=c6.h(0,B.aD)
+s=c6.h(0,B.aC)
 r=c7==null
 q=r?B.J:d4.$2(c7,c9)
 c7=s==null
@@ -46535,11 +46534,11 @@ c7+=c2.H?4:0}h=Math.max(0,c3-new A.dc(c8+j+r,0,i+c7,0).gbi())
 c7=c6.h(0,B.a4)
 if(c7!=null){r=c2.p.f.gnd()
 g=p.a
-if(r){r=A.N(g,0,c2.p.d)
+if(r){r=A.O(g,0,c2.p.d)
 r.toString
 g=r}r=c2.p
 f=Math.max(0,c3-(r.Q*2+c8+r.a.gbi()+q.a+g))
-r=A.N(1,1.3333333333333333,r.d)
+r=A.O(1,1.3333333333333333,r.d)
 r.toString
 e=c5.Pz(f*r)
 d4.$2(c7,e)
@@ -46553,7 +46552,7 @@ r=c2.p
 j=r.a
 r=r.z
 a=c5.mR(new A.ao(0,j.gaS()+j.gaT()+c+b+new A.h(r.a,r.b).a1(0,4).b,0,0)).yq(h)
-r=c6.h(0,B.aK)
+r=c6.h(0,B.aJ)
 c6=c6.h(0,B.aT)
 j=r==null
 a0=j?B.J:d4.$2(r,a)
@@ -46593,26 +46592,26 @@ c4=c4.a
 c1=c0+(c4<=0?Math.max(c0-b8,0):Math.max(b8+b9-c0,0))*c4}else c1=b8+b9*b6
 c4=c7?null:d1.c
 return new A.aid(a,c1,b3,d1,new A.H(c3,b3+(c4==null?0:c4)))},
-bh(a){var s,r,q,p,o,n=this,m=n.c3$,l=m.h(0,B.aK),k=Math.max(A.hO(l,a),A.hO(m.h(0,B.aT),a))
-l=A.hO(m.h(0,B.av),a)
+bh(a){var s,r,q,p,o,n=this,m=n.c3$,l=m.h(0,B.aJ),k=Math.max(A.hO(l,a),A.hO(m.h(0,B.aT),a))
+l=A.hO(m.h(0,B.au),a)
 if(m.h(0,B.a2)!=null)s=n.H?4:0
 else{s=n.p
 s=s.a.a+s.Q}r=A.hO(m.h(0,B.a2),a)
 q=A.hO(m.h(0,B.aU),a)
 p=A.hO(m.h(0,B.aV),a)
-o=A.hO(m.h(0,B.aD),a)
-if(m.h(0,B.aD)!=null)m=n.H?4:0
+o=A.hO(m.h(0,B.aC),a)
+if(m.h(0,B.aC)!=null)m=n.H?4:0
 else{m=n.p
 m=m.a.c+m.Q}return l+s+r+q+k+p+o+m},
-bd(a){var s,r,q,p,o,n=this,m=n.c3$,l=m.h(0,B.aK),k=Math.max(A.uA(l,a),A.uA(m.h(0,B.aT),a))
-l=A.uA(m.h(0,B.av),a)
+bd(a){var s,r,q,p,o,n=this,m=n.c3$,l=m.h(0,B.aJ),k=Math.max(A.uA(l,a),A.uA(m.h(0,B.aT),a))
+l=A.uA(m.h(0,B.au),a)
 if(m.h(0,B.a2)!=null)s=n.H?4:0
 else{s=n.p
 s=s.a.a+s.Q}r=A.uA(m.h(0,B.a2),a)
 q=A.uA(m.h(0,B.aU),a)
 p=A.uA(m.h(0,B.aV),a)
-o=A.uA(m.h(0,B.aD),a)
-if(m.h(0,B.aD)!=null)m=n.H?4:0
+o=A.uA(m.h(0,B.aC),a)
+if(m.h(0,B.aC)!=null)m=n.H?4:0
 else{m=n.p
 m=m.a.c+m.Q}return l+s+r+q+k+p+o+m},
 a5Z(a,b){var s,r,q,p,o,n
@@ -46623,12 +46622,12 @@ n=B.b0.ii(p.dy,a,o)
 o=n
 if(o==null)o=0
 r=Math.max(o,r)}return r},
-bg(a1){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b=this,a=b.c3$,a0=A.uB(a.h(0,B.av),a1)
-a1=Math.max(a1-A.hO(a.h(0,B.av),a0),0)
+bg(a1){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b=this,a=b.c3$,a0=A.uB(a.h(0,B.au),a1)
+a1=Math.max(a1-A.hO(a.h(0,B.au),a0),0)
 s=A.uB(a.h(0,B.a2),a1)
 r=A.hO(a.h(0,B.a2),s)
-q=A.uB(a.h(0,B.aD),a1)
-p=A.hO(a.h(0,B.aD),q)
+q=A.uB(a.h(0,B.aC),a1)
+p=A.hO(a.h(0,B.aC),q)
 a1=Math.max(a1-b.p.a.gbi(),0)
 o=A.uB(a.h(0,B.bT),a1)
 n=Math.max(a1-A.hO(a.h(0,B.bT),o),0)
@@ -46640,7 +46639,7 @@ k=A.uB(a.h(0,B.aU),a1)
 j=A.hO(a.h(0,B.aU),k)
 i=A.uB(a.h(0,B.aV),a1)
 h=Math.max(a1-j-A.hO(a.h(0,B.aV),i)-r-p,0)
-m=A.b([a.h(0,B.aK)],t.iG)
+m=A.b([a.h(0,B.aJ)],t.iG)
 if(b.p.y)m.push(a.h(0,B.aT))
 g=t.n
 f=B.b.SQ(A.b([b.a5Z(h,m),k,i],g),B.lY)
@@ -46652,7 +46651,7 @@ c=B.b.SQ(A.b([a0,m.a.b+a+f+e.a.d+new A.h(d.a,d.b).a1(0,4).b,s,q],g),B.lY)
 b.p.x.toString
 return Math.max(c,48)+l},
 bc(a){return this.ap(B.b0,a,this.gbY())},
-fk(a){var s,r,q=this.c3$.h(0,B.aK)
+fk(a){var s,r,q=this.c3$.h(0,B.aJ)
 if(q==null)return 0
 s=q.b
 s.toString
@@ -46660,7 +46659,7 @@ s=t.q.a(s).a
 r=q.k7(a)
 q=r==null?q.gn().b:r
 return s.b+q},
-dY(a,b){var s,r,q,p,o=this.c3$.h(0,B.aK)
+dY(a,b){var s,r,q,p,o=this.c3$.h(0,B.aJ)
 if(o==null)return 0
 s=this.Ba(a,A.awV(),A.fc())
 switch(b.a){case 0:o=0
@@ -46681,20 +46680,20 @@ a2.fy=a4.b2(r)
 q=r.a
 r=a2.c3$
 p=r.h(0,B.cg)
-if(p!=null){p.c_(A.iC(s.c,q-A.f6(r.h(0,B.av)).a),!0)
+if(p!=null){p.c_(A.iC(s.c,q-A.f6(r.h(0,B.au)).a),!0)
 switch(a2.U.a){case 0:o=0
 break
-case 1:o=A.f6(r.h(0,B.av)).a
+case 1:o=A.f6(r.h(0,B.au)).a
 break
 default:o=a3}n=p.b
 n.toString
 t.q.a(n).a=new A.h(o,0)}m=s.c
 l=new A.aih(m)
-if(r.h(0,B.av)!=null){switch(a2.U.a){case 0:o=q-r.h(0,B.av).gn().a
+if(r.h(0,B.au)!=null){switch(a2.U.a){case 0:o=q-r.h(0,B.au).gn().a
 break
 case 1:o=0
 break
-default:o=a3}n=r.h(0,B.av)
+default:o=a3}n=r.h(0,B.au)
 n.toString
 l.$2(n,o)}o=s.d
 o=o==null?a3:o.a
@@ -46709,7 +46708,7 @@ if(j)i=a3
 else{h=o.kZ(B.p)
 h.toString
 i=h}if(i==null)i=0
-switch(a2.U.a){case 1:g=a2.p.a.a+A.f6(r.h(0,B.av)).a
+switch(a2.U.a){case 1:g=a2.p.a.a+A.f6(r.h(0,B.au)).a
 f=q-a2.p.a.c
 h=r.h(0,B.bD)
 h.toString
@@ -46720,7 +46719,7 @@ e.a(h).a=new A.h(g+a2.p.Q,k-n)
 if(!j){n=o.b
 n.toString
 e.a(n).a=new A.h(f-o.gn().a-a2.p.Q,k-i)}break
-case 0:g=q-a2.p.a.a-A.f6(r.h(0,B.av)).a
+case 0:g=q-a2.p.a.a-A.f6(r.h(0,B.au)).a
 f=a2.p.a.c
 h=r.h(0,B.bD)
 h.toString
@@ -46750,14 +46749,14 @@ if(r.h(0,B.a4)!=null){o=r.h(0,B.a4)
 o.toString
 l.$2(o,g-r.h(0,B.a4).gn().a)}if(r.h(0,B.aU)!=null){o=r.h(0,B.aU)
 o.toString
-g-=b.$2(o,g-r.h(0,B.aU).gn().a)}if(r.h(0,B.aK)!=null){o=r.h(0,B.aK)
+g-=b.$2(o,g-r.h(0,B.aU).gn().a)}if(r.h(0,B.aJ)!=null){o=r.h(0,B.aJ)
 o.toString
-b.$2(o,g-r.h(0,B.aK).gn().a)}if(r.h(0,B.aT)!=null){o=r.h(0,B.aT)
+b.$2(o,g-r.h(0,B.aJ).gn().a)}if(r.h(0,B.aT)!=null){o=r.h(0,B.aT)
 o.toString
-b.$2(o,g-r.h(0,B.aT).gn().a)}o=r.h(0,B.aD)
+b.$2(o,g-r.h(0,B.aT).gn().a)}o=r.h(0,B.aC)
 n=a2.p
 if(o!=null){f-=n.a.c
-o=r.h(0,B.aD)
+o=r.h(0,B.aC)
 o.toString
 o=l.$2(o,f)
 n=a2.H?4:0
@@ -46777,16 +46776,16 @@ if(r.h(0,B.a4)!=null){o=r.h(0,B.a4)
 o.toString
 l.$2(o,g)}if(r.h(0,B.aU)!=null){o=r.h(0,B.aU)
 o.toString
-g+=b.$2(o,g)}if(r.h(0,B.aK)!=null){o=r.h(0,B.aK)
+g+=b.$2(o,g)}if(r.h(0,B.aJ)!=null){o=r.h(0,B.aJ)
 o.toString
 b.$2(o,g)}if(r.h(0,B.aT)!=null){o=r.h(0,B.aT)
 o.toString
-b.$2(o,g)}o=r.h(0,B.aD)
+b.$2(o,g)}o=r.h(0,B.aC)
 n=a2.p
 if(o!=null){f+=n.a.c
-o=r.h(0,B.aD)
+o=r.h(0,B.aC)
 o.toString
-o=l.$2(o,f-r.h(0,B.aD).gn().a)
+o=l.$2(o,f-r.h(0,B.aC).gn().a)
 n=a2.H?4:0
 f=f-o-n}else f-=n.Q
 if(r.h(0,B.aV)!=null){o=r.h(0,B.aV)
@@ -46797,11 +46796,11 @@ a=t.q.a(o).a.a
 a0=A.f6(r.h(0,B.a4)).a*0.75
 switch(a2.U.a){case 0:o=r.h(0,B.a2)
 a1=o!=null?a2.H?A.f6(r.h(0,B.a2)).a-a2.p.a.c:0:0
-a2.p.r.szd(A.N(a+A.f6(r.h(0,B.a4)).a+a1,A.f6(p).a/2+a0/2,0))
+a2.p.r.szd(A.O(a+A.f6(r.h(0,B.a4)).a+a1,A.f6(p).a/2+a0/2,0))
 break
 case 1:o=r.h(0,B.a2)
 a1=o!=null?a2.H?-A.f6(r.h(0,B.a2)).a+a2.p.a.a:0:0
-a2.p.r.szd(A.N(a-A.f6(r.h(0,B.av)).a+a1,A.f6(p).a/2-a0/2,0))
+a2.p.r.szd(A.O(a-A.f6(r.h(0,B.au)).a+a1,A.f6(p).a/2-a0/2,0))
 break}a2.p.r.scY(r.h(0,B.a4).gn().a*0.75)}else{a2.p.r.szd(a3)
 a2.p.r.scY(0)}},
 a7F(a,b){var s=this.c3$.h(0,B.a4)
@@ -46823,7 +46822,7 @@ k=-s.b*0.75/2+n.a.b/2
 if(l)j=k
 else{s=f.p
 o=s.z
-j=s.a.b+new A.h(o.a,o.b).a1(0,4).b/2}s=A.N(1,0.75,m)
+j=s.a.b+new A.h(o.a,o.b).a1(0,4).b/2}s=A.O(1,0.75,m)
 s.toString
 o=d.h(0,B.cg).b
 o.toString
@@ -46842,12 +46841,12 @@ if(n)h=i+(f.H?-A.f6(d.h(0,B.a2)).a+f.p.a.a:0)
 else h=i
 break
 default:i=null
-h=null}r=A.N(h,o.a+r.a/2-p*0.75/2,0)
+h=null}r=A.O(h,o.a+r.a/2-p*0.75/2,0)
 r.toString
-r=A.N(i,r,m)
+r=A.O(i,r,m)
 r.toString
 o=q.b
-n=A.N(0,j-o,m)
+n=A.O(0,j-o,m)
 n.toString
 g=new A.aW(new Float64Array(16))
 g.da()
@@ -46858,13 +46857,13 @@ s=f.cx
 s===$&&A.a()
 n=f.ch
 n.saj(a.th(s,b,g,f.ga7E(),t.zV.a(n.a)))}else f.ch.saj(null)
-e.$1(d.h(0,B.av))
+e.$1(d.h(0,B.au))
 e.$1(d.h(0,B.aU))
 e.$1(d.h(0,B.aV))
 e.$1(d.h(0,B.a2))
-e.$1(d.h(0,B.aD))
+e.$1(d.h(0,B.aC))
 if(f.p.y)e.$1(d.h(0,B.aT))
-e.$1(d.h(0,B.aK))
+e.$1(d.h(0,B.aJ))
 s=d.h(0,B.bD)
 s.toString
 e.$1(s)
@@ -46946,7 +46945,7 @@ case 10:s=r.d.fr
 break
 default:s=null}return s},
 aM(a){var s,r=this
-A.M(a)
+A.N(a)
 s=new A.CZ(r.d,r.e,r.f,r.r,r.w,!1,!0,A.q(t.uC,t.x),new A.aM(),A.ab())
 s.aL()
 return s},
@@ -47080,10 +47079,10 @@ s.toString
 s=A.asq(s).fy
 if(s==null)s=b.gqS()
 return q.Db(A.ch(s,r.gea(),t.oI))}else return q.Db(A.ch(b.gt9(),r.gea(),t.oI))},
-N(d1){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,c0,c1,c2,c3,c4,c5,c6,c7,c8=this,c9=null,d0=A.M(d1)
+N(d1){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,c0,c1,c2,c3,c4,c5,c6,c7,c8=this,c9=null,d0=A.N(d1)
 c8.gau()
 s=d0.Q
-A.M(d1)
+A.N(d1)
 r=new A.Pb(d1,c9,c9,c9,c9,c9,c9,c9,c9,c9,B.k2,B.iK,!1,c9,!1,c9,c9,c9,c9,c9,c9,c9,c9,!1,c9,c9,c9,c9,c9,c9,c9,c9,c9,c9,c9,!1,c9,c9)
 q=A.ao1(d1)
 p=t.em
@@ -47108,7 +47107,7 @@ if(h!=null){g=c8.gau().Q
 h.toString
 l=c8.gau()
 f=i.fy
-f=c8.gau().ax==null?c9:B.aJ
+f=c8.gau().ax==null?c9:B.aI
 e=c8.a.e
 g=A.aZ(h,c8.gau().ax,f,c9,i,e,l.at)
 d=c8.a.y&&!c8.ga5r()
@@ -47165,7 +47164,7 @@ else if(c8.gau().rx!=null&&c8.gau().rx!==""){b5=c8.a.r
 b6=c8.gau().rx
 b6.toString
 n=c8.JT(d0,r).b5(A.ch(c8.gau().to,c8.gea(),n))
-b4=A.cy(c9,A.aZ(b6,c9,B.aJ,c8.gau().Z,n,c9,c9),!0,c9,c9,!1,!1,c9,c9,c9,c9,c9,c9,b5,c9,c9,c9,c9,c9,c9,c9,c9,c9,c9,c9,c9,c9,c9,c9,c9,c9,c9,c9)}else b4=c9
+b4=A.cy(c9,A.aZ(b6,c9,B.aI,c8.gau().Z,n,c9,c9),!0,c9,c9,!1,!1,c9,c9,c9,c9,c9,c9,b5,c9,c9,c9,c9,c9,c9,c9,c9,c9,c9,c9,c9,c9,c9,c9,c9,c9,c9,c9)}else b4=c9
 b7=d1.az(t.I).w
 switch(b7.a){case 1:n=!1
 break
@@ -47181,7 +47180,7 @@ b9=new A.dc(b5,b6,n,b8.d)}c8.gau().go.toString
 c0=0
 if(!b.gnd()){n=A.c3(d1,B.bE)
 n=n==null?c9:n.gcq()
-if(n==null)n=B.aM
+if(n==null)n=B.aL
 b5=j.r
 b5.toString
 c0=n.aD(4+0.75*b5)
@@ -47350,11 +47349,11 @@ gt9(){return this.fx},
 gqS(){return this.fy}}
 A.Pb.prototype={
 gbr(){var s,r=this,q=r.RG
-if(q===$){s=A.M(r.R8)
+if(q===$){s=A.N(r.R8)
 r.RG!==$&&A.aC()
 q=r.RG=s.ax}return q},
 gvq(){var s,r=this,q=r.rx
-if(q===$){s=A.M(r.R8)
+if(q===$){s=A.N(r.R8)
 r.rx!==$&&A.aC()
 q=r.rx=s.ok}return q},
 grP(){return A.Ew(new A.agw(this))},
@@ -47552,7 +47551,7 @@ k.a=A.c9(B.mR,new A.akj(l))}l.aq(new A.akk(k,l,new A.h(q.a,r),new A.h(n-i.a,s-r)
 N(a){var s,r=this.d,q=r.b
 r=r.a
 s=this.e!=null?B.mR:B.z
-return A.aqT(new A.IQ(this.f,null),B.ay,s,r,q)}}
+return A.aqT(new A.IQ(this.f,null),B.ax,s,r,q)}}
 A.akj.prototype={
 $0(){var s=this.a
 return s.aq(new A.aki(s))},
@@ -47573,7 +47572,7 @@ J(){return"MaterialType."+this.b}}
 A.y_.prototype={
 ar(){return new A.PC(new A.br("ink renderer",t.F),null,null)}}
 A.PC.prototype={
-N(a){var s,r,q,p,o,n,m,l,k=this,j=null,i=A.M(a),h=k.a,g=h.r
+N(a){var s,r,q,p,o,n,m,l,k=this,j=null,i=A.N(a),h=k.a,g=h.r
 if(g==null){s=h.d
 $label0$0:{g=j
 if(B.cU===s){r=i.as
@@ -47584,10 +47583,10 @@ if(q==null){r=i.ax.x1
 if(r==null)r=B.l
 q=r}p=h.c
 r=h.y
-if(r==null){h=A.M(a).ok.z
+if(r==null){h=A.N(a).ok.z
 h.toString}else h=r
 r=k.a
-p=A.aA6(p,B.ay,r.at,h)
+p=A.aA6(p,B.ax,r.at,h)
 h=r
 r=h.d
 o=r===B.hs
@@ -47659,7 +47658,7 @@ k.toString
 s=l.CW
 s.toString
 r=s.ah(l.gdU().gu())
-A.M(a)
+A.N(a)
 s=l.a.Q
 q=l.cx
 p=A.arY(s,q==null?null:q.ah(l.gdU().gu()),r)
@@ -47777,10 +47776,10 @@ gyo(){var s=this.b.c
 s.toString
 s=this.K1(s).gm7()
 return s},
-K1(a){var s,r=A.M(a).w
-A.M(a)
+K1(a){var s,r=A.N(a).w
+A.N(a)
 s=B.ho.h(0,r)
-if(s==null)$label0$0:{if(B.G===r||B.aI===r){s=B.fk
+if(s==null)$label0$0:{if(B.G===r||B.aH===r){s=B.fk
 break $label0$0}if(B.af===r||B.bt===r||B.bf===r||B.be===r){s=B.dc
 break $label0$0}s=null}return s},
 gr_(){return null},
@@ -47795,7 +47794,7 @@ Pc(a){this.glN()
 return!0},
 CP(a,b,c){var s=null
 return A.cy(s,this.acp(a),!1,s,s,!1,!0,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s)},
-w4(a,b,c,d){A.M(a)
+w4(a,b,c,d){A.N(a)
 return new A.ut(B.ho,this,b,c,d,null,A.l(this).i("ut<1>"))}}
 A.i3.prototype={
 oN(a){var s=null,r=this.$ti,q=A.b([],t.Zt),p=$.an,o=r.i("aI<1?>"),n=r.i("bP<1?>"),m=A.rM(B.dd),l=A.b([],t.wi),k=$.am(),j=$.an
@@ -47815,7 +47814,7 @@ i3(a){var s=this.CW
 if(s!=null)s.f=this.gyo()
 return this.Xz(a)}}
 A.TW.prototype={
-N(a){var s=this,r=A.M(a).ax.k2,q=s.c
+N(a){var s=this,r=A.N(a).ax.k2,q=s.c
 return new A.qP(q,new A.alc(s,r),new A.ald(s),A.auN(a,q,s.d,s.r,s.e,!0,r),null)}}
 A.alc.prototype={
 $3(a,b,c){return new A.n2(b,c,this.a.e,!1,this.b,null)},
@@ -47920,7 +47919,7 @@ N(a){var s=this.d
 s===$&&A.a()
 return A.au7(!0,this.a.f,this.n3$,B.yG,s)}}
 A.kf.prototype={
-gm7(){return B.aB}}
+gm7(){return B.aA}}
 A.Mi.prototype={
 giI(){return new A.acs(this)},
 P6(a,b,c,d,e){return new A.TW(c,d,!0,null,e,!0,null)}}
@@ -47954,13 +47953,13 @@ $S:235}
 A.ut.prototype={
 ar(){return new A.CJ(this.$ti.i("CJ<1>"))}}
 A.CJ.prototype={
-N(a){var s,r,q=this,p=A.M(a).w,o=q.a
+N(a){var s,r,q=this,p=A.N(a).w,o=q.a
 if(o.d.b.cy.a){s=q.d
 if(s==null)q.d=p
 else p=s}else q.d=null
 r=o.c.h(0,p)
 if(r==null){$label0$0:{if(B.G===p){o=B.fk
-break $label0$0}if(B.af===p||B.bt===p||B.bf===p||B.aI===p||B.be===p){o=B.dc
+break $label0$0}if(B.af===p||B.bt===p||B.bf===p||B.aH===p||B.be===p){o=B.dc
 break $label0$0}o=null}r=o}o=q.a
 return r.P6(o.d,a,o.e,o.f,o.r,q.$ti.c)}}
 A.uS.prototype={
@@ -48199,7 +48198,7 @@ ar(){return new A.BW(null,null)}}
 A.BW.prototype={
 aI(){var s,r,q=this
 q.aY()
-s=A.bG(null,B.aq,null,null,q)
+s=A.bG(null,B.ap,null,null,q)
 s.bf()
 r=s.cw$
 r.b=!0
@@ -48341,7 +48340,7 @@ s.cy=B.iM
 s.CW=B.Bu
 s.cx=B.iM
 s.ch=A.bG(r,new A.aR(4e5),r,1,s)
-s.db=A.bG(r,B.aq,r,r,s)
+s.db=A.bG(r,B.ap,r,r,s)
 s.dy=A.bG(r,r,r,r,s)},
 aP(a){this.Y2(a)
 this.a.toString},
@@ -48385,7 +48384,7 @@ q6(a,b,c,d,e,f,g){return this.zE(a,b,c,!1,!1,d,e,f,g)},
 HP(a,b,c,d,e,f,g,h){return this.zE(a,b,c,d,!1,e,f,g,h)},
 Ib(a,b){this.a.toString},
 Ia(a,b){this.a.toString},
-N(a){var s,r,q,p,o,n,m=this,l=null,k={},j=A.M(a),i=a.az(t.I).w,h=A.b([],t.s9),g=m.a,f=g.r
+N(a){var s,r,q,p,o,n,m=this,l=null,k={},j=A.N(a),i=a.az(t.I).w,h=A.b([],t.s9),g=m.a,f=g.r
 g=g.f
 m.goi()
 m.Zx(h,new A.MU(new A.op(f,m.f),!1,!1,l),B.ip,!0,!1,!1,!1,g!=null)
@@ -48416,7 +48415,7 @@ m.a.toString
 m.goi()
 m.HP(h,g,B.dV,!1,!1,!1,!1,!0)}k.c=!1
 if(m.Q!=null){a.az(t.iB)
-g=A.M(a)
+g=A.N(a)
 f=m.Q
 if(f!=null)f.a.gdf()
 r=g.R8.f
@@ -48435,7 +48434,7 @@ q===$&&A.a()
 p=m.db
 p===$&&A.a()
 m.q6(h,new A.BV(l,g,f,q,p,l),B.iv,!0,!0,!0,!0)
-switch(j.w.a){case 2:case 4:m.q6(h,A.lx(B.aE,l,B.al,!0,l,l,l,l,l,l,l,l,l,l,l,l,m.ga4Q(),l,l,l),B.ir,!0,!1,!1,!0)
+switch(j.w.a){case 2:case 4:m.q6(h,A.lx(B.aD,l,B.al,!0,l,l,l,l,l,l,l,l,l,l,l,l,m.ga4Q(),l,l,l),B.ir,!0,!1,!1,!0)
 break
 case 0:case 1:case 3:case 5:break}g=m.x
 f=g.y
@@ -48452,7 +48451,7 @@ g=A.bC(a,B.lE,g).w
 g=g.f.d!==0?0:l
 n=f.w.we(g)
 m.a.toString
-return new A.RQ(!1,new A.zl(A.oz(!1,B.aq,!0,l,A.jI(m.ch,new A.a8c(k,m,o,n,i,h),l),B.r,j.fx,0,l,l,l,l,l,B.cU),l),l)}}
+return new A.RQ(!1,new A.zl(A.oz(!1,B.ap,!0,l,A.jI(m.ch,new A.a8c(k,m,o,n,i,h),l),B.r,j.fx,0,l,l,l,l,l,B.cU),l),l)}}
 A.a8b.prototype={
 $0(){this.a.z=this.b},
 $S:0}
@@ -48539,8 +48538,8 @@ s.aU$=null
 s.aK()}}
 A.KO.prototype={
 N(a){var s=this,r=null
-if(A.M(a).w===B.G)return new A.qK(8,B.cX,s.c,s.d,!1,B.Kv,3,r,B.jm,B.Db,A.Fn(),r,r,3,r)
-return new A.um(s.c,s.d,r,r,r,r,B.aB,B.ei,A.Fn(),r,r,0,r)}}
+if(A.N(a).w===B.G)return new A.qK(8,B.cX,s.c,s.d,!1,B.Kv,3,r,B.jm,B.Db,A.Fn(),r,r,3,r)
+return new A.um(s.c,s.d,r,r,r,r,B.aA,B.ei,A.Fn(),r,r,0,r)}}
 A.um.prototype={
 ar(){var s=null
 return new A.PB(new A.br(s,t.F),new A.br(s,t.LZ),s,s)}}
@@ -48574,7 +48573,7 @@ n=o.k1
 n===$&&A.a()
 if(n){n=o.c
 n.toString
-n=A.M(n).cx
+n=A.N(n).cx
 n=A.as(255,n.B()>>>16&255,n.B()>>>8&255,n.B()&255)}else n=A.as(B.d.aE(25.5),s.B()>>>16&255,s.B()>>>8&255,s.B()&255)
 p.b=n
 break
@@ -48584,7 +48583,7 @@ n=o.k1
 n===$&&A.a()
 if(n){n=o.c
 n.toString
-n=A.M(n).cx
+n=A.N(n).cx
 n=A.as(255,n.B()>>>16&255,n.B()>>>8&255,n.B()&255)}else n=A.as(B.d.aE(76.5),s.B()>>>16&255,s.B()>>>8&255,s.B()&255)
 p.b=n
 break}return new A.bL(new A.agX(o,r,q,p),t.mN)},
@@ -48597,16 +48596,16 @@ return new A.bL(new A.agY(this,s.a,s.k3),t.mN)},
 gaaq(){return new A.bL(new A.agW(this),t.N5)},
 aI(){var s,r=this
 r.Ho()
-s=r.fr=A.bG(null,B.aq,null,null,r)
+s=r.fr=A.bG(null,B.ap,null,null,r)
 s.bf()
 s.ce$.E(0,new A.ah5(r))},
 be(){var s,r=this,q=r.c
 q.toString
-s=A.M(q)
+s=A.N(q)
 r.go=s.ax
 q=r.c
 q.az(t.NF)
-q=A.M(q)
+q=A.N(q)
 r.id=q.x
 switch(s.w.a){case 0:r.k1=!0
 break
@@ -48875,7 +48874,7 @@ if(q!==r.f)r.aq(new A.aju(r,q))
 r.a.toString
 s=r.c
 s.toString
-switch(A.M(s).w.a){case 2:case 4:if(b===B.aZ){s=r.x.gI()
+switch(A.N(s).w.a){case 2:case 4:if(b===B.aZ){s=r.x.gI()
 if(s!=null)s.hx(a.gkq())}return
 case 0:case 1:case 3:case 5:break}},
 a9z(){var s=this.d
@@ -48894,7 +48893,7 @@ if(a===B.a8)return!1
 if(a===B.aZ)return!0
 if(r.a.length!==0)return!0
 return!1},
-N(a1){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c=this,b=null,a=A.M(a1),a0=a1.az(t.Uf)
+N(a1){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c=this,b=null,a=A.N(a1),a0=a1.az(t.Uf)
 if(a0==null)a0=B.cG
 s=c.gmA()
 c.a.toString
@@ -49023,13 +49022,13 @@ return s}}
 A.SH.prototype={}
 A.tv.prototype={
 wt(a){var s=null
-A.M(a)
-A.M(a)
-return new A.SP(a,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,B.aq,!0,B.ag,s,s,s)},
+A.N(a)
+A.N(a)
+return new A.SP(a,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,B.ap,!0,B.ag,s,s,s)},
 Tf(a){return A.aug(a).a}}
 A.SR.prototype={
 wt(a){var s,r,q
-A.M(a)
+A.N(a)
 s=this.Xd(a)
 r=s.gj6()
 if(r==null)q=null
@@ -49038,7 +49037,7 @@ r=r==null?null:r.r
 q=r}if(q==null)q=14
 r=A.c3(a,B.bE)
 r=r==null?null:r.gcq()
-r=(r==null?B.aM:r).aD(q)
+r=(r==null?B.aL:r).aD(q)
 return s.Dg(new A.bt(A.are(B.Dv,B.dj,B.dj,r/14),t.mD))}}
 A.SS.prototype={
 N(a){var s,r=null,q=this.e.a,p=r
@@ -49048,18 +49047,18 @@ q=q==null?r:q.r}s=q
 if(s==null)s=14
 q=A.c3(a,B.bE)
 q=q==null?r:q.gcq()
-q=A.D((q==null?B.aM:q).aD(s)/14,1,2)
+q=A.D((q==null?B.aL:q).aD(s)/14,1,2)
 A.aug(a)
-q=A.N(8,4,q-1)
+q=A.O(8,4,q-1)
 q.toString
 p=A.b([this.d,new A.wY(1,B.E5,this.c,r)],t.p)
 return A.es(p,B.T,B.cT,q)}}
 A.SP.prototype={
 gjk(){var s,r=this,q=r.go
-if(q===$){s=A.M(r.fy)
+if(q===$){s=A.N(r.fy)
 r.go!==$&&A.aC()
 q=r.go=s.ax}return q},
-gj6(){return new A.bt(A.M(this.fy).ok.as,t.RP)},
+gj6(){return new A.bt(A.N(this.fy).ok.as,t.RP)},
 gcN(){return B.bC},
 gcI(){return new A.bL(new A.ajW(this),t.b)},
 gh3(){return new A.bL(new A.ajZ(this),t.b)},
@@ -49073,9 +49072,9 @@ geG(){return new A.bL(new A.ajX(this),t.mN)},
 gh_(){return B.f7},
 gdv(){return B.f8},
 gh1(){return new A.bL(new A.ajY(),t.B_)},
-ghd(){return A.M(this.fy).Q},
-gh8(){return A.M(this.fy).f},
-gfF(){return A.M(this.fy).y}}
+ghd(){return A.N(this.fy).Q},
+gh8(){return A.N(this.fy).f},
+gfF(){return A.N(this.fy).y}}
 A.ajW.prototype={
 $1(a){var s
 if(a.t(0,B.C)){s=this.a.gjk().k3
@@ -49124,7 +49123,7 @@ this.e=s}return s},
 ga1d(){this.a.toString
 var s=this.c
 s.toString
-A.M(s)
+A.N(s)
 return B.Iy},
 gE1(){var s=this.x
 s===$&&A.a()
@@ -49145,13 +49144,13 @@ var s=this.JQ().db
 s=s==null?null:s.b
 if(s==null){s=this.c
 s.toString
-s=A.M(s).ax.fy}return s},
+s=A.N(s).ax.fy}return s},
 JQ(){var s,r,q,p,o=this,n=o.c
 n.toString
 A.j0(n,B.cf,t.c4).toString
 n=o.c
 n.toString
-s=A.M(n)
+s=A.N(n)
 n=o.a.r
 r=s.e
 n=n.OI(r)
@@ -49230,10 +49229,10 @@ a4q(a,b){var s,r=this,q=r.a9Z(b)
 if(q!==r.r)r.aq(new A.ak2(r,q))
 s=r.c
 s.toString
-switch(A.M(s).w.a){case 2:case 4:case 3:case 5:case 1:case 0:if(b===B.aZ){s=r.y.gI()
+switch(A.N(s).w.a){case 2:case 4:case 3:case 5:case 1:case 0:if(b===B.aZ){s=r.y.gI()
 if(s!=null)s.hx(a.gcY())}break}s=r.c
 s.toString
-switch(A.M(s).w.a){case 2:case 1:case 0:break
+switch(A.N(s).w.a){case 2:case 1:case 0:break
 case 4:case 3:case 5:if(b===B.ae){s=r.y.gI()
 if(s!=null)s.f7()}break}},
 a4w(){var s=this.gkg().a.b
@@ -49267,15 +49266,15 @@ p=n.a.r
 o=new A.ql(!0,"EditableText-"+r,s,q,p.z)}else o=B.lS
 r=n.y.gI().gk_()
 return A.aui(r.z,r.ay,r.e,o,!1,!0,r.y,!0,r.ch,r.Q,r.b,r.at,!1,r.c,r.r,r.w,r.as,r.a)},
-N(b3){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8=this,a9=null,b0={},b1=A.M(b3),b2=b3.az(t.Uf)
+N(b3){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8=this,a9=null,b0={},b1=A.N(b3),b2=b3.az(t.Uf)
 if(b2==null)b2=B.cG
 a8.a.toString
 s=A.ch(a9,a8.geU().a,t.p8)
-r=A.M(b3).ok.y
+r=A.N(b3).ok.y
 r.toString
 q=a8.c
 q.toString
-A.M(q)
+A.N(q)
 q=a8.c
 q.toString
 q=A.aIS(q)
@@ -49463,8 +49462,8 @@ s.M9()}},
 $S:0}
 A.alR.prototype={
 $1(a){var s,r=null
-if(a.t(0,B.C)){s=A.M(this.a).ok.y.b
-return A.il(r,r,s==null?r:s.bo(0.38),r,r,r,r,r,r,r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r)}return A.il(r,r,A.M(this.a).ok.y.b,r,r,r,r,r,r,r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r)},
+if(a.t(0,B.C)){s=A.N(this.a).ok.y.b
+return A.il(r,r,s==null?r:s.bo(0.38),r,r,r,r,r,r,r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r)}return A.il(r,r,A.N(this.a).ok.y.b,r,r,r,r,r,r,r,r,r,r,r,r,r,r,!0,r,r,r,r,r,r,r,r)},
 $S:39}
 A.alg.prototype={
 $2(a,b){if(!a.a)a.K(b)},
@@ -49492,9 +49491,9 @@ r.aK()}}
 A.IU.prototype={}
 A.a4u.prototype={
 pI(a){return B.MR},
-w_(a,b,c,d){var s,r,q,p=null,o=A.M(a)
+w_(a,b,c,d){var s,r,q,p=null,o=A.N(a)
 a.az(t.bZ)
-s=A.M(a)
+s=A.N(a)
 r=s.bG.c
 if(r==null)r=o.ax.b
 q=A.pu(A.ll(A.lx(B.c0,p,B.al,!1,p,p,p,p,p,p,p,p,p,p,p,p,d,p,p,p),p,p,new A.SW(r,p),B.J),22,22)
@@ -49557,7 +49556,7 @@ m=A.of(q?B.nz:B.En,j,j,j)
 l=q?"Back":"More"
 n=A.b([new A.T0(m,new A.akw(k),l,n)],t.p)
 B.b.P(n,k.a.c)
-return new A.T2(q,s,A.aqU(p.ake(a,new A.SZ(o,q,s,n,j)),B.ay,B.Dc),r)}}
+return new A.T2(q,s,A.aqU(p.ake(a,new A.SZ(o,q,s,n,j)),B.ax,B.Dc),r)}}
 A.akw.prototype={
 $0(){var s=this.a
 s.aq(new A.akv(s))},
@@ -49788,10 +49787,10 @@ if(t.D.a(s).e)this.a.$1(a)},
 $S:10}
 A.SY.prototype={
 N(a){var s=null
-return A.oz(!1,B.aq,!0,B.A3,this.c,B.bX,A.aH3(A.M(a).ax),1,s,s,s,s,s,B.eJ)}}
+return A.oz(!1,B.ap,!0,B.A3,this.c,B.bX,A.aH3(A.N(a).ax),1,s,s,s,s,s,B.eJ)}}
 A.T0.prototype={
 N(a){var s=null
-return A.oz(!1,B.aq,!0,s,A.ao0(s,s,this.c,s,s,this.d,s,s,this.e),B.r,B.D,0,s,s,s,s,s,B.eJ)}}
+return A.oz(!1,B.ap,!0,s,A.ao0(s,s,this.c,s,s,this.d,s,s,this.e),B.r,B.D,0,s,s,s,s,s,B.eJ)}}
 A.Uh.prototype={
 ak(a){var s,r,q
 this.dS(a)
@@ -49819,7 +49818,7 @@ A.uN.prototype={
 J(){return"_TextSelectionToolbarItemPosition."+this.b}}
 A.LP.prototype={
 N(a){var s=this,r=null
-return A.ab3(!1,s.c,r,r,r,r,r,r,s.d,r,A.LC(s.f,r,B.D,r,r,r,r,r,r,A.aFJ(A.M(a).ax),r,B.MU,s.e,r,B.hF,r,r,r,B.Rd,r))}}
+return A.ab3(!1,s.c,r,r,r,r,r,r,s.d,r,A.LC(s.f,r,B.D,r,r,r,r,r,r,A.aFJ(A.N(a).ax),r,B.MU,s.e,r,B.hF,r,r,r,B.Rd,r))}}
 A.dG.prototype={
 PC(a,b,c,d,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0){var s=this,r=d==null?s.a:d,q=a0==null?s.b:a0,p=a1==null?s.c:a1,o=a2==null?s.d:a2,n=a3==null?s.e:a3,m=a4==null?s.f:a4,l=a8==null?s.r:a8,k=a9==null?s.w:a9,j=b0==null?s.x:b0,i=a==null?s.y:a,h=b==null?s.z:b,g=c==null?s.Q:c,f=a5==null?s.as:a5,e=a6==null?s.at:a6
 return A.abB(i,h,g,r,q,p,o,n,m,f,e,a7==null?s.ax:a7,l,k,j)},
@@ -50145,14 +50144,14 @@ if(J.K(b)!==A.p(s))return!1
 return b instanceof A.AE&&J.d(b.a,s.a)&&J.d(b.b,s.b)&&J.d(b.c,s.c)&&J.d(b.d,s.d)&&J.d(b.e,s.e)&&J.d(b.f,s.f)&&J.d(b.r,s.r)&&J.d(b.w,s.w)&&J.d(b.y,s.y)&&J.d(b.x,s.x)&&J.d(b.z,s.z)&&J.d(b.Q,s.Q)&&J.d(b.as,s.as)&&J.d(b.ax,s.ax)&&b.at==s.at}}
 A.Tb.prototype={}
 A.Op.prototype={
-aM(a){var s=new A.Rd(!0,this.e,null,this.r,this.w,B.aE,null,new A.aM(),A.ab())
+aM(a){var s=new A.Rd(!0,this.e,null,this.r,this.w,B.aD,null,new A.aM(),A.ab())
 s.aL()
 s.saW(null)
 return s}}
 A.Rd.prototype={
 bZ(a,b){var s,r=this,q=$.aph
 $.aph=!1
-if(r.gn().t(0,b)){s=r.cB(a,b)||r.A===B.aE
+if(r.gn().t(0,b)){s=r.cB(a,b)||r.A===B.aD
 if((s||r.A===B.c0)&&!$.apg){$.apg=!0
 a.E(0,new A.nx(b,r))}}else s=!1
 if(q){$.aph=!0
@@ -50272,18 +50271,18 @@ r.c.az(t.tH)
 r.e=!0
 s=r.c
 s.az(t.U2)
-s=A.M(s)
+s=A.N(s)
 r.f=s.a7},
 a22(){var s,r=this.c
 r.toString
-s=A.M(r).w
-$label0$0:{if(B.aI===s||B.be===s||B.bf===s){r=24
+s=A.N(r).w
+$label0$0:{if(B.aH===s||B.be===s||B.bf===s){r=24
 break $label0$0}if(B.af===s||B.bt===s||B.G===s){r=32
 break $label0$0}r=null}return r},
 a21(){var s,r=this.c
 r.toString
-s=A.M(r).w
-$label0$0:{if(B.aI===s||B.be===s||B.bf===s){r=B.DW
+s=A.N(r).w
+$label0$0:{if(B.aH===s||B.be===s||B.bf===s){r=B.DW
 break $label0$0}if(B.af===s||B.bt===s||B.G===s){r=B.DM
 break $label0$0}r=null}return r},
 a_k(a6){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4=this,a5=null
@@ -50295,7 +50294,7 @@ r.toString
 t.x.a(r)
 q=r.gn().jz(B.h)
 p=A.b9(r.aC(s.c.gV()),q)
-o=A.M(a6)
+o=A.N(a6)
 $label0$0:{n=o.ax.a
 m=B.a3===n
 l=a5
@@ -50368,7 +50367,7 @@ q.f===$&&A.a()
 s=q.gC4()
 r=A.cy(p,q.a.Q,!1,p,p,!1,!1,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,p,s)
 q.e===$&&A.a()
-r=A.auX(A.xT(B.aE,r,p,q.gaaD(),p,p,p),B.bG,q.gKA(),q.gKB())
+r=A.auX(A.xT(B.aD,r,p,q.gaaD(),p,p,p),B.bG,q.gKA(),q.gKB())
 return new A.yu(q.d,q.ga_j(),r,p)}}
 A.abN.prototype={
 $0(){var s=this.a,r=s.e
@@ -50592,7 +50591,7 @@ ghN(){return this.w}}
 A.Gd.prototype={
 J(){return"BorderStyle."+this.b}}
 A.aP.prototype={
-aD(a){var s=Math.max(0,this.b*a),r=a<=0?B.at:this.c
+aD(a){var s=Math.max(0,this.b*a),r=a<=0?B.as:this.c
 return new A.aP(this.a,s,r,-1)},
 fa(){switch(this.c.a){case 1:$.a7()
 var s=A.be()
@@ -50728,23 +50727,23 @@ case 1:switch(d.a){case 1:A.ar9(a,b,s)
 break
 case 0:if(c!=null&&!c.j(0,B.a5)){A.ara(a,b,s,c)
 return}A.arb(a,b,s)
-break}return}}if(e.gqM()&&e.a.c===B.at)return
+break}return}}if(e.gqM()&&e.a.c===B.as)return
 s=A.ax(t.G)
 r=e.a
 q=r.c
-p=q===B.at
+p=q===B.as
 if(!p)s.E(0,r.a)
 o=e.b
 n=o.c
-m=n===B.at
+m=n===B.as
 if(!m)s.E(0,o.a)
 l=e.c
 k=l.c
-j=k===B.at
+j=k===B.as
 if(!j)s.E(0,l.a)
 i=e.d
 h=i.c
-g=h===B.at
+g=h===B.as
 if(!g)s.E(0,i.a)
 f=!0
 if(!(q===B.v&&r.b===0))if(!(n===B.v&&o.b===0)){if(!(k===B.v&&l.b===0))q=h===B.v&&i.b===0
@@ -50809,7 +50808,7 @@ case 1:switch(a4.a){case 1:A.ar9(a1,a2,d)
 break
 case 0:if(a3!=null&&!a3.j(0,B.a5)){A.ara(a1,a2,d,a3)
 return}A.arb(a1,a2,d)
-break}return}if(e.gqM()&&d.c===B.at)return
+break}return}if(e.gqM()&&d.c===B.as)return
 switch(a5.a){case 0:a0=new A.a5(e.c,b)
 break
 case 1:a0=new A.a5(b,e.c)
@@ -50820,17 +50819,17 @@ o=a0.b
 p=o
 a0=A.ax(t.G)
 n=d.c
-m=n===B.at
+m=n===B.as
 if(!m)a0.E(0,c)
 l=e.c
 k=l.c
-if(k!==B.at)a0.E(0,l.a)
+if(k!==B.as)a0.E(0,l.a)
 j=e.d
 i=j.c
-h=i===B.at
+h=i===B.as
 if(!h)a0.E(0,j.a)
 g=b.c
-if(g!==B.at)a0.E(0,a)
+if(g!==B.as)a0.E(0,a)
 f=!0
 if(!(n===B.v&&d.b===0))if(!(k===B.v&&l.b===0)){if(!(i===B.v&&j.b===0))b=g===B.v&&b.b===0
 else b=f
@@ -50838,9 +50837,9 @@ f=b}b=!1
 if(a0.a===1)if(!f)if(a4!==B.d8)b=a3!=null&&!a3.j(0,B.a5)
 else b=!0
 if(b){if(m)d=B.t
-b=p.c===B.at?B.t:p
+b=p.c===B.as?B.t:p
 a=h?B.t:j
-n=q.c===B.at?B.t:q
+n=q.c===B.as?B.t:q
 A.ann(a1,a2,a3,a,a0.ga5(0),n,b,a4,a5,d)
 return}A.ax0(a1,a2,j,q,p,d)},
 h4(a,b,c){return this.xY(a,b,null,B.N,c)},
@@ -50994,12 +50993,12 @@ A.da.prototype={
 aD(a){return new A.da(this.b,this.a.aD(a))},
 cP(a,b){var s,r
 if(a instanceof A.da){s=A.aE(a.a,this.a,b)
-r=A.N(a.b,this.b,b)
+r=A.O(a.b,this.b,b)
 r.toString
 return new A.da(A.D(r,0,1),s)}return this.mn(a,b)},
 cQ(a,b){var s,r
 if(a instanceof A.da){s=A.aE(this.a,a.a,b)
-r=A.N(this.b,a.b,b)
+r=A.O(this.b,a.b,b)
 r.toString
 return new A.da(A.D(r,0,1),s)}return this.mo(a,b)},
 hf(a,b){var s=A.bD($.a7().w)
@@ -51465,13 +51464,13 @@ if(q.i("eg.T").b(a)){q=A.aE(a.a,r.a,b)
 return r.jC(A.fg(a.gmK(),r.b,b),r.c*b,r.d,q)}if(a instanceof A.da){q=A.aE(a.a,r.a,b)
 s=r.c
 return r.jC(r.b,s+(1-s)*(1-b),a.b,q)}if(q.i("eg<eg.T>").b(a)){q=A.aE(a.a,r.a,b)
-return r.jC(A.fg(a.b,r.b,b),A.N(a.c,r.c,b),r.d,q)}return r.mn(a,b)},
+return r.jC(A.fg(a.b,r.b,b),A.O(a.c,r.c,b),r.d,q)}return r.mn(a,b)},
 cQ(a,b){var s,r=this,q=A.l(r)
 if(q.i("eg.T").b(a)){q=A.aE(r.a,a.a,b)
 return r.jC(A.fg(r.b,a.gmK(),b),r.c*(1-b),r.d,q)}if(a instanceof A.da){q=A.aE(r.a,a.a,b)
 s=r.c
 return r.jC(r.b,s+(1-s)*b,a.b,q)}if(q.i("eg<eg.T>").b(a)){q=A.aE(r.a,a.a,b)
-return r.jC(A.fg(r.b,a.b,b),A.N(r.c,a.c,b),r.d,q)}return r.mo(a,b)},
+return r.jC(A.fg(r.b,a.b,b),A.O(r.c,a.c,b),r.d,q)}return r.mo(a,b)},
 q8(a){var s,r,q,p,o,n,m,l,k=this.c
 if(k===0||a.c-a.a===a.d-a.b)return a
 s=a.c
@@ -51498,7 +51497,7 @@ return o}}o=A.hT(p,A.bW(a.gfd()/2),o)
 o.toString
 return o},
 hf(a,b){var s=this,r=s.q8(a),q=s.ua(a,b),p=s.a
-p=A.N(p.b,0,p.d)
+p=A.O(p.b,0,p.d)
 p.toString
 return s.w1(r,q,-p)},
 dQ(a,b){return this.P2(this.q8(a),this.ua(a,b))},
@@ -51681,9 +51680,9 @@ if(a instanceof A.f0)return new A.eK(p.b*b,p.c,A.aE(a.a,p.a,b))
 if(a instanceof A.da){s=A.aE(a.a,p.a,b)
 r=p.b
 return new A.eK(r+(1-r)*(1-b),a.b,s)}if(a instanceof A.eK){s=A.aE(a.a,p.a,b)
-r=A.N(a.b,p.b,b)
+r=A.O(a.b,p.b,b)
 r.toString
-q=A.N(a.c,p.c,b)
+q=A.O(a.c,p.c,b)
 q.toString
 return new A.eK(r,q,s)}return p.mn(a,b)},
 cQ(a,b){var s,r,q,p=this
@@ -51691,9 +51690,9 @@ if(a instanceof A.f0)return new A.eK(p.b*(1-b),p.c,A.aE(p.a,a.a,b))
 if(a instanceof A.da){s=A.aE(p.a,a.a,b)
 r=p.b
 return new A.eK(r+(1-r)*b,a.b,s)}if(a instanceof A.eK){s=A.aE(p.a,a.a,b)
-r=A.N(p.b,a.b,b)
+r=A.O(p.b,a.b,b)
 r.toString
-q=A.N(p.c,a.c,b)
+q=A.O(p.c,a.c,b)
 q.toString
 return new A.eK(r,q,s)}return p.mo(a,b)},
 vi(a){var s,r,q,p,o,n,m,l,k=this.b
@@ -51748,7 +51747,7 @@ if(a instanceof A.cI){s=p.c
 return new A.eL(p.b,s+(1-s)*(1-b),A.aE(a.a,p.a,b))}if(a instanceof A.eL){s=A.aE(a.a,p.a,b)
 r=A.fg(a.b,p.b,b)
 r.toString
-q=A.N(a.c,p.c,b)
+q=A.O(a.c,p.c,b)
 q.toString
 return new A.eL(r,q,s)}return p.mn(a,b)},
 cQ(a,b){var s,r,q,p=this
@@ -51757,7 +51756,7 @@ if(a instanceof A.cI){s=p.c
 return new A.eL(p.b,s+(1-s)*b,A.aE(p.a,a.a,b))}if(a instanceof A.eL){s=A.aE(p.a,a.a,b)
 r=A.fg(p.b,a.b,b)
 r.toString
-q=A.N(p.c,a.c,b)
+q=A.O(p.c,a.c,b)
 q.toString
 return new A.eL(r,q,s)}return p.mo(a,b)},
 kk(a){var s=a.gfd()/2
@@ -51765,7 +51764,7 @@ s=A.fg(this.b,A.Gc(new A.aw(s,s)),1-this.c)
 s.toString
 return s},
 hf(a,b){var s,r=this.kk(a).a6(b).cC(a),q=this.a
-q=A.N(q.b,0,q.d)
+q=A.O(q.b,0,q.d)
 q.toString
 s=r.c5(-q)
 q=A.bD($.a7().w)
@@ -52081,7 +52080,7 @@ q=k.w
 q.toString
 p=A.aum(r,q)
 return new A.h(p===0?0:p*j.c,0)}$label0$0:{o=s.b
-n=B.aC===o
+n=B.aB===o
 if(n)m=s.a
 else m=null
 if(n){l=m
@@ -52427,7 +52426,7 @@ return this.hz(g,r,s,null,c,b,a,a0,a1,a2,e,q,o,d,p,h,k,j,n,i,a4.fy,a3,f,l,m)},
 tE(a){var s,r,q,p,o,n=this,m=n.r
 $label0$0:{s=null
 if(m==null)break $label0$0
-r=a.j(0,B.aM)
+r=a.j(0,B.aL)
 if(r){s=m
 break $label0$0}r=a.aD(m)
 s=r
@@ -53164,7 +53163,7 @@ if(s===b)return!0
 if(J.K(b)!==A.p(s))return!1
 return b instanceof A.pC&&b.a.j(0,s.a)&&b.b==s.b},
 k(a){var s,r=this
-switch(r.b){case B.aC:s=r.a.k(0)+"-ltr"
+switch(r.b){case B.aB:s=r.a.k(0)+"-ltr"
 break
 case B.b6:s=r.a.k(0)+"-rtl"
 break
@@ -53414,7 +53413,7 @@ r.toString
 q=A.b([],t.O_)
 r.wa(q)
 d.kA=q
-if(B.b.js(q,new A.a6N())&&A.ay()!==B.aI){a.e=a.a=!0
+if(B.b.js(q,new A.a6N())&&A.ay()!==B.aH){a.e=a.a=!0
 return}if(d.eF==null){p=new A.cJ("")
 o=A.b([],t.oU)
 for(r=d.kA,n=r.length,m=0,l=0,k="";l<r.length;r.length===n||(0,A.C)(r),++l){j=r[l]
@@ -53630,11 +53629,11 @@ o=k.n4
 o===$&&A.a()
 n=q.k8(p,o)
 return A.b([new A.pC(new A.h(0,q.c9().f).O(0,n).O(0,s),null)],t.fm)}else{q=B.b.ga5(r)
-q=q.e===B.aC?q.a:q.c
+q=q.e===B.aB?q.a:q.c
 p=k.aB
 m=new A.h(A.D(q,0,p.b.c),B.b.ga5(r).d).O(0,s)
 q=B.b.gaf(r)
-q=q.e===B.aC?q.c:q.a
+q=q.e===B.aB?q.c:q.a
 l=new A.h(A.D(q,0,p.b.c),B.b.gaf(r).d).O(0,s)
 return A.b([new A.pC(m,B.b.ga5(r).e),new A.pC(l,B.b.gaf(r).e)],t.fm)}},
 pK(a){var s,r=this
@@ -53719,7 +53718,7 @@ jI(a,b){},
 a18(a){this.e7=a.a},
 a16(){var s=this.e7
 s.toString
-this.eP(B.au,s)},
+this.eP(B.at,s)},
 a14(){var s=this.e7
 s.toString
 this.ka(B.aZ,s)},
@@ -53922,7 +53921,7 @@ A.a6M.prototype={
 $2(a,b){return new A.H(a.ap(B.aW,1/0,a.gbT()),0)},
 $S:38}
 A.a6L.prototype={
-$2(a,b){return new A.H(a.ap(B.aL,1/0,a.gbE()),0)},
+$2(a,b){return new A.H(a.ap(B.aK,1/0,a.gbE()),0)},
 $S:38}
 A.Rb.prototype={
 gaZ(){return t.CA.a(A.z.prototype.gaZ.call(this))},
@@ -54201,7 +54200,7 @@ break
 default:s=null}return s},
 gJD(){var s,r=this,q=!1
 if(r.ad$!=null)switch(r.p.a){case 0:s=r.Z
-$label0$1:{if(s==null||B.aC===s)break $label0$1
+$label0$1:{if(s==null||B.aB===s)break $label0$1
 if(B.b6===s){q=!0
 break $label0$1}q=null}break
 case 1:switch(r.ai.a){case 1:break
@@ -54211,7 +54210,7 @@ default:q=null}break
 default:q=null}return q},
 gJC(){var s,r=this,q=!1
 if(r.ad$!=null)switch(r.p.a){case 1:s=r.Z
-$label0$1:{if(s==null||B.aC===s)break $label0$1
+$label0$1:{if(s==null||B.aB===s)break $label0$1
 if(B.b6===s){q=!0
 break $label0$1}q=null}break
 case 0:switch(r.ai.a){case 1:break
@@ -54406,7 +54405,7 @@ cT(){return this.Wq()}}
 A.a6Q.prototype={
 $2(a,b){var s,r,q=this.a,p=q?b.b:b.d
 if(isFinite(p))s=p
-else s=q?a.ap(B.aL,1/0,a.gbE()):a.ap(B.bh,1/0,a.gc1())
+else s=q?a.ap(B.aK,1/0,a.gbE()):a.ap(B.bh,1/0,a.gc1())
 r=this.b
 return q?new A.H(s,r.$2(a,s)):new A.H(r.$2(a,s),s)},
 $S:38}
@@ -54414,7 +54413,7 @@ A.a6V.prototype={
 $2(a,b){return a.ap(B.aW,b,a.gbT())},
 $S:42}
 A.a6T.prototype={
-$2(a,b){return a.ap(B.aL,b,a.gbE())},
+$2(a,b){return a.ap(B.aK,b,a.gbE())},
 $S:42}
 A.a6U.prototype={
 $2(a,b){return a.ap(B.b0,b,a.gbY())},
@@ -55509,7 +55508,7 @@ this.wQ$=a
 this.aX()},
 NE(a){var s=this,r=a.k1
 r=a.id
-r=r==null?null:new A.cE(r,B.aF)
+r=r==null?null:new A.cE(r,B.aE)
 s.Qo$=r
 s.Qp$=null
 s.Qq$=null
@@ -56141,7 +56140,7 @@ this.a0()},
 saiU(a){var s,r=this
 if(r.M===a)return
 r.M=a
-s=a===B.aJ?"\u2026":null
+s=a===B.aI?"\u2026":null
 r.p.sDQ(s)
 r.a0()},
 scq(a){var s=this.p
@@ -56189,7 +56188,7 @@ r.EM()
 return r.b.a.c.x},
 IQ(a){var s=this,r=s.goe()
 r.hi(s.ih(a,A.fc(),A.hQ()))
-r.fZ(s.H||s.M===B.aJ?a:1/0,a)
+r.fZ(s.H||s.M===B.aI?a:1/0,a)
 return r.b.a.c.f},
 bg(a){return this.IQ(a)},
 bc(a){return this.IQ(a)},
@@ -56204,11 +56203,11 @@ this.p.a0()},
 lk(a){var s,r=this,q=r.p
 q.hi(r.bO)
 s=a.b
-s=r.H||r.M===B.aJ?s:1/0
+s=r.H||r.M===B.aI?s:1/0
 q.fZ(s,a.a)},
 cW(a){var s=this,r=s.goe(),q=a.b
 r.hi(s.ih(q,A.fc(),A.hQ()))
-q=s.H||s.M===B.aJ?q:1/0
+q=s.H||s.M===B.aI?q:1/0
 r.fZ(q,a.a)
 r=r.b
 return a.b2(new A.H(r.c,r.a.c.f))},
@@ -56216,7 +56215,7 @@ fk(a){this.lk(t.k.a(A.z.prototype.ga8.call(this)))
 return this.p.b.a.kZ(B.p)},
 dY(a,b){var s=this,r=s.goe(),q=a.b
 r.hi(s.ih(q,A.fc(),A.hQ()))
-q=s.H||s.M===B.aJ?q:1/0
+q=s.H||s.M===B.aI?q:1/0
 r.fZ(q,a.a)
 return s.goe().b.a.kZ(B.p)},
 bR(){var s,r,q,p,o,n,m,l,k,j,i=this,h=null,g=i.Z
@@ -56366,7 +56365,7 @@ b7.toString
 s=n.a(b7).av$;++i}else{a=o.a(A.z.prototype.ga8.call(b3))
 b6.hi(b3.bO)
 a0=a.b
-a0=b3.H||b3.M===B.aJ?a0:1/0
+a0=b3.H||b3.M===B.aI?a0:1/0
 b6.fZ(a0,a.a)
 a1=b6.mb(new A.f4(j,e,B.j,!1,c,d),B.fj,B.d9)
 if(a1.length===0)continue
@@ -56432,7 +56431,7 @@ A.a75.prototype={
 $2(a,b){return new A.H(a.ap(B.aW,1/0,a.gbT()),0)},
 $S:38}
 A.a74.prototype={
-$2(a,b){return new A.H(a.ap(B.aL,1/0,a.gbE()),0)},
+$2(a,b){return new A.H(a.ap(B.aK,1/0,a.gbE()),0)},
 $S:38}
 A.a77.prototype={
 $1(a){return a.y=a.z=null},
@@ -57137,7 +57136,7 @@ bh(a){var s=this.C$
 s=s==null?null:s.ap(B.aW,a,s.gbT())
 return s==null?0:s},
 bd(a){var s=this.C$
-s=s==null?null:s.ap(B.aL,a,s.gbE())
+s=s==null?null:s.ap(B.aK,a,s.gbE())
 return s==null?0:s},
 bg(a){var s=this.C$
 s=s==null?null:s.ap(B.b0,a,s.gbY())
@@ -57168,10 +57167,10 @@ A.xh.prototype={
 J(){return"HitTestBehavior."+this.b}}
 A.yY.prototype={
 bZ(a,b){var s,r=this
-if(r.gn().t(0,b)){s=r.cB(a,b)||r.A===B.aE
+if(r.gn().t(0,b)){s=r.cB(a,b)||r.A===B.aD
 if(s||r.A===B.c0)a.E(0,new A.nx(b,r))}else s=!1
 return s},
-jL(a){return this.A===B.aE}}
+jL(a){return this.A===B.aD}}
 A.rX.prototype={
 sCA(a){if(this.A.j(0,a))return
 this.A=a
@@ -58035,7 +58034,7 @@ bh(a){var s=this.C$
 s=s==null?null:s.ap(B.aW,a,s.gbT())
 return s==null?0:s},
 bd(a){var s=this.C$
-s=s==null?null:s.ap(B.aL,a,s.gbE())
+s=s==null?null:s.ap(B.aK,a,s.gbE())
 return s==null?0:s},
 bg(a){var s=this.C$
 s=s==null?null:s.ap(B.b0,a,s.gbY())
@@ -58078,7 +58077,7 @@ bh(a){var s=this.gmz(),r=this.C$
 if(r!=null)return r.ap(B.aW,Math.max(0,a-(s.gaS()+s.gaT())),r.gbT())+s.gbi()
 return s.gbi()},
 bd(a){var s=this.gmz(),r=this.C$
-if(r!=null)return r.ap(B.aL,Math.max(0,a-(s.gaS()+s.gaT())),r.gbE())+s.gbi()
+if(r!=null)return r.ap(B.aK,Math.max(0,a-(s.gaS()+s.gaT())),r.gbE())+s.gbi()
 return s.gbi()},
 bg(a){var s=this.gmz(),r=this.C$
 if(r!=null)return r.ap(B.b0,Math.max(0,a-s.gbi()),r.gbY())+(s.gaS()+s.gaT())
@@ -58875,7 +58874,7 @@ A.a7l.prototype={
 $1(a){return a.ap(B.aW,this.a,a.gbT())},
 $S:31}
 A.a7j.prototype={
-$1(a){return a.ap(B.aL,this.a,a.gbE())},
+$1(a){return a.ap(B.aK,this.a,a.gbE())},
 $S:31}
 A.a7k.prototype={
 $1(a){return a.ap(B.b0,this.a,a.gbY())},
@@ -58964,8 +58963,8 @@ o=$.cR()
 n=o.d
 m=p.dH(0,n==null?o.gc4():n)
 p=q.gf1().a.style
-A.O(p,"width",A.m(m.a)+"px")
-A.O(p,"height",A.m(m.b)+"px")
+A.P(p,"width",A.m(m.a)+"px")
+A.P(p,"height",A.m(m.b)+"px")
 q.Ab()
 q.b.yl(r,q)}finally{}},
 abu(){var s,r,q,p,o,n=null,m=this.gjQ(),l=m.gaR(),k=m.gaR(),j=this.ch,i=t.lu,h=j.a.QA(new A.h(l.a,0),i),g=n
@@ -59478,7 +59477,7 @@ case 1:return n.ap(B.K,new A.ac(0,1/0,0,a),n.gc8()).a}},
 bd(a){var s,r,q,p,o,n=this
 switch(n.p.a){case 0:s=n.ad$
 for(r=A.l(n).i("ad.1"),q=0;s!=null;){p=s.gbE()
-o=B.aL.ii(s.dy,1/0,p)
+o=B.aK.ii(s.dy,1/0,p)
 q+=o
 p=s.b
 p.toString
@@ -59522,7 +59521,7 @@ case 1:s=new A.h(b,a)
 break
 default:s=null}return s},
 gI5(){var s,r=this.H
-switch((r==null?B.aC:r).a){case 1:r=!1
+switch((r==null?B.aB:r).a){case 1:r=!1
 break
 case 0:r=!0
 break
@@ -59966,7 +59965,7 @@ if($.aG().d.c){if(r.wT$==null)r.wT$=r.aeZ()}else{s=r.wT$
 if(s!=null)s.a.$0()
 r.wT$=null}},
 a4C(a){var s,r,q,p,o,n,m=a.d
-if(t.V4.b(m)){s=B.ax.fl(m)
+if(t.V4.b(m)){s=B.aw.fl(m)
 if(J.d(s,B.B1))s=m
 r=new A.mi(a.a,a.b,a.c,s)}else r=a
 s=this.DY$
@@ -60273,7 +60272,7 @@ if(a4<=1)return a3
 s=t.S
 r=A.q(s,t.bu)
 q=A.q(s,s)
-for(p=this.b,o=p===B.b6,p=p===B.aC,n=a4,m=0;m<n;g===a4||(0,A.C)(a3),++m,n=g){l=a3[m]
+for(p=this.b,o=p===B.b6,p=p===B.aB,n=a4,m=0;m<n;g===a4||(0,A.C)(a3),++m,n=g){l=a3[m]
 r.m(0,l.b,l)
 n=l.e
 k=n.a
@@ -60718,7 +60717,7 @@ A.VK.prototype={
 $1(a){return this.TL(a)},
 TL(a){var s=0,r=A.V(t.CL),q
 var $async$$1=A.W(function(b,c){if(b===1)return A.S(c,r)
-while(true)switch(s){case 0:q=new A.pL(t.pE.a(B.ax.fl(A.anq(B.Aq.dB(A.bv(B.ck.hA(a)))))),A.q(t.N,t.Rk))
+while(true)switch(s){case 0:q=new A.pL(t.pE.a(B.aw.fl(A.anq(B.Aq.dB(A.bv(B.ck.hA(a)))))),A.q(t.N,t.Rk))
 s=1
 break
 case 1:return A.T(q,r)}})
@@ -60840,7 +60839,7 @@ return A.U($async$uD,r)},
 xn(){var s=0,r=A.V(t.H)
 var $async$xn=A.W(function(a,b){if(a===1)return A.S(b,r)
 while(true)switch(s){case 0:s=2
-return A.Z(B.aH.fW("System.initializationComplete",t.z),$async$xn)
+return A.Z(B.aG.fW("System.initializationComplete",t.z),$async$xn)
 case 2:return A.T(null,r)}})
 return A.U($async$xn,r)}}
 A.a9Y.prototype={
@@ -60930,7 +60929,7 @@ return A.Z(A.o8(p,t.H),$async$xw)
 case 2:return A.T(null,r)}})
 return A.U($async$xw,r)}}
 A.a_q.prototype={
-$1(a){return J.iz(B.as.gbS(a),a.byteOffset,a.byteLength)},
+$1(a){return J.iz(B.ar.gbS(a),a.byteOffset,a.byteLength)},
 $S:320}
 A.a_s.prototype={
 $1(a){return a.bn(new A.a_r(this.a),t.H)},
@@ -61140,16 +61139,16 @@ a.je(8)
 s=a.d
 r=$.dk()
 s.$flags&2&&A.aj(s,13)
-s.setFloat64(0,b,B.aw===r)
+s.setFloat64(0,b,B.av===r)
 a.Zq(a.e)}else if(A.n8(b)){s=-2147483648<=b&&b<=2147483647
 r=a.d
 if(s){a.eA(3)
 s=$.dk()
 r.$flags&2&&A.aj(r,8)
-r.setInt32(0,b,B.aw===s)
+r.setInt32(0,b,B.av===s)
 a.q4(a.e,0,4)}else{a.eA(4)
 s=$.dk()
-B.as.GB(r,0,b,s)}}else if(typeof b=="string"){a.eA(7)
+B.ar.GB(r,0,b,s)}}else if(typeof b=="string"){a.eA(7)
 s=b.length
 q=new Uint8Array(s)
 n=0
@@ -61190,14 +61189,14 @@ case 1:return!0
 case 2:return!1
 case 3:s=b.b
 r=$.dk()
-q=b.a.getInt32(s,B.aw===r)
+q=b.a.getInt32(s,B.av===r)
 b.b+=4
 return q
 case 4:return b.yM(0)
 case 6:b.je(8)
 s=b.b
 r=$.dk()
-q=b.a.getFloat64(s,B.aw===r)
+q=b.a.getFloat64(s,B.av===r)
 b.b+=8
 return q
 case 5:case 7:p=k.eK(b)
@@ -61206,20 +61205,20 @@ case 8:return b.nH(k.eK(b))
 case 9:p=k.eK(b)
 b.je(4)
 s=b.a
-o=J.aqK(B.as.gbS(s),s.byteOffset+b.b,p)
+o=J.aqK(B.ar.gbS(s),s.byteOffset+b.b,p)
 b.b=b.b+4*p
 return o
 case 10:return b.yN(k.eK(b))
 case 14:p=k.eK(b)
 b.je(4)
 s=b.a
-o=J.azT(B.as.gbS(s),s.byteOffset+b.b,p)
+o=J.azT(B.ar.gbS(s),s.byteOffset+b.b,p)
 b.b=b.b+4*p
 return o
 case 11:p=k.eK(b)
 b.je(8)
 s=b.a
-o=J.aqJ(B.as.gbS(s),s.byteOffset+b.b,p)
+o=J.aqJ(B.ar.gbS(s),s.byteOffset+b.b,p)
 b.b=b.b+8*p
 return o
 case 12:p=k.eK(b)
@@ -61246,21 +61245,21 @@ else{s=a.d
 if(b<=65535){a.eA(254)
 r=$.dk()
 s.$flags&2&&A.aj(s,10)
-s.setUint16(0,b,B.aw===r)
+s.setUint16(0,b,B.av===r)
 a.q4(a.e,0,2)}else{a.eA(255)
 r=$.dk()
 s.$flags&2&&A.aj(s,11)
-s.setUint32(0,b,B.aw===r)
+s.setUint32(0,b,B.av===r)
 a.q4(a.e,0,4)}}},
 eK(a){var s,r,q=a.nG(0)
 $label0$0:{if(254===q){s=a.b
 r=$.dk()
-q=a.a.getUint16(s,B.aw===r)
+q=a.a.getUint16(s,B.av===r)
 a.b+=2
 s=q
 break $label0$0}if(255===q){s=a.b
 r=$.dk()
-q=a.a.getUint32(s,B.aw===r)
+q=a.a.getUint32(s,B.av===r)
 a.b+=4
 s=q
 break $label0$0}s=q
@@ -61272,35 +61271,35 @@ s.ee(r,b)},
 $S:85}
 A.aaB.prototype={
 iM(a){var s=A.acp(64)
-B.ax.ee(s,a.a)
-B.ax.ee(s,a.b)
+B.aw.ee(s,a.a)
+B.aw.ee(s,a.b)
 return s.lB()},
 i2(a){var s,r,q
 a.toString
 s=new A.yH(a)
-r=B.ax.im(s)
-q=B.ax.im(s)
+r=B.aw.im(s)
+q=B.aw.im(s)
 if(typeof r=="string"&&s.b>=a.byteLength)return new A.i4(r,q)
 else throw A.i(B.no)},
 ru(a){var s=A.acp(64)
 s.eA(0)
-B.ax.ee(s,a)
+B.aw.ee(s,a)
 return s.lB()},
 mZ(a,b,c){var s=A.acp(64)
 s.eA(1)
-B.ax.ee(s,a)
-B.ax.ee(s,c)
-B.ax.ee(s,b)
+B.aw.ee(s,a)
+B.aw.ee(s,c)
+B.aw.ee(s,b)
 return s.lB()},
 Qj(a,b){return this.mZ(a,null,b)},
 PP(a){var s,r,q,p,o,n
 if(a.byteLength===0)throw A.i(B.E8)
 s=new A.yH(a)
-if(s.nG(0)===0)return B.ax.im(s)
-r=B.ax.im(s)
-q=B.ax.im(s)
-p=B.ax.im(s)
-o=s.b<a.byteLength?A.cA(B.ax.im(s)):null
+if(s.nG(0)===0)return B.aw.im(s)
+r=B.aw.im(s)
+q=B.aw.im(s)
+p=B.aw.im(s)
+o=s.b<a.byteLength?A.cA(B.aw.im(s)):null
 if(typeof r=="string")n=(q==null||typeof q=="string")&&s.b>=a.byteLength
 else n=!1
 if(n)throw A.i(A.aou(r,p,A.cA(q),o))
@@ -61658,7 +61657,7 @@ break
 default:throw A.i(A.cY(p+" was invoked but isn't implemented by "+A.p(q).k(0)))}return A.T(null,r)}})
 return A.U($async$Bi,r)},
 a0z(a){if(a==null)return null
-return t.J1.a(B.ax.fl(J.ve(B.I.gbS(a),a.byteOffset,a.byteLength)))},
+return t.J1.a(B.aw.fl(J.ve(B.I.gbS(a),a.byteOffset,a.byteLength)))},
 Ug(a){var s=this
 s.r.E(0,a)
 if(!s.f){s.f=!0
@@ -61667,9 +61666,9 @@ Jk(){var s,r,q,p,o=this
 if(!o.f)return
 o.f=!1
 for(s=o.r,r=A.c5(s,s.r,A.l(s).c),q=r.$ti.c;r.q();){p=r.d;(p==null?q.a(p):p).w=!1}s.W(0)
-s=B.ax.bV(o.a.a)
+s=B.aw.bV(o.a.a)
 s.toString
-B.kG.cg("put",J.iz(B.as.gbS(s),s.byteOffset,s.byteLength),t.H)},
+B.kG.cg("put",J.iz(B.ar.gbS(s),s.byteOffset,s.byteLength),t.H)},
 aft(){if($.bw.p1$)return
 this.Jk()},
 l(){var s=this.a
@@ -61820,7 +61819,7 @@ s=!1
 if(b instanceof A.kB)if(J.d(b.a,r.a))if(J.d(b.e,r.e))if(b.r===r.r)if(b.f===r.f)s=b.c==r.c
 return s}}
 A.aaM.prototype={
-$0(){if(!J.d($.tr,$.aaJ)){B.aH.cg("SystemChrome.setSystemUIOverlayStyle",$.tr.Ns(),t.H)
+$0(){if(!J.d($.tr,$.aaJ)){B.aG.cg("SystemChrome.setSystemUIOverlayStyle",$.tr.Ns(),t.H)
 $.aaJ=$.tr}$.tr=null},
 $S:0}
 A.aaK.prototype={
@@ -62143,7 +62142,7 @@ m=n.$ti.i("a0<aT.E,I>")
 o=A.Q(new A.a0(n,new A.abo(),m),m.i("aq.E"))
 n=p.f
 m=A.l(n).i("b4<1>")
-l=m.i("eX<t.E,L<@>>")
+l=m.i("eX<t.E,M<@>>")
 n=A.Q(new A.eX(new A.aF(new A.b4(n,m),new A.abp(p,o),m.i("aF<t.E>")),new A.abq(p),l),l.i("t.E"))
 q=n
 s=1
@@ -62296,7 +62295,7 @@ p===$&&A.a()
 p.cg("TextInput.setEditingState",a.FA(),q)}}$.bQ().d.r.akq(a)}}
 A.abr.prototype={
 $0(){var s=null
-return A.b([A.hX("call",this.a,!0,B.bl,s,s,s,B.aO,!1,!0,!0,B.bI,s)],t.E)},
+return A.b([A.hX("call",this.a,!0,B.bl,s,s,s,B.aN,!1,!0,!0,B.bI,s)],t.E)},
 $S:20}
 A.abo.prototype={
 $1(a){return a},
@@ -62331,7 +62330,7 @@ s.m(0,"isMultiline",a.b.j(0,B.lj))
 r.m(0,"inputType",s)}return r},
 UH(a){var s,r=$.bQ().c
 r===$&&A.a()
-s=A.R(a).i("a0<1,L<cM>>")
+s=A.R(a).i("a0<1,M<cM>>")
 s=A.Q(new A.a0(a,new A.ahu(),s),s.i("aq.E"))
 r.cg("TextInput.setSelectionRects",s,t.H)}}
 A.ahu.prototype={
@@ -62360,13 +62359,13 @@ p.d=!1
 o=a.a
 s=a.b
 q=t.N
-return B.aH.cg("ContextMenu.showSystemContextMenu",A.av(["targetRect",A.av(["x",o,"y",s,"width",a.c-o,"height",a.d-s],q,t.i),"items",r],q,t.z),t.H)},
+return B.aG.cg("ContextMenu.showSystemContextMenu",A.av(["targetRect",A.av(["x",o,"y",s,"width",a.c-o,"height",a.d-s],q,t.i),"items",r],q,t.z),t.H)},
 iQ(){var s=0,r=A.V(t.H),q,p=this
 var $async$iQ=A.W(function(a,b){if(a===1)return A.S(b,r)
 while(true)switch(s){case 0:if(p!==$.py){s=1
 break}$.py=null
 $.du.cn$=null
-q=B.aH.fW("ContextMenu.hideSystemContextMenu",t.H)
+q=B.aG.fW("ContextMenu.hideSystemContextMenu",t.H)
 s=1
 break
 case 1:return A.T(q,r)}})
@@ -62773,7 +62772,7 @@ p.d.a.d9()
 p.d=p.f=null}o=p.a
 if(o.c==null)return
 s=A.bG(null,o.d,null,null,p)
-r=A.cu(p.a.f,s,B.ay)
+r=A.cu(p.a.f,s,B.ax)
 o=p.a
 q=o.c
 q.toString
@@ -63436,7 +63435,7 @@ s=o.x
 r=o.y
 q=A.xV(a)
 if(r.j(0,B.Bw))r=new A.hj(1)
-p=s===B.aJ?"\u2026":n
+p=s===B.aI?"\u2026":n
 s=new A.m9(A.LL(p,q,o.z,o.as,o.e,o.f,m,o.ax,r,o.at),o.w,s,o.ch,!1,0,n,n,new A.aM(),A.ab())
 s.aL()
 s.P(0,n)
@@ -63482,7 +63481,7 @@ b.bs=r.f
 b.ca=r.r
 s=r.w
 if(!b.bM.j(0,s)){b.bM=s
-b.aA()}if(b.A!==B.aE){b.A=B.aE
+b.aA()}if(b.A!==B.aD){b.A=B.aD
 b.aA()}}}
 A.hC.prototype={
 aM(a){var s=new A.K6(null,new A.aM(),A.ab())
@@ -63547,7 +63546,7 @@ N(a){return this.c}}
 A.e5.prototype={
 N(a){return this.c.$1(a)}}
 A.nH.prototype={
-aM(a){var s=new A.CX(this.e,B.aE,null,new A.aM(),A.ab())
+aM(a){var s=new A.CX(this.e,B.aD,null,new A.aM(),A.ab())
 s.aL()
 s.saW(null)
 return s},
@@ -63832,7 +63831,7 @@ s.push(r.gZy())
 B.zU.tO(new A.al6(r))
 B.dW.tO(new A.al7(r))
 B.zT.tO(r.ga3m())
-B.aH.mf(r.ga3P())
+B.aG.mf(r.ga3P())
 s=$.aG()
 s.as=r.gagv()
 s.at=$.an
@@ -64028,7 +64027,7 @@ s=o.as
 if(s!==B.r){q=A.cZ(a)
 p=o.r
 p.toString
-m=A.WS(m,s,new A.NT(q==null?B.aC:q,p))}s=o.r
+m=A.WS(m,s,new A.NT(q==null?B.aB:q,p))}s=o.r
 if(s!=null)m=A.wp(m,s,B.dh)
 s=o.w
 if(s!=null)m=A.wp(m,s,B.mN)
@@ -64333,7 +64332,7 @@ n=o.b
 m=B.c.a2(o.a,n.a,n.b)
 if(m.length===0){s=1
 break}s=3
-return A.Z(B.aH.cg("LookUp.invoke",m,t.z),$async$xz)
+return A.Z(B.aG.cg("LookUp.invoke",m,t.z),$async$xz)
 case 3:case 1:return A.T(q,r)}})
 return A.U($async$xz,r)},
 tJ(a){return this.Ul(a)},
@@ -64346,7 +64345,7 @@ o=B.c.a2(n.a,p.a,p.b)
 s=o.length!==0?2:3
 break
 case 2:s=4
-return A.Z(B.aH.cg("SearchWeb.invoke",o,t.z),$async$tJ)
+return A.Z(B.aG.cg("SearchWeb.invoke",o,t.z),$async$tJ)
 case 4:case 3:return A.T(null,r)}})
 return A.U($async$tJ,r)},
 tS(a){return this.UK(a)},
@@ -64359,7 +64358,7 @@ o=B.c.a2(n.a,p.a,p.b)
 s=o.length!==0?2:3
 break
 case 2:s=4
-return A.Z(B.aH.cg("Share.invoke",o,t.z),$async$tS)
+return A.Z(B.aG.cg("Share.invoke",o,t.z),$async$tS)
 case 4:case 3:return A.T(null,r)}})
 return A.U($async$tS,r)},
 aag(a){if(!this.gEO())return
@@ -64668,9 +64667,9 @@ n.toString
 o.us(A.mp(n),B.eS)}o.p4=o.p3=o.p2=o.p1=null}else{m=m.x
 m===$&&A.a()
 r=o.p4
-p=A.N(r.a,s.a,m)
+p=A.O(r.a,s.a,m)
 p.toString
-r=A.N(r.b,s.b,m)
+r=A.O(r.b,s.b,m)
 r.toString
 q.toString
 n.GA(B.h2,new A.h(p,r),q,m)}},
@@ -64854,7 +64853,7 @@ return h},
 us(a,b){var s,r,q,p=this,o=p.a.c,n=o.a.a.length
 if(n<a.b||n<a.a)return
 o.spP(a)
-switch(b){case null:case void 0:case B.xS:case B.ae:case B.eS:case B.aZ:case B.eT:case B.au:case B.ad:p.ym()
+switch(b){case null:case void 0:case B.xS:case B.ae:case B.eS:case B.aZ:case B.eT:case B.at:case B.ad:p.ym()
 break
 case B.a8:break}o=p.a
 o.toString
@@ -65072,7 +65071,7 @@ if(o){p=b.c
 p.toString
 p=A.c3(p,B.bE)
 p=p==null?a:p.gcq()
-if(p==null)p=B.aM
+if(p==null)p=B.aL
 break $label0$0}p=a}n=b.a.db
 m=b.gqN()
 b.a.toString
@@ -65302,7 +65301,7 @@ s=h.ga9()
 r=s.is(h.a.c.a.b.gcY())
 q=t._N.a(h.ay.gI())
 q.toString
-p=A.a8o(q,new A.dU(a.gx5()?B.ap:B.Z,B.eR))
+p=A.a8o(q,new A.dU(a.gx5()?B.ao:B.Z,B.eR))
 o=B.b.gc0(h.gfi().f)
 if(a.gx5()){n=h.a.c.a
 if(n.b.d>=n.a.length)return
@@ -65348,7 +65347,7 @@ $label0$0:{if(t.tp.b(q)){s=q
 break $label0$0}p=q==null
 if(p){s=A.c3(c2,B.bE)
 s=s==null?c0:s.gcq()
-if(s==null)s=B.aM
+if(s==null)s=B.aL
 break $label0$0}s=c0}c1.a=null
 $label1$1:{o=b9.a.p3
 if(B.NU.j(0,o)){c1.a=B.y1
@@ -65448,7 +65447,7 @@ if(s>=0&&s<=j.c.a.a.length){r=A.b([],t.s6)
 j=l.a
 q=j.c.a.a.length-l.p
 if(j.k2!==1){r.push(B.V3)
-r.push(new A.kW(new A.H(l.ga9().gn().a,0),B.ao,B.dH,k,k))}else r.push(B.V2)
+r.push(new A.kW(new A.H(l.ga9().gn().a,0),B.an,B.dH,k,k))}else r.push(B.V2)
 j=l.fr
 j===$&&A.a()
 s=A.b([A.cq(k,k,k,B.c.a2(l.a.c.a.a,0,q))],t.VO)
@@ -65636,7 +65635,7 @@ if(r==null)r=B.le
 q=s.c
 p=s.d
 o=s.cx
-s=s.k2!==1?B.ap:B.cj
+s=s.k2!==1?B.ao:B.cj
 n=g.gfi()
 m=g.a
 l=m.ag
@@ -65644,7 +65643,7 @@ l=m.k2===1&&A.ay()===B.G?B.UR:h
 k=m.bO
 m=m.fp
 j=A.mc(a).adX(!1,g.a.k2!==1)
-return A.LG(A.i5(new A.tJ(q,new A.YD(g),new A.YE(),new A.YF(g),p,o,A.qX(!1,h,new A.dq(new A.YG(g),A.aoF(s,B.a0,n,k,!0,B.aE,g.ay,l,m,j,h,new A.YH(i.a,g,i.c,i.d)),h,t.WA),h,h,h,p,!1,h,h,h,h,h,h),h,t.pm),r,h,h,h,h),h,e,f,new A.YI(g,a))},
+return A.LG(A.i5(new A.tJ(q,new A.YD(g),new A.YE(),new A.YF(g),p,o,A.qX(!1,h,new A.dq(new A.YG(g),A.aoF(s,B.a0,n,k,!0,B.aD,g.ay,l,m,j,h,new A.YH(i.a,g,i.c,i.d)),h,t.WA),h,h,h,p,!1,h,h,h,h,h,h),h,t.pm),r,h,h,h,h),h,e,f,new A.YI(g,a))},
 $S:367}
 A.YC.prototype={
 $1(a){var s=this.a
@@ -65744,7 +65743,7 @@ s.O7(!0)},
 $S:0}
 A.BP.prototype={
 aM(a){var s,r=this,q=null,p=r.ax,o=r.cy,n=A.xV(a),m=r.f.b,l=A.avm(),k=A.avm(),j=$.am(),i=A.ab(),h=A.ab()
-if(o.j(0,B.aM))o=new A.hj(1)
+if(o.j(0,B.aL))o=new A.hj(1)
 s=p===1?1:q
 o=A.LL(q,n,s,r.CW,r.e,r.db,r.dx,r.fy,o,r.go)
 p=new A.p6(l,k,!0,r.RG,r.fr,!1,r.R8,new A.cb(!0,j),new A.cb(!0,j),o,!1,r.z,r.at,r.Q,r.as,p,r.ay,!1,m,r.id,r.k2,r.k3,r.p1,r.w,r.x,r.p4,r.to,B.h,i,h,0,q,q,!1,new A.aM(),A.ab())
@@ -66996,7 +66995,7 @@ s=this.d=!1
 while(!0){if(!(a>0?r[a-1].as:s))break;--a}return a}}
 A.Wk.prototype={
 $0(){var s=null,r=A.b([],t.E)
-J.hR(r,A.hX("The element being rebuilt at the time was",this.a,!0,B.bl,s,s,s,B.aO,!1,!0,!0,B.bI,s))
+J.hR(r,A.hX("The element being rebuilt at the time was",this.a,!0,B.bl,s,s,s,B.aN,!1,!0,!0,B.bI,s))
 return r},
 $S:20}
 A.Wi.prototype={
@@ -67044,12 +67043,12 @@ this.b1(new A.Za(s))
 return s.a},
 aer(a){var s=null,r=A.b([],t.E),q=A.b([],t.lX)
 this.kW(new A.Z8(q))
-r.push(A.hX("The specific widget that could not find a "+a.k(0)+" ancestor was",this,!0,B.bl,s,s,s,B.aO,!1,!0,!0,B.bI,s))
+r.push(A.hX("The specific widget that could not find a "+a.k(0)+" ancestor was",this,!0,B.bl,s,s,s,B.aN,!1,!0,!0,B.bI,s))
 if(q.length!==0)r.push(A.aBS("The ancestors of this widget were",q))
 else r.push(A.bq('This widget is the root of the tree, so it has no ancestors, let alone a "'+a.k(0)+'" ancestor.'))
 return r},
 aeq(a){var s=null
-return A.hX(a,this,!0,B.bl,s,s,s,B.aO,!1,!0,!0,B.bI,s)},
+return A.hX(a,this,!0,B.bl,s,s,s,B.aN,!1,!0,!0,B.bI,s)},
 b1(a){},
 ds(a,b,c){var s,r,q=this
 if(b==null){if(a!=null)q.rm(a)
@@ -67267,7 +67266,7 @@ return!0},
 $S:24}
 A.Z7.prototype={
 $1(a){var s=null
-return A.hX("",a,!0,B.bl,s,s,s,B.aO,!1,!0,!0,B.ji,s)},
+return A.hX("",a,!0,B.bl,s,s,s,B.aN,!1,!0,!0,B.ji,s)},
 $S:389}
 A.Zb.prototype={
 $1(a){var s=this.a.t(0,a)
@@ -67915,7 +67914,7 @@ q===$&&A.a()
 p=$.ayz()
 o=q.gu()
 n=p.$ti.i("hi<ap.T>")
-j.d=new A.aJ(t.v.a(q),new A.hi(new A.hW(new A.fY(o,1,B.ay)),p,n),n.i("aJ<ap.T>"))}if(s)s=!(isFinite(r.a)&&isFinite(r.b))
+j.d=new A.aJ(t.v.a(q),new A.hi(new A.hW(new A.fY(o,1,B.ax)),p,n),n.i("aJ<ap.T>"))}if(s)s=!(isFinite(r.a)&&isFinite(r.b))
 else s=!0
 j.w=s},
 V7(a){var s,r,q,p=this
@@ -68111,7 +68110,7 @@ N(a){var s,r,q,p,o,n,m,l,k,j=this,i=null,h=a.az(t.I).w,g=A.a0U(a),f=j.d,e=f==nul
 if(e==null)e=14
 if(g.x===!0){f=A.c3(a,B.bE)
 f=f==null?i:f.gcq()
-s=(f==null?B.aM:f).aD(e)}else s=e
+s=(f==null?B.aL:f).aD(e)}else s=e
 r=g.b
 q=g.c
 p=g.d
@@ -68128,7 +68127,7 @@ if(r!=null)f.push(new A.iQ("FILL",r))
 if(q!=null)f.push(new A.iQ("wght",q))
 if(p!=null)f.push(new A.iQ("GRAD",p))
 if(o!=null)f.push(new A.iQ("opsz",o))
-k=A.aoC(i,i,i,B.NY,i,i,!0,i,A.cq(i,i,A.il(i,i,l,i,i,i,i,i,n.b,i,i,s,i,f,i,i,1,!1,B.x,i,i,i,n.c,g.w,i,i),A.e9(n.a)),B.b_,h,i,B.aM,B.b7)
+k=A.aoC(i,i,i,B.NY,i,i,!0,i,A.cq(i,i,A.il(i,i,l,i,i,i,i,i,n.b,i,i,s,i,f,i,i,1,!1,B.x,i,i,i,n.c,g.w,i,i),A.e9(n.a)),B.b_,h,i,B.aL,B.b7)
 if(n.d)switch(h.a){case 0:f=new A.aW(new Float64Array(16))
 f.da()
 f.md(-1,1,1,1)
@@ -68589,9 +68588,9 @@ if(q!=null){r.e=q
 r.f=a}else{++$.kt.db$
 s.bn(new A.agQ(r,a),t.H)}},
 gLb(){t.Uh.a(this.e.h(0,B.zf))
-return B.aC},
+return B.aB},
 N(a){var s,r,q,p=this,o=null
-if(p.f==null)return B.ao
+if(p.f==null)return B.an
 p.a.toString
 s=p.gLb()
 p.f.toString
@@ -68764,7 +68763,7 @@ J(){return"_MediaQueryAspect."+this.b}}
 A.y4.prototype={
 gcq(){var s=this.d
 if(B.Bx!==s)return s
-return B.aM},
+return B.aL},
 gnl(){var s=this.a
 return s.a>s.b?B.JE:B.JD},
 wg(a,b,c,d){var s=this,r=b==null?s.gcq():b,q=a==null?s.r:a,p=d==null?s.w:d,o=c==null?s.f:c
@@ -68937,7 +68936,7 @@ if(s)r=b.b
 else r=null
 if(s){q=r
 p=this.b===q
-break $label0$0}if(B.aM.j(0,b)){p=this.b===1
+break $label0$0}if(B.aL.j(0,b)){p=this.b===1
 break $label0$0}p=!1
 break $label0$0}return p},
 gv(a){return B.d.gv(this.b)},
@@ -68968,7 +68967,7 @@ Ps(){var s=t.S
 return new A.tV(B.bo,-1,-1,B.cK,A.q(s,t.Q),A.cU(s),null,null,A.Fm(),A.q(s,t.A))},
 Rm(a){a.p=this.a}}
 A.PI.prototype={
-N(a){return new A.i9(this.c,A.av([B.Th,new A.MD(this.d)],t.u,t.xR),B.aE,!1,null)}}
+N(a){return new A.i9(this.c,A.av([B.Th,new A.MD(this.d)],t.u,t.xR),B.aD,!1,null)}}
 A.J5.prototype={
 N(a){var s=this,r=a.az(t.I).w,q=A.b([],t.p),p=s.c
 if(p!=null)q.push(A.a1G(p,B.iw))
@@ -69212,7 +69211,7 @@ s=B.af===p?3:4
 break
 case 3:o=q.a.w
 s=5
-return A.Z(A.a_L(B.aB,null,t.H),$async$$1)
+return A.Z(A.a_L(B.aA,null,t.H),$async$$1)
 case 5:B.dW.hh(B.nn.ys(o))
 s=2
 break
@@ -70271,7 +70270,7 @@ A.aiN.prototype={
 $1(a){return a.ap(B.aW,this.a,a.gbT())},
 $S:31}
 A.aiL.prototype={
-$1(a){return a.ap(B.aL,this.a,a.gbE())},
+$1(a){return a.ap(B.aK,this.a,a.gbE())},
 $S:31}
 A.aiM.prototype={
 $1(a){return a.ap(B.b0,this.a,a.gbY())},
@@ -71034,7 +71033,7 @@ s===$&&A.a()
 s.K(this.gBD())}this.aK()},
 N(a){var s,r,q=this,p=q.d
 p.toString
-if(p&&q.gL5())return B.ao
+if(p&&q.gL5())return B.an
 p=q.r
 if(p==null)p=q.f
 s=q.a
@@ -71333,7 +71332,7 @@ A.d_(new A.bN(s,r,"widget library",p,new A.adS(this),!1))
 return a}}}
 A.adS.prototype={
 $0(){var s=null,r=this.a
-return A.b([A.hX("The "+A.p(r).k(0)+" that invoked the callback was",r,!0,B.bl,s,s,s,B.aO,!1,!0,!0,B.bI,s)],t.E)},
+return A.b([A.hX("The "+A.p(r).k(0)+" that invoked the callback was",r,!0,B.bl,s,s,s,B.aN,!1,!0,!0,B.bI,s)],t.E)},
 $S:20}
 A.G1.prototype={
 gA1(){var s=this.b
@@ -71947,7 +71946,7 @@ nC(a){switch(this.ja(a).a){case 4:case 2:return B.kD
 case 3:case 5:case 0:case 1:return B.dz}},
 gy6(){return A.c0([B.cp,B.cN],t.J)},
 w3(a,b,c){var s=null
-switch(this.ja(a).a){case 3:case 4:case 5:return A.aEh(b,c.b,B.aB,s,s,0,A.Fn(),B.z,s,s,s,s,B.ei,s)
+switch(this.ja(a).a){case 3:case 4:case 5:return A.aEh(b,c.b,B.aA,s,s,0,A.Fn(),B.z,s,s,s,s,B.ei,s)
 case 0:case 1:case 2:return b}},
 w0(a,b,c){switch(this.ja(a).a){case 2:case 3:case 4:case 5:return b
 case 0:case 1:return A.asc(c.a,b,B.k)}},
@@ -72201,7 +72200,7 @@ l(){this.d=null
 this.aK()}}
 A.a8u.prototype={
 $0(){var s=null,r=this.a
-return A.b([A.hX("The "+A.p(r).k(0)+" sending notification was",r,!0,B.bl,s,s,s,B.aO,!1,!0,!0,B.bI,s)],t.E)},
+return A.b([A.hX("The "+A.p(r).k(0)+" sending notification was",r,!0,B.bl,s,s,s,B.aN,!1,!0,!0,B.bI,s)],t.E)},
 $S:20}
 A.a8v.prototype={
 $1(a){this.a.Lm(a.OS())
@@ -72565,7 +72564,7 @@ break
 default:s=null}return s},
 ZP(a){var s,r=this.w.a.c
 $label0$0:{if(B.Z===r||B.bi===r){s=this.a6g(a)
-break $label0$0}if(B.ap===r||B.cj===r){s=a
+break $label0$0}if(B.ao===r||B.cj===r){s=a
 break $label0$0}s=null}return s},
 DT(a,b,c,d,e,f){return this.af0(a,b,c,d,e,f)},
 af0(a,b,c,d,e,f){var s=0,r=A.V(t.H),q,p=this,o,n,m,l,k,j
@@ -73607,7 +73606,7 @@ if(c){p.e=!1
 s=1
 break}e=A.e6(0,B.d.aE(1000/p.c))
 s=3
-return A.Z(d.d.jr(g,B.ay,e),$async$ol)
+return A.Z(d.d.jr(g,B.ax,e),$async$ol)
 case 3:s=p.e?4:5
 break
 case 4:s=6
@@ -73690,7 +73689,7 @@ $label0$0:{if(B.xP===r||B.xQ===r){s=this.Q.b
 break $label0$0}if(B.Ll===r||B.xR===r){s=this.Q.a
 break $label0$0}s=null}return s},
 gBI(){var s=this.dx
-if(s===B.ap||s===B.Z)return this.e===B.aC?B.xQ:B.xP
+if(s===B.ao||s===B.Z)return this.e===B.aB?B.xQ:B.xP
 return B.xR},
 bW(a,b){var s=this,r=s.db
 if(r!=null&&Math.max(r.gdh()-r.ghG(),0)===Math.max(a.gdh()-a.ghG(),0)&&r.gn1()===a.gn1()&&Math.max(r.ghF()-r.gdh(),0)===Math.max(a.ghF()-a.gdh(),0)&&s.dx===b)return
@@ -73736,7 +73735,7 @@ s+=2*r
 p=c.db.d
 p.toString
 o=c.dx
-n=o!==B.ap
+n=o!==B.ao
 m=!n||o===B.Z
 l=c.Q
 k=new A.H(s,p-(m?l.gaS()+l.gaT():l.gbi()))
@@ -73759,7 +73758,7 @@ r=c.x
 p=c.db.d
 p.toString
 o=c.dx
-n=o!==B.ap
+n=o!==B.ao
 m=!n||o===B.Z
 l=c.Q
 m=m?l.gaS()+l.gaT():l.gbi()
@@ -73781,7 +73780,7 @@ q=new A.H(s,r)
 s=c.db.d
 s.toString
 p=c.dx
-o=p!==B.ap
+o=p!==B.ao
 n=!o||p===B.Z
 m=c.Q
 n=n?m.gaS()+m.gaT():m.gbi()
@@ -73805,7 +73804,7 @@ q=new A.H(s,r)
 s=c.db.d
 s.toString
 p=c.dx
-o=p!==B.ap
+o=p!==B.ao
 n=!o||p===B.Z
 m=c.Q
 n=n?m.gaS()+m.gaT():m.gbi()
@@ -73849,7 +73848,7 @@ if(a==null||!b.Bk(b.db))return
 s=b.db
 r=s.d
 r.toString
-q=a!==B.ap
+q=a!==B.ao
 p=!q||a===B.Z
 o=b.Q
 p=p?o.gaS()+o.gaT():o.gbi()
@@ -73893,7 +73892,7 @@ s.toString
 n=n.d
 n.toString
 r=o.dx
-r=r===B.ap||r===B.Z
+r=r===B.ao||r===B.Z
 q=o.Q
 r=r?q.gaS()+q.gaT():q.gbi()
 q=o.w
@@ -74018,7 +74017,7 @@ if(s!=null)s.b_()
 s=r.x
 s===$&&A.a()
 s.z=B.aR
-s.jg(1,B.ay,null)}else{s=r.x
+s.jg(1,B.ax,null)}else{s=r.x
 s===$&&A.a()
 s.d9()}},
 uS(){var s,r=this
@@ -74109,7 +74108,7 @@ l=A.D(m/n,o/n,p/n)}else l=0
 q=q.d
 q.toString
 p=s.dx
-p=p===B.ap||p===B.Z
+p=p===B.ao||p===B.Z
 o=s.Q
 p=p?o.gaS()+o.gaT():o.gbi()
 o=s.w
@@ -74167,7 +74166,7 @@ switch(A.ba(m.a.c).a){case 1:r=n.CW
 r===$&&A.a()
 r=r.cx
 r===$&&A.a()
-q=a.b.b>r?B.ap:B.Z
+q=a.b.b>r?B.ao:B.Z
 break
 case 0:r=n.CW
 r===$&&A.a()
@@ -75084,7 +75083,7 @@ s=o.e
 if(s!=null)m.a=new A.bn(s,j,n)
 r=A.atr(a,l)
 q=r?A.JA(a):n
-p=A.aoF(k,B.a0,q,B.al,!1,B.aE,n,n,n,n,n,new A.aa8(m,o,k))
+p=A.aoF(k,B.a0,q,B.al,!1,B.aD,n,n,n,n,n,new A.aa8(m,o,k))
 A.mc(a)
 return r&&q!=null?A.atq(p):p}}
 A.aa8.prototype={
@@ -75144,7 +75143,7 @@ bh(a){var s=this.C$
 s=s==null?null:s.ap(B.aW,a,s.gbT())
 return s==null?0:s},
 bd(a){var s=this.C$
-s=s==null?null:s.ap(B.aL,a,s.gbE())
+s=s==null?null:s.ap(B.aK,a,s.gbE())
 return s==null?0:s},
 bg(a){var s=this.C$
 s=s==null?null:s.ap(B.b0,a,s.gbY())
@@ -75624,7 +75623,7 @@ l(){},
 K(a){},
 $ia3:1}
 A.Lj.prototype={
-N(a){return A.fS(B.ao,1)}}
+N(a){return A.fS(B.an,1)}}
 A.zW.prototype={
 ae2(a,b,c,d){var s=this
 if(!s.e)return B.f1
@@ -75667,7 +75666,7 @@ q=A.R(r).i("a0<1,ez>")
 p=A.Q(new A.a0(r,new A.ajV(s),q),q.i("aq.E"))
 s=o.d
 s===$&&A.a()
-s.UX(o.a.c,p)}return B.ao}}
+s.UX(o.a.c,p)}return B.an}}
 A.ajV.prototype={
 $1(a){return a.mc(this.a)},
 $S:474}
@@ -75713,7 +75712,7 @@ s.h(0,a.f6).D(0,a)
 if(s.h(0,a.f6).a===0)s.D(0,a.f6)},
 bZ(a,b){var s,r,q=this
 if(!q.gn().t(0,b))return!1
-s=q.cB(a,b)||q.A===B.aE
+s=q.cB(a,b)||q.A===B.aD
 if(s){r=new A.nx(b,q)
 q.bL.m(0,r,a)
 a.E(0,r)}return s},
@@ -75803,7 +75802,7 @@ if(r===!0)s=s.b5(B.i7)
 q=A.zu(a)
 $label0$0:{r=A.c3(a,B.bE)
 r=r==null?f:r.gcq()
-if(r==null)r=B.aM
+if(r==null)r=B.aL
 break $label0$0}p=A.c4()
 if(q!=null){o=t.Uf
 n=a.az(o)
@@ -76208,7 +76207,7 @@ o=k.aB.c9().f
 n=A.b9(k.aC(null),new A.h(0,p.a.b-o/2)).b
 l.as=n-r
 m=k.eO(new A.h(s.a,n))
-if(A.ay()===B.G||A.ay()===B.aI)if(l.at==null)l.at=l.r.b
+if(A.ay()===B.G||A.ay()===B.aH)if(l.at==null)l.at=l.r.b
 q.pQ(l.jh(m,s,k))},
 JS(a,b){var s=a-b,r=s<0?-1:1,q=this.b.aB
 return b+r*B.d.iO(Math.abs(s)/q.c9().f)*q.c9().f},
@@ -76258,7 +76257,7 @@ o=k.aB.c9().f
 n=A.b9(k.aC(null),new A.h(0,p.a.b-o/2)).b
 l.ay=n-r
 m=k.eO(new A.h(s.a,n))
-if(A.ay()===B.G||A.ay()===B.aI)if(l.at==null)l.at=l.r.b
+if(A.ay()===B.G||A.ay()===B.aH)if(l.at==null)l.at=l.r.b
 q.pQ(l.jh(m,s,k))},
 a4A(a){var s,r,q,p,o,n,m,l=this,k=l.b
 if(k.y==null)return
@@ -76346,13 +76345,13 @@ a4M(a){var s=this
 if(s.ok==null){s.w=!1
 return}s.r=!0
 if(!s.gzU())return
-s.w=a.d===B.an
+s.w=a.d===B.am
 s.y.$1(a)},
 a4O(a){var s,r=this
 if(r.ok==null){r.w=!1
 return}if(!r.gzU())return
 if(!r.w){s=a.f
-r.w=s===B.an
+r.w=s===B.am
 r.y.$1(new A.fR(a.a,a.b,a.c,s))}r.z.$1(a)},
 a4K(a){var s=this
 s.w=!1
@@ -76373,13 +76372,13 @@ a38(a){var s=this
 if(s.ok==null){s.ay=!1
 return}s.ax=!0
 if(!s.gzT())return
-s.ay=a.d===B.an
+s.ay=a.d===B.am
 s.CW.$1(a)},
 a3a(a){var s,r=this
 if(r.ok==null){r.ay=!1
 return}if(!r.gzT())return
 if(!r.ay){s=a.f
-r.ay=s===B.an
+r.ay=s===B.am
 r.CW.$1(new A.fR(a.a,a.b,a.c,s))}r.cx.$1(a)},
 a36(a){var s=this
 s.ay=!1
@@ -76453,7 +76452,7 @@ s=r.p1
 if(s!=null)s.l()
 r.p1=null},
 a_i(a){var s,r,q,p,o,n=this,m=null
-if(n.go==null)return B.ao
+if(n.go==null)return B.an
 s=n.a.gV()
 s.toString
 t.x.a(s)
@@ -76471,14 +76470,14 @@ A.a8L.prototype={
 $1(a){var s,r,q=null,p=this.a,o=p.go
 if(o!=null)s=p.e===B.c8&&p.ay
 else s=!0
-if(s)r=B.ao
+if(s)r=B.an
 else{s=p.e
 r=A.avh(p.k1,p.fx,p.ga4J(),p.ga4L(),p.ga4N(),p.k2,p.f,o,s,p.x)}return new A.pM(this.b.a,A.LG(new A.lp(!0,r,q),q,B.dO,q,q),q)},
 $S:11}
 A.a8M.prototype={
 $1(a){var s,r,q=null,p=this.a,o=p.go,n=!0
 if(o!=null){s=p.as===B.c8
-if(!(s&&p.w))n=s&&!p.w&&!p.ay}if(n)r=B.ao
+if(!(s&&p.w))n=s&&!p.w&&!p.ay}if(n)r=B.an
 else{n=p.as
 r=A.avh(p.k1,p.fy,p.ga35(),p.ga37(),p.ga39(),p.k2,p.at,o,n,p.ch)}return new A.pM(this.b.a,A.LG(new A.lp(!0,r,q),q,B.dO,q,q),q)},
 $S:11}
@@ -76502,7 +76501,7 @@ if(r!=null)r.cj()}},
 $S:6}
 A.a8J.prototype={
 $1(a){this.a.go.toString
-return B.ao},
+return B.an},
 $S:11}
 A.mU.prototype={
 ar(){return new A.DF(null,null)}}
@@ -76587,7 +76586,7 @@ j=A.av([B.i9,new A.c7(new A.ajx(h),new A.ajy(h,m),t.YC)],t.u,t.xR)
 i=h.a
 return A.ars(new A.de(k,!1,A.pu(new A.fO(B.ci,g,g,new A.i9(new A.bn(new A.ao(e,f,e,f),i.w.w_(a,i.z,i.y,i.d),g),j,B.c0,!1,g),g),p,q),g),o,l,!1)}}
 A.ajx.prototype={
-$0(){return A.atl(this.a,A.c0([B.an,B.aQ,B.bc],t.A))},
+$0(){return A.atl(this.a,A.c0([B.am,B.aQ,B.bc],t.A))},
 $S:164}
 A.ajy.prototype={
 $1(a){var s=this.a.a
@@ -76654,7 +76653,7 @@ if(!o.geQ())return
 s=o.gT().gI().ga9()
 s=s.e7=a.a
 r=a.c
-p.c=p.b=r===B.an||r===B.aQ
+p.c=p.b=r===B.am||r===B.aQ
 q=p.d
 if(q)o.gT().gI().ga9().A
 switch(A.ay().a){case 0:o.gT().gI().a.toString
@@ -76664,18 +76663,18 @@ break $label0$1}break $label0$1}if(s)A.a8m().bn(new A.abz(p),t.P)
 break
 case 1:case 2:break
 case 4:o.gT().gI().f7()
-if(q){p.Aw(s,B.au,o.gT().gI().ga9().dm?null:B.ll)
+if(q){p.Aw(s,B.at,o.gT().gI().ga9().dm?null:B.ll)
 return}o=o.gT().gI().ga9()
 s=o.e7
 s.toString
-o.eP(B.au,s)
+o.eP(B.at,s)
 break
 case 3:case 5:o.gT().gI().f7()
-if(q){p.o4(s,B.au)
+if(q){p.o4(s,B.at)
 return}o=o.gT().gI().ga9()
 s=o.e7
 s.toString
-o.eP(B.au,s)
+o.eP(B.at,s)
 break}},
 aim(a){var s
 this.b=!0
@@ -76694,26 +76693,26 @@ return}s=i.d
 if(s)h.gT().gI().ga9().A
 switch(A.ay().a){case 3:case 4:case 5:break
 case 0:h.gT().gI().iR(!1)
-if(s){i.o4(a.a,B.au)
+if(s){i.o4(a.a,B.at)
 return}r=h.gT().gI().ga9()
 q=r.e7
 q.toString
-r.eP(B.au,q)
+r.eP(B.at,q)
 h.gT().gI().GJ()
 break
 case 1:h.gT().gI().iR(!1)
-if(s){i.o4(a.a,B.au)
+if(s){i.o4(a.a,B.at)
 return}r=h.gT().gI().ga9()
 q=r.e7
 q.toString
-r.eP(B.au,q)
+r.eP(B.at,q)
 break
 case 2:if(s){p=h.gT().gI().ga9().dm?null:B.ll
-i.Aw(a.a,B.au,p)
+i.Aw(a.a,B.at,p)
 return}switch(a.c.a){case 1:case 4:case 2:case 3:r=h.gT().gI().ga9()
 q=r.e7
 q.toString
-r.eP(B.au,q)
+r.eP(B.at,q)
 h.gT().gI().f7()
 break
 case 0:case 5:o=h.gT().gI().ga9().A
@@ -76721,7 +76720,7 @@ n=h.gT().gI().ga9().eO(a.a)
 if(h.gT().gI().afm(n.a)!=null){r=h.gT().gI().ga9()
 q=r.e7
 q.toString
-r.ka(B.au,q)
+r.ka(B.at,q)
 if(!o.j(0,h.gT().gI().a.c.a.b))h.gT().gI().GJ()
 else h.gT().gI().yu(!1)}else{if(!(i.a8j(n)&&o.a!==o.b))r=i.a8k(n)&&o.a===o.b&&n.b===o.e&&!h.gT().gI().ga9().dN
 else r=!0
@@ -76737,7 +76736,7 @@ j=A.c4()
 q=k.a
 if(l.a<=q)j.b=A.kE(B.j,q)
 else j.b=A.kE(B.ai,k.b)
-r.lo(j.b0(),B.au)
+r.lo(j.b0(),B.at)
 if(o.j(0,h.gT().gI().a.c.a.b)&&h.gT().gI().ga9().dm&&!h.gT().gI().ga9().dN)h.gT().gI().yu(!1)
 else h.gT().gI().iR(!1)}}break}break}h.gT().gI().ym()},
 aiH(){},
@@ -76798,18 +76797,18 @@ if(!q.geQ())return
 switch(A.ay().a){case 2:case 4:if(!this.ga5U()||!q.gT().gI().ga9().dm){s=q.gT().gI().ga9()
 r=s.e7
 r.toString
-s.ka(B.au,r)}if(this.b){q.gT().gI().f7()
+s.ka(B.at,r)}if(this.b){q.gT().gI().f7()
 q.gT().gI().hj()}break
 case 0:case 1:case 3:case 5:if(!q.gT().gI().ga9().dm){s=q.gT().gI().ga9()
 r=s.e7
 r.toString
-s.eP(B.au,r)}q.gT().gI().FC()
+s.eP(B.at,r)}q.gT().gI().FC()
 break}},
 aiw(a){var s=this.a.gT().gI().ga9()
 s.rF=s.e7=a.a
 this.b=!0
 s=a.c
-this.c=s==null||s===B.an||s===B.aQ},
+this.c=s==null||s===B.am||s===B.aQ},
 aib(a){var s,r,q=this.a
 if(q.geQ()){s=q.gT().gI().ga9()
 r=s.e7
@@ -76838,15 +76837,15 @@ n.toString
 n.fb(s.gT().gI().a.c.a.hy(l),b)},
 aiR(a){var s=this,r=s.a
 if(!r.geQ())return
-if(r.gT().gI().ga9().ae===1)r.gT().gI().yW(B.au)
-else switch(A.ay().a){case 0:case 1:case 2:case 4:case 5:s.a9u(B.au,a.a)
+if(r.gT().gI().ga9().ae===1)r.gT().gI().yW(B.at)
+else switch(A.ay().a){case 0:case 1:case 2:case 4:case 5:s.a9u(B.at,a.a)
 break
-case 3:s.a9t(B.au,a.a)
+case 3:s.a9t(B.at,a.a)
 break}if(s.b)r.gT().gI().hj()},
 aif(a){var s,r,q=this,p=q.a
 if(!p.geQ())return
 s=a.d
-q.c=q.b=s===B.an||s===B.aQ
+q.c=q.b=s===B.am||s===B.aQ
 q.r=p.gT().gI().ga9().A
 q.e=q.gom()
 r=p.gT().gI().ga9().R.at
@@ -76860,10 +76859,10 @@ break
 case 0:case 1:case 3:case 5:q.o4(a.a,B.ae)
 break}else switch(A.ay().a){case 2:switch(s){case B.bs:case B.aY:p.gT().gI().ga9().eP(B.ae,a.a)
 break
-case B.aQ:case B.bR:case B.an:case B.bc:case null:case void 0:break}break
+case B.aQ:case B.bR:case B.am:case B.bc:case null:case void 0:break}break
 case 0:case 1:switch(s){case B.bs:case B.aY:p.gT().gI().ga9().eP(B.ae,a.a)
 break
-case B.aQ:case B.bR:case B.an:case B.bc:if(p.gT().gI().ga9().dm){r=a.a
+case B.aQ:case B.bR:case B.am:case B.bc:if(p.gT().gI().ga9().dm){r=a.a
 p.gT().gI().ga9().eP(B.ae,r)
 q.qJ(r)}break
 case null:case void 0:break}break
@@ -76884,18 +76883,18 @@ default:s=null}q=a.a
 p=q.S(0,a.r)
 o=a.x
 if(A.uM(o)===2){i.gT().gI().ga9().tL(B.ae,p.S(0,r).S(0,s),q)
-switch(a.f){case B.aQ:case B.bR:case B.an:case B.bc:return j.qJ(q)
+switch(a.f){case B.aQ:case B.bR:case B.am:case B.bc:return j.qJ(q)
 case B.bs:case B.aY:case null:case void 0:return}}if(A.uM(o)===3)switch(A.ay().a){case 0:case 1:case 2:switch(a.f){case B.bs:case B.aY:return j.BM(B.ae,p.S(0,r).S(0,s),q)
-case B.aQ:case B.bR:case B.an:case B.bc:case null:case void 0:break}return
+case B.aQ:case B.bR:case B.am:case B.bc:case null:case void 0:break}return
 case 3:return j.MA(B.ae,p.S(0,r).S(0,s),q)
 case 5:case 4:return j.BM(B.ae,p.S(0,r).S(0,s),q)}switch(A.ay().a){case 2:switch(a.f){case B.bs:case B.aY:return i.gT().gI().ga9().tK(B.ae,p.S(0,r).S(0,s),q)
-case B.aQ:case B.bR:case B.an:case B.bc:case null:case void 0:break}return
+case B.aQ:case B.bR:case B.am:case B.bc:case null:case void 0:break}return
 case 0:case 1:switch(a.f){case B.bs:case B.aY:case B.aQ:case B.bR:return i.gT().gI().ga9().tK(B.ae,p.S(0,r).S(0,s),q)
-case B.an:case B.bc:if(i.gT().gI().ga9().dm){i.gT().gI().ga9().eP(B.ae,q)
+case B.am:case B.bc:if(i.gT().gI().ga9().dm){i.gT().gI().ga9().eP(B.ae,q)
 return j.qJ(q)}break
 case null:case void 0:break}return
 case 4:case 3:case 5:return i.gT().gI().ga9().tK(B.ae,p.S(0,r).S(0,s),q)}}s=j.r
-if(s.a!==s.b)s=A.ay()!==B.G&&A.ay()!==B.aI
+if(s.a!==s.b)s=A.ay()!==B.G&&A.ay()!==B.aH
 else s=!0
 if(s)return j.o4(a.a,B.ae)
 n=i.gT().gI().a.c.a.b
@@ -76975,7 +76974,7 @@ a.ai=s.w
 a.H=s.x},
 $S:90}
 A.akn.prototype={
-$0(){return A.a1P(this.a,A.c0([B.an],t.A))},
+$0(){return A.a1P(this.a,A.c0([B.am],t.A))},
 $S:160}
 A.ako.prototype={
 $1(a){var s=this.a
@@ -77626,7 +77625,7 @@ s=s==null?null:s.ap(B.bh,a/this.p,s.gc1())
 if(s==null)s=0
 return s*this.p},
 bd(a){var s=this.C$
-s=s==null?null:s.ap(B.aL,a/this.p,s.gbE())
+s=s==null?null:s.ap(B.aK,a/this.p,s.gbE())
 if(s==null)s=0
 return s*this.p},
 bg(a){var s=this.C$
@@ -77750,7 +77749,7 @@ if(b?r.E(s,a):r.D(s,a))this.aw()}}
 A.TQ.prototype={}
 A.a7J.prototype={
 aco(a,b,c){var s,r,q=this,p=b.a
-if(J.fM(p)&&b.e==null)return B.ao
+if(J.fM(p)&&b.e==null)return B.an
 s=q.d
 r=s.b
 return q.a.$2(a,A.aGu(s,q.c,q.b,new A.ly(A.fy(r),t.bT),b,p,r,q.e,q.r,q.w))}}
@@ -80500,7 +80499,7 @@ s(A,"awB","aJg",531)
 m(A.t.prototype,"gks","t",19)
 q(A,"aKE",2,null,["$1$2","$2"],["aq_",function(a,b){return A.aq_(a,b,t.Ci)}],532,0)
 q(A,"va",3,null,["$3"],["aac"],533,0)
-q(A,"Fo",3,null,["$3"],["N"],534,0)
+q(A,"Fo",3,null,["$3"],["O"],534,0)
 q(A,"bz",3,null,["$3"],["r"],535,0)
 n(A.DV.prototype,"gRv","d6",22)
 o(A.kN.prototype,"gJl","a10",0)
@@ -82193,12 +82192,12 @@ s(A.OR,A.ek)
 s(A.RK,A.a_)
 s(A.RL,A.a_)
 s(A.RJ,A.a_)})()
-var v={G:typeof self!="undefined"?self:globalThis,typeUniverse:{eC:new Map(),tR:{},eT:{},tPV:{},sEA:[]},mangledGlobalNames:{n:"int",I:"double",cM:"num",o:"String",F:"bool",bm:"Null",L:"List",G:"Object",aO:"Map",aB:"JSObject"},mangledNames:{},types:["~()","I(I)","~(aB)","I(dl)","pH(dl)","wH(dl)","~(aR)","~(iA)","A(b2<bK>)","~(oR,h)","~(z)","f(X)","~(aY)","F(ld,h)","~(G?)","~(F)","ed(dl)","~(qO)","~(b5)","F(G?)","L<db>()","F(o)","~(d9?)","ah<~>()","F(aY)","~(n)","~(dV)","F(cx)","~(ts)","at<I>(@)","bm(~)","I(x)","F(iP)","~(fR)","F(kd)","~(fl)","n(cx,cx)","~(m3)","H(x,ac)","k(b2<bK>)","~(et)","~(m2)","I(x,I)","bm()","bm(aB)","~(dF<G?>,~())","F(eZ)","jf(b2<bK>)","~(~())","~(kl)","F()","de(X,bp<I>,bp<I>,f)","dP<@>(X,dC)","F(ft)","~(@)","ha()","F(dH)","F(dV)","F(er)","F(n)","d0(X)","bo<A?>?(bk?)","f(X)?(qe?)","n(n)","A(A)","dN(@)","~(tt)","n(z,z)","ah<@>(i4)","h(h)","o()","bm(@)","~(o)","~(lU)","L<dH>()","bm(G,h7)","~(Ac)","~(o6)","o(o)","o(oA)","d2(b2<bK>)","aB?(n)","@(@)","bm(G)","~(G,h7)","~(G?,G?)","bo<H?>?(bk?)","A?(b2<bK>)","o(n)","ah<~>(G?)","~(fD)","fD()","F(o2)","n()","n(G?)","~(I)","F(G?,G?)","bm(F)","aB()","n(cl,cl)","F(cl)","F(pg)","aB(G?)","~({curve:fj,descendant:z?,duration:aR,rect:v?})","eI(eI)","F(fu)","~(Af)","F(fv)","F(fo)","aP(b2<bK>)","fO(X,f?)","iG(tj)","n2(X,bp<I>,f?)","n3(X,bp<I>,f?)","f(o)","qu(L<et>)","~(f4,hF?)","~(lt)","v()","~(aoH)","I?(+(ac,ji))","o(I,I,o)","o(oy)","F(z)","bm(o)","kN()","G?(G?)","d5(et)","~(ju)","+boundaryEnd,boundaryStart(a9,a9)(a9)","F(ld)","~(pv)","fv()","~(h,x)","aW(I)","~(L<lw>)","~(mi)","~(cl)","L<cl>(iu)","f(X,b2<bK>,f?)?(bk?)","~(o,@)","bo<I?>?(bk?)","ah<~>(i4)","~(d3)","aO<G?,G?>()","@()","I()","~(eZ)","F(lT)","arN()","ah<~>(@)","~([aR?])","a9(a9,F,ha)","~(tQ)","~(LR)","~(hS)","~([aK?])","k({background:lX?,backgroundColor:A?,color:A?,decoration:pA?,decorationColor:A?,decorationStyle:Al?,decorationThickness:I?,fontFeatures:L<aCj>?,fontSize:I?,fontStyle:qZ?,fontWeight:eS?,foreground:lX?,height:I?,letterSpacing:I?,locale:j_?,shadows:L<jb>?,textBaseline:ji?,textStyle:k?,wordSpacing:I?})","I?(x,ac,ji)","n(dw,dw)","i2()","n(dV,dV)","fX()","~(fX)","i8()","~(i8)","at<@>?(at<@>?,@,at<@>(@))","l9(@)","ln(@)","jR(@)","iW(cx,hw)","f(X,f?)","yz?()","aB([aB?])","iq(b5)","o(G?)","@(o)","~(jT)","~(eG)","F(dV,I)","~(o9)","~(i2)","F(pr)","~(rl)","~(xX)","~(rk)","~(Ae)","~(Ag)","~(Ad)","cX/(o?)","~(@,@)","L<er>()","cX(cX)","L<aB>()","ah<aB>([aB?])","ah<F>()","A?(A?)","n(@,@)","f?(X,bp<I>,bp<I>,F,f?)","I(x,ac)","f(X,lo)","ah<d9?>(d9?)","H(x)","A?()","F?(bk?)","ff?(bk?)","ra?(bk?)","oP()","aO<o,o>(aO<o,o>,o)","oi(X,f?)","h(H,I)","~(o,n)","~(o,n?)","aP?(b2<bK>)","n(n,n)","~(o,o?)","v()?(x)","~(aK?)","~(n,n,n)","F(lD?)","A(mK)","mh(X)","rW()","qw()","~(x?)","~({allowPlatformDefault!F})","ah<bm>()","a1?(X,ox,cb<k9>)","F(h_)","ah<~>([aB?])","eA()","ps(@)","~(G)","n(fo,fo)","f(X,bp<I>,bp<I>,F,f?)","kf?(f2)","rv(X,f?)","jF(X,f?)","bn(aU<n,o>)","F(b2<bK>)","I(b2<bK>)","~(qx)","iG(tk)","oj(X,f?)","mh(X,f?)","pE(@)","iB()","hK()","aU<G,jj<@>>(G,jj<@>)","F(aU<G,jj<@>>)","F(mr)","cv(cv,bE)","bE(bE)","F(bE)","o(bE)","F(I)","A(I)","ho(iF)","lX(dz)","v(dz)","oS(dz)","F(n,F)","ob?()","oI(rw)","lM(lM)","~(~)","k4(h,n)","H()","I?()","H(ac)","~(n,F(iP))","~(f4)","F(k7)","v(v?,eI)","~(n?)","ac(x)","d2(j2)","~(j2,aW)","F(j2)","L<f>(aU<iS,L<fo>>)","bn(X,n)","F(n,n)","n(aB)","pP(mF)","~(L<d5>{isMergeUp:F})","et?(d5)","~(dE,n)","L<d5>(L<d5>)","L<f7>(f7)","b2<dt>?(d5)","b2<dt>(b2<dt>)","F(rT)","F(ju)","bn(+(n,n))","+boundaryEnd,boundaryStart(a9,a9)(a9,o)","ah<aB>()","p5?(jL,o,o)","F(x)","~(w<G?>,aB)","F(ds)","L<kh>()","pG({from:I?})","~(aB,L<hB>)","~(n,ua)","~({allowPlatformDefault:F})","tY()","cl(l_)","uv()","~(Ah)","n(cl)","cl(n)","~(dt)","~(cz,~(G?))","ah<o>()","d9(d9?)","ah<pL>(o)","dX<hx>()","ah<o?>(o?)","jL(G?)","ah<~>(d9?,~(d9?))","he(d9)","ah<~>(ah<he>)","ah<~>(he)","ah<aO<o,@>>(@)","~(kr)","b2<e>(e)","bm(w<G?>,aB)","yG()","o?(o)","iI()","o(o,A)","L<d3>()","L<d3>(L<d3>)","I(cM)","L<@>(o)","L<cM>(pp)","aO<o,@>(ez)","oJ()","~(ij)","~(aQ<aK>)","~(o,aB)","~(mD)","f(mD)","F(f)","~(hZ?,ty?)","ck<@>?(hD)","ck<@>(hD)","ow(X,f?)","F(rf)","~(o?)","qz(X)","I(@)","ah<F>(i4)","lm(X)","~(dR)","ah<~>(~)","~(L<aB>,aB)","nB(f)","~(ms)","~(ia)","~(kw)","~(dU)","~(ZM)","~(hL)","G?(fk)","cf(cf,mo)","aY(n)","tz(X)","~(ko)","~(cf)","F(cf?,cf)","cf(cf)","ij()","qG(X,hh)","F(fW<af>)","~([cx?])","aCA?()","F(xJ)","~(u9)","~(H?)","~(ho)","F(mt)","b2<hs>(dw)","qU(o)","L<hs>(X)","v(dw)","n(jr,jr)","L<dw>(dw,t<dw>)","F(dw)","iJ<aY>(aY)","aY?(aY)","G?(n,aY?)","hY()","~(hY)","~(kd)","~(L<G?>)","~(kc)","o(cH)","ub()","~(m1)","~(kn)","~(ks)","~(h8,G)","p0(X,f?)","~(kS)","F(kS)","og(X)","I?(n)","@(@,o)","F(hB)","dv?(hB)","nw(@)","oF(@)","pD(@)","nt(@)","ah<@>(uu)","aO<hd,@>(L<@>)","aO<hd,@>(aO<hd,@>)","bm(aO<hd,@>)","lR(X)","F(G)","~(ku?,F)","F(ck<@>?)","ah<bm>(@)","F(lW)","o(I)","~(uL)","dH(ck<@>)","aO<~(b5),aW?>()","aU<o?,L<G>>(@,@)","q_()","x(n)","~(ac)","qA(X,f?)","bm(d3?)","~(dF<G?>)","c8<F>(F)","ah<F>(F)","~(~(b5),aW?)","F(pV)","ma(X,f?)","jF(X)","r7(X,f?)","oe(b5)","rm(b5)","o5(@)","aU<n,o>(aU<o,o>)","qY(@)","f(X,hh)","bm(L<~>)","bm(~())","li(cS)","hg()","~(hg)","qN(cS)","~(h)","~(o,G?)","~(fQ)","mL()","n_()","jv()","~(jv)","~(km)","nM(cS)","v(v)","F(v)","~(tf,aK)","L<mz>()","aK?()","X?()","aQ<aK>?()","uI(X,hh)","~(x)","aY?()","ez(fr)","mU(X)","rr(v?,v?)","ah<mk>(o,aO<o,o>)","bm(@,h7)","~(n,@)","~(jk<aB>)","I(kP)","0^?(0^?(bk?))<G?>","0^?(bo<0^>?(bk?))<G?>","jg()","~(jg)","jh()","~(jh)","i_()","~(i_)","~(mu)","~(m7)","q4(X,ki)","F(ck<G?>,G?)","rq(X,dC)","oO<~>({arguments!G?,child!f,key!h0,name!o?,restorationId!o})","qV(X,dC)","cX/(cX)","~(G[h7?])","b2<0^>()<G?>","o?/(o?)","o(cX)","o(f5)","f5(f5)","F(ck<G?>,G?,er)","ah<~>(F)","bo<k?>?(bk?)","aU<o,o>(o,o)","0&(X,dC)","F(aU<o,o>)","n(aU<o,o>)","aO<G?,G?>(eU)","bm(eA,eA)","lC(X,f)","F(eF<G?>,dC)","F(~)","F(o,o)","n(o)","bm(o,o[G?])","~(a55<L<n>>)","~(L<n>)","bo<cv?>?(bk?)","bm(G?)","bo<aP?>?(bk?)","bo<cO?>?(bk?)","n(fp,fp)","o(o,o)","aB(n{params:G?})","d2?(b2<bK>)","n(cG<@>,cG<@>)","L<o>()","L<o>(o,L<o>)","0^(0^,0^)<cM>","H?(H?,H?,I)","I?(cM?,cM?,I)","A?(A?,A?,I)","d2?(bk?)","f(X,h,h,f)","~(bN{forceReport:F})","db(o)","ig?(o)","I(I,I,I)","~(A7,@)","f(X,bp<I>)","F?(F?,F?,I)","A?(bk?)","f(X,f)","cO?(cO?,cO?,I)","cv?(cv?,cv?,I)","k?(k?,k?,I)","n(E1<@>,E1<@>)","F({priority!n,scheduler!ja})","L<hx>(o)","f(f,bp<I>)","f(f?,L<f>)","~(cx{alignment:I?,alignmentPolicy:pi?,curve:fj?,duration:aR?})","n(aY,aY)","cD(cD?,cD?,I)","f?(X,ox,cb<k9>)","~(F,G?)","L<ck<@>>(fw,o)","n(f,n)","kI?(bk?)","oB?(bk?)","f(X,bp<I>,bp<I>,f)","i3<~>({arguments!G?,child!f,key!h0,name!o?,restorationId!o})","o?/(X,dC)","~(o?{wrapWidth:n?})","aR?(bk?)","F(u4)"],interceptorsByTag:null,leafTags:null,arrayRti:Symbol("$ti"),rttc:{"2;":(a,b)=>c=>c instanceof A.a5&&a.b(c.a)&&b.b(c.b),"2;boundaryEnd,boundaryStart":(a,b)=>c=>c instanceof A.QW&&a.b(c.a)&&b.b(c.b),"2;end,start":(a,b)=>c=>c instanceof A.QX&&a.b(c.a)&&b.b(c.b),"2;endGlyphHeight,startGlyphHeight":(a,b)=>c=>c instanceof A.CR&&a.b(c.a)&&b.b(c.b),"2;key,value":(a,b)=>c=>c instanceof A.QY&&a.b(c.a)&&b.b(c.b),"2;localPosition,paragraph":(a,b)=>c=>c instanceof A.QZ&&a.b(c.a)&&b.b(c.b),"2;representation,targetSize":(a,b)=>c=>c instanceof A.R_&&a.b(c.a)&&b.b(c.b),"3;":(a,b,c)=>d=>d instanceof A.hk&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;ascent,bottomHeight,subtextHeight":(a,b,c)=>d=>d instanceof A.R0&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;breaks,graphemes,words":(a,b,c)=>d=>d instanceof A.R1&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;completer,recorder,scene":(a,b,c)=>d=>d instanceof A.CS&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;data,event,timeStamp":(a,b,c)=>d=>d instanceof A.CT&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;domSize,representation,targetSize":(a,b,c)=>d=>d instanceof A.R2&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;large,medium,small":(a,b,c)=>d=>d instanceof A.R3&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"4;domBlurListener,domFocusListener,element,semanticsNodeId":a=>b=>b instanceof A.CU&&A.aq1(a,b.a),"4;height,width,x,y":a=>b=>b instanceof A.R4&&A.aq1(a,b.a),"4;queue,started,target,timer":a=>b=>b instanceof A.CV&&A.aq1(a,b.a)}}
-A.aHf(v.typeUniverse,JSON.parse('{"eA":"lL","Jt":"lL","kH":"lL","aMM":"rz","atX":{"eo":[]},"kh":{"eo":[]},"oJ":{"tR":[]},"oP":{"tR":[]},"dE":{"pa":[]},"qw":{"oS":[]},"lv":{"bS":[]},"arN":{"oS":[]},"jV":{"a_6":[]},"Gr":{"le":[]},"vX":{"le":[]},"ry":{"t":["i6"],"t.E":"i6"},"Jr":{"zg":[]},"Gs":{"le":[]},"vU":{"le":[]},"Bh":{"le":[]},"Bj":{"le":[]},"Bi":{"le":[]},"wb":{"eo":[]},"Kl":{"eo":[]},"G4":{"eo":[],"ar2":[]},"Gx":{"eo":[],"ari":[]},"GA":{"eo":[],"arl":[]},"Gz":{"eo":[],"ark":[]},"Je":{"eo":[],"atf":[]},"AK":{"eo":[],"aoY":[]},"yr":{"eo":[],"aoY":[],"atc":[]},"Ip":{"eo":[],"asi":[]},"nC":{"lX":[]},"vW":{"lM":[]},"Gl":{"bS":[]},"I8":{"asg":[]},"I7":{"dd":[]},"I6":{"dd":[]},"u5":{"t":["1"],"t.E":"1"},"HL":{"lv":[],"bS":[]},"HJ":{"lv":[],"bS":[]},"HK":{"lv":[],"bS":[]},"eq":{"cW":[]},"bX":{"cW":[]},"GO":{"cW":[]},"FV":{"cW":[]},"FW":{"cW":[]},"fd":{"cW":[]},"jH":{"cW":[]},"l8":{"cW":[]},"dM":{"cW":[]},"qh":{"cW":[]},"FN":{"cW":[]},"qD":{"cW":[]},"oq":{"oS":[],"arn":[]},"KP":{"fz":[]},"vS":{"fz":[]},"qr":{"fz":[]},"Hz":{"fz":[]},"o1":{"fz":[]},"IC":{"fz":[]},"lP":{"fz":[]},"Kg":{"fz":[]},"KX":{"mg":[]},"KU":{"mg":[]},"KT":{"mg":[]},"pe":{"fz":[]},"L1":{"aoH":[]},"Lz":{"fz":[]},"uQ":{"aT":["1"],"L":["1"],"ak":["1"],"t":["1"]},"Pd":{"uQ":["n"],"aT":["n"],"L":["n"],"ak":["n"],"t":["n"]},"AN":{"uQ":["n"],"aT":["n"],"L":["n"],"ak":["n"],"t":["n"],"aT.E":"n","t.E":"n"},"wO":{"lM":[]},"Om":{"jV":[],"a_6":[]},"qT":{"jV":[],"a_6":[]},"w":{"L":["1"],"ak":["1"],"aB":[],"t":["1"],"t.E":"1"},"xA":{"F":[],"ca":[]},"rd":{"bm":[],"ca":[]},"xE":{"aB":[]},"lL":{"aB":[]},"Iw":{"zc":[]},"a1a":{"w":["1"],"L":["1"],"ak":["1"],"aB":[],"t":["1"],"t.E":"1"},"lK":{"I":[],"cM":[],"cG":["cM"]},"rc":{"I":[],"n":[],"cM":[],"cG":["cM"],"ca":[]},"xC":{"I":[],"cM":[],"cG":["cM"],"ca":[]},"iU":{"o":[],"cG":["o"],"ca":[]},"ir":{"t":["2"]},"nz":{"ir":["1","2"],"t":["2"],"t.E":"2"},"BT":{"nz":["1","2"],"ir":["1","2"],"ak":["2"],"t":["2"],"t.E":"2"},"Bf":{"aT":["2"],"L":["2"],"ir":["1","2"],"ak":["2"],"t":["2"]},"ej":{"Bf":["1","2"],"aT":["2"],"L":["2"],"ir":["1","2"],"ak":["2"],"t":["2"],"aT.E":"2","t.E":"2"},"jO":{"b2":["2"],"ir":["1","2"],"ak":["2"],"t":["2"],"t.E":"2"},"nA":{"b1":["3","4"],"aO":["3","4"],"b1.V":"4","b1.K":"3"},"jN":{"ir":["1","2"],"ak":["2"],"t":["2"],"t.E":"2"},"i1":{"bS":[]},"nE":{"aT":["n"],"L":["n"],"ak":["n"],"t":["n"],"aT.E":"n","t.E":"n"},"ak":{"t":["1"]},"aq":{"ak":["1"],"t":["1"]},"ih":{"aq":["1"],"ak":["1"],"t":["1"],"t.E":"1","aq.E":"1"},"eX":{"t":["2"],"t.E":"2"},"jU":{"eX":["1","2"],"ak":["2"],"t":["2"],"t.E":"2"},"a0":{"aq":["2"],"ak":["2"],"t":["2"],"t.E":"2","aq.E":"2"},"aF":{"t":["1"],"t.E":"1"},"em":{"t":["2"],"t.E":"2"},"pz":{"t":["1"],"t.E":"1"},"wJ":{"pz":["1"],"ak":["1"],"t":["1"],"t.E":"1"},"kz":{"t":["1"],"t.E":"1"},"qS":{"kz":["1"],"ak":["1"],"t":["1"],"t.E":"1"},"zM":{"t":["1"],"t.E":"1"},"eR":{"ak":["1"],"t":["1"],"t.E":"1"},"o3":{"t":["1"],"t.E":"1"},"cg":{"t":["1"],"t.E":"1"},"oh":{"t":["+(n,1)"],"t.E":"+(n,1)"},"qR":{"oh":["1"],"ak":["+(n,1)"],"t":["+(n,1)"],"t.E":"+(n,1)"},"tM":{"aT":["1"],"L":["1"],"ak":["1"],"t":["1"]},"Pn":{"aq":["n"],"ak":["n"],"t":["n"],"t.E":"n","aq.E":"n"},"xQ":{"b1":["n","1"],"aO":["n","1"],"b1.V":"1","b1.K":"n"},"ce":{"aq":["1"],"ak":["1"],"t":["1"],"t.E":"1","aq.E":"1"},"ev":{"A7":[]},"nI":{"jl":["1","2"],"aO":["1","2"]},"qI":{"aO":["1","2"]},"bM":{"qI":["1","2"],"aO":["1","2"]},"pU":{"t":["1"],"t.E":"1"},"dm":{"qI":["1","2"],"aO":["1","2"]},"w9":{"hG":["1"],"b2":["1"],"ak":["1"],"t":["1"]},"eP":{"hG":["1"],"b2":["1"],"ak":["1"],"t":["1"],"t.E":"1"},"e7":{"hG":["1"],"b2":["1"],"ak":["1"],"t":["1"],"t.E":"1"},"Iv":{"k3":[]},"r9":{"k3":[]},"yp":{"kF":[],"bS":[]},"Ix":{"bS":[]},"LZ":{"bS":[]},"Ja":{"dd":[]},"DT":{"h7":[]},"lf":{"k3":[]},"GE":{"k3":[]},"GF":{"k3":[]},"LA":{"k3":[]},"Lo":{"k3":[]},"qo":{"k3":[]},"Kr":{"bS":[]},"eB":{"b1":["1","2"],"aO":["1","2"],"b1.V":"2","b1.K":"1"},"b4":{"ak":["1"],"t":["1"],"t.E":"1"},"b3":{"ak":["1"],"t":["1"],"t.E":"1"},"dn":{"ak":["aU<1,2>"],"t":["aU<1,2>"],"t.E":"aU<1,2>"},"xF":{"eB":["1","2"],"b1":["1","2"],"aO":["1","2"],"b1.V":"2","b1.K":"1"},"om":{"eB":["1","2"],"b1":["1","2"],"aO":["1","2"],"b1.V":"2","b1.K":"1"},"ul":{"rT":[],"oy":[]},"Mo":{"t":["rT"],"t.E":"rT"},"tp":{"oy":[]},"Sx":{"t":["oy"],"t.E":"oy"},"kc":{"h3":[],"he":[],"aT":["n"],"L":["n"],"fZ":["n"],"ak":["n"],"aB":[],"t":["n"],"ca":[],"aT.E":"n","t.E":"n"},"rz":{"aB":[],"jL":[],"ca":[]},"oL":{"aB":[],"jL":[],"ca":[]},"yg":{"aB":[]},"TE":{"jL":[]},"yc":{"d9":[],"aB":[],"ca":[]},"rA":{"fZ":["1"],"aB":[]},"lS":{"aT":["I"],"L":["I"],"fZ":["I"],"ak":["I"],"aB":[],"t":["I"]},"h3":{"aT":["n"],"L":["n"],"fZ":["n"],"ak":["n"],"aB":[],"t":["n"]},"yd":{"lS":[],"ZU":[],"aT":["I"],"L":["I"],"fZ":["I"],"ak":["I"],"aB":[],"t":["I"],"ca":[],"aT.E":"I","t.E":"I"},"ye":{"lS":[],"ZV":[],"aT":["I"],"L":["I"],"fZ":["I"],"ak":["I"],"aB":[],"t":["I"],"ca":[],"aT.E":"I","t.E":"I"},"J2":{"h3":[],"a13":[],"aT":["n"],"L":["n"],"fZ":["n"],"ak":["n"],"aB":[],"t":["n"],"ca":[],"aT.E":"n","t.E":"n"},"yf":{"h3":[],"a14":[],"aT":["n"],"L":["n"],"fZ":["n"],"ak":["n"],"aB":[],"t":["n"],"ca":[],"aT.E":"n","t.E":"n"},"J3":{"h3":[],"a15":[],"aT":["n"],"L":["n"],"fZ":["n"],"ak":["n"],"aB":[],"t":["n"],"ca":[],"aT.E":"n","t.E":"n"},"yh":{"h3":[],"abV":[],"aT":["n"],"L":["n"],"fZ":["n"],"ak":["n"],"aB":[],"t":["n"],"ca":[],"aT.E":"n","t.E":"n"},"yi":{"h3":[],"tI":[],"aT":["n"],"L":["n"],"fZ":["n"],"ak":["n"],"aB":[],"t":["n"],"ca":[],"aT.E":"n","t.E":"n"},"yj":{"h3":[],"abW":[],"aT":["n"],"L":["n"],"fZ":["n"],"ak":["n"],"aB":[],"t":["n"],"ca":[],"aT.E":"n","t.E":"n"},"Ed":{"hd":[]},"On":{"bS":[]},"Ee":{"kF":[],"bS":[]},"kL":{"to":["1"]},"Ea":{"LR":[]},"iw":{"t":["1"],"t.E":"1"},"d7":{"bS":[]},"d4":{"jp":["1"],"dX":["1"],"dX.T":"1"},"tX":{"kL":["1"],"to":["1"]},"E_":{"mB":["1"]},"B6":{"mB":["1"]},"bP":{"Bm":["1"]},"aI":{"ah":["1"]},"A1":{"dX":["1"]},"jn":{"uJ":["1"]},"jp":{"dX":["1"],"dX.T":"1"},"u0":{"kL":["1"],"to":["1"]},"DW":{"dX":["1"]},"u6":{"to":["1"]},"BU":{"dX":["1"],"dX.T":"1"},"Cs":{"dX":["1"],"dX.T":"1"},"Ct":{"jn":["1"],"uJ":["1"],"a55":["1"]},"kR":{"b1":["1","2"],"aO":["1","2"],"b1.V":"2","b1.K":"1"},"mM":{"kR":["1","2"],"b1":["1","2"],"aO":["1","2"],"b1.V":"2","b1.K":"1"},"BC":{"kR":["1","2"],"b1":["1","2"],"aO":["1","2"],"b1.V":"2","b1.K":"1"},"pS":{"ak":["1"],"t":["1"],"t.E":"1"},"Ci":{"eB":["1","2"],"b1":["1","2"],"aO":["1","2"],"b1.V":"2","b1.K":"1"},"mJ":{"uH":["1"],"hG":["1"],"b2":["1"],"ak":["1"],"t":["1"],"t.E":"1"},"fH":{"uH":["1"],"hG":["1"],"asM":["1"],"b2":["1"],"ak":["1"],"t":["1"],"t.E":"1"},"ou":{"t":["1"],"t.E":"1"},"aT":{"L":["1"],"ak":["1"],"t":["1"]},"b1":{"aO":["1","2"]},"tN":{"b1":["1","2"],"aO":["1","2"]},"Ck":{"ak":["2"],"t":["2"],"t.E":"2"},"xY":{"aO":["1","2"]},"jl":{"aO":["1","2"]},"BJ":{"BK":["1"],"arU":["1"]},"BL":{"BK":["1"]},"wD":{"ak":["1"],"t":["1"],"t.E":"1"},"xR":{"aq":["1"],"ak":["1"],"t":["1"],"t.E":"1","aq.E":"1"},"hG":{"b2":["1"],"ak":["1"],"t":["1"]},"uH":{"hG":["1"],"b2":["1"],"ak":["1"],"t":["1"]},"zX":{"b1":["1","2"],"mV":["1","f8<1,2>"],"aO":["1","2"],"b1.V":"2","b1.K":"1","mV.K":"1"},"kX":{"ak":["1"],"t":["1"],"t.E":"1"},"q2":{"ak":["2"],"t":["2"],"t.E":"2"},"DM":{"ak":["aU<1,2>"],"t":["aU<1,2>"],"t.E":"aU<1,2>"},"kY":{"iv":["1","2","1"],"iv.T":"1"},"DR":{"iv":["1","f8<1,2>","2"],"iv.T":"2"},"q1":{"iv":["1","f8<1,2>","aU<1,2>"],"iv.T":"aU<1,2>"},"tl":{"hG":["1"],"b2":["1"],"ak":["1"],"mV":["1","f9<1>"],"t":["1"],"t.E":"1","mV.K":"1"},"Pg":{"b1":["o","@"],"aO":["o","@"],"b1.V":"@","b1.K":"o"},"Ph":{"aq":["o"],"ak":["o"],"t":["o"],"t.E":"o","aq.E":"o"},"re":{"bS":[]},"Iy":{"bS":[]},"iI":{"cG":["iI"]},"I":{"cM":[],"cG":["cM"]},"aR":{"cG":["aR"]},"n":{"cM":[],"cG":["cM"]},"L":{"ak":["1"],"t":["1"]},"cM":{"cG":["cM"]},"rT":{"oy":[]},"b2":{"ak":["1"],"t":["1"]},"o":{"cG":["o"]},"nq":{"bS":[]},"kF":{"bS":[]},"hm":{"bS":[]},"rO":{"bS":[]},"xn":{"bS":[]},"J7":{"bS":[]},"AR":{"bS":[]},"LY":{"bS":[]},"f1":{"bS":[]},"GL":{"bS":[]},"Jh":{"bS":[]},"A_":{"bS":[]},"Oo":{"dd":[]},"eT":{"dd":[]},"C_":{"aq":["1"],"ak":["1"],"t":["1"],"t.E":"1","aq.E":"1"},"Sz":{"h7":[]},"Eo":{"M1":[]},"Sk":{"M1":[]},"NP":{"M1":[]},"J9":{"dd":[]},"a15":{"L":["n"],"ak":["n"],"t":["n"]},"he":{"L":["n"],"ak":["n"],"t":["n"]},"abW":{"L":["n"],"ak":["n"],"t":["n"]},"a13":{"L":["n"],"ak":["n"],"t":["n"]},"abV":{"L":["n"],"ak":["n"],"t":["n"]},"a14":{"L":["n"],"ak":["n"],"t":["n"]},"tI":{"L":["n"],"ak":["n"],"t":["n"]},"ZU":{"L":["I"],"ak":["I"],"t":["I"]},"ZV":{"L":["I"],"ak":["I"],"t":["I"]},"j7":{"uw":["j7"]},"rN":{"uw":["rN"]},"G8":{"ar":[],"f":[]},"r3":{"a1":[],"f":[]},"Bk":{"a1":[],"f":[]},"OT":{"a8":["r3"]},"un":{"ar":[],"f":[]},"Bl":{"a8":["Bk"]},"r4":{"a1":[],"f":[]},"OU":{"a8":["r4"]},"I4":{"ar":[],"f":[]},"ui":{"ar":[],"f":[]},"Gp":{"ar":[],"f":[]},"mF":{"uG":[]},"pP":{"ar":[],"f":[]},"k2":{"ar":[],"f":[]},"mW":{"uG":[]},"HZ":{"ar":[],"f":[]},"I0":{"ar":[],"f":[]},"oI":{"ar":[],"f":[]},"q3":{"ar":[],"f":[]},"JE":{"ar":[],"f":[]},"Ki":{"ar":[],"f":[]},"mb":{"a1":[],"f":[]},"RF":{"a8":["mb"]},"zr":{"a1":[],"f":[]},"Dx":{"a8":["zr"]},"eu":{"t":["o"],"t.E":"o"},"tO":{"mY":["1","t<1>"],"mY.E":"1"},"te":{"mY":["1","b2<1>"],"mY.E":"1"},"bp":{"a3":[]},"qj":{"bp":["I"],"a3":[]},"Mp":{"bp":["I"],"a3":[]},"Mq":{"bp":["I"],"a3":[]},"p3":{"bp":["I"],"a3":[]},"ic":{"bp":["I"],"a3":[]},"wj":{"bp":["I"],"a3":[]},"pJ":{"bp":["I"],"a3":[]},"qH":{"bp":["1"],"a3":[]},"vs":{"bp":["1"],"a3":[]},"Ch":{"fj":[]},"fY":{"fj":[]},"LQ":{"fj":[]},"ey":{"fj":[]},"Az":{"fj":[]},"lr":{"fj":[]},"NR":{"fj":[]},"at":{"ap":["1"],"ap.T":"1","at.T":"1"},"dN":{"at":["A?"],"ap":["A?"],"ap.T":"A?","at.T":"A?"},"aJ":{"bp":["1"],"a3":[]},"hi":{"ap":["1"],"ap.T":"1"},"z7":{"at":["1"],"ap":["1"],"ap.T":"1","at.T":"1"},"L6":{"at":["H?"],"ap":["H?"],"ap.T":"H?","at.T":"H?"},"yI":{"at":["v?"],"ap":["v?"],"ap.T":"v?","at.T":"v?"},"lF":{"at":["n"],"ap":["n"],"ap.T":"n","at.T":"n"},"hW":{"ap":["I"],"ap.T":"I"},"AM":{"ap":["1"],"ap.T":"1"},"wd":{"a1":[],"f":[]},"Bu":{"a8":["wd"]},"cj":{"A":[]},"NA":{"ik":[]},"GP":{"ar":[],"f":[]},"nM":{"a1":[],"f":[]},"Bv":{"a8":["nM"]},"GQ":{"cD":[]},"aB5":{"b0":[],"aL":[],"f":[]},"ND":{"eW":["we"],"eW.T":"we"},"H3":{"we":[]},"wg":{"a1":[],"f":[]},"Bx":{"a8":["wg"]},"GR":{"ar":[],"f":[]},"wf":{"a1":[],"f":[]},"u2":{"a1":[],"f":[]},"NE":{"a8":["wf"]},"u3":{"a8":["u2<1>"]},"is":{"hq":[]},"qK":{"a1":[],"f":[]},"Bw":{"j8":["qK"],"a8":["qK"]},"NG":{"a3":[]},"GT":{"ik":[]},"Bz":{"a1":[],"f":[]},"GU":{"ar":[],"f":[]},"NI":{"aX":[],"al":[],"f":[]},"R9":{"x":[],"aH":["x"],"z":[],"af":[]},"BA":{"a8":["Bz"]},"Pl":{"a3":[]},"RE":{"a3":[]},"Nz":{"a3":[]},"BB":{"al":[],"f":[]},"NH":{"aS":[],"aY":[],"X":[]},"pY":{"dg":["x","eJ"],"x":[],"ad":["x","eJ"],"z":[],"af":[],"ad.1":"eJ","dg.1":"eJ","ad.0":"x"},"li":{"a1":[],"f":[]},"By":{"a8":["li"]},"Pq":{"a3":[]},"xp":{"cV":[],"b0":[],"aL":[],"f":[]},"wi":{"ar":[],"f":[]},"mH":{"db":[]},"qU":{"mH":[],"db":[]},"Hx":{"mH":[],"db":[]},"Hw":{"mH":[],"db":[]},"qW":{"nq":[],"bS":[]},"Hd":{"db":[]},"Oy":{"db":[]},"ek":{"a3":[]},"cb":{"a3":[]},"AS":{"a3":[]},"mP":{"a3":[]},"iJ":{"db":[]},"ws":{"db":[]},"Hc":{"db":[]},"wt":{"db":[]},"h0":{"eC":[]},"cr":{"h0":[],"eC":[],"cr.T":"1"},"mv":{"h0":[],"eC":[]},"xO":{"hx":[]},"aV":{"t":["1"],"t.E":"1"},"dQ":{"t":["1"],"t.E":"1"},"c8":{"ah":["1"]},"x2":{"bN":[]},"dv":{"b5":[]},"km":{"b5":[]},"m2":{"b5":[]},"m3":{"b5":[]},"kl":{"b5":[]},"ko":{"b5":[]},"eG":{"b5":[]},"kn":{"b5":[]},"Mj":{"b5":[]},"Tn":{"b5":[]},"oT":{"b5":[]},"Tj":{"oT":[],"b5":[]},"oY":{"b5":[]},"Tu":{"oY":[],"b5":[]},"Tp":{"km":[],"b5":[]},"Tm":{"m2":[],"b5":[]},"To":{"m3":[],"b5":[]},"Tl":{"kl":[],"b5":[]},"oV":{"b5":[]},"Tq":{"oV":[],"b5":[]},"Ty":{"ko":[],"b5":[]},"oZ":{"eG":[],"b5":[]},"Tw":{"oZ":[],"eG":[],"b5":[]},"p_":{"eG":[],"b5":[]},"Tx":{"p_":[],"eG":[],"b5":[]},"Jv":{"eG":[],"b5":[]},"Tv":{"eG":[],"b5":[]},"Ts":{"kn":[],"b5":[]},"oX":{"b5":[]},"Tt":{"oX":[],"b5":[]},"oW":{"b5":[]},"Tr":{"oW":[],"b5":[]},"oU":{"b5":[]},"Tk":{"oU":[],"b5":[]},"i_":{"cC":[],"cH":[]},"Cn":{"uP":[]},"CD":{"uP":[]},"i2":{"cC":[],"cH":[]},"fQ":{"cC":[],"cH":[]},"hg":{"fQ":[],"cC":[],"cH":[]},"fX":{"fQ":[],"cC":[],"cH":[]},"i8":{"fQ":[],"cC":[],"cH":[]},"hY":{"cC":[],"cH":[]},"cC":{"cH":[]},"ys":{"cC":[],"cH":[]},"rJ":{"cC":[],"cH":[]},"fD":{"cC":[],"cH":[]},"G7":{"cC":[],"cH":[]},"jg":{"cC":[],"cH":[]},"jh":{"cC":[],"cH":[]},"vE":{"cC":[],"cH":[]},"oe":{"iq":[]},"rm":{"iq":[]},"Mk":{"ar":[],"f":[]},"pK":{"ar":[],"f":[]},"G2":{"ar":[],"f":[]},"G0":{"ar":[],"f":[]},"GD":{"ar":[],"f":[]},"GC":{"ar":[],"f":[]},"Ho":{"ar":[],"f":[]},"Hn":{"ar":[],"f":[]},"Hs":{"ar":[],"f":[]},"Hr":{"ar":[],"f":[]},"aA_":{"cV":[],"b0":[],"aL":[],"f":[]},"FM":{"ar":[],"f":[]},"rp":{"a1":[],"f":[]},"Cl":{"a8":["rp"]},"vx":{"a1":[],"f":[]},"QG":{"H":[]},"B5":{"a8":["vx"]},"MI":{"aX":[],"al":[],"f":[]},"R6":{"x":[],"aH":["x"],"z":[],"af":[]},"MF":{"iB":[]},"vy":{"cV":[],"b0":[],"aL":[],"f":[]},"rr":{"at":["v?"],"ap":["v?"],"ap.T":"v?","at.T":"v?"},"y1":{"at":["h"],"ap":["h"],"ap.T":"h","at.T":"h"},"aD2":{"cV":[],"b0":[],"aL":[],"f":[]},"vQ":{"a1":[],"f":[]},"Bd":{"a8":["vQ"]},"PJ":{"d2":[],"bo":["d2"]},"Pc":{"aX":[],"al":[],"f":[]},"D3":{"x":[],"aH":["x"],"z":[],"af":[]},"yF":{"a1":[],"f":[]},"CP":{"a8":["yF"]},"P6":{"bo":["A?"]},"Na":{"aX":[],"al":[],"f":[]},"R7":{"x":[],"aH":["x"],"z":[],"af":[]},"Nc":{"fC":["jo","x"],"al":[],"f":[],"fC.0":"jo","fC.1":"x"},"CW":{"x":[],"je":["jo","x"],"z":[],"af":[]},"aAA":{"cV":[],"b0":[],"aL":[],"f":[]},"IT":{"lg":["n"],"A":[],"lg.T":"n"},"O0":{"ik":[]},"Ha":{"ar":[],"f":[]},"qN":{"ar":[],"f":[]},"wx":{"ar":[],"f":[]},"aBo":{"cV":[],"b0":[],"aL":[],"f":[]},"HB":{"ar":[],"f":[]},"wZ":{"b0":[],"aL":[],"f":[]},"B4":{"bp":["1"],"a3":[]},"Dy":{"a1":[],"f":[]},"xi":{"ar":[],"f":[]},"S_":{"a8":["Dy"]},"P2":{"a1":[],"f":[]},"P1":{"bk":[]},"Ou":{"bk":[]},"Ov":{"bk":[]},"Q1":{"bk":[]},"xj":{"cV":[],"b0":[],"aL":[],"f":[]},"oi":{"a1":[],"f":[]},"Ca":{"a8":["oi"]},"xr":{"iT":[]},"lD":{"lG":[],"iT":[]},"xt":{"lG":[],"iT":[]},"xu":{"lG":[],"iT":[]},"lG":{"iT":[]},"CK":{"b0":[],"aL":[],"f":[]},"C9":{"a1":[],"f":[]},"xs":{"ar":[],"f":[]},"C8":{"a8":["C9"],"apd":[]},"It":{"ar":[],"f":[]},"hv":{"bE":[]},"im":{"hv":[],"bE":[]},"fx":{"hv":[],"bE":[]},"Bb":{"a1":[],"f":[]},"C3":{"a1":[],"f":[]},"oj":{"a1":[],"f":[]},"xv":{"cV":[],"b0":[],"aL":[],"f":[]},"Cb":{"a3":[]},"Cc":{"at":["hv"],"ap":["hv"],"ap.T":"hv","at.T":"hv"},"P8":{"a3":[]},"MV":{"a8":["Bb"]},"C4":{"a8":["C3"]},"CZ":{"x":[],"je":["ee","x"],"z":[],"af":[]},"NV":{"fC":["ee","x"],"al":[],"f":[],"fC.0":"ee","fC.1":"x"},"Cd":{"a8":["oj"]},"Pb":{"lE":[]},"Ar":{"a1":[],"f":[]},"E4":{"a8":["Ar"]},"IQ":{"ar":[],"f":[]},"y_":{"a1":[],"f":[]},"D2":{"x":[],"aH":["x"],"z":[],"af":[]},"ps":{"at":["bE?"],"ap":["bE?"],"ap.T":"bE?","at.T":"bE?"},"Cm":{"a1":[],"f":[]},"PC":{"a8":["y_"]},"P7":{"aX":[],"al":[],"f":[]},"Pz":{"a8":["Cm"]},"DH":{"ar":[],"f":[]},"DI":{"a3":[]},"PA":{"eW":["oA"],"eW.T":"oA"},"H5":{"oA":[]},"i3":{"eF":["1"],"hD":[]},"CI":{"y2":["1"],"j5":["1"],"eD":["1"],"ew":["1"],"ck":["1"]},"n2":{"a1":[],"f":[]},"n3":{"a1":[],"f":[]},"ut":{"a1":[],"f":[]},"TW":{"ar":[],"f":[]},"TU":{"a8":["n2"]},"TV":{"a8":["n3"]},"Mi":{"kf":[]},"GS":{"kf":[]},"CJ":{"a8":["ut<1>"]},"EF":{"a3":[]},"EG":{"a3":[]},"ze":{"a1":[],"f":[]},"Dk":{"b0":[],"aL":[],"f":[]},"BV":{"a1":[],"f":[]},"zd":{"a1":[],"f":[]},"t7":{"a8":["zd"]},"aH1":{"a1":[],"f":[]},"Kv":{"a8":["ze"]},"RP":{"a3":[]},"Ba":{"ac":[]},"MU":{"ar":[],"f":[]},"BW":{"a8":["BV"]},"O4":{"aQ":["fk"],"aQ.T":"fk"},"RQ":{"b0":[],"aL":[],"f":[]},"um":{"a1":[],"f":[]},"KO":{"ar":[],"f":[]},"PB":{"j8":["um"],"a8":["um"]},"aEQ":{"cV":[],"b0":[],"aL":[],"f":[]},"zt":{"a1":[],"f":[]},"T4":{"cb":["cf"],"a3":[]},"DA":{"a8":["zt"]},"aFe":{"a1":[],"f":[]},"tv":{"a1":[],"f":[]},"SR":{"a1":[],"f":[]},"SS":{"ar":[],"f":[]},"SP":{"bk":[]},"aFv":{"cV":[],"b0":[],"aL":[],"f":[]},"Ao":{"a1":[],"f":[]},"E2":{"a8":["Ao"]},"IU":{"ik":[]},"SW":{"a3":[]},"aFD":{"cV":[],"b0":[],"aL":[],"f":[]},"E7":{"a1":[],"f":[]},"LN":{"ar":[],"f":[]},"T1":{"a8":["E7"]},"T2":{"aX":[],"al":[],"f":[]},"T3":{"x":[],"aH":["x"],"z":[],"af":[]},"SZ":{"eE":[],"al":[],"f":[]},"T_":{"aS":[],"aY":[],"X":[]},"Rs":{"x":[],"ad":["x","eJ"],"z":[],"af":[],"ad.1":"eJ","ad.0":"x"},"SY":{"ar":[],"f":[]},"T0":{"ar":[],"f":[]},"LP":{"ar":[],"f":[]},"C7":{"cV":[],"b0":[],"aL":[],"f":[]},"pE":{"at":["hK"],"ap":["hK"],"ap.T":"hK","at.T":"hK"},"vo":{"a1":[],"f":[]},"Ay":{"ar":[],"f":[]},"My":{"a8":["vo"]},"AI":{"a1":[],"f":[]},"mr":{"a8":["AI"]},"Op":{"aX":[],"al":[],"f":[]},"Rd":{"x":[],"aH":["x"],"z":[],"j2":[],"af":[]},"Tc":{"ar":[],"f":[]},"aFX":{"cV":[],"b0":[],"aL":[],"f":[]},"dx":{"ff":[]},"fe":{"ff":[]},"Cp":{"ff":[]},"SF":{"a3":[]},"cO":{"bE":[]},"hN":{"bE":[]},"Ge":{"bE":[]},"d8":{"bE":[]},"ei":{"bE":[]},"bx":{"hq":[]},"dz":{"jb":[]},"da":{"cO":[],"bE":[]},"lg":{"A":[]},"ao":{"cv":[]},"dc":{"cv":[]},"mQ":{"cv":[]},"Js":{"fu":[]},"cI":{"cO":[],"bE":[]},"j9":{"cO":[],"bE":[]},"uD":{"eg":["cI"],"cO":[],"bE":[],"eg.T":"cI"},"uE":{"eg":["j9"],"cO":[],"bE":[],"eg.T":"j9"},"eg":{"cO":[],"bE":[]},"hH":{"hq":[]},"f0":{"cO":[],"bE":[]},"eK":{"cO":[],"bE":[]},"eL":{"cO":[],"bE":[]},"tU":{"ha":[]},"TI":{"ha":[]},"TF":{"hb":[]},"hj":{"hb":[]},"tZ":{"hb":[]},"mq":{"fu":[],"j2":[],"af":[]},"yL":{"x":[],"aH":["x"],"z":[],"af":[]},"B9":{"a3":[]},"NW":{"ki":[]},"RA":{"p9":[],"aH":["x"],"z":[],"af":[]},"ld":{"k4":[]},"x":{"z":[],"af":[]},"nx":{"fW":["x"]},"eO":{"cp":[]},"wa":{"eO":[],"dO":["1"],"cp":[]},"hA":{"eO":[],"dO":["x"],"cp":[]},"yO":{"dg":["x","hA"],"x":[],"ad":["x","hA"],"z":[],"af":[],"ad.1":"hA","dg.1":"hA","ad.0":"x"},"GW":{"a3":[]},"yP":{"x":[],"aH":["x"],"z":[],"af":[]},"m8":{"a3":[]},"p6":{"x":[],"ad":["x","hJ"],"z":[],"af":[],"ad.1":"hJ","ad.0":"x"},"Rb":{"x":[],"z":[],"af":[]},"E3":{"m8":[],"a3":[]},"Be":{"m8":[],"a3":[]},"u_":{"m8":[],"a3":[]},"yR":{"x":[],"z":[],"af":[]},"fm":{"eO":[],"dO":["x"],"cp":[]},"yS":{"dg":["x","fm"],"x":[],"ad":["x","fm"],"z":[],"af":[],"ad.1":"fm","dg.1":"fm","ad.0":"x"},"el":{"dR":[]},"w4":{"el":[],"dR":[]},"w2":{"el":[],"dR":[]},"tE":{"i7":[],"el":[],"dR":[]},"Jf":{"i7":[],"el":[],"dR":[]},"xN":{"el":[],"dR":[]},"vv":{"el":[],"dR":[]},"Jq":{"dR":[]},"i7":{"el":[],"dR":[]},"w3":{"el":[],"dR":[]},"xm":{"i7":[],"el":[],"dR":[]},"vC":{"el":[],"dR":[]},"x6":{"el":[],"dR":[]},"J0":{"a3":[]},"z":{"af":[]},"dO":{"cp":[]},"f7":{"d5":[]},"C6":{"d5":[]},"kj":{"dt":[]},"hJ":{"dO":["x"],"cp":[]},"ju":{"dV":[],"a3":[]},"TG":{"hb":[]},"m9":{"x":[],"ad":["x","hJ"],"z":[],"af":[],"ad.1":"hJ","ad.0":"x"},"ml":{"a3":[]},"yJ":{"x":[],"aH":["x"],"z":[],"af":[]},"ks":{"x":[],"aH":["x"],"z":[],"af":[]},"K4":{"x":[],"aH":["x"],"z":[],"af":[]},"yY":{"x":[],"aH":["x"],"z":[],"af":[]},"rX":{"x":[],"aH":["x"],"z":[],"af":[]},"K_":{"x":[],"aH":["x"],"z":[],"af":[]},"K0":{"x":[],"aH":["x"],"z":[],"af":[]},"JN":{"x":[],"aH":["x"],"z":[],"af":[]},"JO":{"x":[],"aH":["x"],"z":[],"af":[]},"wk":{"a3":[]},"uz":{"x":[],"aH":["x"],"z":[],"af":[]},"JS":{"x":[],"aH":["x"],"z":[],"af":[]},"JR":{"x":[],"aH":["x"],"z":[],"af":[]},"JQ":{"x":[],"aH":["x"],"z":[],"af":[]},"D6":{"x":[],"aH":["x"],"z":[],"af":[]},"K1":{"x":[],"aH":["x"],"z":[],"af":[]},"K2":{"x":[],"aH":["x"],"z":[],"af":[]},"JT":{"x":[],"aH":["x"],"z":[],"af":[]},"Kc":{"x":[],"aH":["x"],"z":[],"af":[]},"JW":{"x":[],"aH":["x"],"z":[],"af":[]},"K3":{"x":[],"aH":["x"],"z":[],"af":[]},"yU":{"x":[],"aH":["x"],"z":[],"j2":[],"af":[]},"K6":{"x":[],"aH":["x"],"z":[],"af":[]},"yT":{"x":[],"aH":["x"],"z":[],"af":[]},"yV":{"x":[],"aH":["x"],"z":[],"af":[]},"K7":{"x":[],"aH":["x"],"z":[],"af":[]},"JP":{"x":[],"aH":["x"],"z":[],"af":[]},"JU":{"x":[],"aH":["x"],"z":[],"af":[]},"JX":{"x":[],"aH":["x"],"z":[],"af":[]},"JZ":{"x":[],"aH":["x"],"z":[],"af":[]},"JV":{"x":[],"aH":["x"],"z":[],"af":[]},"yM":{"x":[],"aH":["x"],"z":[],"af":[]},"dV":{"a3":[]},"p7":{"x":[],"aH":["x"],"z":[],"af":[]},"yW":{"x":[],"aH":["x"],"z":[],"af":[]},"JM":{"x":[],"aH":["x"],"z":[],"af":[]},"yX":{"x":[],"aH":["x"],"z":[],"af":[]},"yQ":{"x":[],"aH":["x"],"z":[],"af":[]},"kA":{"mm":[],"dO":["ds"],"cp":[]},"ds":{"z":[],"af":[]},"Le":{"k4":[]},"Ld":{"fW":["ds"]},"zP":{"cp":[]},"mm":{"cp":[]},"Ka":{"ds":[],"aH":["x"],"z":[],"af":[]},"Kb":{"ds":[],"aH":["x"],"z":[],"af":[]},"K9":{"rY":[],"ds":[],"ad":["x","jc"],"z":[],"af":[],"ad.1":"jc","ad.0":"x"},"iV":{"cp":[]},"jc":{"dO":["x"],"iV":[],"cp":[]},"rY":{"ds":[],"ad":["x","jc"],"z":[],"af":[]},"ec":{"eO":[],"dO":["x"],"cp":[]},"yZ":{"dg":["x","ec"],"x":[],"ad":["x","ec"],"z":[],"af":[],"ad.1":"ec","dg.1":"ec","ad.0":"x"},"l9":{"at":["ff?"],"ap":["ff?"],"ap.T":"ff?","at.T":"ff?"},"p9":{"aH":["x"],"z":[],"af":[]},"t_":{"js":["1"],"x":[],"ad":["ds","1"],"JL":[],"z":[],"af":[]},"z0":{"js":["kA"],"x":[],"ad":["ds","kA"],"JL":[],"z":[],"af":[],"ad.1":"kA","js.0":"kA","ad.0":"ds"},"hh":{"a3":[]},"jm":{"eO":[],"dO":["x"],"cp":[]},"z1":{"dg":["x","jm"],"x":[],"ad":["x","jm"],"z":[],"af":[],"ad.1":"jm","dg.1":"jm","ad.0":"x"},"pG":{"ah":["~"]},"AA":{"dd":[]},"kK":{"cG":["kK"]},"iu":{"cG":["iu"]},"l_":{"cG":["l_"]},"td":{"cG":["td"]},"S8":{"db":[]},"zE":{"a3":[]},"rB":{"cG":["td"]},"pL":{"ar1":[]},"k8":{"hw":[]},"on":{"hw":[]},"rg":{"hw":[]},"yy":{"dd":[]},"y7":{"dd":[]},"jf":{"d2":[]},"NZ":{"d2":[]},"SG":{"y8":[]},"m5":{"kr":[]},"rR":{"kr":[]},"z6":{"a3":[]},"qt":{"ha":[]},"ri":{"ha":[]},"lY":{"ha":[]},"wA":{"ha":[]},"LE":{"mn":[]},"LD":{"mn":[]},"LF":{"mn":[]},"tx":{"mn":[]},"HC":{"mo":[]},"Q8":{"Aq":[]},"Ib":{"ez":[]},"Ic":{"ez":[]},"If":{"ez":[]},"Ih":{"ez":[]},"Ie":{"ez":[]},"Ig":{"ez":[]},"Id":{"ez":[]},"jF":{"a1":[],"f":[]},"B0":{"b0":[],"aL":[],"f":[]},"o2":{"a1":[],"f":[]},"ap_":{"aK":[]},"aBs":{"aK":[]},"aBr":{"aK":[]},"qg":{"aK":[]},"qp":{"aK":[]},"fk":{"aK":[]},"kp":{"aK":[]},"cd":{"aQ":["1"]},"cF":{"aQ":["1"],"aQ.T":"1"},"B1":{"a8":["jF"]},"BZ":{"a8":["o2"]},"M7":{"aQ":["ap_"],"aQ.T":"ap_"},"wy":{"aQ":["aK"],"aQ.T":"aK"},"Hh":{"aQ":["fk"]},"JD":{"cd":["kp"],"aQ":["kp"],"aQ.T":"kp","cd.T":"kp"},"CF":{"cd":["1"],"us":["1"],"aQ":["1"],"aQ.T":"1","cd.T":"1"},"CG":{"cd":["1"],"us":["1"],"aQ":["1"],"aQ.T":"1","cd.T":"1"},"Bs":{"aQ":["1"],"aQ.T":"1"},"vm":{"a1":[],"f":[]},"Mx":{"a8":["vm"]},"Mw":{"aX":[],"al":[],"f":[]},"vn":{"a1":[],"f":[]},"B3":{"a8":["vn"]},"vu":{"aX":[],"al":[],"f":[]},"tT":{"a1":[],"f":[]},"Ex":{"a8":["tT"],"cK":[]},"FU":{"cK":[]},"vB":{"a1":[],"f":[]},"B7":{"a8":["vB"]},"xH":{"a3":[]},"PW":{"ar":[],"f":[]},"hs":{"b0":[],"aL":[],"f":[]},"qA":{"aX":[],"al":[],"f":[]},"qz":{"aX":[],"al":[],"f":[]},"qG":{"aX":[],"al":[],"f":[]},"bn":{"aX":[],"al":[],"f":[]},"fO":{"aX":[],"al":[],"f":[]},"nB":{"aX":[],"al":[],"f":[]},"xM":{"dD":["hA"],"aL":[],"f":[],"dD.T":"hA"},"p0":{"dD":["ec"],"aL":[],"f":[],"dD.T":"ec"},"aBe":{"b0":[],"aL":[],"f":[]},"r7":{"aX":[],"al":[],"f":[]},"mh":{"aX":[],"al":[],"f":[]},"TA":{"ft":[],"aY":[],"X":[]},"TB":{"b0":[],"aL":[],"f":[]},"Jd":{"aX":[],"al":[],"f":[]},"G3":{"aX":[],"al":[],"f":[]},"wm":{"aX":[],"al":[],"f":[]},"Gy":{"aX":[],"al":[],"f":[]},"Jo":{"aX":[],"al":[],"f":[]},"Jp":{"aX":[],"al":[],"f":[]},"tD":{"aX":[],"al":[],"f":[]},"GI":{"aX":[],"al":[],"f":[]},"HM":{"aX":[],"al":[],"f":[]},"jQ":{"aX":[],"al":[],"f":[]},"wl":{"eE":[],"al":[],"f":[]},"cQ":{"aX":[],"al":[],"f":[]},"eQ":{"aX":[],"al":[],"f":[]},"II":{"aX":[],"al":[],"f":[]},"Jc":{"aX":[],"al":[],"f":[]},"Q_":{"aS":[],"aY":[],"X":[]},"jd":{"aX":[],"al":[],"f":[]},"S6":{"aX":[],"al":[],"f":[]},"Ll":{"eE":[],"al":[],"f":[]},"Jw":{"ar":[],"f":[]},"HD":{"eE":[],"al":[],"f":[]},"Kq":{"eE":[],"al":[],"f":[]},"GH":{"eE":[],"al":[],"f":[]},"wY":{"dD":["fm"],"aL":[],"f":[],"dD.T":"fm"},"wR":{"dD":["fm"],"aL":[],"f":[],"dD.T":"fm"},"Mh":{"eE":[],"al":[],"f":[]},"Kj":{"eE":[],"al":[],"f":[]},"IM":{"aX":[],"al":[],"f":[]},"y9":{"aX":[],"al":[],"f":[]},"hC":{"aX":[],"al":[],"f":[]},"FJ":{"aX":[],"al":[],"f":[]},"Ga":{"aX":[],"al":[],"f":[]},"lp":{"aX":[],"al":[],"f":[]},"Is":{"aX":[],"al":[],"f":[]},"op":{"ar":[],"f":[]},"e5":{"ar":[],"f":[]},"nH":{"aX":[],"al":[],"f":[]},"CX":{"x":[],"aH":["x"],"z":[],"af":[]},"za":{"f":[]},"z8":{"aY":[],"X":[]},"Mg":{"ja":[],"af":[]},"iG":{"ar":[],"f":[]},"H_":{"aX":[],"al":[],"f":[]},"NT":{"a3":[]},"lm":{"cV":[],"b0":[],"aL":[],"f":[]},"PX":{"ar":[],"f":[]},"H7":{"ar":[],"f":[]},"qP":{"a1":[],"f":[]},"BO":{"a8":["qP"]},"qQ":{"a1":[],"f":[]},"lo":{"a8":["qQ"],"cK":[]},"Do":{"a1":[],"f":[]},"kW":{"tS":[],"fu":[]},"Ng":{"aX":[],"al":[],"f":[]},"R8":{"x":[],"aH":["x"],"z":[],"af":[]},"An":{"cb":["cf"],"a3":[]},"BP":{"eE":[],"al":[],"f":[]},"RR":{"a8":["Do"],"atS":[]},"kO":{"cd":["1"],"aQ":["1"],"aQ.T":"1","cd.T":"1"},"Em":{"cd":["1"],"aQ":["1"],"aQ.T":"1","cd.T":"1"},"En":{"cd":["1"],"aQ":["1"],"aQ.T":"1","cd.T":"1"},"Et":{"cF":["1"],"aQ":["1"],"aQ.T":"1"},"RZ":{"cd":["kx"],"aQ":["kx"],"aQ.T":"kx","cd.T":"kx"},"Nx":{"cd":["iH"],"aQ":["iH"],"aQ.T":"iH","cd.T":"iH"},"Q6":{"cd":["kg"],"aQ":["kg"],"aQ.T":"kg","cd.T":"kg"},"TO":{"cb":["qC"],"a3":[],"cK":[]},"Oj":{"cd":["iK"],"aQ":["iK"],"aQ.T":"iK","cd.T":"iK"},"Ok":{"cd":["iL"],"aQ":["iL"],"aQ.T":"iL","cd.T":"iL"},"cx":{"a3":[]},"k1":{"cx":[],"a3":[]},"MJ":{"cK":[]},"x3":{"a3":[]},"o0":{"a1":[],"f":[]},"BX":{"hu":["cx"],"b0":[],"aL":[],"f":[],"hu.T":"cx"},"u8":{"a8":["o0"]},"x4":{"a1":[],"f":[]},"OG":{"a1":[],"f":[]},"OF":{"a8":["o0"]},"x5":{"a1":[],"f":[]},"aoA":{"aK":[]},"oM":{"aK":[]},"p1":{"aK":[]},"anF":{"aK":[]},"BY":{"cx":[],"a3":[]},"OH":{"a8":["x5"]},"Kf":{"aQ":["aoA"],"aQ.T":"aoA"},"J6":{"aQ":["oM"],"aQ.T":"oM"},"Jz":{"aQ":["p1"],"aQ.T":"p1"},"ww":{"aQ":["anF"],"aQ.T":"anF"},"fU":{"eC":[]},"br":{"fU":["1"],"eC":[]},"a1":{"f":[]},"aY":{"X":[]},"h8":{"aY":[],"X":[]},"m_":{"aY":[],"X":[]},"ft":{"aY":[],"X":[]},"ly":{"fU":["1"],"eC":[]},"ar":{"f":[]},"aL":{"f":[]},"dD":{"aL":[],"f":[]},"b0":{"aL":[],"f":[]},"al":{"f":[]},"IG":{"al":[],"f":[]},"aX":{"al":[],"f":[]},"eE":{"al":[],"f":[]},"Hy":{"al":[],"f":[]},"w8":{"aY":[],"X":[]},"Ln":{"aY":[],"X":[]},"yC":{"aY":[],"X":[]},"aS":{"aY":[],"X":[]},"IF":{"aS":[],"aY":[],"X":[]},"zJ":{"aS":[],"aY":[],"X":[]},"h2":{"aS":[],"aY":[],"X":[]},"Kd":{"aS":[],"aY":[],"X":[]},"PV":{"aY":[],"X":[]},"PY":{"f":[]},"i9":{"a1":[],"f":[]},"rQ":{"a8":["i9"]},"c7":{"oa":["1"]},"HQ":{"ar":[],"f":[]},"OO":{"aX":[],"al":[],"f":[]},"r5":{"a1":[],"f":[]},"av2":{"a8":["r5"]},"r6":{"lU":[]},"fs":{"ar":[],"f":[]},"og":{"cV":[],"b0":[],"aL":[],"f":[]},"nw":{"at":["ac"],"ap":["ac"],"ap.T":"ac","at.T":"ac"},"jR":{"at":["hq"],"ap":["hq"],"ap.T":"hq","at.T":"hq"},"ln":{"at":["cv"],"ap":["cv"],"ap.T":"cv","at.T":"cv"},"nt":{"at":["ct?"],"ap":["ct?"],"ap.T":"ct?","at.T":"ct?"},"oF":{"at":["aW"],"ap":["aW"],"ap.T":"aW","at.T":"aW"},"pD":{"at":["k"],"ap":["k"],"ap.T":"k","at.T":"k"},"vh":{"a1":[],"f":[]},"vl":{"a1":[],"f":[]},"vj":{"a1":[],"f":[]},"vi":{"a1":[],"f":[]},"vk":{"a1":[],"f":[]},"Iq":{"a1":[],"f":[]},"r8":{"a8":["1"]},"qi":{"a8":["1"]},"Mr":{"a8":["vh"]},"Mv":{"a8":["vl"]},"Mt":{"a8":["vj"]},"Ms":{"a8":["vi"]},"Mu":{"a8":["vk"]},"ht":{"b0":[],"aL":[],"f":[]},"xq":{"ft":[],"aY":[],"X":[]},"hu":{"b0":[],"aL":[],"f":[]},"ug":{"ft":[],"aY":[],"X":[]},"cV":{"b0":[],"aL":[],"f":[]},"pM":{"ar":[],"f":[]},"Cj":{"b0":[],"aL":[],"f":[]},"ow":{"a1":[],"f":[]},"rj":{"a3":[],"cK":[]},"TT":{"eW":["AZ"],"eW.T":"AZ"},"H9":{"AZ":[]},"Ps":{"a8":["ow"]},"asR":{"b0":[],"aL":[],"f":[]},"JI":{"ar":[],"f":[]},"PT":{"a3":[]},"Pw":{"aX":[],"al":[],"f":[]},"Rg":{"x":[],"aH":["x"],"z":[],"af":[]},"lR":{"ht":["di"],"b0":[],"aL":[],"f":[],"ht.T":"di"},"Co":{"a1":[],"f":[]},"PE":{"a8":["Co"],"cK":[]},"TH":{"hb":[]},"Aa":{"hb":[]},"rv":{"ar":[],"f":[]},"tV":{"cC":[],"cH":[]},"FR":{"a1":[],"f":[]},"MD":{"oa":["tV"]},"PI":{"ar":[],"f":[]},"J5":{"ar":[],"f":[]},"eF":{"hD":[]},"od":{"b0":[],"aL":[],"f":[]},"yn":{"a1":[],"f":[]},"dH":{"ku":[]},"fw":{"a8":["yn"]},"uq":{"mS":[]},"up":{"mS":[]},"Cy":{"mS":[]},"Cz":{"mS":[]},"OW":{"t":["dH"],"a3":[],"t.E":"dH"},"OX":{"dF":["aO<o?,L<G>>?"],"a3":[]},"dq":{"aL":[],"f":[]},"CC":{"aY":[],"X":[]},"lW":{"a3":[]},"kU":{"a1":[],"f":[]},"CE":{"a8":["kU"]},"rC":{"a1":[],"f":[]},"rE":{"a8":["rC"]},"pZ":{"x":[],"ad":["x","ec"],"z":[],"af":[],"ad.1":"ec","ad.0":"x"},"yu":{"a1":[],"f":[]},"mT":{"hy":["mT"],"hy.E":"mT"},"q_":{"b0":[],"aL":[],"f":[]},"kV":{"x":[],"aH":["x"],"z":[],"af":[],"hy":["kV"],"hy.E":"kV"},"D4":{"x":[],"aH":["x"],"z":[],"af":[]},"E9":{"eE":[],"al":[],"f":[]},"T7":{"aS":[],"aY":[],"X":[]},"uO":{"ec":[],"eO":[],"dO":["x"],"cp":[]},"Q3":{"a8":["yu"]},"ur":{"al":[],"f":[]},"Q2":{"aS":[],"aY":[],"X":[]},"NY":{"aX":[],"al":[],"f":[]},"xb":{"a1":[],"f":[]},"A3":{"a1":[],"f":[]},"C1":{"a8":["xb"]},"C0":{"a3":[]},"OP":{"a3":[]},"DY":{"a8":["A3"]},"DX":{"a3":[]},"yv":{"fE":[]},"ati":{"cr":["1"],"h0":[],"eC":[]},"rF":{"ar":[],"f":[]},"j5":{"eD":["1"],"ew":["1"],"ck":["1"]},"rK":{"b0":[],"aL":[],"f":[]},"ma":{"a1":[],"f":[]},"AP":{"b0":[],"aL":[],"f":[]},"z9":{"a1":[],"f":[]},"dF":{"a3":[]},"Rz":{"a8":["ma"]},"Dh":{"a8":["z9"]},"bU":{"dF":["1"],"a3":[]},"it":{"bU":["1"],"dF":["1"],"a3":[]},"Df":{"it":["1"],"bU":["1"],"dF":["1"],"a3":[]},"z5":{"it":["1"],"bU":["1"],"dF":["1"],"a3":[],"bU.T":"1","it.T":"1"},"z4":{"it":["F"],"bU":["F"],"dF":["F"],"a3":[],"bU.T":"F","it.T":"F"},"t4":{"a1":[],"f":[]},"arf":{"kM":["ah<F>"]},"uF":{"a8":["t4<1>"]},"RN":{"b0":[],"aL":[],"f":[]},"G1":{"kM":["ah<F>"]},"Kk":{"kM":["ah<F>"],"cK":[]},"t5":{"a3":[]},"Ko":{"a3":[]},"Rw":{"bU":["h6?"],"dF":["h6?"],"a3":[],"bU.T":"h6?"},"Cr":{"ht":["pV"],"b0":[],"aL":[],"f":[],"ht.T":"pV"},"uo":{"a1":[],"f":[]},"mR":{"a8":["uo<1>"]},"eD":{"ew":["1"],"ck":["1"]},"rD":{"ck":["1"]},"ew":{"ck":["1"]},"O5":{"aQ":["fk"],"aQ.T":"fk"},"Ks":{"ar":[],"f":[]},"zi":{"b0":[],"aL":[],"f":[]},"zj":{"a3":[]},"DD":{"a1":[],"f":[]},"RO":{"cr":["eC"],"h0":[],"eC":[],"cr.T":"eC"},"DE":{"a8":["DD"]},"eZ":{"h_":[],"fE":[]},"t8":{"eZ":[],"h_":[],"fE":[]},"md":{"eZ":[],"h_":[],"fE":[]},"j4":{"eZ":[],"h_":[],"fE":[]},"ie":{"eZ":[],"h_":[],"fE":[]},"M2":{"eZ":[],"h_":[],"fE":[]},"Dq":{"b0":[],"aL":[],"f":[]},"kT":{"hy":["kT"],"hy.E":"kT"},"zl":{"a1":[],"f":[]},"KL":{"a8":["zl"]},"kv":{"hh":[],"a3":[]},"pg":{"fE":[]},"zm":{"kv":[],"hh":[],"a3":[]},"KM":{"ar":[],"f":[]},"GX":{"ar":[],"f":[]},"zn":{"a1":[],"f":[]},"Ds":{"b0":[],"aL":[],"f":[]},"pk":{"a8":["zn"]},"Du":{"a1":[],"f":[]},"RU":{"a8":["Du"]},"Dt":{"a3":[]},"RT":{"aX":[],"al":[],"f":[]},"Da":{"x":[],"aH":["x"],"z":[],"af":[]},"Rx":{"bU":["I?"],"dF":["I?"],"a3":[],"bU.T":"I?"},"dU":{"aK":[]},"zh":{"cd":["dU"],"aQ":["dU"],"aQ.T":"dU","cd.T":"dU"},"rS":{"a1":[],"f":[]},"jv":{"fD":[],"cC":[],"cH":[]},"n_":{"hg":[],"fQ":[],"cC":[],"cH":[]},"mL":{"fX":[],"fQ":[],"cC":[],"cH":[]},"ta":{"a3":[]},"j8":{"a8":["1"]},"tn":{"a3":[]},"rx":{"a3":[]},"pm":{"a1":[],"f":[]},"tc":{"b0":[],"aL":[],"f":[]},"S3":{"dV":[],"a8":["pm"],"a3":[]},"KQ":{"a3":[]},"zG":{"a1":[],"f":[]},"Sd":{"a8":["zG"]},"Se":{"ht":["G"],"b0":[],"aL":[],"f":[],"ht.T":"G"},"a6":{"tf":[]},"pt":{"a1":[],"f":[]},"zH":{"a1":[],"f":[]},"tg":{"a3":[]},"DK":{"a8":["pt"]},"zI":{"a3":[]},"DJ":{"a8":["zH"]},"Sh":{"b0":[],"aL":[],"f":[]},"uI":{"aX":[],"al":[],"f":[]},"L3":{"ar":[],"f":[]},"Sn":{"aS":[],"aY":[],"X":[]},"Dc":{"x":[],"aH":["x"],"JL":[],"z":[],"af":[]},"L4":{"h_":[]},"L5":{"aX":[],"al":[],"f":[]},"Rl":{"x":[],"aH":["x"],"z":[],"af":[]},"Lg":{"al":[],"f":[]},"ti":{"al":[],"f":[]},"Lf":{"ti":[],"al":[],"f":[]},"th":{"aS":[],"aY":[],"X":[]},"xG":{"dD":["iV"],"aL":[],"f":[],"dD.T":"iV"},"zQ":{"fC":["1","2"],"al":[],"f":[]},"zR":{"aS":[],"aY":[],"X":[]},"zU":{"a3":[]},"Li":{"aX":[],"al":[],"f":[]},"uC":{"x":[],"aH":["x"],"z":[],"af":[]},"Lh":{"a3":[]},"BH":{"a3":[]},"Lj":{"ar":[],"f":[]},"A8":{"a1":[],"f":[]},"SE":{"a8":["A8"]},"I9":{"fr":[]},"Ia":{"fr":[]},"Ik":{"fr":[]},"Im":{"fr":[]},"Ij":{"fr":[]},"Il":{"fr":[]},"Ii":{"fr":[]},"z_":{"x":[],"aH":["x"],"z":[],"af":[]},"rZ":{"x":[],"aH":["x"],"z":[],"af":[]},"tz":{"aX":[],"al":[],"f":[]},"Ly":{"aX":[],"al":[],"f":[]},"Of":{"cH":[]},"Lx":{"aX":[],"al":[],"f":[]},"qM":{"cV":[],"b0":[],"aL":[],"f":[]},"aBh":{"cV":[],"b0":[],"aL":[],"f":[]},"Dz":{"a1":[],"f":[]},"PZ":{"ar":[],"f":[]},"hI":{"ar":[],"f":[]},"S1":{"a8":["Dz"]},"RD":{"ar":[],"f":[]},"S0":{"a3":[]},"wz":{"aK":[]},"nP":{"aK":[]},"nR":{"aK":[]},"nQ":{"aK":[]},"wv":{"aK":[]},"jW":{"aK":[]},"jZ":{"aK":[]},"nZ":{"aK":[]},"nW":{"aK":[]},"nX":{"aK":[]},"fT":{"aK":[]},"lq":{"aK":[]},"k_":{"aK":[]},"jY":{"aK":[]},"nY":{"aK":[]},"jX":{"aK":[]},"kw":{"aK":[]},"ZM":{"aK":[]},"kx":{"aK":[]},"iH":{"aK":[]},"kg":{"aK":[]},"m7":{"aK":[]},"ia":{"aK":[]},"mu":{"aK":[]},"hL":{"aK":[]},"ms":{"aK":[]},"iK":{"aK":[]},"iL":{"aK":[]},"Hg":{"aK":[]},"eJ":{"eO":[],"dO":["x"],"cp":[]},"mU":{"a1":[],"f":[]},"DB":{"a1":[],"f":[]},"At":{"a1":[],"f":[]},"DF":{"a8":["mU"]},"DC":{"a8":["DB"]},"E6":{"a8":["At"]},"w6":{"cb":["qC"],"a3":[],"cK":[]},"AB":{"a1":[],"f":[]},"BS":{"b0":[],"aL":[],"f":[]},"T9":{"a8":["AB"]},"Bq":{"a3":[]},"LS":{"ar":[],"f":[]},"vp":{"a1":[],"f":[]},"de":{"aX":[],"al":[],"f":[]},"B2":{"a8":["vp"]},"Lb":{"a1":[],"f":[]},"IV":{"a1":[],"f":[]},"Kw":{"a1":[],"f":[]},"Km":{"a1":[],"f":[]},"H0":{"a1":[],"f":[]},"lO":{"a1":[],"f":[]},"FQ":{"a1":[],"f":[]},"tJ":{"a1":[],"f":[]},"tK":{"a8":["tJ<1>"]},"AO":{"cb":["tL"],"a3":[]},"AT":{"a1":[],"f":[]},"q4":{"b0":[],"aL":[],"f":[]},"CM":{"b0":[],"aL":[],"f":[]},"Es":{"a8":["AT"],"cK":[]},"JJ":{"ar":[],"f":[]},"CQ":{"al":[],"f":[]},"QR":{"aS":[],"aY":[],"X":[]},"BI":{"fU":["1"],"eC":[]},"AX":{"eE":[],"al":[],"f":[]},"TM":{"aS":[],"aY":[],"X":[]},"aHt":{"b0":[],"aL":[],"f":[]},"tS":{"fu":[]},"TP":{"dD":["hJ"],"aL":[],"f":[],"dD.T":"hJ"},"MP":{"aX":[],"al":[],"f":[]},"D9":{"x":[],"aH":["x"],"z":[],"af":[]},"bK":{"Mc":[]},"ME":{"Mc":[]},"M9":{"A":[],"bo":["A"]},"Eu":{"A":[],"bo":["A"]},"Ma":{"d2":[],"bo":["d2"]},"Ev":{"d2":[],"bo":["d2"]},"M8":{"aP":[],"bo":["aP?"]},"Pm":{"bo":["aP?"]},"n1":{"aP":[],"bo":["aP?"]},"Mb":{"k":[],"bo":["k"]},"TR":{"k":[],"bo":["k"]},"Cf":{"bo":["1?"]},"bL":{"bo":["1"]},"kJ":{"bo":["1"]},"bt":{"bo":["1"]},"Md":{"cb":["b2<bK>"],"a3":[]},"BD":{"a1":[],"f":[]},"BE":{"a8":["BD"]},"xf":{"a3":[]},"xe":{"a3":[],"cK":[]},"eb":{"er":[]},"eU":{"eb":[],"er":[]},"f_":{"er":[]},"qV":{"ar":[],"f":[]},"Bc":{"a1":[],"f":[]},"N1":{"a8":["Bc"]},"HU":{"bS":[]},"r1":{"dd":[]},"lC":{"b0":[],"aL":[],"f":[]},"dP":{"eF":["1"],"hD":[]},"oO":{"dP":["1"],"eF":["1"],"hD":[]},"BF":{"j5":["1"],"eD":["1"],"ew":["1"],"ck":["1"]},"rq":{"ar":[],"f":[]},"xc":{"t1":[]},"Nh":{"a3":[]},"r2":{"a3":[]},"HV":{"hu":["r2"],"b0":[],"aL":[],"f":[],"hu.T":"r2"},"Ke":{"dd":[]},"qq":{"dX":["L<n>"],"dX.T":"L<n>"},"nD":{"dd":[]},"Lq":{"A2":[]},"Kx":{"dl":[]},"Ky":{"dl":[]},"Kz":{"dl":[]},"KA":{"dl":[]},"KB":{"dl":[]},"KC":{"dl":[]},"KD":{"dl":[]},"KE":{"dl":[]},"KF":{"dl":[]},"aAV":{"a1":[],"f":[]},"aD1":{"a1":[],"f":[]},"aBD":{"a1":[],"f":[]},"aBE":{"a8":["aBD"]},"aH6":{"b0":[],"aL":[],"f":[]},"aGk":{"b0":[],"aL":[],"f":[]}}'))
+var v={G:typeof self!="undefined"?self:globalThis,typeUniverse:{eC:new Map(),tR:{},eT:{},tPV:{},sEA:[]},mangledGlobalNames:{n:"int",I:"double",cM:"num",o:"String",F:"bool",bm:"Null",M:"List",G:"Object",aO:"Map",aB:"JSObject"},mangledNames:{},types:["~()","I(I)","~(aB)","I(dl)","pH(dl)","wH(dl)","~(aR)","~(iA)","A(b2<bK>)","~(oR,h)","~(z)","f(X)","~(aY)","F(ld,h)","~(G?)","~(F)","ed(dl)","~(qO)","~(b5)","F(G?)","M<db>()","F(o)","~(d9?)","ah<~>()","F(aY)","~(n)","~(dV)","F(cx)","~(ts)","at<I>(@)","bm(~)","I(x)","F(iP)","~(fR)","F(kd)","~(fl)","n(cx,cx)","~(m3)","H(x,ac)","k(b2<bK>)","~(et)","~(m2)","I(x,I)","bm()","bm(aB)","~(dF<G?>,~())","F(eZ)","jf(b2<bK>)","~(~())","~(kl)","F()","de(X,bp<I>,bp<I>,f)","dP<@>(X,dC)","F(ft)","~(@)","ha()","F(dH)","F(dV)","F(er)","F(n)","d0(X)","bo<A?>?(bk?)","f(X)?(qe?)","n(n)","A(A)","dN(@)","~(tt)","n(z,z)","ah<@>(i4)","h(h)","o()","bm(@)","~(o)","~(lU)","M<dH>()","bm(G,h7)","~(Ac)","~(o6)","o(o)","o(oA)","d2(b2<bK>)","aB?(n)","@(@)","bm(G)","~(G,h7)","~(G?,G?)","bo<H?>?(bk?)","A?(b2<bK>)","o(n)","ah<~>(G?)","~(fD)","fD()","F(o2)","n()","n(G?)","~(I)","F(G?,G?)","bm(F)","aB()","n(cl,cl)","F(cl)","F(pg)","aB(G?)","~({curve:fj,descendant:z?,duration:aR,rect:v?})","eI(eI)","F(fu)","~(Af)","F(fv)","F(fo)","aP(b2<bK>)","fO(X,f?)","iG(tj)","n2(X,bp<I>,f?)","n3(X,bp<I>,f?)","f(o)","qu(M<et>)","~(f4,hF?)","~(lt)","v()","~(aoH)","I?(+(ac,ji))","o(I,I,o)","o(oy)","F(z)","bm(o)","kN()","G?(G?)","d5(et)","~(ju)","+boundaryEnd,boundaryStart(a9,a9)(a9)","F(ld)","~(pv)","fv()","~(h,x)","aW(I)","~(M<lw>)","~(mi)","~(cl)","M<cl>(iu)","f(X,b2<bK>,f?)?(bk?)","~(o,@)","bo<I?>?(bk?)","ah<~>(i4)","~(d3)","aO<G?,G?>()","@()","I()","~(eZ)","F(lT)","arN()","ah<~>(@)","~([aR?])","a9(a9,F,ha)","~(tQ)","~(LR)","~(hS)","~([aK?])","k({background:lX?,backgroundColor:A?,color:A?,decoration:pA?,decorationColor:A?,decorationStyle:Al?,decorationThickness:I?,fontFeatures:M<aCj>?,fontSize:I?,fontStyle:qZ?,fontWeight:eS?,foreground:lX?,height:I?,letterSpacing:I?,locale:j_?,shadows:M<jb>?,textBaseline:ji?,textStyle:k?,wordSpacing:I?})","I?(x,ac,ji)","n(dw,dw)","i2()","n(dV,dV)","fX()","~(fX)","i8()","~(i8)","at<@>?(at<@>?,@,at<@>(@))","l9(@)","ln(@)","jR(@)","iW(cx,hw)","f(X,f?)","yz?()","aB([aB?])","iq(b5)","o(G?)","@(o)","~(jT)","~(eG)","F(dV,I)","~(o9)","~(i2)","F(pr)","~(rl)","~(xX)","~(rk)","~(Ae)","~(Ag)","~(Ad)","cX/(o?)","~(@,@)","M<er>()","cX(cX)","M<aB>()","ah<aB>([aB?])","ah<F>()","A?(A?)","n(@,@)","f?(X,bp<I>,bp<I>,F,f?)","I(x,ac)","f(X,lo)","ah<d9?>(d9?)","H(x)","A?()","F?(bk?)","ff?(bk?)","ra?(bk?)","oP()","aO<o,o>(aO<o,o>,o)","oi(X,f?)","h(H,I)","~(o,n)","~(o,n?)","aP?(b2<bK>)","n(n,n)","~(o,o?)","v()?(x)","~(aK?)","~(n,n,n)","F(lD?)","A(mK)","mh(X)","rW()","qw()","~(x?)","~({allowPlatformDefault!F})","ah<bm>()","a1?(X,ox,cb<k9>)","F(h_)","ah<~>([aB?])","eA()","ps(@)","~(G)","n(fo,fo)","f(X,bp<I>,bp<I>,F,f?)","kf?(f2)","rv(X,f?)","jF(X,f?)","bn(aU<n,o>)","F(b2<bK>)","I(b2<bK>)","~(qx)","iG(tk)","oj(X,f?)","mh(X,f?)","pE(@)","iB()","hK()","aU<G,jj<@>>(G,jj<@>)","F(aU<G,jj<@>>)","F(mr)","cv(cv,bE)","bE(bE)","F(bE)","o(bE)","F(I)","A(I)","ho(iF)","lX(dz)","v(dz)","oS(dz)","F(n,F)","ob?()","oI(rw)","lM(lM)","~(~)","k4(h,n)","H()","I?()","H(ac)","~(n,F(iP))","~(f4)","F(k7)","v(v?,eI)","~(n?)","ac(x)","d2(j2)","~(j2,aW)","F(j2)","M<f>(aU<iS,M<fo>>)","bn(X,n)","F(n,n)","n(aB)","pP(mF)","~(M<d5>{isMergeUp:F})","et?(d5)","~(dE,n)","M<d5>(M<d5>)","M<f7>(f7)","b2<dt>?(d5)","b2<dt>(b2<dt>)","F(rT)","F(ju)","bn(+(n,n))","+boundaryEnd,boundaryStart(a9,a9)(a9,o)","ah<aB>()","p5?(jL,o,o)","F(x)","~(w<G?>,aB)","F(ds)","M<kh>()","pG({from:I?})","~(aB,M<hB>)","~(n,ua)","~({allowPlatformDefault:F})","tY()","cl(l_)","uv()","~(Ah)","n(cl)","cl(n)","~(dt)","~(cz,~(G?))","ah<o>()","d9(d9?)","ah<pL>(o)","dX<hx>()","ah<o?>(o?)","jL(G?)","ah<~>(d9?,~(d9?))","he(d9)","ah<~>(ah<he>)","ah<~>(he)","ah<aO<o,@>>(@)","~(kr)","b2<e>(e)","bm(w<G?>,aB)","yG()","o?(o)","iI()","o(o,A)","M<d3>()","M<d3>(M<d3>)","I(cM)","M<@>(o)","M<cM>(pp)","aO<o,@>(ez)","oJ()","~(ij)","~(aQ<aK>)","~(o,aB)","~(mD)","f(mD)","F(f)","~(hZ?,ty?)","ck<@>?(hD)","ck<@>(hD)","ow(X,f?)","F(rf)","~(o?)","qz(X)","I(@)","ah<F>(i4)","lm(X)","~(dR)","ah<~>(~)","~(M<aB>,aB)","nB(f)","~(ms)","~(ia)","~(kw)","~(dU)","~(ZM)","~(hL)","G?(fk)","cf(cf,mo)","aY(n)","tz(X)","~(ko)","~(cf)","F(cf?,cf)","cf(cf)","ij()","qG(X,hh)","F(fW<af>)","~([cx?])","aCA?()","F(xJ)","~(u9)","~(H?)","~(ho)","F(mt)","b2<hs>(dw)","qU(o)","M<hs>(X)","v(dw)","n(jr,jr)","M<dw>(dw,t<dw>)","F(dw)","iJ<aY>(aY)","aY?(aY)","G?(n,aY?)","hY()","~(hY)","~(kd)","~(M<G?>)","~(kc)","o(cH)","ub()","~(m1)","~(kn)","~(ks)","~(h8,G)","p0(X,f?)","~(kS)","F(kS)","og(X)","I?(n)","@(@,o)","F(hB)","dv?(hB)","nw(@)","oF(@)","pD(@)","nt(@)","ah<@>(uu)","aO<hd,@>(M<@>)","aO<hd,@>(aO<hd,@>)","bm(aO<hd,@>)","lR(X)","F(G)","~(ku?,F)","F(ck<@>?)","ah<bm>(@)","F(lW)","o(I)","~(uL)","dH(ck<@>)","aO<~(b5),aW?>()","aU<o?,M<G>>(@,@)","q_()","x(n)","~(ac)","qA(X,f?)","bm(d3?)","~(dF<G?>)","c8<F>(F)","ah<F>(F)","~(~(b5),aW?)","F(pV)","ma(X,f?)","jF(X)","r7(X,f?)","oe(b5)","rm(b5)","o5(@)","aU<n,o>(aU<o,o>)","qY(@)","f(X,hh)","bm(M<~>)","bm(~())","li(cS)","hg()","~(hg)","qN(cS)","~(h)","~(o,G?)","~(fQ)","mL()","n_()","jv()","~(jv)","~(km)","nM(cS)","v(v)","F(v)","~(tf,aK)","M<mz>()","aK?()","X?()","aQ<aK>?()","uI(X,hh)","~(x)","aY?()","ez(fr)","mU(X)","rr(v?,v?)","ah<mk>(o,aO<o,o>)","bm(@,h7)","~(n,@)","~(jk<aB>)","I(kP)","0^?(0^?(bk?))<G?>","0^?(bo<0^>?(bk?))<G?>","jg()","~(jg)","jh()","~(jh)","i_()","~(i_)","~(mu)","~(m7)","q4(X,ki)","F(ck<G?>,G?)","rq(X,dC)","oO<~>({arguments!G?,child!f,key!h0,name!o?,restorationId!o})","qV(X,dC)","cX/(cX)","~(G[h7?])","b2<0^>()<G?>","o?/(o?)","o(cX)","o(f5)","f5(f5)","F(ck<G?>,G?,er)","ah<~>(F)","bo<k?>?(bk?)","aU<o,o>(o,o)","0&(X,dC)","F(aU<o,o>)","n(aU<o,o>)","aO<G?,G?>(eU)","bm(eA,eA)","lC(X,f)","F(eF<G?>,dC)","F(~)","F(o,o)","n(o)","bm(o,o[G?])","~(a55<M<n>>)","~(M<n>)","bo<cv?>?(bk?)","bm(G?)","bo<aP?>?(bk?)","bo<cO?>?(bk?)","n(fp,fp)","o(o,o)","aB(n{params:G?})","d2?(b2<bK>)","n(cG<@>,cG<@>)","M<o>()","M<o>(o,M<o>)","0^(0^,0^)<cM>","H?(H?,H?,I)","I?(cM?,cM?,I)","A?(A?,A?,I)","d2?(bk?)","f(X,h,h,f)","~(bN{forceReport:F})","db(o)","ig?(o)","I(I,I,I)","~(A7,@)","f(X,bp<I>)","F?(F?,F?,I)","A?(bk?)","f(X,f)","cO?(cO?,cO?,I)","cv?(cv?,cv?,I)","k?(k?,k?,I)","n(E1<@>,E1<@>)","F({priority!n,scheduler!ja})","M<hx>(o)","f(f,bp<I>)","f(f?,M<f>)","~(cx{alignment:I?,alignmentPolicy:pi?,curve:fj?,duration:aR?})","n(aY,aY)","cD(cD?,cD?,I)","f?(X,ox,cb<k9>)","~(F,G?)","M<ck<@>>(fw,o)","n(f,n)","kI?(bk?)","oB?(bk?)","f(X,bp<I>,bp<I>,f)","i3<~>({arguments!G?,child!f,key!h0,name!o?,restorationId!o})","o?/(X,dC)","~(o?{wrapWidth:n?})","aR?(bk?)","F(u4)"],interceptorsByTag:null,leafTags:null,arrayRti:Symbol("$ti"),rttc:{"2;":(a,b)=>c=>c instanceof A.a5&&a.b(c.a)&&b.b(c.b),"2;boundaryEnd,boundaryStart":(a,b)=>c=>c instanceof A.QW&&a.b(c.a)&&b.b(c.b),"2;end,start":(a,b)=>c=>c instanceof A.QX&&a.b(c.a)&&b.b(c.b),"2;endGlyphHeight,startGlyphHeight":(a,b)=>c=>c instanceof A.CR&&a.b(c.a)&&b.b(c.b),"2;key,value":(a,b)=>c=>c instanceof A.QY&&a.b(c.a)&&b.b(c.b),"2;localPosition,paragraph":(a,b)=>c=>c instanceof A.QZ&&a.b(c.a)&&b.b(c.b),"2;representation,targetSize":(a,b)=>c=>c instanceof A.R_&&a.b(c.a)&&b.b(c.b),"3;":(a,b,c)=>d=>d instanceof A.hk&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;ascent,bottomHeight,subtextHeight":(a,b,c)=>d=>d instanceof A.R0&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;breaks,graphemes,words":(a,b,c)=>d=>d instanceof A.R1&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;completer,recorder,scene":(a,b,c)=>d=>d instanceof A.CS&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;data,event,timeStamp":(a,b,c)=>d=>d instanceof A.CT&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;domSize,representation,targetSize":(a,b,c)=>d=>d instanceof A.R2&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;large,medium,small":(a,b,c)=>d=>d instanceof A.R3&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"4;domBlurListener,domFocusListener,element,semanticsNodeId":a=>b=>b instanceof A.CU&&A.aq1(a,b.a),"4;height,width,x,y":a=>b=>b instanceof A.R4&&A.aq1(a,b.a),"4;queue,started,target,timer":a=>b=>b instanceof A.CV&&A.aq1(a,b.a)}}
+A.aHf(v.typeUniverse,JSON.parse('{"eA":"lL","Jt":"lL","kH":"lL","aMM":"rz","atX":{"eo":[]},"kh":{"eo":[]},"oJ":{"tR":[]},"oP":{"tR":[]},"dE":{"pa":[]},"qw":{"oS":[]},"lv":{"bS":[]},"arN":{"oS":[]},"jV":{"a_6":[]},"Gr":{"le":[]},"vX":{"le":[]},"ry":{"t":["i6"],"t.E":"i6"},"Jr":{"zg":[]},"Gs":{"le":[]},"vU":{"le":[]},"Bh":{"le":[]},"Bj":{"le":[]},"Bi":{"le":[]},"wb":{"eo":[]},"Kl":{"eo":[]},"G4":{"eo":[],"ar2":[]},"Gx":{"eo":[],"ari":[]},"GA":{"eo":[],"arl":[]},"Gz":{"eo":[],"ark":[]},"Je":{"eo":[],"atf":[]},"AK":{"eo":[],"aoY":[]},"yr":{"eo":[],"aoY":[],"atc":[]},"Ip":{"eo":[],"asi":[]},"nC":{"lX":[]},"vW":{"lM":[]},"Gl":{"bS":[]},"I8":{"asg":[]},"I7":{"dd":[]},"I6":{"dd":[]},"u5":{"t":["1"],"t.E":"1"},"HL":{"lv":[],"bS":[]},"HJ":{"lv":[],"bS":[]},"HK":{"lv":[],"bS":[]},"eq":{"cW":[]},"bX":{"cW":[]},"GO":{"cW":[]},"FV":{"cW":[]},"FW":{"cW":[]},"fd":{"cW":[]},"jH":{"cW":[]},"l8":{"cW":[]},"dM":{"cW":[]},"qh":{"cW":[]},"FN":{"cW":[]},"qD":{"cW":[]},"oq":{"oS":[],"arn":[]},"KP":{"fz":[]},"vS":{"fz":[]},"qr":{"fz":[]},"Hz":{"fz":[]},"o1":{"fz":[]},"IC":{"fz":[]},"lP":{"fz":[]},"Kg":{"fz":[]},"KX":{"mg":[]},"KU":{"mg":[]},"KT":{"mg":[]},"pe":{"fz":[]},"L1":{"aoH":[]},"Lz":{"fz":[]},"uQ":{"aT":["1"],"M":["1"],"ak":["1"],"t":["1"]},"Pd":{"uQ":["n"],"aT":["n"],"M":["n"],"ak":["n"],"t":["n"]},"AN":{"uQ":["n"],"aT":["n"],"M":["n"],"ak":["n"],"t":["n"],"aT.E":"n","t.E":"n"},"wO":{"lM":[]},"Om":{"jV":[],"a_6":[]},"qT":{"jV":[],"a_6":[]},"w":{"M":["1"],"ak":["1"],"aB":[],"t":["1"],"t.E":"1"},"xA":{"F":[],"ca":[]},"rd":{"bm":[],"ca":[]},"xE":{"aB":[]},"lL":{"aB":[]},"Iw":{"zc":[]},"a1a":{"w":["1"],"M":["1"],"ak":["1"],"aB":[],"t":["1"],"t.E":"1"},"lK":{"I":[],"cM":[],"cG":["cM"]},"rc":{"I":[],"n":[],"cM":[],"cG":["cM"],"ca":[]},"xC":{"I":[],"cM":[],"cG":["cM"],"ca":[]},"iU":{"o":[],"cG":["o"],"ca":[]},"ir":{"t":["2"]},"nz":{"ir":["1","2"],"t":["2"],"t.E":"2"},"BT":{"nz":["1","2"],"ir":["1","2"],"ak":["2"],"t":["2"],"t.E":"2"},"Bf":{"aT":["2"],"M":["2"],"ir":["1","2"],"ak":["2"],"t":["2"]},"ej":{"Bf":["1","2"],"aT":["2"],"M":["2"],"ir":["1","2"],"ak":["2"],"t":["2"],"aT.E":"2","t.E":"2"},"jO":{"b2":["2"],"ir":["1","2"],"ak":["2"],"t":["2"],"t.E":"2"},"nA":{"b1":["3","4"],"aO":["3","4"],"b1.V":"4","b1.K":"3"},"jN":{"ir":["1","2"],"ak":["2"],"t":["2"],"t.E":"2"},"i1":{"bS":[]},"nE":{"aT":["n"],"M":["n"],"ak":["n"],"t":["n"],"aT.E":"n","t.E":"n"},"ak":{"t":["1"]},"aq":{"ak":["1"],"t":["1"]},"ih":{"aq":["1"],"ak":["1"],"t":["1"],"t.E":"1","aq.E":"1"},"eX":{"t":["2"],"t.E":"2"},"jU":{"eX":["1","2"],"ak":["2"],"t":["2"],"t.E":"2"},"a0":{"aq":["2"],"ak":["2"],"t":["2"],"t.E":"2","aq.E":"2"},"aF":{"t":["1"],"t.E":"1"},"em":{"t":["2"],"t.E":"2"},"pz":{"t":["1"],"t.E":"1"},"wJ":{"pz":["1"],"ak":["1"],"t":["1"],"t.E":"1"},"kz":{"t":["1"],"t.E":"1"},"qS":{"kz":["1"],"ak":["1"],"t":["1"],"t.E":"1"},"zM":{"t":["1"],"t.E":"1"},"eR":{"ak":["1"],"t":["1"],"t.E":"1"},"o3":{"t":["1"],"t.E":"1"},"cg":{"t":["1"],"t.E":"1"},"oh":{"t":["+(n,1)"],"t.E":"+(n,1)"},"qR":{"oh":["1"],"ak":["+(n,1)"],"t":["+(n,1)"],"t.E":"+(n,1)"},"tM":{"aT":["1"],"M":["1"],"ak":["1"],"t":["1"]},"Pn":{"aq":["n"],"ak":["n"],"t":["n"],"t.E":"n","aq.E":"n"},"xQ":{"b1":["n","1"],"aO":["n","1"],"b1.V":"1","b1.K":"n"},"ce":{"aq":["1"],"ak":["1"],"t":["1"],"t.E":"1","aq.E":"1"},"ev":{"A7":[]},"nI":{"jl":["1","2"],"aO":["1","2"]},"qI":{"aO":["1","2"]},"bM":{"qI":["1","2"],"aO":["1","2"]},"pU":{"t":["1"],"t.E":"1"},"dm":{"qI":["1","2"],"aO":["1","2"]},"w9":{"hG":["1"],"b2":["1"],"ak":["1"],"t":["1"]},"eP":{"hG":["1"],"b2":["1"],"ak":["1"],"t":["1"],"t.E":"1"},"e7":{"hG":["1"],"b2":["1"],"ak":["1"],"t":["1"],"t.E":"1"},"Iv":{"k3":[]},"r9":{"k3":[]},"yp":{"kF":[],"bS":[]},"Ix":{"bS":[]},"LZ":{"bS":[]},"Ja":{"dd":[]},"DT":{"h7":[]},"lf":{"k3":[]},"GE":{"k3":[]},"GF":{"k3":[]},"LA":{"k3":[]},"Lo":{"k3":[]},"qo":{"k3":[]},"Kr":{"bS":[]},"eB":{"b1":["1","2"],"aO":["1","2"],"b1.V":"2","b1.K":"1"},"b4":{"ak":["1"],"t":["1"],"t.E":"1"},"b3":{"ak":["1"],"t":["1"],"t.E":"1"},"dn":{"ak":["aU<1,2>"],"t":["aU<1,2>"],"t.E":"aU<1,2>"},"xF":{"eB":["1","2"],"b1":["1","2"],"aO":["1","2"],"b1.V":"2","b1.K":"1"},"om":{"eB":["1","2"],"b1":["1","2"],"aO":["1","2"],"b1.V":"2","b1.K":"1"},"ul":{"rT":[],"oy":[]},"Mo":{"t":["rT"],"t.E":"rT"},"tp":{"oy":[]},"Sx":{"t":["oy"],"t.E":"oy"},"kc":{"h3":[],"he":[],"aT":["n"],"M":["n"],"fZ":["n"],"ak":["n"],"aB":[],"t":["n"],"ca":[],"aT.E":"n","t.E":"n"},"rz":{"aB":[],"jL":[],"ca":[]},"oL":{"aB":[],"jL":[],"ca":[]},"yg":{"aB":[]},"TE":{"jL":[]},"yc":{"d9":[],"aB":[],"ca":[]},"rA":{"fZ":["1"],"aB":[]},"lS":{"aT":["I"],"M":["I"],"fZ":["I"],"ak":["I"],"aB":[],"t":["I"]},"h3":{"aT":["n"],"M":["n"],"fZ":["n"],"ak":["n"],"aB":[],"t":["n"]},"yd":{"lS":[],"ZU":[],"aT":["I"],"M":["I"],"fZ":["I"],"ak":["I"],"aB":[],"t":["I"],"ca":[],"aT.E":"I","t.E":"I"},"ye":{"lS":[],"ZV":[],"aT":["I"],"M":["I"],"fZ":["I"],"ak":["I"],"aB":[],"t":["I"],"ca":[],"aT.E":"I","t.E":"I"},"J2":{"h3":[],"a13":[],"aT":["n"],"M":["n"],"fZ":["n"],"ak":["n"],"aB":[],"t":["n"],"ca":[],"aT.E":"n","t.E":"n"},"yf":{"h3":[],"a14":[],"aT":["n"],"M":["n"],"fZ":["n"],"ak":["n"],"aB":[],"t":["n"],"ca":[],"aT.E":"n","t.E":"n"},"J3":{"h3":[],"a15":[],"aT":["n"],"M":["n"],"fZ":["n"],"ak":["n"],"aB":[],"t":["n"],"ca":[],"aT.E":"n","t.E":"n"},"yh":{"h3":[],"abV":[],"aT":["n"],"M":["n"],"fZ":["n"],"ak":["n"],"aB":[],"t":["n"],"ca":[],"aT.E":"n","t.E":"n"},"yi":{"h3":[],"tI":[],"aT":["n"],"M":["n"],"fZ":["n"],"ak":["n"],"aB":[],"t":["n"],"ca":[],"aT.E":"n","t.E":"n"},"yj":{"h3":[],"abW":[],"aT":["n"],"M":["n"],"fZ":["n"],"ak":["n"],"aB":[],"t":["n"],"ca":[],"aT.E":"n","t.E":"n"},"Ed":{"hd":[]},"On":{"bS":[]},"Ee":{"kF":[],"bS":[]},"kL":{"to":["1"]},"Ea":{"LR":[]},"iw":{"t":["1"],"t.E":"1"},"d7":{"bS":[]},"d4":{"jp":["1"],"dX":["1"],"dX.T":"1"},"tX":{"kL":["1"],"to":["1"]},"E_":{"mB":["1"]},"B6":{"mB":["1"]},"bP":{"Bm":["1"]},"aI":{"ah":["1"]},"A1":{"dX":["1"]},"jn":{"uJ":["1"]},"jp":{"dX":["1"],"dX.T":"1"},"u0":{"kL":["1"],"to":["1"]},"DW":{"dX":["1"]},"u6":{"to":["1"]},"BU":{"dX":["1"],"dX.T":"1"},"Cs":{"dX":["1"],"dX.T":"1"},"Ct":{"jn":["1"],"uJ":["1"],"a55":["1"]},"kR":{"b1":["1","2"],"aO":["1","2"],"b1.V":"2","b1.K":"1"},"mM":{"kR":["1","2"],"b1":["1","2"],"aO":["1","2"],"b1.V":"2","b1.K":"1"},"BC":{"kR":["1","2"],"b1":["1","2"],"aO":["1","2"],"b1.V":"2","b1.K":"1"},"pS":{"ak":["1"],"t":["1"],"t.E":"1"},"Ci":{"eB":["1","2"],"b1":["1","2"],"aO":["1","2"],"b1.V":"2","b1.K":"1"},"mJ":{"uH":["1"],"hG":["1"],"b2":["1"],"ak":["1"],"t":["1"],"t.E":"1"},"fH":{"uH":["1"],"hG":["1"],"asM":["1"],"b2":["1"],"ak":["1"],"t":["1"],"t.E":"1"},"ou":{"t":["1"],"t.E":"1"},"aT":{"M":["1"],"ak":["1"],"t":["1"]},"b1":{"aO":["1","2"]},"tN":{"b1":["1","2"],"aO":["1","2"]},"Ck":{"ak":["2"],"t":["2"],"t.E":"2"},"xY":{"aO":["1","2"]},"jl":{"aO":["1","2"]},"BJ":{"BK":["1"],"arU":["1"]},"BL":{"BK":["1"]},"wD":{"ak":["1"],"t":["1"],"t.E":"1"},"xR":{"aq":["1"],"ak":["1"],"t":["1"],"t.E":"1","aq.E":"1"},"hG":{"b2":["1"],"ak":["1"],"t":["1"]},"uH":{"hG":["1"],"b2":["1"],"ak":["1"],"t":["1"]},"zX":{"b1":["1","2"],"mV":["1","f8<1,2>"],"aO":["1","2"],"b1.V":"2","b1.K":"1","mV.K":"1"},"kX":{"ak":["1"],"t":["1"],"t.E":"1"},"q2":{"ak":["2"],"t":["2"],"t.E":"2"},"DM":{"ak":["aU<1,2>"],"t":["aU<1,2>"],"t.E":"aU<1,2>"},"kY":{"iv":["1","2","1"],"iv.T":"1"},"DR":{"iv":["1","f8<1,2>","2"],"iv.T":"2"},"q1":{"iv":["1","f8<1,2>","aU<1,2>"],"iv.T":"aU<1,2>"},"tl":{"hG":["1"],"b2":["1"],"ak":["1"],"mV":["1","f9<1>"],"t":["1"],"t.E":"1","mV.K":"1"},"Pg":{"b1":["o","@"],"aO":["o","@"],"b1.V":"@","b1.K":"o"},"Ph":{"aq":["o"],"ak":["o"],"t":["o"],"t.E":"o","aq.E":"o"},"re":{"bS":[]},"Iy":{"bS":[]},"iI":{"cG":["iI"]},"I":{"cM":[],"cG":["cM"]},"aR":{"cG":["aR"]},"n":{"cM":[],"cG":["cM"]},"M":{"ak":["1"],"t":["1"]},"cM":{"cG":["cM"]},"rT":{"oy":[]},"b2":{"ak":["1"],"t":["1"]},"o":{"cG":["o"]},"nq":{"bS":[]},"kF":{"bS":[]},"hm":{"bS":[]},"rO":{"bS":[]},"xn":{"bS":[]},"J7":{"bS":[]},"AR":{"bS":[]},"LY":{"bS":[]},"f1":{"bS":[]},"GL":{"bS":[]},"Jh":{"bS":[]},"A_":{"bS":[]},"Oo":{"dd":[]},"eT":{"dd":[]},"C_":{"aq":["1"],"ak":["1"],"t":["1"],"t.E":"1","aq.E":"1"},"Sz":{"h7":[]},"Eo":{"M1":[]},"Sk":{"M1":[]},"NP":{"M1":[]},"J9":{"dd":[]},"a15":{"M":["n"],"ak":["n"],"t":["n"]},"he":{"M":["n"],"ak":["n"],"t":["n"]},"abW":{"M":["n"],"ak":["n"],"t":["n"]},"a13":{"M":["n"],"ak":["n"],"t":["n"]},"abV":{"M":["n"],"ak":["n"],"t":["n"]},"a14":{"M":["n"],"ak":["n"],"t":["n"]},"tI":{"M":["n"],"ak":["n"],"t":["n"]},"ZU":{"M":["I"],"ak":["I"],"t":["I"]},"ZV":{"M":["I"],"ak":["I"],"t":["I"]},"j7":{"uw":["j7"]},"rN":{"uw":["rN"]},"G8":{"ar":[],"f":[]},"r3":{"a1":[],"f":[]},"Bk":{"a1":[],"f":[]},"OT":{"a8":["r3"]},"un":{"ar":[],"f":[]},"Bl":{"a8":["Bk"]},"r4":{"a1":[],"f":[]},"OU":{"a8":["r4"]},"I4":{"ar":[],"f":[]},"ui":{"ar":[],"f":[]},"Gp":{"ar":[],"f":[]},"mF":{"uG":[]},"pP":{"ar":[],"f":[]},"k2":{"ar":[],"f":[]},"mW":{"uG":[]},"HZ":{"ar":[],"f":[]},"I0":{"ar":[],"f":[]},"oI":{"ar":[],"f":[]},"q3":{"ar":[],"f":[]},"JE":{"ar":[],"f":[]},"Ki":{"ar":[],"f":[]},"mb":{"a1":[],"f":[]},"RF":{"a8":["mb"]},"zr":{"a1":[],"f":[]},"Dx":{"a8":["zr"]},"eu":{"t":["o"],"t.E":"o"},"tO":{"mY":["1","t<1>"],"mY.E":"1"},"te":{"mY":["1","b2<1>"],"mY.E":"1"},"bp":{"a3":[]},"qj":{"bp":["I"],"a3":[]},"Mp":{"bp":["I"],"a3":[]},"Mq":{"bp":["I"],"a3":[]},"p3":{"bp":["I"],"a3":[]},"ic":{"bp":["I"],"a3":[]},"wj":{"bp":["I"],"a3":[]},"pJ":{"bp":["I"],"a3":[]},"qH":{"bp":["1"],"a3":[]},"vs":{"bp":["1"],"a3":[]},"Ch":{"fj":[]},"fY":{"fj":[]},"LQ":{"fj":[]},"ey":{"fj":[]},"Az":{"fj":[]},"lr":{"fj":[]},"NR":{"fj":[]},"at":{"ap":["1"],"ap.T":"1","at.T":"1"},"dN":{"at":["A?"],"ap":["A?"],"ap.T":"A?","at.T":"A?"},"aJ":{"bp":["1"],"a3":[]},"hi":{"ap":["1"],"ap.T":"1"},"z7":{"at":["1"],"ap":["1"],"ap.T":"1","at.T":"1"},"L6":{"at":["H?"],"ap":["H?"],"ap.T":"H?","at.T":"H?"},"yI":{"at":["v?"],"ap":["v?"],"ap.T":"v?","at.T":"v?"},"lF":{"at":["n"],"ap":["n"],"ap.T":"n","at.T":"n"},"hW":{"ap":["I"],"ap.T":"I"},"AM":{"ap":["1"],"ap.T":"1"},"wd":{"a1":[],"f":[]},"Bu":{"a8":["wd"]},"cj":{"A":[]},"NA":{"ik":[]},"GP":{"ar":[],"f":[]},"nM":{"a1":[],"f":[]},"Bv":{"a8":["nM"]},"GQ":{"cD":[]},"aB5":{"b0":[],"aL":[],"f":[]},"ND":{"eW":["we"],"eW.T":"we"},"H3":{"we":[]},"wg":{"a1":[],"f":[]},"Bx":{"a8":["wg"]},"GR":{"ar":[],"f":[]},"wf":{"a1":[],"f":[]},"u2":{"a1":[],"f":[]},"NE":{"a8":["wf"]},"u3":{"a8":["u2<1>"]},"is":{"hq":[]},"qK":{"a1":[],"f":[]},"Bw":{"j8":["qK"],"a8":["qK"]},"NG":{"a3":[]},"GT":{"ik":[]},"Bz":{"a1":[],"f":[]},"GU":{"ar":[],"f":[]},"NI":{"aX":[],"al":[],"f":[]},"R9":{"x":[],"aH":["x"],"z":[],"af":[]},"BA":{"a8":["Bz"]},"Pl":{"a3":[]},"RE":{"a3":[]},"Nz":{"a3":[]},"BB":{"al":[],"f":[]},"NH":{"aS":[],"aY":[],"X":[]},"pY":{"dg":["x","eJ"],"x":[],"ad":["x","eJ"],"z":[],"af":[],"ad.1":"eJ","dg.1":"eJ","ad.0":"x"},"li":{"a1":[],"f":[]},"By":{"a8":["li"]},"Pq":{"a3":[]},"xp":{"cV":[],"b0":[],"aL":[],"f":[]},"wi":{"ar":[],"f":[]},"mH":{"db":[]},"qU":{"mH":[],"db":[]},"Hx":{"mH":[],"db":[]},"Hw":{"mH":[],"db":[]},"qW":{"nq":[],"bS":[]},"Hd":{"db":[]},"Oy":{"db":[]},"ek":{"a3":[]},"cb":{"a3":[]},"AS":{"a3":[]},"mP":{"a3":[]},"iJ":{"db":[]},"ws":{"db":[]},"Hc":{"db":[]},"wt":{"db":[]},"h0":{"eC":[]},"cr":{"h0":[],"eC":[],"cr.T":"1"},"mv":{"h0":[],"eC":[]},"xO":{"hx":[]},"aV":{"t":["1"],"t.E":"1"},"dQ":{"t":["1"],"t.E":"1"},"c8":{"ah":["1"]},"x2":{"bN":[]},"dv":{"b5":[]},"km":{"b5":[]},"m2":{"b5":[]},"m3":{"b5":[]},"kl":{"b5":[]},"ko":{"b5":[]},"eG":{"b5":[]},"kn":{"b5":[]},"Mj":{"b5":[]},"Tn":{"b5":[]},"oT":{"b5":[]},"Tj":{"oT":[],"b5":[]},"oY":{"b5":[]},"Tu":{"oY":[],"b5":[]},"Tp":{"km":[],"b5":[]},"Tm":{"m2":[],"b5":[]},"To":{"m3":[],"b5":[]},"Tl":{"kl":[],"b5":[]},"oV":{"b5":[]},"Tq":{"oV":[],"b5":[]},"Ty":{"ko":[],"b5":[]},"oZ":{"eG":[],"b5":[]},"Tw":{"oZ":[],"eG":[],"b5":[]},"p_":{"eG":[],"b5":[]},"Tx":{"p_":[],"eG":[],"b5":[]},"Jv":{"eG":[],"b5":[]},"Tv":{"eG":[],"b5":[]},"Ts":{"kn":[],"b5":[]},"oX":{"b5":[]},"Tt":{"oX":[],"b5":[]},"oW":{"b5":[]},"Tr":{"oW":[],"b5":[]},"oU":{"b5":[]},"Tk":{"oU":[],"b5":[]},"i_":{"cC":[],"cH":[]},"Cn":{"uP":[]},"CD":{"uP":[]},"i2":{"cC":[],"cH":[]},"fQ":{"cC":[],"cH":[]},"hg":{"fQ":[],"cC":[],"cH":[]},"fX":{"fQ":[],"cC":[],"cH":[]},"i8":{"fQ":[],"cC":[],"cH":[]},"hY":{"cC":[],"cH":[]},"cC":{"cH":[]},"ys":{"cC":[],"cH":[]},"rJ":{"cC":[],"cH":[]},"fD":{"cC":[],"cH":[]},"G7":{"cC":[],"cH":[]},"jg":{"cC":[],"cH":[]},"jh":{"cC":[],"cH":[]},"vE":{"cC":[],"cH":[]},"oe":{"iq":[]},"rm":{"iq":[]},"Mk":{"ar":[],"f":[]},"pK":{"ar":[],"f":[]},"G2":{"ar":[],"f":[]},"G0":{"ar":[],"f":[]},"GD":{"ar":[],"f":[]},"GC":{"ar":[],"f":[]},"Ho":{"ar":[],"f":[]},"Hn":{"ar":[],"f":[]},"Hs":{"ar":[],"f":[]},"Hr":{"ar":[],"f":[]},"aA_":{"cV":[],"b0":[],"aL":[],"f":[]},"FM":{"ar":[],"f":[]},"rp":{"a1":[],"f":[]},"Cl":{"a8":["rp"]},"vx":{"a1":[],"f":[]},"QG":{"H":[]},"B5":{"a8":["vx"]},"MI":{"aX":[],"al":[],"f":[]},"R6":{"x":[],"aH":["x"],"z":[],"af":[]},"MF":{"iB":[]},"vy":{"cV":[],"b0":[],"aL":[],"f":[]},"rr":{"at":["v?"],"ap":["v?"],"ap.T":"v?","at.T":"v?"},"y1":{"at":["h"],"ap":["h"],"ap.T":"h","at.T":"h"},"aD2":{"cV":[],"b0":[],"aL":[],"f":[]},"vQ":{"a1":[],"f":[]},"Bd":{"a8":["vQ"]},"PJ":{"d2":[],"bo":["d2"]},"Pc":{"aX":[],"al":[],"f":[]},"D3":{"x":[],"aH":["x"],"z":[],"af":[]},"yF":{"a1":[],"f":[]},"CP":{"a8":["yF"]},"P6":{"bo":["A?"]},"Na":{"aX":[],"al":[],"f":[]},"R7":{"x":[],"aH":["x"],"z":[],"af":[]},"Nc":{"fC":["jo","x"],"al":[],"f":[],"fC.0":"jo","fC.1":"x"},"CW":{"x":[],"je":["jo","x"],"z":[],"af":[]},"aAA":{"cV":[],"b0":[],"aL":[],"f":[]},"IT":{"lg":["n"],"A":[],"lg.T":"n"},"O0":{"ik":[]},"Ha":{"ar":[],"f":[]},"qN":{"ar":[],"f":[]},"wx":{"ar":[],"f":[]},"aBo":{"cV":[],"b0":[],"aL":[],"f":[]},"HB":{"ar":[],"f":[]},"wZ":{"b0":[],"aL":[],"f":[]},"B4":{"bp":["1"],"a3":[]},"Dy":{"a1":[],"f":[]},"xi":{"ar":[],"f":[]},"S_":{"a8":["Dy"]},"P2":{"a1":[],"f":[]},"P1":{"bk":[]},"Ou":{"bk":[]},"Ov":{"bk":[]},"Q1":{"bk":[]},"xj":{"cV":[],"b0":[],"aL":[],"f":[]},"oi":{"a1":[],"f":[]},"Ca":{"a8":["oi"]},"xr":{"iT":[]},"lD":{"lG":[],"iT":[]},"xt":{"lG":[],"iT":[]},"xu":{"lG":[],"iT":[]},"lG":{"iT":[]},"CK":{"b0":[],"aL":[],"f":[]},"C9":{"a1":[],"f":[]},"xs":{"ar":[],"f":[]},"C8":{"a8":["C9"],"apd":[]},"It":{"ar":[],"f":[]},"hv":{"bE":[]},"im":{"hv":[],"bE":[]},"fx":{"hv":[],"bE":[]},"Bb":{"a1":[],"f":[]},"C3":{"a1":[],"f":[]},"oj":{"a1":[],"f":[]},"xv":{"cV":[],"b0":[],"aL":[],"f":[]},"Cb":{"a3":[]},"Cc":{"at":["hv"],"ap":["hv"],"ap.T":"hv","at.T":"hv"},"P8":{"a3":[]},"MV":{"a8":["Bb"]},"C4":{"a8":["C3"]},"CZ":{"x":[],"je":["ee","x"],"z":[],"af":[]},"NV":{"fC":["ee","x"],"al":[],"f":[],"fC.0":"ee","fC.1":"x"},"Cd":{"a8":["oj"]},"Pb":{"lE":[]},"Ar":{"a1":[],"f":[]},"E4":{"a8":["Ar"]},"IQ":{"ar":[],"f":[]},"y_":{"a1":[],"f":[]},"D2":{"x":[],"aH":["x"],"z":[],"af":[]},"ps":{"at":["bE?"],"ap":["bE?"],"ap.T":"bE?","at.T":"bE?"},"Cm":{"a1":[],"f":[]},"PC":{"a8":["y_"]},"P7":{"aX":[],"al":[],"f":[]},"Pz":{"a8":["Cm"]},"DH":{"ar":[],"f":[]},"DI":{"a3":[]},"PA":{"eW":["oA"],"eW.T":"oA"},"H5":{"oA":[]},"i3":{"eF":["1"],"hD":[]},"CI":{"y2":["1"],"j5":["1"],"eD":["1"],"ew":["1"],"ck":["1"]},"n2":{"a1":[],"f":[]},"n3":{"a1":[],"f":[]},"ut":{"a1":[],"f":[]},"TW":{"ar":[],"f":[]},"TU":{"a8":["n2"]},"TV":{"a8":["n3"]},"Mi":{"kf":[]},"GS":{"kf":[]},"CJ":{"a8":["ut<1>"]},"EF":{"a3":[]},"EG":{"a3":[]},"ze":{"a1":[],"f":[]},"Dk":{"b0":[],"aL":[],"f":[]},"BV":{"a1":[],"f":[]},"zd":{"a1":[],"f":[]},"t7":{"a8":["zd"]},"aH1":{"a1":[],"f":[]},"Kv":{"a8":["ze"]},"RP":{"a3":[]},"Ba":{"ac":[]},"MU":{"ar":[],"f":[]},"BW":{"a8":["BV"]},"O4":{"aQ":["fk"],"aQ.T":"fk"},"RQ":{"b0":[],"aL":[],"f":[]},"um":{"a1":[],"f":[]},"KO":{"ar":[],"f":[]},"PB":{"j8":["um"],"a8":["um"]},"aEQ":{"cV":[],"b0":[],"aL":[],"f":[]},"zt":{"a1":[],"f":[]},"T4":{"cb":["cf"],"a3":[]},"DA":{"a8":["zt"]},"aFe":{"a1":[],"f":[]},"tv":{"a1":[],"f":[]},"SR":{"a1":[],"f":[]},"SS":{"ar":[],"f":[]},"SP":{"bk":[]},"aFv":{"cV":[],"b0":[],"aL":[],"f":[]},"Ao":{"a1":[],"f":[]},"E2":{"a8":["Ao"]},"IU":{"ik":[]},"SW":{"a3":[]},"aFD":{"cV":[],"b0":[],"aL":[],"f":[]},"E7":{"a1":[],"f":[]},"LN":{"ar":[],"f":[]},"T1":{"a8":["E7"]},"T2":{"aX":[],"al":[],"f":[]},"T3":{"x":[],"aH":["x"],"z":[],"af":[]},"SZ":{"eE":[],"al":[],"f":[]},"T_":{"aS":[],"aY":[],"X":[]},"Rs":{"x":[],"ad":["x","eJ"],"z":[],"af":[],"ad.1":"eJ","ad.0":"x"},"SY":{"ar":[],"f":[]},"T0":{"ar":[],"f":[]},"LP":{"ar":[],"f":[]},"C7":{"cV":[],"b0":[],"aL":[],"f":[]},"pE":{"at":["hK"],"ap":["hK"],"ap.T":"hK","at.T":"hK"},"vo":{"a1":[],"f":[]},"Ay":{"ar":[],"f":[]},"My":{"a8":["vo"]},"AI":{"a1":[],"f":[]},"mr":{"a8":["AI"]},"Op":{"aX":[],"al":[],"f":[]},"Rd":{"x":[],"aH":["x"],"z":[],"j2":[],"af":[]},"Tc":{"ar":[],"f":[]},"aFX":{"cV":[],"b0":[],"aL":[],"f":[]},"dx":{"ff":[]},"fe":{"ff":[]},"Cp":{"ff":[]},"SF":{"a3":[]},"cO":{"bE":[]},"hN":{"bE":[]},"Ge":{"bE":[]},"d8":{"bE":[]},"ei":{"bE":[]},"bx":{"hq":[]},"dz":{"jb":[]},"da":{"cO":[],"bE":[]},"lg":{"A":[]},"ao":{"cv":[]},"dc":{"cv":[]},"mQ":{"cv":[]},"Js":{"fu":[]},"cI":{"cO":[],"bE":[]},"j9":{"cO":[],"bE":[]},"uD":{"eg":["cI"],"cO":[],"bE":[],"eg.T":"cI"},"uE":{"eg":["j9"],"cO":[],"bE":[],"eg.T":"j9"},"eg":{"cO":[],"bE":[]},"hH":{"hq":[]},"f0":{"cO":[],"bE":[]},"eK":{"cO":[],"bE":[]},"eL":{"cO":[],"bE":[]},"tU":{"ha":[]},"TI":{"ha":[]},"TF":{"hb":[]},"hj":{"hb":[]},"tZ":{"hb":[]},"mq":{"fu":[],"j2":[],"af":[]},"yL":{"x":[],"aH":["x"],"z":[],"af":[]},"B9":{"a3":[]},"NW":{"ki":[]},"RA":{"p9":[],"aH":["x"],"z":[],"af":[]},"ld":{"k4":[]},"x":{"z":[],"af":[]},"nx":{"fW":["x"]},"eO":{"cp":[]},"wa":{"eO":[],"dO":["1"],"cp":[]},"hA":{"eO":[],"dO":["x"],"cp":[]},"yO":{"dg":["x","hA"],"x":[],"ad":["x","hA"],"z":[],"af":[],"ad.1":"hA","dg.1":"hA","ad.0":"x"},"GW":{"a3":[]},"yP":{"x":[],"aH":["x"],"z":[],"af":[]},"m8":{"a3":[]},"p6":{"x":[],"ad":["x","hJ"],"z":[],"af":[],"ad.1":"hJ","ad.0":"x"},"Rb":{"x":[],"z":[],"af":[]},"E3":{"m8":[],"a3":[]},"Be":{"m8":[],"a3":[]},"u_":{"m8":[],"a3":[]},"yR":{"x":[],"z":[],"af":[]},"fm":{"eO":[],"dO":["x"],"cp":[]},"yS":{"dg":["x","fm"],"x":[],"ad":["x","fm"],"z":[],"af":[],"ad.1":"fm","dg.1":"fm","ad.0":"x"},"el":{"dR":[]},"w4":{"el":[],"dR":[]},"w2":{"el":[],"dR":[]},"tE":{"i7":[],"el":[],"dR":[]},"Jf":{"i7":[],"el":[],"dR":[]},"xN":{"el":[],"dR":[]},"vv":{"el":[],"dR":[]},"Jq":{"dR":[]},"i7":{"el":[],"dR":[]},"w3":{"el":[],"dR":[]},"xm":{"i7":[],"el":[],"dR":[]},"vC":{"el":[],"dR":[]},"x6":{"el":[],"dR":[]},"J0":{"a3":[]},"z":{"af":[]},"dO":{"cp":[]},"f7":{"d5":[]},"C6":{"d5":[]},"kj":{"dt":[]},"hJ":{"dO":["x"],"cp":[]},"ju":{"dV":[],"a3":[]},"TG":{"hb":[]},"m9":{"x":[],"ad":["x","hJ"],"z":[],"af":[],"ad.1":"hJ","ad.0":"x"},"ml":{"a3":[]},"yJ":{"x":[],"aH":["x"],"z":[],"af":[]},"ks":{"x":[],"aH":["x"],"z":[],"af":[]},"K4":{"x":[],"aH":["x"],"z":[],"af":[]},"yY":{"x":[],"aH":["x"],"z":[],"af":[]},"rX":{"x":[],"aH":["x"],"z":[],"af":[]},"K_":{"x":[],"aH":["x"],"z":[],"af":[]},"K0":{"x":[],"aH":["x"],"z":[],"af":[]},"JN":{"x":[],"aH":["x"],"z":[],"af":[]},"JO":{"x":[],"aH":["x"],"z":[],"af":[]},"wk":{"a3":[]},"uz":{"x":[],"aH":["x"],"z":[],"af":[]},"JS":{"x":[],"aH":["x"],"z":[],"af":[]},"JR":{"x":[],"aH":["x"],"z":[],"af":[]},"JQ":{"x":[],"aH":["x"],"z":[],"af":[]},"D6":{"x":[],"aH":["x"],"z":[],"af":[]},"K1":{"x":[],"aH":["x"],"z":[],"af":[]},"K2":{"x":[],"aH":["x"],"z":[],"af":[]},"JT":{"x":[],"aH":["x"],"z":[],"af":[]},"Kc":{"x":[],"aH":["x"],"z":[],"af":[]},"JW":{"x":[],"aH":["x"],"z":[],"af":[]},"K3":{"x":[],"aH":["x"],"z":[],"af":[]},"yU":{"x":[],"aH":["x"],"z":[],"j2":[],"af":[]},"K6":{"x":[],"aH":["x"],"z":[],"af":[]},"yT":{"x":[],"aH":["x"],"z":[],"af":[]},"yV":{"x":[],"aH":["x"],"z":[],"af":[]},"K7":{"x":[],"aH":["x"],"z":[],"af":[]},"JP":{"x":[],"aH":["x"],"z":[],"af":[]},"JU":{"x":[],"aH":["x"],"z":[],"af":[]},"JX":{"x":[],"aH":["x"],"z":[],"af":[]},"JZ":{"x":[],"aH":["x"],"z":[],"af":[]},"JV":{"x":[],"aH":["x"],"z":[],"af":[]},"yM":{"x":[],"aH":["x"],"z":[],"af":[]},"dV":{"a3":[]},"p7":{"x":[],"aH":["x"],"z":[],"af":[]},"yW":{"x":[],"aH":["x"],"z":[],"af":[]},"JM":{"x":[],"aH":["x"],"z":[],"af":[]},"yX":{"x":[],"aH":["x"],"z":[],"af":[]},"yQ":{"x":[],"aH":["x"],"z":[],"af":[]},"kA":{"mm":[],"dO":["ds"],"cp":[]},"ds":{"z":[],"af":[]},"Le":{"k4":[]},"Ld":{"fW":["ds"]},"zP":{"cp":[]},"mm":{"cp":[]},"Ka":{"ds":[],"aH":["x"],"z":[],"af":[]},"Kb":{"ds":[],"aH":["x"],"z":[],"af":[]},"K9":{"rY":[],"ds":[],"ad":["x","jc"],"z":[],"af":[],"ad.1":"jc","ad.0":"x"},"iV":{"cp":[]},"jc":{"dO":["x"],"iV":[],"cp":[]},"rY":{"ds":[],"ad":["x","jc"],"z":[],"af":[]},"ec":{"eO":[],"dO":["x"],"cp":[]},"yZ":{"dg":["x","ec"],"x":[],"ad":["x","ec"],"z":[],"af":[],"ad.1":"ec","dg.1":"ec","ad.0":"x"},"l9":{"at":["ff?"],"ap":["ff?"],"ap.T":"ff?","at.T":"ff?"},"p9":{"aH":["x"],"z":[],"af":[]},"t_":{"js":["1"],"x":[],"ad":["ds","1"],"JL":[],"z":[],"af":[]},"z0":{"js":["kA"],"x":[],"ad":["ds","kA"],"JL":[],"z":[],"af":[],"ad.1":"kA","js.0":"kA","ad.0":"ds"},"hh":{"a3":[]},"jm":{"eO":[],"dO":["x"],"cp":[]},"z1":{"dg":["x","jm"],"x":[],"ad":["x","jm"],"z":[],"af":[],"ad.1":"jm","dg.1":"jm","ad.0":"x"},"pG":{"ah":["~"]},"AA":{"dd":[]},"kK":{"cG":["kK"]},"iu":{"cG":["iu"]},"l_":{"cG":["l_"]},"td":{"cG":["td"]},"S8":{"db":[]},"zE":{"a3":[]},"rB":{"cG":["td"]},"pL":{"ar1":[]},"k8":{"hw":[]},"on":{"hw":[]},"rg":{"hw":[]},"yy":{"dd":[]},"y7":{"dd":[]},"jf":{"d2":[]},"NZ":{"d2":[]},"SG":{"y8":[]},"m5":{"kr":[]},"rR":{"kr":[]},"z6":{"a3":[]},"qt":{"ha":[]},"ri":{"ha":[]},"lY":{"ha":[]},"wA":{"ha":[]},"LE":{"mn":[]},"LD":{"mn":[]},"LF":{"mn":[]},"tx":{"mn":[]},"HC":{"mo":[]},"Q8":{"Aq":[]},"Ib":{"ez":[]},"Ic":{"ez":[]},"If":{"ez":[]},"Ih":{"ez":[]},"Ie":{"ez":[]},"Ig":{"ez":[]},"Id":{"ez":[]},"jF":{"a1":[],"f":[]},"B0":{"b0":[],"aL":[],"f":[]},"o2":{"a1":[],"f":[]},"ap_":{"aK":[]},"aBs":{"aK":[]},"aBr":{"aK":[]},"qg":{"aK":[]},"qp":{"aK":[]},"fk":{"aK":[]},"kp":{"aK":[]},"cd":{"aQ":["1"]},"cF":{"aQ":["1"],"aQ.T":"1"},"B1":{"a8":["jF"]},"BZ":{"a8":["o2"]},"M7":{"aQ":["ap_"],"aQ.T":"ap_"},"wy":{"aQ":["aK"],"aQ.T":"aK"},"Hh":{"aQ":["fk"]},"JD":{"cd":["kp"],"aQ":["kp"],"aQ.T":"kp","cd.T":"kp"},"CF":{"cd":["1"],"us":["1"],"aQ":["1"],"aQ.T":"1","cd.T":"1"},"CG":{"cd":["1"],"us":["1"],"aQ":["1"],"aQ.T":"1","cd.T":"1"},"Bs":{"aQ":["1"],"aQ.T":"1"},"vm":{"a1":[],"f":[]},"Mx":{"a8":["vm"]},"Mw":{"aX":[],"al":[],"f":[]},"vn":{"a1":[],"f":[]},"B3":{"a8":["vn"]},"vu":{"aX":[],"al":[],"f":[]},"tT":{"a1":[],"f":[]},"Ex":{"a8":["tT"],"cK":[]},"FU":{"cK":[]},"vB":{"a1":[],"f":[]},"B7":{"a8":["vB"]},"xH":{"a3":[]},"PW":{"ar":[],"f":[]},"hs":{"b0":[],"aL":[],"f":[]},"qA":{"aX":[],"al":[],"f":[]},"qz":{"aX":[],"al":[],"f":[]},"qG":{"aX":[],"al":[],"f":[]},"bn":{"aX":[],"al":[],"f":[]},"fO":{"aX":[],"al":[],"f":[]},"nB":{"aX":[],"al":[],"f":[]},"xM":{"dD":["hA"],"aL":[],"f":[],"dD.T":"hA"},"p0":{"dD":["ec"],"aL":[],"f":[],"dD.T":"ec"},"aBe":{"b0":[],"aL":[],"f":[]},"r7":{"aX":[],"al":[],"f":[]},"mh":{"aX":[],"al":[],"f":[]},"TA":{"ft":[],"aY":[],"X":[]},"TB":{"b0":[],"aL":[],"f":[]},"Jd":{"aX":[],"al":[],"f":[]},"G3":{"aX":[],"al":[],"f":[]},"wm":{"aX":[],"al":[],"f":[]},"Gy":{"aX":[],"al":[],"f":[]},"Jo":{"aX":[],"al":[],"f":[]},"Jp":{"aX":[],"al":[],"f":[]},"tD":{"aX":[],"al":[],"f":[]},"GI":{"aX":[],"al":[],"f":[]},"HM":{"aX":[],"al":[],"f":[]},"jQ":{"aX":[],"al":[],"f":[]},"wl":{"eE":[],"al":[],"f":[]},"cQ":{"aX":[],"al":[],"f":[]},"eQ":{"aX":[],"al":[],"f":[]},"II":{"aX":[],"al":[],"f":[]},"Jc":{"aX":[],"al":[],"f":[]},"Q_":{"aS":[],"aY":[],"X":[]},"jd":{"aX":[],"al":[],"f":[]},"S6":{"aX":[],"al":[],"f":[]},"Ll":{"eE":[],"al":[],"f":[]},"Jw":{"ar":[],"f":[]},"HD":{"eE":[],"al":[],"f":[]},"Kq":{"eE":[],"al":[],"f":[]},"GH":{"eE":[],"al":[],"f":[]},"wY":{"dD":["fm"],"aL":[],"f":[],"dD.T":"fm"},"wR":{"dD":["fm"],"aL":[],"f":[],"dD.T":"fm"},"Mh":{"eE":[],"al":[],"f":[]},"Kj":{"eE":[],"al":[],"f":[]},"IM":{"aX":[],"al":[],"f":[]},"y9":{"aX":[],"al":[],"f":[]},"hC":{"aX":[],"al":[],"f":[]},"FJ":{"aX":[],"al":[],"f":[]},"Ga":{"aX":[],"al":[],"f":[]},"lp":{"aX":[],"al":[],"f":[]},"Is":{"aX":[],"al":[],"f":[]},"op":{"ar":[],"f":[]},"e5":{"ar":[],"f":[]},"nH":{"aX":[],"al":[],"f":[]},"CX":{"x":[],"aH":["x"],"z":[],"af":[]},"za":{"f":[]},"z8":{"aY":[],"X":[]},"Mg":{"ja":[],"af":[]},"iG":{"ar":[],"f":[]},"H_":{"aX":[],"al":[],"f":[]},"NT":{"a3":[]},"lm":{"cV":[],"b0":[],"aL":[],"f":[]},"PX":{"ar":[],"f":[]},"H7":{"ar":[],"f":[]},"qP":{"a1":[],"f":[]},"BO":{"a8":["qP"]},"qQ":{"a1":[],"f":[]},"lo":{"a8":["qQ"],"cK":[]},"Do":{"a1":[],"f":[]},"kW":{"tS":[],"fu":[]},"Ng":{"aX":[],"al":[],"f":[]},"R8":{"x":[],"aH":["x"],"z":[],"af":[]},"An":{"cb":["cf"],"a3":[]},"BP":{"eE":[],"al":[],"f":[]},"RR":{"a8":["Do"],"atS":[]},"kO":{"cd":["1"],"aQ":["1"],"aQ.T":"1","cd.T":"1"},"Em":{"cd":["1"],"aQ":["1"],"aQ.T":"1","cd.T":"1"},"En":{"cd":["1"],"aQ":["1"],"aQ.T":"1","cd.T":"1"},"Et":{"cF":["1"],"aQ":["1"],"aQ.T":"1"},"RZ":{"cd":["kx"],"aQ":["kx"],"aQ.T":"kx","cd.T":"kx"},"Nx":{"cd":["iH"],"aQ":["iH"],"aQ.T":"iH","cd.T":"iH"},"Q6":{"cd":["kg"],"aQ":["kg"],"aQ.T":"kg","cd.T":"kg"},"TO":{"cb":["qC"],"a3":[],"cK":[]},"Oj":{"cd":["iK"],"aQ":["iK"],"aQ.T":"iK","cd.T":"iK"},"Ok":{"cd":["iL"],"aQ":["iL"],"aQ.T":"iL","cd.T":"iL"},"cx":{"a3":[]},"k1":{"cx":[],"a3":[]},"MJ":{"cK":[]},"x3":{"a3":[]},"o0":{"a1":[],"f":[]},"BX":{"hu":["cx"],"b0":[],"aL":[],"f":[],"hu.T":"cx"},"u8":{"a8":["o0"]},"x4":{"a1":[],"f":[]},"OG":{"a1":[],"f":[]},"OF":{"a8":["o0"]},"x5":{"a1":[],"f":[]},"aoA":{"aK":[]},"oM":{"aK":[]},"p1":{"aK":[]},"anF":{"aK":[]},"BY":{"cx":[],"a3":[]},"OH":{"a8":["x5"]},"Kf":{"aQ":["aoA"],"aQ.T":"aoA"},"J6":{"aQ":["oM"],"aQ.T":"oM"},"Jz":{"aQ":["p1"],"aQ.T":"p1"},"ww":{"aQ":["anF"],"aQ.T":"anF"},"fU":{"eC":[]},"br":{"fU":["1"],"eC":[]},"a1":{"f":[]},"aY":{"X":[]},"h8":{"aY":[],"X":[]},"m_":{"aY":[],"X":[]},"ft":{"aY":[],"X":[]},"ly":{"fU":["1"],"eC":[]},"ar":{"f":[]},"aL":{"f":[]},"dD":{"aL":[],"f":[]},"b0":{"aL":[],"f":[]},"al":{"f":[]},"IG":{"al":[],"f":[]},"aX":{"al":[],"f":[]},"eE":{"al":[],"f":[]},"Hy":{"al":[],"f":[]},"w8":{"aY":[],"X":[]},"Ln":{"aY":[],"X":[]},"yC":{"aY":[],"X":[]},"aS":{"aY":[],"X":[]},"IF":{"aS":[],"aY":[],"X":[]},"zJ":{"aS":[],"aY":[],"X":[]},"h2":{"aS":[],"aY":[],"X":[]},"Kd":{"aS":[],"aY":[],"X":[]},"PV":{"aY":[],"X":[]},"PY":{"f":[]},"i9":{"a1":[],"f":[]},"rQ":{"a8":["i9"]},"c7":{"oa":["1"]},"HQ":{"ar":[],"f":[]},"OO":{"aX":[],"al":[],"f":[]},"r5":{"a1":[],"f":[]},"av2":{"a8":["r5"]},"r6":{"lU":[]},"fs":{"ar":[],"f":[]},"og":{"cV":[],"b0":[],"aL":[],"f":[]},"nw":{"at":["ac"],"ap":["ac"],"ap.T":"ac","at.T":"ac"},"jR":{"at":["hq"],"ap":["hq"],"ap.T":"hq","at.T":"hq"},"ln":{"at":["cv"],"ap":["cv"],"ap.T":"cv","at.T":"cv"},"nt":{"at":["ct?"],"ap":["ct?"],"ap.T":"ct?","at.T":"ct?"},"oF":{"at":["aW"],"ap":["aW"],"ap.T":"aW","at.T":"aW"},"pD":{"at":["k"],"ap":["k"],"ap.T":"k","at.T":"k"},"vh":{"a1":[],"f":[]},"vl":{"a1":[],"f":[]},"vj":{"a1":[],"f":[]},"vi":{"a1":[],"f":[]},"vk":{"a1":[],"f":[]},"Iq":{"a1":[],"f":[]},"r8":{"a8":["1"]},"qi":{"a8":["1"]},"Mr":{"a8":["vh"]},"Mv":{"a8":["vl"]},"Mt":{"a8":["vj"]},"Ms":{"a8":["vi"]},"Mu":{"a8":["vk"]},"ht":{"b0":[],"aL":[],"f":[]},"xq":{"ft":[],"aY":[],"X":[]},"hu":{"b0":[],"aL":[],"f":[]},"ug":{"ft":[],"aY":[],"X":[]},"cV":{"b0":[],"aL":[],"f":[]},"pM":{"ar":[],"f":[]},"Cj":{"b0":[],"aL":[],"f":[]},"ow":{"a1":[],"f":[]},"rj":{"a3":[],"cK":[]},"TT":{"eW":["AZ"],"eW.T":"AZ"},"H9":{"AZ":[]},"Ps":{"a8":["ow"]},"asR":{"b0":[],"aL":[],"f":[]},"JI":{"ar":[],"f":[]},"PT":{"a3":[]},"Pw":{"aX":[],"al":[],"f":[]},"Rg":{"x":[],"aH":["x"],"z":[],"af":[]},"lR":{"ht":["di"],"b0":[],"aL":[],"f":[],"ht.T":"di"},"Co":{"a1":[],"f":[]},"PE":{"a8":["Co"],"cK":[]},"TH":{"hb":[]},"Aa":{"hb":[]},"rv":{"ar":[],"f":[]},"tV":{"cC":[],"cH":[]},"FR":{"a1":[],"f":[]},"MD":{"oa":["tV"]},"PI":{"ar":[],"f":[]},"J5":{"ar":[],"f":[]},"eF":{"hD":[]},"od":{"b0":[],"aL":[],"f":[]},"yn":{"a1":[],"f":[]},"dH":{"ku":[]},"fw":{"a8":["yn"]},"uq":{"mS":[]},"up":{"mS":[]},"Cy":{"mS":[]},"Cz":{"mS":[]},"OW":{"t":["dH"],"a3":[],"t.E":"dH"},"OX":{"dF":["aO<o?,M<G>>?"],"a3":[]},"dq":{"aL":[],"f":[]},"CC":{"aY":[],"X":[]},"lW":{"a3":[]},"kU":{"a1":[],"f":[]},"CE":{"a8":["kU"]},"rC":{"a1":[],"f":[]},"rE":{"a8":["rC"]},"pZ":{"x":[],"ad":["x","ec"],"z":[],"af":[],"ad.1":"ec","ad.0":"x"},"yu":{"a1":[],"f":[]},"mT":{"hy":["mT"],"hy.E":"mT"},"q_":{"b0":[],"aL":[],"f":[]},"kV":{"x":[],"aH":["x"],"z":[],"af":[],"hy":["kV"],"hy.E":"kV"},"D4":{"x":[],"aH":["x"],"z":[],"af":[]},"E9":{"eE":[],"al":[],"f":[]},"T7":{"aS":[],"aY":[],"X":[]},"uO":{"ec":[],"eO":[],"dO":["x"],"cp":[]},"Q3":{"a8":["yu"]},"ur":{"al":[],"f":[]},"Q2":{"aS":[],"aY":[],"X":[]},"NY":{"aX":[],"al":[],"f":[]},"xb":{"a1":[],"f":[]},"A3":{"a1":[],"f":[]},"C1":{"a8":["xb"]},"C0":{"a3":[]},"OP":{"a3":[]},"DY":{"a8":["A3"]},"DX":{"a3":[]},"yv":{"fE":[]},"ati":{"cr":["1"],"h0":[],"eC":[]},"rF":{"ar":[],"f":[]},"j5":{"eD":["1"],"ew":["1"],"ck":["1"]},"rK":{"b0":[],"aL":[],"f":[]},"ma":{"a1":[],"f":[]},"AP":{"b0":[],"aL":[],"f":[]},"z9":{"a1":[],"f":[]},"dF":{"a3":[]},"Rz":{"a8":["ma"]},"Dh":{"a8":["z9"]},"bU":{"dF":["1"],"a3":[]},"it":{"bU":["1"],"dF":["1"],"a3":[]},"Df":{"it":["1"],"bU":["1"],"dF":["1"],"a3":[]},"z5":{"it":["1"],"bU":["1"],"dF":["1"],"a3":[],"bU.T":"1","it.T":"1"},"z4":{"it":["F"],"bU":["F"],"dF":["F"],"a3":[],"bU.T":"F","it.T":"F"},"t4":{"a1":[],"f":[]},"arf":{"kM":["ah<F>"]},"uF":{"a8":["t4<1>"]},"RN":{"b0":[],"aL":[],"f":[]},"G1":{"kM":["ah<F>"]},"Kk":{"kM":["ah<F>"],"cK":[]},"t5":{"a3":[]},"Ko":{"a3":[]},"Rw":{"bU":["h6?"],"dF":["h6?"],"a3":[],"bU.T":"h6?"},"Cr":{"ht":["pV"],"b0":[],"aL":[],"f":[],"ht.T":"pV"},"uo":{"a1":[],"f":[]},"mR":{"a8":["uo<1>"]},"eD":{"ew":["1"],"ck":["1"]},"rD":{"ck":["1"]},"ew":{"ck":["1"]},"O5":{"aQ":["fk"],"aQ.T":"fk"},"Ks":{"ar":[],"f":[]},"zi":{"b0":[],"aL":[],"f":[]},"zj":{"a3":[]},"DD":{"a1":[],"f":[]},"RO":{"cr":["eC"],"h0":[],"eC":[],"cr.T":"eC"},"DE":{"a8":["DD"]},"eZ":{"h_":[],"fE":[]},"t8":{"eZ":[],"h_":[],"fE":[]},"md":{"eZ":[],"h_":[],"fE":[]},"j4":{"eZ":[],"h_":[],"fE":[]},"ie":{"eZ":[],"h_":[],"fE":[]},"M2":{"eZ":[],"h_":[],"fE":[]},"Dq":{"b0":[],"aL":[],"f":[]},"kT":{"hy":["kT"],"hy.E":"kT"},"zl":{"a1":[],"f":[]},"KL":{"a8":["zl"]},"kv":{"hh":[],"a3":[]},"pg":{"fE":[]},"zm":{"kv":[],"hh":[],"a3":[]},"KM":{"ar":[],"f":[]},"GX":{"ar":[],"f":[]},"zn":{"a1":[],"f":[]},"Ds":{"b0":[],"aL":[],"f":[]},"pk":{"a8":["zn"]},"Du":{"a1":[],"f":[]},"RU":{"a8":["Du"]},"Dt":{"a3":[]},"RT":{"aX":[],"al":[],"f":[]},"Da":{"x":[],"aH":["x"],"z":[],"af":[]},"Rx":{"bU":["I?"],"dF":["I?"],"a3":[],"bU.T":"I?"},"dU":{"aK":[]},"zh":{"cd":["dU"],"aQ":["dU"],"aQ.T":"dU","cd.T":"dU"},"rS":{"a1":[],"f":[]},"jv":{"fD":[],"cC":[],"cH":[]},"n_":{"hg":[],"fQ":[],"cC":[],"cH":[]},"mL":{"fX":[],"fQ":[],"cC":[],"cH":[]},"ta":{"a3":[]},"j8":{"a8":["1"]},"tn":{"a3":[]},"rx":{"a3":[]},"pm":{"a1":[],"f":[]},"tc":{"b0":[],"aL":[],"f":[]},"S3":{"dV":[],"a8":["pm"],"a3":[]},"KQ":{"a3":[]},"zG":{"a1":[],"f":[]},"Sd":{"a8":["zG"]},"Se":{"ht":["G"],"b0":[],"aL":[],"f":[],"ht.T":"G"},"a6":{"tf":[]},"pt":{"a1":[],"f":[]},"zH":{"a1":[],"f":[]},"tg":{"a3":[]},"DK":{"a8":["pt"]},"zI":{"a3":[]},"DJ":{"a8":["zH"]},"Sh":{"b0":[],"aL":[],"f":[]},"uI":{"aX":[],"al":[],"f":[]},"L3":{"ar":[],"f":[]},"Sn":{"aS":[],"aY":[],"X":[]},"Dc":{"x":[],"aH":["x"],"JL":[],"z":[],"af":[]},"L4":{"h_":[]},"L5":{"aX":[],"al":[],"f":[]},"Rl":{"x":[],"aH":["x"],"z":[],"af":[]},"Lg":{"al":[],"f":[]},"ti":{"al":[],"f":[]},"Lf":{"ti":[],"al":[],"f":[]},"th":{"aS":[],"aY":[],"X":[]},"xG":{"dD":["iV"],"aL":[],"f":[],"dD.T":"iV"},"zQ":{"fC":["1","2"],"al":[],"f":[]},"zR":{"aS":[],"aY":[],"X":[]},"zU":{"a3":[]},"Li":{"aX":[],"al":[],"f":[]},"uC":{"x":[],"aH":["x"],"z":[],"af":[]},"Lh":{"a3":[]},"BH":{"a3":[]},"Lj":{"ar":[],"f":[]},"A8":{"a1":[],"f":[]},"SE":{"a8":["A8"]},"I9":{"fr":[]},"Ia":{"fr":[]},"Ik":{"fr":[]},"Im":{"fr":[]},"Ij":{"fr":[]},"Il":{"fr":[]},"Ii":{"fr":[]},"z_":{"x":[],"aH":["x"],"z":[],"af":[]},"rZ":{"x":[],"aH":["x"],"z":[],"af":[]},"tz":{"aX":[],"al":[],"f":[]},"Ly":{"aX":[],"al":[],"f":[]},"Of":{"cH":[]},"Lx":{"aX":[],"al":[],"f":[]},"qM":{"cV":[],"b0":[],"aL":[],"f":[]},"aBh":{"cV":[],"b0":[],"aL":[],"f":[]},"Dz":{"a1":[],"f":[]},"PZ":{"ar":[],"f":[]},"hI":{"ar":[],"f":[]},"S1":{"a8":["Dz"]},"RD":{"ar":[],"f":[]},"S0":{"a3":[]},"wz":{"aK":[]},"nP":{"aK":[]},"nR":{"aK":[]},"nQ":{"aK":[]},"wv":{"aK":[]},"jW":{"aK":[]},"jZ":{"aK":[]},"nZ":{"aK":[]},"nW":{"aK":[]},"nX":{"aK":[]},"fT":{"aK":[]},"lq":{"aK":[]},"k_":{"aK":[]},"jY":{"aK":[]},"nY":{"aK":[]},"jX":{"aK":[]},"kw":{"aK":[]},"ZM":{"aK":[]},"kx":{"aK":[]},"iH":{"aK":[]},"kg":{"aK":[]},"m7":{"aK":[]},"ia":{"aK":[]},"mu":{"aK":[]},"hL":{"aK":[]},"ms":{"aK":[]},"iK":{"aK":[]},"iL":{"aK":[]},"Hg":{"aK":[]},"eJ":{"eO":[],"dO":["x"],"cp":[]},"mU":{"a1":[],"f":[]},"DB":{"a1":[],"f":[]},"At":{"a1":[],"f":[]},"DF":{"a8":["mU"]},"DC":{"a8":["DB"]},"E6":{"a8":["At"]},"w6":{"cb":["qC"],"a3":[],"cK":[]},"AB":{"a1":[],"f":[]},"BS":{"b0":[],"aL":[],"f":[]},"T9":{"a8":["AB"]},"Bq":{"a3":[]},"LS":{"ar":[],"f":[]},"vp":{"a1":[],"f":[]},"de":{"aX":[],"al":[],"f":[]},"B2":{"a8":["vp"]},"Lb":{"a1":[],"f":[]},"IV":{"a1":[],"f":[]},"Kw":{"a1":[],"f":[]},"Km":{"a1":[],"f":[]},"H0":{"a1":[],"f":[]},"lO":{"a1":[],"f":[]},"FQ":{"a1":[],"f":[]},"tJ":{"a1":[],"f":[]},"tK":{"a8":["tJ<1>"]},"AO":{"cb":["tL"],"a3":[]},"AT":{"a1":[],"f":[]},"q4":{"b0":[],"aL":[],"f":[]},"CM":{"b0":[],"aL":[],"f":[]},"Es":{"a8":["AT"],"cK":[]},"JJ":{"ar":[],"f":[]},"CQ":{"al":[],"f":[]},"QR":{"aS":[],"aY":[],"X":[]},"BI":{"fU":["1"],"eC":[]},"AX":{"eE":[],"al":[],"f":[]},"TM":{"aS":[],"aY":[],"X":[]},"aHt":{"b0":[],"aL":[],"f":[]},"tS":{"fu":[]},"TP":{"dD":["hJ"],"aL":[],"f":[],"dD.T":"hJ"},"MP":{"aX":[],"al":[],"f":[]},"D9":{"x":[],"aH":["x"],"z":[],"af":[]},"bK":{"Mc":[]},"ME":{"Mc":[]},"M9":{"A":[],"bo":["A"]},"Eu":{"A":[],"bo":["A"]},"Ma":{"d2":[],"bo":["d2"]},"Ev":{"d2":[],"bo":["d2"]},"M8":{"aP":[],"bo":["aP?"]},"Pm":{"bo":["aP?"]},"n1":{"aP":[],"bo":["aP?"]},"Mb":{"k":[],"bo":["k"]},"TR":{"k":[],"bo":["k"]},"Cf":{"bo":["1?"]},"bL":{"bo":["1"]},"kJ":{"bo":["1"]},"bt":{"bo":["1"]},"Md":{"cb":["b2<bK>"],"a3":[]},"BD":{"a1":[],"f":[]},"BE":{"a8":["BD"]},"xf":{"a3":[]},"xe":{"a3":[],"cK":[]},"eb":{"er":[]},"eU":{"eb":[],"er":[]},"f_":{"er":[]},"qV":{"ar":[],"f":[]},"Bc":{"a1":[],"f":[]},"N1":{"a8":["Bc"]},"HU":{"bS":[]},"r1":{"dd":[]},"lC":{"b0":[],"aL":[],"f":[]},"dP":{"eF":["1"],"hD":[]},"oO":{"dP":["1"],"eF":["1"],"hD":[]},"BF":{"j5":["1"],"eD":["1"],"ew":["1"],"ck":["1"]},"rq":{"ar":[],"f":[]},"xc":{"t1":[]},"Nh":{"a3":[]},"r2":{"a3":[]},"HV":{"hu":["r2"],"b0":[],"aL":[],"f":[],"hu.T":"r2"},"Ke":{"dd":[]},"qq":{"dX":["M<n>"],"dX.T":"M<n>"},"nD":{"dd":[]},"Lq":{"A2":[]},"Kx":{"dl":[]},"Ky":{"dl":[]},"Kz":{"dl":[]},"KA":{"dl":[]},"KB":{"dl":[]},"KC":{"dl":[]},"KD":{"dl":[]},"KE":{"dl":[]},"KF":{"dl":[]},"aAV":{"a1":[],"f":[]},"aD1":{"a1":[],"f":[]},"aBD":{"a1":[],"f":[]},"aBE":{"a8":["aBD"]},"aH6":{"b0":[],"aL":[],"f":[]},"aGk":{"b0":[],"aL":[],"f":[]}}'))
 A.aHe(v.typeUniverse,JSON.parse('{"mx":1,"L9":1,"La":1,"Hq":1,"HI":1,"xo":1,"wX":1,"M0":1,"tM":1,"EL":2,"w9":1,"ep":1,"d1":1,"rA":1,"to":1,"a55":1,"kL":1,"kZ":1,"A1":1,"MO":1,"u0":1,"DW":1,"O_":1,"pO":1,"CL":1,"u6":1,"Sv":1,"tN":2,"Ek":2,"xY":2,"DO":2,"DN":2,"DP":1,"DQ":1,"El":2,"Gq":1,"GG":2,"wc":2,"OM":3,"DZ":1,"cG":1,"n0":1,"wS":1,"H4":1,"vt":1,"qH":1,"Bn":1,"Bo":1,"Bp":1,"yw":1,"EH":1,"Bt":1,"cb":1,"AS":1,"iJ":1,"ws":1,"yx":2,"EX":1,"uS":1,"wa":1,"Br":1,"IE":1,"dO":1,"ea":1,"yK":1,"wk":1,"uz":1,"D6":1,"t_":1,"E1":1,"EV":1,"EW":1,"nr":1,"r8":1,"qi":1,"uf":1,"LU":1,"H8":1,"ati":1,"dF":1,"ib":1,"Df":1,"Kn":1,"t5":1,"uT":1,"aDW":1,"rD":1,"IN":1,"pW":1,"ux":1,"zQ":2,"DL":2,"fB":1,"dh":1,"Bq":1,"Ef":1,"pd":1}'))
-var u={S:"\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\u03f6\x00\u0404\u03f4 \u03f4\u03f6\u01f6\u01f6\u03f6\u03fc\u01f4\u03ff\u03ff\u0584\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u05d4\u01f4\x00\u01f4\x00\u0504\u05c4\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u0400\x00\u0400\u0200\u03f7\u0200\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u0200\u0200\u0200\u03f7\x00",t:"\x01\x01)==\xb5\x8d\x15)QeyQQ\xc9===\xf1\xf0\x00\x01)==\xb5\x8d\x15)QeyQQ\xc9===\xf1\xf0\x01\x01)==\xb5\x8d\x15(QeyQQ\xc9===\xf1\xf0\x01\x01(<<\xb4\x8c\x15(PdxPP\xc8<<<\xf1\xf0\x01\x01)==\xb5\x8d\x15(PeyQQ\xc9===\xf1\xf0\x01\x01)==\xb5\x8d\x15(PdyPQ\xc9===\xf1\xf0\x01\x01)==\xb5\x8d\x15(QdxPP\xc9===\xf1\xf0\x01\x01)==\xb5\x8d\x15(QeyQQ\xc9\u011a==\xf1\xf0\xf0\xf0\xf0\xf0\xf0\xdc\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\x01\x01)==\u0156\x8d\x15(QeyQQ\xc9===\xf1\xf0\x01\x01)==\xb5\x8d\x15(QeyQQ\xc9\u012e\u012e\u0142\xf1\xf0\x01\x01)==\xa1\x8d\x15(QeyQQ\xc9===\xf1\xf0\x00\x00(<<\xb4\x8c\x14(PdxPP\xc8<<<\xf0\xf0\x01\x01)==\xb5\x8d\x15)QeyQQ\xc9===\xf0\xf0??)\u0118=\xb5\x8c?)QeyQQ\xc9=\u0118\u0118?\xf0??)==\xb5\x8d?)QeyQQ\xc9\u012c\u012c\u0140?\xf0??)==\xb5\x8d?)QeyQQ\xc8\u0140\u0140\u0140?\xf0\xdc\xdc\xdc\xdc\xdc\u0168\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\x00\xa1\xa1\xa1\xa1\xa1\u0154\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\x00",e:"\x10\x10\b\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x10\x10\x10\x10\x10\x02\x02\x02\x04\x04\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x01\x01\x01\x01\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x02\x02\x02\x0e\x0e\x0e\x0e\x02\x02\x10\x02\x10\x04\x10\x04\x04\x02\x10\x10\x10\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x06\x02\x02\x02\x02\x06\x02\x06\x02\x02\x02\x02\x06\x06\x06\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x04\x10\x10\x10\x10\x02\x02\x04\x04\x02\x02\x04\x04\x11\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x0e\x0e\x02\x0e\x10\x04\x04\x04\x04\x02\x10\x10\x10\x02\x10\x10\x10\x11\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x0e\x0e\x0e\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x04\x10\x10\x10\x10\x10\x10\x02\x10\x10\x04\x04\x10\x10\x02\x10\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x04\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x10\x10\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x04\x10\x10\x10\x10\x10\x10\x10\x04\x04\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x02\x10\x02\x10\x10\x10\x02\x10\x10\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x04\x04\x10\x02\x02\x02\x02\x04\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x04\x04\x11\x04\x04\x02\x10\x10\x10\x10\x10\x10\x10\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\f\r\r\r\r\r\r\r\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\x02\x02\x02\x02\x04\x10\x10\x10\x10\x02\x04\x04\x04\x02\x04\x04\x04\x11\b\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x01\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x10\x10\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x10\x10\x10\x10\x10\x10\x10\x02\x10\x10\x02\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x02\x02\x02\x10\x10\x10\x10\x10\x10\x01\x01\x01\x01\x01\x01\x01\x01\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x06\x06\x06\x02\x02\x02\x02\x02\x10\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x04\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\x02\x02\x02\x04\x04\x10\x04\x04\x10\x04\x04\x02\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x02\x02\x02\x10\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x02\x02\x10\x02\x10\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x02\x02\x10\x02\x04\x04\x10\x10\x10\x10\x02\x02\x04\x04\x02\x02\x04\x04\x11\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x02\x02\x02\x02\x0e\x0e\x02\x0e\n\n\n\n\n\n\n\x02\x02\x02\x02\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\x10\x10\b\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x10\x10\x10\x10\x10\x10\x10\x02\x10\x10\x10\x10\x10\x10\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x04\x10\x10\x10\x10\x10\x10\x10\x04\x10\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x02\x02\x02\x10\x02\x10\x10\x02\x10\x10\x10\x10\x10\x10\x10\b\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x04\x04\x02\x10\x10\x02\x04\x04\x10\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x04\x04\x04\x02\x04\x04\x02\x02\x10\x10\x10\x10\b\x04\b\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x02\x02\x10\x10\x04\x04\x04\x04\x10\x02\x02\x02\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x07\x01\x01\x00\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x02\x02\x02\x02\x04\x04\x10\x10\x04\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\b\x02\x10\x10\x10\x10\x02\x10\x10\x10\x02\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x10\x04\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x10\x02\x02\x04\x10\x10\x02\x02\x02\x02\x02\x02\x10\x04\x10\x10\x04\x04\x04\x10\x04\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x01\x03\x0f\x01\x01\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x04\x04\x10\x10\x04\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x01\x01\x01\x01\x01\x01\x01\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x01\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x10\x10\x10\x02\x02\x10\x10\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x04\x10\x10\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x10\x04\x04\x10\x10\x10\x02\x10\x02\x04\x04\x04\x04\x04\x04\x04\x10\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x04\x10\x10\x10\x10\x04\x04\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x04\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x10\x02\b\b\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x10\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x04\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\b\b\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x10\x10\x02\x10\x04\x04\x02\x02\x02\x04\x04\x04\x02\x04\x04\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x10\x10\x10\x10\x04\x04\x10\x10\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x10\x04\x10\x04\x04\x04\x04\x02\x02\x04\x04\x02\x02\x04\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x02\x02\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x10\x10\x10\x10\x10\x10\x02\x10\x02\x02\x10\x02\x10\x10\x10\x04\x02\x04\x04\x10\x10\x10\b\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x10\x10\x02\x02\x02\x02\x10\x10\x02\x02\x10\x10\x10\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\b\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x10\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x04\x04\x10\x10\x04\x04\x04\x02\x02\x02\x02\x04\x04\x10\x04\x04\x04\x04\x04\x04\x10\x10\x10\x02\x02\x02\x02\x10\x10\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x10\x04\x10\x02\x04\x04\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x04\x04\x10\x10\x02\x02\b\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\b\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x10\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x10\x10\x10\x10\x02\x02\x04\x04\x04\x04\x10\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x10\x02\x02\x10\x10\x10\x10\x04\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x10\x10\x10\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x10\x10\x10\x10\x10\x10\x04\x10\x04\x04\x10\x04\x10\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x04\x04\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x10\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\b\b\b\b\b\b\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x01\x02\x02\x02\x10\x10\x02\x10\x10\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x06\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x04\b\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x04\x04\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\b\b\b\b\b\b\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\n\x02\x02\x02\n\n\n\n\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x02\x06\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x10\x02\x10\x02\x02\x02\x02\x04\x04\x04\x04\x04\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x04\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x04\x10\x10\x10\x10\x10\x02\x10\x10\x04\x02\x04\x04\x11\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x10\x10\x04\x04\x02\x02\x02\x02\x02\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02",U:"\x15\x01)))\xb5\x8d\x01=Qeyey\xc9)))\xf1\xf0\x15\x01)))\xb5\x8d\x00=Qeyey\xc9)))\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qeyey\xc9(((\xf1\xf0\x15\x01(((\xb4\x8c\x01<Pdxdx\xc8(((\xf1\xf0\x15\x01)((\xb5\x8d\x01=Pdydx\xc9(((\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qdxey\xc9(((\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qexey\xc9(((\xf1\xf0\x15\x01)\x8c(\xb5\x8d\x01=Qeyey\xc9\xa0\x8c\x8c\xf1\xf0\x15\x01)((\xb5\x8c\x01=Qeyey\xc9(((\xf1\xf0\x15\x01)(((\x8d\x01=Qeyey\xc9(((\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qeyey\xc9\xc8\xc8\xdc\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qeyey\xc8\xdc\xdc\xdc\xf1\xf0\x14\x00(((\xb4\x8c\x00<Pdxdx\xc8(((\xf0\xf0\x15\x01)))\xb5\x8d\x01=Qeyey\xc9)))\xf0\xf0\x15\x01(\u01b8(\u01e0\x8d\x01<Pdxdx\xc8\u012c\u0140\u0154\xf0\xf0\x15\x01)((\xb5\u011a\x01=Qeyey\u012e\u0190\u0190\u01a4\xf1\xf0\x15\x01)\u01b8(\xb5\x8d\x01=Qeyey\u012e\u0168\u0140\u0154\xf1\xf0\x15\x01)\u01b8(\xb5\x8d\x01=Qeyey\u0142\u017c\u0154\u0154\xf1\xf0\x15\x01)((\xb5\u011a\x01=Qeyey\xc9\u0190\u0190\u01a4\xf1\xf0\x15\x01)((\xb5\u011a\x01=Qeyey\u0142\u01a4\u01a4\u01a4\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qeyey\u012e\u0190\u0190\u01a4\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qeyey\u0142\u01a4\u01a4\u01a4\xf1\xf0\x15\x01)\u01b8(\xb5\x8d\x01=Qeyey\xc9\u01cc\u01b8\u01b8\xf1\xf0\x15\x01)((\xb5\u011a\x01=Qeyey\xc9(((\xf1\xf0\x15\x01)((\u0156\x8d\x01=Qeyey\xc9(((\xf1\xf0",T:"% of the way to being a CircleBorder that is ",A:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/",c:"Cannot fire new event. Controller is already firing an event",L:"Empilhados como lenha 2: O Retorno de Crimson Jack",w:"Error handler must accept one Object or one Object and a StackTrace as arguments, and return a value of the returned future's type",G:"Ficha Espiritual de Jack\n2 Fichas de Sanidade \u2013 C\xedrculo de Exorcismo\n2 Fichas de Poder \u2013 Conhecimento de Jack",d:"No final da vez do revelador da assombra\xe7\xe3o",f:"No final do corredor, segunda dimens\xe3o \xe0 direita",W:"N\xe3o compre uma carta de Evento. Em vez disso, coloque um Fantasma na nova pe\xe7a.",z:"N\xfamero de trilha\nConstruir Token\nFichas de Armadilha \u2013Explosivos",M:"N\xfamero de trilha\nPequenos tokens de monstro \u2013Vizinhos",I:"N\xfamero de trilha\nToken de Vespa Gigante\nPequenos tokens de monstro \u2013Trabalhador Vespas\nTokens de ninho \u2013Ovos de vespa",n:"O jogador \xe0 esquerda do revelador da assombra\xe7\xe3o jogar\xe1 o primeiro turno.",p:"SystemChrome.setApplicationSwitcherDescription",O:"S\xedmbolo do Altar\nPequenos Monstros \u2013Festa de casamento",s:"TextInputClient.updateEditingStateWithDeltas",l:"TextInputClient.updateEditingStateWithTag",u:"There was a problem trying to load FontManifest.json",j:"\u1132\u166c\u166c\u206f\u11c0\u13fb\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1bff\u1bff\u1bff\u1c36\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1aee\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1fb5\u059c\u266d\u166c\u264e\u166c\u0a70\u175c\u166c\u166c\u1310\u033a\u1ebd\u0a6b\u2302\u166c\u166c\u22fc\u166c\u1ef8\u269d\u132f\u03b8\u166c\u1be8\u166c\u0a71\u0915\u1f5a\u1f6f\u04a2\u0202\u086b\u021a\u029a\u1427\u1518\u0147\u1eab\u13b9\u089f\u08b6\u2a91\u02d8\u086b\u0882\u08d5\u0789\u176a\u251c\u1d6c\u166c\u0365\u037c\u02ba\u22af\u07bf\u07c3\u0238\u024b\u1d39\u1d4e\u054a\u22af\u07bf\u166c\u1456\u2a9f\u166c\u07ce\u2a61\u166c\u166c\u2a71\u1ae9\u166c\u0466\u2a2e\u166c\u133e\u05b5\u0932\u1766\u166c\u166c\u0304\u1e94\u1ece\u1443\u166c\u166c\u166c\u07ee\u07ee\u07ee\u0506\u0506\u051e\u0526\u0526\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u196b\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1798\u1657\u046c\u046c\u166c\u0348\u146f\u166c\u0578\u166c\u166c\u166c\u22ac\u1763\u166c\u166c\u166c\u1f3a\u166c\u166c\u166c\u166c\u166c\u166c\u0482\u166c\u1364\u0322\u166c\u0a6b\u1fc6\u166c\u1359\u1f1f\u270e\u1ee3\u200e\u148e\u166c\u1394\u166c\u2a48\u166c\u166c\u166c\u166c\u0588\u137a\u166c\u166c\u166c\u166c\u166c\u166c\u1bff\u1bff\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u13a9\u13e8\u2574\u12b0\u166c\u166c\u0a6b\u1c35\u166c\u076b\u166c\u166c\u25a6\u2a23\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u0747\u2575\u166c\u166c\u2575\u166c\u256e\u07a0\u166c\u166c\u166c\u166c\u166c\u166c\u257b\u166c\u166c\u166c\u166c\u166c\u166c\u0757\u255d\u0c6d\u0d76\u28f0\u28f0\u28f0\u29ea\u28f0\u28f0\u28f0\u2a04\u2a19\u027a\u2693\u2546\u0832\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u074d\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u084c\u166c\u081e\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u165a\u166c\u166c\u166c\u174d\u166c\u166c\u166c\u1bff\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u0261\u166c\u166c\u0465\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u2676\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u26a4\u196a\u166c\u166c\u046e\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1f13\u12dd\u166c\u166c\u14de\u12ea\u1306\u02f2\u166c\u2a62\u0563\u07f1\u200d\u1d8e\u198c\u1767\u166c\u13d0\u1d80\u1750\u166c\u140b\u176b\u2ab4\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u080e\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04f6\u08f5\u052a\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u174e\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1c36\u1c36\u166c\u166c\u166c\u166c\u166c\u206f\u166c\u166c\u166c\u166c\u196a\u166c\u166c\u12c0\u166c\u166f\u168c\u1912\u166c\u166c\u166c\u166c\u166c\u166c\u0399\u166c\u166c\u1786\u2206\u22bc\u1f8e\u1499\u245b\u1daa\u2387\u20b4\u1569\u2197\u19e6\u0b88\u26b7\u166c\u09e9\u0ab8\u1c46\x00\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u205e\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1868\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1898\u1ac1\u166c\u2754\u166c\u0114\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166cc\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1bff\u166c\u0661\u1627\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u0918\u166c\u166c\u166c\u166c\u166c\u05c6\u1ac1\u16be\u166c\u1af8\u21c3\u166c\u166c\u1a21\u1aad\u166c\u166c\u166c\u166c\u166c\u166c\u28f0\u254e\u0d89\u0f41\u28f0\u0efb\u0e39\u27e0\u0c7c\u28a9\u28f0\u166c\u28f0\u28f0\u28f0\u28f2\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1140\u103c\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c",H:"\u2022 Todos os tiles agora est\xe3o no andar t\xe9rreo. As regi\xf5es do por\xe3o e do andar superior n\xe3o existem mais. \u2022 Quaisquer pe\xe7as conectadas (como o Patamar Superior, que leva \xe0 Escadaria do T\xe9rreo) permanecem conectadas, mesmo que n\xe3o sejam adjacentes umas \xe0s outras. \u2022 O Elevador M\xedstico s\xf3 se mover\xe1 com um resultado de 2 ou 4. \u2022 Somente os her\xf3is podem descobrir novas pe\xe7as."}
+var u={S:"\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\u03f6\x00\u0404\u03f4 \u03f4\u03f6\u01f6\u01f6\u03f6\u03fc\u01f4\u03ff\u03ff\u0584\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u05d4\u01f4\x00\u01f4\x00\u0504\u05c4\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u0400\x00\u0400\u0200\u03f7\u0200\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u0200\u0200\u0200\u03f7\x00",t:"\x01\x01)==\xb5\x8d\x15)QeyQQ\xc9===\xf1\xf0\x00\x01)==\xb5\x8d\x15)QeyQQ\xc9===\xf1\xf0\x01\x01)==\xb5\x8d\x15(QeyQQ\xc9===\xf1\xf0\x01\x01(<<\xb4\x8c\x15(PdxPP\xc8<<<\xf1\xf0\x01\x01)==\xb5\x8d\x15(PeyQQ\xc9===\xf1\xf0\x01\x01)==\xb5\x8d\x15(PdyPQ\xc9===\xf1\xf0\x01\x01)==\xb5\x8d\x15(QdxPP\xc9===\xf1\xf0\x01\x01)==\xb5\x8d\x15(QeyQQ\xc9\u011a==\xf1\xf0\xf0\xf0\xf0\xf0\xf0\xdc\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\x01\x01)==\u0156\x8d\x15(QeyQQ\xc9===\xf1\xf0\x01\x01)==\xb5\x8d\x15(QeyQQ\xc9\u012e\u012e\u0142\xf1\xf0\x01\x01)==\xa1\x8d\x15(QeyQQ\xc9===\xf1\xf0\x00\x00(<<\xb4\x8c\x14(PdxPP\xc8<<<\xf0\xf0\x01\x01)==\xb5\x8d\x15)QeyQQ\xc9===\xf0\xf0??)\u0118=\xb5\x8c?)QeyQQ\xc9=\u0118\u0118?\xf0??)==\xb5\x8d?)QeyQQ\xc9\u012c\u012c\u0140?\xf0??)==\xb5\x8d?)QeyQQ\xc8\u0140\u0140\u0140?\xf0\xdc\xdc\xdc\xdc\xdc\u0168\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\x00\xa1\xa1\xa1\xa1\xa1\u0154\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\x00",e:"\x10\x10\b\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x10\x10\x10\x10\x10\x02\x02\x02\x04\x04\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x01\x01\x01\x01\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x02\x02\x02\x0e\x0e\x0e\x0e\x02\x02\x10\x02\x10\x04\x10\x04\x04\x02\x10\x10\x10\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x06\x02\x02\x02\x02\x06\x02\x06\x02\x02\x02\x02\x06\x06\x06\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x04\x10\x10\x10\x10\x02\x02\x04\x04\x02\x02\x04\x04\x11\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x0e\x0e\x02\x0e\x10\x04\x04\x04\x04\x02\x10\x10\x10\x02\x10\x10\x10\x11\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x0e\x0e\x0e\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x04\x10\x10\x10\x10\x10\x10\x02\x10\x10\x04\x04\x10\x10\x02\x10\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x04\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x10\x10\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x04\x10\x10\x10\x10\x10\x10\x10\x04\x04\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x02\x10\x02\x10\x10\x10\x02\x10\x10\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x04\x04\x10\x02\x02\x02\x02\x04\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x04\x04\x11\x04\x04\x02\x10\x10\x10\x10\x10\x10\x10\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\f\r\r\r\r\r\r\r\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\x02\x02\x02\x02\x04\x10\x10\x10\x10\x02\x04\x04\x04\x02\x04\x04\x04\x11\b\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x01\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x10\x10\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x10\x10\x10\x10\x10\x10\x10\x02\x10\x10\x02\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x02\x02\x02\x10\x10\x10\x10\x10\x10\x01\x01\x01\x01\x01\x01\x01\x01\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x06\x06\x06\x02\x02\x02\x02\x02\x10\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x04\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\x02\x02\x02\x04\x04\x10\x04\x04\x10\x04\x04\x02\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x02\x02\x02\x10\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x02\x02\x10\x02\x10\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x02\x02\x10\x02\x04\x04\x10\x10\x10\x10\x02\x02\x04\x04\x02\x02\x04\x04\x11\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x02\x02\x02\x02\x0e\x0e\x02\x0e\n\n\n\n\n\n\n\x02\x02\x02\x02\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\x10\x10\b\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x10\x10\x10\x10\x10\x10\x10\x02\x10\x10\x10\x10\x10\x10\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x04\x10\x10\x10\x10\x10\x10\x10\x04\x10\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x02\x02\x02\x10\x02\x10\x10\x02\x10\x10\x10\x10\x10\x10\x10\b\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x04\x04\x02\x10\x10\x02\x04\x04\x10\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x04\x04\x04\x02\x04\x04\x02\x02\x10\x10\x10\x10\b\x04\b\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x02\x02\x10\x10\x04\x04\x04\x04\x10\x02\x02\x02\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x07\x01\x01\x00\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x02\x02\x02\x02\x04\x04\x10\x10\x04\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\b\x02\x10\x10\x10\x10\x02\x10\x10\x10\x02\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x10\x04\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x10\x02\x02\x04\x10\x10\x02\x02\x02\x02\x02\x02\x10\x04\x10\x10\x04\x04\x04\x10\x04\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x01\x03\x0f\x01\x01\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x04\x04\x10\x10\x04\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x01\x01\x01\x01\x01\x01\x01\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x01\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x10\x10\x10\x02\x02\x10\x10\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x04\x10\x10\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x10\x04\x04\x10\x10\x10\x02\x10\x02\x04\x04\x04\x04\x04\x04\x04\x10\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x04\x10\x10\x10\x10\x04\x04\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x04\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x10\x02\b\b\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x10\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x04\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\b\b\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x10\x10\x02\x10\x04\x04\x02\x02\x02\x04\x04\x04\x02\x04\x04\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x10\x10\x10\x10\x04\x04\x10\x10\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x10\x04\x10\x04\x04\x04\x04\x02\x02\x04\x04\x02\x02\x04\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x02\x02\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x10\x10\x10\x10\x10\x10\x02\x10\x02\x02\x10\x02\x10\x10\x10\x04\x02\x04\x04\x10\x10\x10\b\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x10\x10\x02\x02\x02\x02\x10\x10\x02\x02\x10\x10\x10\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\b\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x10\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x04\x04\x10\x10\x04\x04\x04\x02\x02\x02\x02\x04\x04\x10\x04\x04\x04\x04\x04\x04\x10\x10\x10\x02\x02\x02\x02\x10\x10\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x10\x04\x10\x02\x04\x04\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x04\x04\x10\x10\x02\x02\b\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\b\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x10\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x10\x10\x10\x10\x02\x02\x04\x04\x04\x04\x10\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x10\x02\x02\x10\x10\x10\x10\x04\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x10\x10\x10\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x10\x10\x10\x10\x10\x10\x04\x10\x04\x04\x10\x04\x10\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x04\x04\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x10\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\b\b\b\b\b\b\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x01\x02\x02\x02\x10\x10\x02\x10\x10\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x06\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x04\b\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x04\x04\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\b\b\b\b\b\b\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\n\x02\x02\x02\n\n\n\n\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x02\x06\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x10\x02\x10\x02\x02\x02\x02\x04\x04\x04\x04\x04\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x04\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x04\x10\x10\x10\x10\x10\x02\x10\x10\x04\x02\x04\x04\x11\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x10\x10\x04\x04\x02\x02\x02\x02\x02\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02",U:"\x15\x01)))\xb5\x8d\x01=Qeyey\xc9)))\xf1\xf0\x15\x01)))\xb5\x8d\x00=Qeyey\xc9)))\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qeyey\xc9(((\xf1\xf0\x15\x01(((\xb4\x8c\x01<Pdxdx\xc8(((\xf1\xf0\x15\x01)((\xb5\x8d\x01=Pdydx\xc9(((\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qdxey\xc9(((\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qexey\xc9(((\xf1\xf0\x15\x01)\x8c(\xb5\x8d\x01=Qeyey\xc9\xa0\x8c\x8c\xf1\xf0\x15\x01)((\xb5\x8c\x01=Qeyey\xc9(((\xf1\xf0\x15\x01)(((\x8d\x01=Qeyey\xc9(((\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qeyey\xc9\xc8\xc8\xdc\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qeyey\xc8\xdc\xdc\xdc\xf1\xf0\x14\x00(((\xb4\x8c\x00<Pdxdx\xc8(((\xf0\xf0\x15\x01)))\xb5\x8d\x01=Qeyey\xc9)))\xf0\xf0\x15\x01(\u01b8(\u01e0\x8d\x01<Pdxdx\xc8\u012c\u0140\u0154\xf0\xf0\x15\x01)((\xb5\u011a\x01=Qeyey\u012e\u0190\u0190\u01a4\xf1\xf0\x15\x01)\u01b8(\xb5\x8d\x01=Qeyey\u012e\u0168\u0140\u0154\xf1\xf0\x15\x01)\u01b8(\xb5\x8d\x01=Qeyey\u0142\u017c\u0154\u0154\xf1\xf0\x15\x01)((\xb5\u011a\x01=Qeyey\xc9\u0190\u0190\u01a4\xf1\xf0\x15\x01)((\xb5\u011a\x01=Qeyey\u0142\u01a4\u01a4\u01a4\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qeyey\u012e\u0190\u0190\u01a4\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qeyey\u0142\u01a4\u01a4\u01a4\xf1\xf0\x15\x01)\u01b8(\xb5\x8d\x01=Qeyey\xc9\u01cc\u01b8\u01b8\xf1\xf0\x15\x01)((\xb5\u011a\x01=Qeyey\xc9(((\xf1\xf0\x15\x01)((\u0156\x8d\x01=Qeyey\xc9(((\xf1\xf0",T:"% of the way to being a CircleBorder that is ",A:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/",c:"Cannot fire new event. Controller is already firing an event",L:"Empilhados como lenha 2: O Retorno de Crimson Jack",w:"Error handler must accept one Object or one Object and a StackTrace as arguments, and return a value of the returned future's type",G:"Ficha Espiritual de Jack\n2 Fichas de Sanidade \u2013 C\xedrculo de Exorcismo\n2 Fichas de Poder \u2013 Conhecimento de Jack",H:"Ficha do Tubar\xe3o Fantasma\n5 Fichas de Armadilha \u2013Explosivos",d:"No final da vez do revelador da assombra\xe7\xe3o",f:"No final do corredor, segunda dimens\xe3o \xe0 direita",W:"N\xe3o compre uma carta de Evento. Em vez disso, coloque um Fantasma na nova pe\xe7a.",z:"N\xfamero de trilha\nConstruir Token\nFichas de Armadilha \u2013Explosivos",M:"N\xfamero de trilha\nPequenos tokens de monstro \u2013Vizinhos",I:"N\xfamero de trilha\nToken de Vespa Gigante\nPequenos tokens de monstro \u2013Trabalhador Vespas\nTokens de ninho \u2013Ovos de vespa",n:"O jogador \xe0 esquerda do revelador da assombra\xe7\xe3o jogar\xe1 o primeiro turno.",p:"SystemChrome.setApplicationSwitcherDescription",O:"S\xedmbolo do Altar\nPequenos Monstros \u2013Festa de casamento",s:"TextInputClient.updateEditingStateWithDeltas",l:"TextInputClient.updateEditingStateWithTag",u:"There was a problem trying to load FontManifest.json",j:"\u1132\u166c\u166c\u206f\u11c0\u13fb\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1bff\u1bff\u1bff\u1c36\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1aee\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1fb5\u059c\u266d\u166c\u264e\u166c\u0a70\u175c\u166c\u166c\u1310\u033a\u1ebd\u0a6b\u2302\u166c\u166c\u22fc\u166c\u1ef8\u269d\u132f\u03b8\u166c\u1be8\u166c\u0a71\u0915\u1f5a\u1f6f\u04a2\u0202\u086b\u021a\u029a\u1427\u1518\u0147\u1eab\u13b9\u089f\u08b6\u2a91\u02d8\u086b\u0882\u08d5\u0789\u176a\u251c\u1d6c\u166c\u0365\u037c\u02ba\u22af\u07bf\u07c3\u0238\u024b\u1d39\u1d4e\u054a\u22af\u07bf\u166c\u1456\u2a9f\u166c\u07ce\u2a61\u166c\u166c\u2a71\u1ae9\u166c\u0466\u2a2e\u166c\u133e\u05b5\u0932\u1766\u166c\u166c\u0304\u1e94\u1ece\u1443\u166c\u166c\u166c\u07ee\u07ee\u07ee\u0506\u0506\u051e\u0526\u0526\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u196b\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1798\u1657\u046c\u046c\u166c\u0348\u146f\u166c\u0578\u166c\u166c\u166c\u22ac\u1763\u166c\u166c\u166c\u1f3a\u166c\u166c\u166c\u166c\u166c\u166c\u0482\u166c\u1364\u0322\u166c\u0a6b\u1fc6\u166c\u1359\u1f1f\u270e\u1ee3\u200e\u148e\u166c\u1394\u166c\u2a48\u166c\u166c\u166c\u166c\u0588\u137a\u166c\u166c\u166c\u166c\u166c\u166c\u1bff\u1bff\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u13a9\u13e8\u2574\u12b0\u166c\u166c\u0a6b\u1c35\u166c\u076b\u166c\u166c\u25a6\u2a23\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u0747\u2575\u166c\u166c\u2575\u166c\u256e\u07a0\u166c\u166c\u166c\u166c\u166c\u166c\u257b\u166c\u166c\u166c\u166c\u166c\u166c\u0757\u255d\u0c6d\u0d76\u28f0\u28f0\u28f0\u29ea\u28f0\u28f0\u28f0\u2a04\u2a19\u027a\u2693\u2546\u0832\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u074d\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u084c\u166c\u081e\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u165a\u166c\u166c\u166c\u174d\u166c\u166c\u166c\u1bff\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u0261\u166c\u166c\u0465\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u2676\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u26a4\u196a\u166c\u166c\u046e\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1f13\u12dd\u166c\u166c\u14de\u12ea\u1306\u02f2\u166c\u2a62\u0563\u07f1\u200d\u1d8e\u198c\u1767\u166c\u13d0\u1d80\u1750\u166c\u140b\u176b\u2ab4\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u080e\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04f6\u08f5\u052a\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u174e\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1c36\u1c36\u166c\u166c\u166c\u166c\u166c\u206f\u166c\u166c\u166c\u166c\u196a\u166c\u166c\u12c0\u166c\u166f\u168c\u1912\u166c\u166c\u166c\u166c\u166c\u166c\u0399\u166c\u166c\u1786\u2206\u22bc\u1f8e\u1499\u245b\u1daa\u2387\u20b4\u1569\u2197\u19e6\u0b88\u26b7\u166c\u09e9\u0ab8\u1c46\x00\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u205e\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1868\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1898\u1ac1\u166c\u2754\u166c\u0114\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166cc\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1bff\u166c\u0661\u1627\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u0918\u166c\u166c\u166c\u166c\u166c\u05c6\u1ac1\u16be\u166c\u1af8\u21c3\u166c\u166c\u1a21\u1aad\u166c\u166c\u166c\u166c\u166c\u166c\u28f0\u254e\u0d89\u0f41\u28f0\u0efb\u0e39\u27e0\u0c7c\u28a9\u28f0\u166c\u28f0\u28f0\u28f0\u28f2\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1140\u103c\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c",o:"\u2022 Todos os tiles agora est\xe3o no andar t\xe9rreo. As regi\xf5es do por\xe3o e do andar superior n\xe3o existem mais. \u2022 Quaisquer pe\xe7as conectadas (como o Patamar Superior, que leva \xe0 Escadaria do T\xe9rreo) permanecem conectadas, mesmo que n\xe3o sejam adjacentes umas \xe0s outras. \u2022 O Elevador M\xedstico s\xf3 se mover\xe1 com um resultado de 2 ou 4. \u2022 Somente os her\xf3is podem descobrir novas pe\xe7as."}
 var t=(function rtii(){var s=A.ag
-return{S6:s("@<Mc>"),vH:s("aA_"),od:s("aQ<aK>"),gj:s("aA2<G>"),pC:s("ff"),so:s("bp<h>"),v:s("bp<I>"),Bs:s("bp<A?>"),qH:s("vy"),s1:s("vz"),vp:s("nq"),S7:s("FY"),jo:s("ar1"),M1:s("FZ"),Al:s("lc<G?>"),m_:s("ct"),k:s("ac"),q:s("eO"),pI:s("jL"),V4:s("d9"),wY:s("cF<qg>"),nz:s("cF<qp>"),OX:s("cF<fk>"),vr:s("cF<ZM>"),fN:s("cF<m7>"),Tx:s("cF<ia>"),fn:s("cF<dU>"),j5:s("cF<ms>"),_n:s("cF<mu>"),ZQ:s("cF<hL>"),d0:s("ej<ck<@>?,ck<@>>"),Ox:s("arf"),aL:s("aAA"),XY:s("vV"),m6:s("vZ"),wW:s("iF"),S3:s("w_"),nR:s("w1"),Hz:s("nE"),G:s("A"),IC:s("dN"),qO:s("nI<A7,@>"),li:s("bM<o,o>"),eL:s("bM<o,n>"),fF:s("eP<o>"),vn:s("wb"),pU:s("ad<z,dO<z>>"),pz:s("GN<vV,aB>"),VD:s("aAV"),ho:s("we"),H5:s("aB5"),HY:s("hW"),ip:s("wm"),I7:s("aLs"),Hw:s("hq"),l4:s("aBe"),Uf:s("lm"),XP:s("aBh"),yS:s("qM"),re:s("aLF"),EX:s("db"),I:s("hs"),ra:s("aLG"),xm:s("fk"),Jj:s("aBo"),YH:s("Hk<aB>"),uL:s("fR"),zk:s("qO"),Tu:s("aR"),ML:s("dl"),A0:s("cv"),Zi:s("iK"),Rz:s("iL"),Ee:s("ak<@>"),h:s("aY"),GB:s("aLK"),lz:s("jV"),Lt:s("bS"),VI:s("dd"),IX:s("em<iu,cl>"),bh:s("nW"),oB:s("nX"),_w:s("jW"),HH:s("jX"),OO:s("fT"),cP:s("jY"),b6:s("nY"),P9:s("jZ"),eI:s("nZ"),Ie:s("wU"),US:s("fm"),KL:s("wZ"),s4:s("ZU"),OE:s("ZV"),Kw:s("a_6"),mx:s("cx"),l5:s("k1"),zq:s("qY"),ia:s("o4"),VW:s("o5"),FK:s("lv"),jT:s("x7"),kr:s("iQ"),bE:s("eT"),_8:s("k3"),Z9:s("ah<mk>"),Ev:s("ah<F>()"),L0:s("ah<@>"),T8:s("ah<d9?>"),uz:s("ah<~>"),Fp:s("dm<tf,aK>"),Lu:s("e7<j6>"),Ih:s("e7<n>"),Q:s("HP"),cD:s("cC"),uA:s("c7<hY>"),C1:s("c7<i_>"),Uv:s("c7<fX>"),jn:s("c7<i2>"),YC:s("c7<i8>"),hg:s("c7<jg>"),Qm:s("c7<jh>"),UN:s("c7<fD>"),ok:s("c7<hg>"),lh:s("c7<mL>"),Bk:s("c7<jv>"),Pw:s("c7<n_>"),xR:s("oa<cC>"),yi:s("fU<a8<a1>>"),TX:s("ly<fw>"),bT:s("ly<a8<a1>>"),Js:s("dC"),Ks:s("e8"),gm:s("fn"),rQ:s("aLT"),GF:s("dQ<iW(hw)>"),PD:s("dQ<~()>"),op:s("dQ<~(lt)>"),jb:s("iS"),bq:s("fp"),G7:s("I1<E1<@>>"),rA:s("r5"),mS:s("od"),AL:s("fW<af>"),Fn:s("k4"),zE:s("af"),Lk:s("asg"),g5:s("xj"),Oh:s("og"),Bc:s("lB<aY?>"),ri:s("xp"),IS:s("ft"),q0:s("lC"),og:s("cV"),WB:s("b0"),U1:s("hv"),lA:s("xv"),kW:s("lE"),JZ:s("a13"),XO:s("a14"),pT:s("a15"),gD:s("lF"),C:s("aK"),nQ:s("lG"),Ya:s("ra"),K9:s("xy<@>"),JY:s("t<@>"),lY:s("w<aA2<G>>"),QP:s("w<hS>"),NS:s("w<cE>"),sq:s("w<dz>"),iW:s("w<ho>"),Vh:s("w<le>"),H0:s("w<qx>"),qN:s("w<iF>"),AT:s("w<w0>"),s8:s("w<arn>"),t_:s("w<A>"),KV:s("w<el>"),ZD:s("w<cS>"),E:s("w<db>"),vl:s("w<hs>"),Up:s("w<Hl>"),lX:s("w<aY>"),LE:s("w<Hu>"),_m:s("w<wU>"),bp:s("w<cx>"),z8:s("w<o5>"),uf:s("w<iQ>"),no:s("w<lw>"),wQ:s("w<ah<o4>>"),ty:s("w<ah<he>>"),mo:s("w<ah<~>>"),iQ:s("w<cH>"),DU:s("w<fp>"),om:s("w<fW<af>>"),kt:s("w<fr>"),qz:s("w<eU>"),Fa:s("w<ft>"),fJ:s("w<cV>"),VB:s("w<iT>"),VO:s("w<fu>"),O_:s("w<k7>"),O:s("w<aB>"),K0:s("w<hw>"),CE:s("w<iW>"),k5:s("w<eo>"),s9:s("w<xM>"),Y4:s("w<hx>"),_f:s("w<or>"),ER:s("w<lM>"),X_:s("w<L<et>>"),fQ:s("w<L<d5>>"),zg:s("w<L<I>>"),Eo:s("w<a3>"),H8:s("w<IL>"),ss:s("w<j_>"),a9:s("w<eW<@>>"),IO:s("w<eW<G?>>"),en:s("w<e>"),H7:s("w<aO<o,@>>"),Xr:s("w<aW>"),rS:s("w<rw>"),YE:s("w<i6>"),tc:s("w<lU>"),Qg:s("w<kd>"),jl:s("w<G>"),wi:s("w<lW>"),g8:s("w<ati<@>>"),Im:s("w<eF<G?>>"),OM:s("w<m_<cp>>"),H9:s("w<cW>"),RR:s("w<kh>"),tZ:s("w<rG>"),D9:s("w<hB>"),RW:s("w<rL>"),L7:s("w<+representation,targetSize(zL,H)>"),Co:s("w<+(o,AQ)>"),lN:s("w<+data,event,timeStamp(L<hB>,aB,aR)>"),Nt:s("w<+domSize,representation,targetSize(H,zL,H)>"),AO:s("w<v>"),Pc:s("w<p5>"),Ik:s("w<x>"),xT:s("w<m8>"),TT:s("w<z>"),Ry:s("w<ds>"),RX:s("w<pa>"),QT:s("w<d3>"),yo:s("w<t1>"),i3:s("w<eb>"),K1:s("w<er>"),k4:s("w<cX>"),Fm:s("w<ku>"),y8:s("w<zg>"),ZP:s("w<kv>"),D1:s("w<dV>"),u1:s("w<pp>"),JO:s("w<fz>"),q1:s("w<et>"),QF:s("w<cl>"),o4:s("w<L_>"),Qo:s("w<pr>"),Ay:s("w<atX>"),b5:s("w<jb>"),N_:s("w<bE>"),kw:s("w<tj>"),N8:s("w<tk>"),Gl:s("w<to<~>>"),s:s("w<o>"),oU:s("w<aFl>"),bt:s("w<tq>"),Lx:s("w<eI>"),sD:s("w<mn>"),VS:s("w<mo>"),fm:s("w<pC>"),Ne:s("w<mq>"),FO:s("w<jj<jj<@>>>"),LX:s("w<AQ>"),p:s("w<f>"),GA:s("w<cK>"),Na:s("w<mz>"),SW:s("w<MQ>"),TV:s("w<kK>"),gP:s("w<mF>"),Kj:s("w<u4>"),mz:s("w<Pf>"),zj:s("w<kU>"),IR:s("w<apd>"),m3:s("w<uu>"),jE:s("w<jr>"),qi:s("w<dw>"),z_:s("w<f7>"),uD:s("w<dH>"),M6:s("w<Dj>"),s6:s("w<kW>"),YP:s("w<uG>"),lb:s("w<ju>"),bd:s("w<d5>"),YK:s("w<iu>"),Z5:s("w<aH1>"),cR:s("w<uP>"),NM:s("w<l_>"),HZ:s("w<F>"),n:s("w<I>"),ee:s("w<@>"),t:s("w<n>"),L:s("w<e?>"),iG:s("w<x?>"),ny:s("w<ck<@>?>"),Fi:s("w<bE?>"),XS:s("w<o?>"),Z:s("w<n?>"),a0:s("w<cM>"),Zt:s("w<ah<F>()>"),iL:s("w<dX<hx>()>"),sA:s("w<F(hw)>"),qj:s("w<~()>"),e:s("w<~(aQ<aK>)>"),W:s("w<~(iA)>"),LY:s("w<~(hS)>"),j1:s("w<~(aR)>"),s2:s("w<~(o9)>"),Jh:s("w<~(L<lw>)>"),hh:s("w<~(mi)>"),bz:s("rd"),m:s("aB"),lT:s("eA"),dC:s("fZ<@>"),Hf:s("eB<A7,@>"),Cl:s("iV"),D2:s("eC"),XU:s("iW(hw)"),SQ:s("rh"),Di:s("oo"),jk:s("br<aBE>"),NE:s("br<lo>"),b7:s("br<fw>"),ku:s("br<rE>"),LZ:s("br<rQ>"),F:s("br<a8<a1>>"),af:s("br<CE>"),gN:s("oq"),rf:s("xN"),uF:s("asM<arf>"),JB:s("hy<@>"),y3:s("ou<kT>"),oM:s("ou<mT>"),wO:s("ov<@>"),Rk:s("L<aLk>"),Ys:s("L<fo>"),Lc:s("L<aB>"),qC:s("L<hx>"),UX:s("L<G>"),FS:s("L<kh>"),jQ:s("L<rL>"),I1:s("L<d3>"),kT:s("L<er>"),xc:s("L<cl>"),yp:s("L<o>"),Xw:s("L<mz>"),Z4:s("L<dH>"),rg:s("L<d5>"),j:s("L<@>"),Dn:s("L<G?>"),I_:s("a3"),f0:s("h0"),da:s("j_"),J:s("e"),bS:s("asR"),tO:s("aU<h,a9>"),mT:s("aU<o,o>"),UH:s("aU<a9,mf>"),DC:s("aU<n,h>"),q9:s("aU<n,o>"),sw:s("aU<G,jj<@>>"),qE:s("aU<o?,L<G>>"),Dx:s("ka<@,@>"),kY:s("aO<tf,aK>"),GU:s("aO<o,o>"),a:s("aO<o,@>"),_P:s("aO<o,n>"),e3:s("aO<hd,@>"),f:s("aO<@,@>"),xE:s("aO<o,G?>"),pE:s("aO<G?,G?>"),rr:s("aO<~(b5),aW?>"),C9:s("eX<o,ig?>"),a4:s("a0<o,o>"),Gf:s("a0<o,@>"),rB:s("a0<l_,cl>"),qn:s("a0<n,cl>"),gn:s("a0<n,o>"),vD:s("a0<eU,aO<G?,G?>>"),aj:s("a0<+(n,n),bn>"),Tr:s("a0<f2,kf?>"),fc:s("rp"),iB:s("aD2"),c4:s("oA"),U9:s("i3<~>"),Le:s("y2<@>"),i1:s("oB"),xV:s("aW"),w:s("lR"),Kv:s("eD<G?>"),xS:s("h1"),Pb:s("d2"),ZA:s("y8"),_h:s("j2"),Wz:s("hA"),Lb:s("eE"),Es:s("oJ"),hA:s("oL"),jW:s("lS"),A3:s("h3"),u9:s("kc"),Cm:s("lU"),uK:s("fw"),hC:s("oO<~>"),Jc:s("dq<rf>"),Tm:s("dq<h_>"),w3:s("dq<lT>"),ji:s("dq<pg>"),WA:s("dq<eZ>"),Te:s("kd"),P:s("bm"),K:s("G"),xA:s("G(n)"),_a:s("G(n{params:G?})"),yw:s("aV<apd>"),CT:s("aV<ah<F>()>"),c:s("aV<~(aQ<aK>)>"),d:s("aV<~(iA)>"),Xx:s("aV<~(mi)>"),yF:s("oP"),o:s("h"),gY:s("i7"),Ms:s("lW"),N1:s("rE"),iF:s("bn"),Mf:s("rF"),pw:s("eF<@>"),sd:s("eF<G?>"),Q2:s("lX"),Fw:s("dD<iV>"),IL:s("dD<cp>"),ke:s("oS"),Ud:s("cW"),v3:s("j"),sT:s("kh"),sv:s("ki"),qa:s("aMO"),ge:s("oT"),Ko:s("oU"),A:s("j6"),pY:s("kl"),qL:s("b5"),GG:s("aMU"),XA:s("km"),g:s("oV"),WQ:s("oW"),w5:s("kn"),DB:s("oX"),PB:s("oY"),Mj:s("oZ"),xb:s("p_"),ks:s("eG"),l:s("ko"),f9:s("aDW<G?>"),bb:s("rK"),yH:s("aL"),jU:s("rS"),pK:s("aMZ"),Rp:s("+()"),Yr:s("+(pT,I)"),mi:s("+(G?,G?)"),YT:s("v"),Qz:s("rT"),CZ:s("yJ"),NW:s("JL"),x:s("x"),vz:s("rW"),DW:s("p6"),f1:s("yT"),I9:s("z"),F5:s("al"),GM:s("aH<z>"),Wx:s("ks"),nl:s("ds"),Ss:s("rY"),Cn:s("rZ"),dw:s("z_"),Ju:s("p9"),E1:s("z0"),qJ:s("pa"),mg:s("dE"),UM:s("ia"),Wd:s("Kh"),dZ:s("z5<n>"),yb:s("dF<G?>"),z4:s("d3"),k2:s("z7<v?>"),ew:s("ce<pa>"),MV:s("ce<kU>"),o_:s("ce<iu>"),ad:s("za"),_Y:s("t1"),UV:s("eb"),_W:s("er"),LQ:s("cX"),oj:s("t3"),Kh:s("ku"),pO:s("ck<@>(X,G?)"),SB:s("t4<G>"),nY:s("aEE<aD1,aLZ>"),BL:s("aEE<aFe,zS>"),Np:s("t7"),Cy:s("zi"),gt:s("kv"),Lm:s("pk"),sm:s("ta"),NF:s("aEQ"),qd:s("aN5"),NU:s("aN6"),hI:s("aN7"),x9:s("dV"),mb:s("zv"),Wu:s("tc"),iN:s("mg"),_S:s("cz"),ZX:s("et"),bu:s("cl"),UF:s("pr"),g3:s("dt"),HS:s("mk"),n5:s("te<@>"),hi:s("b2<rZ>"),c8:s("b2<o>"),Ro:s("b2<@>"),uy:s("atX"),RY:s("bE"),jH:s("ml"),UD:s("f_"),Vz:s("tf"),yE:s("aNc"),Mp:s("aX"),FW:s("H"),Ws:s("zM<o>"),r:s("pv"),Gt:s("th"),U:s("jc"),M0:s("ti"),jB:s("mm"),B:s("ec"),Km:s("h7"),MF:s("h8"),d1:s("a1"),Iz:s("ar"),kj:s("A2"),N:s("o"),Vc:s("aFl"),Oz:s("ij"),u4:s("c8<we>"),rh:s("c8<aO<hd,@>>"),az:s("c8<oA>"),Q4:s("c8<cX>"),E8:s("c8<AZ>"),d9:s("c8<F>"),hr:s("c8<d3?>"),kO:s("c8<~>"),ZC:s("jf"),lu:s("kB"),if:s("aFv"),iy:s("As"),ot:s("hJ"),tp:s("hb"),qY:s("ik"),bZ:s("aFD"),AS:s("mq"),em:s("k"),we:s("hK"),ZM:s("pE"),ZF:s("jj<jj<@>>"),Ag:s("jj<@>"),qe:s("LR"),D:s("eJ"),U2:s("aFX"),zW:s("ca"),Ni:s("at<h>"),Y:s("at<I>"),u:s("hd"),ns:s("kF"),w7:s("abV"),rd:s("tI"),Po:s("abW"),H3:s("he"),pm:s("tJ<cf>"),Pj:s("jk<aB>"),kk:s("kH"),lQ:s("AP"),G5:s("jl<o,o>"),N2:s("tO<@>"),gU:s("hL"),Xu:s("M1"),V1:s("cr<G>"),A9:s("cr<pw>"),kK:s("cr<o>"),Ll:s("cr<eC?>"),GY:s("iq"),JH:s("aNw"),Dg:s("AX"),Kq:s("fE"),X3:s("kI"),Hd:s("aF<o>"),FI:s("cg<b5>"),Je:s("cg<dE>"),t5:s("cg<et>"),X5:s("cg<b2<dt>>"),ZK:s("cg<ig>"),Ri:s("cg<o>"),ow:s("cg<mH>"),fG:s("cg<f7>"),Pi:s("hM<k1>"),Zw:s("hM<f7>"),l7:s("f"),a7:s("tS"),EK:s("bK"),GC:s("kJ<A?>"),VP:s("kJ<d2?>"),y2:s("bt<aP>"),De:s("bt<A>"),mD:s("bt<cv>"),dy:s("bt<cO>"),W7:s("bt<H>"),uE:s("bt<k>"),XR:s("bt<I>"),rc:s("bt<A?>"),RP:s("bt<k?>"),zo:s("Mc"),QN:s("f(X,b2<bK>,f?)"),iM:s("tT"),T:s("cK"),Uh:s("AZ"),Qy:s("jm"),L1:s("B0"),JX:s("mz"),CL:s("pL"),gI:s("bP<he>"),yB:s("bP<d9?>"),oe:s("bP<G?>"),EZ:s("bP<d3?>"),R:s("bP<~>"),J2:s("jn<hx>"),zb:s("jn<L<n>>"),BY:s("aGk"),ZW:s("tY"),B6:s("aNF"),me:s("mD"),Wb:s("jo"),bY:s("BB"),TC:s("pN"),uC:s("ee"),vb:s("f5"),dA:s("kO<nP>"),Fb:s("kO<nQ>"),Uy:s("kO<nR>"),Q8:s("BI<a8<a1>>"),UJ:s("O3"),rM:s("mG<aB>"),s5:s("u5<aB>"),l3:s("BS"),Eh:s("BX"),fk:s("u9"),h1:s("ua"),aP:s("aI<he>"),LR:s("aI<@>"),wJ:s("aI<n>"),gg:s("aI<d9?>"),xF:s("aI<G?>"),X6:s("aI<d3?>"),V:s("aI<~>"),cK:s("ub"),Qu:s("kS"),U3:s("av2"),R9:s("mK"),Fy:s("mM<G?,G?>"),Nr:s("C7"),Sx:s("kT"),pt:s("aNN"),Gk:s("Cj"),PJ:s("uk"),Fe:s("Cr"),xg:s("PL"),Tv:s("Cs<L<n>>"),Tp:s("mS"),Vl:s("mT"),KJ:s("kU"),eU:s("ur"),sZ:s("CK"),Sc:s("aNP"),Li:s("CM"),bR:s("CQ"),h7:s("jr"),zP:s("dw"),rj:s("CX"),l0:s("pY"),Lj:s("kV"),zd:s("D2"),SN:s("D4"),ju:s("f7"),xL:s("uC"),im:s("pZ"),pR:s("q_"),Ez:s("dH"),Pu:s("Dk"),yd:s("Dq"),jF:s("Ds"),vC:s("d5"),kS:s("Sj<G?>"),S8:s("DV"),bm:s("iw<x>"),dQ:s("iw<kV>"),HE:s("uL"),f2:s("E9"),i9:s("uO"),tH:s("aH6"),Wp:s("En<wv>"),_l:s("q4"),ps:s("aHt"),nH:s("Et<kw>"),mN:s("bL<A>"),Dm:s("bL<F>"),N5:s("bL<I>"),jY:s("bL<aP?>"),b:s("bL<A?>"),B_:s("bL<d2?>"),DH:s("TS"),y:s("F"),i:s("I"),z:s("@"),C_:s("@(G)"),Hg:s("@(G,h7)"),S:s("n"),ZU:s("l9?"),Q6:s("iB?"),tX:s("ar2?"),m2:s("vC?"),Vx:s("d8?"),sa:s("ei?"),eJ:s("nt?"),oI:s("aP?"),YY:s("nw?"),CD:s("d9?"),L5:s("ari?"),JG:s("w2?"),cW:s("ark?"),eG:s("w3?"),e4:s("arl?"),EM:s("w4?"),VA:s("qB?"),_:s("A?"),YJ:s("dN?"),xG:s("jR?"),V2:s("hs?"),pc:s("cv?"),Om:s("ln?"),Dv:s("aY?"),e8:s("qT?"),pk:s("cx?"),RC:s("x6?"),uZ:s("ah<bm>?"),xJ:s("fU<fw>?"),_I:s("od?"),gx:s("fX?"),lF:s("cD?"),C6:s("asi?"),ET:s("lC?"),Pr:s("lD?"),Ef:s("hv?"),NX:s("aB?"),kc:s("L<@>?"),wh:s("L<G?>?"),y6:s("e?"),qA:s("i2?"),nA:s("aO<o,@>?"),Xy:s("aO<@,@>?"),J1:s("aO<G?,G?>?"),iD:s("aW?"),ka:s("oF?"),Y8:s("eD<G?>?"),WV:s("d2?"),X:s("G?"),Ff:s("atc?"),dJ:s("i7?"),Zr:s("atf?"),KX:s("cO?"),uR:s("i8?"),xO:s("m_<iV>?"),Qv:s("x?"),xP:s("x?(x)"),CA:s("p6?"),c_:s("aS?"),ym:s("ks?"),IT:s("ds?"),oV:s("ku?"),_N:s("pk?"),Eg:s("cl?"),iJ:s("b2<dt>?"),TZ:s("ps?"),pg:s("hH?"),tW:s("H?"),MR:s("jc?"),lE:s("h8?"),ob:s("o?"),f3:s("fD?"),p8:s("k?"),Dh:s("pD?"),qf:s("aoY?"),zV:s("tE?"),ir:s("at<I>?"),nc:s("he?"),Wn:s("hg?"),av:s("CN?"),Kp:s("kV?"),IA:s("dH?"),JI:s("E1<@>?"),X7:s("F?"),PM:s("I?"),bo:s("n?"),R7:s("cM?"),Nw:s("~()?"),Ci:s("cM"),H:s("~"),M:s("~()"),Vu:s("~(aR)"),Su:s("~(lt)"),ph:s("~(L<lw>)"),mX:s("~(G)"),hK:s("~(G,h7)"),Ld:s("~(b5)"),iS:s("~(kr)"),HT:s("~(G?)")}})();(function constants(){var s=hunkHelpers.makeConstList
+return{S6:s("@<Mc>"),vH:s("aA_"),od:s("aQ<aK>"),gj:s("aA2<G>"),pC:s("ff"),so:s("bp<h>"),v:s("bp<I>"),Bs:s("bp<A?>"),qH:s("vy"),s1:s("vz"),vp:s("nq"),S7:s("FY"),jo:s("ar1"),M1:s("FZ"),Al:s("lc<G?>"),m_:s("ct"),k:s("ac"),q:s("eO"),pI:s("jL"),V4:s("d9"),wY:s("cF<qg>"),nz:s("cF<qp>"),OX:s("cF<fk>"),vr:s("cF<ZM>"),fN:s("cF<m7>"),Tx:s("cF<ia>"),fn:s("cF<dU>"),j5:s("cF<ms>"),_n:s("cF<mu>"),ZQ:s("cF<hL>"),d0:s("ej<ck<@>?,ck<@>>"),Ox:s("arf"),aL:s("aAA"),XY:s("vV"),m6:s("vZ"),wW:s("iF"),S3:s("w_"),nR:s("w1"),Hz:s("nE"),G:s("A"),IC:s("dN"),qO:s("nI<A7,@>"),li:s("bM<o,o>"),eL:s("bM<o,n>"),fF:s("eP<o>"),vn:s("wb"),pU:s("ad<z,dO<z>>"),pz:s("GN<vV,aB>"),VD:s("aAV"),ho:s("we"),H5:s("aB5"),HY:s("hW"),ip:s("wm"),I7:s("aLs"),Hw:s("hq"),l4:s("aBe"),Uf:s("lm"),XP:s("aBh"),yS:s("qM"),re:s("aLF"),EX:s("db"),I:s("hs"),ra:s("aLG"),xm:s("fk"),Jj:s("aBo"),YH:s("Hk<aB>"),uL:s("fR"),zk:s("qO"),Tu:s("aR"),ML:s("dl"),A0:s("cv"),Zi:s("iK"),Rz:s("iL"),Ee:s("ak<@>"),h:s("aY"),GB:s("aLK"),lz:s("jV"),Lt:s("bS"),VI:s("dd"),IX:s("em<iu,cl>"),bh:s("nW"),oB:s("nX"),_w:s("jW"),HH:s("jX"),OO:s("fT"),cP:s("jY"),b6:s("nY"),P9:s("jZ"),eI:s("nZ"),Ie:s("wU"),US:s("fm"),KL:s("wZ"),s4:s("ZU"),OE:s("ZV"),Kw:s("a_6"),mx:s("cx"),l5:s("k1"),zq:s("qY"),ia:s("o4"),VW:s("o5"),FK:s("lv"),jT:s("x7"),kr:s("iQ"),bE:s("eT"),_8:s("k3"),Z9:s("ah<mk>"),Ev:s("ah<F>()"),L0:s("ah<@>"),T8:s("ah<d9?>"),uz:s("ah<~>"),Fp:s("dm<tf,aK>"),Lu:s("e7<j6>"),Ih:s("e7<n>"),Q:s("HP"),cD:s("cC"),uA:s("c7<hY>"),C1:s("c7<i_>"),Uv:s("c7<fX>"),jn:s("c7<i2>"),YC:s("c7<i8>"),hg:s("c7<jg>"),Qm:s("c7<jh>"),UN:s("c7<fD>"),ok:s("c7<hg>"),lh:s("c7<mL>"),Bk:s("c7<jv>"),Pw:s("c7<n_>"),xR:s("oa<cC>"),yi:s("fU<a8<a1>>"),TX:s("ly<fw>"),bT:s("ly<a8<a1>>"),Js:s("dC"),Ks:s("e8"),gm:s("fn"),rQ:s("aLT"),GF:s("dQ<iW(hw)>"),PD:s("dQ<~()>"),op:s("dQ<~(lt)>"),jb:s("iS"),bq:s("fp"),G7:s("I1<E1<@>>"),rA:s("r5"),mS:s("od"),AL:s("fW<af>"),Fn:s("k4"),zE:s("af"),Lk:s("asg"),g5:s("xj"),Oh:s("og"),Bc:s("lB<aY?>"),ri:s("xp"),IS:s("ft"),q0:s("lC"),og:s("cV"),WB:s("b0"),U1:s("hv"),lA:s("xv"),kW:s("lE"),JZ:s("a13"),XO:s("a14"),pT:s("a15"),gD:s("lF"),C:s("aK"),nQ:s("lG"),Ya:s("ra"),K9:s("xy<@>"),JY:s("t<@>"),lY:s("w<aA2<G>>"),QP:s("w<hS>"),NS:s("w<cE>"),sq:s("w<dz>"),iW:s("w<ho>"),Vh:s("w<le>"),H0:s("w<qx>"),qN:s("w<iF>"),AT:s("w<w0>"),s8:s("w<arn>"),t_:s("w<A>"),KV:s("w<el>"),ZD:s("w<cS>"),E:s("w<db>"),vl:s("w<hs>"),Up:s("w<Hl>"),lX:s("w<aY>"),LE:s("w<Hu>"),_m:s("w<wU>"),bp:s("w<cx>"),z8:s("w<o5>"),uf:s("w<iQ>"),no:s("w<lw>"),wQ:s("w<ah<o4>>"),ty:s("w<ah<he>>"),mo:s("w<ah<~>>"),iQ:s("w<cH>"),DU:s("w<fp>"),om:s("w<fW<af>>"),kt:s("w<fr>"),qz:s("w<eU>"),Fa:s("w<ft>"),fJ:s("w<cV>"),VB:s("w<iT>"),VO:s("w<fu>"),O_:s("w<k7>"),O:s("w<aB>"),K0:s("w<hw>"),CE:s("w<iW>"),k5:s("w<eo>"),s9:s("w<xM>"),Y4:s("w<hx>"),_f:s("w<or>"),ER:s("w<lM>"),X_:s("w<M<et>>"),fQ:s("w<M<d5>>"),zg:s("w<M<I>>"),Eo:s("w<a3>"),H8:s("w<IL>"),ss:s("w<j_>"),a9:s("w<eW<@>>"),IO:s("w<eW<G?>>"),en:s("w<e>"),H7:s("w<aO<o,@>>"),Xr:s("w<aW>"),rS:s("w<rw>"),YE:s("w<i6>"),tc:s("w<lU>"),Qg:s("w<kd>"),jl:s("w<G>"),wi:s("w<lW>"),g8:s("w<ati<@>>"),Im:s("w<eF<G?>>"),OM:s("w<m_<cp>>"),H9:s("w<cW>"),RR:s("w<kh>"),tZ:s("w<rG>"),D9:s("w<hB>"),RW:s("w<rL>"),L7:s("w<+representation,targetSize(zL,H)>"),Co:s("w<+(o,AQ)>"),lN:s("w<+data,event,timeStamp(M<hB>,aB,aR)>"),Nt:s("w<+domSize,representation,targetSize(H,zL,H)>"),AO:s("w<v>"),Pc:s("w<p5>"),Ik:s("w<x>"),xT:s("w<m8>"),TT:s("w<z>"),Ry:s("w<ds>"),RX:s("w<pa>"),QT:s("w<d3>"),yo:s("w<t1>"),i3:s("w<eb>"),K1:s("w<er>"),k4:s("w<cX>"),Fm:s("w<ku>"),y8:s("w<zg>"),ZP:s("w<kv>"),D1:s("w<dV>"),u1:s("w<pp>"),JO:s("w<fz>"),q1:s("w<et>"),QF:s("w<cl>"),o4:s("w<L_>"),Qo:s("w<pr>"),Ay:s("w<atX>"),b5:s("w<jb>"),N_:s("w<bE>"),kw:s("w<tj>"),N8:s("w<tk>"),Gl:s("w<to<~>>"),s:s("w<o>"),oU:s("w<aFl>"),bt:s("w<tq>"),Lx:s("w<eI>"),sD:s("w<mn>"),VS:s("w<mo>"),fm:s("w<pC>"),Ne:s("w<mq>"),FO:s("w<jj<jj<@>>>"),LX:s("w<AQ>"),p:s("w<f>"),GA:s("w<cK>"),Na:s("w<mz>"),SW:s("w<MQ>"),TV:s("w<kK>"),gP:s("w<mF>"),Kj:s("w<u4>"),mz:s("w<Pf>"),zj:s("w<kU>"),IR:s("w<apd>"),m3:s("w<uu>"),jE:s("w<jr>"),qi:s("w<dw>"),z_:s("w<f7>"),uD:s("w<dH>"),M6:s("w<Dj>"),s6:s("w<kW>"),YP:s("w<uG>"),lb:s("w<ju>"),bd:s("w<d5>"),YK:s("w<iu>"),Z5:s("w<aH1>"),cR:s("w<uP>"),NM:s("w<l_>"),HZ:s("w<F>"),n:s("w<I>"),ee:s("w<@>"),t:s("w<n>"),L:s("w<e?>"),iG:s("w<x?>"),ny:s("w<ck<@>?>"),Fi:s("w<bE?>"),XS:s("w<o?>"),Z:s("w<n?>"),a0:s("w<cM>"),Zt:s("w<ah<F>()>"),iL:s("w<dX<hx>()>"),sA:s("w<F(hw)>"),qj:s("w<~()>"),e:s("w<~(aQ<aK>)>"),W:s("w<~(iA)>"),LY:s("w<~(hS)>"),j1:s("w<~(aR)>"),s2:s("w<~(o9)>"),Jh:s("w<~(M<lw>)>"),hh:s("w<~(mi)>"),bz:s("rd"),m:s("aB"),lT:s("eA"),dC:s("fZ<@>"),Hf:s("eB<A7,@>"),Cl:s("iV"),D2:s("eC"),XU:s("iW(hw)"),SQ:s("rh"),Di:s("oo"),jk:s("br<aBE>"),NE:s("br<lo>"),b7:s("br<fw>"),ku:s("br<rE>"),LZ:s("br<rQ>"),F:s("br<a8<a1>>"),af:s("br<CE>"),gN:s("oq"),rf:s("xN"),uF:s("asM<arf>"),JB:s("hy<@>"),y3:s("ou<kT>"),oM:s("ou<mT>"),wO:s("ov<@>"),Rk:s("M<aLk>"),Ys:s("M<fo>"),Lc:s("M<aB>"),qC:s("M<hx>"),UX:s("M<G>"),FS:s("M<kh>"),jQ:s("M<rL>"),I1:s("M<d3>"),kT:s("M<er>"),xc:s("M<cl>"),yp:s("M<o>"),Xw:s("M<mz>"),Z4:s("M<dH>"),rg:s("M<d5>"),j:s("M<@>"),Dn:s("M<G?>"),I_:s("a3"),f0:s("h0"),da:s("j_"),J:s("e"),bS:s("asR"),tO:s("aU<h,a9>"),mT:s("aU<o,o>"),UH:s("aU<a9,mf>"),DC:s("aU<n,h>"),q9:s("aU<n,o>"),sw:s("aU<G,jj<@>>"),qE:s("aU<o?,M<G>>"),Dx:s("ka<@,@>"),kY:s("aO<tf,aK>"),GU:s("aO<o,o>"),a:s("aO<o,@>"),_P:s("aO<o,n>"),e3:s("aO<hd,@>"),f:s("aO<@,@>"),xE:s("aO<o,G?>"),pE:s("aO<G?,G?>"),rr:s("aO<~(b5),aW?>"),C9:s("eX<o,ig?>"),a4:s("a0<o,o>"),Gf:s("a0<o,@>"),rB:s("a0<l_,cl>"),qn:s("a0<n,cl>"),gn:s("a0<n,o>"),vD:s("a0<eU,aO<G?,G?>>"),aj:s("a0<+(n,n),bn>"),Tr:s("a0<f2,kf?>"),fc:s("rp"),iB:s("aD2"),c4:s("oA"),U9:s("i3<~>"),Le:s("y2<@>"),i1:s("oB"),xV:s("aW"),w:s("lR"),Kv:s("eD<G?>"),xS:s("h1"),Pb:s("d2"),ZA:s("y8"),_h:s("j2"),Wz:s("hA"),Lb:s("eE"),Es:s("oJ"),hA:s("oL"),jW:s("lS"),A3:s("h3"),u9:s("kc"),Cm:s("lU"),uK:s("fw"),hC:s("oO<~>"),Jc:s("dq<rf>"),Tm:s("dq<h_>"),w3:s("dq<lT>"),ji:s("dq<pg>"),WA:s("dq<eZ>"),Te:s("kd"),P:s("bm"),K:s("G"),xA:s("G(n)"),_a:s("G(n{params:G?})"),yw:s("aV<apd>"),CT:s("aV<ah<F>()>"),c:s("aV<~(aQ<aK>)>"),d:s("aV<~(iA)>"),Xx:s("aV<~(mi)>"),yF:s("oP"),o:s("h"),gY:s("i7"),Ms:s("lW"),N1:s("rE"),iF:s("bn"),Mf:s("rF"),pw:s("eF<@>"),sd:s("eF<G?>"),Q2:s("lX"),Fw:s("dD<iV>"),IL:s("dD<cp>"),ke:s("oS"),Ud:s("cW"),v3:s("j"),sT:s("kh"),sv:s("ki"),qa:s("aMO"),ge:s("oT"),Ko:s("oU"),A:s("j6"),pY:s("kl"),qL:s("b5"),GG:s("aMU"),XA:s("km"),g:s("oV"),WQ:s("oW"),w5:s("kn"),DB:s("oX"),PB:s("oY"),Mj:s("oZ"),xb:s("p_"),ks:s("eG"),l:s("ko"),f9:s("aDW<G?>"),bb:s("rK"),yH:s("aL"),jU:s("rS"),pK:s("aMZ"),Rp:s("+()"),Yr:s("+(pT,I)"),mi:s("+(G?,G?)"),YT:s("v"),Qz:s("rT"),CZ:s("yJ"),NW:s("JL"),x:s("x"),vz:s("rW"),DW:s("p6"),f1:s("yT"),I9:s("z"),F5:s("al"),GM:s("aH<z>"),Wx:s("ks"),nl:s("ds"),Ss:s("rY"),Cn:s("rZ"),dw:s("z_"),Ju:s("p9"),E1:s("z0"),qJ:s("pa"),mg:s("dE"),UM:s("ia"),Wd:s("Kh"),dZ:s("z5<n>"),yb:s("dF<G?>"),z4:s("d3"),k2:s("z7<v?>"),ew:s("ce<pa>"),MV:s("ce<kU>"),o_:s("ce<iu>"),ad:s("za"),_Y:s("t1"),UV:s("eb"),_W:s("er"),LQ:s("cX"),oj:s("t3"),Kh:s("ku"),pO:s("ck<@>(X,G?)"),SB:s("t4<G>"),nY:s("aEE<aD1,aLZ>"),BL:s("aEE<aFe,zS>"),Np:s("t7"),Cy:s("zi"),gt:s("kv"),Lm:s("pk"),sm:s("ta"),NF:s("aEQ"),qd:s("aN5"),NU:s("aN6"),hI:s("aN7"),x9:s("dV"),mb:s("zv"),Wu:s("tc"),iN:s("mg"),_S:s("cz"),ZX:s("et"),bu:s("cl"),UF:s("pr"),g3:s("dt"),HS:s("mk"),n5:s("te<@>"),hi:s("b2<rZ>"),c8:s("b2<o>"),Ro:s("b2<@>"),uy:s("atX"),RY:s("bE"),jH:s("ml"),UD:s("f_"),Vz:s("tf"),yE:s("aNc"),Mp:s("aX"),FW:s("H"),Ws:s("zM<o>"),r:s("pv"),Gt:s("th"),U:s("jc"),M0:s("ti"),jB:s("mm"),B:s("ec"),Km:s("h7"),MF:s("h8"),d1:s("a1"),Iz:s("ar"),kj:s("A2"),N:s("o"),Vc:s("aFl"),Oz:s("ij"),u4:s("c8<we>"),rh:s("c8<aO<hd,@>>"),az:s("c8<oA>"),Q4:s("c8<cX>"),E8:s("c8<AZ>"),d9:s("c8<F>"),hr:s("c8<d3?>"),kO:s("c8<~>"),ZC:s("jf"),lu:s("kB"),if:s("aFv"),iy:s("As"),ot:s("hJ"),tp:s("hb"),qY:s("ik"),bZ:s("aFD"),AS:s("mq"),em:s("k"),we:s("hK"),ZM:s("pE"),ZF:s("jj<jj<@>>"),Ag:s("jj<@>"),qe:s("LR"),D:s("eJ"),U2:s("aFX"),zW:s("ca"),Ni:s("at<h>"),Y:s("at<I>"),u:s("hd"),ns:s("kF"),w7:s("abV"),rd:s("tI"),Po:s("abW"),H3:s("he"),pm:s("tJ<cf>"),Pj:s("jk<aB>"),kk:s("kH"),lQ:s("AP"),G5:s("jl<o,o>"),N2:s("tO<@>"),gU:s("hL"),Xu:s("M1"),V1:s("cr<G>"),A9:s("cr<pw>"),kK:s("cr<o>"),Ll:s("cr<eC?>"),GY:s("iq"),JH:s("aNw"),Dg:s("AX"),Kq:s("fE"),X3:s("kI"),Hd:s("aF<o>"),FI:s("cg<b5>"),Je:s("cg<dE>"),t5:s("cg<et>"),X5:s("cg<b2<dt>>"),ZK:s("cg<ig>"),Ri:s("cg<o>"),ow:s("cg<mH>"),fG:s("cg<f7>"),Pi:s("hM<k1>"),Zw:s("hM<f7>"),l7:s("f"),a7:s("tS"),EK:s("bK"),GC:s("kJ<A?>"),VP:s("kJ<d2?>"),y2:s("bt<aP>"),De:s("bt<A>"),mD:s("bt<cv>"),dy:s("bt<cO>"),W7:s("bt<H>"),uE:s("bt<k>"),XR:s("bt<I>"),rc:s("bt<A?>"),RP:s("bt<k?>"),zo:s("Mc"),QN:s("f(X,b2<bK>,f?)"),iM:s("tT"),T:s("cK"),Uh:s("AZ"),Qy:s("jm"),L1:s("B0"),JX:s("mz"),CL:s("pL"),gI:s("bP<he>"),yB:s("bP<d9?>"),oe:s("bP<G?>"),EZ:s("bP<d3?>"),R:s("bP<~>"),J2:s("jn<hx>"),zb:s("jn<M<n>>"),BY:s("aGk"),ZW:s("tY"),B6:s("aNF"),me:s("mD"),Wb:s("jo"),bY:s("BB"),TC:s("pN"),uC:s("ee"),vb:s("f5"),dA:s("kO<nP>"),Fb:s("kO<nQ>"),Uy:s("kO<nR>"),Q8:s("BI<a8<a1>>"),UJ:s("O3"),rM:s("mG<aB>"),s5:s("u5<aB>"),l3:s("BS"),Eh:s("BX"),fk:s("u9"),h1:s("ua"),aP:s("aI<he>"),LR:s("aI<@>"),wJ:s("aI<n>"),gg:s("aI<d9?>"),xF:s("aI<G?>"),X6:s("aI<d3?>"),V:s("aI<~>"),cK:s("ub"),Qu:s("kS"),U3:s("av2"),R9:s("mK"),Fy:s("mM<G?,G?>"),Nr:s("C7"),Sx:s("kT"),pt:s("aNN"),Gk:s("Cj"),PJ:s("uk"),Fe:s("Cr"),xg:s("PL"),Tv:s("Cs<M<n>>"),Tp:s("mS"),Vl:s("mT"),KJ:s("kU"),eU:s("ur"),sZ:s("CK"),Sc:s("aNP"),Li:s("CM"),bR:s("CQ"),h7:s("jr"),zP:s("dw"),rj:s("CX"),l0:s("pY"),Lj:s("kV"),zd:s("D2"),SN:s("D4"),ju:s("f7"),xL:s("uC"),im:s("pZ"),pR:s("q_"),Ez:s("dH"),Pu:s("Dk"),yd:s("Dq"),jF:s("Ds"),vC:s("d5"),kS:s("Sj<G?>"),S8:s("DV"),bm:s("iw<x>"),dQ:s("iw<kV>"),HE:s("uL"),f2:s("E9"),i9:s("uO"),tH:s("aH6"),Wp:s("En<wv>"),_l:s("q4"),ps:s("aHt"),nH:s("Et<kw>"),mN:s("bL<A>"),Dm:s("bL<F>"),N5:s("bL<I>"),jY:s("bL<aP?>"),b:s("bL<A?>"),B_:s("bL<d2?>"),DH:s("TS"),y:s("F"),i:s("I"),z:s("@"),C_:s("@(G)"),Hg:s("@(G,h7)"),S:s("n"),ZU:s("l9?"),Q6:s("iB?"),tX:s("ar2?"),m2:s("vC?"),Vx:s("d8?"),sa:s("ei?"),eJ:s("nt?"),oI:s("aP?"),YY:s("nw?"),CD:s("d9?"),L5:s("ari?"),JG:s("w2?"),cW:s("ark?"),eG:s("w3?"),e4:s("arl?"),EM:s("w4?"),VA:s("qB?"),_:s("A?"),YJ:s("dN?"),xG:s("jR?"),V2:s("hs?"),pc:s("cv?"),Om:s("ln?"),Dv:s("aY?"),e8:s("qT?"),pk:s("cx?"),RC:s("x6?"),uZ:s("ah<bm>?"),xJ:s("fU<fw>?"),_I:s("od?"),gx:s("fX?"),lF:s("cD?"),C6:s("asi?"),ET:s("lC?"),Pr:s("lD?"),Ef:s("hv?"),NX:s("aB?"),kc:s("M<@>?"),wh:s("M<G?>?"),y6:s("e?"),qA:s("i2?"),nA:s("aO<o,@>?"),Xy:s("aO<@,@>?"),J1:s("aO<G?,G?>?"),iD:s("aW?"),ka:s("oF?"),Y8:s("eD<G?>?"),WV:s("d2?"),X:s("G?"),Ff:s("atc?"),dJ:s("i7?"),Zr:s("atf?"),KX:s("cO?"),uR:s("i8?"),xO:s("m_<iV>?"),Qv:s("x?"),xP:s("x?(x)"),CA:s("p6?"),c_:s("aS?"),ym:s("ks?"),IT:s("ds?"),oV:s("ku?"),_N:s("pk?"),Eg:s("cl?"),iJ:s("b2<dt>?"),TZ:s("ps?"),pg:s("hH?"),tW:s("H?"),MR:s("jc?"),lE:s("h8?"),ob:s("o?"),f3:s("fD?"),p8:s("k?"),Dh:s("pD?"),qf:s("aoY?"),zV:s("tE?"),ir:s("at<I>?"),nc:s("he?"),Wn:s("hg?"),av:s("CN?"),Kp:s("kV?"),IA:s("dH?"),JI:s("E1<@>?"),X7:s("F?"),PM:s("I?"),bo:s("n?"),R7:s("cM?"),Nw:s("~()?"),Ci:s("cM"),H:s("~"),M:s("~()"),Vu:s("~(aR)"),Su:s("~(lt)"),ph:s("~(M<lw>)"),mX:s("~(G)"),hK:s("~(G,h7)"),Ld:s("~(b5)"),iS:s("~(kr)"),HT:s("~(G?)")}})();(function constants(){var s=hunkHelpers.makeConstList
 B.EH=J.xw.prototype
 B.b=J.w.prototype
 B.h8=J.xA.prototype
@@ -82209,7 +82208,7 @@ B.c=J.iU.prototype
 B.EO=J.eA.prototype
 B.EP=J.xE.prototype
 B.IJ=A.oL.prototype
-B.as=A.yc.prototype
+B.ar=A.yc.prototype
 B.IK=A.yd.prototype
 B.tY=A.ye.prototype
 B.bz=A.yf.prototype
@@ -82260,7 +82259,7 @@ B.yY=new A.cf("",B.i6,B.bg)
 B.lS=new A.ql(!1,"",B.du,B.yY,null)
 B.Z=new A.qm(0,"up")
 B.cj=new A.qm(1,"right")
-B.ap=new A.qm(2,"down")
+B.ao=new A.qm(2,"down")
 B.bi=new A.qm(3,"left")
 B.bj=new A.G_(0,"horizontal")
 B.bk=new A.G_(1,"vertical")
@@ -82274,8 +82273,8 @@ B.zS=new A.lc("flutter/keyevent",B.cB,t.Al)
 B.iL=new A.aaH()
 B.zT=new A.lc("flutter/lifecycle",B.iL,A.ag("lc<o?>"))
 B.zU=new A.lc("flutter/system",B.cB,t.Al)
-B.ax=new A.aax()
-B.dW=new A.lc("flutter/accessibility",B.ax,t.Al)
+B.aw=new A.aax()
+B.dW=new A.lc("flutter/accessibility",B.aw,t.Al)
 B.zV=new A.G8(null)
 B.lT=new A.jJ(0,0)
 B.zW=new A.jJ(1,1)
@@ -82305,8 +82304,8 @@ B.a1=new A.A(1,0.5450980392156862,0,0,B.f)
 B.v=new A.Gd(1,"solid")
 B.A6=new A.aP(B.a1,2,B.v,-1)
 B.l=new A.A(1,0,0,0,B.f)
-B.at=new A.Gd(0,"none")
-B.t=new A.aP(B.l,0,B.at,-1)
+B.as=new A.Gd(0,"none")
+B.t=new A.aP(B.l,0,B.as,-1)
 B.ba=new A.A(1,0.16470588235294117,0.16470588235294117,0.16470588235294117,B.f)
 B.fi=new A.aP(B.ba,1,B.v,-1)
 B.D=new A.A(0,0,0,0,B.f)
@@ -82337,7 +82336,7 @@ B.b9=new A.vN(1,"webkit")
 B.da=new A.vN(2,"firefox")
 B.Ak=new A.vO(null,null,null,null,null,null,null,null,null)
 B.Al=new A.Wl(0,"normal")
-B.Bp=new A.BU(A.ag("BU<L<n>>"))
+B.Bp=new A.BU(A.ag("BU<M<n>>"))
 B.Am=new A.qq(B.Bp)
 B.lY=new A.r9(A.aKE(),A.ag("r9<I>"))
 B.An=new A.Vm()
@@ -82360,7 +82359,7 @@ B.Ay=new A.eR(A.ag("eR<x>"))
 B.Az=new A.eR(A.ag("eR<mo>"))
 B.dZ=new A.Hq()
 B.m2=new A.Ht()
-B.aw=new A.Ht()
+B.av=new A.Ht()
 B.AA=new A.ZJ()
 B.iK=new A.HF()
 B.Ve=new A.HS()
@@ -82517,11 +82516,11 @@ B.B1=new A.G()
 B.B2=new A.Jh()
 B.af=new A.f2(0,"android")
 B.G=new A.f2(2,"iOS")
-B.aI=new A.f2(4,"macOS")
+B.aH=new A.f2(4,"macOS")
 B.bf=new A.f2(5,"windows")
 B.be=new A.f2(3,"linux")
 B.dc=new A.Mi()
-B.ho=new A.dm([B.af,B.dc,B.G,B.fk,B.aI,B.fk,B.bf,B.dc,B.be,B.dc],A.ag("dm<f2,kf>"))
+B.ho=new A.dm([B.af,B.dc,B.G,B.fk,B.aH,B.fk,B.bf,B.dc,B.be,B.dc],A.ag("dm<f2,kf>"))
 B.B3=new A.Jj()
 B.a8=new A.hF(4,"keyboard")
 B.m6=new A.kg()
@@ -82572,10 +82571,10 @@ B.iM=new A.af_()
 B.Bq=new A.agp()
 B.Br=new A.agq()
 B.Bs=new A.agE()
-B.ay=new A.Ch()
+B.ax=new A.Ch()
 B.Bt=new A.PA()
 B.bl=new A.ahh()
-B.az=new A.aiV()
+B.ay=new A.aiV()
 B.bm=new A.RM()
 B.Bu=new A.ajj()
 B.Bv=new A.ajH()
@@ -82654,9 +82653,9 @@ B.BK=new A.nF(B.a3,B.e7,B.C3,B.fD,B.fv,B.fv,B.e7,B.mD,B.fD,B.iZ,B.C8,B.fA,B.fB,B
 B.iS=new A.A(1,0.2901960784313726,0.054901960784313725,0.054901960784313725,B.f)
 B.bH=new A.A(1,1,0.26666666666666666,0.26666666666666666,B.f)
 B.bv=new A.A(1,0.10196078431372549,0.10196078431372549,0.10196078431372549,B.f)
-B.aN=new A.A(1,0.9098039215686274,0.9098039215686274,0.9098039215686274,B.f)
+B.aM=new A.A(1,0.9098039215686274,0.9098039215686274,0.9098039215686274,B.f)
 B.BQ=new A.A(1,0.07058823529411765,0.07058823529411765,0.07058823529411765,B.f)
-B.BL=new A.nF(B.a3,B.a1,B.l,null,null,null,null,null,null,B.iS,B.l,null,null,null,null,null,null,null,null,null,null,null,null,null,null,B.bH,B.l,null,null,B.bv,B.aN,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,B.BQ,B.k)
+B.BL=new A.nF(B.a3,B.a1,B.l,null,null,null,null,null,null,B.iS,B.l,null,null,null,null,null,null,null,null,null,null,null,null,null,null,B.bH,B.l,null,null,B.bv,B.aM,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,B.BQ,B.k)
 B.e5=new A.A(1,0.3803921568627451,0.3803921568627451,0.3803921568627451,B.f)
 B.iR=new A.A(1,0.2901960784313726,0.0784313725490196,0.5490196078431373,B.f)
 B.BU=new A.A(0.4,0.7843137254901961,0.7843137254901961,0.7843137254901961,B.f)
@@ -82697,7 +82696,7 @@ B.fz=new A.A(1,1,0.792156862745098,0.1568627450980392,B.f)
 B.Cr=new A.A(0.6,1,1,1,B.f)
 B.mC=new A.A(1,0.09803921568627451,0.4627450980392157,0.8235294117647058,B.f)
 B.S=new A.A(0.7019607843137254,1,1,1,B.f)
-B.aA=new A.A(1,0.6196078431372549,0.6196078431372549,0.6196078431372549,B.f)
+B.az=new A.A(1,0.6196078431372549,0.6196078431372549,0.6196078431372549,B.f)
 B.Ct=new A.A(1,0.6705882352941176,0.2784313725490196,0.7372549019607844,B.f)
 B.Cu=new A.A(0.03137254901960784,0.6196078431372549,0.6196078431372549,0.6196078431372549,B.f)
 B.Cw=new A.A(0.3764705882352941,0.09803921568627451,0.09803921568627451,0.09803921568627451,B.f)
@@ -82810,7 +82809,7 @@ B.eg=new A.nR(!0)
 B.CW=new A.nS(0)
 B.CX=new A.nS(1)
 B.Vk=new A.nS(18)
-B.aO=new A.wr(3,"info")
+B.aN=new A.wr(3,"info")
 B.CY=new A.wr(5,"hint")
 B.CZ=new A.wr(6,"summary")
 B.Vl=new A.jS(1,"sparse")
@@ -82844,11 +82843,11 @@ B.di=new A.aR(167e3)
 B.Dg=new A.aR(18e4)
 B.Dh=new A.aR(195e3)
 B.Di=new A.aR(2e4)
-B.aq=new A.aR(2e5)
+B.ap=new A.aR(2e5)
 B.jl=new A.aR(2e6)
 B.Dj=new A.aR(225e3)
 B.jm=new A.aR(25e4)
-B.aB=new A.aR(3e5)
+B.aA=new A.aR(3e5)
 B.mP=new A.aR(35e4)
 B.mQ=new A.aR(375e3)
 B.Dk=new A.aR(4e4)
@@ -83033,7 +83032,7 @@ B.E8=new A.eT("Expected envelope, got nothing",null,null)
 B.bp=new A.eT("Message corrupted",null,null)
 B.h5=new A.x8(0)
 B.bL=new A.HR(0,"accepted")
-B.ar=new A.HR(1,"rejected")
+B.aq=new A.HR(1,"rejected")
 B.np=new A.o9(0,"pointerEvents")
 B.h6=new A.o9(1,"browserGestures")
 B.cK=new A.xa(0,"ready")
@@ -83061,7 +83060,7 @@ B.Ee=new A.r4(B.er,null)
 B.es=new A.I2(0,"push")
 B.ds=new A.I2(1,"pop")
 B.c_=new A.xh(0,"deferToChild")
-B.aE=new A.xh(1,"opaque")
+B.aD=new A.xh(1,"opaque")
 B.c0=new A.xh(2,"translucent")
 B.Ef=new A.I4(null)
 B.Eg=new A.k5(null)
@@ -83075,37 +83074,37 @@ B.En=new A.d0(58372,"MaterialIcons",null,!1)
 B.Es=new A.d0(61870,"MaterialIcons",null,!1)
 B.k9=new A.d0(62329,"MaterialIcons",null,!1)
 B.nD=new A.cD(24,0,400,0,48,B.l,1,null,!1)
-B.Et=new A.cD(null,null,null,null,null,B.aN,null,null,null)
+B.Et=new A.cD(null,null,null,null,null,B.aM,null,null,null)
 B.Eu=new A.cD(null,null,null,null,null,B.k,null,null,null)
 B.Ev=new A.cD(null,null,null,null,null,B.l,null,null,null)
 B.Ep=new A.d0(58727,"MaterialIcons",null,!1)
-B.Ew=new A.fs(B.Ep,null,B.aA,null,null)
+B.Ew=new A.fs(B.Ep,null,B.az,null,null)
 B.Er=new A.d0(58917,"MaterialIcons",null,!1)
 B.nE=new A.fs(B.Er,18,null,null,null)
 B.nA=new A.d0(57704,"MaterialIcons",null,!1)
-B.Ex=new A.fs(B.nA,null,B.aA,null,null)
+B.Ex=new A.fs(B.nA,null,B.az,null,null)
 B.Ey=new A.fs(B.nA,18,null,null,null)
 B.Ek=new A.d0(57998,"MaterialIcons",null,!1)
 B.Ez=new A.fs(B.Ek,20,B.bn,null,null)
 B.Eo=new A.d0(58527,"MaterialIcons",null,!1)
 B.EA=new A.fs(B.Eo,20,B.bH,null,null)
 B.Eq=new A.d0(58728,"MaterialIcons",null,!1)
-B.EB=new A.fs(B.Eq,48,B.aA,null,null)
+B.EB=new A.fs(B.Eq,48,B.az,null,null)
 B.Em=new A.d0(58244,"MaterialIcons",null,!0)
 B.EC=new A.fs(B.Em,18,null,null,null)
 B.Eh=new A.d0(57695,"MaterialIcons",null,!0)
-B.ED=new A.fs(B.Eh,null,B.aA,null,null)
+B.ED=new A.fs(B.Eh,null,B.az,null,null)
 B.Ej=new A.d0(57912,"MaterialIcons",null,!1)
-B.EE=new A.fs(B.Ej,64,B.aA,null,null)
-B.aF=s([],t.oU)
-B.EF=new A.k7("\ufffc",null,null,null,!0,!0,B.aF)
+B.EE=new A.fs(B.Ej,64,B.az,null,null)
+B.aE=s([],t.oU)
+B.EF=new A.k7("\ufffc",null,null,null,!0,!0,B.aE)
 B.EG=new A.lE(null,null,null,null,null,null,null,null,null,B.k2,B.iK,!1,null,!1,null,null,null,null,null,null,null,null,!1,null,null,null,null,null,null,null,null,null,null,null,!1,null,null)
 B.nF=new A.fY(0.5,1,B.b2)
-B.EI=new A.fY(0.6,1,B.ay)
-B.EJ=new A.fY(0.2075,0.4175,B.ay)
-B.EK=new A.fY(0,0.1,B.ay)
-B.EL=new A.fY(0.0825,0.2075,B.ay)
-B.EM=new A.fY(0.125,0.25,B.ay)
+B.EI=new A.fY(0.6,1,B.ax)
+B.EJ=new A.fY(0.2075,0.4175,B.ax)
+B.EK=new A.fY(0,0.1,B.ax)
+B.EL=new A.fY(0.0825,0.2075,B.ax)
+B.EM=new A.fY(0.125,0.25,B.ax)
 B.nG=new A.xx(0,"grapheme")
 B.nH=new A.xx(1,"word")
 B.nI=new A.a1e(null)
@@ -83179,18 +83178,18 @@ B.aS=new A.jo(1,"avatar")
 B.bS=new A.jo(2,"deleteIcon")
 B.FL=s([B.b8,B.aS,B.bS],A.ag("w<jo>"))
 B.FM=s([1116352408,1899447441,3049323471,3921009573,961987163,1508970993,2453635748,2870763221,3624381080,310598401,607225278,1426881987,1925078388,2162078206,2614888103,3248222580,3835390401,4022224774,264347078,604807628,770255983,1249150122,1555081692,1996064986,2554220882,2821834349,2952996808,3210313671,3336571891,3584528711,113926993,338241895,666307205,773529912,1294757372,1396182291,1695183700,1986661051,2177026350,2456956037,2730485921,2820302411,3259730800,3345764771,3516065817,3600352804,4094571909,275423344,430227734,506948616,659060556,883997877,958139571,1322822218,1537002063,1747873779,1955562222,2024104815,2227730452,2361852424,2428436474,2756734187,3204031479,3329325298],t.t)
-B.av=new A.ee(0,"icon")
-B.aK=new A.ee(1,"input")
+B.au=new A.ee(0,"icon")
+B.aJ=new A.ee(1,"input")
 B.a4=new A.ee(2,"label")
 B.aT=new A.ee(3,"hint")
 B.aU=new A.ee(4,"prefix")
 B.aV=new A.ee(5,"suffix")
 B.a2=new A.ee(6,"prefixIcon")
-B.aD=new A.ee(7,"suffixIcon")
+B.aC=new A.ee(7,"suffixIcon")
 B.bD=new A.ee(8,"helperError")
 B.bT=new A.ee(9,"counter")
 B.cg=new A.ee(10,"container")
-B.FQ=s([B.av,B.aK,B.a4,B.aT,B.aU,B.aV,B.a2,B.aD,B.bD,B.bT,B.cg],A.ag("w<ee>"))
+B.FQ=s([B.au,B.aJ,B.a4,B.aT,B.aU,B.aV,B.a2,B.aC,B.bD,B.bT,B.cg],A.ag("w<ee>"))
 B.GK=new A.j_("en","US")
 B.nO=s([B.GK],t.ss)
 B.U6=new A.kQ(0,0)
@@ -83211,15 +83210,15 @@ B.FZ=s([B.No,B.Np],A.ag("w<A5>"))
 B.ai=new A.Ai(0,"upstream")
 B.G0=s([B.ai,B.j],A.ag("w<Ai>"))
 B.b6=new A.Am(0,"rtl")
-B.aC=new A.Am(1,"ltr")
-B.kd=s([B.b6,B.aC],A.ag("w<Am>"))
+B.aB=new A.Am(1,"ltr")
+B.kd=s([B.b6,B.aB],A.ag("w<Am>"))
 B.G6=s([B.m,B.co,B.cm,B.cn],A.ag("w<iS>"))
 B.Bz=new A.ny(0,"auto")
 B.BA=new A.ny(1,"full")
 B.BB=new A.ny(2,"chromium")
 B.G8=s([B.Bz,B.BA,B.BB,B.de],A.ag("w<ny>"))
 B.bt=new A.f2(1,"fuchsia")
-B.G9=s([B.af,B.bt,B.G,B.be,B.aI,B.bf],A.ag("w<f2>"))
+B.G9=s([B.af,B.bt,B.G,B.be,B.aH,B.bf],A.ag("w<f2>"))
 B.zk=new A.u1(0,"topLeft")
 B.zn=new A.u1(3,"bottomRight")
 B.U1=new A.kP(B.zk,B.zn)
@@ -83253,7 +83252,7 @@ B.nQ=s([B.L_,B.KZ,B.KL,B.KO,B.KX,B.Kz,B.KJ,B.KM,B.KG,B.KU,B.L3,B.KH,B.KC,B.KV],A
 B.Ge=s(["click","scroll"],t.s)
 B.Ao=new A.qg()
 B.eR=new A.KJ(1,"page")
-B.hJ=new A.dU(B.ap,B.eR)
+B.hJ=new A.dU(B.ao,B.eR)
 B.Gf=s([B.Ao,B.hJ],A.ag("w<aK>"))
 B.Gp=s([],t.QP)
 B.nS=s([],A.ag("w<aLr>"))
@@ -83273,7 +83272,7 @@ B.ke=s([],t.K1)
 B.Go=s([],t.D1)
 B.kf=s([],t.QF)
 B.u=s([],t.kw)
-B.am=s([],t.N8)
+B.aO=s([],t.N8)
 B.Gs=s([],t.Lx)
 B.Gk=s([],t.fm)
 B.Gu=s([],t.p)
@@ -83301,7 +83300,7 @@ B.GJ=s(["pointerdown","pointermove","pointerleave","pointerup","pointercancel","
 B.n=new A.xW(0,"ignored")
 B.aP=new A.e(4294967304)
 B.ey=new A.e(4294967323)
-B.aG=new A.e(4294967423)
+B.aF=new A.e(4294967423)
 B.kk=new A.e(4294967558)
 B.eC=new A.e(8589934848)
 B.hl=new A.e(8589934849)
@@ -83775,7 +83774,7 @@ B.I0=new A.e(8589935388)
 B.I1=new A.e(8589935389)
 B.I2=new A.e(8589935390)
 B.I3=new A.e(8589935391)
-B.Ih=new A.dm([32,B.o_,33,B.H3,34,B.H4,35,B.H5,36,B.H6,37,B.H7,38,B.H8,39,B.H9,40,B.Ha,41,B.Hb,42,B.o0,43,B.tt,44,B.Hc,45,B.tu,46,B.tv,47,B.tw,48,B.tx,49,B.ty,50,B.tz,51,B.tA,52,B.tB,53,B.tC,54,B.tD,55,B.tE,56,B.tF,57,B.tG,58,B.Hd,59,B.He,60,B.Hf,61,B.Hg,62,B.Hh,63,B.Hi,64,B.Hj,91,B.I4,92,B.I5,93,B.I6,94,B.I7,95,B.I8,96,B.I9,97,B.ku,98,B.tL,99,B.kv,100,B.GL,101,B.nV,102,B.nW,103,B.GM,104,B.GN,105,B.GO,106,B.GP,107,B.GQ,108,B.GR,109,B.GS,110,B.nX,111,B.GT,112,B.nY,113,B.GU,114,B.GV,115,B.GW,116,B.nZ,117,B.GX,118,B.ki,119,B.GY,120,B.kj,121,B.GZ,122,B.ex,123,B.H_,124,B.H0,125,B.H1,126,B.H2,4294967297,B.o1,4294967304,B.aP,4294967305,B.hg,4294967309,B.hh,4294967323,B.ey,4294967423,B.aG,4294967553,B.o2,4294967555,B.hi,4294967556,B.ez,4294967558,B.kk,4294967559,B.o3,4294967560,B.o4,4294967562,B.hj,4294967564,B.hk,4294967566,B.o5,4294967567,B.o6,4294967568,B.o7,4294967569,B.o8,4294968065,B.bN,4294968066,B.bx,4294968067,B.by,4294968068,B.bO,4294968069,B.cL,4294968070,B.cM,4294968071,B.eA,4294968072,B.eB,4294968321,B.kl,4294968322,B.o9,4294968323,B.oa,4294968324,B.ob,4294968325,B.oc,4294968326,B.od,4294968327,B.km,4294968328,B.oe,4294968329,B.of,4294968330,B.og,4294968577,B.oh,4294968578,B.oi,4294968579,B.oj,4294968580,B.ok,4294968581,B.ol,4294968582,B.om,4294968583,B.on,4294968584,B.oo,4294968585,B.op,4294968586,B.oq,4294968587,B.or,4294968588,B.os,4294968589,B.ot,4294968590,B.ou,4294968833,B.ov,4294968834,B.ow,4294968835,B.ox,4294968836,B.oy,4294968837,B.oz,4294968838,B.oA,4294968839,B.oB,4294968840,B.oC,4294968841,B.oD,4294968842,B.oE,4294968843,B.oF,4294969089,B.oG,4294969090,B.oH,4294969091,B.oI,4294969092,B.oJ,4294969093,B.oK,4294969094,B.oL,4294969095,B.oM,4294969096,B.oN,4294969097,B.oO,4294969098,B.oP,4294969099,B.oQ,4294969100,B.oR,4294969101,B.oS,4294969102,B.oT,4294969103,B.oU,4294969104,B.oV,4294969105,B.oW,4294969106,B.oX,4294969107,B.oY,4294969108,B.oZ,4294969109,B.p_,4294969110,B.p0,4294969111,B.p1,4294969112,B.p2,4294969113,B.p3,4294969114,B.p4,4294969115,B.p5,4294969116,B.p6,4294969117,B.p7,4294969345,B.p8,4294969346,B.p9,4294969347,B.pa,4294969348,B.pb,4294969349,B.pc,4294969350,B.pd,4294969351,B.pe,4294969352,B.pf,4294969353,B.pg,4294969354,B.ph,4294969355,B.pi,4294969356,B.pj,4294969357,B.pk,4294969358,B.pl,4294969359,B.pm,4294969360,B.pn,4294969361,B.po,4294969362,B.pp,4294969363,B.pq,4294969364,B.pr,4294969365,B.ps,4294969366,B.pt,4294969367,B.pu,4294969368,B.pv,4294969601,B.pw,4294969602,B.px,4294969603,B.py,4294969604,B.pz,4294969605,B.pA,4294969606,B.pB,4294969607,B.pC,4294969608,B.pD,4294969857,B.pE,4294969858,B.pF,4294969859,B.pG,4294969860,B.pH,4294969861,B.pI,4294969863,B.pJ,4294969864,B.pK,4294969865,B.pL,4294969866,B.pM,4294969867,B.pN,4294969868,B.pO,4294969869,B.pP,4294969870,B.pQ,4294969871,B.pR,4294969872,B.pS,4294969873,B.pT,4294970113,B.pU,4294970114,B.pV,4294970115,B.pW,4294970116,B.pX,4294970117,B.pY,4294970118,B.pZ,4294970119,B.q_,4294970120,B.q0,4294970121,B.q1,4294970122,B.q2,4294970123,B.q3,4294970124,B.q4,4294970125,B.q5,4294970126,B.q6,4294970127,B.q7,4294970369,B.q8,4294970370,B.q9,4294970371,B.qa,4294970372,B.qb,4294970373,B.qc,4294970374,B.qd,4294970375,B.qe,4294970625,B.qf,4294970626,B.qg,4294970627,B.qh,4294970628,B.qi,4294970629,B.qj,4294970630,B.qk,4294970631,B.ql,4294970632,B.qm,4294970633,B.qn,4294970634,B.qo,4294970635,B.qp,4294970636,B.qq,4294970637,B.qr,4294970638,B.qs,4294970639,B.qt,4294970640,B.qu,4294970641,B.qv,4294970642,B.qw,4294970643,B.qx,4294970644,B.qy,4294970645,B.qz,4294970646,B.qA,4294970647,B.qB,4294970648,B.qC,4294970649,B.qD,4294970650,B.qE,4294970651,B.qF,4294970652,B.qG,4294970653,B.qH,4294970654,B.qI,4294970655,B.qJ,4294970656,B.qK,4294970657,B.qL,4294970658,B.qM,4294970659,B.qN,4294970660,B.qO,4294970661,B.qP,4294970662,B.qQ,4294970663,B.qR,4294970664,B.qS,4294970665,B.qT,4294970666,B.qU,4294970667,B.qV,4294970668,B.qW,4294970669,B.qX,4294970670,B.qY,4294970671,B.qZ,4294970672,B.r_,4294970673,B.r0,4294970674,B.r1,4294970675,B.r2,4294970676,B.r3,4294970677,B.r4,4294970678,B.r5,4294970679,B.r6,4294970680,B.r7,4294970681,B.r8,4294970682,B.r9,4294970683,B.ra,4294970684,B.rb,4294970685,B.rc,4294970686,B.rd,4294970687,B.re,4294970688,B.rf,4294970689,B.rg,4294970690,B.rh,4294970691,B.ri,4294970692,B.rj,4294970693,B.rk,4294970694,B.rl,4294970695,B.rm,4294970696,B.rn,4294970697,B.ro,4294970698,B.rp,4294970699,B.rq,4294970700,B.rr,4294970701,B.rs,4294970702,B.rt,4294970703,B.ru,4294970704,B.rv,4294970705,B.rw,4294970706,B.rx,4294970707,B.ry,4294970708,B.rz,4294970709,B.rA,4294970710,B.rB,4294970711,B.rC,4294970712,B.rD,4294970713,B.rE,4294970714,B.rF,4294970715,B.rG,4294970882,B.rH,4294970884,B.rI,4294970885,B.rJ,4294970886,B.rK,4294970887,B.rL,4294970888,B.rM,4294970889,B.rN,4294971137,B.rO,4294971138,B.rP,4294971393,B.rQ,4294971394,B.rR,4294971395,B.rS,4294971396,B.rT,4294971397,B.rU,4294971398,B.rV,4294971399,B.rW,4294971400,B.rX,4294971401,B.rY,4294971402,B.rZ,4294971403,B.t_,4294971649,B.t0,4294971650,B.t1,4294971651,B.t2,4294971652,B.t3,4294971653,B.t4,4294971654,B.t5,4294971655,B.t6,4294971656,B.t7,4294971657,B.t8,4294971658,B.t9,4294971659,B.ta,4294971660,B.tb,4294971661,B.tc,4294971662,B.td,4294971663,B.te,4294971664,B.tf,4294971665,B.tg,4294971666,B.th,4294971667,B.ti,4294971668,B.tj,4294971669,B.tk,4294971670,B.tl,4294971671,B.tm,4294971672,B.tn,4294971673,B.to,4294971674,B.tp,4294971675,B.tq,4294971905,B.tr,4294971906,B.ts,8589934592,B.Hk,8589934593,B.Hl,8589934594,B.Hm,8589934595,B.Hn,8589934608,B.Ho,8589934609,B.Hp,8589934610,B.Hq,8589934611,B.Hr,8589934612,B.Hs,8589934624,B.Ht,8589934625,B.Hu,8589934626,B.Hv,8589934848,B.eC,8589934849,B.hl,8589934850,B.cp,8589934851,B.cN,8589934852,B.eD,8589934853,B.hm,8589934854,B.eE,8589934855,B.hn,8589935088,B.kn,8589935090,B.ko,8589935092,B.kp,8589935094,B.kq,8589935117,B.kr,8589935144,B.Hw,8589935145,B.Hx,8589935146,B.tH,8589935147,B.tI,8589935148,B.Hy,8589935149,B.tJ,8589935150,B.cO,8589935151,B.tK,8589935152,B.ks,8589935153,B.eF,8589935154,B.cP,8589935155,B.eG,8589935156,B.cQ,8589935157,B.kt,8589935158,B.cR,8589935159,B.eH,8589935160,B.cS,8589935161,B.eI,8589935165,B.Hz,8589935361,B.HA,8589935362,B.HB,8589935363,B.HC,8589935364,B.HD,8589935365,B.HE,8589935366,B.HF,8589935367,B.HG,8589935368,B.HH,8589935369,B.HI,8589935370,B.HJ,8589935371,B.HK,8589935372,B.HL,8589935373,B.HM,8589935374,B.HN,8589935375,B.HO,8589935376,B.HP,8589935377,B.HQ,8589935378,B.HR,8589935379,B.HS,8589935380,B.HT,8589935381,B.HU,8589935382,B.HV,8589935383,B.HW,8589935384,B.HX,8589935385,B.HY,8589935386,B.HZ,8589935387,B.I_,8589935388,B.I0,8589935389,B.I1,8589935390,B.I2,8589935391,B.I3],A.ag("dm<n,e>"))
+B.Ih=new A.dm([32,B.o_,33,B.H3,34,B.H4,35,B.H5,36,B.H6,37,B.H7,38,B.H8,39,B.H9,40,B.Ha,41,B.Hb,42,B.o0,43,B.tt,44,B.Hc,45,B.tu,46,B.tv,47,B.tw,48,B.tx,49,B.ty,50,B.tz,51,B.tA,52,B.tB,53,B.tC,54,B.tD,55,B.tE,56,B.tF,57,B.tG,58,B.Hd,59,B.He,60,B.Hf,61,B.Hg,62,B.Hh,63,B.Hi,64,B.Hj,91,B.I4,92,B.I5,93,B.I6,94,B.I7,95,B.I8,96,B.I9,97,B.ku,98,B.tL,99,B.kv,100,B.GL,101,B.nV,102,B.nW,103,B.GM,104,B.GN,105,B.GO,106,B.GP,107,B.GQ,108,B.GR,109,B.GS,110,B.nX,111,B.GT,112,B.nY,113,B.GU,114,B.GV,115,B.GW,116,B.nZ,117,B.GX,118,B.ki,119,B.GY,120,B.kj,121,B.GZ,122,B.ex,123,B.H_,124,B.H0,125,B.H1,126,B.H2,4294967297,B.o1,4294967304,B.aP,4294967305,B.hg,4294967309,B.hh,4294967323,B.ey,4294967423,B.aF,4294967553,B.o2,4294967555,B.hi,4294967556,B.ez,4294967558,B.kk,4294967559,B.o3,4294967560,B.o4,4294967562,B.hj,4294967564,B.hk,4294967566,B.o5,4294967567,B.o6,4294967568,B.o7,4294967569,B.o8,4294968065,B.bN,4294968066,B.bx,4294968067,B.by,4294968068,B.bO,4294968069,B.cL,4294968070,B.cM,4294968071,B.eA,4294968072,B.eB,4294968321,B.kl,4294968322,B.o9,4294968323,B.oa,4294968324,B.ob,4294968325,B.oc,4294968326,B.od,4294968327,B.km,4294968328,B.oe,4294968329,B.of,4294968330,B.og,4294968577,B.oh,4294968578,B.oi,4294968579,B.oj,4294968580,B.ok,4294968581,B.ol,4294968582,B.om,4294968583,B.on,4294968584,B.oo,4294968585,B.op,4294968586,B.oq,4294968587,B.or,4294968588,B.os,4294968589,B.ot,4294968590,B.ou,4294968833,B.ov,4294968834,B.ow,4294968835,B.ox,4294968836,B.oy,4294968837,B.oz,4294968838,B.oA,4294968839,B.oB,4294968840,B.oC,4294968841,B.oD,4294968842,B.oE,4294968843,B.oF,4294969089,B.oG,4294969090,B.oH,4294969091,B.oI,4294969092,B.oJ,4294969093,B.oK,4294969094,B.oL,4294969095,B.oM,4294969096,B.oN,4294969097,B.oO,4294969098,B.oP,4294969099,B.oQ,4294969100,B.oR,4294969101,B.oS,4294969102,B.oT,4294969103,B.oU,4294969104,B.oV,4294969105,B.oW,4294969106,B.oX,4294969107,B.oY,4294969108,B.oZ,4294969109,B.p_,4294969110,B.p0,4294969111,B.p1,4294969112,B.p2,4294969113,B.p3,4294969114,B.p4,4294969115,B.p5,4294969116,B.p6,4294969117,B.p7,4294969345,B.p8,4294969346,B.p9,4294969347,B.pa,4294969348,B.pb,4294969349,B.pc,4294969350,B.pd,4294969351,B.pe,4294969352,B.pf,4294969353,B.pg,4294969354,B.ph,4294969355,B.pi,4294969356,B.pj,4294969357,B.pk,4294969358,B.pl,4294969359,B.pm,4294969360,B.pn,4294969361,B.po,4294969362,B.pp,4294969363,B.pq,4294969364,B.pr,4294969365,B.ps,4294969366,B.pt,4294969367,B.pu,4294969368,B.pv,4294969601,B.pw,4294969602,B.px,4294969603,B.py,4294969604,B.pz,4294969605,B.pA,4294969606,B.pB,4294969607,B.pC,4294969608,B.pD,4294969857,B.pE,4294969858,B.pF,4294969859,B.pG,4294969860,B.pH,4294969861,B.pI,4294969863,B.pJ,4294969864,B.pK,4294969865,B.pL,4294969866,B.pM,4294969867,B.pN,4294969868,B.pO,4294969869,B.pP,4294969870,B.pQ,4294969871,B.pR,4294969872,B.pS,4294969873,B.pT,4294970113,B.pU,4294970114,B.pV,4294970115,B.pW,4294970116,B.pX,4294970117,B.pY,4294970118,B.pZ,4294970119,B.q_,4294970120,B.q0,4294970121,B.q1,4294970122,B.q2,4294970123,B.q3,4294970124,B.q4,4294970125,B.q5,4294970126,B.q6,4294970127,B.q7,4294970369,B.q8,4294970370,B.q9,4294970371,B.qa,4294970372,B.qb,4294970373,B.qc,4294970374,B.qd,4294970375,B.qe,4294970625,B.qf,4294970626,B.qg,4294970627,B.qh,4294970628,B.qi,4294970629,B.qj,4294970630,B.qk,4294970631,B.ql,4294970632,B.qm,4294970633,B.qn,4294970634,B.qo,4294970635,B.qp,4294970636,B.qq,4294970637,B.qr,4294970638,B.qs,4294970639,B.qt,4294970640,B.qu,4294970641,B.qv,4294970642,B.qw,4294970643,B.qx,4294970644,B.qy,4294970645,B.qz,4294970646,B.qA,4294970647,B.qB,4294970648,B.qC,4294970649,B.qD,4294970650,B.qE,4294970651,B.qF,4294970652,B.qG,4294970653,B.qH,4294970654,B.qI,4294970655,B.qJ,4294970656,B.qK,4294970657,B.qL,4294970658,B.qM,4294970659,B.qN,4294970660,B.qO,4294970661,B.qP,4294970662,B.qQ,4294970663,B.qR,4294970664,B.qS,4294970665,B.qT,4294970666,B.qU,4294970667,B.qV,4294970668,B.qW,4294970669,B.qX,4294970670,B.qY,4294970671,B.qZ,4294970672,B.r_,4294970673,B.r0,4294970674,B.r1,4294970675,B.r2,4294970676,B.r3,4294970677,B.r4,4294970678,B.r5,4294970679,B.r6,4294970680,B.r7,4294970681,B.r8,4294970682,B.r9,4294970683,B.ra,4294970684,B.rb,4294970685,B.rc,4294970686,B.rd,4294970687,B.re,4294970688,B.rf,4294970689,B.rg,4294970690,B.rh,4294970691,B.ri,4294970692,B.rj,4294970693,B.rk,4294970694,B.rl,4294970695,B.rm,4294970696,B.rn,4294970697,B.ro,4294970698,B.rp,4294970699,B.rq,4294970700,B.rr,4294970701,B.rs,4294970702,B.rt,4294970703,B.ru,4294970704,B.rv,4294970705,B.rw,4294970706,B.rx,4294970707,B.ry,4294970708,B.rz,4294970709,B.rA,4294970710,B.rB,4294970711,B.rC,4294970712,B.rD,4294970713,B.rE,4294970714,B.rF,4294970715,B.rG,4294970882,B.rH,4294970884,B.rI,4294970885,B.rJ,4294970886,B.rK,4294970887,B.rL,4294970888,B.rM,4294970889,B.rN,4294971137,B.rO,4294971138,B.rP,4294971393,B.rQ,4294971394,B.rR,4294971395,B.rS,4294971396,B.rT,4294971397,B.rU,4294971398,B.rV,4294971399,B.rW,4294971400,B.rX,4294971401,B.rY,4294971402,B.rZ,4294971403,B.t_,4294971649,B.t0,4294971650,B.t1,4294971651,B.t2,4294971652,B.t3,4294971653,B.t4,4294971654,B.t5,4294971655,B.t6,4294971656,B.t7,4294971657,B.t8,4294971658,B.t9,4294971659,B.ta,4294971660,B.tb,4294971661,B.tc,4294971662,B.td,4294971663,B.te,4294971664,B.tf,4294971665,B.tg,4294971666,B.th,4294971667,B.ti,4294971668,B.tj,4294971669,B.tk,4294971670,B.tl,4294971671,B.tm,4294971672,B.tn,4294971673,B.to,4294971674,B.tp,4294971675,B.tq,4294971905,B.tr,4294971906,B.ts,8589934592,B.Hk,8589934593,B.Hl,8589934594,B.Hm,8589934595,B.Hn,8589934608,B.Ho,8589934609,B.Hp,8589934610,B.Hq,8589934611,B.Hr,8589934612,B.Hs,8589934624,B.Ht,8589934625,B.Hu,8589934626,B.Hv,8589934848,B.eC,8589934849,B.hl,8589934850,B.cp,8589934851,B.cN,8589934852,B.eD,8589934853,B.hm,8589934854,B.eE,8589934855,B.hn,8589935088,B.kn,8589935090,B.ko,8589935092,B.kp,8589935094,B.kq,8589935117,B.kr,8589935144,B.Hw,8589935145,B.Hx,8589935146,B.tH,8589935147,B.tI,8589935148,B.Hy,8589935149,B.tJ,8589935150,B.cO,8589935151,B.tK,8589935152,B.ks,8589935153,B.eF,8589935154,B.cP,8589935155,B.eG,8589935156,B.cQ,8589935157,B.kt,8589935158,B.cR,8589935159,B.eH,8589935160,B.cS,8589935161,B.eI,8589935165,B.Hz,8589935361,B.HA,8589935362,B.HB,8589935363,B.HC,8589935364,B.HD,8589935365,B.HE,8589935366,B.HF,8589935367,B.HG,8589935368,B.HH,8589935369,B.HI,8589935370,B.HJ,8589935371,B.HK,8589935372,B.HL,8589935373,B.HM,8589935374,B.HN,8589935375,B.HO,8589935376,B.HP,8589935377,B.HQ,8589935378,B.HR,8589935379,B.HS,8589935380,B.HT,8589935381,B.HU,8589935382,B.HV,8589935383,B.HW,8589935384,B.HX,8589935385,B.HY,8589935386,B.HZ,8589935387,B.I_,8589935388,B.I0,8589935389,B.I1,8589935390,B.I2,8589935391,B.I3],A.ag("dm<n,e>"))
 B.Mr=new A.a6(B.kr,!1,!1,!1,!1,B.n)
 B.yr=new A.a6(B.ey,!1,!1,!1,!1,B.n)
 B.ys=new A.a6(B.hg,!1,!1,!1,!1,B.n)
@@ -83789,7 +83788,7 @@ B.m5=new A.oM()
 B.m7=new A.p1()
 B.hI=new A.KJ(0,"line")
 B.Li=new A.dU(B.Z,B.hI)
-B.Lh=new A.dU(B.ap,B.hI)
+B.Lh=new A.dU(B.ao,B.hI)
 B.Lk=new A.dU(B.bi,B.hI)
 B.Lj=new A.dU(B.cj,B.hI)
 B.kN=new A.dU(B.Z,B.eR)
@@ -83798,31 +83797,31 @@ B.IV={Abort:0,Again:1,AltLeft:2,AltRight:3,ArrowDown:4,ArrowLeft:5,ArrowRight:6,
 B.Ij=new A.bM(B.IV,[458907,458873,458978,458982,458833,458832,458831,458834,458881,458879,458880,458805,458801,458794,458799,458800,786544,786543,786980,786986,786981,786979,786983,786977,786982,458809,458806,458853,458976,458980,458890,458876,458875,458828,458791,458782,458783,458784,458785,458786,458787,458788,458789,458790,65717,786616,458829,458792,458798,458793,458793,458810,458819,458820,458821,458856,458857,458858,458859,458860,458861,458862,458811,458863,458864,458865,458866,458867,458812,458813,458814,458815,458816,458817,458818,458878,18,19,392961,392970,392971,392972,392973,392974,392975,392976,392962,392963,392964,392965,392966,392967,392968,392969,392977,392978,392979,392980,392981,392982,392983,392984,392985,392986,392987,392988,392989,392990,392991,458869,458826,16,458825,458852,458887,458889,458888,458756,458757,458758,458759,458760,458761,458762,458763,458764,458765,458766,458767,458768,458769,458770,458771,458772,458773,458774,458775,458776,458777,458778,458779,458780,458781,787101,458896,458897,458898,458899,458900,786836,786834,786891,786847,786826,786865,787083,787081,787084,786611,786609,786608,786637,786610,786612,786819,786615,786613,786614,458979,458983,24,458797,458891,458835,458850,458841,458842,458843,458844,458845,458846,458847,458848,458849,458839,458939,458968,458969,458885,458851,458836,458840,458855,458963,458962,458961,458960,458964,458837,458934,458935,458838,458868,458830,458827,458877,458824,458807,458854,458822,23,458915,458804,21,458823,458871,786850,458803,458977,458981,787103,458808,65666,458796,17,20,458795,22,458874,65667,786994],t.eL)
 B.Ik=new A.dm([0,"FontWeight.w100",1,"FontWeight.w200",2,"FontWeight.w300",3,"FontWeight.w400",4,"FontWeight.w500",5,"FontWeight.w600",6,"FontWeight.w700",7,"FontWeight.w800",8,"FontWeight.w900"],A.ag("dm<n,o>"))
 B.tZ={AVRInput:0,AVRPower:1,Accel:2,Accept:3,Again:4,AllCandidates:5,Alphanumeric:6,AltGraph:7,AppSwitch:8,ArrowDown:9,ArrowLeft:10,ArrowRight:11,ArrowUp:12,Attn:13,AudioBalanceLeft:14,AudioBalanceRight:15,AudioBassBoostDown:16,AudioBassBoostToggle:17,AudioBassBoostUp:18,AudioFaderFront:19,AudioFaderRear:20,AudioSurroundModeNext:21,AudioTrebleDown:22,AudioTrebleUp:23,AudioVolumeDown:24,AudioVolumeMute:25,AudioVolumeUp:26,Backspace:27,BrightnessDown:28,BrightnessUp:29,BrowserBack:30,BrowserFavorites:31,BrowserForward:32,BrowserHome:33,BrowserRefresh:34,BrowserSearch:35,BrowserStop:36,Call:37,Camera:38,CameraFocus:39,Cancel:40,CapsLock:41,ChannelDown:42,ChannelUp:43,Clear:44,Close:45,ClosedCaptionToggle:46,CodeInput:47,ColorF0Red:48,ColorF1Green:49,ColorF2Yellow:50,ColorF3Blue:51,ColorF4Grey:52,ColorF5Brown:53,Compose:54,ContextMenu:55,Convert:56,Copy:57,CrSel:58,Cut:59,DVR:60,Delete:61,Dimmer:62,DisplaySwap:63,Eisu:64,Eject:65,End:66,EndCall:67,Enter:68,EraseEof:69,Esc:70,Escape:71,ExSel:72,Execute:73,Exit:74,F1:75,F10:76,F11:77,F12:78,F13:79,F14:80,F15:81,F16:82,F17:83,F18:84,F19:85,F2:86,F20:87,F21:88,F22:89,F23:90,F24:91,F3:92,F4:93,F5:94,F6:95,F7:96,F8:97,F9:98,FavoriteClear0:99,FavoriteClear1:100,FavoriteClear2:101,FavoriteClear3:102,FavoriteRecall0:103,FavoriteRecall1:104,FavoriteRecall2:105,FavoriteRecall3:106,FavoriteStore0:107,FavoriteStore1:108,FavoriteStore2:109,FavoriteStore3:110,FinalMode:111,Find:112,Fn:113,FnLock:114,GoBack:115,GoHome:116,GroupFirst:117,GroupLast:118,GroupNext:119,GroupPrevious:120,Guide:121,GuideNextDay:122,GuidePreviousDay:123,HangulMode:124,HanjaMode:125,Hankaku:126,HeadsetHook:127,Help:128,Hibernate:129,Hiragana:130,HiraganaKatakana:131,Home:132,Hyper:133,Info:134,Insert:135,InstantReplay:136,JunjaMode:137,KanaMode:138,KanjiMode:139,Katakana:140,Key11:141,Key12:142,LastNumberRedial:143,LaunchApplication1:144,LaunchApplication2:145,LaunchAssistant:146,LaunchCalendar:147,LaunchContacts:148,LaunchControlPanel:149,LaunchMail:150,LaunchMediaPlayer:151,LaunchMusicPlayer:152,LaunchPhone:153,LaunchScreenSaver:154,LaunchSpreadsheet:155,LaunchWebBrowser:156,LaunchWebCam:157,LaunchWordProcessor:158,Link:159,ListProgram:160,LiveContent:161,Lock:162,LogOff:163,MailForward:164,MailReply:165,MailSend:166,MannerMode:167,MediaApps:168,MediaAudioTrack:169,MediaClose:170,MediaFastForward:171,MediaLast:172,MediaPause:173,MediaPlay:174,MediaPlayPause:175,MediaRecord:176,MediaRewind:177,MediaSkip:178,MediaSkipBackward:179,MediaSkipForward:180,MediaStepBackward:181,MediaStepForward:182,MediaStop:183,MediaTopMenu:184,MediaTrackNext:185,MediaTrackPrevious:186,MicrophoneToggle:187,MicrophoneVolumeDown:188,MicrophoneVolumeMute:189,MicrophoneVolumeUp:190,ModeChange:191,NavigateIn:192,NavigateNext:193,NavigateOut:194,NavigatePrevious:195,New:196,NextCandidate:197,NextFavoriteChannel:198,NextUserProfile:199,NonConvert:200,Notification:201,NumLock:202,OnDemand:203,Open:204,PageDown:205,PageUp:206,Pairing:207,Paste:208,Pause:209,PinPDown:210,PinPMove:211,PinPToggle:212,PinPUp:213,Play:214,PlaySpeedDown:215,PlaySpeedReset:216,PlaySpeedUp:217,Power:218,PowerOff:219,PreviousCandidate:220,Print:221,PrintScreen:222,Process:223,Props:224,RandomToggle:225,RcLowBattery:226,RecordSpeedNext:227,Redo:228,RfBypass:229,Romaji:230,STBInput:231,STBPower:232,Save:233,ScanChannelsToggle:234,ScreenModeNext:235,ScrollLock:236,Select:237,Settings:238,ShiftLevel5:239,SingleCandidate:240,Soft1:241,Soft2:242,Soft3:243,Soft4:244,Soft5:245,Soft6:246,Soft7:247,Soft8:248,SpeechCorrectionList:249,SpeechInputToggle:250,SpellCheck:251,SplitScreenToggle:252,Standby:253,Subtitle:254,Super:255,Symbol:256,SymbolLock:257,TV:258,TV3DMode:259,TVAntennaCable:260,TVAudioDescription:261,TVAudioDescriptionMixDown:262,TVAudioDescriptionMixUp:263,TVContentsMenu:264,TVDataService:265,TVInput:266,TVInputComponent1:267,TVInputComponent2:268,TVInputComposite1:269,TVInputComposite2:270,TVInputHDMI1:271,TVInputHDMI2:272,TVInputHDMI3:273,TVInputHDMI4:274,TVInputVGA1:275,TVMediaContext:276,TVNetwork:277,TVNumberEntry:278,TVPower:279,TVRadioService:280,TVSatellite:281,TVSatelliteBS:282,TVSatelliteCS:283,TVSatelliteToggle:284,TVTerrestrialAnalog:285,TVTerrestrialDigital:286,TVTimer:287,Tab:288,Teletext:289,Undo:290,Unidentified:291,VideoModeNext:292,VoiceDial:293,WakeUp:294,Wink:295,Zenkaku:296,ZenkakuHankaku:297,ZoomIn:298,ZoomOut:299,ZoomToggle:300}
-B.Il=new A.bM(B.tZ,[B.qm,B.qn,B.o2,B.oh,B.oi,B.oG,B.oH,B.hi,B.rQ,B.bN,B.bx,B.by,B.bO,B.oj,B.qf,B.qg,B.qh,B.rH,B.qi,B.qj,B.qk,B.ql,B.rI,B.rJ,B.pR,B.pT,B.pS,B.aP,B.ov,B.ow,B.q8,B.q9,B.qa,B.qb,B.qc,B.qd,B.qe,B.rR,B.ox,B.rS,B.ok,B.ez,B.qo,B.qp,B.kl,B.pE,B.qw,B.oI,B.qq,B.qr,B.qs,B.qt,B.qu,B.qv,B.oJ,B.ol,B.oK,B.o9,B.oa,B.ob,B.ru,B.aG,B.qx,B.qy,B.oZ,B.oy,B.cL,B.rT,B.hh,B.oc,B.ey,B.ey,B.od,B.om,B.qz,B.p8,B.ph,B.pi,B.pj,B.pk,B.pl,B.pm,B.pn,B.po,B.pp,B.pq,B.p9,B.pr,B.ps,B.pt,B.pu,B.pv,B.pa,B.pb,B.pc,B.pd,B.pe,B.pf,B.pg,B.qA,B.qB,B.qC,B.qD,B.qE,B.qF,B.qG,B.qH,B.qI,B.qJ,B.qK,B.qL,B.oL,B.on,B.kk,B.o3,B.rU,B.rV,B.oM,B.oN,B.oO,B.oP,B.qM,B.qN,B.qO,B.oW,B.oX,B.p_,B.rW,B.oo,B.oD,B.p0,B.p1,B.cM,B.o4,B.qP,B.km,B.qQ,B.oY,B.p2,B.p3,B.p4,B.tr,B.ts,B.rX,B.pZ,B.pU,B.q6,B.pV,B.q4,B.q7,B.pW,B.pX,B.pY,B.q5,B.q_,B.q0,B.q1,B.q2,B.q3,B.qR,B.qS,B.qT,B.qU,B.oz,B.pF,B.pG,B.pH,B.rZ,B.qV,B.rv,B.rG,B.qW,B.qX,B.qY,B.qZ,B.pI,B.r_,B.r0,B.r1,B.rw,B.rx,B.ry,B.rz,B.pJ,B.rA,B.pK,B.pL,B.rK,B.rL,B.rN,B.rM,B.oQ,B.rB,B.rC,B.rD,B.rE,B.pM,B.oR,B.r2,B.r3,B.oS,B.rY,B.hj,B.r4,B.pN,B.eA,B.eB,B.rF,B.oe,B.op,B.r5,B.r6,B.r7,B.r8,B.oq,B.r9,B.ra,B.rb,B.oA,B.oB,B.oT,B.pO,B.oC,B.oU,B.or,B.rc,B.rd,B.re,B.of,B.rf,B.p5,B.rk,B.rl,B.pP,B.rg,B.rh,B.hk,B.os,B.ri,B.o8,B.oV,B.pw,B.px,B.py,B.pz,B.pA,B.pB,B.pC,B.pD,B.rO,B.rP,B.pQ,B.rj,B.oE,B.rm,B.o5,B.o6,B.o7,B.ro,B.t0,B.t1,B.t2,B.t3,B.t4,B.t5,B.t6,B.rp,B.t7,B.t8,B.t9,B.ta,B.tb,B.tc,B.td,B.te,B.tf,B.tg,B.th,B.ti,B.rq,B.tj,B.tk,B.tl,B.tm,B.tn,B.to,B.tp,B.tq,B.hg,B.rn,B.og,B.o1,B.rr,B.t_,B.oF,B.rs,B.p6,B.p7,B.ot,B.ou,B.rt],A.ag("bM<o,e>"))
+B.Il=new A.bM(B.tZ,[B.qm,B.qn,B.o2,B.oh,B.oi,B.oG,B.oH,B.hi,B.rQ,B.bN,B.bx,B.by,B.bO,B.oj,B.qf,B.qg,B.qh,B.rH,B.qi,B.qj,B.qk,B.ql,B.rI,B.rJ,B.pR,B.pT,B.pS,B.aP,B.ov,B.ow,B.q8,B.q9,B.qa,B.qb,B.qc,B.qd,B.qe,B.rR,B.ox,B.rS,B.ok,B.ez,B.qo,B.qp,B.kl,B.pE,B.qw,B.oI,B.qq,B.qr,B.qs,B.qt,B.qu,B.qv,B.oJ,B.ol,B.oK,B.o9,B.oa,B.ob,B.ru,B.aF,B.qx,B.qy,B.oZ,B.oy,B.cL,B.rT,B.hh,B.oc,B.ey,B.ey,B.od,B.om,B.qz,B.p8,B.ph,B.pi,B.pj,B.pk,B.pl,B.pm,B.pn,B.po,B.pp,B.pq,B.p9,B.pr,B.ps,B.pt,B.pu,B.pv,B.pa,B.pb,B.pc,B.pd,B.pe,B.pf,B.pg,B.qA,B.qB,B.qC,B.qD,B.qE,B.qF,B.qG,B.qH,B.qI,B.qJ,B.qK,B.qL,B.oL,B.on,B.kk,B.o3,B.rU,B.rV,B.oM,B.oN,B.oO,B.oP,B.qM,B.qN,B.qO,B.oW,B.oX,B.p_,B.rW,B.oo,B.oD,B.p0,B.p1,B.cM,B.o4,B.qP,B.km,B.qQ,B.oY,B.p2,B.p3,B.p4,B.tr,B.ts,B.rX,B.pZ,B.pU,B.q6,B.pV,B.q4,B.q7,B.pW,B.pX,B.pY,B.q5,B.q_,B.q0,B.q1,B.q2,B.q3,B.qR,B.qS,B.qT,B.qU,B.oz,B.pF,B.pG,B.pH,B.rZ,B.qV,B.rv,B.rG,B.qW,B.qX,B.qY,B.qZ,B.pI,B.r_,B.r0,B.r1,B.rw,B.rx,B.ry,B.rz,B.pJ,B.rA,B.pK,B.pL,B.rK,B.rL,B.rN,B.rM,B.oQ,B.rB,B.rC,B.rD,B.rE,B.pM,B.oR,B.r2,B.r3,B.oS,B.rY,B.hj,B.r4,B.pN,B.eA,B.eB,B.rF,B.oe,B.op,B.r5,B.r6,B.r7,B.r8,B.oq,B.r9,B.ra,B.rb,B.oA,B.oB,B.oT,B.pO,B.oC,B.oU,B.or,B.rc,B.rd,B.re,B.of,B.rf,B.p5,B.rk,B.rl,B.pP,B.rg,B.rh,B.hk,B.os,B.ri,B.o8,B.oV,B.pw,B.px,B.py,B.pz,B.pA,B.pB,B.pC,B.pD,B.rO,B.rP,B.pQ,B.rj,B.oE,B.rm,B.o5,B.o6,B.o7,B.ro,B.t0,B.t1,B.t2,B.t3,B.t4,B.t5,B.t6,B.rp,B.t7,B.t8,B.t9,B.ta,B.tb,B.tc,B.td,B.te,B.tf,B.tg,B.th,B.ti,B.rq,B.tj,B.tk,B.tl,B.tm,B.tn,B.to,B.tp,B.tq,B.hg,B.rn,B.og,B.o1,B.rr,B.t_,B.oF,B.rs,B.p6,B.p7,B.ot,B.ou,B.rt],A.ag("bM<o,e>"))
 B.Im=new A.bM(B.tZ,[4294970632,4294970633,4294967553,4294968577,4294968578,4294969089,4294969090,4294967555,4294971393,4294968065,4294968066,4294968067,4294968068,4294968579,4294970625,4294970626,4294970627,4294970882,4294970628,4294970629,4294970630,4294970631,4294970884,4294970885,4294969871,4294969873,4294969872,4294967304,4294968833,4294968834,4294970369,4294970370,4294970371,4294970372,4294970373,4294970374,4294970375,4294971394,4294968835,4294971395,4294968580,4294967556,4294970634,4294970635,4294968321,4294969857,4294970642,4294969091,4294970636,4294970637,4294970638,4294970639,4294970640,4294970641,4294969092,4294968581,4294969093,4294968322,4294968323,4294968324,4294970703,4294967423,4294970643,4294970644,4294969108,4294968836,4294968069,4294971396,4294967309,4294968325,4294967323,4294967323,4294968326,4294968582,4294970645,4294969345,4294969354,4294969355,4294969356,4294969357,4294969358,4294969359,4294969360,4294969361,4294969362,4294969363,4294969346,4294969364,4294969365,4294969366,4294969367,4294969368,4294969347,4294969348,4294969349,4294969350,4294969351,4294969352,4294969353,4294970646,4294970647,4294970648,4294970649,4294970650,4294970651,4294970652,4294970653,4294970654,4294970655,4294970656,4294970657,4294969094,4294968583,4294967558,4294967559,4294971397,4294971398,4294969095,4294969096,4294969097,4294969098,4294970658,4294970659,4294970660,4294969105,4294969106,4294969109,4294971399,4294968584,4294968841,4294969110,4294969111,4294968070,4294967560,4294970661,4294968327,4294970662,4294969107,4294969112,4294969113,4294969114,4294971905,4294971906,4294971400,4294970118,4294970113,4294970126,4294970114,4294970124,4294970127,4294970115,4294970116,4294970117,4294970125,4294970119,4294970120,4294970121,4294970122,4294970123,4294970663,4294970664,4294970665,4294970666,4294968837,4294969858,4294969859,4294969860,4294971402,4294970667,4294970704,4294970715,4294970668,4294970669,4294970670,4294970671,4294969861,4294970672,4294970673,4294970674,4294970705,4294970706,4294970707,4294970708,4294969863,4294970709,4294969864,4294969865,4294970886,4294970887,4294970889,4294970888,4294969099,4294970710,4294970711,4294970712,4294970713,4294969866,4294969100,4294970675,4294970676,4294969101,4294971401,4294967562,4294970677,4294969867,4294968071,4294968072,4294970714,4294968328,4294968585,4294970678,4294970679,4294970680,4294970681,4294968586,4294970682,4294970683,4294970684,4294968838,4294968839,4294969102,4294969868,4294968840,4294969103,4294968587,4294970685,4294970686,4294970687,4294968329,4294970688,4294969115,4294970693,4294970694,4294969869,4294970689,4294970690,4294967564,4294968588,4294970691,4294967569,4294969104,4294969601,4294969602,4294969603,4294969604,4294969605,4294969606,4294969607,4294969608,4294971137,4294971138,4294969870,4294970692,4294968842,4294970695,4294967566,4294967567,4294967568,4294970697,4294971649,4294971650,4294971651,4294971652,4294971653,4294971654,4294971655,4294970698,4294971656,4294971657,4294971658,4294971659,4294971660,4294971661,4294971662,4294971663,4294971664,4294971665,4294971666,4294971667,4294970699,4294971668,4294971669,4294971670,4294971671,4294971672,4294971673,4294971674,4294971675,4294967305,4294970696,4294968330,4294967297,4294970700,4294971403,4294968843,4294970701,4294969116,4294969117,4294968589,4294968590,4294970702],t.eL)
 B.IZ={alias:0,allScroll:1,basic:2,cell:3,click:4,contextMenu:5,copy:6,forbidden:7,grab:8,grabbing:9,help:10,move:11,none:12,noDrop:13,precise:14,progress:15,text:16,resizeColumn:17,resizeDown:18,resizeDownLeft:19,resizeDownRight:20,resizeLeft:21,resizeLeftRight:22,resizeRight:23,resizeRow:24,resizeUp:25,resizeUpDown:26,resizeUpLeft:27,resizeUpRight:28,resizeUpLeftDownRight:29,resizeUpRightDownLeft:30,verticalText:31,wait:32,zoomIn:33,zoomOut:34}
 B.In=new A.bM(B.IZ,["alias","all-scroll","default","cell","pointer","context-menu","copy","not-allowed","grab","grabbing","help","move","none","no-drop","crosshair","progress","text","col-resize","s-resize","sw-resize","se-resize","w-resize","ew-resize","e-resize","row-resize","n-resize","ns-resize","nw-resize","ne-resize","nwse-resize","nesw-resize","vertical-text","wait","zoom-in","zoom-out"],t.li)
 B.MG=new A.a6(B.aP,!1,!1,!1,!1,B.n)
 B.Md=new A.a6(B.aP,!1,!0,!1,!1,B.n)
-B.Mc=new A.a6(B.aG,!1,!1,!1,!1,B.n)
-B.M1=new A.a6(B.aG,!1,!0,!1,!1,B.n)
+B.Mc=new A.a6(B.aF,!1,!1,!1,!1,B.n)
+B.M1=new A.a6(B.aF,!1,!0,!1,!1,B.n)
 B.Mx=new A.a6(B.aP,!1,!0,!0,!1,B.n)
 B.Mo=new A.a6(B.aP,!1,!1,!0,!1,B.n)
-B.ML=new A.a6(B.aG,!1,!0,!0,!1,B.n)
-B.MB=new A.a6(B.aG,!1,!1,!0,!1,B.n)
+B.ML=new A.a6(B.aF,!1,!0,!0,!1,B.n)
+B.MB=new A.a6(B.aF,!1,!1,!0,!1,B.n)
 B.tN=new A.dm([B.MG,B.q,B.Md,B.q,B.Mc,B.q,B.M1,B.q,B.Mx,B.q,B.Mo,B.q,B.ML,B.q,B.MB,B.q],t.Fp)
 B.J0={type:0}
 B.Io=new A.bM(B.J0,["line"],t.li)
 B.br={}
 B.tR=new A.bM(B.br,[],A.ag("bM<G,av2>"))
 B.hq=new A.bM(B.br,[],A.ag("bM<tf,aK>"))
-B.tO=new A.bM(B.br,[],A.ag("bM<o,L<o>>"))
+B.tO=new A.bM(B.br,[],A.ag("bM<o,M<o>>"))
 B.hp=new A.bM(B.br,[],t.li)
 B.kx=new A.bM(B.br,[],A.ag("bM<o,@>"))
 B.tS=new A.bM(B.br,[],A.ag("bM<A7,@>"))
 B.Ip=new A.bM(B.br,[],A.ag("bM<hd,cC>"))
 B.tP=new A.bM(B.br,[],A.ag("bM<hd,oa<cC>>"))
-B.tQ=new A.bM(B.br,[],A.ag("bM<fU<fw>?,L<er>>"))
+B.tQ=new A.bM(B.br,[],A.ag("bM<fU<fw>?,M<er>>"))
 B.Ff=s([42,null,null,8589935146],t.Z)
 B.Fg=s([43,null,null,8589935147],t.Z)
 B.Fh=s([45,null,null,8589935149],t.Z)
@@ -83855,7 +83854,7 @@ B.G3=s([8589934854,8589934854,8589934855,null],t.Z)
 B.Fb=s([4294968071,null,null,8589935155],t.Z)
 B.Fc=s([4294968072,null,null,8589935161],t.Z)
 B.G4=s([8589934850,8589934850,8589934851,null],t.Z)
-B.tT=new A.dm(["*",B.Ff,"+",B.Fg,"-",B.Fh,".",B.Fi,"/",B.Fj,"0",B.Fk,"1",B.Fl,"2",B.Fn,"3",B.Fo,"4",B.Fp,"5",B.Fq,"6",B.Fr,"7",B.Fs,"8",B.Ft,"9",B.Fv,"Alt",B.G1,"AltGraph",B.F4,"ArrowDown",B.F5,"ArrowLeft",B.F6,"ArrowRight",B.F7,"ArrowUp",B.F8,"Clear",B.Fd,"Control",B.G2,"Delete",B.F3,"End",B.F9,"Enter",B.F2,"Home",B.Fa,"Insert",B.Fe,"Meta",B.G3,"PageDown",B.Fb,"PageUp",B.Fc,"Shift",B.G4],A.ag("dm<o,L<n?>>"))
+B.tT=new A.dm(["*",B.Ff,"+",B.Fg,"-",B.Fh,".",B.Fi,"/",B.Fj,"0",B.Fk,"1",B.Fl,"2",B.Fn,"3",B.Fo,"4",B.Fp,"5",B.Fq,"6",B.Fr,"7",B.Fs,"8",B.Ft,"9",B.Fv,"Alt",B.G1,"AltGraph",B.F4,"ArrowDown",B.F5,"ArrowLeft",B.F6,"ArrowRight",B.F7,"ArrowUp",B.F8,"Clear",B.Fd,"Control",B.G2,"Delete",B.F3,"End",B.F9,"Enter",B.F2,"Home",B.Fa,"Insert",B.Fe,"Meta",B.G3,"PageDown",B.Fb,"PageUp",B.Fc,"Shift",B.G4],A.ag("dm<o,M<n?>>"))
 B.Fu=s([B.o0,null,null,B.tH],t.L)
 B.Gv=s([B.tt,null,null,B.tI],t.L)
 B.FN=s([B.tu,null,null,B.tJ],t.L)
@@ -83879,7 +83878,7 @@ B.FU=s([B.by,null,null,B.cR],t.L)
 B.GH=s([B.bO,null,null,B.cS],t.L)
 B.GB=s([B.kl,null,null,B.kt],t.L)
 B.FB=s([B.eC,B.eC,B.hl,null],t.L)
-B.Gc=s([B.aG,null,null,B.cO],t.L)
+B.Gc=s([B.aF,null,null,B.cO],t.L)
 B.FV=s([B.cL,null,null,B.eF],t.L)
 B.Fx=s([B.hh,null,null,B.kr],t.L)
 B.FW=s([B.cM,null,null,B.eH],t.L)
@@ -83888,7 +83887,7 @@ B.FC=s([B.eE,B.eE,B.hn,null],t.L)
 B.FX=s([B.eA,null,null,B.eG],t.L)
 B.Gg=s([B.eB,null,null,B.eI],t.L)
 B.FD=s([B.cp,B.cp,B.cN,null],t.L)
-B.Iq=new A.dm(["*",B.Fu,"+",B.Gv,"-",B.FN,".",B.G5,"/",B.EZ,"0",B.GF,"1",B.GE,"2",B.Fz,"3",B.GI,"4",B.GD,"5",B.Fy,"6",B.F0,"7",B.FG,"8",B.Gw,"9",B.Gy,"Alt",B.FA,"AltGraph",B.GG,"ArrowDown",B.FS,"ArrowLeft",B.FT,"ArrowRight",B.FU,"ArrowUp",B.GH,"Clear",B.GB,"Control",B.FB,"Delete",B.Gc,"End",B.FV,"Enter",B.Fx,"Home",B.FW,"Insert",B.GC,"Meta",B.FC,"PageDown",B.FX,"PageUp",B.Gg,"Shift",B.FD],A.ag("dm<o,L<e?>>"))
+B.Iq=new A.dm(["*",B.Fu,"+",B.Gv,"-",B.FN,".",B.G5,"/",B.EZ,"0",B.GF,"1",B.GE,"2",B.Fz,"3",B.GI,"4",B.GD,"5",B.Fy,"6",B.F0,"7",B.FG,"8",B.Gw,"9",B.Gy,"Alt",B.FA,"AltGraph",B.GG,"ArrowDown",B.FS,"ArrowLeft",B.FT,"ArrowRight",B.FU,"ArrowUp",B.GH,"Clear",B.GB,"Control",B.FB,"Delete",B.Gc,"End",B.FV,"Enter",B.Fx,"Home",B.FW,"Insert",B.GC,"Meta",B.FC,"PageDown",B.FX,"PageUp",B.Gg,"Shift",B.FD],A.ag("dm<o,M<e?>>"))
 B.IX={KeyA:0,KeyB:1,KeyC:2,KeyD:3,KeyE:4,KeyF:5,KeyG:6,KeyH:7,KeyI:8,KeyJ:9,KeyK:10,KeyL:11,KeyM:12,KeyN:13,KeyO:14,KeyP:15,KeyQ:16,KeyR:17,KeyS:18,KeyT:19,KeyU:20,KeyV:21,KeyW:22,KeyX:23,KeyY:24,KeyZ:25,Digit1:26,Digit2:27,Digit3:28,Digit4:29,Digit5:30,Digit6:31,Digit7:32,Digit8:33,Digit9:34,Digit0:35,Minus:36,Equal:37,BracketLeft:38,BracketRight:39,Backslash:40,Semicolon:41,Quote:42,Backquote:43,Comma:44,Period:45,Slash:46}
 B.tU=new A.bM(B.IX,["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","1","2","3","4","5","6","7","8","9","0","-","=","[","]","\\",";","'","`",",",".","/"],t.li)
 B.IU={Abort:0,Again:1,AltLeft:2,AltRight:3,ArrowDown:4,ArrowLeft:5,ArrowRight:6,ArrowUp:7,AudioVolumeDown:8,AudioVolumeMute:9,AudioVolumeUp:10,Backquote:11,Backslash:12,Backspace:13,BracketLeft:14,BracketRight:15,BrightnessDown:16,BrightnessUp:17,BrowserBack:18,BrowserFavorites:19,BrowserForward:20,BrowserHome:21,BrowserRefresh:22,BrowserSearch:23,BrowserStop:24,CapsLock:25,Comma:26,ContextMenu:27,ControlLeft:28,ControlRight:29,Convert:30,Copy:31,Cut:32,Delete:33,Digit0:34,Digit1:35,Digit2:36,Digit3:37,Digit4:38,Digit5:39,Digit6:40,Digit7:41,Digit8:42,Digit9:43,DisplayToggleIntExt:44,Eject:45,End:46,Enter:47,Equal:48,Escape:49,Esc:50,F1:51,F10:52,F11:53,F12:54,F13:55,F14:56,F15:57,F16:58,F17:59,F18:60,F19:61,F2:62,F20:63,F21:64,F22:65,F23:66,F24:67,F3:68,F4:69,F5:70,F6:71,F7:72,F8:73,F9:74,Find:75,Fn:76,FnLock:77,GameButton1:78,GameButton10:79,GameButton11:80,GameButton12:81,GameButton13:82,GameButton14:83,GameButton15:84,GameButton16:85,GameButton2:86,GameButton3:87,GameButton4:88,GameButton5:89,GameButton6:90,GameButton7:91,GameButton8:92,GameButton9:93,GameButtonA:94,GameButtonB:95,GameButtonC:96,GameButtonLeft1:97,GameButtonLeft2:98,GameButtonMode:99,GameButtonRight1:100,GameButtonRight2:101,GameButtonSelect:102,GameButtonStart:103,GameButtonThumbLeft:104,GameButtonThumbRight:105,GameButtonX:106,GameButtonY:107,GameButtonZ:108,Help:109,Home:110,Hyper:111,Insert:112,IntlBackslash:113,IntlRo:114,IntlYen:115,KanaMode:116,KeyA:117,KeyB:118,KeyC:119,KeyD:120,KeyE:121,KeyF:122,KeyG:123,KeyH:124,KeyI:125,KeyJ:126,KeyK:127,KeyL:128,KeyM:129,KeyN:130,KeyO:131,KeyP:132,KeyQ:133,KeyR:134,KeyS:135,KeyT:136,KeyU:137,KeyV:138,KeyW:139,KeyX:140,KeyY:141,KeyZ:142,KeyboardLayoutSelect:143,Lang1:144,Lang2:145,Lang3:146,Lang4:147,Lang5:148,LaunchApp1:149,LaunchApp2:150,LaunchAssistant:151,LaunchControlPanel:152,LaunchMail:153,LaunchScreenSaver:154,MailForward:155,MailReply:156,MailSend:157,MediaFastForward:158,MediaPause:159,MediaPlay:160,MediaPlayPause:161,MediaRecord:162,MediaRewind:163,MediaSelect:164,MediaStop:165,MediaTrackNext:166,MediaTrackPrevious:167,MetaLeft:168,MetaRight:169,MicrophoneMuteToggle:170,Minus:171,NonConvert:172,NumLock:173,Numpad0:174,Numpad1:175,Numpad2:176,Numpad3:177,Numpad4:178,Numpad5:179,Numpad6:180,Numpad7:181,Numpad8:182,Numpad9:183,NumpadAdd:184,NumpadBackspace:185,NumpadClear:186,NumpadClearEntry:187,NumpadComma:188,NumpadDecimal:189,NumpadDivide:190,NumpadEnter:191,NumpadEqual:192,NumpadMemoryAdd:193,NumpadMemoryClear:194,NumpadMemoryRecall:195,NumpadMemoryStore:196,NumpadMemorySubtract:197,NumpadMultiply:198,NumpadParenLeft:199,NumpadParenRight:200,NumpadSubtract:201,Open:202,PageDown:203,PageUp:204,Paste:205,Pause:206,Period:207,Power:208,PrintScreen:209,PrivacyScreenToggle:210,Props:211,Quote:212,Resume:213,ScrollLock:214,Select:215,SelectTask:216,Semicolon:217,ShiftLeft:218,ShiftRight:219,ShowAllWindows:220,Slash:221,Sleep:222,Space:223,Super:224,Suspend:225,Tab:226,Turbo:227,Undo:228,WakeUp:229,ZoomToggle:230}
@@ -84240,7 +84239,7 @@ B.u2=new A.h4("flutter/textinput",B.e_)
 B.u3=new A.h4("flutter/menu",B.cC)
 B.Jx=new A.h4("flutter/mousecursor",B.cC)
 B.Jy=new A.h4("flutter/processtext",B.cC)
-B.aH=new A.h4("flutter/platform",B.e_)
+B.aG=new A.h4("flutter/platform",B.e_)
 B.Jz=new A.h4("flutter/backgesture",B.cC)
 B.hw=new A.h4("flutter/navigation",B.e_)
 B.JA=new A.h4("flutter/undomanager",B.e_)
@@ -84270,7 +84269,7 @@ B.cW=new A.kk(3,"hover")
 B.Kn=new A.kk(4,"down")
 B.hA=new A.kk(5,"move")
 B.xD=new A.kk(6,"up")
-B.an=new A.j6(0,"touch")
+B.am=new A.j6(0,"touch")
 B.bs=new A.j6(1,"mouse")
 B.aQ=new A.j6(2,"stylus")
 B.bR=new A.j6(3,"invertedStylus")
@@ -84351,7 +84350,7 @@ B.Lm=new A.zo(null,null,null,null,null,null,null,null,null,null,null)
 B.Ln=new A.zp(null,null,null,null,null,null,null,null,null,null,null,null)
 B.Lo=new A.zq(null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Lp=new A.zs(null,null)
-B.au=new A.hF(0,"tap")
+B.at=new A.hF(0,"tap")
 B.xS=new A.hF(1,"doubleTap")
 B.aZ=new A.hF(2,"longPress")
 B.eS=new A.hF(3,"forcePress")
@@ -84418,7 +84417,7 @@ B.IS={serif:0,"sans-serif":1,monospace:2,cursive:3,fantasy:4,"system-ui":5,math:
 B.LP=new A.eP(B.IS,9,t.fF)
 B.IR={"canvaskit.js":0}
 B.LQ=new A.eP(B.IR,1,t.fF)
-B.LR=new A.e7([B.bR,B.aQ,B.an,B.bc,B.aY],t.Lu)
+B.LR=new A.e7([B.bR,B.aQ,B.am,B.bc,B.aY],t.Lu)
 B.J_={click:0,keyup:1,keydown:2,mouseup:3,mousedown:4,pointerdown:5,pointerup:6}
 B.LS=new A.eP(B.J_,7,t.fF)
 B.LT=new A.e7([B.af,B.G,B.bt],A.ag("e7<f2>"))
@@ -84435,7 +84434,7 @@ B.LY=new A.eP(B.IT,6,t.fF)
 B.LK=new A.ky(8,"row")
 B.LJ=new A.ky(1,"tab")
 B.LZ=new A.e7([B.LK,B.LJ],A.ag("e7<ky>"))
-B.y9=new A.e7([B.an,B.aQ,B.bR,B.aY,B.bc],t.Lu)
+B.y9=new A.e7([B.am,B.aQ,B.bR,B.aY,B.bc],t.Lu)
 B.Cn=new A.A(0.23529411764705882,0,0,0,B.f)
 B.J5=new A.h(0,4)
 B.Ai=new A.dz(0.5,B.dX,B.Cn,B.J5,10)
@@ -84525,7 +84524,7 @@ B.MW=new A.H(80,47.5)
 B.yy=new A.H(-1,1)
 B.yz=new A.H(-1,-1)
 B.MX=new A.H(77.37,37.9)
-B.ao=new A.cQ(0,0,null,null)
+B.an=new A.cQ(0,0,null,null)
 B.yA=new A.cQ(12,null,null,null)
 B.MZ=new A.cQ(14,null,null,null)
 B.N_=new A.cQ(16,null,null,null)
@@ -84637,7 +84636,7 @@ B.NW=new A.kD(6,null,null)
 B.x=new A.LJ(1,"even")
 B.Vu=new A.LK(null,!0)
 B.NX=new A.tA(1,"fade")
-B.aJ=new A.tA(2,"ellipsis")
+B.aI=new A.tA(2,"ellipsis")
 B.NY=new A.tA(3,"visible")
 B.f3=new A.a9(0,B.j)
 B.NZ=new A.Aw(null,null,null)
@@ -85135,10 +85134,10 @@ B.d5=new A.mK(0,"pressed")
 B.dU=new A.mK(1,"hover")
 B.zu=new A.mK(2,"focus")
 B.aW=new A.pT(0,"minWidth")
-B.aL=new A.pT(1,"maxWidth")
+B.aK=new A.pT(1,"maxWidth")
 B.b0=new A.pT(2,"minHeight")
 B.bh=new A.pT(3,"maxHeight")
-B.aM=new A.hj(1)
+B.aL=new A.hj(1)
 B.fb=new A.di(0,"size")
 B.zv=new A.di(1,"width")
 B.Uq=new A.di(11,"viewPadding")
@@ -85212,8 +85211,8 @@ B.lK=new A.fI(7,"bottomNavigationBar")
 B.iv=new A.fI(8,"floatingActionButton")
 B.lL=new A.fI(9,"drawer")
 B.MQ=new A.H(100,0)
-B.V2=new A.kW(B.MQ,B.ao,B.dH,null,null)
-B.V3=new A.kW(B.J,B.ao,B.dH,null,null)
+B.V2=new A.kW(B.MQ,B.an,B.dH,null,null)
+B.V3=new A.kW(B.J,B.an,B.dH,null,null)
 B.lM=new A.Sw(0,"trailing")
 B.zC=new A.Sw(1,"leading")
 B.lN=new A.uK(0,"idle")
@@ -85273,12 +85272,12 @@ $.ax7=null
 $.amd=null
 $.amt=null
 $.apT=null
-$.ai_=A.b([],A.ag("w<L<G>?>"))
+$.ai_=A.b([],A.ag("w<M<G>?>"))
 $.uU=null
 $.Fd=null
 $.Fe=null
 $.apz=!1
-$.an=B.az
+$.an=B.ay
 $.avZ=A.q(t.N,A.ag("ah<mk>(o,aO<o,o>)"))
 $.awd=A.q(t.C_,t.lT)
 $.h9=null
@@ -85446,7 +85445,7 @@ p.N9()
 return p})
 s($,"aOq","an2",()=>new A.alB().$0())
 s($,"aLt","Fp",()=>A.aKf("_$dart_dartClosure"))
-s($,"aPE","azM",()=>B.az.fv(new A.amB()))
+s($,"aPE","azM",()=>B.ay.fv(new A.amB()))
 s($,"aOX","azn",()=>A.b([new J.Iw()],A.ag("w<zc>")))
 s($,"aNl","ayf",()=>A.kG(A.abU({
 toString:function(){return"$receiver$"}})))
@@ -85481,7 +85480,7 @@ s($,"aO0","ayI",()=>typeof URLSearchParams=="function")
 s($,"aOp","dL",()=>A.ni(B.SS))
 s($,"aNf","FB",()=>{A.aE7()
 return $.a6f})
-s($,"aLL","dk",()=>A.aAq(B.IL.gbS(A.aDs(A.n6(A.b([1],t.t))))).getInt8(0)===1?B.aw:B.m2)
+s($,"aLL","dk",()=>A.aAq(B.IL.gbS(A.aDs(A.n6(A.b([1],t.t))))).getInt8(0)===1?B.av:B.m2)
 s($,"aPp","Ve",()=>new A.WD(A.q(t.N,A.ag("kN"))))
 s($,"aNZ","ayG",()=>new A.akD())
 s($,"aNR","ayA",()=>new A.ahF(50,A.q(A.ag("CO"),t.ke)))
@@ -85489,254 +85488,260 @@ s($,"aLo","aqa",()=>new A.Wd())
 r($,"aPm","bc",()=>$.aqa())
 r($,"aOU","an4",()=>{A.aFt()
 return B.AC})
-s($,"aPL","aqF",()=>{var q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,c0,c1,c2,c3,c4,c5,c6="Revelador de Assombra\xe7\xe3o",c7="NENHUM",c8="Os her\xf3is n\xe3o t\xeam etapas de configura\xe7\xe3o adicionais.",c9="O jogador \xe0 esquerda do traidor jogar\xe1 o primeiro turno ap\xf3s a prepara\xe7\xe3o.",d0="Quando o traidor morre",d1=null,d2="Traidor Oculto",d3="Amaldi\xe7oado!",d4="Anel",d5="Cada jogador ent\xe3o olha para seu token, sem revel\xe1-lo a mais ningu\xe9m. O jogador com o token marcado como 1 \xe9 o traidor.",d6="O jogador \xe0 esquerda do revelador da assombra\xe7\xe3o far\xe1 o primeiro turno ap\xf3s a prepara\xe7\xe3o.",d7='O traidor come\xe7a essa assombra\xe7\xe3o escondido do resto dos exploradores. \u2022 O jogador que tem o token rotulado "1" \xe9 o traidor. Os jogadores podem olhar seus pr\xf3prios tokens a qualquer momento. \u2022 Voc\xea n\xe3o pode revelar seus tokens num\xe9ricos para outros jogadores, a menos que seja instru\xeddo, mas pode alegar ter qualquer n\xfamero(s). \u2022 Todos os exploradores podem atacar outros exploradores. \u2022 Custa dois movimentos para deixar um ladrilho ocupado por outro explorador. Ap\xf3s o traidor ser revelado, os her\xf3is n\xe3o agem mais como obst\xe1culos uns aos outros. (Eles ainda agir\xe3o como obst\xe1culos para o traidor.)',d8="Se voc\xea \xe9 o traidor",d9="Coloque o Monster Card \xe0 esquerda do haunt revealed. Os monstros ter\xe3o seu turno depois daquele jogador.",e0="No final do seu turno",e1="Se voc\xea morrer",e2="Nenhum traidor",e3="No final da volta do monstro",e4="Um convite misterioso",e5="Punhal",e6="Cachorro",e7="Um Estranho Desaparecimento",e8="S\xedmbolo Sagrado",e9="Investigadores Paranormais",f0="Livro",f1="Esquerda do Revelador da Assombra\xe7\xe3o",f2="\xc0 venda",f3="Cr\xe2nio",f4="\xcddolo",f5="Defina a trilha num\xe9rica para{2/3/4/5}.",f6="M\xe1scara",f7="Armadura",f8="Quando voc\xea ataca o traidor",f9="Quando voc\xea ataca o traidor com Might",g0="Tentar uma fuga",g1="No final do turno do monstro",g2=t.s,g3=A.b([c8,c9],g2),g4=t.N8,g5=A.b([A.P("Se voc\xea tiver uma ficha de Conhecimento de Jack, adicione 2 ao resultado da sua jogada.","Quando voc\xea ataca o traidor ou \xe9 atacado pelo Esp\xedrito de Jack"),A.P("O traidor colocar\xe1 uma ficha de monstro grande no ladrilho com um s\xedmbolo de press\xe1gio que estiver mais distante do cad\xe1ver. Este \xe9 o esp\xedrito de Jack.",d0)],g4),g6=t.kw
+s($,"aPL","aqF",()=>{var q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,c0,c1,c2,c3,c4,c5,c6="Revelador de Assombra\xe7\xe3o",c7="NENHUM",c8="Os her\xf3is n\xe3o t\xeam etapas de configura\xe7\xe3o adicionais.",c9="O jogador \xe0 esquerda do traidor jogar\xe1 o primeiro turno ap\xf3s a prepara\xe7\xe3o.",d0="Quando o traidor morre",d1=null,d2="Traidor Oculto",d3="Amaldi\xe7oado!",d4="Anel",d5="Cada jogador ent\xe3o olha para seu token, sem revel\xe1-lo a mais ningu\xe9m. O jogador com o token marcado como 1 \xe9 o traidor.",d6="O jogador \xe0 esquerda do revelador da assombra\xe7\xe3o far\xe1 o primeiro turno ap\xf3s a prepara\xe7\xe3o.",d7='O traidor come\xe7a essa assombra\xe7\xe3o escondido do resto dos exploradores. \u2022 O jogador que tem o token rotulado "1" \xe9 o traidor. Os jogadores podem olhar seus pr\xf3prios tokens a qualquer momento. \u2022 Voc\xea n\xe3o pode revelar seus tokens num\xe9ricos para outros jogadores, a menos que seja instru\xeddo, mas pode alegar ter qualquer n\xfamero(s). \u2022 Todos os exploradores podem atacar outros exploradores. \u2022 Custa dois movimentos para deixar um ladrilho ocupado por outro explorador. Ap\xf3s o traidor ser revelado, os her\xf3is n\xe3o agem mais como obst\xe1culos uns aos outros. (Eles ainda agir\xe3o como obst\xe1culos para o traidor.)',d8="Se voc\xea \xe9 o traidor",d9="Coloque o Monster Card \xe0 esquerda do haunt revealed. Os monstros ter\xe3o seu turno depois daquele jogador.",e0="No final do seu turno",e1="Se voc\xea morrer",e2="Nenhum traidor",e3="No final da volta do monstro",e4="No final do turno do monstro",e5="Um convite misterioso",e6="Punhal",e7="Cachorro",e8="Um Estranho Desaparecimento",e9="S\xedmbolo Sagrado",f0="Livro",f1="Investigadores Paranormais",f2="Esquerda do Revelador da Assombra\xe7\xe3o",f3="\xc0 venda",f4="Cr\xe2nio",f5="\xcddolo",f6="Defina a trilha num\xe9rica para{2/3/4/5}.",f7="M\xe1scara",f8="Armadura",f9="Quando voc\xea ataca o traidor",g0="Outra Dimens\xe3o",g1="Tentar uma fuga",g2=t.s,g3=A.b([c8,c9],g2),g4=t.N8,g5=A.b([A.L("Se voc\xea tiver uma ficha de Conhecimento de Jack, adicione 2 ao resultado da sua jogada.","Quando voc\xea ataca o traidor ou \xe9 atacado pelo Esp\xedrito de Jack"),A.L("O traidor colocar\xe1 uma ficha de monstro grande no ladrilho com um s\xedmbolo de press\xe1gio que estiver mais distante do cad\xe1ver. Este \xe9 o esp\xedrito de Jack.",d0)],g4),g6=t.kw
 g5=A.ai(B.m,"Com um clar\xe3o de luz, uma baforada de fuma\xe7a e um sopro de enxofre, o Esp\xedrito de Jack desaparece. Essa \xe9 a \xfaltima vez que voc\xea o ver\xe1... voc\xea espera.",d1,'Seus pais costumavam usar Crimson Jack como um conto de advert\xeancia. "N\xe3o fique fora at\xe9 muito tarde", eles diziam, "ou Crimson Jack vai te pegar!" Enquanto voc\xea conta sobre os atos malignos do serial killer, um sorriso anormal surge nos l\xe1bios do seu amigo e um arrepio percorre sua espinha. Seu companheiro, ao que parece, estava fora depois do anoitecer... .',B.w,1,"Voc\xea vence quando exorciza o esp\xedrito de Jack \u2022 Mate o traidor para libertar o Esp\xedrito de Jack. \u2022 Exorcizar Jack.","\u201cUm toque de carmesim\u201d",u.G,c7,g3,A.b([A.Y("Enquanto estiver na Biblioteca, fa\xe7a um teste de Conhecimento. 5+ D\xea uma ficha de Conhecimento de Jack a um her\xf3i que ainda n\xe3o tenha uma. 0\u20134Nada acontece.","Aprenda sobre Jack"),A.Y("Enquanto estiver em uma pe\xe7a com um s\xedmbolo de Evento, fa\xe7a um teste de Conhecimento. 5+ Coloque uma ficha de C\xedrculo de Exorcismo na sua pe\xe7a ou mova uma para l\xe1 se ambas estiverem no tabuleiro. 0\u20134Sofra 2 de dano Mental.","Estude o Exorcismo"),A.Y("Enquanto estiver no mesmo ladrilho que o Esp\xedrito de Jack, fa\xe7a um teste de Sanidade. Para cada ficha de C\xedrculo de Exorcismo na sua regi\xe3o, adicione 1 ao resultado da sua jogada. 7+ Voc\xea venceu! Voc\xea exorciza o esp\xedrito de Jack. 0\u20136Cada her\xf3i sofre 1 de dano F\xedsico.Jack n\xe3o vai desistir facilmente.","Exorcizar o esp\xedrito de Jack")],g6),g5,u.L,c6)
 g3=A.b(["Encontre os tokens num\xe9ricos rotulados de 1 a{3/4/5/6}e embaralhe-as, viradas para baixo. D\xea uma para cada jogador.",d5,"Defina a trilha num\xe9rica para{6/5/4/3}.",d6],g2)
-q=A.b([A.P(d7,d2),A.P("Mova a Trilha Num\xe9rica para baixo em 1. Ent\xe3o, cada her\xf3i pode retornar a uma pe\xe7a de Aterrissagem; qualquer her\xf3i que n\xe3o o fizer sofre 2 de dano Mental.",u.d),A.P("\u2022 Voc\xea pode revelar seu token de n\xfamero antes que algu\xe9m consiga Destruir o Anel! Se voc\xea fizer isso, retorne todos os her\xf3is para qualquer Landing tile de sua escolha. O her\xf3i que iria tentar Destruir o Anel! falha como resultado. \u2022 Quando voc\xea se revelar o traidor, cure todos os seus tra\xe7os e ganhe 1 de For\xe7a. \u2022 Se voc\xea se revelou, voc\xea n\xe3o sofre dano se n\xe3o retornar a uma pe\xe7a de Aterrissagem no final do turno do revelador da assombra\xe7\xe3o.",d8)],g4)
+q=A.b([A.L(d7,d2),A.L("Mova a Trilha Num\xe9rica para baixo em 1. Ent\xe3o, cada her\xf3i pode retornar a uma pe\xe7a de Aterrissagem; qualquer her\xf3i que n\xe3o o fizer sofre 2 de dano Mental.",u.d),A.L("\u2022 Voc\xea pode revelar seu token de n\xfamero antes que algu\xe9m consiga Destruir o Anel! Se voc\xea fizer isso, retorne todos os her\xf3is para qualquer Landing tile de sua escolha. O her\xf3i que iria tentar Destruir o Anel! falha como resultado. \u2022 Quando voc\xea se revelar o traidor, cure todos os seus tra\xe7os e ganhe 1 de For\xe7a. \u2022 Se voc\xea se revelou, voc\xea n\xe3o sofre dano se n\xe3o retornar a uma pe\xe7a de Aterrissagem no final do turno do revelador da assombra\xe7\xe3o.",d8)],g4)
 q=A.ai(B.cm,"Durante todo esse tempo voc\xea achou estranho que seu amigo estivesse t\xe3o quieto ultimamente. Voc\xea imaginou que ele estava apenas um pouco bravo com algo que voc\xea disse, mas voc\xea n\xe3o achou que ele ficaria bravo o suficiente para prend\xea-lo em um loop temporal s\xf3 para que ele pudesse mat\xe1-lo repetidamente. Voc\xea pode ter perdido um amigo, mas depois de destruir o anel, o tempo pode finalmente avan\xe7ar novamente.",'Voc\xea descobriu que podia controlar o tempo com o anel. Por sorte, seus "amigos" irritantes n\xe3o perceberam que voc\xea \xe9 quem criou o loop temporal. Eles n\xe3o sabiam que essa n\xe3o era a primeira vez que voc\xea os assassinava... e agora eles nunca saber\xe3o.',"Na semana passada, voc\xea viveu o mesmo dia repetidamente. Voc\xea n\xe3o tem ideia do que est\xe1 acontecendo, ou por qu\xea, mas hoje voc\xea foi levado a esta casa, a esta sala, onde voc\xea descobre um anel gravado com s\xedmbolos estranhos. Quando voc\xea o coloca em seu dedo, de repente voc\xea se sente diferente, como se pudesse sair momentaneamente do loop temporal. Voc\xea sabe que deve dissipar esta maldi\xe7\xe3o e sair do loop antes que o dia reinicie novamente... mas algo lhe diz que um de seus amigos n\xe3o quer que isso aconte\xe7a.",B.w,2,"Os her\xf3is vencem quando o Anel \xe9 destru\xeddo OU quando o traidor est\xe1 morto. O traidor vence quando todos os her\xf3is estiverem mortos, OU quando a Trilha Num\xe9rica estiver em 0.",d4,"N\xfamero de trilha\nFichas num\xe9ricas\nAzulejos com Perturba\xe7\xf5es Temporais:\nSala do P\xe2nico \u2013Por\xe3o\nSala da Fornalha \u2013Por\xe3o\nSal\xe3o de Baile \u2013T\xe9rreo\nSala de Cirurgia \u2013Cave/Piso Superior\nSala de Lixo \u2013T\xe9rreo/Piso Superior",d3,g3,A.b([A.Y("Enquanto segura o Anel, voc\xea pode fazer um teste de Velocidade ou Conhecimento. Adicione 1 ao resultado do seu teste para cada her\xf3i em um azulejo com perturba\xe7\xe3o temporal. 7+ Se o traidor estiver morto, voc\xea venceu! Se o traidor n\xe3o estiver morto, ele deve se revelar agora. O Anel foi destru\xeddo! 0\u20136 Receba 6 de dano Geral. Coloque seu explorador em qualquer pe\xe7a de Aterrissagem. O que deu errado?","Destrua o Anel!")],g6),q,"AMIGOS PARA SEMPRE",d2)
 g3=A.b(["Encontre tr\xeas fichas de N\xfamero para cada jogador. Elas representam a Doen\xe7a. Em jogos com 3\u20135 jogadores, deve haver um token \u201c1\u201d. Em um jogo de 6 jogadores, deve haver dois tokens \u201c1\u201d.","Embaralhe as fichas de Doen\xe7a viradas para baixo e d\xea tr\xeas para cada jogador.",d9,d6],g2)
-p=A.b([A.P('O(s) traidor(es) come\xe7am esta assombra\xe7\xe3o escondidos do resto dos exploradores. \u2022 Todos os exploradores podem atacar outros exploradores. \u2022 Custa dois movimentos para deixar uma pe\xe7a ocupada por outro explorador. \u2022 Qualquer jogador que tenha (ou teve) uma ficha de Doen\xe7a marcada como "1" \xe9 um traidor. Os jogadores podem olhar suas pr\xf3prias fichas a qualquer momento. Voc\xea ainda \xe9 um traidor mesmo que n\xe3o tenha mais uma ficha marcada como "1". \u2022 Voc\xea n\xe3o pode revelar seus tokens num\xe9ricos para outros jogadores, mas pode alegar ter qualquer n\xfamero(s).',d2),A.P('\u2022 Se voc\xea estiver em um ladrilho com outro explorador, troque um de seus marcadores de Doen\xe7a aleatoriamente com eles. Se v\xe1rios exploradores estiverem em seu ladrilho, troque marcadores com cada um deles, um de cada vez. Um explorador que receber um marcador de Doen\xe7a rotulado como "1" a qualquer momento se torna permanentemente um traidor (mesmo que perca esse marcador mais tarde). \u2022 Se voc\xea n\xe3o trocou fichas de Doen\xe7a neste turno (seja por "Impulsos de controle" ou terminando seu turno em uma pe\xe7a com outro explorador), receba dois dados de dano Geral. \u2022 Se isso te matar e voc\xea for um traidor, enterre seus Itens e Press\xe1gios. Substitua seu explorador por um marcador de Monstro Pequeno \u2014 agora voc\xea \xe9 um dos Feverish. A poeira quer se espalhar.',e0),A.P("N\xe3o revele os n\xfameros em seus marcadores de Doen\xe7a. Eles devem permanecer escondidos dos outros jogadores. Se o seu explorador morreu, jogue como um dos Feverish durante o turno do monstro.",e1)],g4)
+p=A.b([A.L('O(s) traidor(es) come\xe7am esta assombra\xe7\xe3o escondidos do resto dos exploradores. \u2022 Todos os exploradores podem atacar outros exploradores. \u2022 Custa dois movimentos para deixar uma pe\xe7a ocupada por outro explorador. \u2022 Qualquer jogador que tenha (ou teve) uma ficha de Doen\xe7a marcada como "1" \xe9 um traidor. Os jogadores podem olhar suas pr\xf3prias fichas a qualquer momento. Voc\xea ainda \xe9 um traidor mesmo que n\xe3o tenha mais uma ficha marcada como "1". \u2022 Voc\xea n\xe3o pode revelar seus tokens num\xe9ricos para outros jogadores, mas pode alegar ter qualquer n\xfamero(s).',d2),A.L('\u2022 Se voc\xea estiver em um ladrilho com outro explorador, troque um de seus marcadores de Doen\xe7a aleatoriamente com eles. Se v\xe1rios exploradores estiverem em seu ladrilho, troque marcadores com cada um deles, um de cada vez. Um explorador que receber um marcador de Doen\xe7a rotulado como "1" a qualquer momento se torna permanentemente um traidor (mesmo que perca esse marcador mais tarde). \u2022 Se voc\xea n\xe3o trocou fichas de Doen\xe7a neste turno (seja por "Impulsos de controle" ou terminando seu turno em uma pe\xe7a com outro explorador), receba dois dados de dano Geral. \u2022 Se isso te matar e voc\xea for um traidor, enterre seus Itens e Press\xe1gios. Substitua seu explorador por um marcador de Monstro Pequeno \u2014 agora voc\xea \xe9 um dos Feverish. A poeira quer se espalhar.',e0),A.L("N\xe3o revele os n\xfameros em seus marcadores de Doen\xe7a. Eles devem permanecer escondidos dos outros jogadores. Se o seu explorador morreu, jogue como um dos Feverish durante o turno do monstro.",e1)],g4)
 o=A.b([A.Y("Enquanto estiver em um tile com um s\xedmbolo de Omen, fa\xe7a um teste de Conhecimento ou Sanidade. Voc\xea n\xe3o pode fazer esse teste em um tile que j\xe1 tenha um marcador de Pesquisa. 5+ Coloque uma ficha de Runa neste tile. Isso representa Pesquisa. 0\u20134 Troque uma de suas fichas de Doen\xe7a aleatoriamente com o jogador para sua esquerda. A poeira quer se espalhar.","Procure uma cura"),A.Y("Enquanto em um azulejo onde voc\xea pode pesquisar, fa\xe7a um teste com qualquer tra\xe7o. Para cada ficha de Pesquisa na casa, adicione 2 ao resultado deste teste. 13+ Voc\xea venceu! 0\u201312 Troque uma de suas fichas de Doen\xe7a aleatoriamente com o jogador para sua esquerda. A poeira quer se espalhar.","Cure a poeira"),A.Y("Enquanto estiver em um ladrilho com outro explorador, voc\xea pode trocar um de seus marcadores de Doen\xe7a aleatoriamente com aquele explorador. Aquele explorador \xe9 obrigado a concordar com a troca. A poeira quer se espalhar.","Impulsos de controle")],g6)
 n=t.rS
 p=A.ai(B.cm,"Voc\xea enfia uma seringa improvisada no seu bra\xe7o, e sua tosse cessa rapidamente. Voc\xea para de ver vermelho, mas as part\xedculas de poeira continuam a flutuar pela casa. \xc9 melhor voc\xea sair r\xe1pido, antes que sua imunidade acabe.","A corrida febril para fora da casa para causar estragos na cidade. Do p\xf3 ao p\xf3.","Est\xe1 empoeirado aqui. Ao inalar, voc\xea sabe que algo est\xe1 errado. A poeira nesta casa \xe9 outra coisa. Ela ainda n\xe3o tomou conta de voc\xea, mas voc\xea come\xe7a a se sentir... violento. Voc\xea pode sentir que o que quer que esteja na poeira quer se espalhar, se alimentar e infectar. A essa altura, um de seus amigos j\xe1 deve estar infectado. Mas quem? Voc\xea raciocina que a cura deve estar em algum lugar da casa e resolve encontr\xe1-la antes que seja tarde demais.",A.b([A.bh(B.u,"Os febris seguem a sua vez ap\xf3s o revelador da assombra\xe7\xe3o. Cada Feverish \xe9 controlado por um traidor revelado cujo explorador morreu.","3","O Febril","3","5","6")],n),3,"Os her\xf3is vencem quando curam a poeira. Os traidores vencem se todos os exploradores se tornarem traidores ou morrerem.",'"UM FRASCO DE P\xd3"',"Fichas num\xe9ricas \u2013Doen\xe7a\n8 Fichas de Runas \u2013Pesquisar\nAzulejos onde voc\xea pode pesquisar:\nLaborat\xf3rio \u2013T\xe9rreo\nSala de Opera\xe7\xf5es \u2013Por\xe3o/Piso Superior\nObservat\xf3rio \u2013Piso Superior\nCozinha \u2013T\xe9rreo",c7,g3,o,p,"O P\xd3",d2)
 o=A.b(["Coloque o token Demon no tile do Hall de Entrada. Este \xe9 o Demon Realtor.","Coloque a Carta de Monstro \xe0 esquerda do revelador da assombra\xe7\xe3o. O Demon Realtor far\xe1 seu turno depois daquele jogador.","Encontre 6 fichas de fogo. Coloque{3/2/1/0}deles em pe\xe7as com her\xf3is. Elas marcam Cleansed Rooms, o que ajudar\xe1 voc\xea a executar o ritual. N\xe3o coloque mais de uma ficha em uma pe\xe7a. Deixe as fichas restantes de lado.",d6],g2)
 g3=A.b([A.Y("Enquanto em umazulejo onde voc\xea pode estudar,fa\xe7a um teste de Conhecimento. 5+ Pegue um token de Conhecimento. Isso representa o Conhecimento da Maldi\xe7\xe3o. Se voc\xea j\xe1 tem um token de Conhecimento, d\xea um para um explorador em seu tile sem um. 0\u20134Nada acontece.Voc\xea consegue descobrir isso, s\xf3 precisa de mais tempo.","Ganhe conhecimento da maldi\xe7\xe3o"),A.Y("Enquanto estiver em qualquer tile que tenha um s\xedmbolo de Evento, fa\xe7a um teste de Velocidade. Se voc\xea tiver um marcador de Conhecimento, adicione 2 ao resultado do seu teste. Voc\xea n\xe3o pode fazer esse teste se j\xe1 houver um marcador de Fogo no seu tile. 6+ Coloque uma ficha de Fogo em seu tile. Isso representa uma Sala Limpa. 0\u20135 Nada acontece. Talvez tente recitar o encantamento mais rapidamente?","Limpe o quarto"),A.Y("Enquanto estiver em um tile de prote\xe7\xe3o, fa\xe7a um teste de Poder. Se voc\xea tiver um marcador de Conhecimento, adicione 2 ao resultado do seu teste. 6+ Pegue um token de Might. Este \xe9 um Ward of Protection. Voc\xea fortalece suas defesas. 0\u20135Nada acontece.O tempo est\xe1 se esgotando!","Preparar Enfermarias"),A.Y("Enquanto estiver no mesmo ladrilho que o Demon Realtor, fa\xe7a um teste de Sanidade. Adicione 1 ao resultado do seu teste para cada marcador de Fogo em um ladrilho na sua regi\xe3o. Se o seu explorador estiver no ladrilho da Sala de Rituais, adicione tamb\xe9m 1 ao resultado. Se voc\xea tiver um marcador de Conhecimento, adicione tamb\xe9m 2 ao resultado. 13+ Voc\xea venceu!Voc\xea livrou a corretora da maldi\xe7\xe3o com sucesso! 9\u201312Nada acontece. Termine seu turno. 0\u20138Cada her\xf3i perde 1 Sanidade. Termine seu turno.O corretor grita.","Realizar o Ritual")],g6)
-m=A.b([A.P("Se voc\xea tiver uma ficha de Poder, role dois dados adicionais.","Quando voc\xea ataca ou \xe9 atacado pelo Demon Realtor"),A.P("Cada her\xf3i na mesma regi\xe3o que o Demon Realtor sofre um dado de dano Mental.Ela solta um grito.",e3)],g4)
+m=A.b([A.L("Se voc\xea tiver uma ficha de Poder, role dois dados adicionais.","Quando voc\xea ataca ou \xe9 atacado pelo Demon Realtor"),A.L("Cada her\xf3i na mesma regi\xe3o que o Demon Realtor sofre um dado de dano Mental.Ela solta um grito.",e3)],g4)
 m=A.ai(B.co,'A corretora grita, sobrecarregada: "Vou ver um filme, ou talvez tomar um sorvete, ou talvez eu v\xe1 para Paris ou T\xf3quio!" Voc\xea coloca uma m\xe3o reconfortante em seu ombro e oferece: "Talvez comecemos pegando um pouco de comida no lugar ali na rua?"',d1,'Voc\xea veio para um tour pela casa, que foi recentemente listada para venda. Enquanto voc\xea se prepara para sair, a corretora se coloca entre voc\xea e a porta. Ela cora, se desculpando, "Eu n\xe3o consigo sair desta casa desde que entrei por aquela porta quarenta anos atr\xe1s. Algum tipo de maldi\xe7\xe3o, eu temo. Para me libertar, eu tenho que te matar. Eu realmente sinto muito por isso, mas estou meio que ficando sem op\xe7\xf5es."',A.b([A.bh(B.u,"Ap\xf3s a vez do revelador da assombra\xe7\xe3o, \xe9 a vez da corretora demon\xedaca. O Corretor Demon\xedaco se move em dire\xe7\xe3o ao her\xf3i mais pr\xf3ximo e ataca com Sanidade (se ele estiver no mesmo ladrilho). A Demon Realtor n\xe3o pode ser atordoada. Se voc\xea causar dano a ela, voc\xea pode mov\xea-la para essa quantidade de pe\xe7as, em vez disso.","4","Dem\xf4nio Corretor de Im\xf3veis","6","3","5")],n),4,"Voc\xea vence quando realiza o ritual para libertar a corretora de sua maldi\xe7\xe3o \u2022 O conhecimento da Maldi\xe7\xe3o ajudar\xe1 voc\xea a completar tarefas. \u2022 Salas Limpas ajudar\xe3o voc\xea a realizar o ritual. \u2022 As sentinelas de prote\xe7\xe3o ajudar\xe3o voc\xea a lutar contra o corretor de im\xf3veis demon\xedaco.","CACHORRO","Ficha Demon\xedaca \u2013Dem\xf4nio corretor imobili\xe1rio\n6 Fichas de Fogo \u2013Sala Limpa\n2 fichas de poder \u2013Ala de Prote\xe7\xe3o\n2 Fichas de Conhecimento \u2013Conhecimento da Maldi\xe7\xe3o\nAzulejos onde voc\xea pode ESTUDAR:\nBiblioteca \u2013T\xe9rreo/Piso Superior\nCapela \u2013T\xe9rreo\nLaborat\xf3rio \u2013T\xe9rreo\nAzulejos de prote\xe7\xe3o:\nBer\xe7\xe1rio \u2013Cave/Piso Superior\nArsenal \u2013Cave/T\xe9rreo\nCemit\xe9rio \u2013T\xe9rreo","\xc0 VENDA",o,g3,m,"LIBERTE O CORRETOR DE IM\xd3VEIS",e2)
-g3=A.b(["Cada explorador coloca uma ficha de Pequeno Monstro em seu tile. Esses s\xe3o Stone Cherubs.","Encontrar{3/4/5/6}Querubins de Pedra adicionais. Se poss\xedvel, coloque-os em pe\xe7as que n\xe3o estejam na linha de vis\xe3o dos her\xf3is. Se n\xe3o puder, coloque o resto pela casa como quiser.",d9,d6],g2)
+g3=A.b(["Cada explorador coloca uma ficha de Pequeno Monstro em seu tile. Esses s\xe3o Stone Cherubs.","Coloque {3/4/5/6} Querubins de Pedra adicionais. Se poss\xedvel, coloque-os em pe\xe7as que n\xe3o estejam na linha de vis\xe3o dos her\xf3is. Se n\xe3o puder, coloque o resto pela casa como quiser.",d9,d6],g2)
 o=A.b([A.Y("Enquanto estiver em um tile com um Querubim, se houver outro Querubim na linha de vis\xe3o, fa\xe7a um teste de Conhecimento. \u2022 Se voc\xea tiver o Espelho, adicione 2 ao resultado do seu teste. 4+ Remova os dois querubins da casa.Os querubins encontram os olhares uns dos outros e ficam congelados no tempo. 0\u20133Receba dois dados de dano Geral.","Brincar de esconde-esconde")],g6)
-l=A.b([A.P("Cada her\xf3i sofre um dado de dano Geral para cada Querubim em sua linha de vis\xe3o.",e3),A.P("Sempre que voc\xea entrar em um tile que tenha linha de vis\xe3o para um Querubim que n\xe3o estava em sua linha de vis\xe3o no in\xedcio do seu turno, receba 2 dados de dano Geral. Voc\xea n\xe3o pode receber esse dano mais de uma vez durante seu turno.","OLHAR DE PEDREGULHO")],g4)
-l=A.ai(B.co,"Os querubins ficam em sil\xeancio p\xe9treo, tendo sido todos petrificados por seus pr\xf3prios olhares. Mesmo assim, voc\xea n\xe3o ousa encarar seus olhos sem vida. Voc\xea recua lentamente, sem dar as costas a eles at\xe9 estar em seguran\xe7a longe da casa.","A m\xe1scara faz barulho em suas m\xe3os p\xe9treas e petrificadas. Voc\xea agora \xe9 parte da casa... apenas mais uma est\xe1tua perdida para a hist\xf3ria.","Seus olhos s\xe3o atra\xeddos para as est\xe1tuas de pessoas dispostas em todos os lugares ao redor da casa. A m\xe1scara parece ser um peda\xe7o quebrado de uma das est\xe1tuas menores. As est\xe1tuas s\xe3o not\xe1veis apenas porque n\xe3o parece haver absolutamente nada de especial nelas. Elas representam pessoas de diferentes per\xedodos de tempo, mas todas compartilham as mesmas qualidades mundanas. Exceto, \xe9 claro, pelos pequenos querubins. Toda vez que voc\xea pisca, eles parecem se mover um pouco mais perto de voc\xea.",A.b([A.bh(B.u,"Ap\xf3s a vez do revelador da assombra\xe7\xe3o, \xe9 a vez dos Querubins de Pedra. Querubins n\xe3o atacam e n\xe3o podem ser atacados. Os Querubins se movem em dire\xe7\xe3o ao her\xf3i mais pr\xf3ximo (o revelador da assombra\xe7\xe3o desfaz o empate), mas param imediatamente assim que entram na linha de vis\xe3o de qualquer her\xf3i. Querubins que come\xe7am seu turno na linha de vis\xe3o de um her\xf3i n\xe3o se movem durante esse turno.","8","Querubim de Pedra","8","4","8")],n),5,"Voc\xea vence quando todos os Querubins forem removidos da casa. Voc\xea perde se todos os her\xf3is estiverem mortos.","M\xc1SCARA","Pequenos tokens de monstro \u2013Querubins de Pedra","INVESTIGADORES PARANORMAIS",g3,o,l,"SANGUE DE UMA PEDRA",e2)
+l=A.b([A.L("Cada her\xf3i sofre um dado de dano Geral para cada Querubim em sua linha de vis\xe3o.",e4),A.L("Sempre que voc\xea entrar em um tile que tenha linha de vis\xe3o para um Querubim que n\xe3o estava em sua linha de vis\xe3o no in\xedcio do seu turno, receba 2 dados de dano Geral. Voc\xea n\xe3o pode receber esse dano mais de uma vez durante seu turno.","OLHAR DE PEDREGULHO")],g4)
+l=A.ai(B.co,"Os querubins ficam em sil\xeancio p\xe9treo, tendo sido todos petrificados por seus pr\xf3prios olhares. Mesmo assim, voc\xea n\xe3o ousa encarar seus olhos sem vida. Voc\xea recua lentamente, sem dar as costas a eles at\xe9 estar em seguran\xe7a longe da casa.","A m\xe1scara faz barulho em suas m\xe3os p\xe9treas e petrificadas. Voc\xea agora \xe9 parte da casa... apenas mais uma est\xe1tua perdida para a hist\xf3ria.","Seus olhos s\xe3o atra\xeddos para as est\xe1tuas de pessoas dispostas em todos os lugares ao redor da casa. A m\xe1scara parece ser um peda\xe7o quebrado de uma das est\xe1tuas menores. As est\xe1tuas s\xe3o not\xe1veis apenas porque n\xe3o parece haver absolutamente nada de especial nelas. Elas representam pessoas de diferentes per\xedodos de tempo, mas todas compartilham as mesmas qualidades mundanas. Exceto, \xe9 claro, pelos pequenos querubins. Toda vez que voc\xea pisca, eles parecem se mover um pouco mais perto de voc\xea.",A.b([A.bh(B.u,"Ap\xf3s a vez do revelador da assombra\xe7\xe3o, \xe9 a vez dos Querubins de Pedra. Querubins n\xe3o atacam e n\xe3o podem ser atacados.\n\n Os Querubins se movem em dire\xe7\xe3o ao her\xf3i mais pr\xf3ximo (o revelador da assombra\xe7\xe3o desfaz o empate), mas param imediatamente assim que entram na linha de vis\xe3o de qualquer her\xf3i.\n\nQuerubins que come\xe7am seu turno na linha de vis\xe3o de um her\xf3i n\xe3o se movem durante esse turno.","8","Querubim de Pedra","8","4","8")],n),5,"Voc\xea vence quando todos os Querubins forem removidos da casa. Voc\xea perde se todos os her\xf3is estiverem mortos.","M\xc1SCARA","Pequenos tokens de monstro \u2013Querubins de Pedra","INVESTIGADORES PARANORMAIS",g3,o,l,"SANGUE DE UMA PEDRA",e2)
 o=A.b(["O revelador da assombra\xe7\xe3o coloca cada ficha de Caracter\xedstica virada para cima em uma pe\xe7a diferente, em uma regi\xe3o diferente da ficha de Caracter\xedstica correspondente. (Exemplo: se a ficha de Poder estiver no Andar Superior, a outra ficha de Poder deve ser colocada no Andar T\xe9rreo ou no Por\xe3o.) Essas fichas representam Evid\xeancia.","Embaralhe os tokens num\xe9ricos rotulados de 1 a{3/4/5/6}, virada para baixo. D\xea uma dessas fichas para cada jogador.",d5,d6],g2)
-g3=A.b([A.P(d7,d2),A.P("Vire sua ficha num\xe9rica para cima.",e1),A.P("Se voc\xea n\xe3o atacou, receba dois dados de dano Mental. O fantasma do seu tio-av\xf4 exige vingan\xe7a. Ele n\xe3o se importa com quem est\xe1 recebendo.",e0),A.P("\u2022 Voc\xea pode se revelar a qualquer momento em seu turno. \u2022 Quando voc\xea se revela (ou se voc\xea \xe9 revelado com Descubra a verdade), cure todas as suas caracter\xedsticas e ganhe 1 de For\xe7a. \u2022 Se voc\xea morrer por receber dano Mental no final do seu turno, em vez disso, revele-se como o traidor. Cure todos os seus tra\xe7os e ganhe 1 de For\xe7a. Depois que voc\xea for revelado como o traidor, voc\xea n\xe3o sofrer\xe1 mais dano mental no final do seu turno.",d8),A.P("Cada um dos marcadores de Caracter\xedstica \xe9 uma Evid\xeancia que deve ser pareada com seu marcador correspondente.\u2022 Os marcadores de evid\xeancia podem ser pegos se estiverem em sua pe\xe7a. Quando voc\xea pegar uma Evid\xeancia, coloque-a em seu tabuleiro de personagem.\u2022 Fichas de evid\xeancia podem ser trocadas de um her\xf3i para outro (com permiss\xe3o).\u2022 Se seu her\xf3i morrer, coloque suas fichas de Evid\xeancia no ladrilho onde ele morreu","Evid\xeancia")],g4)
-g3=A.ai(B.cm,"O assassinato do seu tio-av\xf4 foi vingado. Com uma grande quantia dividida entre os parentes sobreviventes, voc\xea pode se aposentar com relativo conforto. Embora as reuni\xf5es familiares nunca mais sejam as mesmas.",'Com o resto da "fam\xedlia" enterrada, voc\xea sai em busca dos documentos do velho. Com uma edi\xe7\xe3o aqui e uma assinatura forjada ali, a casa, e toda a riqueza e status que vem com ela, agora s\xe3o seus.',"Ao abrir a caixa dourada, voc\xea v\xea uma adaga dentro. A seguinte nota est\xe1 anexada: \u201cAos meus parentes sobreviventes: sou seu tio-av\xf4, e voc\xeas foram convidados aqui porque eu morri. A propriedade onde esta casa fica era parte da minha heran\xe7a, que agora deixo para voc\xeas com uma condi\xe7\xe3o: voc\xeas devem encontrar meu assassino e executar minha vingan\xe7a. Convidei o assassino aqui tamb\xe9m, e instru\xed que as portas fiquem trancadas at\xe9 de manh\xe3. Boa sorte.\u201d",B.w,6,"Os her\xf3is vencem quando o traidor morre. O traidor vence quando todos os her\xf3is est\xe3o mortos.",e5,"8 Fichas de Tra\xe7o \u2013Evid\xeancia\nFichas num\xe9ricas",e4,o,A.b([A.Y("Enquanto segura uma ficha de Evid\xeancia, se seu her\xf3i estiver em uma pe\xe7a com a ficha de Evid\xeancia correspondente ou um her\xf3i segurando essa ficha, role a caracter\xedstica nomeada nessas fichas. 5+ O her\xf3i com o n\xfamero mais alto, mas n\xe3o revelado, revela esse n\xfamero. 0\u20134 Nada acontece.","Descubra a verdade")],g6),g3,"HERAN\xc7A",d2)
+g3=A.b([A.L(d7,d2),A.L("Vire sua ficha num\xe9rica para cima.",e1),A.L("Se voc\xea n\xe3o atacou, receba dois dados de dano Mental. O fantasma do seu tio-av\xf4 exige vingan\xe7a. Ele n\xe3o se importa com quem est\xe1 recebendo.",e0),A.L("\u2022 Voc\xea pode se revelar a qualquer momento em seu turno. \u2022 Quando voc\xea se revela (ou se voc\xea \xe9 revelado com Descubra a verdade), cure todas as suas caracter\xedsticas e ganhe 1 de For\xe7a. \u2022 Se voc\xea morrer por receber dano Mental no final do seu turno, em vez disso, revele-se como o traidor. Cure todos os seus tra\xe7os e ganhe 1 de For\xe7a. Depois que voc\xea for revelado como o traidor, voc\xea n\xe3o sofrer\xe1 mais dano mental no final do seu turno.",d8),A.L("Cada um dos marcadores de Caracter\xedstica \xe9 uma Evid\xeancia que deve ser pareada com seu marcador correspondente.\u2022 Os marcadores de evid\xeancia podem ser pegos se estiverem em sua pe\xe7a. Quando voc\xea pegar uma Evid\xeancia, coloque-a em seu tabuleiro de personagem.\u2022 Fichas de evid\xeancia podem ser trocadas de um her\xf3i para outro (com permiss\xe3o).\u2022 Se seu her\xf3i morrer, coloque suas fichas de Evid\xeancia no ladrilho onde ele morreu","Evid\xeancia")],g4)
+g3=A.ai(B.cm,"O assassinato do seu tio-av\xf4 foi vingado. Com uma grande quantia dividida entre os parentes sobreviventes, voc\xea pode se aposentar com relativo conforto. Embora as reuni\xf5es familiares nunca mais sejam as mesmas.",'Com o resto da "fam\xedlia" enterrada, voc\xea sai em busca dos documentos do velho. Com uma edi\xe7\xe3o aqui e uma assinatura forjada ali, a casa, e toda a riqueza e status que vem com ela, agora s\xe3o seus.',"Ao abrir a caixa dourada, voc\xea v\xea uma adaga dentro. A seguinte nota est\xe1 anexada: \u201cAos meus parentes sobreviventes: sou seu tio-av\xf4, e voc\xeas foram convidados aqui porque eu morri. A propriedade onde esta casa fica era parte da minha heran\xe7a, que agora deixo para voc\xeas com uma condi\xe7\xe3o: voc\xeas devem encontrar meu assassino e executar minha vingan\xe7a. Convidei o assassino aqui tamb\xe9m, e instru\xed que as portas fiquem trancadas at\xe9 de manh\xe3. Boa sorte.\u201d",B.w,6,"Os her\xf3is vencem quando o traidor morre. O traidor vence quando todos os her\xf3is est\xe3o mortos.",e6,"8 Fichas de Tra\xe7o \u2013Evid\xeancia\nFichas num\xe9ricas",e5,o,A.b([A.Y("Enquanto segura uma ficha de Evid\xeancia, se seu her\xf3i estiver em uma pe\xe7a com a ficha de Evid\xeancia correspondente ou um her\xf3i segurando essa ficha, role a caracter\xedstica nomeada nessas fichas. 5+ O her\xf3i com o n\xfamero mais alto, mas n\xe3o revelado, revela esse n\xfamero. 0\u20134 Nada acontece.","Descubra a verdade")],g6),g3,"HERAN\xc7A",d2)
 o=A.b(["O revelador da assombra\xe7\xe3o derruba a figura deles. Eles ainda est\xe3o no jogo, mas mortos \u2014 sua alma est\xe1 presa no Mirror Realm.","O revelador da assombra\xe7\xe3o seleciona uma caracteristica, Omen e Room aleatoriamente (veja abaixo), anotando seus nomes em uma folha de papel. Essas informa\xe7\xf5es n\xe3o devem ser compartilhadas com nenhum outro jogador.\u2022 Embaralhe os marcadores de caracteristica virados para baixo e selecione um aleatoriamente. Anote qual marcador foi escolhido.\u2022 Embaralhe os tokens numerados de 1\u20139 virados para baixo, e selecione um aleatoriamente. Anote qual Omen aquele token representa: \n\n1: M\xe1scara \n2: Cachorro \n3: \xcddolo \n4:Adaga \n5:Armadura \n6: Anel \n7: Livro \n8: Simbolo Sagrado \n9: Caveira.\u2022 Embaralhe a pilha de pe\xe7as e d\xea uma olhada na pe\xe7a de baixo. Observe o nome da pe\xe7a e embaralhe a pilha de pe\xe7as novamente.\u2022 Retorne os marcadores de caracteristica e Number para a caixa do jogo. Voc\xea n\xe3o precisar\xe1 deles novamente para esta assombra\xe7\xe3o.","Coloque {2/3/4/5} Pequenos marcadores de monstros no ladrilho do Hall de Entrada. Esses s\xe3o Seres Espelhos.","Coloque a Carta de Monstro \xe0 esquerda do revelador da assombra\xe7\xe3o.",d6],g2)
-k=A.b([A.P("Se um explorador descobrir um tile que tenha um s\xedmbolo de Evento, esse jogador n\xe3o compra uma carta de Evento. Descobrir um desses tiles n\xe3o faz com que o turno do jogador termine.","A casa est\xe1 estranhamente silenciosa"),A.P("O revelador da assombra\xe7\xe3o est\xe1 preso no Mirror Realm. Ele n\xe3o pode falar, fazer m\xedmica, escrever ou se comunicar de outra forma com os outros jogadores, exceto conforme descrito abaixo","O revelador da assombra\xe7\xe3o n\xe3o consegue se comunicar"),A.P("Escolha qualquer carta de Evento do baralho de Eventos e entregue-a a qualquer jogador. Os her\xf3is podem interpretar esta carta como quiserem, mas n\xe3o resolver\xe3o o Evento. Deixe a carta de Evento de lado depois.","Na vez do revelador da assombra\xe7\xe3o")],g4)
+k=A.b([A.L("Se um explorador descobrir um tile que tenha um s\xedmbolo de Evento, esse jogador n\xe3o compra uma carta de Evento. Descobrir um desses tiles n\xe3o faz com que o turno do jogador termine.","A casa est\xe1 estranhamente silenciosa"),A.L("O revelador da assombra\xe7\xe3o est\xe1 preso no Mirror Realm. Ele n\xe3o pode falar, fazer m\xedmica, escrever ou se comunicar de outra forma com os outros jogadores, exceto conforme descrito abaixo","O revelador da assombra\xe7\xe3o n\xe3o consegue se comunicar"),A.L("Escolha qualquer carta de Evento do baralho de Eventos e entregue-a a qualquer jogador. Os her\xf3is podem interpretar esta carta como quiserem, mas n\xe3o resolver\xe3o o Evento. Deixe a carta de Evento de lado depois.","Na vez do revelador da assombra\xe7\xe3o")],g4)
 j=A.b([A.Y("Enquanto estiver em qualquer tile, escolha uma caracter\xedstica e role-a. Diga ao revelador de assombra\xe7\xe3o o nome de um dos seus Omens. 5+ Se voc\xea tiver a combina\xe7\xe3o correta de Caracteristica, Press\xe1gio e Sala, o revelador da assombra\xe7\xe3o lhe dar\xe1 um sinal de positivo e voc\xea venceu! Caso contr\xe1rio, eles v\xe3o lhe dar um polegar para baixo. 0\u20134O revelador da assombra\xe7\xe3o n\xe3o lhe dir\xe1 nada. Nada acontece.","Quebre o feiti\xe7o")],g6)
 k=A.ai(B.co,"Voc\xea olha no espelho e v\xea seu amigo lhe dando um sinal de positivo. O espelho ondula como \xe1gua, e a alma do seu amigo voa de volta para o corpo dele. Voc\xea foge do terreno \xe0s pressas, jurando a si mesmo que nunca mais se olhar\xe1 no espelho.","O ataque final das criaturas leva voc\xea para o Reino do Espelho, onde voc\xea e seus amigos ficam presos para sempre.","Voc\xea olha profundamente no espelho. O que voc\xea v\xea olhando de volta parece ser voc\xea, mas de alguma forma ao contr\xe1rio. O mundo atr\xe1s de voc\xea corre para frente, contorcendo-se e invertendo-se. Sua vis\xe3o fica turva e, de repente, voc\xea est\xe1 em uma sala cheia de janelas. Voc\xea v\xea todos os seus amigos e percebe que est\xe1 olhando pelos espelhos ao redor da casa! Se voc\xea n\xe3o avis\xe1-los, eles ficar\xe3o presos com voc\xea.",A.b([A.bh(B.u,"Ap\xf3s a vez do revelador da assombra\xe7\xe3o, jogue com os Seres Espelhados. \u2022Os Seres Espelho devem sempre se mover em dire\xe7\xe3o ao explorador mais pr\xf3ximo. Se houver um empate para qual explorador est\xe1 mais pr\xf3ximo, o revelador da assombra\xe7\xe3o escolhe para onde o Ser Espelho se move. Se um Ser Espelho terminar seu turno em um espa\xe7o com um explorador, ele ataca esse explorador usando Sanidade.","4","Ser Espelho","6","3","4")],n),7,"Voc\xea vence quando consegue fazer um teste com a combina\xe7\xe3o correta de Caracter\xedstica, Press\xe1gio e Sala.","\u201cEspelho assustador\u201d","Pequenos tokens de monstro \u2013Seres Espelho\nFichas num\xe9ricas\nFichas de Tra\xe7o",c7,o,j,k,"SOBRE REFLEX\xc3O","N\xe3o Traidor")
 j=A.b(["Se a casa contiver menos de {3/4/5/6} pe\xe7as com s\xedmbolos de Evento, desenhe e coloque pe\xe7as da pilha de pe\xe7as at\xe9 {3/4/5/6} tiles com s\xedmbolos de Evento foram colocados. Ao colocar esses tiles, n\xe3o resolva seus efeitos.","Colocar {3/4/5/6} Pequenos tokens de Monstro em tiles separados com s\xedmbolos de Evento, distribu\xeddos o mais uniformemente poss\xedvel entre as regi\xf5es. Estes s\xe3o Housekeepers.","Coloque as 5 fichas de Runa de lado.",d6],g2)
 o=A.b([A.Y("Enquanto em um azulejo que pode ser limpo,fa\xe7a um teste de Velocidade ou Sanidade. Voc\xea n\xe3o pode fazer esse teste em uma pe\xe7a que j\xe1 tenha um marcador de Runa. 5+ Coloque uma ficha de Runa no ladrilho. Quando voc\xea coloca a quinta ficha de Runa, voc\xea venceu! Voc\xea limpou os quartos. 0\u20134Nada acontece.Voc\xea ainda tem muita bagun\xe7a para resolver.","Limpe a casa")],g6)
-i=A.b([A.P("Causa 1 de dano geral a cada explorador.Poeira sufocante e murcha.",e3)],g4)
-i=A.ai(B.co,'Enquanto voc\xea esfrega o quarto final, as Housekeepers aparecem na porta. Assim que elas est\xe3o prestes a entrar para te limpar, voc\xea limpa as \xfaltimas part\xedculas de sujeira do quarto. Conforme voc\xea completa o trabalho, as Housekeepers come\xe7am a desaparecer no nada. Enquanto elas desaparecem sem deixar rastros, um fantasmag\xf3rico "obrigado" ecoa em seus ouvidos. Finalmente, a casa est\xe1 limpa.',"Voc\xea se transforma em p\xf3 nas formas de seus antigos eus. Lentamente voc\xea se desintegra, seus restos flutuando pela casa como part\xedculas no ar. Voc\xea nunca se acomoda completamente, porque agora voc\xea \xe9 parte desta casa \u2014 e a casa nunca se acomoda. Ela quer ficar limpa novamente. Vai estar limpo novamente.","Foi uma \xf3tima festa at\xe9 altas horas da noite, at\xe9 que aquele cachorro fofo de repente virou p\xf3 bem diante dos seus olhos. Quando voc\xea come\xe7ou a engasgar com o p\xf3, percebeu que algo aqui est\xe1 muito errado. Embora tenha sido convidado para a casa do seu amigo, voc\xea n\xe3o o viu a noite toda. Mas, outra pessoa est\xe1 aqui, e voc\xea tem a sensa\xe7\xe3o de que eles querem que voc\xea fique.",A.b([A.bh(B.u,"Ap\xf3s a vez do revelador da assombra\xe7\xe3o, jogue com as governantas. Housekeepers atacam com for\xe7a e se movem em dire\xe7\xe3o ao her\xf3i mais pr\xf3ximo. Se houver empate, os Housekeepers se mover\xe3o em dire\xe7\xe3o ao her\xf3i mais velho.","5","Governadora","5","4","5")],n),8,"Voc\xea ganha quando limpa completamente a casa \u2022 Voc\xea deve limpar a sala ensanguentada, a sala carbonizada, Sala Desmoronada, Sala de Lixo e Catacumbas.",e6,"Pequenos tokens de monstro \u2013Empregadas Dom\xe9sticas\n5 Fichas de Runas \u2013Quarto Limpo\nAzulejos que podem ser limpos:\nQuarto Sangrento \u2013T\xe9rreo/Piso Superior\nSala Carbonizada \u2013T\xe9rreo/Piso Superior\nSala Desmoronada \u2013Ch\xe3o/Piso Superior\nSala de Lixo \u2013T\xe9rreo/Piso Superior\nCatacumbas \u2013Por\xe3o",e4,j,o,i,"Limpeza",e2)
-o=A.ai(B.m,'Voc\xea saiu vivo, mas a voz do seu antigo amigo ecoa em sua mente. "Nada que voc\xea fizer pode par\xe1-la", eles disseram. Eles estavam certos? H\xe1 mais membros de culto por a\xed em algum lugar, trabalhando para despert\xe1-la?',d1,'Quando seu grupo entrou nesta casa, voc\xeas certamente n\xe3o esperavam encontrar seu amigo desaparecido vestindo uma t\xfanica carmesim e entoando ora\xe7\xf5es para algo chamado "Aquela que Dorme Abaixo". Ainda mais enervante foi que as ora\xe7\xf5es faziam refer\xeancia a "sangue derramado" e "sacrif\xedcio necess\xe1rio" mais vezes do que qualquer um de voc\xeas se sentiria confort\xe1vel (o que, para ser justo, n\xe3o \xe9 nenhuma vez). \u201cAh, voc\xea conseguiu\u201d, eles exclamam, \u201ce bem a tempo para o ritual! Sinto muito por ter que atra\xed-lo aqui desse jeito, mas a Adormecida precisa despertar. Para isso, precisamos de sangue. Por favor, n\xe3o lute muito. Nada que voc\xea fa\xe7a pode impedi-la de despertar.\u201d',B.w,13,"Voc\xea vence quando interrompe o Ritual ou quando o traidor e todos os Cultistas est\xe3o mortos.",e8,"N\xfamero de trilha\nPequenos tokens de monstro \u2013Cultistas\n8 Fichas de Runas \u2013Conhecimento Ritual\nAzulejos onde voc\xea pode estudar:\nBiblioteca \u2013T\xe9rreo/Piso Superior\nCapela \u2013Ch\xe3o\nSala Ritual \u2013Por\xe3o",e7,A.b([c8,c9],g2),A.b([A.Y("Enquanto em um azulejo onde voc\xea pode estudar,fa\xe7a um teste de Conhecimento. 5+ Pegue uma ficha de Runa e coloque-a no seu tabuleiro de personagem. Essas fichas representam Conhecimento Ritual. Elas n\xe3o podem ser negociadas. 0\u20134Nada acontece.","Estude o Ritual"),A.Y("Enquanto estiver no ladrilho da Sala de Rituais, fa\xe7a um teste de Sanidade. Para cada ficha de Conhecimento Ritual que voc\xea tiver, adicione 1 ao resultado do seu teste. Para cada Cultista ainda vivo, subtraia 1 do seu teste. 6+Voc\xea interrompe o Ritual.Voc\xea venceu! 4\u20135Sofra 1 de dano Mental. 0\u20133Sofra 2 de dano Mental.Ela se agita. Seus sonhos perfuram sua mente.","Interrompa o Ritual")],g6),B.am,"TERRA SAGRADA",c6)
-j=A.ai(B.m,'Enquanto o bruxo cai de uma vez por todas, h\xe1 um estalo alto no ar e a sala \xe9 engolfada por uma fuma\xe7a rosa. Onde voc\xea espera encontrar o corpo do bruxo, voc\xea encontra uma mesa humilde e antiga. A bruxa do espelho sai do quarto. Ela prepara um ch\xe1 e convida voc\xea a se deliciar com eles enquanto as outras pe\xe7as voltam a ser as pessoas que j\xe1 foram. A bruxa se vira para o seu grupo e diz com uma piscadela: "Esta mesa \xe9 uma verdadeira obra de arte." 22',d1,"Quando o vendedor disse que os m\xf3veis que estavam sendo leiloados nesta casa falariam com voc\xea, voc\xea n\xe3o achou que eles estavam sendo literais! No entanto, aqui est\xe1 voc\xea, olhando para uma mulher com apar\xeancia de bruxa do outro lado de um espelho. Ela fala urgentemente: \u201cVoc\xea n\xe3o tem muito tempo! Pegue aquele livro de feiti\xe7os antes que o bruxo transforme voc\xea em mob\xedlia! A essa altura, eles j\xe1 trancaram magicamente as portas da casa. Ajude-me a lan\xe7ar esse feiti\xe7o e eu vou tirar voc\xea dessa enrascada!\u201d",B.w,14,"Voc\xea vence quando lan\xe7a o Feiti\xe7o. \u2022 Mantenha o Livro longe do traidor. \u2022 Acelere o feiti\xe7o para lan\xe7\xe1-lo mais rapidamente.",d1,"N\xfamero de trilha\nPequenos tokens de monstro \u2013Animado Mob\xedlia","\xc0 VENDA",A.b(["Defina a trilha num\xe9rica para{4/4/5/5}.",c9],g2),A.b([A.Y("Enquanto voc\xea estiver segurando o Livro, fa\xe7a um teste de Sanidade. 5+ Mova a trilha num\xe9rica para baixo em 1 e perca 1 de Sanidade. Se a trilha num\xe9rica chegar a 0,voc\xea venceu! 0\u20134Perca 1 de Sanidade.Voc\xea canta as s\xedlabas erradas e fica com dor de cabe\xe7a. Antigo livro de feiti\xe7os Um livro de feiti\xe7os encadernado em couro, bem oleado, com uma estrela de quatro pontas gravada em prata na capa frontal e traseira. \u2022 Her\xf3is n\xe3o podemApresse o Feiti\xe7omais de uma vez por rodada. (A rodada termina quando o monstro faz sua jogada.) \u2022 Se o traidor destruir o Livro,voc\xea perdeu! DEPOIS DA VIRADA DO MONSTRO Se um her\xf3i vivo estiver segurando o Spellbook, mova a trilha num\xe9rica para baixo em 1. Se a trilha num\xe9rica chegar a 0,voc\xea venceu!","Apresse o Feiti\xe7o")],g6),B.am,"PERMAN\xcaNCIA DO OBJETO","A esquerda do Revelador de Assombra\xe7\xe3o")
+i=A.b([A.L("Causa 1 de dano geral a cada explorador.Poeira sufocante e murcha.",e3)],g4)
+i=A.ai(B.co,'Enquanto voc\xea esfrega o quarto final, as Housekeepers aparecem na porta. Assim que elas est\xe3o prestes a entrar para te limpar, voc\xea limpa as \xfaltimas part\xedculas de sujeira do quarto. Conforme voc\xea completa o trabalho, as Housekeepers come\xe7am a desaparecer no nada. Enquanto elas desaparecem sem deixar rastros, um fantasmag\xf3rico "obrigado" ecoa em seus ouvidos. Finalmente, a casa est\xe1 limpa.',"Voc\xea se transforma em p\xf3 nas formas de seus antigos eus. Lentamente voc\xea se desintegra, seus restos flutuando pela casa como part\xedculas no ar. Voc\xea nunca se acomoda completamente, porque agora voc\xea \xe9 parte desta casa \u2014 e a casa nunca se acomoda. Ela quer ficar limpa novamente. Vai estar limpo novamente.","Foi uma \xf3tima festa at\xe9 altas horas da noite, at\xe9 que aquele cachorro fofo de repente virou p\xf3 bem diante dos seus olhos. Quando voc\xea come\xe7ou a engasgar com o p\xf3, percebeu que algo aqui est\xe1 muito errado. Embora tenha sido convidado para a casa do seu amigo, voc\xea n\xe3o o viu a noite toda. Mas, outra pessoa est\xe1 aqui, e voc\xea tem a sensa\xe7\xe3o de que eles querem que voc\xea fique.",A.b([A.bh(B.u,"Ap\xf3s a vez do revelador da assombra\xe7\xe3o, jogue com as governantas. Housekeepers atacam com for\xe7a e se movem em dire\xe7\xe3o ao her\xf3i mais pr\xf3ximo. Se houver empate, os Housekeepers se mover\xe3o em dire\xe7\xe3o ao her\xf3i mais velho.","5","Governadora","5","4","5")],n),8,"Voc\xea ganha quando limpa completamente a casa \u2022 Voc\xea deve limpar a sala ensanguentada, a sala carbonizada, Sala Desmoronada, Sala de Lixo e Catacumbas.",e7,"Pequenos tokens de monstro \u2013Empregadas Dom\xe9sticas\n5 Fichas de Runas \u2013Quarto Limpo\nAzulejos que podem ser limpos:\nQuarto Sangrento \u2013T\xe9rreo/Piso Superior\nSala Carbonizada \u2013T\xe9rreo/Piso Superior\nSala Desmoronada \u2013Ch\xe3o/Piso Superior\nSala de Lixo \u2013T\xe9rreo/Piso Superior\nCatacumbas \u2013Por\xe3o",e5,j,o,i,"Limpeza",e2)
+o=A.ai(B.m,'Voc\xea saiu vivo, mas a voz do seu antigo amigo ecoa em sua mente. "Nada que voc\xea fizer pode par\xe1-la", eles disseram. Eles estavam certos? H\xe1 mais membros de culto por a\xed em algum lugar, trabalhando para despert\xe1-la?',d1,'Quando seu grupo entrou nesta casa, voc\xeas certamente n\xe3o esperavam encontrar seu amigo desaparecido vestindo uma t\xfanica carmesim e entoando ora\xe7\xf5es para algo chamado "Aquela que Dorme Abaixo". Ainda mais enervante foi que as ora\xe7\xf5es faziam refer\xeancia a "sangue derramado" e "sacrif\xedcio necess\xe1rio" mais vezes do que qualquer um de voc\xeas se sentiria confort\xe1vel (o que, para ser justo, n\xe3o \xe9 nenhuma vez). \u201cAh, voc\xea conseguiu\u201d, eles exclamam, \u201ce bem a tempo para o ritual! Sinto muito por ter que atra\xed-lo aqui desse jeito, mas a Adormecida precisa despertar. Para isso, precisamos de sangue. Por favor, n\xe3o lute muito. Nada que voc\xea fa\xe7a pode impedi-la de despertar.\u201d',B.w,13,"Voc\xea vence quando interrompe o Ritual ou quando o traidor e todos os Cultistas est\xe3o mortos.",e9,"N\xfamero de trilha\nPequenos tokens de monstro \u2013Cultistas\n8 Fichas de Runas \u2013Conhecimento Ritual\nAzulejos onde voc\xea pode estudar:\nBiblioteca \u2013T\xe9rreo/Piso Superior\nCapela \u2013Ch\xe3o\nSala Ritual \u2013Por\xe3o",e8,A.b([c8,c9],g2),A.b([A.Y("Enquanto em um azulejo onde voc\xea pode estudar,fa\xe7a um teste de Conhecimento. 5+ Pegue uma ficha de Runa e coloque-a no seu tabuleiro de personagem. Essas fichas representam Conhecimento Ritual. Elas n\xe3o podem ser negociadas. 0\u20134Nada acontece.","Estude o Ritual"),A.Y("Enquanto estiver no ladrilho da Sala de Rituais, fa\xe7a um teste de Sanidade. Para cada ficha de Conhecimento Ritual que voc\xea tiver, adicione 1 ao resultado do seu teste. Para cada Cultista ainda vivo, subtraia 1 do seu teste. 6+Voc\xea interrompe o Ritual.Voc\xea venceu! 4\u20135Sofra 1 de dano Mental. 0\u20133Sofra 2 de dano Mental.Ela se agita. Seus sonhos perfuram sua mente.","Interrompa o Ritual")],g6),B.aO,"TERRA SAGRADA",c6)
+j=A.ai(B.m,'Enquanto o bruxo cai de uma vez por todas, h\xe1 um estalo alto no ar e a sala \xe9 engolfada por uma fuma\xe7a rosa. Onde voc\xea espera encontrar o corpo do bruxo, voc\xea encontra uma mesa humilde e antiga. A bruxa do espelho sai do quarto. Ela prepara um ch\xe1 e convida voc\xea a se deliciar com eles enquanto as outras pe\xe7as voltam a ser as pessoas que j\xe1 foram. A bruxa se vira para o seu grupo e diz com uma piscadela: "Esta mesa \xe9 uma verdadeira obra de arte." 22',d1,"Quando o vendedor disse que os m\xf3veis que estavam sendo leiloados nesta casa falariam com voc\xea, voc\xea n\xe3o achou que eles estavam sendo literais! No entanto, aqui est\xe1 voc\xea, olhando para uma mulher com apar\xeancia de bruxa do outro lado de um espelho. Ela fala urgentemente: \u201cVoc\xea n\xe3o tem muito tempo! Pegue aquele livro de feiti\xe7os antes que o bruxo transforme voc\xea em mob\xedlia! A essa altura, eles j\xe1 trancaram magicamente as portas da casa. Ajude-me a lan\xe7ar esse feiti\xe7o e eu vou tirar voc\xea dessa enrascada!\u201d",B.w,14,"Voc\xea vence quando lan\xe7a o Feiti\xe7o. \u2022 Mantenha o Livro longe do traidor. \u2022 Acelere o feiti\xe7o para lan\xe7\xe1-lo mais rapidamente.",f0,"N\xfamero de trilha\nPequenos tokens de monstro \u2013Animado Mob\xedlia","\xc0 VENDA",A.b(["Defina a trilha num\xe9rica para{4/4/5/5}.",c9],g2),A.b([A.Y("Enquanto voc\xea estiver segurando o Livro, fa\xe7a um teste de Sanidade. 5+ Mova a trilha num\xe9rica para baixo em 1 e perca 1 de Sanidade. Se a trilha num\xe9rica chegar a 0,voc\xea venceu! 0\u20134Perca 1 de Sanidade.Voc\xea canta as s\xedlabas erradas e fica com dor de cabe\xe7a. Antigo livro de feiti\xe7os Um livro de feiti\xe7os encadernado em couro, bem oleado, com uma estrela de quatro pontas gravada em prata na capa frontal e traseira. \u2022 Her\xf3is n\xe3o podemApresse o Feiti\xe7omais de uma vez por rodada. (A rodada termina quando o monstro faz sua jogada.) \u2022 Se o traidor destruir o Livro,voc\xea perdeu! DEPOIS DA VIRADA DO MONSTRO Se um her\xf3i vivo estiver segurando o Spellbook, mova a trilha num\xe9rica para baixo em 1. Se a trilha num\xe9rica chegar a 0,voc\xea venceu!","Apresse o Feiti\xe7o")],g6),B.aO,"PERMAN\xcaNCIA DO OBJETO","A esquerda do Revelador de Assombra\xe7\xe3o")
 h=A.b([c8,c9],g2)
-g=A.b([A.P("\u2022 Se voc\xea tiver o S\xedmbolo Sagrado, voc\xea pode us\xe1-lo como sua arma. Voc\xea e o Fantasma rolam Sanidade. Se voc\xea vencer, o Fantasma \xe9 destru\xeddo. Se voc\xea perder, recebe dano Mental. Quando voc\xea ataca o vampiro com a besta Se voc\xea vencer, o Vampiro ser\xe1 destru\xeddo. Quando voc\xea ataca o Lobisomem com a Adaga Se voc\xea vencer, o Lobisomem ser\xe1 destru\xeddo.","Quando voc\xea ataca o fantasma")],g4)
-g=A.ai(B.m,"O poder instilado em voc\xea pela HOA o obriga a golpear o \xfaltimo dos invasores sobrenaturais. Tendo derrotado o terror dentro da casa, voc\xea sai pela porta da frente e ajusta o capacho de boas- vindas exatamente assim. Cada coisinha devidamente em seu lugar, e ningu\xe9m se machuca.",d1,"As regras para a Associa\xe7\xe3o de Propriet\xe1rios do bairro s\xe3o bem comuns: restri\xe7\xf5es de decora\xe7\xe3o externa, padr\xf5es de manuten\xe7\xe3o da casa, pol\xedticas de reclama\xe7\xe3o de barulho e, o mais importante, uma regra proibindo a ocupa\xe7\xe3o por monstros. Esse \xfaltimo ponto \xe9 o motivo de voc\xea estar aqui, mas expulsar o mal pode ser mais dif\xedcil do que o previsto \u2014 especialmente se ele n\xe3o estiver sozinho.",B.w,15,"Voc\xea vence quando derrota todos os monstros da casa. \u2022 Encontre e use as armas necess\xe1rias para derrotar cada um monstro (S\xedmbolo Sagrado para o Fantasma, Besta para o Vampiro e Adaga para o Lobisomem)",d1,"Ficha fantasma\nFicha de Vampiro\nToken de Lobisomem\n3 fichas de sangue",e9,h,A.b([A.Y("Enquanto estiver em uma pe\xe7a que tenha um s\xedmbolo de Item ou Press\xe1gio, fa\xe7a um teste de Conhecimento: 4+ Olhe para as 4 cartas do topo do baralho Item (se voc\xea estiver em uma pe\xe7a com um s\xedmbolo Item) ou o baralho Omen (se voc\xea estiver em uma pe\xe7a com um s\xedmbolo Omen). Adicione uma dessas cartas \xe0 sua m\xe3o e coloque o resto no fundo do baralho. 0\u20133Nada acontece.Voc\xea vasculha a bagun\xe7a e n\xe3o encontra nada.","Procurar por armas")],g6),g,"DE MONSTROS E CAOS",c6)
+g=A.b([A.L("\u2022 Se voc\xea tiver o S\xedmbolo Sagrado, voc\xea pode us\xe1-lo como sua arma. Voc\xea e o Fantasma rolam Sanidade. Se voc\xea vencer, o Fantasma \xe9 destru\xeddo. Se voc\xea perder, recebe dano Mental.","Quando voc\xea ataca o fantasma"),A.L("Se voc\xea vencer, o Vampiro ser\xe1 destru\xeddo","Quando voc\xea ataca o Vampiro com a besta"),A.L("Se voc\xea vencer, o Lobisomem ser\xe1 destru\xeddo","Quando voc\xea ataca o Lobisomem com a adaga")],g4)
+g=A.ai(B.m,"O poder instilado em voc\xea pela HOA o obriga a golpear o \xfaltimo dos invasores sobrenaturais. Tendo derrotado o terror dentro da casa, voc\xea sai pela porta da frente e ajusta o capacho de boas- vindas exatamente assim. Cada coisinha devidamente em seu lugar, e ningu\xe9m se machuca.",d1,"As regras para a Associa\xe7\xe3o de Propriet\xe1rios do bairro s\xe3o bem comuns: restri\xe7\xf5es de decora\xe7\xe3o externa, padr\xf5es de manuten\xe7\xe3o da casa, pol\xedticas de reclama\xe7\xe3o de barulho e, o mais importante, uma regra proibindo a ocupa\xe7\xe3o por monstros. Esse \xfaltimo ponto \xe9 o motivo de voc\xea estar aqui, mas expulsar o mal pode ser mais dif\xedcil do que o previsto \u2014 especialmente se ele n\xe3o estiver sozinho.",B.w,15,"Voc\xea vence quando derrota todos os monstros da casa. \nEncontre e use as armas necess\xe1rias para derrotar cada monstro:\u2022S\xedmbolo Sagrado para o Fantasma\u2022Besta para o Vampiro\u2022Adaga para o Lobisomem",e6,"Ficha fantasma\nFicha de Vampiro\nToken de Lobisomem\n3 fichas de sangue",f1,h,A.b([A.Y("Enquanto estiver em uma pe\xe7a que tenha um s\xedmbolo de Item ou Press\xe1gio, fa\xe7a um teste de Conhecimento: 4+ Olhe para as 4 cartas do topo do baralho Item (se voc\xea estiver em uma pe\xe7a com um s\xedmbolo Item) ou o baralho Omen (se voc\xea estiver em uma pe\xe7a com um s\xedmbolo Omen). Adicione uma dessas cartas \xe0 sua m\xe3o e coloque o resto no fundo do baralho. 0\u20133Nada acontece.Voc\xea vasculha a bagun\xe7a e n\xe3o encontra nada.","Procurar por armas")],g6),g,"DE MONSTROS E CAOS",c6)
 h=A.b(["Se a pe\xe7a do Cemit\xe9rio ainda n\xe3o tiver sido colocada, procure-a na pilha de pe\xe7as e coloque-a usando as regras normais de coloca\xe7\xe3o de pe\xe7as.",c9],g2)
-f=A.b([],g4)
-f=A.ai(B.m,"Voc\xea enterra os restos mortais do zelador, acompanhando-o at\xe9 seu descanso final. Depois desse trabalho, voc\xea vai precisar de uma pausa para descansar e recarregar as energias, mas a ideia de fazer check-in em qualquer lugar faz voc\xea pensar duas vezes. Talvez umas f\xe9rias em casa sejam necess\xe1rias. 24",d1,'O zelador da propriedade contratou sua equipe para investigar uma assombra\xe7\xe3o neste antigo hotel abandonado, conhecido pelos moradores locais como o local de v\xe1rios assassinatos brutais. Ao pegar a chave deixada para voc\xea sob o capacho, voc\xea ouve uma voz sussurrar: "Voc\xea pode fazer o check-in, mas nunca poder\xe1 fazer o check-out". Mas n\xe3o h\xe1 mais ningu\xe9m aqui... quem acabou de dizer isso?',B.w,16,"Voc\xea vence quando enterra os restos mortais do zelador. \u2022 Procure pelos restos mortais do zelador. \u2022 Leve esses restos mortais para o cemit\xe9rio. \u2022 Descanse os restos mortais.",d1,"Pequenos tokens de monstro \u2013Nervoso\nFantasmas",e9,h,A.b([A.Y("Quando estiver em uma pe\xe7a com uma ficha de Restos Mortais virada para baixo, vire-a para cima e coloque-a no seu tabuleiro de personagem.","Desenterrar Restos"),A.Y("Enquanto estiver em um ladrilho com um marcador de Restos, fa\xe7a um teste de Conhecimento: 5+ Vire a ficha de Restos Mortais para cima. Se for Restos Mortais do Zelador (a ficha \u201c1\u201d), coloque-a no seu tabuleiro de personagem. 0\u20134Voc\xea n\xe3o aprende nada.","Identificar Restos Mortais"),A.Y("Se voc\xea estiver no ladrilho do Cemit\xe9rio e tiver os Restos Mortais do Zelador (o marcador \u201c1\u201d), fa\xe7a um teste de Sanidade. 5+ Voc\xea venceu!Voc\xea coloca os restos mortais em uma cova aberta. A velha casa fica em sil\xeancio. 0\u20134Sofra 2 de dano Mental. No in\xedcio da vez do traidor Cada her\xf3i sofre 1 de dano Mental para cada marcador de Restos Mortais em seu tabuleiro de personagem.Os esp\xedritos dos mortos clamam.","Consagrar Restos Mortais")],g6),f,"Venha brincar conosco",c6)
-h=A.ai(B.m,"Voc\xea descobre que a f\xfaria assassina do seu amigo veio de um e-mail amaldi\xe7oado que ele recebeu no telefone. Depois de pesquisar um pouco, voc\xea descobre que veio daqueles gremlins \u2014 de alguma forma, aquelas pragas antigas aprenderam a usar a internet. Embora voc\xea tenha posto um fim \xe0s palha\xe7adas dos gremlins, sua vit\xf3ria veio ao custo da vida do seu amigo. Ao fechar os olhos sem vida deles, voc\xea estremece com o sorriso largo demais ainda congelado no rosto deles. Voc\xea se assusta quando o telefone deles vibra com uma notifica\xe7\xe3o: \u201cFWD: ABRA ISSO!! URGENTE!!\u201d",d1,'Voc\xea ouve risadas agudas vindas de todos os lados da casa. Seus telefones come\xe7am a zumbir estranhamente, porque voc\xea estava procurando por um sinal a noite toda. Um de seus companheiros sorri, seus l\xe1bios se esticando tanto que os cantos de sua boca quase alcan\xe7am suas orelhas. Em uma m\xe3o est\xe1 seu telefone. Na outra, uma adaga. Eles zombam de voc\xea, "Encaminhe isto ou morra."',B.w,17,"Voc\xea vence quando mata o traidor e todos os Gremlins da casa.",e5,"3 Fichas de Monstro Pequeno \u2013Gremlins\n3 Fichas de Runa\nAzulejos onde voc\xea pode obter um sinal:\nTorre \u2013Piso Superior\nGaleria \u2013Piso Superior\nObservat\xf3rio \u2013Piso Superior",d3,A.b([c8,c9],g2),A.b([A.Y("Enquanto em umladrilho onde voc\xea pode obter um sinal,fa\xe7a um teste de Conhecimento. Tem que haver mais informa\xe7\xf5es sobre esses gremlins\u2026 . 5+ Coloque uma ficha de Runa em um Gremlin. Agora voc\xea pode atacar esse Gremlin. Em um ataque bem-sucedido, ele ser\xe1 morto em vez de atordoado. 0\u20134Sofra 1 de dano Mental. No final do seu turno Tire uma mensagem do chap\xe9u e mostre ao traidor. YVoc\xea recebe um e- mail.","Fa\xe7a uma pesquisa no seu telefone")],g6),B.am,"Encaminhe isto ou morra",c6)
+f=A.b([A.L("\u2022Os restos mortais do zelador s\xe3o representados pelo marcador de Resto Mortal |1|.\u2022Os her\xf3is podem negociar restos mortais entre si, seguindo as regras normais de negocia\xe7\xe3o.\u2022Quando pegar |restos mortais|de  algum saque do cad\xe1ver de um explorador, voc\xea deve pegar todos que ele estava carregando.","Restos"),A.L("Cada her\xf3i sofre 1 de dano Mental para cada marcador de Restos Mortais em seu tabuleiro de personagem.Os esp\xedritos dos mortos clamam.","No inicio da vez do traidor")],g4)
+f=A.ai(B.m,"Voc\xea enterra os restos mortais do zelador, acompanhando-o at\xe9 seu descanso final. Depois desse trabalho, voc\xea vai precisar de uma pausa para descansar e recarregar as energias, mas a ideia de fazer check-in em qualquer lugar faz voc\xea pensar duas vezes. Talvez umas f\xe9rias em casa sejam necess\xe1rias. 24",d1,'O zelador da propriedade contratou sua equipe para investigar uma assombra\xe7\xe3o neste antigo hotel abandonado, conhecido pelos moradores locais como o local de v\xe1rios assassinatos brutais. Ao pegar a chave deixada para voc\xea sob o capacho, voc\xea ouve uma voz sussurrar: "Voc\xea pode fazer o check-in, mas nunca poder\xe1 fazer o check-out". Mas n\xe3o h\xe1 mais ningu\xe9m aqui... quem acabou de dizer isso?',B.w,16,"Voc\xea vence quando enterra os restos mortais do zelador. \u2022 Procure pelos restos mortais do zelador. \u2022 Leve esses restos mortais para o cemit\xe9rio. \u2022 Descanse os restos mortais.",f0,"Pequenos tokens de monstro \u2013Nervoso\nFantasmas",f1,h,A.b([A.Y("Quando estiver em uma pe\xe7a com uma ficha de Restos Mortais virada para baixo,coloque-a no seu tabuleiro de personagem e vire-a para cima (n\xe3o tem como descartar).","Desenterrar Restos"),A.Y("Enquanto estiver em um ladrilho com um marcador de Restos, fa\xe7a um teste de Conhecimento: 5+ Vire a ficha de Restos Mortais para cima. Se for Restos Mortais do Zelador (a ficha \u201c1\u201d), coloque-a no seu tabuleiro de personagem. 0\u20134Voc\xea n\xe3o aprende nada.","Identificar Restos Mortais"),A.Y("Se voc\xea estiver no ladrilho do Cemit\xe9rio e tiver os Restos Mortais do Zelador (o marcador \u201c1\u201d), fa\xe7a um teste de Sanidade. 5+ Voc\xea venceu!Voc\xea coloca os restos mortais em uma cova aberta. A velha casa fica em sil\xeancio. 0\u20134Sofra 2 de dano Mental.","Consagrar Restos Mortais")],g6),f,"Venha brincar conosco",c6)
+h=A.ai(B.m,"Voc\xea descobre que a f\xfaria assassina do seu amigo veio de um e-mail amaldi\xe7oado que ele recebeu no telefone. Depois de pesquisar um pouco, voc\xea descobre que veio daqueles gremlins \u2014 de alguma forma, aquelas pragas antigas aprenderam a usar a internet. Embora voc\xea tenha posto um fim \xe0s palha\xe7adas dos gremlins, sua vit\xf3ria veio ao custo da vida do seu amigo. Ao fechar os olhos sem vida deles, voc\xea estremece com o sorriso largo demais ainda congelado no rosto deles. Voc\xea se assusta quando o telefone deles vibra com uma notifica\xe7\xe3o: \u201cFWD: ABRA ISSO!! URGENTE!!\u201d",d1,'Voc\xea ouve risadas agudas vindas de todos os lados da casa. Seus telefones come\xe7am a zumbir estranhamente, porque voc\xea estava procurando por um sinal a noite toda. Um de seus companheiros sorri, seus l\xe1bios se esticando tanto que os cantos de sua boca quase alcan\xe7am suas orelhas. Em uma m\xe3o est\xe1 seu telefone. Na outra, uma adaga. Eles zombam de voc\xea, "Encaminhe isto ou morra."',B.w,17,"Voc\xea vence quando mata o traidor e todos os Gremlins da casa.",e6,"3 Fichas de Monstro Pequeno \u2013Gremlins\n3 Fichas de Runa\nAzulejos onde voc\xea pode obter um sinal:\nTorre \u2013Piso Superior\nGaleria \u2013Piso Superior\nObservat\xf3rio \u2013Piso Superior",d3,A.b([c8,c9],g2),A.b([A.Y("Enquanto em umladrilho onde voc\xea pode obter um sinal,fa\xe7a um teste de Conhecimento. Tem que haver mais informa\xe7\xf5es sobre esses gremlins\u2026 . 5+ Coloque uma ficha de Runa em um Gremlin. Agora voc\xea pode atacar esse Gremlin. Em um ataque bem-sucedido, ele ser\xe1 morto em vez de atordoado. 0\u20134Sofra 1 de dano Mental. No final do seu turno Tire uma mensagem do chap\xe9u e mostre ao traidor. YVoc\xea recebe um e- mail.","Fa\xe7a uma pesquisa no seu telefone")],g6),B.aO,"Encaminhe isto ou morra",c6)
 e=A.b([c8,c9],g2)
-d=A.b([A.P("\u2022 Vire a Ilus\xe3o para cima e devolva-a ao tabuleiro de personagem do traidor. \u2022 Se o token revelado for o \u201c1\u201d, o traidor foi revelado. Eles devem colocar seu explorador no ladrilho onde o token estava localizado e devolver todos os Number Tokens na casa para seu tabuleiro de personagem. Ent\xe3o, eles devem devolver o token de Ilus\xe3o de maior n\xfamero para a caixa do jogo.","Quando voc\xea dissipa uma ilus\xe3o"),A.P("Se voc\xea vencer, a Ilus\xe3o \xe9 dissipada conforme descrito acima. Se um ataque revelar o traidor, esse ataque n\xe3o causa dano.","Quando voc\xea ataca uma ilus\xe3o")],g4)
-d=A.ai(B.m,'Com seu \xfaltimo suspiro, seu antigo amigo come\xe7a a desaparecer. Ele e todos os seus pertences flutuam no ar como fuma\xe7a, deixando para tr\xe1s nada al\xe9m do anel. A fuma\xe7a fica no ar por um breve momento antes de ser atra\xedda para o anel. Voc\xea percebe algum movimento na bugiganga e a pega para dar uma olhada mais de perto... \xe9 o rosto do seu amigo, preso no metal liso? Ao se fazer a pergunta, voc\xea percebe que realmente n\xe3o se importa. Girando o anel em seus dedos, uma palavra ecoa em sua mente: "Precioso". Voc\xea sente uma necessidade urgente de ir a algum lugar, a qualquer lugar, a todos os lugares. Voc\xea deve proteger o anel. 26',d1,'Um dos seus amigos come\xe7a a resmungar. Eles d\xe3o um passo para a esquerda e um para a direita ao mesmo tempo. Mas... como? Clones? Reflexos? Para onde quer que voc\xea olhe, h\xe1 outro. Tudo o que voc\xea consegue captar \xe9 uma palavra: "Precioso".',B.w,18,"Voc\xea vence quando mata o traidor.",d1,"Fichas num\xe9ricas \u2013Ilus\xf5es",e9,e,A.b([A.Y("Enquanto estiver em um tile com uma Ilus\xe3o, fa\xe7a um teste de Conhecimento. \u2022 Se voc\xea tiver o Espelho, adicione 2 ao resultado do seu teste. 5+Dissipe a ilus\xe3o conforme descrito acima. 0\u20134Receba um dado de dano Mental.","Enfrente uma ilus\xe3o"),A.Y("Voc\xea ouve um zumbido. O anel quer voltar para casa. Enquanto estiver no ladrilho do Vault, fa\xe7a um teste de Sanidade. Para cada Press\xe1gio que voc\xea tiver, adicione 1 ao resultado do seu teste. 8+ Cause um dado de dano Mental ao traidor (se ele for revelado), ou dissipe qualquer Ilus\xe3o (como descrito acima). Termine seu turno. 0\u20137Termine seu turno.","Chamado para o Anel")],g6),d,"Um belo toque para isso",c6)
-e=A.ai(B.m,'Voc\xea destruiu as fitas e escapou da casa, mas teve que deixar seu amigo para tr\xe1s. Embora possa ouvir os gritos deles, voc\xea n\xe3o ousa olhar para tr\xe1s. O esp\xedrito vingativo os reivindicou, e voc\xea tem sorte de ter escapado com vida. Depois de chegar a uma dist\xe2ncia segura da casa, voc\xea faz uma pausa para recuperar o f\xf4lego. De repente, seu telefone toca e voc\xea atende. Do outro lado, voc\xea ouve est\xe1tica e uma voz que sussurra: "Vejo voc\xea em breve".',d1,'Voc\xea veio aqui esperando encontrar uma maneira de banir a maldi\xe7\xe3o que o persegue pela \xfaltima semana, desde que assistiu \xe0quela maldita fita de v\xeddeo. Todas as pistas levaram at\xe9 aqui, mas a casa parece querer algo de voc\xea. Uma velha televis\xe3o liga ali perto, sua est\xe1tica quebrando o sil\xeancio. Um s\xedmbolo vermelho pisca na tela, e uma voz sibila, "At\xe9 meia-noite. Vejo voc\xea em breve." Voc\xea tem apenas algumas horas para sobreviver \xe0 maldi\xe7\xe3o. A fita clica e desliza para fora do videocassete. O r\xf3tulo na fita indica que esta \xe9\u201cC\xf3pia n\xfamero 6.\u201dTique-taque.',B.w,19,"Voc\xea vence se conseguir destruir todas as fitas de v\xeddeo e escapar da casa pelo patamar antes que a maldi\xe7\xe3o tome conta. \u2022 Destrua todas as fitas de v\xeddeo. \u2022 V\xe1 para o bloco de aterrissagem.",e8,"N\xfamero de trilha\nFichas de videocassete\nFicha Fantasma \u2013Esp\xedrito Vingativo",d3,A.b([c8,c9],g2),A.b([A.Y("Enquanto estiver em qualquer pe\xe7a com uma fita de v\xeddeo, fa\xe7a um teste de Pot\xeancia. 4+ A fita de v\xeddeo \xe9 destru\xedda. Remova o token do jogo. Faz um crocante satisfat\xf3rio. E\u2026 um grito fraco? 0\u20133Nada acontece.","Destrua as fitas"),A.Y("Enquanto estiver em uma pe\xe7a com o Esp\xedrito Vingativo, role um dado. 2 Mova a Trilha Num\xe9rica para cima em 1. 1 Mova a Trilha Num\xe9rica para cima em 1 e termine seu turno. 0 Termine seu turno. No final do seu turno Se todas as fitas de v\xeddeo foram destru\xeddas e pelo menos 1 her\xf3i estiver no ladrilho do Hall de Entrada,voc\xea venceu!","Afaste a Maldi\xe7\xe3o")],g6),B.am,"Capturado em fita",c6)
+d=A.b([A.L("\u2022O traidor pode se esconder entre suas ilus\xf5es. O token de n\xfamero rotulado com |1| \xe9 o verdadeiro traidor.\u2022O traidor jogar\xe1 como Ilus\xf5es |fichas| ou como seu verdadeiro eu (miniatura do explorador), mas nunca como ambos.\u2022Voc\xea pode dissipar Ilus\xf5es para tentar revelar o traidor.","Anel das Ilus\xf5es"),A.L("\u2022 Vire a Ilus\xe3o para cima e devolva-a ao tabuleiro de personagem do traidor. \u2022 Se o token revelado for o \u201c1\u201d, o traidor foi revelado. Eles devem colocar seu explorador no ladrilho onde o token estava localizado e devolver todos os Number Tokens na casa para seu tabuleiro de personagem. Ent\xe3o, eles devem devolver o token de Ilus\xe3o de maior n\xfamero para a caixa do jogo.","Quando voc\xea dissipa uma ilus\xe3o"),A.L("Se voc\xea vencer, a Ilus\xe3o \xe9 dissipada conforme descrito acima. Se um ataque revelar o traidor, esse ataque n\xe3o causa dano.","Quando voc\xea ataca uma ilus\xe3o")],g4)
+d=A.ai(B.m,'Com seu \xfaltimo suspiro, seu antigo amigo come\xe7a a desaparecer. Ele e todos os seus pertences flutuam no ar como fuma\xe7a, deixando para tr\xe1s nada al\xe9m do anel. A fuma\xe7a fica no ar por um breve momento antes de ser atra\xedda para o anel. Voc\xea percebe algum movimento na bugiganga e a pega para dar uma olhada mais de perto... \xe9 o rosto do seu amigo, preso no metal liso? Ao se fazer a pergunta, voc\xea percebe que realmente n\xe3o se importa. Girando o anel em seus dedos, uma palavra ecoa em sua mente: "Precioso". Voc\xea sente uma necessidade urgente de ir a algum lugar, a qualquer lugar, a todos os lugares. Voc\xea deve proteger o anel. 26',d1,'Um dos seus amigos come\xe7a a resmungar. Eles d\xe3o um passo para a esquerda e um para a direita ao mesmo tempo. Mas... como? Clones? Reflexos? Para onde quer que voc\xea olhe, h\xe1 outro. Tudo o que voc\xea consegue captar \xe9 uma palavra: "Precioso".',B.w,18,"Voc\xea vence quando mata o traidor.",d4,"Fichas num\xe9ricas \u2013Ilus\xf5es",f1,e,A.b([A.Y("Enquanto estiver em um tile com uma Ilus\xe3o, fa\xe7a um teste de Conhecimento. \u2022 Se voc\xea tiver o Espelho, adicione 2 ao resultado do seu teste. 5+Dissipe a ilus\xe3o conforme descrito acima. 0\u20134Receba um dado de dano Mental.","Enfrente uma ilus\xe3o"),A.Y("Voc\xea ouve um zumbido. O anel quer voltar para casa. Enquanto estiver no ladrilho do Cofre, fa\xe7a um teste de Sanidade. Para cada Press\xe1gio que voc\xea tiver, adicione 1 ao resultado do seu teste. 8+ Cause um dado de dano Mental ao traidor (se ele for revelado), ou dissipe qualquer Ilus\xe3o (como descrito acima). Termine seu turno. 0\u20137Termine seu turno.","Chamado para o Anel")],g6),d,"Um belo toque para isso",c6)
+e=A.ai(B.m,'Voc\xea destruiu as fitas e escapou da casa, mas teve que deixar seu amigo para tr\xe1s. Embora possa ouvir os gritos deles, voc\xea n\xe3o ousa olhar para tr\xe1s. O esp\xedrito vingativo os reivindicou, e voc\xea tem sorte de ter escapado com vida. Depois de chegar a uma dist\xe2ncia segura da casa, voc\xea faz uma pausa para recuperar o f\xf4lego. De repente, seu telefone toca e voc\xea atende. Do outro lado, voc\xea ouve est\xe1tica e uma voz que sussurra: "Vejo voc\xea em breve".',d1,'Voc\xea veio aqui esperando encontrar uma maneira de banir a maldi\xe7\xe3o que o persegue pela \xfaltima semana, desde que assistiu \xe0quela maldita fita de v\xeddeo. Todas as pistas levaram at\xe9 aqui, mas a casa parece querer algo de voc\xea. Uma velha televis\xe3o liga ali perto, sua est\xe1tica quebrando o sil\xeancio. Um s\xedmbolo vermelho pisca na tela, e uma voz sibila, "At\xe9 meia-noite. Vejo voc\xea em breve." Voc\xea tem apenas algumas horas para sobreviver \xe0 maldi\xe7\xe3o. A fita clica e desliza para fora do videocassete. O r\xf3tulo na fita indica que esta \xe9\u201cC\xf3pia n\xfamero 6.\u201dTique-taque.',B.w,19,"Voc\xea vence se conseguir destruir todas as fitas de v\xeddeo e escapar da casa pelo patamar antes que a maldi\xe7\xe3o tome conta. \u2022 Destrua todas as fitas de v\xeddeo. \u2022 V\xe1 para o bloco de aterrissagem.",e9,"N\xfamero de trilha\nFichas de videocassete\nFicha Fantasma \u2013Esp\xedrito Vingativo",d3,A.b([c8,c9],g2),A.b([A.Y("Enquanto estiver em qualquer pe\xe7a com uma fita de v\xeddeo, fa\xe7a um teste de Pot\xeancia. 4+ A fita de v\xeddeo \xe9 destru\xedda. Remova o token do jogo. Faz um crocante satisfat\xf3rio. E\u2026 um grito fraco? 0\u20133Nada acontece.","Destrua as fitas"),A.Y("Enquanto estiver em uma pe\xe7a com o Esp\xedrito Vingativo, role um dado. 2 Mova a Trilha Num\xe9rica para cima em 1. 1 Mova a Trilha Num\xe9rica para cima em 1 e termine seu turno. 0 Termine seu turno. No final do seu turno Se todas as fitas de v\xeddeo foram destru\xeddas e pelo menos 1 her\xf3i estiver no ladrilho do Hall de Entrada,voc\xea venceu!","Afaste a Maldi\xe7\xe3o")],g6),B.aO,"Capturado em fita",c6)
 c=A.b(["Se houver menos de cinco pe\xe7as que n\xe3o sejam de aterrissagem na casa, retire pe\xe7as da pilha de pe\xe7as e coloque-as na casa at\xe9 que haja cinco.","Deixar de lado{2/3/4/5}Fichas de runas. Estas s\xe3o as s\xedlabas do nome do homem sem rosto.",c9],g2)
-b=A.b([A.P("Se voc\xea derrotar o Homem Sem Rosto e souber seu nome (todas as fichas de Runa foram colocadas na casa), ele ser\xe1 destru\xeddo.Voc\xea venceu!","Quando voc\xea ataca o Homem Sem Rosto")],g4)
-b=A.ai(B.m,"Sua voz \xe9 liberada, e voc\xea escapou da coisa sem rosto. Voc\xea ouve sons de comemora\xe7\xe3o vindos de sua cidade. Voc\xea segue em dire\xe7\xe3o \xe0 festa, mas o sentimento de excita\xe7\xe3o desaparece rapidamente quando voc\xea olha para tr\xe1s e v\xea a forma de um homem aparecendo em uma das janelas da casa. 28",d1,"Voc\xea v\xea um cachorro rosnando no canto. Pelo menos, voc\xea acha que ele est\xe1 rosnando. Seus l\xe1bios est\xe3o curvados para tr\xe1s em um rosnado, e ele se move como se fosse latir, mas nenhum som sai. Parece que o cachorro foi afetado pela mesma maldi\xe7\xe3o que tem atormentado esta cidade nas \xfaltimas duas semanas. Toda noite \xe0 meia-noite, os moradores perdem suas vozes at\xe9 de manh\xe3. Depois de dias inquietos de pesquisa, voc\xea aprendeu que depois desta noite todos na cidade perder\xe3o suas vozes para sempre. Algo est\xe1 roubando o som do mundo. Algo sem rosto.",B.w,20,"Voc\xea vence quando destr\xf3i o Homem Sem Rosto \u2022 Procure pela casa para encontrar as s\xedlabas do nome do homem sem rosto. \u2022 Quando voc\xea encontrar todas as s\xedlabas, ataque com sucesso o Homem Sem Rosto para destru\xed-lo.",e6,"Ficha do Homem Sem Rosto\nFichas de Runa \u2013S\xedlabas do Nome do Homem Sem Rosto",d3,c,A.b([A.Y("Enquanto estiver em uma pe\xe7a, pergunte ao traidor se a pr\xf3xima s\xedlaba est\xe1 naquela pe\xe7a. \u2022 Se voc\xea estiver correto,coloque uma ficha de Runa em seu tile. Quando voc\xea coloca a \xfaltima ficha de Runa, os her\xf3is aprenderam o nome do Homem Sem Rosto. \u2022 Se voc\xea estiver incorreto,o traidor lhe dar\xe1 uma dica.","Encontre uma s\xedlaba")],g6),b,"N\xe3o diga isso","Personagem mais velho")
+b=A.b([A.L("Se voc\xea derrotar o Homem Sem Rosto e souber seu nome (todas as fichas de Runa foram colocadas na casa), ele ser\xe1 destru\xeddo.Voc\xea venceu!","Quando voc\xea ataca o Homem Sem Rosto")],g4)
+b=A.ai(B.m,"Sua voz \xe9 liberada, e voc\xea escapou da coisa sem rosto. Voc\xea ouve sons de comemora\xe7\xe3o vindos de sua cidade. Voc\xea segue em dire\xe7\xe3o \xe0 festa, mas o sentimento de excita\xe7\xe3o desaparece rapidamente quando voc\xea olha para tr\xe1s e v\xea a forma de um homem aparecendo em uma das janelas da casa. 28",d1,"Voc\xea v\xea um cachorro rosnando no canto. Pelo menos, voc\xea acha que ele est\xe1 rosnando. Seus l\xe1bios est\xe3o curvados para tr\xe1s em um rosnado, e ele se move como se fosse latir, mas nenhum som sai. Parece que o cachorro foi afetado pela mesma maldi\xe7\xe3o que tem atormentado esta cidade nas \xfaltimas duas semanas. Toda noite \xe0 meia-noite, os moradores perdem suas vozes at\xe9 de manh\xe3. Depois de dias inquietos de pesquisa, voc\xea aprendeu que depois desta noite todos na cidade perder\xe3o suas vozes para sempre. Algo est\xe1 roubando o som do mundo. Algo sem rosto.",B.w,20,"Voc\xea vence quando destr\xf3i o Homem Sem Rosto \u2022 Procure pela casa para encontrar as s\xedlabas do nome do homem sem rosto. \u2022 Quando voc\xea encontrar todas as s\xedlabas, ataque com sucesso o Homem Sem Rosto para destru\xed-lo.",e7,"Ficha do Homem Sem Rosto\nFichas de Runa \u2013S\xedlabas do Nome do Homem Sem Rosto",d3,c,A.b([A.Y("Enquanto estiver em uma pe\xe7a, pergunte ao traidor se a pr\xf3xima s\xedlaba est\xe1 naquela pe\xe7a. \u2022 Se voc\xea estiver correto,coloque uma ficha de Runa em seu tile. Quando voc\xea coloca a \xfaltima ficha de Runa, os her\xf3is aprenderam o nome do Homem Sem Rosto. \u2022 Se voc\xea estiver incorreto,o traidor lhe dar\xe1 uma dica.","Encontre uma s\xedlaba")],g6),b,"N\xe3o diga isso","Personagem mais velho")
 c=A.b(["Se a pe\xe7a da Biblioteca n\xe3o estiver na casa, encontre-a na pilha de pe\xe7as e coloque-a em uma regi\xe3o diferente daquela atualmente ocupada pelo traidor.",c9],g2)
-a=A.b([A.P("Enquanto voc\xea tiver o livro, voc\xea pode atacar Horrores com qualquer uma de suas caracteristicas.","O livro"),A.P("Se voc\xea vencer e o Spooky tiver o livro, pegue o livro.","Quando voc\xea usa For\xe7a para atacar Spooky McMasters")],g4)
-a=A.ai(B.m,"Com o livro queimado, voc\xeas todos saem de casa e v\xe3o comer uma pizza de meia-noite. Voc\xea pergunta a Spooky se ele consideraria escrever um romance hist\xf3rico, em vez disso.",d1,'Seu amigo, o romancista de terror Spooky McMasters, est\xe1 sempre entrando furtivamente em casas abandonadas como "pesquisa" para seus romances, mas dessa vez ele n\xe3o saiu. Quando voc\xea entrou na casa para procur\xe1-lo, voc\xea teve uma sensa\xe7\xe3o desconfort\xe1vel. Nas hist\xf3rias de Spooky, algu\xe9m sempre trai o grupo, ent\xe3o quando seu amigo encontrou o manuscrito de Spooky e ordenou que um Spooky monstruoso o matasse, voc\xea teve uma verdadeira sensa\xe7\xe3o de d\xe9j\xe0 vu. No manuscrito, os her\xf3is tiveram que queimar o livro para libertar todos dos tropos de terror que foram obrigados a representar. Pelo menos voc\xea sabe o que tem que fazer.',B.w,21,"Voc\xea vence quando destr\xf3i o Livro. \u2022 Obtenha o livro da Spooky McMasters. \u2022 Jogue o Livro no fogo.",f0,"Ficha Demon\xedaca \u2013McMasters Assustadores\nPequenos tokens de monstro \u2013Horrores\nAzulejos onde h\xe1 fogo:\nSala da Fornalha \u2013Por\xe3o\nSala Ritual \u2013Por\xe3o\nCozinha \u2013T\xe9rreo\nLaborat\xf3rio \u2013T\xe9rreo\nSala Carbonizada \u2013T\xe9rreo/Piso Superior",e7,c,A.b([A.Y("Enquanto em um azulejo onde h\xe1 fogo,fa\xe7a um teste de Sanidade. 5+ Voc\xea venceu!O manuscrito queima at\xe9 virar cinzas. Voc\xea est\xe1 livre do controle criativo de Spooky McMasters. 0\u20134Nada acontece.O manuscrito n\xe3o queima.","Queime o livro"),A.Y("Enquanto estiver na pe\xe7a da Biblioteca, fa\xe7a um teste de Sanidade. 4+Ganhe 1 em For\xe7a ou Velocidade.Tudo est\xe1 come\xe7ando a fazer sentido. 0\u20133Coloque um monstro Horror na sua pe\xe7a. \u201cFor\xe7a atrav\xe9s da adversidade\u201d, assustador sempre diz.","Construir personagem")],g6),a,"Spooky McMasters apresenta...",c6)
-c=A.ai(B.m,"Mesmo quando voc\xea escapa da casa, voc\xea n\xe3o consegue se livrar da sensa\xe7\xe3o de que ainda est\xe1 sendo observado... . 30",d1,'O corretor lhe disse que o \xfaltimo homem a ser dono desta casa foi um espi\xe3o durante a Guerra Fria, e que o pr\xe9dio estava cheio de passagens secretas, c\xe2meras e muito mais. O corretor at\xe9 mesmo ofereceu a garantia de que "Claro, n\xf3s limpamos o lugar". Por que, ent\xe3o, a porta do por\xe3o se fechou atr\xe1s de voc\xea? As paredes se movem ligeiramente, deixando escapar um gemido faminto. Voc\xea sabe que est\xe1 sendo observado, e \xe9 hora de dar o fora daqui.',B.w,22,"Voc\xea vence quando escapa da casa.",f3,"Pequenos Monstros \u2013Zumbis da Guerra Fria",f2,A.b(["Embaralhe todas as pe\xe7as do Por\xe3o (exceto a pe\xe7a do P\xe1tio do Por\xe3o) de volta na pilha de pe\xe7as.","Cada her\xf3i coloca sua figura no ladrilho do Por\xe3o.",c9],g2),A.b([A.Y("Enquanto estiver no Hall de Entrada ou no Cemit\xe9rio, fa\xe7a um teste de Velocidade. Se voc\xea tiver Dynamite ou Skeleton Key, adicione 2 ao resultado do seu teste. 6+ Voc\xea venceu!Voc\xea escapa da 0\u20135casa! Nada acontece.","Fuja da casa"),A.Y("\u2022 Se voc\xea tiver o Cr\xe2nio, fa\xe7a um teste de Conhecimento 5+ Olhe para o pr\xf3ximo tile Basement na pilha de tiles. Voc\xea pode devolv\xea-lo para o topo ou para o fundo da pilha de tiles.As gravuras no cr\xe2nio s\xe3o uma esp\xe9cie de mapa! 0\u20134Nada acontece.","Estude a planta baixa")],g6),B.am,"Opera\xe7\xe3o: Subterr\xe2neo",f1)
-a0=A.ai(B.m,'"Adeus", a voz de Sya desaparece no sil\xeancio enquanto voc\xea desliga a m\xe1quina final. A luz do \xeddolo morre e voc\xea sente um peso sendo tirado da casa, mas seu "companheiro" n\xe3o est\xe1 em lugar nenhum. Voc\xea olha pela janela para ver a eletricidade retornando \xe0s casas e empresas locais. Voc\xea finalmente baniu a maldi\xe7\xe3o da cidade, mas quem sabe se essa tecnologia cair\xe1 nas m\xe3os erradas no futuro?',d1,'O \xeddolo brilha, e uma voz rob\xf3tica ressoa pelos corredores, "Bem-vindo. Meu nome \xe9 Sya. Como posso ajudar?" Antes que voc\xea possa responder, um alarme toca pelos corredores. A voz continua, "Meus registros indicam que voc\xea n\xe3o foi carregado no sistema. Por favor, fique parado e eu o carregarei." Voc\xea ouve um barulho de metal enquanto a casa o tranca l\xe1 dentro. Olhando ao redor, voc\xea v\xea uma hachura de lasers abrasadores se movendo em sua dire\xe7\xe3o. Isso n\xe3o pode ser bom.',B.w,23,"Voc\xea vence quando todos os marcadores de M\xe1quina estiverem DESLIGADOS e voc\xea tiver destru\xeddo o n\xfamero necess\xe1rio de pe\xe7as.",f4,"N\xfamero de trilha\nTokens ON/OFF \u2013Circuitos\nFichas de Monstros Pequenos \u2013Assistentes de Rob\xf4s",d3,A.b([f5,c9],g2),A.b([A.Y("Se voc\xea estiver no mesmo ladrilho que uma Ficha LIGADA, fa\xe7a um teste de Conhecimento. 5+ Vire o token para o lado OFF. Atordoe um rob\xf4 na regi\xe3o. A m\xe1quina foi desligada. 0\u20134Nada acontece.","Desligue a m\xe1quina"),A.Y("Enquanto estiver em qualquer pe\xe7a com um S\xedmbolo de Press\xe1gio, fa\xe7a um teste de Pot\xeancia. 4+Vire a pe\xe7a. Ela est\xe1 destru\xedda. Mova a trilha num\xe9rica para baixo em 1. 0\u20133Nada acontece. Quartos Destru\xeddos Tiles de sala destru\xeddas s\xe3o viradas para baixo. Tiles destru\xeddas n\xe3o s\xe3o consideradas como tendo s\xedmbolos ou efeitos, e contam como tendo portas em todos os quatro lados. No final do seu turno Se todos os tokens da M\xe1quina estiverem DESLIGADOS e a Trilha Num\xe9rica estiver em 0,voc\xea venceu!","Destrua a casa")],g6),B.am,"Alerta de intruso",c6)
+a=A.b([A.L("Enquanto voc\xea tiver o livro, voc\xea pode atacar Horrores com qualquer uma de suas caracteristicas.","O livro"),A.L("Se voc\xea vencer e o Spooky tiver o livro, pegue o livro.","Quando voc\xea usa For\xe7a para atacar Spooky McMasters")],g4)
+a=A.ai(B.m,"Com o livro queimado, voc\xeas todos saem de casa e v\xe3o comer uma pizza de meia-noite. Voc\xea pergunta a Spooky se ele consideraria escrever um romance hist\xf3rico, em vez disso.",d1,'Seu amigo, o romancista de terror Spooky McMasters, est\xe1 sempre entrando furtivamente em casas abandonadas como "pesquisa" para seus romances, mas dessa vez ele n\xe3o saiu. Quando voc\xea entrou na casa para procur\xe1-lo, voc\xea teve uma sensa\xe7\xe3o desconfort\xe1vel. Nas hist\xf3rias de Spooky, algu\xe9m sempre trai o grupo, ent\xe3o quando seu amigo encontrou o manuscrito de Spooky e ordenou que um Spooky monstruoso o matasse, voc\xea teve uma verdadeira sensa\xe7\xe3o de d\xe9j\xe0 vu. No manuscrito, os her\xf3is tiveram que queimar o livro para libertar todos dos tropos de terror que foram obrigados a representar. Pelo menos voc\xea sabe o que tem que fazer.',B.w,21,"Voc\xea vence quando destr\xf3i o Livro. \u2022 Obtenha o livro da Spooky McMasters. \u2022 Jogue o Livro no fogo.",f0,"Ficha Demon\xedaca \u2013McMasters Assustadores\nPequenos tokens de monstro \u2013Horrores\nAzulejos onde h\xe1 fogo:\nSala da Fornalha \u2013Por\xe3o\nSala Ritual \u2013Por\xe3o\nCozinha \u2013T\xe9rreo\nLaborat\xf3rio \u2013T\xe9rreo\nSala Carbonizada \u2013T\xe9rreo/Piso Superior",e8,c,A.b([A.Y("Enquanto em um azulejo onde h\xe1 fogo,fa\xe7a um teste de Sanidade. 5+ Voc\xea venceu!O manuscrito queima at\xe9 virar cinzas. Voc\xea est\xe1 livre do controle criativo de Spooky McMasters. 0\u20134Nada acontece.O manuscrito n\xe3o queima.","Queime o livro"),A.Y("Enquanto estiver na pe\xe7a da Biblioteca, fa\xe7a um teste de Sanidade. 4+Ganhe 1 em For\xe7a ou Velocidade.Tudo est\xe1 come\xe7ando a fazer sentido. 0\u20133Coloque um monstro Horror na sua pe\xe7a. \u201cFor\xe7a atrav\xe9s da adversidade\u201d, assustador sempre diz.","Construir personagem")],g6),a,"Spooky McMasters apresenta...",c6)
+c=A.ai(B.m,"Mesmo quando voc\xea escapa da casa, voc\xea n\xe3o consegue se livrar da sensa\xe7\xe3o de que ainda est\xe1 sendo observado... . 30",d1,'O corretor lhe disse que o \xfaltimo homem a ser dono desta casa foi um espi\xe3o durante a Guerra Fria, e que o pr\xe9dio estava cheio de passagens secretas, c\xe2meras e muito mais. O corretor at\xe9 mesmo ofereceu a garantia de que "Claro, n\xf3s limpamos o lugar". Por que, ent\xe3o, a porta do por\xe3o se fechou atr\xe1s de voc\xea? As paredes se movem ligeiramente, deixando escapar um gemido faminto. Voc\xea sabe que est\xe1 sendo observado, e \xe9 hora de dar o fora daqui.',B.w,22,"Voc\xea vence quando escapa da casa.",f4,"Pequenos Monstros \u2013Zumbis da Guerra Fria",f3,A.b(["Embaralhe todas as pe\xe7as do Por\xe3o (exceto a pe\xe7a do P\xe1tio do Por\xe3o) de volta na pilha de pe\xe7as.","Cada her\xf3i coloca sua figura no ladrilho do Por\xe3o.",c9],g2),A.b([A.Y("Enquanto estiver no Hall de Entrada ou no Cemit\xe9rio, fa\xe7a um teste de Velocidade. Se voc\xea tiver Dynamite ou Skeleton Key, adicione 2 ao resultado do seu teste. 6+ Voc\xea venceu!Voc\xea escapa da 0\u20135casa! Nada acontece.","Fuja da casa"),A.Y("\u2022 Se voc\xea tiver o Cr\xe2nio, fa\xe7a um teste de Conhecimento 5+ Olhe para o pr\xf3ximo tile Basement na pilha de tiles. Voc\xea pode devolv\xea-lo para o topo ou para o fundo da pilha de tiles.As gravuras no cr\xe2nio s\xe3o uma esp\xe9cie de mapa! 0\u20134Nada acontece.","Estude a planta baixa")],g6),B.aO,"Opera\xe7\xe3o: Subterr\xe2neo",f2)
+a0=A.ai(B.m,'"Adeus", a voz de Sya desaparece no sil\xeancio enquanto voc\xea desliga a m\xe1quina final. A luz do \xeddolo morre e voc\xea sente um peso sendo tirado da casa, mas seu "companheiro" n\xe3o est\xe1 em lugar nenhum. Voc\xea olha pela janela para ver a eletricidade retornando \xe0s casas e empresas locais. Voc\xea finalmente baniu a maldi\xe7\xe3o da cidade, mas quem sabe se essa tecnologia cair\xe1 nas m\xe3os erradas no futuro?',d1,'O \xeddolo brilha, e uma voz rob\xf3tica ressoa pelos corredores, "Bem-vindo. Meu nome \xe9 Sya. Como posso ajudar?" Antes que voc\xea possa responder, um alarme toca pelos corredores. A voz continua, "Meus registros indicam que voc\xea n\xe3o foi carregado no sistema. Por favor, fique parado e eu o carregarei." Voc\xea ouve um barulho de metal enquanto a casa o tranca l\xe1 dentro. Olhando ao redor, voc\xea v\xea uma hachura de lasers abrasadores se movendo em sua dire\xe7\xe3o. Isso n\xe3o pode ser bom.',B.w,23,"Voc\xea vence quando todos os marcadores de M\xe1quina estiverem DESLIGADOS e voc\xea tiver destru\xeddo o n\xfamero necess\xe1rio de pe\xe7as.",f5,"N\xfamero de trilha\nTokens ON/OFF \u2013Circuitos\nFichas de Monstros Pequenos \u2013Assistentes de Rob\xf4s",d3,A.b([f6,c9],g2),A.b([A.Y("Se voc\xea estiver no mesmo ladrilho que uma Ficha LIGADA, fa\xe7a um teste de Conhecimento. 5+ Vire o token para o lado OFF. Atordoe um rob\xf4 na regi\xe3o. A m\xe1quina foi desligada. 0\u20134Nada acontece.","Desligue a m\xe1quina"),A.Y("Enquanto estiver em qualquer pe\xe7a com um S\xedmbolo de Press\xe1gio, fa\xe7a um teste de Pot\xeancia. 4+Vire a pe\xe7a. Ela est\xe1 destru\xedda. Mova a trilha num\xe9rica para baixo em 1. 0\u20133Nada acontece. Quartos Destru\xeddos Tiles de sala destru\xeddas s\xe3o viradas para baixo. Tiles destru\xeddas n\xe3o s\xe3o consideradas como tendo s\xedmbolos ou efeitos, e contam como tendo portas em todos os quatro lados. No final do seu turno Se todos os tokens da M\xe1quina estiverem DESLIGADOS e a Trilha Num\xe9rica estiver em 0,voc\xea venceu!","Destrua a casa")],g6),B.aO,"Alerta de intruso",c6)
 a1=A.b(["Encontrar{2/3/4/5}Fichas de fogo \u2014 estas s\xe3o Chamas Seelie. Coloque uma destas fichas em cada uma das seguintes salas (se elas foram descobertas): Torre, Corredor de Est\xe1tuas, Conservat\xf3rio, Cemit\xe9rio, Caverna Subterr\xe2nea e Lago Subterr\xe2neo.","Coloque as Chamas Seelie restantes de lado.",c9],g2)
-a2=A.b([A.P("\u2022Chamas Seelie podem ser transportadas e negociadas, usando as regras normais de negocia\xe7\xe3o.\u2022Voc\xea s\xf3 pode segurar uma chama seelie por vez.\u2022 Se voc\xea morrer carregando uma chama seelie, coloque a ficha da chama na pe\xe7a onde voc\xea morreu.\u2022 Voc\xea pode largar sua chama seelie a qualquer momento durante seu turno.","Chamas Seelie"),A.P("Coloque uma ficha de Chama Seelie naquele ladrilho (se houver alguma restante).","Quando voc\xea descobre uma pe\xe7a com Chama Seelie"),A.P("Se todas as Chamas Seelie foram colocadas na pe\xe7a da Capela, voc\xea venceu!",e0)],g4)
-a2=A.ai(B.m,"Os duendes dan\xe7am em suas tochas, incendiando tudo na capela antes de seguirem para o resto da casa. 32",d1,'Quando voc\xea entrava na casa, encontrava comida em todos os c\xf4modos. Algumas eram deliciosas, outras estranhas, mas todas inebriantes. Era uma noite agrad\xe1vel, at\xe9 a meia-noite, quando as coisas deram errado. Plantas estranhas e escuras agora bloqueiam todas as portas e janelas, e o ar zumbe com vozes sobrenaturais cantando em harmonia: "Eis o Rei e a Rainha Unseelie, dancem eternamente! Oh! Bem-vindos \xe0 M\xe1scara!"',B.w,24,"Voc\xea vence quando impede a M\xe1scara. \u2022 Leve as Chamas Seelie para a Capela.",f6,"Ficha de fogo -Chama Seelie\nFicha da Rainha Negra\nPequeno Token de Monstro \u2013Dan\xe7arina Fae\nAzulejos com Chama Seelie:\nTorre \u2013Piso Superior\nCorredor Estatu\xe1rio \u2013Piso Superior\nConservat\xf3rio \u2013T\xe9rreo\nCemit\xe9rio \u2013T\xe9rreo\nCaverna Subterr\xe2nea \u2013Por\xe3o\nLago Subterr\xe2neo \u2013Por\xe3o",e4,a1,A.b([A.Y("Enquanto em umazulejo com uma Chama Seelie,coloque essa ficha no seu tabuleiro de personagem e fa\xe7a um teste de Conhecimento ou Velocidade. 5+Agora voc\xea carrega uma Chama Seelie.Cuidadosamente, agora\u2026 sim! Entendi! 0\u20134Receba 2 de dano Geral. Agora voc\xea est\xe1 carregando uma Chama Seelie. Voc\xea manuseia a chama desajeitadamente. Ela queima!","Pegue a Chama")],g6),a2,"A M\xe1scara das Sombras","Maior Velocidade")
-a1=A.ai(B.m,"Voc\xea observa a pele do seu antigo amigo desidratar, depois petrificar e virar p\xf3. O tempo deles finalmente acabou.",d1,"Voc\xea se depara com uma armadura. Ela parece velha. Mais velha que esta casa. E h\xe1 uma m\xfamia l\xe1 dentro, que voc\xea reconhece como uma de suas amigas. Mas isso n\xe3o faz sentido algum \u2014 elas se foram h\xe1 apenas alguns dias! A m\xfamia se desfaz em p\xf3, e voc\xea tem um mau pressentimento quando uma de suas companheiras desaparece na casa apenas para ressurgir vestida como um soldado do s\xe9culo XV.",B.w,25,"Voc\xea vence quando quebra o feiti\xe7o da Armadura.",f7,"Fichas de Poder, Velocidade, Conhecimento e Sanidade \u2013Ingredientes do Feiti\xe7o\nAzulejos que t\xeam Ingredientes:\nSala de Opera\xe7\xf5es \u2013Por\xe3o/Piso Superior\nCemit\xe9rio \u2013T\xe9rreo\nQuarto Sangrento \u2013T\xe9rreo/Piso Superior\nLago Subterr\xe2neo \u2013Por\xe3o\nConservat\xf3rio \u2013T\xe9rreo\nCozinha \u2013T\xe9rreo\nDespensa \u2013T\xe9rreo\nSala de Amostras \u2013T\xe9rreo/Piso Superior\nSala de Jantar \u2013T\xe9rreo\nForno \u2013Cave\nObservat\xf3rio \u2013Piso Superior\nBiblioteca \u2013T\xe9rreo/Piso Superior",e7,A.b(["Separe uma ficha de For\xe7a, Velocidade, Conhecimento e Sanidade. Esses s\xe3o ingredientes de magia.",c9],g2),A.b([A.Y("Enquanto estiver em um tile listado abaixo, fa\xe7a o teste de caracter\xedstica correspondente. Voc\xea n\xe3o pode fazer esse teste se o marcador de caracter\xedstica para essa caracter\xedstica j\xe1 tiver sido colocado. \u2022Sanidade: (Sala de cirurgia, cemit\xe9rio, sala sangrenta) \u2013um frasco de sangue seco. \u2022 For\xe7a:(Despensa, Sala de Amostras, Sala de Jantar) \u2013um peda\xe7o de carne misteriosa.\u2022 Conhecimento:(Forno, Observat\xf3rio, Biblioteca) \u2013a poeira das eras.\u2022 Velocidade:(Lago subterr\xe2neo, Conservat\xf3rio, Cozinha) \u2013um punhado de erva daninha c\xe1ustica. 4+ Coloque o marcador de Caracter\xedstica na sua pe\xe7a. 0\u20133Nada acontece.","Encontre ingredientes"),A.Y("Enquanto estiver no Arsenal ou na sala do ritual, fa\xe7a um teste de Sanidade. Voc\xea s\xf3 pode fazer esse teste se tiver colocado {1/2/3/4} Fichas de caracter\xedsticas. 5+ Voc\xea venceu!Voc\xea quebrou o feiti\xe7o da armadura. 0\u20134 Perca 1 de Sanidade.A armadura tem vontade pr\xf3pria.","Quebre o feiti\xe7o da armadura")],g6),B.am,"Tempo Emprestado",f1)
-a3=A.ai(B.m,"Os membros da fam\xedlia distorcida envelhecem rapidamente diante de seus olhos, murchando em cascas em meros minutos. Eles entram em colapso e se desintegram em p\xf3. 34",d1,'A noite foi divertida, at\xe9 que um dos seus amigos desapareceu. Enquanto voc\xea procurava por eles, voc\xea ficou impressionado com o quanto seu amigo se parece com as pessoas nos retratos que adornam todas as paredes da casa. Voc\xea come\xe7a a ouvir c\xe2nticos r\xedtmicos ecoando pelos corredores, "Salve o Anci\xe3o. Agora vem nosso mestre do al\xe9m", e todas as janelas e portas externas se fecham abruptamente. H\xe1 algo sinistro acontecendo aqui, e voc\xea precisar\xe1 impedir se quiser ter alguma esperan\xe7a de sair vivo.',B.w,26,"Voc\xea vence quando o traidor estiver morto, o Tributo tiver sido arruinado e o Altar destru\xeddo. \u2022 Voc\xea n\xe3o pode destruir o Altar at\xe9 que tenha arruinado o Tributo e matou o traidor.",e8,"S\xedmbolo do Altar\nPequenos tokens de monstro \u2013Parentes\nFicha da Rainha Negra \u2013O Anci\xe3o\nAzulejos com Ef\xedgies da Fam\xedlia:\nGaleria \u2013Piso Superior\nCorredor Estatu\xe1rio \u2013Piso Superior",e4,A.b(["Coloque o marcador de Altar em qualquer pe\xe7a do T\xe9rreo.","Se a Sala de Rituais n\xe3o tiver sido descoberta, procure-a na pilha de pe\xe7as e coloque-a no Por\xe3o, usando as regras normais de coloca\xe7\xe3o de pe\xe7as.",c9],g2),A.b([A.Y("Enquanto estiver no ladrilho da Sala de Rituais, fa\xe7a um teste de Sanidade. 4+Voc\xea perturba a disposi\xe7\xe3o do Altar.O Anci\xe3o observa. 0\u2013 3Sofra 1 de dano F\xedsico.Voc\xea perturbou o Anci\xe3o.","Arruinar o Tributo"),A.Y("Enquanto estiver no ladrilho com o Altar, fa\xe7a um teste de For\xe7a. Voc\xea n\xe3o pode Destruir o Altar at\xe9 que voc\xea tenha Arruinado o Tributo e matou o traidor. 4+Se o traidor estiver morto,voc\xea venceu! 0\u20133Sofra 1 de dano Mental.Puni\xe7\xe3o arcana por sua insol\xeancia.","Destrua o Altar"),A.Y("Enquanto em um azulejo com ef\xedgies de fam\xedlia,fa\xe7a um teste de Sanidade. 5+ Remova um parente da casa.Voc\xea recita um feiti\xe7o e um dos parentes vira p\xf3. 0\u20134Sofra 1 de dano F\xedsico.","Podar a \xc1rvore Geneal\xf3gica")],g6),B.am,"A Ben\xe7\xe3o da Fam\xedlia",c6)
+a2=A.b([A.L("\u2022Chamas Seelie podem ser transportadas e negociadas, usando as regras normais de negocia\xe7\xe3o.\u2022Voc\xea s\xf3 pode segurar uma chama seelie por vez.\u2022 Se voc\xea morrer carregando uma chama seelie, coloque a ficha da chama na pe\xe7a onde voc\xea morreu.\u2022 Voc\xea pode largar sua chama seelie a qualquer momento durante seu turno.","Chamas Seelie"),A.L("Coloque uma ficha de Chama Seelie naquele ladrilho (se houver alguma restante).","Quando voc\xea descobre uma pe\xe7a com Chama Seelie"),A.L("Se todas as Chamas Seelie foram colocadas na pe\xe7a da Capela, voc\xea venceu!",e0)],g4)
+a2=A.ai(B.m,"Os duendes dan\xe7am em suas tochas, incendiando tudo na capela antes de seguirem para o resto da casa. 32",d1,'Quando voc\xea entrava na casa, encontrava comida em todos os c\xf4modos. Algumas eram deliciosas, outras estranhas, mas todas inebriantes. Era uma noite agrad\xe1vel, at\xe9 a meia-noite, quando as coisas deram errado. Plantas estranhas e escuras agora bloqueiam todas as portas e janelas, e o ar zumbe com vozes sobrenaturais cantando em harmonia: "Eis o Rei e a Rainha Unseelie, dancem eternamente! Oh! Bem-vindos \xe0 M\xe1scara!"',B.w,24,"Voc\xea vence quando impede a M\xe1scara. \u2022 Leve as Chamas Seelie para a Capela.",f7,"Ficha de fogo -Chama Seelie\nFicha da Rainha Negra\nPequeno Token de Monstro \u2013Dan\xe7arina Fae\nAzulejos com Chama Seelie:\nTorre \u2013Piso Superior\nCorredor Estatu\xe1rio \u2013Piso Superior\nConservat\xf3rio \u2013T\xe9rreo\nCemit\xe9rio \u2013T\xe9rreo\nCaverna Subterr\xe2nea \u2013Por\xe3o\nLago Subterr\xe2neo \u2013Por\xe3o",e5,a1,A.b([A.Y("Enquanto em umazulejo com uma Chama Seelie,coloque essa ficha no seu tabuleiro de personagem e fa\xe7a um teste de Conhecimento ou Velocidade. 5+Agora voc\xea carrega uma Chama Seelie.Cuidadosamente, agora\u2026 sim! Entendi! 0\u20134Receba 2 de dano Geral. Agora voc\xea est\xe1 carregando uma Chama Seelie. Voc\xea manuseia a chama desajeitadamente. Ela queima!","Pegue a Chama")],g6),a2,"A M\xe1scara das Sombras","Maior Velocidade")
+a1=A.ai(B.m,"Voc\xea observa a pele do seu antigo amigo desidratar, depois petrificar e virar p\xf3. O tempo deles finalmente acabou.",d1,"Voc\xea se depara com uma armadura. Ela parece velha. Mais velha que esta casa. E h\xe1 uma m\xfamia l\xe1 dentro, que voc\xea reconhece como uma de suas amigas. Mas isso n\xe3o faz sentido algum \u2014 elas se foram h\xe1 apenas alguns dias! A m\xfamia se desfaz em p\xf3, e voc\xea tem um mau pressentimento quando uma de suas companheiras desaparece na casa apenas para ressurgir vestida como um soldado do s\xe9culo XV.",B.w,25,"Voc\xea vence quando quebra o feiti\xe7o da Armadura.",f8,"Fichas de Poder, Velocidade, Conhecimento e Sanidade \u2013Ingredientes do Feiti\xe7o\nAzulejos que t\xeam Ingredientes:\nSala de Opera\xe7\xf5es \u2013Por\xe3o/Piso Superior\nCemit\xe9rio \u2013T\xe9rreo\nQuarto Sangrento \u2013T\xe9rreo/Piso Superior\nLago Subterr\xe2neo \u2013Por\xe3o\nConservat\xf3rio \u2013T\xe9rreo\nCozinha \u2013T\xe9rreo\nDespensa \u2013T\xe9rreo\nSala de Amostras \u2013T\xe9rreo/Piso Superior\nSala de Jantar \u2013T\xe9rreo\nForno \u2013Cave\nObservat\xf3rio \u2013Piso Superior\nBiblioteca \u2013T\xe9rreo/Piso Superior",e8,A.b(["Separe uma ficha de For\xe7a, Velocidade, Conhecimento e Sanidade. Esses s\xe3o ingredientes de magia.",c9],g2),A.b([A.Y("Enquanto estiver em um tile listado abaixo, fa\xe7a o teste de caracter\xedstica correspondente. Voc\xea n\xe3o pode fazer esse teste se o marcador de caracter\xedstica para essa caracter\xedstica j\xe1 tiver sido colocado. \u2022Sanidade: (Sala de cirurgia, cemit\xe9rio, sala sangrenta) \u2013um frasco de sangue seco. \u2022 For\xe7a:(Despensa, Sala de Amostras, Sala de Jantar) \u2013um peda\xe7o de carne misteriosa.\u2022 Conhecimento:(Forno, Observat\xf3rio, Biblioteca) \u2013a poeira das eras.\u2022 Velocidade:(Lago subterr\xe2neo, Conservat\xf3rio, Cozinha) \u2013um punhado de erva daninha c\xe1ustica. 4+ Coloque o marcador de Caracter\xedstica na sua pe\xe7a. 0\u20133Nada acontece.","Encontre ingredientes"),A.Y("Enquanto estiver no Arsenal ou na sala do ritual, fa\xe7a um teste de Sanidade. Voc\xea s\xf3 pode fazer esse teste se tiver colocado {1/2/3/4} Fichas de caracter\xedsticas. 5+ Voc\xea venceu!Voc\xea quebrou o feiti\xe7o da armadura. 0\u20134 Perca 1 de Sanidade.A armadura tem vontade pr\xf3pria.","Quebre o feiti\xe7o da armadura")],g6),B.aO,"Tempo Emprestado",f2)
+a3=A.ai(B.m,"Os membros da fam\xedlia distorcida envelhecem rapidamente diante de seus olhos, murchando em cascas em meros minutos. Eles entram em colapso e se desintegram em p\xf3. 34",d1,'A noite foi divertida, at\xe9 que um dos seus amigos desapareceu. Enquanto voc\xea procurava por eles, voc\xea ficou impressionado com o quanto seu amigo se parece com as pessoas nos retratos que adornam todas as paredes da casa. Voc\xea come\xe7a a ouvir c\xe2nticos r\xedtmicos ecoando pelos corredores, "Salve o Anci\xe3o. Agora vem nosso mestre do al\xe9m", e todas as janelas e portas externas se fecham abruptamente. H\xe1 algo sinistro acontecendo aqui, e voc\xea precisar\xe1 impedir se quiser ter alguma esperan\xe7a de sair vivo.',B.w,26,"Voc\xea vence quando o traidor estiver morto, o Tributo tiver sido arruinado e o Altar destru\xeddo. \u2022 Voc\xea n\xe3o pode destruir o Altar at\xe9 que tenha arruinado o Tributo e matou o traidor.",e9,"S\xedmbolo do Altar\nPequenos tokens de monstro \u2013Parentes\nFicha da Rainha Negra \u2013O Anci\xe3o\nAzulejos com Ef\xedgies da Fam\xedlia:\nGaleria \u2013Piso Superior\nCorredor Estatu\xe1rio \u2013Piso Superior",e5,A.b(["Coloque o marcador de Altar em qualquer pe\xe7a do T\xe9rreo.","Se a Sala de Rituais n\xe3o tiver sido descoberta, procure-a na pilha de pe\xe7as e coloque-a no Por\xe3o, usando as regras normais de coloca\xe7\xe3o de pe\xe7as.",c9],g2),A.b([A.Y("Enquanto estiver no ladrilho da Sala de Rituais, fa\xe7a um teste de Sanidade. 4+Voc\xea perturba a disposi\xe7\xe3o do Altar.O Anci\xe3o observa. 0\u2013 3Sofra 1 de dano F\xedsico.Voc\xea perturbou o Anci\xe3o.","Arruinar o Tributo"),A.Y("Enquanto estiver no ladrilho com o Altar, fa\xe7a um teste de For\xe7a. Voc\xea n\xe3o pode Destruir o Altar at\xe9 que voc\xea tenha Arruinado o Tributo e matou o traidor. 4+Se o traidor estiver morto,voc\xea venceu! 0\u20133Sofra 1 de dano Mental.Puni\xe7\xe3o arcana por sua insol\xeancia.","Destrua o Altar"),A.Y("Enquanto em um azulejo com ef\xedgies de fam\xedlia,fa\xe7a um teste de Sanidade. 5+ Remova um parente da casa.Voc\xea recita um feiti\xe7o e um dos parentes vira p\xf3. 0\u20134Sofra 1 de dano F\xedsico.","Podar a \xc1rvore Geneal\xf3gica")],g6),B.aO,"A Ben\xe7\xe3o da Fam\xedlia",c6)
 a4=A.b([c8,c9,"Encontrar{3/4/4/5}Fichas de runa e reserve-as para os her\xf3is. Essas s\xe3o Alien Words."],g2)
-a5=A.b([A.P("Se voc\xea tiver Conhecimento de Alien\xedgenas, voc\xea pode rolar novamente at\xe9 dois dos seus dados.",f8)],g4)
-a5=A.ai(B.m,"Enquanto voc\xea vai se perguntar para sempre sobre o significado dessas palavras alien\xedgenas, voc\xea tamb\xe9m ser\xe1 eternamente grato por nunca ter descoberto. E quando o sil\xeancio aperta e voc\xea ouve sussurros fracos, que podem ser apenas frutos da sua imagina\xe7\xe3o, voc\xea liga o r\xe1dio e tenta abaf\xe1-los.",d1,"Por semanas, todos voc\xeas ouviram vozes em suas cabe\xe7as. Vozes alien\xedgenas, falando palavras estranhas e obrigando voc\xea, levando voc\xea para esta casa velha. Ao cruzar a soleira, as vozes desaparecem em sussurros e ent\xe3o param. Voc\xea se sente aliviado, at\xe9 come\xe7ar a ouvir as palavras estranhas novamente. Mas desta vez, as palavras n\xe3o est\xe3o em sua cabe\xe7a \u2014 elas est\xe3o vindo de um de seus amigos, que as est\xe1 dizendo, gritando. As palavras ecoam, e uma escrita estranha come\xe7a a aparecer nas paredes. A escrita se espalha, crescendo em complexidade. Voc\xea n\xe3o consegue ler as palavras, mas sabe em seus ossos que deve impedir seu crescimento.",B.w,27,"Voc\xea vence quando o traidor est\xe1 morto.",f6,"Azulejos com notas sobre o idioma:\nBiblioteca \u2013T\xe9rreo/Piso Superior\nObservat\xf3rio \u2013Piso Superior\nTorre \u2013Piso Superior\nLaborat\xf3rio \u2013T\xe9rreo\nSala de Amostras \u2013T\xe9rreo/Piso Superior",d3,a4,A.b([A.Y("Enquanto em umazulejo com notas sobre o idioma,fa\xe7a um teste de Conhecimento. 4+ Pegue o token de Her\xf3i correspondente do seu her\xf3i (se voc\xea ainda n\xe3o tiver um). Este token representa seu Conhecimento de Alien\xedgenas.As coisas est\xe3o come\xe7ando a fazer sentido. 0\u20133Coloque uma Palavra Alien\xedgena da pilha dos her\xf3is nesta sala. Se houver j\xe1 existe uma Palavra Alien\xedgena nesta sala, coloque uma Palavra Alien\xedgena em uma sala adjacente.As palavras est\xe3o se espalhando.","Aprenda a l\xedngua")],g6),a5,"Palavras das estrelas",c6)
-a4=A.ai(B.m,"Voc\xea sai da casa, encharcado e coberto de tripas de tubar\xe3o, mas vivo. Agora que est\xe1 de volta \xe0 terra firme, voc\xea se lembra por que nunca gostou da \xe1gua. 36",d1,"Voc\xea ouviu falar do fantasma atrav\xe9s do prefeito, que o contratou para investigar, mas manter as coisas em segredo. A aut\xf3psia disse que o dono da casa morreu em um acidente de barco, mas h\xe1 rumores de que algo mais horr\xedvel aconteceu nesta pacata cidade litor\xe2nea. Enquanto voc\xea investiga por sinais de atividade paranormal, sons de mar\xe9 come\xe7am a surgir de algum lugar da casa e suas narinas s\xe3o inundadas com o cheiro de \xe1gua salgada.",B.w,28,"Voc\xea vence quando explode o Grande Tubar\xe3o Fantasma Branco. \u2022 Encontre explosivos e/ou dinamite. \u2022 Invoque o Tubar\xe3o para o seu espa\xe7o. \u2022 Alimente o tubar\xe3o com explosivos.",f4,"Ficha do Tubar\xe3o Fantasma\n5 Fichas de Armadilha \u2013Explosivos",e9,A.b([c8,c9],g2),A.b([A.Y("Em qualquer pe\xe7a com um s\xedmbolo de Item, fa\xe7a um teste de Velocidade. 4+Pegue um token de Armadilha. Estes s\xe3o Explosivos. 0\u20133 Nada acontece.","Procurar por Explosivos"),A.Y("Enquanto estiver em um ladrilho com o Tubar\xe3o, fa\xe7a um teste de Poder. Descarte qualquer n\xfamero de fichas de Armadilha para adicionar 2 ao resultado do seu teste para cada ficha descartada. Se voc\xea tiver Dinamite, adicione 2 ao resultado do seu teste. 10+ Voc\xea venceu!O tubar\xe3o explode! 0\u20139Receba 2 de dano F\xedsico e termine seu turno.","For\xe7ar Explosivos na Garganta do Tubar\xe3o")],g6),B.am,"Vamos precisar de uma casa maior",c6)
-a6=A.ai(B.m,"N\xe3o haver\xe1 jardim aqui. As fadas foram amarradas. Se elas retornarem, voc\xea queimar\xe1 o lugar e salgar\xe1 a terra para que nada cres\xe7a aqui nunca mais.",d1,"\u201cEsta casa precisa de um jardim\u201d, diz a corretora. Voc\xea fica confuso, porque ela est\xe1 apenas gesticulando para o tapete e as paredes. Os olhos da corretora est\xe3o brilhantes, com um brilho sobrenatural, e sua voz tem uma qualidade estranha e musical. Algo parece estranho, e voc\xea de repente se lembra de hist\xf3rias de inf\xe2ncia sobre fadas. Isso \xe9... a corretora poderia ser... uma das fadas? Voc\xea quebra a cabe\xe7a, tentando lembrar de tudo o que pode sobre fadas. Vamos ver... elas vivem em c\xedrculos de cogumelos, voc\xea n\xe3o deve comer a comida delas, e... algo sobre ferro? Certo! Ferro pode machuc\xe1-las! Isso \xe9 alguma coisa. Talvez se voc\xea aprender mais sobre as fadas, voc\xea pode impedi-las de destruir esta linda casa antiga.",B.w,29,"Voc\xea vence quando realiza o ritual para prender os Fae.",d4,"Pequenos tokens de monstro \u2013Fada\nFichas de Her\xf3i \u2013Conhecimento das Fadas\n2 Fichas de Poder \u2013Ferro Frio\nAzulejos com informa\xe7\xf5es sobre a Fada:\nBiblioteca \u2013T\xe9rreo/Piso Superior\nSala Ritual \u2013Por\xe3o",f2,A.b([c8,c9],g2),A.b([A.Y("Enquanto estiver em uma pe\xe7a com um s\xedmbolo de Item, fa\xe7a um teste de Pot\xeancia. 5+Pegue uma ficha de Might (se sobrar alguma). Isto \xe9 Cold Iron. 0\u20134 Nada acontece. Ferro Frio Venenoso para fadas. \u2022 Ferro Frio pode ser negociado entre her\xf3is, usando as regras normais de negocia\xe7\xe3o.","Ferro Rasgado"),A.Y("Enquanto em umazulejo com informa\xe7\xf5es sobre os Fae,fa\xe7a um teste de Conhecimento. 5+ Pegue o token de Her\xf3i correspondente do seu her\xf3i. Isso representa o Conhecimento das Fae. Este token n\xe3o pode ser negociado. 0\u20134Nada acontece.","Aprenda sobre as fadas"),A.Y("Enquanto estiver em um tile com um dos Fae, fa\xe7a um teste de Knowledge. Adicione 2 ao resultado do seu teste para cada um dos seguintes que voc\xea possui: Knowledge of the Fae, Cold Iron, the Ring Omen. 9+Voc\xea realiza o ritual com sucesso e vincula o Fae.Voc\xea venceu! 0\u20138Nada acontece.","Amarre a Fada")],g6),B.am,"Um lindo jardim",c6)
+a5=A.b([A.L("Se voc\xea tiver Conhecimento de Alien\xedgenas, voc\xea pode rolar novamente at\xe9 dois dos seus dados.",f9)],g4)
+a5=A.ai(B.m,"Enquanto voc\xea vai se perguntar para sempre sobre o significado dessas palavras alien\xedgenas, voc\xea tamb\xe9m ser\xe1 eternamente grato por nunca ter descoberto. E quando o sil\xeancio aperta e voc\xea ouve sussurros fracos, que podem ser apenas frutos da sua imagina\xe7\xe3o, voc\xea liga o r\xe1dio e tenta abaf\xe1-los.",d1,"Por semanas, todos voc\xeas ouviram vozes em suas cabe\xe7as. Vozes alien\xedgenas, falando palavras estranhas e obrigando voc\xea, levando voc\xea para esta casa velha. Ao cruzar a soleira, as vozes desaparecem em sussurros e ent\xe3o param. Voc\xea se sente aliviado, at\xe9 come\xe7ar a ouvir as palavras estranhas novamente. Mas desta vez, as palavras n\xe3o est\xe3o em sua cabe\xe7a \u2014 elas est\xe3o vindo de um de seus amigos, que as est\xe1 dizendo, gritando. As palavras ecoam, e uma escrita estranha come\xe7a a aparecer nas paredes. A escrita se espalha, crescendo em complexidade. Voc\xea n\xe3o consegue ler as palavras, mas sabe em seus ossos que deve impedir seu crescimento.",B.w,27,"Voc\xea vence quando o traidor est\xe1 morto.",f7,"Azulejos com notas sobre o idioma:\nBiblioteca \u2013T\xe9rreo/Piso Superior\nObservat\xf3rio \u2013Piso Superior\nTorre \u2013Piso Superior\nLaborat\xf3rio \u2013T\xe9rreo\nSala de Amostras \u2013T\xe9rreo/Piso Superior",d3,a4,A.b([A.Y("Enquanto em umazulejo com notas sobre o idioma,fa\xe7a um teste de Conhecimento. 4+ Pegue o token de Her\xf3i correspondente do seu her\xf3i (se voc\xea ainda n\xe3o tiver um). Este token representa seu Conhecimento de Alien\xedgenas.As coisas est\xe3o come\xe7ando a fazer sentido. 0\u20133Coloque uma Palavra Alien\xedgena da pilha dos her\xf3is nesta sala. Se houver j\xe1 existe uma Palavra Alien\xedgena nesta sala, coloque uma Palavra Alien\xedgena em uma sala adjacente.As palavras est\xe3o se espalhando.","Aprenda a l\xedngua")],g6),a5,"Palavras das estrelas",c6)
+a4=A.b([c8,c9],g2)
+a6=A.b([A.L("Tiles que foram viradas s\xe3o inundadas e t\xeam portas em todos os 4 lados. Tiles inundados n\xe3o t\xeam simbolos nelas. Pe\xe7a de entrada n\xe3o podem ser inundadas.","Pe\xe7as viradas"),A.L("Explosivos podem ser negociados entre her\xf3is, usando as regras normais de negocia\xe7\xe3o","Explosivos")],g4)
+a6=A.ai(B.m,"Voc\xea sai da casa, encharcado e coberto de tripas de tubar\xe3o, mas vivo. Agora que est\xe1 de volta \xe0 terra firme, voc\xea se lembra por que nunca gostou da \xe1gua. 36",d1,"Voc\xea ouviu falar do fantasma atrav\xe9s do prefeito, que o contratou para investigar, mas manter as coisas em segredo. A aut\xf3psia disse que o dono da casa morreu em um acidente de barco, mas h\xe1 rumores de que algo mais horr\xedvel aconteceu nesta pacata cidade litor\xe2nea. Enquanto voc\xea investiga por sinais de atividade paranormal, sons de mar\xe9 come\xe7am a surgir de algum lugar da casa e suas narinas s\xe3o inundadas com o cheiro de \xe1gua salgada.",B.w,28,"Voc\xea vence quando explode o Grande Tubar\xe3o Fantasma Branco. \u2022 Encontre explosivos e/ou dinamite. \u2022 Invoque o Tubar\xe3o para o seu espa\xe7o. \u2022 Alimente o tubar\xe3o com explosivos.",f5,u.H,f1,a4,A.b([A.Y("Em qualquer pe\xe7a com um s\xedmbolo de Item, fa\xe7a um teste de Velocidade. 4+Pegue um token de Armadilha. Estes s\xe3o Explosivos. 0\u20133 Nada acontece.","Procurar por Explosivos"),A.Y("Enquanto estiver em um ladrilho com o Tubar\xe3o, fa\xe7a um teste de For\xe7a. Descarte qualquer n\xfamero de fichas de Armadilha para adicionar 2 ao resultado do seu teste para cada ficha descartada. Se voc\xea tiver o item Dinamite, adicione 2 ao resultado do seu teste. 10+ Voc\xea venceu!O tubar\xe3o explode! 0\u20139Receba 2 de dano F\xedsico e termine seu turno.","For\xe7ar Explosivos na Garganta do Tubar\xe3o")],g6),a6,"Vamos precisar de uma casa maior",c6)
+a4=A.ai(B.m,"N\xe3o haver\xe1 jardim aqui. As fadas foram amarradas. Se elas retornarem, voc\xea queimar\xe1 o lugar e salgar\xe1 a terra para que nada cres\xe7a aqui nunca mais.",d1,"\u201cEsta casa precisa de um jardim\u201d, diz a corretora. Voc\xea fica confuso, porque ela est\xe1 apenas gesticulando para o tapete e as paredes. Os olhos da corretora est\xe3o brilhantes, com um brilho sobrenatural, e sua voz tem uma qualidade estranha e musical. Algo parece estranho, e voc\xea de repente se lembra de hist\xf3rias de inf\xe2ncia sobre fadas. Isso \xe9... a corretora poderia ser... uma das fadas? Voc\xea quebra a cabe\xe7a, tentando lembrar de tudo o que pode sobre fadas. Vamos ver... elas vivem em c\xedrculos de cogumelos, voc\xea n\xe3o deve comer a comida delas, e... algo sobre ferro? Certo! Ferro pode machuc\xe1-las! Isso \xe9 alguma coisa. Talvez se voc\xea aprender mais sobre as fadas, voc\xea pode impedi-las de destruir esta linda casa antiga.",B.w,29,"Voc\xea vence quando realiza o ritual para prender os Fae.",d4,"Pequenos tokens de monstro \u2013Fada\nFichas de Her\xf3i \u2013Conhecimento das Fadas\n2 Fichas de Poder \u2013Ferro Frio\nAzulejos com informa\xe7\xf5es sobre a Fada:\nBiblioteca \u2013T\xe9rreo/Piso Superior\nSala Ritual \u2013Por\xe3o",f3,A.b([c8,c9],g2),A.b([A.Y("Enquanto estiver em uma pe\xe7a com um s\xedmbolo de Item, fa\xe7a um teste de Pot\xeancia. 5+Pegue uma ficha de Might (se sobrar alguma). Isto \xe9 Cold Iron. 0\u20134 Nada acontece. Ferro Frio Venenoso para fadas. \u2022 Ferro Frio pode ser negociado entre her\xf3is, usando as regras normais de negocia\xe7\xe3o.","Ferro Rasgado"),A.Y("Enquanto em umazulejo com informa\xe7\xf5es sobre os Fae,fa\xe7a um teste de Conhecimento. 5+ Pegue o token de Her\xf3i correspondente do seu her\xf3i. Isso representa o Conhecimento das Fae. Este token n\xe3o pode ser negociado. 0\u20134Nada acontece.","Aprenda sobre as fadas"),A.Y("Enquanto estiver em um tile com um dos Fae, fa\xe7a um teste de Knowledge. Adicione 2 ao resultado do seu teste para cada um dos seguintes que voc\xea possui: Knowledge of the Fae, Cold Iron, the Ring Omen. 9+Voc\xea realiza o ritual com sucesso e vincula o Fae.Voc\xea venceu! 0\u20138Nada acontece.","Amarre a Fada")],g6),B.aO,"Um lindo jardim",c6)
 a7=A.b(["Se a pe\xe7a da Escada Secreta n\xe3o tiver sido descoberta, procure-a na pilha de pe\xe7as e coloque-a na casa, usando as regras normais de coloca\xe7\xe3o de pe\xe7as.","Reserve a parte superior{4/6/9/12}tiles da pilha de tiles e retorne os tiles restantes para a caixa do jogo. Se houver menos tiles do que isso na pilha, pule esta etapa.","Pegue todos os press\xe1gios que o traidor tiver e entregue-os ao revelador da assombra\xe7\xe3o.","O traidor est\xe1 tentando encontrar o Anel. Quando as equipes se separam, os her\xf3is podem trocar Omens livremente, usando as regras normais de troca. Cada her\xf3i deve colocar seus Omens virados para baixo na mesa \xe0 sua frente.",c9],g2)
-a8=A.b([A.P("\u2022 Mantenha seus Omens virados para baixo na sua frente, a menos que seja instruido de outra forma, Voc\xea pode olhar para eles a qualquer momento.\u2022 Se voc\xea quiser usar ou se beneficiar de um de seus Omens virados para baixo, voc\xea deve revel\xe1-lo ao traidor. Ent\xe3o, vire-o para baixo novamente.\u2022 Se voc\xea encontrar um novo Omen, n\xe3o o revele. Coloque-o virado para baixo na sua frente.\u2022 Ao trocar press\xe1gios entre her\xf3is, voc\xea n\xe3o precisa revel\xe1-los.","O traidor est\xe1 procurando o anel"),A.P("Coloque a ficha do Altar naquele ladrilho. Um lugar perfeito para um casamento.","Quando voc\xea descobre a pe\xe7a final na pilha de pe\xe7as")],g4)
-a8=A.ai(B.m,"Usando os objetos poderosos desta casa, voc\xea conseguiu arrancar o esp\xedrito do corpo possu\xeddo do seu amigo. Voc\xea os arrasta para a rua e chama uma ambul\xe2ncia. 38",d1,"Voc\xea encontra o corpo do seu amigo desaparecido, um v\xe9u de casamento firmemente agarrado em sua m\xe3o. Em algum lugar nesta casa, um de voc\xeas foi possu\xeddo por um fantasma \u2014 voc\xea o ouviu lamentando por seu amor h\xe1 muito perdido, e ele est\xe1 preparado para matar se isso significar traz\xea-la de volta a este mundo. Voc\xea acha que ele quer este anel que voc\xea encontrou \u2014 voc\xea imagina que pode atrair o fantasma para uma armadilha com uma promessa de reencontro, usando o anel como isca. Voc\xea dar\xe1 ao fantasma o casamento que ele quer e ent\xe3o o banir\xe1 para sempre.",B.w,30,"Voc\xea vence quando realiza a cerim\xf4nia. \u2022 Explore a casa inteira para encontrar o Altar. \u2022 Obrigue o Esp\xedrito a atra\xed-los para o Altar. \u2022 Realize a cerim\xf4nia.",d4,u.O,e7,a7,A.b([A.Y("\u2022 Enquanto voc\xea tiver o Anel, revele-o e fa\xe7a um teste de Conhecimento. Mova o traidor um n\xfamero de pe\xe7as at\xe9 o valor do seu teste.","Compelir o Esp\xedrito"),A.Y("Enquanto estiver no ladrilho com o Altar e o traidor, fa\xe7a um teste de Sanidade. 6+Voc\xea bane o esp\xedrito e liberta seu amigo.Voc\xea venceu! 0\u20135 Nada acontece.","Realizar a Cerim\xf4nia")],g6),a8,"At\xe9 que a morte nos separe","Menor Sanidade al\xe9m do Revelador de Assombra\xe7\xe3o")
+a8=A.b([A.L("\u2022 Mantenha seus Omens virados para baixo na sua frente, a menos que seja instruido de outra forma, Voc\xea pode olhar para eles a qualquer momento.\u2022 Se voc\xea quiser usar ou se beneficiar de um de seus Omens virados para baixo, voc\xea deve revel\xe1-lo ao traidor. Ent\xe3o, vire-o para baixo novamente.\u2022 Se voc\xea encontrar um novo Omen, n\xe3o o revele. Coloque-o virado para baixo na sua frente.\u2022 Ao trocar press\xe1gios entre her\xf3is, voc\xea n\xe3o precisa revel\xe1-los.","O traidor est\xe1 procurando o anel"),A.L("Coloque a ficha do Altar naquele ladrilho. Um lugar perfeito para um casamento.","Quando voc\xea descobre a pe\xe7a final na pilha de pe\xe7as")],g4)
+a8=A.ai(B.m,"Usando os objetos poderosos desta casa, voc\xea conseguiu arrancar o esp\xedrito do corpo possu\xeddo do seu amigo. Voc\xea os arrasta para a rua e chama uma ambul\xe2ncia. 38",d1,"Voc\xea encontra o corpo do seu amigo desaparecido, um v\xe9u de casamento firmemente agarrado em sua m\xe3o. Em algum lugar nesta casa, um de voc\xeas foi possu\xeddo por um fantasma \u2014 voc\xea o ouviu lamentando por seu amor h\xe1 muito perdido, e ele est\xe1 preparado para matar se isso significar traz\xea-la de volta a este mundo. Voc\xea acha que ele quer este anel que voc\xea encontrou \u2014 voc\xea imagina que pode atrair o fantasma para uma armadilha com uma promessa de reencontro, usando o anel como isca. Voc\xea dar\xe1 ao fantasma o casamento que ele quer e ent\xe3o o banir\xe1 para sempre.",B.w,30,"Voc\xea vence quando realiza a cerim\xf4nia. \u2022 Explore a casa inteira para encontrar o Altar. \u2022 Obrigue o Esp\xedrito a atra\xed-los para o Altar. \u2022 Realize a cerim\xf4nia.",d4,u.O,e8,a7,A.b([A.Y("\u2022 Enquanto voc\xea tiver o Anel, revele-o e fa\xe7a um teste de Conhecimento. Mova o traidor um n\xfamero de pe\xe7as at\xe9 o valor do seu teste.","Compelir o Esp\xedrito"),A.Y("Enquanto estiver no ladrilho com o Altar e o traidor, fa\xe7a um teste de Sanidade. 6+Voc\xea bane o esp\xedrito e liberta seu amigo.Voc\xea venceu! 0\u20135 Nada acontece.","Realizar a Cerim\xf4nia")],g6),a8,"At\xe9 que a morte nos separe","Menor Sanidade al\xe9m do Revelador de Assombra\xe7\xe3o")
 a7=A.b([c8,c9],g2)
-a9=A.b([A.P("Se voc\xea n\xe3o estiver usando uma arma, voc\xea pode atacar com Sanidade ou Conhecimento. (Se voc\xea fizer isso, receba dano Mental se perder.)Spiritus mundi, mano!","Quando voc\xea ataca um item amaldi\xe7oado em seu ladrilho"),A.P("Se voc\xea vencer, poder\xe1 roubar um dos Itens ou Press\xe1gios deles em vez de causar dano.",f9),A.P("Se voc\xea tem o S\xedmbolo Sagrado e{3/4/5/7}outros itens ou press\xe1gios, voc\xea venceu! No final do seu turno Se voc\xea estiver segurando o S\xedmbolo Sagrado, receba um dado de dano Geral. (Se voc\xea estiver no Hall de Entrada com o n\xfamero de itens necess\xe1rios para vencer, pule esta etapa.) Cara, essa coisa \xe9 realmente maligna.","Quando voc\xea terminar seu turno no Hall de Entrada")],g4)
-a9=A.ai(B.m,'Voc\xea conseguiu. Voc\xea conseguiu acabar com o mal que havia corrompido seu amigo. Agora voc\xea pode vender os direitos de TV da sua hist\xf3ria fantasmag\xf3rica de sobreviv\xeancia para "Bros vs. Ghosts". Auto-toca aqui!',d1,'O objetivo desta excurs\xe3o mais excelente era encontrar fantasmas para aquele reality show legal, "Bros vs. Ghosts". Voc\xea tirou a sorte grande com um tabuleiro Ouija, contatando alguns fantasmas amig\xe1veis que o avisam sobre o s\xedmbolo sagrado amaldi\xe7oado que seu amigo encontrou. Se eles escaparem da casa com ele, o mundo acabar\xe1 completamente \u2014 que pena! Os fantasmas se oferecem para ajud\xe1-lo em uma batalha \xe9pica do bem contra o mal. Radical!',B.w,31,"Voc\xea vence quando escapa da casa com o n\xfamero necess\xe1rio de itens. \u2022 Ataque itens amaldi\xe7oados para atordo\xe1-los. \u2022 Dissipe a Maldi\xe7\xe3o em itens atordoados para peg\xe1-los.",e8,"Azulejos com Energia Espiritual:\nGaleria \u2013Piso Superior\nCemit\xe9rio \u2013T\xe9rreo\nSala de Opera\xe7\xf5es \u2013Por\xe3o/Piso Superior\nQuarto Insonorizado \u2013Por\xe3o/Piso Superior",e9,a7,A.b([A.Y("Enquanto estiver em um tile com um Item Amaldi\xe7oado atordoado, remova seu token e pegue o Item ou carta de Press\xe1gio associado. Agora voc\xea est\xe1 carregando aquele Item ou Press\xe1gio. Ele n\xe3o est\xe1 mais amaldi\xe7oado.","Dissipar a Maldi\xe7\xe3o"),A.Y("Enquanto em umazulejo com energia espiritual,receba um dado de dano Geral e aumente qualquer uma das suas caracter\xedsticas em 1.","Fale com os Esp\xedritos")],g6),a9,"Um fantasma de uma chance",c6)
+a9=A.b([A.L("Se voc\xea n\xe3o estiver usando uma arma, voc\xea pode atacar com Sanidade ou Conhecimento. (Se voc\xea fizer isso, receba dano Mental se perder.)","Quando voc\xea ataca um item amaldi\xe7oado em seu ladrilho"),A.L("Se voc\xea vencer, poder\xe1 roubar um dos Itens ou Press\xe1gios dele em vez de causar dano.","Quando voc\xea ataca o traidor com For\xe7a"),A.L("Se voc\xea tem o S\xedmbolo Sagrado e{3/4/5/7}outros itens ou press\xe1gios, voc\xea venceu!","Quando voc\xea terminar seu turno no Hall de Entrada"),A.L("Se voc\xea estiver segurando o S\xedmbolo Sagrado, receba um dado de dano Geral. (Se voc\xea estiver no Hall de Entrada com o n\xfamero de itens necess\xe1rios para vencer, pule esta etapa.) Cara, essa coisa \xe9 realmente maligna.",e0)],g4)
+a9=A.ai(B.m,'Voc\xea conseguiu. Voc\xea conseguiu acabar com o mal que havia corrompido seu amigo. Agora voc\xea pode vender os direitos de TV da sua hist\xf3ria fantasmag\xf3rica de sobreviv\xeancia para "Bros vs. Ghosts". Auto-toca aqui!',d1,'O objetivo desta excurs\xe3o mais excelente era encontrar fantasmas para aquele reality show legal, "Bros vs. Ghosts". Voc\xea tirou a sorte grande com um tabuleiro Ouija, contatando alguns fantasmas amig\xe1veis que o avisam sobre o s\xedmbolo sagrado amaldi\xe7oado que seu amigo encontrou. Se eles escaparem da casa com ele, o mundo acabar\xe1 completamente \u2014 que pena! Os fantasmas se oferecem para ajud\xe1-lo em uma batalha \xe9pica do bem contra o mal. Radical!',B.w,31,"Voc\xea vence quando escapa da casa com o n\xfamero necess\xe1rio de itens. \u2022 Ataque itens amaldi\xe7oados para atordo\xe1-los. \u2022 Dissipe a Maldi\xe7\xe3o em itens atordoados para peg\xe1-los.",e9,"Azulejos com Energia Espiritual:\nGaleria \u2013Piso Superior\nCemit\xe9rio \u2013T\xe9rreo\nSala de Opera\xe7\xf5es \u2013Por\xe3o/Piso Superior\nQuarto Insonorizado \u2013Por\xe3o/Piso Superior",f1,a7,A.b([A.Y("Enquanto estiver em um tile com um Item Amaldi\xe7oado atordoado, remova seu token e pegue o Item ou carta de Press\xe1gio associado. Agora voc\xea est\xe1 carregando aquele Item ou Press\xe1gio. Ele n\xe3o est\xe1 mais amaldi\xe7oado.","Dissipar a Maldi\xe7\xe3o"),A.Y("Enquanto em um azulejo com energia espiritual,receba um dado de dano Geral e aumente qualquer uma das suas caracter\xedsticas em 1.","Fale com os Esp\xedritos")],g6),a9,"Um fantasma de uma chance",c6)
 a7=A.b([c8,c9],g2)
-b0=A.b([A.P("Fa\xe7a um teste de Velocidade. 5+ Nada acontece. Voc\xea atravessa o fogo sem problemas. 0\u20134 Sofra 1 de dano F\xedsico.","Quando voc\xea entra em um ladrilho com um marcador de fogo"),A.P("Se voc\xea vencer, o gato ser\xe1 morto em vez de atordoado.","Quando voc\xea ataca um Gato Morto-Vivo"),A.P("Se n\xe3o houver gatos mortos-vivos na regi\xe3o, voc\xea venceu! O gato \xe9 banido. Caso contr\xe1rio, o Bakeneko fica atordoado.","Quando voc\xea derrota o Bakeneko com um ataque de Poder")],g4)
-b0=A.ai(B.m,"Voc\xea nunca imaginou que seu conhecimento sobre memes da internet o prepararia para um trabalho como esse, mas de alguma forma ele o ajudou a ter sucesso em distrair e triunfar sobre um gato fantasma e seu ex\xe9rcito de atendentes mortos-vivos. Voc\xea pode ficar tranquilo, sabendo que voc\xea os enviou atrav\xe9s da Ponte do Arco-\xcdris... ou onde quer que os gatos demon\xedacos v\xe3o brincar na vida ap\xf3s a morte. 40",d1,"Livrar a casa de um gato fantasma? Parecia um trabalho f\xe1cil: pegue um apontador laser, algumas guloseimas de peixe e qualquer outra coisa que voc\xea possa usar para distrair o espectro felino e bani-lo para a vida ap\xf3s a morte. O dono da casa que o contratou lhe d\xe1 um sorriso de gato de Cheshire, e a casa se enche com os sons de miados terr\xedveis. Mas n\xe3o existe trabalho f\xe1cil, existe alvo f\xe1cil.",B.w,32,"Voc\xea vence quando o Bakeneko \xe9 banido. \u2022 Mate os Gatos Mortos-Vivos para enfraquecer os Bakeneko. \u2022 Ataque e derrote os Bakeneko.",d1,"Token Bakeneko\nPequenos tokens de monstro \u2013Gatos Mortos-Vivos\nFichas de Fogo \u2013Quarto em Chamas",e9,a7,A.b([A.Y("Enquanto estiver em um ladrilho com um Gato Morto-Vivo, enterre um de seus Itens ou Press\xe1gios. Mova um Gato Morto-Vivo em seu ladrilho at\xe9 4 ladrilhos de dist\xe2ncia. Esse Gato fica atordoado. Isso n\xe3o conta como um ataque.","Fa\xe7a sons de \u201cPSPSPSPSPS\u201d")],g6),b0,"A Cat\xe1strofe",c6)
+b0=A.b([A.L("Fa\xe7a um teste de Velocidade. 5+ Nada acontece. Voc\xea atravessa o fogo sem problemas. 0\u20134 Sofra 1 de dano F\xedsico.","Quando voc\xea entra em um ladrilho com um marcador de fogo"),A.L("Se voc\xea vencer, o gato ser\xe1 morto em vez de atordoado.","Quando voc\xea ataca um Gato Morto-Vivo"),A.L("Se n\xe3o houver gatos mortos-vivos na regi\xe3o, voc\xea venceu! O gato \xe9 banido. Caso contr\xe1rio, o Bakeneko fica atordoado.","Quando voc\xea derrota o Bakeneko com um ataque de For\xe7a")],g4)
+b0=A.ai(B.m,"Voc\xea nunca imaginou que seu conhecimento sobre memes da internet o prepararia para um trabalho como esse, mas de alguma forma ele o ajudou a ter sucesso em distrair e triunfar sobre um gato fantasma e seu ex\xe9rcito de atendentes mortos-vivos. Voc\xea pode ficar tranquilo, sabendo que voc\xea os enviou atrav\xe9s da Ponte do Arco-\xcdris... ou onde quer que os gatos demon\xedacos v\xe3o brincar na vida ap\xf3s a morte. 40",d1,"Livrar a casa de um gato fantasma? Parecia um trabalho f\xe1cil: pegue um apontador laser, algumas guloseimas de peixe e qualquer outra coisa que voc\xea possa usar para distrair o espectro felino e bani-lo para a vida ap\xf3s a morte. O dono da casa que o contratou lhe d\xe1 um sorriso de gato de Cheshire, e a casa se enche com os sons de miados terr\xedveis. Mas n\xe3o existe trabalho f\xe1cil, existe alvo f\xe1cil.",B.w,32,"Voc\xea vence quando o Bakeneko \xe9 banido. \u2022 Mate os Gatos Mortos-Vivos para enfraquecer os Bakeneko. \u2022 Ataque e derrote o Bakeneko.",f4,"Token Bakeneko\nPequenos tokens de monstro \u2013Gatos Mortos-Vivos\nFichas de Fogo \u2013Quarto em Chamas",f1,a7,A.b([A.Y("Enquanto estiver em um ladrilho com um Gato Morto-Vivo, enterre um de seus Itens ou Press\xe1gios. Mova para longe um Gato Morto-Vivo em seu ladrilho at\xe9 4 ladrilhos de dist\xe2ncia. Esse Gato fica atordoado. Isso n\xe3o conta como um ataque.","Fa\xe7a sons de \u201cPSPSPSPSPS\u201d")],g6),b0,"A Cat\xe1strofe",c6)
 a7=A.b([c8,c9],g2)
-b1=A.b([A.P("Fot\xf3grafos Fantasmas s\xf3 podem ser mortos com ataques de For\xe7a. Outros ataques bem-sucedidos os atordoar\xe3o.","Paparazzi Fantasmag\xf3ricos"),A.P("Se todos os Fot\xf3grafos Fantasmas foram mortos e a C\xe2mera M\xe1gica foi destru\xedda,voc\xea venceu!",e0)],g4)
+b1=A.b([A.L("Fot\xf3grafos Fantasmas s\xf3 podem ser mortos com ataques de For\xe7a. Outros ataques bem-sucedidos os atordoar\xe3o.","Paparazzi Fantasmag\xf3ricos"),A.L("Se todos os Fot\xf3grafos Fantasmas foram mortos e a C\xe2mera M\xe1gica foi destru\xedda,voc\xea venceu!",e0)],g4)
 b1=A.ai(B.m,"Voc\xea n\xe3o quer arriscar tocar em algo que n\xe3o precisa, ent\xe3o decide deixar os restos da c\xe2mera na casa. Voc\xea abre a porta, que agora est\xe1 misteriosamente destrancada, e ajuda seu amigo a sair. Voc\xea o levar\xe1 para o hospital, mas est\xe1 c\xe9tico de que os m\xe9dicos saber\xe3o o que fazer.",d1,'"N\xe3o deixe a c\xe2mera roubar sua alma", uma voz chama enquanto sua vis\xe3o retorna ao normal. Isso \xe9 apenas supersti\xe7\xe3o, certo? Mas ent\xe3o, h\xe1 um corpo aqui, com os olhos vidrados e sem resposta. E as portas n\xe3o abrem, n\xe3o importa o quanto voc\xea as puxe. Voc\xea n\xe3o gosta do brilho estranho nos olhos do seu amigo quando ele pega uma c\xe2mera velha \u2014 isso lembra muito todas as fotos estranhas que voc\xea viu pela casa.',B.w,33,"Voc\xea vence quando tiver destru\xeddo todas as c\xe2meras. \u2022 Mate todos os Fot\xf3grafos Fantasmas. \u2022 Destrua a C\xe2mera M\xe1gica.","\u201cDiga Xis\u201d","Pequenos tokens de monstro \u2013Fot\xf3grafos Fantasmas\nFichas de Her\xf3i \u2013Ess\xeancia dos Her\xf3is",c7,a7,A.b([A.Y("Enquanto estiver em um ladrilho com o traidor, fa\xe7a um teste de Sanidade. 6+Se o traidor tiver a C\xe2mera M\xe1gica, devolva-a \xe0 caixa do jogo. A C\xe2mera M\xe1gica \xe9 destru\xedda. 0\u20135Nada acontece.","Destrua a c\xe2mera m\xe1gica")],g6),b1,"Sorria para a c\xe2mera","Ver Evento")
 a7=A.b(["Separe uma ficha de Pequeno Monstro. Esta \xe9 sua amiga, Christina.","Retorne o baralho de cartas de Evento para a caixa do jogo.","Defina a trilha num\xe9rica para{6/3/1/0}.",c9],g2)
-b2=A.b([A.P(u.H,"Outra Dimens\xe3o"),A.P("Ela est\xe1 inconsciente. Voc\xea ter\xe1 que carreg\xe1-la. \u2022 Christina pode ser negociada com outros her\xf3is, usando as regras normais de negocia\xe7\xe3o. Se voc\xea morrer, outro her\xf3i pode tirar Christina do seu cad\xe1ver. O traidor n\xe3o pode tirar Christina.","Cristina"),A.P("Sempre coloque a pe\xe7a do topo da pilha de pe\xe7as, independentemente de qual(is) regi\xe3o(\xf5es) esteja(m) anotada(s) no verso dessa pe\xe7a. Voc\xea n\xe3o precisa terminar seu turno quando descobrir uma nova pe\xe7a. Se tiver algum movimento restante, voc\xea pode usar esse movimento. \u2022 Se a pe\xe7a tiver um s\xedmbolo de Evento, nada acontece. \u2022 Se a pe\xe7a tiver um s\xedmbolo de Item, compre uma carta de Item normalmente. \u2022 Se a pe\xe7a tiver um s\xedmbolo de Omen, compre uma carta Omen. Mova a Trilha Num\xe9rica para cima em 1 \u2014 ela n\xe3o pode passar de 8.","Quando voc\xea descobre um novo c\xf4modo")],g4)
-b2=A.ai(B.m,"Voc\xea sobe escadas que parecem lev\xe1-lo mais para baixo, e empurra portas que n\xe3o estavam l\xe1 momentos antes. Quando voc\xea finalmente escapa, voc\xea tem pernas de mar. Christina dorme por v\xe1rios dias depois disso, enquanto voc\xea dorme intermitentemente e agitado. Em seus sonhos, tudo est\xe1 girando, girando...",d1,'Os policiais n\xe3o estavam se movendo r\xe1pido o suficiente, ent\xe3o voc\xea e seus amigos decidiram investigar o desaparecimento de Christina por conta pr\xf3pria. Voc\xea rastreou os \xfaltimos movimentos dela aqui, para esta casa, onde tudo parece... escorregadio \u2014 sombras se inclinam nas dire\xe7\xf5es erradas, e portas aparecem onde n\xe3o havia nenhuma apenas um momento antes. Conforme voc\xea vai de c\xf4modo em c\xf4modo em sua busca por Christina, um grande rangido sacode a casa e ent\xe3o, "WHOOSH!" Tudo parece voar para longe. Olhando atrav\xe9s da porta pela qual voc\xea acabou de passar, voc\xea v\xea um vazio roxo escuro. Olhando para suas profundezas escuras, voc\xea v\xea c\xf4modos girando e dan\xe7ando ao redor, parando um ao lado do outro por breves momentos antes de girar novamente. \xc9 melhor voc\xea se apressar e encontrar Christina logo, para que voc\xea possa sair daqui antes que as coisas fiquem realmente loucas.',B.w,34,"Voc\xea vence quando traz Christina pela porta da frente. \u2022 Encontre Christina descobrindo pe\xe7as com s\xedmbolos de press\xe1gio. \u2022 Fuja da casa retornando ao Hall de Entrada com Cristina.",f4,"N\xfamero de trilha\nPequeno Token de Monstro \u2013Cristina",e7,a7,A.b([A.Y("Enquanto estiver em uma pe\xe7a com um s\xedmbolo de Press\xe1gio, role um dado igual ao n\xfamero na Trilha Num\xe9rica. 9+ Pegue a ficha de Monstro Pequeno e coloque-a no seu tabuleiro de personagem. Esta \xe9 sua amiga, Christina. Agora voc\xea a est\xe1 carregando. Termine seu turno. 0\u20138Receba 1 de dano Geral e termine seu turno.","Procurar por Christina"),A.Y("Se voc\xea estiver no Hall de Entrada e carregando Christina, role dados iguais ao n\xfamero na Trilha Num\xe9rica. 9+ Voc\xea consegue sair de casa.Voc\xea venceu!Voc\xea arrasta Christina para fora de casa, para um lugar seguro. 0\u20138Termine seu turno.A porta n\xe3o leva para onde deveria. Voc\xea acaba voltando no hall de entrada.",g0)],g6),b2,u.f,"Maior Conhecimento")
+b2=A.b([A.L(u.o,g0),A.L("Ela est\xe1 inconsciente. Voc\xea ter\xe1 que carreg\xe1-la. \u2022 Christina pode ser negociada com outros her\xf3is, usando as regras normais de negocia\xe7\xe3o. Se voc\xea morrer, outro her\xf3i pode tirar Christina do seu cad\xe1ver. O traidor n\xe3o pode tirar Christina.","Cristina"),A.L("Sempre coloque a pe\xe7a do topo da pilha de pe\xe7as, independentemente de qual(is) regi\xe3o(\xf5es) esteja(m) anotada(s) no verso dessa pe\xe7a. Voc\xea n\xe3o precisa terminar seu turno quando descobrir uma nova pe\xe7a. Se tiver algum movimento restante, voc\xea pode usar esse movimento. \u2022 Se a pe\xe7a tiver um s\xedmbolo de Evento, nada acontece. \u2022 Se a pe\xe7a tiver um s\xedmbolo de Item, compre uma carta de Item normalmente. \u2022 Se a pe\xe7a tiver um s\xedmbolo de Omen, compre uma carta Omen. Mova a Trilha Num\xe9rica para cima em 1 \u2014 ela n\xe3o pode passar de 8.","Quando voc\xea descobre um novo c\xf4modo")],g4)
+b2=A.ai(B.m,"Voc\xea sobe escadas que parecem lev\xe1-lo mais para baixo, e empurra portas que n\xe3o estavam l\xe1 momentos antes. Quando voc\xea finalmente escapa, voc\xea tem pernas de mar. Christina dorme por v\xe1rios dias depois disso, enquanto voc\xea dorme intermitentemente e agitado. Em seus sonhos, tudo est\xe1 girando, girando...",d1,'Os policiais n\xe3o estavam se movendo r\xe1pido o suficiente, ent\xe3o voc\xea e seus amigos decidiram investigar o desaparecimento de Christina por conta pr\xf3pria. Voc\xea rastreou os \xfaltimos movimentos dela aqui, para esta casa, onde tudo parece... escorregadio \u2014 sombras se inclinam nas dire\xe7\xf5es erradas, e portas aparecem onde n\xe3o havia nenhuma apenas um momento antes. Conforme voc\xea vai de c\xf4modo em c\xf4modo em sua busca por Christina, um grande rangido sacode a casa e ent\xe3o, "WHOOSH!" Tudo parece voar para longe. Olhando atrav\xe9s da porta pela qual voc\xea acabou de passar, voc\xea v\xea um vazio roxo escuro. Olhando para suas profundezas escuras, voc\xea v\xea c\xf4modos girando e dan\xe7ando ao redor, parando um ao lado do outro por breves momentos antes de girar novamente. \xc9 melhor voc\xea se apressar e encontrar Christina logo, para que voc\xea possa sair daqui antes que as coisas fiquem realmente loucas.',B.w,34,"Voc\xea vence quando traz Christina pela porta da frente. \u2022 Encontre Christina descobrindo pe\xe7as com s\xedmbolos de press\xe1gio. \u2022 Fuja da casa retornando ao Hall de Entrada com Cristina.",f5,"N\xfamero de trilha\nPequeno Token de Monstro \u2013Cristina",e8,a7,A.b([A.Y("Enquanto estiver em uma pe\xe7a com um s\xedmbolo de Press\xe1gio, role um dado igual ao n\xfamero na Trilha Num\xe9rica. 9+ Pegue a ficha de Monstro Pequeno e coloque-a no seu tabuleiro de personagem. Esta \xe9 sua amiga, Christina. Agora voc\xea a est\xe1 carregando. Termine seu turno. 0\u20138Receba 1 de dano Geral e termine seu turno.","Procurar por Christina"),A.Y("Se voc\xea estiver no Hall de Entrada e carregando Christina, role dados iguais ao n\xfamero na Trilha Num\xe9rica. 9+ Voc\xea consegue sair de casa.Voc\xea venceu!Voc\xea arrasta Christina para fora de casa, para um lugar seguro. 0\u20138Termine seu turno.A porta n\xe3o leva para onde deveria. Voc\xea acaba voltando no hall de entrada.",g1)],g6),b2,u.f,"Maior Conhecimento")
 a7=A.b([c8,c9],g2)
-b3=A.b([A.P("\u2022 Quando um her\xf3i com uma ficha de sal morre, ele deixa cair todas as fichas de sal carregadas em sua pe\xe7a.\u2022 Fichas de sal podem ser negociadas entre her\xf3is, usando as regras normais de negocia\xe7\xe3o.","Sal")],g4)
-b3=A.ai(B.m,"Da pr\xf3xima vez que voc\xea estiver em uma festa e as pessoas come\xe7arem a debater se alien\xedgenas existem ou n\xe3o, voc\xea fica de boca fechada. Voc\xea sabe que horrores existem nos mundos acima. 44",d1,"Sua amiga fez uma profiss\xe3o de perseguir meteoros. Passado, porque olhando para seu corpo corro\xeddo e meio comido, ela n\xe3o vai mais pegar nenhuma lembran\xe7a c\xf3smica. Mas ela com certeza escolheu uma estranha para seu \xfaltimo hurra. O meteoro que ela previu que cairia aqui caiu direto na casa e caiu no por\xe3o. A rocha est\xe1 cheia de buracos e encharcada em algum tipo de lodo, e voc\xea observa enquanto ela come\xe7a a tremer e se transformar. Criaturas estranhas, parecidas com lesmas, escorrem dela, fazendo barulhos de esmagamento no ch\xe3o. Lesmas podem ser mortas com sal... certo?",B.w,35,"Voc\xea vence quando destr\xf3i os dois Ninhos. \u2022 Encontre sal. \u2022 Use Sal para destruir ambos os Ninhos.",f3,"Pequenos tokens de monstro \u2013Lesmas\n2 Fichas de Ninho \u2013Ninho de Lesmas\n5 Fichas de Comida \u2013Sal\nAzulejos onde voc\xea pode encontrar Sal:\nCozinha \u2013T\xe9rreo\nSala de Jantar \u2013T\xe9rreo\nLago Subterr\xe2neo \u2013Por\xe3o\nDespensa \u2013Cave/T\xe9rreo\nLaborat\xf3rio \u2013T\xe9rreo\nGin\xe1sio \u2013Cave/T\xe9rreo",e7,a7,A.b([A.Y("Enquanto em um ladrilho onde voc\xea pode encontrar Sal,fa\xe7a um teste de Conhecimento ou Velocidade. 5+Ganhe uma ficha de Sal.Achei um pouco de sal! 2\u20134Nada acontece. 0\u20131Coloque uma lesma no seu ladrilho.Eles est\xe3o por toda parte!","\u2022 Encontre sal"),A.Y("Enquanto estiver em um tile com um token de Ninho, fa\xe7a um teste de Velocidade. Voc\xea pode descartar qualquer n\xfamero de tokens de Sal. Para cada token de Sal que voc\xea descartar, adicione 2 ao resultado do seu teste. 9+ Voc\xea destr\xf3i o Ninho. Se ambos os Ninhos foram destru\xeddos, voc\xea venceu! 5\u20138Nada acontece. 0\u20134Coloque uma lesma no seu ladrilho.Ah! Perturbou o ninho!","Destruir um ninho")],g6),b3,"Lesmas espaciais",c6)
+b3=A.b([A.L("\u2022 Quando um her\xf3i com uma ficha de sal morre, ele deixa cair todas as fichas de sal carregadas em sua pe\xe7a.\u2022 Fichas de sal podem ser negociadas entre her\xf3is, usando as regras normais de negocia\xe7\xe3o.","Sal")],g4)
+b3=A.ai(B.m,"Da pr\xf3xima vez que voc\xea estiver em uma festa e as pessoas come\xe7arem a debater se alien\xedgenas existem ou n\xe3o, voc\xea fica de boca fechada. Voc\xea sabe que horrores existem nos mundos acima. 44",d1,"Sua amiga fez uma profiss\xe3o de perseguir meteoros. Passado, porque olhando para seu corpo corro\xeddo e meio comido, ela n\xe3o vai mais pegar nenhuma lembran\xe7a c\xf3smica. Mas ela com certeza escolheu uma estranha para seu \xfaltimo hurra. O meteoro que ela previu que cairia aqui caiu direto na casa e caiu no por\xe3o. A rocha est\xe1 cheia de buracos e encharcada em algum tipo de lodo, e voc\xea observa enquanto ela come\xe7a a tremer e se transformar. Criaturas estranhas, parecidas com lesmas, escorrem dela, fazendo barulhos de esmagamento no ch\xe3o. Lesmas podem ser mortas com sal... certo?",B.w,35,"Voc\xea vence quando destr\xf3i os dois Ninhos. \u2022 Encontre sal. \u2022 Use Sal para destruir ambos os Ninhos.",f4,"Pequenos tokens de monstro \u2013Lesmas\n2 Fichas de Ninho \u2013Ninho de Lesmas\n5 Fichas de Comida \u2013Sal\nAzulejos onde voc\xea pode encontrar Sal:\nCozinha \u2013T\xe9rreo\nSala de Jantar \u2013T\xe9rreo\nLago Subterr\xe2neo \u2013Por\xe3o\nDespensa \u2013Cave/T\xe9rreo\nLaborat\xf3rio \u2013T\xe9rreo\nGin\xe1sio \u2013Cave/T\xe9rreo",e8,a7,A.b([A.Y("Enquanto em um ladrilho onde voc\xea pode encontrar Sal,fa\xe7a um teste de Conhecimento ou Velocidade. 5+Ganhe uma ficha de Sal.Achei um pouco de sal! 2\u20134Nada acontece. 0\u20131Coloque uma lesma no seu ladrilho.Eles est\xe3o por toda parte!","\u2022 Encontre sal"),A.Y("Enquanto estiver em um tile com um token de Ninho, fa\xe7a um teste de Velocidade. Voc\xea pode descartar qualquer n\xfamero de tokens de Sal. Para cada token de Sal que voc\xea descartar, adicione 2 ao resultado do seu teste. 9+ Voc\xea destr\xf3i o Ninho. Se ambos os Ninhos foram destru\xeddos, voc\xea venceu! 5\u20138Nada acontece. 0\u20134Coloque uma lesma no seu ladrilho.Ah! Perturbou o ninho!","Destruir um ninho")],g6),b3,"Lesmas espaciais",c6)
 a7=A.b([c8,c9],g2)
-b4=A.b([A.P("Se voc\xea vencer, poder\xe1 pegar um Item ou Press\xe1gio deles em vez de causar dano.",f8),A.P(u.W,"Quando voc\xea revela um novo bloco que tem um \xedcone de evento")],g4)
-b4=A.ai(B.m,"Um por um, os fantasmas confessaram seus erros, seus rancores mesquinhos, seus arrependimentos solit\xe1rios. Um por um, eles encontraram descanso ao compartilhar seus fardos com voc\xea. A casa ainda range, mas agora \xe9 apenas por causa do vento. \xc9 um som tranquilo.",d1,'Quando voc\xea chega, voc\xea encontra o fantasma p\xe1lido da corretora e o lugar onde ela caiu para a morte. "Esta casa \xe9 irada e cheia de fantasmas", ela diz, e ela planejou vend\xea-la para voc\xea de qualquer maneira. Esta admiss\xe3o parece libert\xe1-la \u2014 ap\xf3s sua confiss\xe3o, ela desaparece com uma luz linda e sagrada. Voc\xea percebe que pode salvar todos os fantasmas da mesma forma que a salvou. Voc\xea pode ajud\xe1-los a seguir em frente. Certamente, todos no seu grupo sentem o mesmo.',B.w,36,"Voc\xea vence quando a casa encontra paz. \u2022 Fantasmas aparecem em pe\xe7as que t\xeam s\xedmbolos de Eventos. \u2022 Ajude os Ghosts a encontrar a reconcilia\xe7\xe3o.",e8,"Pequenos tokens de monstro \u2013Fantasmas",f2,a7,A.b([A.Y("Enquanto estiver em um ladrilho com um Fantasma, fa\xe7a um teste de SanidadeR. 5e+mova o Fantasma da casa e coloque-o no seu tabuleiro de personagem. Se houver{4/5/6/8}Fantasmas nos tabuleiros dos personagens, a casa foi limpa evoc\xea venceu! 0\u20134Nada acontece.","Encontre a reconcilia\xe7\xe3o")],g6),b4,"Encontrando a Paz","Menor sanidade")
-a7=A.b(["D\xea a cada her\xf3i seu token de Her\xf3i correspondente para colocar em seus respectivos tabuleiros de personagem. Este \xe9 o DNA deles.",f5,c9],g2)
-b5=A.b([A.P("Ao longo dessa assombra\xe7\xe3o, os her\xf3is trocar\xe3o de corpo. Quando uma troca de corpo acontecer, troque tabuleiros de personagens com o outro jogador, mas n\xe3o troque itens ou press\xe1gios. Voc\xea controla a figura associada ao tabuleiro de personagem na sua frente. A orderm do turno permanece inalterada.","Troca de Corpos")],g4)
-b5=A.ai(B.m,"Com pressa, o \xfaltimo parafuso desliza livre. Correndo pela rua, voc\xea escapa para o ar da noite. Voc\xea ouve um barulho estrondoso vindo de tr\xe1s de voc\xea. \xc9 a casa inteira, decolando para o espa\xe7o.",d1,"A noite come\xe7ou t\xe3o bem. Um dos seus amigos recebeu um e-mail estranho que o convidava a explorar esta casa velha e abandonada. Voc\xea estava rindo enquanto olhava ao redor, mas agora encontrou uma tela estranha na parede. Ela pisca friamente, exibindo v\xe1rias leituras biom\xe9tricas. Uma armadura no canto acende com um brilho el\xe9trico, e voc\xea ouve o som de um zumbido mecanizado enquanto todas as portas e janelas da casa se fecham. Voc\xea precisa se mudar, agora, ou esta ser\xe1 sua fronteira final.",B.w,37,"Voc\xea vence quando todos os rob\xf4s de seguran\xe7a forem desativados e um de voc\xeas escapar da casa. \u2022 Desabilite os rob\xf4s de seguran\xe7a atacando-os com sucesso. \u2022 Voc\xea tamb\xe9m pode mexer nos circuitos para desabilitar os rob\xf4s. \u2022 Fuja pelo Hall de Entrada.",f7,"Pequenos Monstros \u2013Rob\xf4s de Seguran\xe7a\nFichas de Her\xf3i \u2013DNA do Her\xf3i\nAzulejos com Tecnologia:\nObservat\xf3rio \u2013Piso Superior\nSala de Jogos \u2013Cave/Piso Superior\nLaborat\xf3rio \u2013T\xe9rreo\nSala do P\xe2nico \u2013Por\xe3o",e4,a7,A.b([A.Y("Enquanto voc\xea estiver em um azulejo com tecnologia, voc\xea pode atacar qualquer Rob\xf4 de Seguran\xe7a em sua regi\xe3o. Voc\xea n\xe3o pode usar armas para este ataque, que usa Conhecimento.\n Isso conta como seu ataque do turno.\n Se voc\xea vencer, o rob\xf4 \xe9 desabilitado. Remova-o da casa. Se voc\xea perder, voc\xea recebe dano Mental em ves de F\xedsico.","Mexa com circuitos"),A.Y("Voc\xea s\xf3 pode tentar uma fuga quando todos os rob\xf4s de seguran\xe7a forem desabilitados. Enquanto estiver no Hall de Entrada, fa\xe7a um teste de Velocidade. 4+Voc\xea desabilita algumas das fechaduras da porta. Mova a Trilha Num\xe9rica para baixo em 1. Se a Trilha Num\xe9rica chegar a 0, voc\xea escapa da casa e voc\xea venceu! 0\u20133Nada acontece.",g0)],g6),b5,"Fora do corpo",c6)
+b4=A.b([A.L("Se voc\xea vencer, poder\xe1 pegar um Item ou Press\xe1gio deles em vez de causar dano.",f9),A.L(u.W,"Quando voc\xea revela um novo bloco que tem um \xedcone de evento")],g4)
+b4=A.ai(B.m,"Um por um, os fantasmas confessaram seus erros, seus rancores mesquinhos, seus arrependimentos solit\xe1rios. Um por um, eles encontraram descanso ao compartilhar seus fardos com voc\xea. A casa ainda range, mas agora \xe9 apenas por causa do vento. \xc9 um som tranquilo.",d1,'Quando voc\xea chega, voc\xea encontra o fantasma p\xe1lido da corretora e o lugar onde ela caiu para a morte. "Esta casa \xe9 irada e cheia de fantasmas", ela diz, e ela planejou vend\xea-la para voc\xea de qualquer maneira. Esta admiss\xe3o parece libert\xe1-la \u2014 ap\xf3s sua confiss\xe3o, ela desaparece com uma luz linda e sagrada. Voc\xea percebe que pode salvar todos os fantasmas da mesma forma que a salvou. Voc\xea pode ajud\xe1-los a seguir em frente. Certamente, todos no seu grupo sentem o mesmo.',B.w,36,"Voc\xea vence quando a casa encontra paz. \u2022 Fantasmas aparecem em pe\xe7as que t\xeam s\xedmbolos de Eventos. \u2022 Ajude os Ghosts a encontrar a reconcilia\xe7\xe3o.",e9,"Pequenos tokens de monstro \u2013Fantasmas",f3,a7,A.b([A.Y("Enquanto estiver em um ladrilho com um Fantasma, fa\xe7a um teste de SanidadeR. 5e+mova o Fantasma da casa e coloque-o no seu tabuleiro de personagem. Se houver{4/5/6/8}Fantasmas nos tabuleiros dos personagens, a casa foi limpa evoc\xea venceu! 0\u20134Nada acontece.","Encontre a reconcilia\xe7\xe3o")],g6),b4,"Encontrando a Paz","Menor sanidade")
+a7=A.b(["D\xea a cada her\xf3i seu token de Her\xf3i correspondente para colocar em seus respectivos tabuleiros de personagem. Este \xe9 o DNA deles.",f6,c9],g2)
+b5=A.b([A.L("Ao longo dessa assombra\xe7\xe3o, os her\xf3is trocar\xe3o de corpo. Quando uma troca de corpo acontecer, troque tabuleiros de personagens com o outro jogador, mas n\xe3o troque itens ou press\xe1gios. Voc\xea controla a figura associada ao tabuleiro de personagem na sua frente. A orderm do turno permanece inalterada.","Troca de Corpos")],g4)
+b5=A.ai(B.m,"Com pressa, o \xfaltimo parafuso desliza livre. Correndo pela rua, voc\xea escapa para o ar da noite. Voc\xea ouve um barulho estrondoso vindo de tr\xe1s de voc\xea. \xc9 a casa inteira, decolando para o espa\xe7o.",d1,"A noite come\xe7ou t\xe3o bem. Um dos seus amigos recebeu um e-mail estranho que o convidava a explorar esta casa velha e abandonada. Voc\xea estava rindo enquanto olhava ao redor, mas agora encontrou uma tela estranha na parede. Ela pisca friamente, exibindo v\xe1rias leituras biom\xe9tricas. Uma armadura no canto acende com um brilho el\xe9trico, e voc\xea ouve o som de um zumbido mecanizado enquanto todas as portas e janelas da casa se fecham. Voc\xea precisa se mudar, agora, ou esta ser\xe1 sua fronteira final.",B.w,37,"Voc\xea vence quando todos os rob\xf4s de seguran\xe7a forem desativados e um de voc\xeas escapar da casa. \u2022 Desabilite os rob\xf4s de seguran\xe7a atacando-os com sucesso. \u2022 Voc\xea tamb\xe9m pode mexer nos circuitos para desabilitar os rob\xf4s. \u2022 Fuja pelo Hall de Entrada.",f8,"Pequenos Monstros \u2013Rob\xf4s de Seguran\xe7a\nFichas de Her\xf3i \u2013DNA do Her\xf3i\nAzulejos com Tecnologia:\nObservat\xf3rio \u2013Piso Superior\nSala de Jogos \u2013Cave/Piso Superior\nLaborat\xf3rio \u2013T\xe9rreo\nSala do P\xe2nico \u2013Por\xe3o",e5,a7,A.b([A.Y("Enquanto voc\xea estiver em um azulejo com tecnologia, voc\xea pode atacar qualquer Rob\xf4 de Seguran\xe7a em sua regi\xe3o. Voc\xea n\xe3o pode usar armas para este ataque, que usa Conhecimento.\n Isso conta como seu ataque do turno.\n Se voc\xea vencer, o rob\xf4 \xe9 desabilitado. Remova-o da casa. Se voc\xea perder, voc\xea recebe dano Mental em ves de F\xedsico.","Mexa com circuitos"),A.Y("Voc\xea s\xf3 pode tentar uma fuga quando todos os rob\xf4s de seguran\xe7a forem desabilitados. Enquanto estiver no Hall de Entrada, fa\xe7a um teste de Velocidade. 4+Voc\xea desabilita algumas das fechaduras da porta. Mova a Trilha Num\xe9rica para baixo em 1. Se a Trilha Num\xe9rica chegar a 0, voc\xea escapa da casa e voc\xea venceu! 0\u20133Nada acontece.",g1)],g6),b5,"Fora do corpo",c6)
 a7=A.b([c8,u.n],g2)
-b6=A.b([A.P("Um v\xednculo incomum Voc\xea pode atacar usando o Anel quantas vezes quiser durante seu turno, at\xe9 perder um ataque com o Anel. \u2022 Voc\xea n\xe3o pode atacar com o Anel durante o mesmo turno em que o obteve, e n\xe3o pode troc\xe1-lo com outro her\xf3i se tiver atacado com ele durante aquele turno.","Quando o traidor for morto, pegue o Anel dele."),A.P("Se todos os vizinhos estiverem mortos, voc\xea venceu!",e0)],g4)
-b6=A.ai(B.m,"Voc\xea olha para seu amigo, chocado com a reviravolta que a festa dele tomou. Atordoado, voc\xea sai pela porta da frente e d\xe1 um aceno vago para os vizinhos que v\xeam em sua dire\xe7\xe3o. Eles retribuem sua sauda\xe7\xe3o com um entusiasmo arrepiante, fazendo os pelos da sua nuca se arrepiarem. Enquanto voc\xea cambaleia para longe, pensa que talvez n\xe3o tenha nascido para a vida suburbana.",d1,"Ding Dong! A campainha toca, e as pessoas se amontoam no hall de entrada. Algu\xe9m planejou uma festa nesta casa velha e assustadora, mas quem? Parece estranho para voc\xea que os convidados estejam trazendo formas de gelatina e salada de batata, e que estejam vestidos como personagens de uma sitcom dos anos 1950. Quando voc\xea cria coragem para fazer algumas perguntas, percebe que todos est\xe3o olhando para voc\xea, seus rostos fixos com sorrisos impossivelmente largos. Algo est\xe1 muito errado aqui... .",B.w,38,"Voc\xea vence quando mata todos os vizinhos. \u2022 O Anel permitir\xe1 que voc\xea mate v\xe1rios Vizinhos em um turno. \u2022 Cancele a festa para reduzir o n\xfamero de vizinhos que aparecem.",d4,u.M,e4,a7,A.b([A.Y("Enquanto estiver em qualquer pe\xe7a com um s\xedmbolo de Evento, fa\xe7a um teste de Conhecimento ou Velocidade. 6+Mova a Faixa Num\xe9rica para baixo em 1. 0\u20135Nada acontece.","Cancele a festa")],g6),b6,"A Soir\xe9e Sinistra",c6)
+b6=A.b([A.L("Um v\xednculo incomum Voc\xea pode atacar usando o Anel quantas vezes quiser durante seu turno, at\xe9 perder um ataque com o Anel. \u2022 Voc\xea n\xe3o pode atacar com o Anel durante o mesmo turno em que o obteve, e n\xe3o pode troc\xe1-lo com outro her\xf3i se tiver atacado com ele durante aquele turno.","Quando o traidor for morto, pegue o Anel dele."),A.L("Se todos os vizinhos estiverem mortos, voc\xea venceu!",e0)],g4)
+b6=A.ai(B.m,"Voc\xea olha para seu amigo, chocado com a reviravolta que a festa dele tomou. Atordoado, voc\xea sai pela porta da frente e d\xe1 um aceno vago para os vizinhos que v\xeam em sua dire\xe7\xe3o. Eles retribuem sua sauda\xe7\xe3o com um entusiasmo arrepiante, fazendo os pelos da sua nuca se arrepiarem. Enquanto voc\xea cambaleia para longe, pensa que talvez n\xe3o tenha nascido para a vida suburbana.",d1,"Ding Dong! A campainha toca, e as pessoas se amontoam no hall de entrada. Algu\xe9m planejou uma festa nesta casa velha e assustadora, mas quem? Parece estranho para voc\xea que os convidados estejam trazendo formas de gelatina e salada de batata, e que estejam vestidos como personagens de uma sitcom dos anos 1950. Quando voc\xea cria coragem para fazer algumas perguntas, percebe que todos est\xe3o olhando para voc\xea, seus rostos fixos com sorrisos impossivelmente largos. Algo est\xe1 muito errado aqui... .",B.w,38,"Voc\xea vence quando mata todos os vizinhos. \u2022 O Anel permitir\xe1 que voc\xea mate v\xe1rios Vizinhos em um turno. \u2022 Cancele a festa para reduzir o n\xfamero de vizinhos que aparecem.",d4,u.M,e5,a7,A.b([A.Y("Enquanto estiver em qualquer pe\xe7a com um s\xedmbolo de Evento, fa\xe7a um teste de Conhecimento ou Velocidade. 6+Mova a Faixa Num\xe9rica para baixo em 1. 0\u20135Nada acontece.","Cancele a festa")],g6),b6,"A Soir\xe9e Sinistra",c6)
 a7=A.b(["Defina a trilha num\xe9rica para{5/4/4/3}.",c9],g2)
-b7=A.b([A.P("Para cada Ovo de Vespa na casa (incluindo aqueles mantidos por her\xf3is), subtraia 1 do resultado do seu teste. Se voc\xea atacar com sucesso a Vespa Gigante, voc\xea venceu!","Quando voc\xea ataca a Vespa Gigante")],g4)
+b7=A.b([A.L("Para cada Ovo de Vespa na casa (incluindo aqueles mantidos por her\xf3is), subtraia 1 do resultado do seu teste. Se voc\xea atacar com sucesso a Vespa Gigante, voc\xea venceu!","Quando voc\xea ataca a Vespa Gigante")],g4)
 b7=A.ai(B.m,"A vespa gigante que j\xe1 foi sua amiga murcha, como se tivesse ficado no sol por muito tempo. Os outros insetos caem para a morte, chovendo sobre seu cabelo, suas roupas, tudo. Voc\xea sai rapidamente, coberto de cascas exoesquel\xe9ticas. Voc\xea vai precisar de um banho. 48",d1,'Mariposas, cigarras, abelhas. Ultimamente, todos os tipos de insetos voadores t\xeam encoberto os c\xe9us da cidade, e todas as noites eles se aglomeram nesta casa. Voc\xea decidiu saciar sua curiosidade sobre esse estranho fen\xf4meno procurando pistas na casa. Indo de c\xf4modo em c\xf4modo, voc\xea finalmente descobre um caderno velho e esfarrapado cheio de termos cient\xedficos, desenhos anat\xf4micos detalhados de vespas e rabiscos inescrut\xe1veis. Uma p\xe1gina chama sua aten\xe7\xe3o \u2014 diz: "Anota\xe7\xf5es de laborat\xf3rio h\xedbrido humano/inseto". Atr\xe1s de voc\xea, voc\xea ouve um zumbido e o bater de asas...',B.w,39,"Voc\xea vence quando mata a Vespa Gigante.",f0,u.I,d3,a7,A.b([A.Y("Enquanto voc\xea estiver segurando qualquer n\xfamero de Ovos de Vespa, fa\xe7a um teste de Conhecimento para tentar destru\xed-los. 5+Devolva todos os seus Ovos de Vespa ao traidor.Voc\xea destr\xf3i os ovos. 0\u20134Coloque uma ficha de Monstro Pequeno em seu tile. Esta \xe9 uma Vespa Trabalhadora. Est\xe1 se movendo!","Destruir um ovo")],g6),b7,"Mente de colmeia","Maior conhecimento al\xe9m do Revelador de Assombra\xe7\xe3o")
 a7=A.b([c8,c9],g2)
-b8=A.b([A.P("Se voc\xea vencer, poder\xe1 roubar a M\xe1scara deles (se eles a tiverem) em vez de causar dano.",f9),A.P("Se n\xe3o houver mais G\xeameos Malignos, voc\xea venceu!","Quando voc\xea mata um Evil Twin")],g4)
-b8=A.ai(B.m,"Voc\xea olha para a bola de cristal e v\xea a porta da frente aberta enquanto v\xe1rias figuras passam. Voc\xea olha mais de perto, tentando ter uma vis\xe3o melhor atrav\xe9s do vidro distorcido. Uma dessas newcomers parece exatamente com voc\xea. N\xe3o\u2026 n\xe3o pode ser. De novo n\xe3o.",d1,"Voc\xea j\xe1 mora nesta casa. Bem, n\xe3o voc\xea, mas seus g\xeameos malignos. Eles usam m\xe1scaras de seus rostos e fingem ser voc\xea. \u201cA bola de cristal nos mostrou que voc\xea chegaria\u201d, diz um g\xeameo em uma voz mon\xf3tona. \u201cEla nos mostrou a n\xf3s mesmos, caminhando pela entrada. Vers\xf5es falsas de n\xf3s n\xe3o podem andar na Terra.\u201d Voc\xea concorda. Voc\xea n\xe3o pode deixar as falsifica\xe7\xf5es existirem, e voc\xea certamente n\xe3o \xe9 uma farsa.",B.w,40,"Voc\xea vence quando tiver matado todos os Evil Twins. \u2022 Voc\xea pode matar seu pr\xf3prio G\xeameo Maligno. \u2022 Se voc\xea tiver a M\xe1scara, voc\xea pode matar qualquer G\xeameo Maligno.",f6,"Pequenos tokens de monstro \u2013G\xeameos do Mal\nFichas de Her\xf3i \u2013Identidades G\xeameas\nAzulejos onde voc\xea pode adivinhar:\nTorre \u2013Piso Superior\nSala Ritual \u2013Por\xe3o",f2,a7,A.b([A.Y("Enquanto em umladrilho onde voc\xea pode espiar,fa\xe7a um teste de Conhecimento. 5+ Atordoe um Evil Twin. You cutuca a bola, e a figura na imagem trope\xe7a. 0\u20134Nada acontece.","Consulte a Bola de Cristal")],g6),b8,"O Retorno dos Fleshwalkers",c6)
+b8=A.b([A.L("Se voc\xea vencer, poder\xe1 roubar a M\xe1scara deles (se eles a tiverem) em vez de causar dano.","Quando voc\xea ataca o traidor com Might"),A.L("Se n\xe3o houver mais G\xeameos Malignos, voc\xea venceu!","Quando voc\xea mata um Evil Twin")],g4)
+b8=A.ai(B.m,"Voc\xea olha para a bola de cristal e v\xea a porta da frente aberta enquanto v\xe1rias figuras passam. Voc\xea olha mais de perto, tentando ter uma vis\xe3o melhor atrav\xe9s do vidro distorcido. Uma dessas newcomers parece exatamente com voc\xea. N\xe3o\u2026 n\xe3o pode ser. De novo n\xe3o.",d1,"Voc\xea j\xe1 mora nesta casa. Bem, n\xe3o voc\xea, mas seus g\xeameos malignos. Eles usam m\xe1scaras de seus rostos e fingem ser voc\xea. \u201cA bola de cristal nos mostrou que voc\xea chegaria\u201d, diz um g\xeameo em uma voz mon\xf3tona. \u201cEla nos mostrou a n\xf3s mesmos, caminhando pela entrada. Vers\xf5es falsas de n\xf3s n\xe3o podem andar na Terra.\u201d Voc\xea concorda. Voc\xea n\xe3o pode deixar as falsifica\xe7\xf5es existirem, e voc\xea certamente n\xe3o \xe9 uma farsa.",B.w,40,"Voc\xea vence quando tiver matado todos os Evil Twins. \u2022 Voc\xea pode matar seu pr\xf3prio G\xeameo Maligno. \u2022 Se voc\xea tiver a M\xe1scara, voc\xea pode matar qualquer G\xeameo Maligno.",f7,"Pequenos tokens de monstro \u2013G\xeameos do Mal\nFichas de Her\xf3i \u2013Identidades G\xeameas\nAzulejos onde voc\xea pode adivinhar:\nTorre \u2013Piso Superior\nSala Ritual \u2013Por\xe3o",f3,a7,A.b([A.Y("Enquanto em umladrilho onde voc\xea pode espiar,fa\xe7a um teste de Conhecimento. 5+ Atordoe um Evil Twin. You cutuca a bola, e a figura na imagem trope\xe7a. 0\u20134Nada acontece.","Consulte a Bola de Cristal")],g6),b8,"O Retorno dos Fleshwalkers",c6)
 a7=A.b(["Defina a Faixa Num\xe9rica como 0.","Coloque 5 fichas de Pesquisa perto da Trilha Num\xe9rica.",c9],g2)
-b9=A.b([A.P("Pegue dois dados de dano Geral. A Armadilha permanece no tile.","Quando voc\xea entra em um tile com um token de Armadilha")],g4)
-b9=A.ai(B.m,"Voc\xea n\xe3o sabe o que estava vivendo nos fios aqui, mas parecia enorme. Voc\xea toma sua fuga como vit\xf3ria o suficiente e espera que o que quer que seja nunca encontre seu caminho para fora desta casa. 50",d1,'Voc\xeas se separam para encontrar o corretor, que por algum motivo n\xe3o estava esperando na frente. Assim que voc\xea pensa consigo mesmo, "Reformar este lugar vai custar uma fortuna", as luzes piscam, e voc\xea ouve um zumbido mec\xe2nico estranho. Voc\xea tem a estranha sensa\xe7\xe3o de que a casa est\xe1 tremendo de antecipa\xe7\xe3o. De repente, um r\xe1dio toca ao seu lado. Provavelmente \xe9 apenas uma fia\xe7\xe3o ruim, mas por que ele est\xe1 chamando seu nome?',B.w,41,"Voc\xea vence quando sobrecarrega todos os Geradores. \u2022 Sabotagem Eletr\xf4nicaeDesabilitar Armadilhaspara encontrar suprimentos para ajud\xe1-lo Sobrecarregue os geradores.",f4,"N\xfamero de trilha\n5 Fichas ON/OFF \u2013Geradores\n5 Fichas de Armadilha\nTokens Pesquisados \u2013Sabotar\nAzulejos com Eletr\xf4nica:\nSala do P\xe2nico \u2013Por\xe3o\nCofre \u2013Por\xe3o\nCozinha \u2013T\xe9rreo\nLaborat\xf3rio \u2013T\xe9rreo\nSala de Jogos \u2013Por\xe3o/Piso Superior",f2,a7,A.b([A.Y("Enquanto estiver em ou adjacente a um tile com um marcador de Armadilha, fa\xe7a um teste de Velocidade. Se voc\xea estiver no mesmo tile que a Armadilha, adicione 2 ao resultado do seu teste. 6+ Remova a Armadilha e d\xea-a ao traidor. Mova a Trilha Num\xe9rica para cima em 1. 0\u20135Nada acontece.","Desabilitar uma armadilha"),A.Y("Enquanto em umazulejo com eletr\xf4nica,fa\xe7a um teste de Conhecimento ou Poder. 5+ Mova a Trilha Num\xe9rica para cima em um. Coloque um marcador de Pesquisado no ladrilho. 0\u20134Nada acontece.ZZZZAAP Voc\xea n\xe3o pode sabotar eletr\xf4nicos em um ladrilho que j\xe1 foi sabotado.","Sabotagem Eletr\xf4nica"),A.Y("Enquanto estiver em qualquer pe\xe7a com um Gerador, role um dado igual ao n\xfamero na Trilha Num\xe9rica. 5+ Vire o token do Gerador para OFF. Se todos os Geradores estiverem OFF, voc\xea venceu! 0\u20134Termine seu turno.","Sobrecarregue o gerador")],g6),b9,"Um Deus na M\xe1quina",c6)
+b9=A.b([A.L("Pegue dois dados de dano Geral. A Armadilha permanece no tile.","Quando voc\xea entra em um tile com um token de Armadilha")],g4)
+b9=A.ai(B.m,"Voc\xea n\xe3o sabe o que estava vivendo nos fios aqui, mas parecia enorme. Voc\xea toma sua fuga como vit\xf3ria o suficiente e espera que o que quer que seja nunca encontre seu caminho para fora desta casa. 50",d1,'Voc\xeas se separam para encontrar o corretor, que por algum motivo n\xe3o estava esperando na frente. Assim que voc\xea pensa consigo mesmo, "Reformar este lugar vai custar uma fortuna", as luzes piscam, e voc\xea ouve um zumbido mec\xe2nico estranho. Voc\xea tem a estranha sensa\xe7\xe3o de que a casa est\xe1 tremendo de antecipa\xe7\xe3o. De repente, um r\xe1dio toca ao seu lado. Provavelmente \xe9 apenas uma fia\xe7\xe3o ruim, mas por que ele est\xe1 chamando seu nome?',B.w,41,"Voc\xea vence quando sobrecarrega todos os Geradores. \u2022 Sabotagem Eletr\xf4nicaeDesabilitar Armadilhaspara encontrar suprimentos para ajud\xe1-lo Sobrecarregue os geradores.",f5,"N\xfamero de trilha\n5 Fichas ON/OFF \u2013Geradores\n5 Fichas de Armadilha\nTokens Pesquisados \u2013Sabotar\nAzulejos com Eletr\xf4nica:\nSala do P\xe2nico \u2013Por\xe3o\nCofre \u2013Por\xe3o\nCozinha \u2013T\xe9rreo\nLaborat\xf3rio \u2013T\xe9rreo\nSala de Jogos \u2013Por\xe3o/Piso Superior",f3,a7,A.b([A.Y("Enquanto estiver em ou adjacente a um tile com um marcador de Armadilha, fa\xe7a um teste de Velocidade. Se voc\xea estiver no mesmo tile que a Armadilha, adicione 2 ao resultado do seu teste. 6+ Remova a Armadilha e d\xea-a ao traidor. Mova a Trilha Num\xe9rica para cima em 1. 0\u20135Nada acontece.","Desabilitar uma armadilha"),A.Y("Enquanto em umazulejo com eletr\xf4nica,fa\xe7a um teste de Conhecimento ou Poder. 5+ Mova a Trilha Num\xe9rica para cima em um. Coloque um marcador de Pesquisado no ladrilho. 0\u20134Nada acontece.ZZZZAAP Voc\xea n\xe3o pode sabotar eletr\xf4nicos em um ladrilho que j\xe1 foi sabotado.","Sabotagem Eletr\xf4nica"),A.Y("Enquanto estiver em qualquer pe\xe7a com um Gerador, role um dado igual ao n\xfamero na Trilha Num\xe9rica. 5+ Vire o token do Gerador para OFF. Se todos os Geradores estiverem OFF, voc\xea venceu! 0\u20134Termine seu turno.","Sobrecarregue o gerador")],g6),b9,"Um Deus na M\xe1quina",c6)
 a7=A.b(["Se a pe\xe7a da Despensa n\xe3o tiver sido descoberta, encontre-a na pilha de pe\xe7as e coloque-a no Por\xe3o.",c9],g2)
-c0=A.b([A.P("Voc\xea pode atacar usando Sanity. Se seu ataque for bem-sucedido e {2/3/4/4} os esp\xedritos foram exorcizados,voc\xea venceu! Se voc\xea for atacado pelo C\xe3o Demon\xedaco e tiver um marcador de Comida Ele est\xe1 muito mais interessado na carne. Voc\xea pode dar ao Demonic Dog uma ficha de Food. Se fizer isso, subtraia 4 do resultado da rolagem do Dog.","Quando voc\xea ataca o c\xe3o demon\xedaco")],g4)
-c0=A.ai(B.m,d1,d1,"Voc\xea seguiu os passos de um grupo de ca\xe7adores de fantasmas que desapareceram aqui com seu cachorro alguns anos atr\xe1s. Esta casa agora \xe9 assombrada por seus esp\xedritos, que voc\xea pretende colocar para descansar. Voc\xea n\xe3o achava que havia sobreviventes, mas ent\xe3o ouve um rosnado baixo e canino, formando palavras que voc\xea n\xe3o consegue entender.",B.w,42,"Voc\xea vence quando consegue descansar esp\xedritos suficientes. \u2022 Exorcize esp\xedritos em salas espec\xedficas.",e6,"Token Pesquisado \u2013Esp\xedrito Exorcizado\nToken de C\xe3o Demon\xedaco\n5 Fichas de Comida \u2013Comida Roubada\nAzulejos Assombrados:\nBiblioteca \u2013T\xe9rreo/Piso Superior\nDespensa \u2013T\xe9rreo\nGin\xe1sio \u2013Por\xe3o/Piso Superior\nCapela \u2013T\xe9rreo",e9,a7,A.b([A.Y("Enquanto em umazulejo assombrado,fa\xe7a o teste de caracter\xedstica correspondente. Voc\xea n\xe3o pode fazer esse teste se j\xe1 houver um marcador de Procurado naquele tile. Biblioteca:Fa\xe7a um teste de Conhecimento. Despensa:Fa\xe7a um teste de For\xe7a. Gin\xe1sio: Fa\xe7a um teste de Velocidade. Capela:Fa\xe7a um teste de Sanidade. 4+Coloque um marcador de Pesquisado naquele ladrilho. 0\u20133Nada acontece.","Exorcizar o Esp\xedrito"),A.Y("Enquanto estiver no ladrilho da Despensa, fa\xe7a um teste de Velocidade. 4+Pegue uma ficha de Comida, se houver alguma restante. 0\u2013 3Sem efeito.","Roubar comida da despensa")],g6),c0,"Ataque de lanche",c6)
+c0=A.b([A.L("Voc\xea pode atacar usando Sanity. Se seu ataque for bem-sucedido e {2/3/4/4} os esp\xedritos foram exorcizados,voc\xea venceu!","Quando voc\xea ataca o c\xe3o demon\xedaco"),A.L("Ele est\xe1 muito mais interessado na carne. Voc\xea pode dar ao Demonic Dog uma ficha de Food. Se fizer isso, subtraia 4 do resultado da rolagem do Dog.","Se voc\xea for atacado pelo C\xe3o Demoniaco e tiver um marcador de comida")],g4)
+c0=A.ai(B.m,d1,d1,"Voc\xea seguiu os passos de um grupo de ca\xe7adores de fantasmas que desapareceram aqui com seu cachorro alguns anos atr\xe1s. Esta casa agora \xe9 assombrada por seus esp\xedritos, que voc\xea pretende colocar para descansar. Voc\xea n\xe3o achava que havia sobreviventes, mas ent\xe3o ouve um rosnado baixo e canino, formando palavras que voc\xea n\xe3o consegue entender.",B.w,42,"Voc\xea vence quando consegue descansar esp\xedritos suficientes. \u2022 Exorcize esp\xedritos em salas espec\xedficas.",e7,"Token Pesquisado \u2013Esp\xedrito Exorcizado\nToken de C\xe3o Demon\xedaco\n5 Fichas de Comida \u2013Comida Roubada\nAzulejos Assombrados:\nBiblioteca \u2013T\xe9rreo/Piso Superior\nDespensa \u2013T\xe9rreo\nGin\xe1sio \u2013Por\xe3o/Piso Superior\nCapela \u2013T\xe9rreo",f1,a7,A.b([A.Y("Enquanto em um azulejo assombrado,fa\xe7a o teste de caracter\xedstica correspondente. Voc\xea n\xe3o pode fazer esse teste se j\xe1 houver um marcador de Procurado naquele tile. \u2022Biblioteca:Fa\xe7a um teste de Conhecimento. \u2022Despensa:Fa\xe7a um teste de For\xe7a. \u2022Gin\xe1sio: Fa\xe7a um teste de Velocidade. \u2022Capela:Fa\xe7a um teste de Sanidade.\n 4+Coloque um marcador de Pesquisado naquele ladrilho. 0\u20133Nada acontece.","Exorcizar o Esp\xedrito"),A.Y("Enquanto estiver no ladrilho da Despensa, fa\xe7a um teste de Velocidade. 4+Pegue uma ficha de Comida, se houver alguma restante. 0\u2013 3Sem efeito.","Roubar comida da despensa")],g6),c0,"Ataque de lanche",c6)
 a7=A.b(["Defina a trilha num\xe9rica para{6/7/8/9}.","Enterre o Cachorro. Coloque a ficha de Lobisomem no tile do revelador da assombra\xe7\xe3o.",c9],g2)
-c1=A.b([A.P("Descarte seu token Oculto. Voc\xea n\xe3o est\xe1 mais Oculto.","Quando voc\xea se move"),A.P("O lobisomem uiva. Mova a Trilha Num\xe9rica para baixo em 1. Se nenhum her\xf3i sofreu dano neste turno, mova-a para baixo em 2. Se a Trilha Num\xe9rica estiver em 0, voc\xea venceu! Caso contr\xe1rio, cada her\xf3i deixa de lado seu token Oculto. Os her\xf3is n\xe3o est\xe3o mais Ocultos.",g1)],g4)
-c1=A.ai(B.m,"Embora voc\xea nunca saiba exatamente por que seu amigo o traiu, voc\xea descobre um boato de que o sangue derramado nesta casa tem o poder de conceder imortalidade \u2014 talvez isso tenha algo a ver. 52",d1,"Ronnie se trancou nesta casa de prop\xf3sito. Voc\xea n\xe3o percebeu isso quando veio aqui para resgat\xe1-la, e agora \xe9 voc\xea quem precisa de resgate. Quando voc\xea encontrou Ronnie, todos ficaram bem surpresos ao descobrir que ela n\xe3o era exatamente humana. Voc\xea provavelmente deveria ter prestado mais aten\xe7\xe3o ao calend\xe1rio lunar. Voc\xea s\xf3 tem que sobreviver at\xe9 o amanhecer, quando Ronnie voltar\xe1 ao seu estado normal. Isso n\xe3o pode ser muito dif\xedcil, certo?",B.w,43,"Voc\xea vence quando o amanhecer chega. \u2022 Esconda-se para acelerar o amanhecer.",e6,"N\xfamero de trilha\nToken de Lobisomem\nTokens Ocultos \u2013Her\xf3is Ocultos\nAzulejos com Esconderijos:\nArsenal \u2013Cave/T\xe9rreo\nQuarto Insonorizado \u2013Por\xe3o/Piso Superior\nCatacumbas \u2013Por\xe3o\nQuarto de Inverno \u2013T\xe9rreo/Piso Superior\nCemit\xe9rio \u2013T\xe9rreo\nCorredor Estatu\xe1rio \u2013Piso Superior",e7,a7,A.b([A.Y("Fa\xe7a um teste de Velocidade. \u2022 Se voc\xea estiver em um azulejo com esconderijo, adicione 1 ao resultado do seu teste.Voc\xea n\xe3o pode realizar esta a\xe7\xe3o se o Lobisomem estiver na linha de vis\xe3o. 5+ Pegue um token Oculto. Agora voc\xea est\xe1 escondido e n\xe3o pode ser atacado. 0\u20134Nada acontece.","Esconder"),A.Y("Enquanto estiver em um ladrilho com o Lobisomem, fa\xe7a um teste de Sanidade. Para cada her\xf3i naquele ladrilho que n\xe3o estiver se escondendo, adicione 1 ao resultado do seu teste. 8+Atordoe o Lobisomem. 5\u20137Nada acontece. 0\u20134Sofra 1 de dano F\xedsico.","Encante a Besta")],g6),c1,"Esconde-esconde e come","Possuidor de mais Press\xe1gios")
+c1=A.b([A.L("Descarte seu token Oculto. Voc\xea n\xe3o est\xe1 mais Oculto.","Quando voc\xea se move"),A.L("O lobisomem uiva. Mova a Trilha Num\xe9rica para baixo em 1. Se nenhum her\xf3i sofreu dano neste turno, mova-a para baixo em 2. Se a Trilha Num\xe9rica estiver em 0, voc\xea venceu! Caso contr\xe1rio, cada her\xf3i deixa de lado seu token Oculto. Os her\xf3is n\xe3o est\xe3o mais Ocultos.",e4)],g4)
+c1=A.ai(B.m,"Embora voc\xea nunca saiba exatamente por que seu amigo o traiu, voc\xea descobre um boato de que o sangue derramado nesta casa tem o poder de conceder imortalidade \u2014 talvez isso tenha algo a ver. 52",d1,"Ronnie se trancou nesta casa de prop\xf3sito. Voc\xea n\xe3o percebeu isso quando veio aqui para resgat\xe1-la, e agora \xe9 voc\xea quem precisa de resgate. Quando voc\xea encontrou Ronnie, todos ficaram bem surpresos ao descobrir que ela n\xe3o era exatamente humana. Voc\xea provavelmente deveria ter prestado mais aten\xe7\xe3o ao calend\xe1rio lunar. Voc\xea s\xf3 tem que sobreviver at\xe9 o amanhecer, quando Ronnie voltar\xe1 ao seu estado normal. Isso n\xe3o pode ser muito dif\xedcil, certo?",B.w,43,"Voc\xea vence quando o amanhecer chega. \u2022 Esconda-se para acelerar o amanhecer.",e7,"N\xfamero de trilha\nToken de Lobisomem\nTokens Ocultos \u2013Her\xf3is Ocultos\nAzulejos com Esconderijos:\nArsenal \u2013Cave/T\xe9rreo\nQuarto Insonorizado \u2013Por\xe3o/Piso Superior\nCatacumbas \u2013Por\xe3o\nQuarto de Inverno \u2013T\xe9rreo/Piso Superior\nCemit\xe9rio \u2013T\xe9rreo\nCorredor Estatu\xe1rio \u2013Piso Superior",e8,a7,A.b([A.Y("Fa\xe7a um teste de Velocidade. \u2022 Se voc\xea estiver em um azulejo com esconderijo, adicione 1 ao resultado do seu teste.Voc\xea n\xe3o pode realizar esta a\xe7\xe3o se o Lobisomem estiver na linha de vis\xe3o. 5+ Pegue um token Oculto. Agora voc\xea est\xe1 escondido e n\xe3o pode ser atacado. 0\u20134Nada acontece.","Esconder"),A.Y("Enquanto estiver em um ladrilho com o Lobisomem, fa\xe7a um teste de Sanidade. Para cada her\xf3i naquele ladrilho que n\xe3o estiver se escondendo, adicione 1 ao resultado do seu teste. 8+Atordoe o Lobisomem. 5\u20137Nada acontece. 0\u20134Sofra 1 de dano F\xedsico.","Encante a Besta")],g6),c1,"Esconde-esconde e come","Possuidor de mais Press\xe1gios")
 a7=A.b(["O revelador da assombra\xe7\xe3o deve virar seu tile para baixo e colocar sua miniatura de volta naquele tile. Aquela tile agora est\xe1 Queimando. Se houver apenas tr\xeas jogadores, vire o tile do outro her\xf3i tamb\xe9m (a menos que eles estejam em uma pe\xe7a de entrada).","Encontre 5 fichas de Fogo e coloque-as de lado.",c9],g2)
-c2=A.b([A.P("Tiles em chamas s\xe3o viradas para baixo. Pe\xe7as em chamas n\xe3o s\xe3o consideradas como tendo simbolos ou efeitos, e contam como tendo portas em todos os lados.\n\nSe uma pe\xe7a de entrada foi incediada, n\xe3o vire para baixo. Em vez disso, coloque uma ficha de fogo naquela pe\xe7a. Voc\xea ainda pode se mover entre as pe\xe7as de entrada, mesmo que estejam em chamas. Entrada do terreo com um uma pe\xe7a s\xf3 para o inc\xeandio.","A casa est\xe1 pegando fogo"),A.P("Voc\xea sofre 1 de dano Geral. As chamas est\xe3o se espalhando.","Quando voc\xea move para uma pe\xe7a em chamas"),A.P("O fogo se espalha. Cada se\xe7\xe3o cont\xednua de salas em chamas conta como um \xfanico fogo. \nPara cada um desses fogos, escolha qualquer pe\xe7a na casa que seja adjacente a esse fogo (independentemente de haver uma passagem com uma porta aberta entre eles) e, em seguida, vire simultaneamente essas pe\xe7as para baixo. Essas pe\xe7as agora est\xe3o em chamas.\n\nSe nenhum inc\xeandio puder se espalhar, coloque uma ficha de Fogo em uma pe\xe7a de entrada que ainda n\xe3o tenha uma. Essa pe\xe7a agora est\xe1 Queimando.",g1),A.P("Se a casa inteira estiver queimando,voc\xea venceu!",e0)],g4)
-c2=A.ai(B.m,"Voc\xea sai correndo pela porta, conseguindo escapar da fuma\xe7a sufocante e das chamas cortantes que est\xe3o queimando este lugar at\xe9 o ch\xe3o. Voc\xea v\xea a \u201cpessoa\u201d que voc\xea uma vez chamou seu amigo em uma das janelas. O rosto dele derrete, os globos oculares caem com o peso fl\xe1cido do exterior de pl\xe1stico. Vai demorar um pouco at\xe9 que voc\xea se sinta confort\xe1vel para fazer compras no shopping novamente.",d1,'Em uma mesa lateral, voc\xea nota uma m\xe1scara que se parece muito com o rosto do seu amigo desaparecido. Perto dali, uma voz diz: "Que artesanato. N\xe3o se preocupe, em breve voc\xea estar\xe1 bonita o suficiente para usar tamb\xe9m." Voc\xea olha para tr\xe1s, apenas para descobrir que um dos seus amigos desapareceu e foi substitu\xeddo por um manequim de pl\xe1stico. Toda vez que voc\xea pisca, eles parecem se mover um pouco mais perto de voc\xea. Voc\xea se vira para correr, mas h\xe1 mais deles. Voc\xea s\xf3 consegue pensar em uma solu\xe7\xe3o: voc\xea vai ter que queimar o lugar at\xe9 o ch\xe3o.',B.w,44,"Voc\xea vence quando incendeia a casa e escapa. \u2022 Queime todos os c\xf4modos da casa.",f6,"Pequenos tokens de monstro \u2013Manequins\nFichas de Fogo",e7,a7,A.b([A.Y("Enquanto estiver em qualquer pe\xe7a, fa\xe7a um teste de Sanidade. 4+Vire o tile. Agora ela est\xe1 queimando. Se for uma pe\xe7a de entrada, coloque uma ficha de fogo nela. 0\u20133Nada acontece.Voc\xea n\xe3o consegue fazer isso.","Atear fogo")],g6),c2,"Uma Costura Faltando",f1)
+c2=A.b([A.L("Tiles em chamas s\xe3o viradas para baixo. Pe\xe7as em chamas n\xe3o s\xe3o consideradas como tendo simbolos ou efeitos, e contam como tendo portas em todos os lados.\n\nSe uma pe\xe7a de entrada foi incediada, n\xe3o vire para baixo. Em vez disso, coloque uma ficha de fogo naquela pe\xe7a. Voc\xea ainda pode se mover entre as pe\xe7as de entrada, mesmo que estejam em chamas. Entrada do terreo com um uma pe\xe7a s\xf3 para o inc\xeandio.","A casa est\xe1 pegando fogo"),A.L("Voc\xea sofre 1 de dano Geral. As chamas est\xe3o se espalhando.","Quando voc\xea move para uma pe\xe7a em chamas"),A.L("O fogo se espalha. Cada se\xe7\xe3o cont\xednua de salas em chamas conta como um \xfanico fogo. \nPara cada um desses fogos, escolha qualquer pe\xe7a na casa que seja adjacente a esse fogo (independentemente de haver uma passagem com uma porta aberta entre eles) e, em seguida, vire simultaneamente essas pe\xe7as para baixo. Essas pe\xe7as agora est\xe3o em chamas.\n\nSe nenhum inc\xeandio puder se espalhar, coloque uma ficha de Fogo em uma pe\xe7a de entrada que ainda n\xe3o tenha uma. Essa pe\xe7a agora est\xe1 Queimando.",e4),A.L("Se a casa inteira estiver queimando,voc\xea venceu!",e0)],g4)
+c2=A.ai(B.m,"Voc\xea sai correndo pela porta, conseguindo escapar da fuma\xe7a sufocante e das chamas cortantes que est\xe3o queimando este lugar at\xe9 o ch\xe3o. Voc\xea v\xea a \u201cpessoa\u201d que voc\xea uma vez chamou seu amigo em uma das janelas. O rosto dele derrete, os globos oculares caem com o peso fl\xe1cido do exterior de pl\xe1stico. Vai demorar um pouco at\xe9 que voc\xea se sinta confort\xe1vel para fazer compras no shopping novamente.",d1,'Em uma mesa lateral, voc\xea nota uma m\xe1scara que se parece muito com o rosto do seu amigo desaparecido. Perto dali, uma voz diz: "Que artesanato. N\xe3o se preocupe, em breve voc\xea estar\xe1 bonita o suficiente para usar tamb\xe9m." Voc\xea olha para tr\xe1s, apenas para descobrir que um dos seus amigos desapareceu e foi substitu\xeddo por um manequim de pl\xe1stico. Toda vez que voc\xea pisca, eles parecem se mover um pouco mais perto de voc\xea. Voc\xea se vira para correr, mas h\xe1 mais deles. Voc\xea s\xf3 consegue pensar em uma solu\xe7\xe3o: voc\xea vai ter que queimar o lugar at\xe9 o ch\xe3o.',B.w,44,"Voc\xea vence quando incendeia a casa e escapa. \u2022 Queime todos os c\xf4modos da casa.",f7,"Pequenos tokens de monstro \u2013Manequins\nFichas de Fogo",e8,a7,A.b([A.Y("Enquanto estiver em qualquer pe\xe7a, fa\xe7a um teste de Sanidade. 4+Vire o tile. Agora ela est\xe1 queimando. Se for uma pe\xe7a de entrada, coloque uma ficha de fogo nela. 0\u20133Nada acontece.Voc\xea n\xe3o consegue fazer isso.","Atear fogo")],g6),c2,"Uma Costura Faltando",f2)
 a7=A.b([c8,c9],g2)
-c3=A.b([A.P("Se a trilha num\xe9rica estiver em 0,voc\xea venceu!Caso contr\xe1rio, eles se mover\xe3o para um ladrilho designado dentro da casa. Mova a Trilha Num\xe9rica para baixo em 1.",d0)],g4)
-c3=A.ai(B.m,"Seu telefone toca de repente, e uma voz que voc\xea conhece da televis\xe3o fala: \u201cShow impressionante! O p\xfablico adorou essa estreia! Quer voltar na semana que vem para o pr\xf3ximo epis\xf3dio? Voc\xea traz alguns amigos. N\xf3s trazemos os f\xe3s.\u201d 54",d1,'Quando seu amigo alugou esta casa QuikBnB para o fim de semana, foi para comemorar o elenco do show para o qual ele estava fazendo teste. O que ele n\xe3o mencionou foi que todos voc\xeas fariam parte da produ\xe7\xe3o. De algum lugar da casa voc\xea ouve uma contagem, "5...4...3...2... c\xe2meras gravando. Arrase, garoto!" A voz do seu amigo ecoa pela casa, com um tom amea\xe7ador inesperado. \u201cHora de algumas cenas de morte realistas!\u201d',B.w,45,"Voc\xea vence quando estraga a audi\xe7\xe3o. \u2022 Mate o traidor e certifique-se de que ele n\xe3o esteja apenas se fingindo de morto. \u2022 Reescreva o roteiro para apressar a cena da morte.",f0,"N\xfamero de trilha\nAzulejos onde voc\xea pode escrever:\nBiblioteca \u2013T\xe9rreo/Piso Superior\nSal\xe3o de Baile \u2013T\xe9rreo\nGaleria \u2013Piso Superior\nQuartos de H\xf3spedes \u2013T\xe9rreo/Piso Superior",e4,a7,A.b([A.Y("Enquanto estiver no ladrilho com o traidor, se ele estiver segurando o Livro, fa\xe7a um teste de Velocidade: 4+Pegue o livro. 0\u20133 Nada acontece.","Roube o roteiro"),A.Y("Se voc\xea tem o livro e est\xe1 em um azulejo onde voc\xea pode escrever,fa\xe7a um teste de Conhecimento. 6+Mova a Faixa Num\xe9rica para baixo em 1.Voc\xea rabisca uma cena r\xe1pida de morte. 0\u20135Nada acontece.\xc9 dif\xedcil escrever uma narrativa convincente. Voc\xea n\xe3o \xe9 nem sei por onde come\xe7ar.","Reescreva o roteiro")],g6),c3,"Uma estreia audaciosa",c6)
+c3=A.b([A.L("Se a trilha num\xe9rica estiver em 0,voc\xea venceu!Caso contr\xe1rio, eles se mover\xe3o para um ladrilho designado dentro da casa. Mova a Trilha Num\xe9rica para baixo em 1.",d0)],g4)
+c3=A.ai(B.m,"Seu telefone toca de repente, e uma voz que voc\xea conhece da televis\xe3o fala: \u201cShow impressionante! O p\xfablico adorou essa estreia! Quer voltar na semana que vem para o pr\xf3ximo epis\xf3dio? Voc\xea traz alguns amigos. N\xf3s trazemos os f\xe3s.\u201d 54",d1,'Quando seu amigo alugou esta casa QuikBnB para o fim de semana, foi para comemorar o elenco do show para o qual ele estava fazendo teste. O que ele n\xe3o mencionou foi que todos voc\xeas fariam parte da produ\xe7\xe3o. De algum lugar da casa voc\xea ouve uma contagem, "5...4...3...2... c\xe2meras gravando. Arrase, garoto!" A voz do seu amigo ecoa pela casa, com um tom amea\xe7ador inesperado. \u201cHora de algumas cenas de morte realistas!\u201d',B.w,45,"Voc\xea vence quando estraga a audi\xe7\xe3o. \u2022 Mate o traidor e certifique-se de que ele n\xe3o esteja apenas se fingindo de morto. \u2022 Reescreva o roteiro para apressar a cena da morte.",f0,"N\xfamero de trilha\nAzulejos onde voc\xea pode escrever:\nBiblioteca \u2013T\xe9rreo/Piso Superior\nSal\xe3o de Baile \u2013T\xe9rreo\nGaleria \u2013Piso Superior\nQuartos de H\xf3spedes \u2013T\xe9rreo/Piso Superior",e5,a7,A.b([A.Y("Enquanto estiver no ladrilho com o traidor, se ele estiver segurando o Livro, fa\xe7a um teste de Velocidade: 4+Pegue o livro. 0\u20133 Nada acontece.","Roube o roteiro"),A.Y("Se voc\xea tem o livro e est\xe1 em um azulejo onde voc\xea pode escrever,fa\xe7a um teste de Conhecimento. 6+Mova a Faixa Num\xe9rica para baixo em 1.Voc\xea rabisca uma cena r\xe1pida de morte. 0\u20135Nada acontece.\xc9 dif\xedcil escrever uma narrativa convincente. Voc\xea n\xe3o \xe9 nem sei por onde come\xe7ar.","Reescreva o roteiro")],g6),c3,"Uma estreia audaciosa",c6)
 a7=A.b([c8,c9],g2)
-c4=A.b([A.P("\u2022 Se voc\xea tiver o Ant\xeddoto real, adicione 3 ao seu resultado. Se voc\xea atacar com sucesso o Monstro de Cabelo Gigante enquanto tiver o Ant\xeddoto real, voc\xea venceu!","Quando voc\xea ataca o Monstro de Cabelo Gigante")],g4)
+c4=A.b([A.L("\u2022 Se voc\xea tiver o Ant\xeddoto real, adicione 3 ao seu resultado. Se voc\xea atacar com sucesso o Monstro de Cabelo Gigante enquanto tiver o Ant\xeddoto real, voc\xea venceu!","Quando voc\xea ataca o Monstro de Cabelo Gigante")],g4)
 c5=A.b([A.Y("Enquanto estiver na Biblioteca, fa\xe7a um teste de Conhecimento. 5+Vire uma ficha de Ant\xeddoto virada para baixo para seu lado virado para cima. 0\u20134 Nada acontece.","Aprenda sobre a Maldi\xe7\xe3o"),A.Y("Enquanto estiver em um tile com um token de Ant\xeddoto, voc\xea pode vir\xe1-lo para ver se \xe9 o Ant\xeddoto real. Se for, voc\xea pode peg\xe1-lo.","Fa\xe7a uma descoberta")],g6)
-c4=A.ai(B.m,"Voc\xea joga o ant\xeddoto em todo o seu amigo e nas paredes da casa, que agora est\xe3o emaranhadas com cabelos molhados e mofados. Os cabelos recuam at\xe9 desaparecerem, devolvendo seu amigo para voc\xea. Ao sair de casa, voc\xea tira um cabelo da boca. Voc\xea tem certeza de que n\xe3o \xe9 nada.",d1,'Voc\xea n\xe3o est\xe1 se sentindo bem h\xe1 dias, mas s\xf3 quando encontra o cr\xe2nio \xe9 que finalmente entende o porqu\xea. O cabelo atravessa a textura porosa do cr\xe2nio at\xe9 que ele esteja completamente coberto por fios fibrosos e molhados. Seu amigo cai, seus gritos agonizantes abafados pelo mesmo cabelo molhado saindo de sua boca. Ele rasteja sobre seu corpo, consumindo-o. "Eu sou a vingan\xe7a", gorgoleja o monstro que j\xe1 foi seu amigo. Voc\xea vai ter que encontrar um ant\xeddoto antes de se tornar um monstro tamb\xe9m!',A.b([A.bh(B.u,"",d1,"Monstro de Cabelo Gigante",d1,d1,d1)],n),46,"Voc\xea vence quando consegue curar o traidor. \u2022 Encontre o verdadeiro ant\xeddoto. \u2022 Derrote o Monstro Gigante de Cabelo enquanto voc\xea tem o Ant\xeddoto real.",f3,"Ficha de Monstro de Cabelo Gigante\nPequenos tokens de monstro \u2013Pequenos Monstros de Cabelo\nFichas Num\xe9ricas \u2013Ant\xeddotos",d3,a7,c5,c4,"Cabelo Fantasma",c6)
-c5=A.ai(B.m,"O \xfaltimo dos portais se fecha, encerrando o reinado de terror do cavaleiro deste lado da exist\xeancia. Ao sair da casa, voc\xea tira um momento para pensar naquelas pobres almas perdidas para sempre em outro tempo. 56",d1,"Muitos ca\xe7adores de fantasmas antes de voc\xea tentaram desvendar os mist\xe9rios deste lugar, mas nunca mais se ouviu falar deles. Enquanto voc\xea teoriza com seus colegas sobre o que pode ter acontecido com aquelas almas perdidas, voc\xea ouve os tons suaves de um gravador, tocando uma melodia medieval. Um portal se abre, rasgando o pr\xf3prio tecido do tempo. Huh. Isso pode explicar. Enquanto voc\xea pondera sobre esse desenvolvimento, seu amigo ri. Do outro lado do portal, um cavaleiro ri exatamente da mesma maneira.",B.w,47,"Voc\xea vence quando todos os Portais forem fechados. \u2022 Fuja dos Portais. \u2022 Feche os Portais.",f7,"Tokens de Portal \u2013Portais Dimensionais",e9,A.b([c8,c9],g2),A.b([A.Y("Enquanto estiver em um ladrilho com um token de Portal (e voc\xeas\xe3oPreso), fa\xe7a um teste de Conhecimento. Se houver um her\xf3i n\xe3o Preso em seu tile, adicione 2 ao seu teste. 6+ D\xea ao traidor seu token de Her\xf3i. Voc\xea n\xe3o est\xe1 mais Preso. Consegui! 0\u20135Ganhe 1 Conhecimento.N\xe3o exatamente, mas voc\xea ganhou alguma percep\xe7\xe3o...","Fuja do Portal"),A.Y("Enquanto estiver em um ladrilho com um token de Portal (e voc\xea estivern\xe3oPreso), fa\xe7a um teste de Conhecimento ou Sanidade. 4+ Voc\xea fecha o Portal. Remova esse Portal da casa. Se esse foi o \xfaltimo Portal,voc\xea venceu! 0\u20133Receba um dado de dano Mental.","Feche o Portal")],g6),B.am,"Um Cavaleiro para Lembrar",c6)
-a7=A.ai(B.m,"Com um clique, a porta do quarto do p\xe2nico tranca seu anfitri\xe3o l\xe1 dentro. Ele grita, mas voc\xea j\xe1 come\xe7ou a se afastar. Ao sair da mans\xe3o, voc\xea tranca seu antigo amigo l\xe1 dentro. As batidas na porta rapidamente desaparecem, e a chave da casa derrete em sua m\xe3o, deixando para tr\xe1s uma massa congelada de sangue e cinzas.",d1,'Seu amigo saiu correndo h\xe1 um tempo para cuidar do av\xf4, que \xe9 dono desta casa. Eles disseram que ele n\xe3o se importaria de receber visitas, mas, apesar da reuni\xe3o discreta, algum tipo de raiva parece permear a casa. Em algum lugar, l\xe1 do fundo, voc\xea pode ouvir seu amigo negociando com outra pessoa \u2014 ou outra coisa. Algo que faz um som estridente. Voc\xea ouve seu amigo dizer: "Tudo bem, desculpe por incomod\xe1-lo. Eles ficar\xe3o quietos. Eles ser\xe3o seus."',B.w,48,"Voc\xea vence quando prende permanentemente o Chefe da Casa. \u2022 Leve a Caveira para a Sala do P\xe2nico. (A Sala do P\xe2nico \xe9 uma pe\xe7a do Por\xe3o.)",f3,"Token do Chefe da Casa",e4,A.b([c8,c9],g2),B.u,A.b([A.P("se voc\xea vencer o ataque. O chefe da casa \xe9 morto em vez de atordoado. Pegue o cr\xe2nio. Ele rola at\xe9 seus p\xe9s, ainda tagarelando.","Quando ataca o chefe da casa"),A.P("Se voc\xca tiver carregando o cr\xe2nio, fa\xe7a um teste de velocidade.5+ Nada acontece.0-4 Sofra 2 de dano Fisico, Ai como morde!","No Final do seu turno"),A.P("Se voc\xea estiver carregando o cr\xe2nio, voc\xea venceu! E fique a\xed!","Quando voc\xea chega \xe0 Sala do P\xe2nico")],g4),"N\xe3o incomode o anfitri\xe3o!","Maior For\xe7a")
+c4=A.ai(B.m,"Voc\xea joga o ant\xeddoto em todo o seu amigo e nas paredes da casa, que agora est\xe3o emaranhadas com cabelos molhados e mofados. Os cabelos recuam at\xe9 desaparecerem, devolvendo seu amigo para voc\xea. Ao sair de casa, voc\xea tira um cabelo da boca. Voc\xea tem certeza de que n\xe3o \xe9 nada.",d1,'Voc\xea n\xe3o est\xe1 se sentindo bem h\xe1 dias, mas s\xf3 quando encontra o cr\xe2nio \xe9 que finalmente entende o porqu\xea. O cabelo atravessa a textura porosa do cr\xe2nio at\xe9 que ele esteja completamente coberto por fios fibrosos e molhados. Seu amigo cai, seus gritos agonizantes abafados pelo mesmo cabelo molhado saindo de sua boca. Ele rasteja sobre seu corpo, consumindo-o. "Eu sou a vingan\xe7a", gorgoleja o monstro que j\xe1 foi seu amigo. Voc\xea vai ter que encontrar um ant\xeddoto antes de se tornar um monstro tamb\xe9m!',A.b([A.bh(B.u,"",d1,"Monstro de Cabelo Gigante",d1,d1,d1)],n),46,"Voc\xea vence quando consegue curar o traidor. \u2022 Encontre o verdadeiro ant\xeddoto. \u2022 Derrote o Monstro Gigante de Cabelo enquanto voc\xea tem o Ant\xeddoto real.",f4,"Ficha de Monstro de Cabelo Gigante\nPequenos tokens de monstro \u2013Pequenos Monstros de Cabelo\nFichas Num\xe9ricas \u2013Ant\xeddotos",d3,a7,c5,c4,"Cabelo Fantasma",c6)
+c5=A.b([c8,c9],g2)
+a7=A.b([A.L("Um her\xf3i com uma de Her\xf3i est\xe1 preso. Her\xf3is presos n\xe3o podem negociar com her\xf3is n\xe3o presos.",g0),A.L("No inicio do seu turno, fa\xe7a um teste de velocidade para determinar o qu\xe3o longe voc\xea consegue se mover (minimo de 1 pe\xe7a).","Salte atrav\xe9s de um Portal")],g4)
+a7=A.ai(B.m,"O \xfaltimo dos portais se fecha, encerrando o reinado de terror do cavaleiro deste lado da exist\xeancia. Ao sair da casa, voc\xea tira um momento para pensar naquelas pobres almas perdidas para sempre em outro tempo. 56",d1,"Muitos ca\xe7adores de fantasmas antes de voc\xea tentaram desvendar os mist\xe9rios deste lugar, mas nunca mais se ouviu falar deles. Enquanto voc\xea teoriza com seus colegas sobre o que pode ter acontecido com aquelas almas perdidas, voc\xea ouve os tons suaves de um gravador, tocando uma melodia medieval. Um portal se abre, rasgando o pr\xf3prio tecido do tempo. Huh. Isso pode explicar. Enquanto voc\xea pondera sobre esse desenvolvimento, seu amigo ri. Do outro lado do portal, um cavaleiro ri exatamente da mesma maneira.",B.w,47,"Voc\xea vence quando todos os Portais forem fechados. \u2022 Fuja dos Portais. \u2022 Feche os Portais.",f8,"Fichas de Her\xf3i -Her\xf3is presos\nTokens de Portal \u2013Portais Dimensionais",f1,c5,A.b([A.Y("Enquanto estiver em um ladrilho com um token de Portal (e voc\xea est\xe1 preso), fa\xe7a um teste de Conhecimento. Se houver um her\xf3i n\xe3o Preso em seu tile, adicione 2 ao seu teste. 6+ D\xea ao traidor seu token de Her\xf3i. Voc\xea n\xe3o est\xe1 mais Preso. Consegui! 0\u20135Ganhe 1 Conhecimento.N\xe3o foi o suficiente, mas voc\xea ganhou alguma percep\xe7\xe3o...","Fuja do Portal"),A.Y("Enquanto estiver em um ladrilho com um token de Portal (e voc\xea n\xe3o estiver preso), fa\xe7a um teste de Conhecimento ou Sanidade. 4+ Voc\xea fecha o Portal. Remova esse Portal da casa. Se esse foi o \xfaltimo Portal,voc\xea venceu! 0\u20133Receba um dado de dano Mental.","Feche o Portal")],g6),a7,"Um Cavaleiro para Lembrar",c6)
+c5=A.ai(B.m,"Com um clique, a porta do quarto do p\xe2nico tranca seu anfitri\xe3o l\xe1 dentro. Ele grita, mas voc\xea j\xe1 come\xe7ou a se afastar. Ao sair da mans\xe3o, voc\xea tranca seu antigo amigo l\xe1 dentro. As batidas na porta rapidamente desaparecem, e a chave da casa derrete em sua m\xe3o, deixando para tr\xe1s uma massa congelada de sangue e cinzas.",d1,'Seu amigo saiu correndo h\xe1 um tempo para cuidar do av\xf4, que \xe9 dono desta casa. Eles disseram que ele n\xe3o se importaria de receber visitas, mas, apesar da reuni\xe3o discreta, algum tipo de raiva parece permear a casa. Em algum lugar, l\xe1 do fundo, voc\xea pode ouvir seu amigo negociando com outra pessoa \u2014 ou outra coisa. Algo que faz um som estridente. Voc\xea ouve seu amigo dizer: "Tudo bem, desculpe por incomod\xe1-lo. Eles ficar\xe3o quietos. Eles ser\xe3o seus."',B.w,48,"Voc\xea vence quando prende permanentemente o Chefe da Casa. \u2022 Leve a Caveira para a Sala do P\xe2nico. (A Sala do P\xe2nico \xe9 uma pe\xe7a do Por\xe3o.)",f4,"Token do Chefe da Casa",e5,A.b([c8,c9],g2),B.u,A.b([A.L("se voc\xea vencer o ataque. O chefe da casa \xe9 morto em vez de atordoado. Pegue o cr\xe2nio. Ele rola at\xe9 seus p\xe9s, ainda tagarelando.","Quando ataca o chefe da casa"),A.L("Se voc\xca tiver carregando o cr\xe2nio, fa\xe7a um teste de velocidade.5+ Nada acontece.0-4 Sofra 2 de dano Fisico, Ai como morde!","No Final do seu turno"),A.L("Se voc\xea estiver carregando o cr\xe2nio, voc\xea venceu! E fique a\xed!","Quando voc\xea chega \xe0 Sala do P\xe2nico")],g4),"N\xe3o incomode o anfitri\xe3o!","Maior For\xe7a")
 n=A.b(["Cada her\xf3i pega uma ficha de Sangue e a coloca no seu tabuleiro de personagem.",c9],g2)
-g4=A.b([A.P("Se voc\xea vencer, poder\xe1 roubar o Contrato do Dem\xf4nio (se ele o tiver) em vez de causar dano.","Quando voc\xea ataca o dem\xf4nio com For\xe7a")],g4)
-return A.av([1,g5,2,q,3,p,4,m,5,l,6,g3,7,k,8,i,13,o,14,j,15,g,16,f,17,h,18,d,19,e,20,b,21,a,22,c,23,a0,24,a2,25,a1,26,a3,27,a5,28,a4,29,a6,30,a8,31,a9,32,b0,33,b1,34,b2,35,b3,36,b4,37,b5,38,b6,39,b7,40,b8,41,b9,42,c0,43,c1,44,c2,45,c3,46,c4,47,c5,48,a7,49,A.ai(B.m,"Voc\xea est\xe1 vivo, mas tamb\xe9m n\xe3o encontrou uma casa para comprar. Obviamente, o primeiro \xe9 mais importante \u2014 voc\xea realmente gosta de n\xe3o ser assassinado por um dem\xf4nio, mas ainda assim... voc\xea pensou que esta casa era a certa. 58",d1,'A corretora informa que sua oferta n\xe3o foi aceita. "Cheguei a um acordo bastante satisfat\xf3rio com um novo comprador", ela diz, e pela primeira vez, voc\xea percebe como seus dentes parecem afiados. "O contrato j\xe1 foi assinado, e h\xe1 uma certa pequena cl\xe1usula que me deixa particularmente animada. Ah, e n\xe3o se incomode em tentar as portas \u2014 elas j\xe1 est\xe3o trancadas." Ela se transforma em fuma\xe7a acre e afunda nas t\xe1buas do assoalho.',B.w,49,"Voc\xea vence quando queima o Contrato. \u2022 Roube o Contrato do Dem\xf4nio. \u2022 Queime o Contrato.",e5,"Token de Contrato\nFicha Demon\xedaca\nQuartos com Fogo:\nSala da Fornalha \u2013Por\xe3o\nSala Ritual \u2013Por\xe3o\nCozinha \u2013T\xe9rreo\nLaborat\xf3rio \u2013T\xe9rreo\nSala Carbonizada \u2013T\xe9rreo/Piso Superior",f2,n,A.b([A.Y("Enquanto voc\xea tem o Contrato, fa\xe7a um teste de Conhecimento. \u2022 Se voc\xea estiver em um sala com lareira,adicione 4 ao resultado do seu teste. 7+Voc\xea queima o contrato.Voc\xea venceu! 4\u20136Nada acontece. 0\u20133Sofra 1 de dano F\xedsico.Ai! Queima! Fichas de Sangue Voc\xea prefere isso dentro do seu corpo. \u2022 Fichas de Sangue n\xe3o podem ser trocadas, e um her\xf3i n\xe3o pode pegar uma ficha de Sangue que tenha sido derrubada. \u2022 Se voc\xea morrer ou sofrer dano F\xedsico, coloque sua ficha de Sangue em sua pe\xe7a. \u2022 Se voc\xea n\xe3o tiver seu token de Sangue no final do seu turno, receba 1 dado de dano Mental.","Queime o contrato"),A.Y("Se voc\xea tiver seu marcador de Sangue, receba 1 dado de dano Mental e ganhe 1 de For\xe7a.","Realizar Magia de Sangue")],g6),g4,"Termos e Condi\xe7\xf5es",c6),50,A.ai(B.m,"Voc\xea olha para tr\xe1s enquanto a casa desaba, explos\xf5es estranhas balan\xe7am sua estrutura. Nem todos voc\xeas conseguiram sair, mas pelo menos aquela coisa se foi para sempre. Voc\xea espera.",d1,"Rumores locais dizem que esta mans\xe3o j\xe1 foi invadida por algum tipo de carne viva e crescente. Todos voc\xeas presumiram que era apenas uma lenda urbana, at\xe9 que todos come\xe7aram a ter os mesmos pesadelos recorrentes que os levaram at\xe9 a casa. Voc\xea se assusta ao ouvir seu amigo come\xe7ar a gritar de algum lugar da casa, e quando os gritos param abruptamente, os pelos da sua nuca se arrepiam. Voc\xea vai ter que destruir essa coisa antes que ela pegue voc\xea tamb\xe9m.",B.w,50,"Voc\xea vence quando destr\xf3i a casa. \u2022 Coloque explosivos para preparar a casa para explodir.",f7,u.z,d3,A.b(["Deixar de lado(3/4/4/5)Fichas de armadilha. S\xe3o explosivos.",c9],g2),A.b([A.Y("Enquanto estiver em qualquer tile, enterre um Item ou Press\xe1gio. Ent\xe3o, fa\xe7a um teste de Velocidade ou Conhecimento. 6+ Coloque um Explosivo em seu tile. Se n\xe3o houver mais Explosivos, voc\xea pode mover um Explosivo j\xe1 colocado para seu tile. N\xe3o convencional, mas louco o suficiente para funcionar. 0\u20135Nada acontece. N\xe3o coloque um Explosivo.Voc\xea destr\xf3i a armadilha antes de ser definido. Quartos Consumidos O Construto est\xe1 consumindo salas. As pe\xe7as de sala consumidas s\xe3o viradas para baixo. Elas s\xe3o consideradas sem s\xedmbolos ou texto, e t\xeam portas em todos os 4 lados. As pe\xe7as de aterrissagem n\xe3o podem ser consumidas. Explosivos permanecem nas salas consumidas quando s\xe3o viradas. Voc\xea pode colocar Explosivos nas salas consumidas. No final do seu turno Se todos os explosivos foram colocados e houver pelo menos um explosivo em cada regi\xe3o,voc\xea venceu!","Definir explosivo improvisado")],g6),B.am,"O sabor da carne e do metal",c6)],t.S,A.ag("fo"))})
-s($,"aPN","aqG",()=>{var q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,c0,c1,c2,c3="Revelador de Assombra\xe7\xe3o",c4="Nenhum",c5="Seu explorador ainda est\xe1 no jogo. Voc\xea \xe9 o traidor.",c6="Voc\xea vence quando todos os her\xf3is est\xe3o mortos.",c7="5",c8="3",c9="4",d0=null,d1="Livre para todos",d2="Um convite misterioso",d3="\xcddolo",d4=u.n,d5="N\xfamero de trilha",d6="\xc0 venda",d7="Armadura",d8="Um Estranho Desaparecimento",d9="Punhal",e0="S\xedmbolo Sagrado",e1="Coloque a Carta de Monstro \xe0 sua esquerda. Os monstros jogar\xe3o depois do seu turno.",e2="No final do seu turno",e3="Esquerda do Revelador da Assombra\xe7\xe3o",e4="Livro",e5="Cure todos os seus tra\xe7os.",e6="Quando voc\xea morre",e7="6",e8="2",e9="Investigadores Paranormais",f0="Coloque a Carta de Monstro \xe0 sua esquerda. Os monstros jogar\xe3o no lugar do seu.",f1="Fantasma",f2="Lobisomem",f3="Quando um her\xf3i morre",f4="Amaldi\xe7oado!",f5="No final do turno de cada her\xf3i",f6="Anel",f7="*",f8="7",f9="Cachorro",g0="Se vencer, voc\xea pode roubar um Item ou Press\xe1gio daquele her\xf3i em vez de causar dano.",g1="Cr\xe2nio",g2="M\xe1scara",g3="Coloque a Carta de Monstro \xe0 sua esquerda. O monstro jogar\xe1 no lugar do seu.",g4="Quando voc\xea ataca um her\xf3i",g5="Coloque um Gato Morto-Vivo em sua pe\xe7a.",g6="Coloque a Carta de Monstro \xe0 sua esquerda. O monstro jogar\xe1 depois do seu turno.",g7=t.s,g8=A.b([c5,"Coloque o Monster Card \xe0 sua esquerda. \xc0s vezes, o monstro joga seu turno no lugar do seu.","Cure todos os seus tra\xe7os. Ganhe{1/1/2/2}em ambas as suas caracter\xedsticas f\xedsicas."],g7),g9=t.N8,h0=A.b([A.P("Coloque o espirito do jack no ladrinho com um simbolo de Omen que esteja mais distante do seu cad\xe1ver. Repita esse processo toda vez que morrer.","Se Voc\xea Morrer")],g9),h1=t.kw,h2=A.b([A.Y("Se voc\xea ainda n\xe3o atacou e n\xe3o tem linha de vis\xe3o para um her\xf3i, voc\xea pode colocar seu explorador em qualquer pe\xe7a do andar superior ou t\xe9rreo que n\xe3o esteja na linha de vis\xe3o de um her\xf3i.","Perseguir a Presa")],h1),h3=t.rS
-h0=A.ai(B.m,"Assobie uma melodia alegre. Seus amigos foram todos cortados em peda\xe7os, e voc\xea pode novamente se instalar confortavelmente em sua antiga casa.",d0,"Enquanto voc\xea explorava a casa, seus companheiros falaram sobre Crimson Jack, o not\xf3rio serial killer que foi derrubado nesta mesma mans\xe3o h\xe1 vinte anos. Eles sabiam que o corpo de Jack havia sido morto, mas n\xe3o tinham ideia de que seu esp\xedrito ainda permanecia neste antigo lugar. Voc\xea mal consegue suprimir seu sorriso assassino ao perceber a verdade: Jack est\xe1 de volta.",A.b([A.bh(A.b([A.Y("Se o Esp\xedrito de Jack estiver no mesmo ladrilho que o cad\xe1ver do seu explorador, cure todos os seus tra\xe7os. Voc\xea controla seu explorador novamente. Remova o Esp\xedrito de Jack da casa.","No in\xedcio do turno do monstro")],h1),"O Esp\xedrito de Jack pode se mover entre pe\xe7as adjacentes n\xe3o conectadas por portas. O Esp\xedrito de Jack n\xe3o pode ser atordoado.",c9,"Esp\xedrito de Jack",c9,c8,c7)],h3),1,c6,"\u201cUm toque de carmesim\u201d",u.G,c4,g8,h2,h0,u.L,c3)
-h2=A.b(["Defina a Faixa Num\xe9rica como 1.",d4],g7)
-g8=A.b([A.P("Se voc\xea estiver segurando o \xcddolo, mova a Trilha Num\xe9rica para cima em 1. A foto muda e se transforma. H\xe1 um rosto presun\xe7oso a menos olhando para voc\xea.","Quando voc\xea mata outro explorador"),A.P("Se voc\xea estiver segurando o \xcddolo, adicione o valor da Trilha Num\xe9rica ao seu teste.","Na sua vez, quando voc\xea faz um ataque de For\xe7a"),A.P("Se voc\xea vencer, voc\xea pode roubar o \xcddolo em vez de causar dano. Se voc\xea perder, receba dano normalmente.","Quando voc\xea faz um ataque de For\xe7a contra o portador do \xcddolo"),A.P("Voc\xea pode enterrar qualquer n\xfamero de Itens que estiver segurando. Para cada Item que voc\xea enterrar, adicione 1 ao resultado da sua jogada de ataque.","Quando voc\xea faz um ataque desarmado de For\xe7a contra qualquer um")],g9)
-g8=A.ai(B.cn,"O rel\xf3gio bate meia-noite, e enquanto voc\xea anda pelo seu campo de batalha de Ano Novo, voc\xea v\xea a foto ca\xedda no ch\xe3o, ainda segurada pelo \xeddolo, mas a imagem mudou. Agora ela mostra apenas voc\xea, sorrindo, enquanto voc\xea est\xe1 de p\xe9 sobre os restos mortais de seus amigos.",d0,"\xc0 medida que a noite avan\xe7a inexoravelmente em dire\xe7\xe3o ao Ano Novo, voc\xea e seus amigos come\xe7aram a perceber o quanto se distanciaram uns dos outros. Ao olhar para uma foto do seu grupo, tudo o que voc\xea consegue ver s\xe3o os mesmos sorrisos vazios que todos os outros continuaram a usar durante a noite. Em uma prateleira empoeirada, voc\xea encontra um \xeddolo com um slot que se encaixa perfeitamente na foto. Voc\xea \xe9 compelido a colocar a foto no slot e, conforme ela desliza para o lugar, voc\xea percebe que gostaria muito mais do \xeddolo se ele fosse manchado de vermelho.",B.w,9,"Voc\xea vence quando for o \xfaltimo explorador de p\xe9.",d3,d5,d2,h2,A.b([A.Y("Enquanto estiver em um ladrilho que tenha um s\xedmbolo de Item, fa\xe7a um teste de Conhecimento. 5+Compre a carta do topo do baralho de itens. 0\u20134Nada acontece.","Pesquise nas prateleiras")],h1),g8,"Esquecer o passado",d1)
-h2=A.b(["Se o Cofre n\xe3o estiver na casa, o revelador da assombra\xe7\xe3o procura-o na pilha de pe\xe7as e o coloca no T\xe9rreo, o mais longe poss\xedvel do Hall de Entrada.","Monte dois conjuntos de fichas num\xe9ricas numeradas entre 1 e{2/3/4/5}. (Exemplo: em um jogo de 4 jogadores, pegue dois 1, dois 2 e dois 3.) Esses s\xe3o os Tesouros.","Coloque uma das fichas de Tesouro de maior n\xfamero no ladrilho do Cofre. Embaralhe o resto com a face para baixo e coloque-as aleatoriamente em ladrilhos que tenham s\xedmbolos de Omen, distribu\xeddos da forma mais uniforme poss\xedvel entre as regi\xf5es.","Defina a Faixa Num\xe9rica como 4.",d4],g7)
-q=A.b([A.P("\u2022 Mantenha quaisquer fichas de Tesouro que voc\xea pegar no seu tabuleiro de personagem, viradas para baixo. Voc\xea pode olhar suas fichas a qualquer momento. \u2022 Cada ficha de Tesouro tem valor para o Djinn. \u2022 Voc\xea pode saquear tesouros de cad\xe1veres, assim como itens e press\xe1gios. (Lembre-se, voc\xea s\xf3 pode saquear uma coisa por cad\xe1ver por turno.)","Fichas de tesouro"),A.P("Se vencer, voc\xea pode roubar um token de Tesouro aleat\xf3rio deles (se eles tiverem um) em vez de causar dano. Se voc\xea perder, voc\xea recebe dano normalmente.","Quando voc\xea faz um ataque de Poder contra outro explorador"),A.P("Mova a Faixa Num\xe9rica para baixo em 1. Uma vela se apaga. Quando a Trilha Num\xe9rica chega a 0, os her\xf3is devem apresentar suas ofertas.",u.d),A.P("Cada jogador soma o valor total de seus tokens de Tesouro. Se voc\xea estiver nas Escadas do T\xe9rreo, adicione 2 ao seu total. Ent\xe3o, cada jogador anuncia sua pontua\xe7\xe3o. \u2022 Se voc\xea for o jogador com a pontua\xe7\xe3o mais alta, voc\xea venceu! (Em caso de empate, todos os jogadores empatados dividem a vit\xf3ria.)","Quando voc\xea apresenta sua oferta")],g9)
-q=A.ai(B.cn,'A corretora revela seu verdadeiro eu, transformando-se em um Djinn \u2014 o mais caprichoso e ganancioso dos esp\xedritos. Ela mal olha para os tesouros que voc\xea ofereceu, em vez disso, olha para a destrui\xe7\xe3o que voc\xea causou. "Isso... sim, eu gosto disso." Ela fixa os olhos em voc\xea e pergunta: "Agora, o que voc\xea mais deseja?"','O Djinn olha friamente para voc\xea. "Voc\xea sabia que uma oferenda indigna me deixaria infeliz, e ainda assim \xe9 isso que voc\xea traz? Hmph. Mas voc\xea ainda pode ser \xfatil para mim." Ela estala os dedos, e voc\xea se sente puxado para dentro de uma lamparina a \xf3leo, que seu esp\xedrito acender\xe1 at\xe9 que seja queimada at\xe9 o esquecimento.',"\u201cO que voc\xea sempre quis?\u201d, pergunta a corretora, olhando intensamente para voc\xea com seus olhos de cores estranhas. \u201cA for\xe7a para esmagar um carro entre suas m\xe3os? A habilidade de fazer as pessoas fazerem coisas apenas com uma palavra?\u201d O grupo compartilha olhares confusos; ela nem sequer lhe disse quantos banheiros o lugar tem. \u201cEsta casa tem muitas riquezas escondidas dentro. Quem encontrar e me trouxer mais, eu recompensarei com os poderes de um deus.\u201d De repente, ela aparece em uma armadura radiante como um anjo antigo, mas voc\xea duvida que seja isso que ela seja. Enquanto quatro lamparinas a \xf3leo antigas e ornamentadas ganham vida ao longo da escada ao redor dela, ela diz, \u201cVoc\xea tem at\xe9 a quarta lamparina se apagar. Se eu n\xe3o tiver uma oferta adequada at\xe9 l\xe1, voc\xea perder\xe1 sua chance, e\u2014\u201d seus olhos brilham cruelmente na luz bruxuleante da lamparina, \u201ceu ficarei muito infeliz.\u201d Voc\xea olha ao redor da casa com novos olhos, focando em qualquer coisa que possa ser valiosa. Os poderes de um deus\u2026 voc\xea gosta bastante do som disso.",B.w,10,"Voc\xea ganha se o corretor aceitar sua oferta!",d7,"N\xfamero de trilha\nFichas num\xe9ricas \u2013 Tesouro",d6,h2,A.b([A.Y("Enquanto estiver em uma pe\xe7a com uma ficha de Tesouro, fa\xe7a um teste de Conhecimento. 4+ Pegue um Tesouro e coloque-o virado para baixo no seu tabuleiro de personagem. 1\u20133 Voc\xea pode olhar para um Tesouro virado para baixo nesta pe\xe7a. 0 Nada acontece.","Busca por Tesouro")],h1),q,"Uma oferta s\xe9ria",d1)
-h2=A.b(["Deixar de lado {2/3/4/5} Fichas de comida. Deixe o resto na caixa.","Coloque o Monster Card \xe0 esquerda do revelador de assombra\xe7\xe3o. As Bruxas comer\xe3o os exploradores no final do turno daquele jogador.",d4],g7)
-p=A.b([A.P("Comida para as bruxas. \u2022 Voc\xea pode ter mais de 1 ficha de Comida. \u2022 A comida pode ser negociada, e voc\xea pode saque\xe1-la de um cad\xe1ver em vez de pegar um item ou press\xe1gio. (Lembre-se, voc\xea s\xf3 pode saquear uma coisa por cad\xe1ver por turno.)","Fichas de comida"),A.P("Se vencer, voc\xea pode roubar uma ficha de Comida daquele explorador (se ele tiver alguma) em vez de causar dano.","Quando voc\xea ataca um explorador com Poder"),A.P("Se todos os marcadores de comida forem encontrados, qualquer explorador sem Comida ser\xe1 oferecido em sacrif\xedcio \xe0s Bruxas. Esses exploradores est\xe3o mortos. \u2022 Se mais de um explorador ainda estiver vivo, remova os marcadores de Comida do jogo at\xe9 que o n\xfamero de marcadores dispon\xedveis seja um a menos que o n\xfamero de exploradores vivos. \u2022 Se voc\xea for o \xfaltimo explorador vivo, voc\xea venceu!","Depois da vez do revelador da assombra\xe7\xe3o")],g9)
-p=A.ai(B.cn,"Voc\xea pula um pouco ao sair de casa. Voc\xea nunca pensou antes sobre o qu\xe3o bom \xe9 n\xe3o ser cozido em uma ca\xe7arola.",d0,"\u201cQue peda\xe7o gostoso\u201d, dizem as bruxas, olhando para voc\xea. \u201cEstamos com muita fome. N\xe3o comemos nada desde a semana passada.\u201d Voc\xea engole em seco ao pensar em seu amigo desaparecido, cuja trilha de migalhas voc\xea seguiu at\xe9 esta casa \u2014 e cujo destino agora se tornou claro. \u201cTenho certeza de que posso encontrar comida para voc\xeas nesta casa\u201d, voc\xea oferece, sua voz vacilante. Uma das bruxas funga, \u201cSim, acho que isso serviria.\u201d Outra bruxa sorri, \u201cMas s\xf3 deixaremos uma de voc\xeas ir. Precisamos de um pouco de carne para acompanhar o jantar.\u201d Voc\xea recua, determinada a ser a primeira a levar algo de volta para as bruxas. Voc\xea n\xe3o vai ser a que ser\xe1 cozida.",B.w,11,"Voc\xea vence quando \xe9 a \xfaltima pessoa viva. \u2022 Encontre comida. \u2022 Ofere\xe7a \xe0s Bruxas.",d9,"Fichas de Comida\nAzulejos com Comida:\nCozinha \u2013 T\xe9rreo\nDespensa \u2013 T\xe9rreo\nSala de Jantar \u2013 T\xe9rreo\nSala do P\xe2nico \u2013 Por\xe3o\nCemit\xe9rio \u2013 T\xe9rreo",d8,h2,A.b([A.Y("Enquanto estiver em qualquer ladrilho, fa\xe7a um teste de Conhecimento. \u2022 Se voc\xea estiver em um azulejo com comida, adicione 2 ao resultado do seu teste. 6+ Pegue uma ficha de Comida. 0\u20135 Nada acontece.","Vasculhar em busca de comida")],h1),p,"N\xe3o se deixe cozinhar",d1)
-h2=A.b(["Se ningu\xe9m tiver a carta de Item Amuleto Estranho, encontre-a no baralho de Itens e entregue-a ao revelador da assombra\xe7\xe3o.","Coloque a Carta de Monstro \xe0 esquerda do revelador da assombra\xe7\xe3o. Os monstros ter\xe3o seu turno ap\xf3s o revelador da assombra\xe7\xe3o.","Coloque uma ficha de M\xe3o de Troll no Hall de Entrada e outra na entrada do Por\xe3o.",d4],g7)
-o=A.b([A.P("Se vencer, voc\xea poder\xe1 roubar um Item ou Press\xe1gio daquele explorador em vez de causar dano a ele.","Quando voc\xea ataca outro explorador com For\xe7a"),A.P("As Troll Hands s\xe3o controladas pelo jogador que tem o Strange Amulet. Se ningu\xe9m estiver segurando o Strange Amulet no momento, pule o turno do monstro.","Ap\xf3s a vez do revelador da assombra\xe7\xe3o, as M\xe3os do Troll entram em a\xe7\xe3o.")],g9)
-o=A.ai(B.cn,"Os restos de polpa dos seus amigos desaparecem rapidamente nas m\xe3os do troll. O estrondo diminui, mas voc\xea tem a sensa\xe7\xe3o de que n\xe3o vai durar muito. Parece que voc\xea vai precisar encontrar mais comida para seu amigo, e logo. Voc\xea acha que vai cham\xe1-lo de Wilfred.",d0,"Com um grande estrondo, a casa inteira se move e grandes bra\xe7os atravessam o ch\xe3o e as paredes. A casa est\xe1 nas costas de um troll gigante! Voc\xea percebe um amuleto estranho que zumbe sempre que as m\xe3os se movem, indicando uma conex\xe3o entre ele e o troll, que est\xe1 ansioso para servir, mas com fome. Voc\xea v\xea os olhares nos olhos de seus amigos. Voc\xea sabe o que deve fazer para sobreviver.",A.b([A.bh(B.u,"As M\xe3os de Troll n\xe3o podem ser atordoadas. Se ambas as M\xe3os de Troll estiverem na mesma pe\xe7a, elas podem fazer um \xfanico ataque de For\xe7a 8 em vez de fazer dois ataques separados.",c9,"M\xe3os de Troll",c9,c8,c7)],h3),12,"Voc\xea vence se estiver segurando o Amuleto Estranho e todos os outros exploradores estiverem mortos.","\u201cA casa est\xe1 com fome\u201d","2 fichas de m\xe3o de troll",c4,h2,B.u,o,"M\xe3os que ajudam",d1)
-h2=A.b([c5,e1,"Defina a Faixa Num\xe9rica como 3. Isso representa seu Progresso Ritual.","Se as pe\xe7as da Sala de Rituais e do Abismo n\xe3o tiverem sido descobertas, encontre-as na pilha de pe\xe7as e coloque-as no Por\xe3o, seguindo as regras normais de coloca\xe7\xe3o de pe\xe7as.","Coloque {3/4/5/6} Pequenos marcadores de monstros na Sala de Rituais. Esses s\xe3o Cultistas.","Cure todos os seus tra\xe7os. Ganhe 1 de For\xe7a e 1 de Velocidade."],g7)
-n=A.b([A.P("Voc\xea pode pegar e carregar cadaveres de cultista e exploradores. Quando fizer isso, coloque a figura (ou ficha) deles no seu tabuleiro de personagem. Voc\xea s\xf3 pode carregar um cad\xe1ver por vez.","Fardo Pesado"),A.P("Cada her\xf3i sofre 1 de dano geral.Ningu\xe9m pode ignorar o Seu chamado",e2)],g9)
-m=A.b([A.Y("Enquanto estiver no bloco do Abismo, se voc\xea estiver carregando um cad\xe1ver, devolva-o \xe0 caixa do jogo e fa\xe7a um teste de Sanidade.O corpo cai no vazio. Tudo por Ela. 7+ Mova a trilha num\xe9rica para baixo em 1. Se chegar a 0,voc\xea venceu! Ela desperta! 0\u20136Ganhe 2 de Sanidade.Hmm, isso n\xe3o funcionou. Tente outro.","Alimente-a")],h1)
-n=A.ai(B.m,"O ch\xe3o treme, e as paredes tremem. A casa come\xe7a a ruir ao seu redor enquanto o abismo se abre em um abismo. \xc9 hora. Ela est\xe1 aqui. Finalmente, Ela renasce.",d0,"O plano era bem simples: tudo o que voc\xea precisava fazer era fingir o desaparecimento do seu amigo e colega membro da Ordem, convencer seus amigos n\xe3o membros em comum a irem procur\xe1-los na casa, instalar parafusos de travamento autom\xe1tico para impedir a fuga deles e, ent\xe3o, assassin\xe1-los ritualmente. E tudo isso tinha que acontecer nesta casa: o mais sagrado dos solos, covil de Aquela que Dorme Abaixo. Claro, seus amigos decidiram lutar em vez de se deixarem sacrificar em um ritual para o bem maior. Que inconveniente. Voc\xea ter\xe1 que se esfor\xe7ar muito para isso.",A.b([A.bh(B.u,"Ap\xf3s sua vez, jogue com os cultistas.\nCultistas s\xe3o mortos em vez de atordoados. Quando um Cultista \xe9 morto, vire-o para o lado atordoado. Agora ele \xe9 um cad\xe1ver que pode ser sacrificado para |Aquela Que Dorme Abaixo|.",c8,"Cultistas",c8,c8,c7)],h3),13,"Voc\xea vence quando consegue acordar |Aquela que Dorme Abaixo|, ou quando todos os her\xf3is est\xe3o mortos.",e0,"N\xfamero de trilha\nPequenos tokens de monstro \u2013 Cultistas\n8 Fichas de Runas \u2013 Conhecimento Ritual",d8,h2,m,n,"Solo Sagrado",c3)
-m=A.b([c5,e1,e5,"Encontrar{1/2/3/4}Fichas de Monstro Pequeno. Elas representam M\xf3veis Animados. Coloque uma ficha de M\xf3veis Animados em cada pe\xe7a com um her\xf3i. Se uma pe\xe7a tiver mais de um her\xf3i, coloque uma ficha para cada her\xf3i naquela pe\xe7a. N\xe3o coloque uma ficha para o her\xf3i que tem o Livro."],g7)
-h2=A.b([A.P("Se houver pelo menos uma ficha de Mob\xedlia Animada no tabuleiro, cure todos os seus tra\xe7os e coloque-se em qualquer pe\xe7a com uma delas. Devolva a ficha para a caixa. Se estiver segurando o Livro, entregue-o ao her\xf3i mais pr\xf3ximo. Se toda a Mob\xedlia Animada sumir, voc\xea continua morto.Farpas voam para todos os lados",e6),A.P("Cada her\xf3i no ladrilho sofre 1 de dano F\xedsico.","Farpas voam para todos os lados quando voc\xea sai de um m\xf3vel")],g9)
-l=A.b([A.Y("\u2022 Se voc\xea estiver em umazulejo onde h\xe1 fogo,jogue o livro no fogo. Voc\xea venceu! Depois da sua vez, experimente os M\xf3veis Animados.","Destrua o livro de feiti\xe7os")],h1)
-h2=A.ai(B.m,"A casa finalmente \xe9 sua, junto com tudo que h\xe1 nela. Tudo, isto \xe9, exceto aquele maldito livro de feiti\xe7os. Agora que ele foi destru\xeddo, voc\xea finalmente pode descansar. Contente, voc\xea se enrola em uma cadeira estofada que costumava ser de um de seus amigos.",d0,"A\xed est\xe1, finalmente! O maldito livro de feiti\xe7os que lhe escapou por tanto tempo. Voc\xea o agarra, e ele desaparece em uma nuvem de fuma\xe7a roxa e cintilante! De alguma forma, as bruxas que voc\xea eliminou encontraram uma maneira de prolongar o inevit\xe1vel, mas voc\xea pegou esta casa \u2014 e sua magia \u2014 e pretende mant\xea-la! Mas, j\xe1 que est\xe1 cuidando deste pequeno inc\xf4modo, voc\xea pode muito bem adquirir alguns m\xf3veis novos...",A.b([A.bh(B.u,"\xc9 s\xf3 mob\xedlia.",e8,"M\xf3veis Animados",c9,c8,e7)],h3),14,"Voc\xea vence quando destr\xf3i o Livro ou quando todos os her\xf3is est\xe3o mortos.",e4,"N\xfamero de trilha\nPequenos tokens de monstro \u2013 Mob\xedlia Animada\nAzulejos onde h\xe1 fogo:\nCozinha \u2013 T\xe9rreo\nSala da Fornalha \u2013 Por\xe3o\nLaborat\xf3rio \u2013 T\xe9rreo",d6,m,l,h2,"Perman\xeancia do objeto",e3)
-l=A.b(["Seu explorador morreu. Agora voc\xea controla os monstros.Fantasmas, lobisomens e vampiros, meu Deus!",f0,"Encontre os tokens de monstro grande para o fantasma, vampiro e lobisomem. Selecione{1/2/2/3}desses tokens aleatoriamente e coloque-os no ladrilho onde seu explorador morreu. Retorne quaisquer tokens n\xe3o selecionados para a caixa do jogo."],g7)
-l=A.ai(B.m,"Voc\xea despacha o \xfaltimo dos invasores da casa. Finalmente seguro, voc\xea vira o olhar para fora da janela e percebe a exibi\xe7\xe3o espalhafatosa do gramado do novo vizinho. Qu\xe3o verdadeiramente monstruoso. Voc\xea precisar\xe1 levar isso para a associa\xe7\xe3o de moradores.",d0,'A Associa\xe7\xe3o de Propriet\xe1rios que o contratou foi bem clara em sua diretriz: despeje as for\xe7as malignas que t\xeam assombrado esta propriedade. Infelizmente, o problema pode n\xe3o ser uma entidade \xfanica. Ainda mais lament\xe1vel \xe9 que voc\xea foi escolhido como a primeira v\xedtima deles. Eles fazem um trabalho r\xe1pido com voc\xea antes de voltarem sua aten\xe7\xe3o para os outros "invasores de casa".',A.b([A.bh(A.b([A.Y("Fa\xe7a um ataque de Sanidade contra um her\xf3i em seu tile. Ent\xe3o, role a Velocidade do her\xf3i e mova-o at\xe9 essa quantidade de tiles em qualquer dire\xe7\xe3o.","Diga \u201cBu!\u201d")],h1),"O Fantasma pode se mover entre tiles adjacentes n\xe3o conectados por portas. O Fantasma n\xe3o pode ser atordoado.",c7,f1,c7,c9,c9),A.bh(A.b([A.Y("Fa\xe7a um ataque de Poder contra um her\xf3i em seu tile. Para cada ficha de Sangue que voc\xea tiver, adicione 1 ao resultado da sua jogada. Ent\xe3o, pegue uma ficha de Sangue. Se voc\xea ficar sem fichas de Sangue, voc\xea pode usar qualquer outra ficha como substituta.","Sorve!")],h1),"",c7,"Vampiro",c7,c9,c7),A.bh(A.b([A.Y("Fa\xe7a um ataque de Poder contra um her\xf3i em seu tile. Voc\xea pode repetir esse ataque para cada her\xf3i em seu tile.","Uivo!")],h1),"",c9,f2,c9,c9,e7)],h3),15,c6,d9,"Ficha Fantasma\nFicha de Vampiro\nToken de Lobisomem\n3 Fichas de Sangue",e9,l,B.u,B.am,"De monstros e caos",c3)
-m=A.b([c5,e1,e5,"Encontre um de cada Token Num\xe9rico rotulado de 1 a{4/5/6/7}. Estes s\xe3o Restos Humanos. O token rotulado como \u201c1\u201d representa os Restos do Zelador.","Coloque as fichas de Restos viradas para baixo pela casa, mantendo seus n\xfameros em segredo dos her\xf3is. (Voc\xea pode olhar para elas.) Voc\xea deve colocar pelo menos uma ficha de Restos em cada regi\xe3o da casa. N\xe3o coloque mais de uma ficha por pe\xe7a.","Coloque 2 fichas de Monstro Pequeno em qualquer pe\xe7a sem um her\xf3i. Esses s\xe3o Fantasmas Furiosos. Separe{2/3/4/5}mais fichas do Fantasma Furioso."],g7)
-k=A.b([A.P("Coloque uma ficha de Fantasma na pe\xe7a com sua figura.",e6),A.P("Coloque uma ficha de Fantasma no ladrilho com a figura dele. Depois da sua vez, jogue com os Fantasmas.",f3)],g9)
-j=A.b([A.Y("Voc\xea pode mover para uma pe\xe7a com um her\xf3i que esteja tocando sua pe\xe7a atual.","Avan\xe7o")],h1)
-k=A.ai(B.m,"Com o \xfaltimo dos \u201ch\xf3spedes\u201d registrado, voc\xea se d\xe1 um tapinha nas costas por um trabalho bem feito. Voc\xea come\xe7a suas rondas pelo hotel e, quando chega \xe0 cozinha, o chef lhe oferece uma bebida. Voc\xea sorri apreciativamente, mas educadamente recusa, lembrando-o: \u201cN\xe3o h\xe1 descanso para os perversos\u201d.",d0,'Voc\xea n\xe3o culpa o zelador da propriedade por n\xe3o encontr\xe1-lo aqui, n\xe3o depois de saber que este velho hotel foi o local de uma s\xe9rie de assassinatos horr\xedveis \u2014 se voc\xea n\xe3o estivesse sendo pago por este trabalho, voc\xea tamb\xe9m n\xe3o gostaria de estar aqui. Enquanto seu amigo alcan\xe7a a chave sob o capacho, algu\xe9m limpa a garganta atr\xe1s de voc\xea. \xc9 o zelador. Ele sussurra para voc\xea: "Eles est\xe3o procurando meu corpo. Eles est\xe3o tentando enterr\xe1-lo no cemit\xe9rio. Voc\xea n\xe3o deve deix\xe1-los! Mate todos eles!" Voc\xea vai.',A.b([A.bh(B.u,"Fantasmas podem atacar com For\xe7a ou Sanidade. Um Fantasma colocado durante o turno do monstro n\xe3o pode se mover ou atacar durante esse turno.",c9,f1,c9,c9,c7)],h3),16,c6,e4,"Fichas num\xe9ricas \u2013 Restos\nPequenos tokens de monstro \u2013 Fantasmas Furiosos",e9,m,j,k,"Venha brincar conosco",c3)
-j=A.b([c5,e1,e5,"Coloque 3 fichas de Monstro Pequeno em seu tile. Esses s\xe3o os Gremlins.","Pegar{6/5/4/3}peda\xe7os de papel e escreva um \u201cX\u201d em cada peda\xe7o, exceto um. O peda\xe7o final deve dizer \u201cMORRA\u201d. Dobre esses peda\xe7os, embaralhe-os e coloque-os no topo da caixa do jogo. Eles representar\xe3o os e-mails recebidos pelos her\xf3is."],g7)
-m=A.b([A.P("Eles v\xe3o tirar uma mensagem da parte superior da caixa: \u2022 Se a mensagem tiver um X, nada acontece. Deixe essa mensagem de lado. \u2022 Se a mensagem disser \u201cMORRA\u201d, retorne todas as mensagens para o topo da caixa. Ent\xe3o, mova at\xe9 dois Gremlins n\xe3o atordoados para o ladrilho daquele her\xf3i. Cada um desses Gremlins faz um ataque de Poder contra aquele her\xf3i. Depois da sua vez, jogue com os Gremlins.",f5)],g9)
-m=A.ai(B.m,'Enquanto voc\xea fica de p\xe9 sobre os corpos sem vida dos seus amigos, mais gremlins sorridentes emergem dos cad\xe1veres \u2014 quase como se estivessem escapando de casulos. Eles cantam: "Viva! Ria! Ame! Viva! Ria! Ame!" enquanto o levantam do ch\xe3o e o jogam no ar, como o her\xf3i que voc\xea \xe9.',d0,'Voc\xea ainda est\xe1 rindo da ideia de um "e-mail amaldi\xe7oado" quando uma notifica\xe7\xe3o toca no seu telefone. \xc9 um e-mail de um remetente desconhecido. Diz: "ENCAMINHE ISTO OU MORRA. - VIVA, RIA, AME." Voc\xea percebe uma adaga na sala e sente que est\xe1 sorrindo cada vez mais. T\xe3o largo que seus l\xe1bios alcan\xe7am seus ouvidos. Voc\xea ouve risadas ao seu redor, seus pequenos amigos gremlins. Voc\xea quer passar a positividade adiante.',A.b([A.bh(B.u,"Gremlins s\xe3o mortos em vez de atordoados se tiverem uma ficha de Runa com eles.",e8,"Gremlins (tamb\xe9m conhecido como Viva, Ria e Ame)",e7,e7,c7)],h3),17,c6,d9,"3 fichas de monstro pequeno \u2013Gremlins\n3 fichas de runa",f4,j,B.u,m,"Encaminhe isto ou morra",c3)
-j=A.b(["Retire seu explorador da casa. Voc\xea \xe9 o traidor.","Coloque a Carta de Monstro \xe0 sua esquerda. Quaisquer monstros na casa jogar\xe3o no lugar do seu.",e5,"Encontre um de cada Token Num\xe9rico rotulado de 1 a{3/4/5/6}. Essas s\xe3o suas Ilus\xf5es. O token \u201c1\u201d \xe9 o seu verdadeiro eu.","Embaralhe as Ilus\xf5es viradas para baixo (voc\xea pode olhar para elas a qualquer momento) e coloque uma em seu tile. Ent\xe3o coloque o resto das Ilus\xf5es ao redor da casa, em tiles n\xe3o mais distantes do que o valor de sua caracter\xedstica de Velocidade. Se poss\xedvel, voc\xea deve colocar cada Ilus\xe3o em um tile diferente. Remova seu explorador da casa, agora voc\xea est\xe1Escondido entre ilus\xf5es."],g7)
-i=A.b([A.P("Jogue como as Ilus\xf5es.","Se voc\xea estiver Oculto Entre Ilus\xf5es"),A.P('Vire a ficha para cima e devolva-a ao seu tabuleiro de personagem. Se for o "1", voc\xea foi revelado. Retorne seu explorador para a casa, no mesmo ladrilho em que o marcador "1" estava. Retorne todas as Ilus\xf5es da casa para seu tabuleiro de personagem e retorne o marcador de Ilus\xe3o de maior n\xfamero para a caixa do jogo. Se voc\xea foi revelado, assuma a sua vez como traidor.',"Quando uma ilus\xe3o \xe9 dissipada")],g9)
-h=A.b([A.Y("Voc\xea n\xe3o pode realizar esta a\xe7\xe3o se n\xe3o houver fichas de Ilus\xe3o no seu tabuleiro de personagem. Embaralhe todos os marcadores de Ilus\xe3o no seu tabuleiro de personagem virados para baixo e coloque-os conforme descrito na etapa 5 da configura\xe7\xe3o. Remova seu explorador da casa e termine seu turno. As Ilus\xf5es poder\xe3o se mover e atacar no seu pr\xf3ximo turno.","Invocar Ilus\xf5es")],h1)
-i=A.ai(B.m,"O anel \xe9 seu e somente seu. Recuando para os confins mais escuros da casa, voc\xea jura proteger seu tesouro do mundo exterior. Sua \xfanica companhia agora s\xe3o seus pr\xf3prios reflexos, sussurrando em sua mente enquanto eles conspiram um contra o outro.",d0,'Ao pegar o anel, voc\xea \xe9 imediatamente levado pelo seu design e artesanato requintados. Uma palavra come\xe7a a ecoar em sua mente: "Precioso". Ao acariciar o anel com as pontas dos dedos, voc\xea de repente percebe muitos olhos olhando para voc\xea. Amigos? Bah! Eles n\xe3o podem tir\xe1-lo de voc\xea. Eles s\xe3o mais numerosos, mas o anel permitir\xe1 que voc\xea conserte isso. Voc\xea o acaricia novamente, e um par diferente de olhos aparece. Olhos familiares. Seus olhos. Voc\xea deve proteger o anel. Voc\xeas dois. Todos voc\xeas.',A.b([A.bh(B.u,"\u2022 Ilus\xf5es compartilham seus tra\xe7os atuais. Elas podem mover um n\xfamero de pe\xe7as igual \xe0 sua Velocidade. Elas n\xe3o precisam rolar para movimento. \u2022 Ilus\xf5es podem usar seus Itens e Press\xe1gios. (A Adaga e a Boneca Assustadora ainda causam perda de caracter\xedsticas.) \u2022 Ilus\xf5es n\xe3o podem negociar ou saquear corpos e n\xe3o podem explorar novos blocos. \u2022 Ilus\xf5es n\xe3o podem ser atordoadas, mas os her\xf3is podem ter maneiras de dissip\xe1-las.",f7,"Ilus\xe3o",f7,f7,f7)],h3),18,c6,f6,"Fichas num\xe9ricas \u2013Ilus\xf5es",e9,j,h,i,"Um belo toque para isso",c3)
-h=A.b([c5,"Coloque a Carta de Monstro \xe0 sua esquerda. O monstro joga seu turno depois do seu.","Ganhe 1 de Sanidade.","Defina a trilha num\xe9rica para{6/4/3/2}.","Coloque 5 fichas de fita de v\xeddeo em cinco pe\xe7as diferentes, o mais longe poss\xedvel dos her\xf3is.","Coloque o token Ghost em qualquer tile com um token Videotape. Este \xe9 o Vengeful Spirit."],g7)
-j=A.b([A.P("Voc\xea pode atacar usando Sanidade em vez disso. Se fizer isso, seu alvo tamb\xe9m rola Sanidade. O perdedor recebe dano Mental. No final do seu turno Mova a trilha num\xe9rica para baixo em 1. Se chegar a 0,voc\xea venceu! Ap\xf3s sua vez, jogue com o Esp\xedrito Vingativo.","Quando voc\xea ataca")],g9)
-j=A.ai(B.m,"Voc\xea sacrificou seus amigos para apaziguar o esp\xedrito vingativo. Voc\xea implora para que ele o deixe ir, sem sucesso. Voc\xea olha, horrorizado, enquanto sua boca se abre mais e mais, desequilibrando-se como as mand\xedbulas de uma cobra. Est\xe1tica vaza da boca escancarada e voc\xea se encontra congelado de terror enquanto ela o envolve como um cobertor. Leva apenas alguns momentos para voc\xea se render ao esquecimento do abismo.",d0,'Voc\xea est\xe1 desesperado para banir a maldi\xe7\xe3o que o seguiu pela \xfaltima semana, desde que seus amigos idiotas lhe mostraram aquela maldita fita de v\xeddeo. Voc\xea ouve o som de est\xe1tica por perto, que voc\xea descobre que vem de uma velha televis\xe3o com um s\xedmbolo vermelho pulsando na tela. Uma voz rompe a est\xe1tica. Ela sibila, "At\xe9 meia-noite. Vejo voc\xea em breve." N\xe3o \xe9 t\xe3o simples quanto os outros imaginam. Livrar-se das fitas n\xe3o quebrar\xe1 a maldi\xe7\xe3o \u2014 voc\xea ter\xe1 que matar seus amigos antes que eles piorem as coisas.',A.b([A.bh(B.u,"O Esp\xedrito Vingativo pode se mover entre pe\xe7as com marcadores de Videotape como se fossem adjacentes.",c8,"Esp\xedrito Vingativo",c9,c8,f8)],h3),19,"Voc\xea vence quando todos os her\xf3is est\xe3o mortos ou quando a Trilha Num\xe9rica chega a 0.",e0,"N\xfamero de trilha\nFichas de videocassete\nFicha Fantasma \u2013Esp\xedrito vingativo",f4,h,B.u,j,"Capturado em fita",c3)
-h=A.b([c5,e1,e5,"Escolher{2/3/4/5}c\xf4modos da casa, escreva secretamente seus nomes em uma folha de papel e numere-os. Essas pe\xe7as cont\xeam as S\xedlabas do Nome do Homem Sem Rosto. Essas pe\xe7as podem estar localizadas em qualquer ou todas as regi\xf5es da casa. (Exemplo: em um jogo de 4 jogadores, escreva os nomes de tr\xeas pe\xe7as e numere-as 1, 2 e 3.)","Coloque a ficha do Homem Sem Rosto na sua pe\xe7a."],g7)
-h=A.ai(B.m,"O Homem Sem Rosto olha para seus cora\xe7\xf5es coletados como os tesouros que eles s\xe3o. Ele embala um suavemente em sua m\xe3o, virando-o silenciosamente e estudando o sangue que escorre. Uma fenda aparece em seu rosto, ficando cada vez mais larga, at\xe9 que se abre em uma boca gigante que cobre todo o seu rosto. Seus dentes farpados brilham enquanto ele espera pela pr\xf3xima noite silenciosa \u2014 uma noite em que sua presa n\xe3o pode gritar por socorro.",d0,"\xc9 meia-noite, e tudo est\xe1 em sil\xeancio. O cachorro que vagueia pela casa late silenciosamente, e voc\xea n\xe3o consegue mais ouvir suas garras batendo no ch\xe3o. Por semanas voc\xea foi assombrada por pesadelos de um homem sem rosto, dizendo que voc\xea \xe9 especial porque ainda tem sua voz. Esta noite, ele vir\xe1 para reunir os cora\xe7\xf5es humanos que ele precisa para ficar em seu mundo para sempre.",A.b([A.bh(B.u,"Homem Sem Rosto n\xe3o pode ser atordoado. Se os her\xf3is atacarem e derrotarem o Homem Sem Rosto depois de descobrirem seu nome, ele ser\xe1 destru\xeddo.",c7,"O Homem Sem Rosto",c7,e8,c7)],h3),20,c6,f9,"Ficha do Homem Sem Rosto\nFichas de runa \u2013S\xedlabas do Nome do Homem Sem Rosto",f4,h,B.u,B.am,"N\xe3o diga isso","Personagem mais velho")
-g=A.b([c5,e1,"Coloque o token Demon na Biblioteca. Este \xe9 Spooky McMasters.","D\xea a Spooky McMasters a carta Book Omen. Coloque-a ao lado da Carta Monster.","Coloque uma ficha de Monstro Pequeno em seu tile. Este \xe9 um Horror.",e5,"Ganho{1/1/2/3}For\xe7a e velocidade."],g7)
-f=A.b([A.P("Se voc\xea estiver no azulejo da biblioteca com o spooky, voc\xea pode devolver o livro a ele","O livro"),A.P(g0,"Quando voc\xea ataca um her\xf3i com For\xe7a")],g9)
-f=A.ai(B.m,"Seus amigos agora est\xe3o mortos. O que os monstros de romances de terror fazem quando o livro acaba?",d0,"O manuscrito do seu amigo Spooky McMasters dizia que voc\xea trairia seus outros amigos. Isso n\xe3o \xe9 algo que voc\xea queria fazer antes, mas Spooky escreveu claramente que voc\xea o encontraria na casa e o transformaria em um monstro para matar todos os outros. Ele tamb\xe9m escreveu que seus amigos tentariam queimar o manuscrito, mas voc\xea os mataria, um por um, mesmo que cada momento tenso fa\xe7a parecer que eles podem vencer.",A.b([A.bh(A.b([A.Y("Enquanto Spooky estiver com o livro, escolha uma pe\xe7a e role dois dados. 4+ Cada explorador naquele ladrilho sofre 3 de dano F\xedsico. Ventos \xc1rticos irrompem por toda a sala! 2\u20133 Cada explorador naquele ladrilho pega dois dados de Dano mental. Coloque um Horror naquele ladrilho. Fantasmas surgem! 0\u20131 Coloque 2 Horrores na pe\xe7a escolhida. Os horrores v\xeam atrav\xe9s das t\xe1buas!","Escritor Fantasma")],h1),"Depois da sua vez jogue com o Spooky.\nSpooky n\xe3o pode sair da Biblioteca. Spooky n\xe3o pode ser atordoado. Spooky pode segurar o Livro. Enquanto Spooky tem o Livro, coloque-o ao lado do Monster Card.","8","McMasters Assustadores",e7,e7,e7),A.bh(B.u,"Depois da vez do Spooky, jogue com qualquer horror",c8,"Horrores",c9,c8,c7)],h3),21,c6,e4,"Ficha Demon\xedaca \u2013 McMasters assustadores\nPequenos tokens de monstro \u2013 Horrores",d8,g,B.u,f,"Spooky McMasters apresenta...",c3)
-g=A.b([c5,e1,"Se o tile Laboratory n\xe3o tiver sido descoberto, procure-o na pilha de tiles e coloque-o no Ground Floor. Coloque seu explorador naquele tile."],g7)
-e=A.b([A.Y("Enquanto estiver no Laborat\xf3rio, voc\xea pode revelar pe\xe7as da pilha at\xe9 encontrar uma pe\xe7a do Por\xe3o. Coloque essa pe\xe7a em qualquer lugar o por\xe3o. No final do seu turno Lugar {0/0/1/1}Zumbis no Por\xe3o. Ent\xe3o, se voc\xea estiver no ladrilho do Laborat\xf3rio, coloque um Zumbi em cada ladrilho no Por\xe3o com uma porta aberta. Se voc\xea ficar sem fichas de Monstro Pequeno, n\xe3o coloque mais Zumbis. Depois da sua vez, jogue com os Zumbis da Guerra Fria.","Crie uma distra\xe7\xe3o")],h1)
-e=A.ai(B.m,"Voc\xea venceu uma batalha, mas esta \xe9 uma guerra que nunca termina.",d0,"Voc\xea observa os outros atrav\xe9s dos olhos sempre vigilantes da casa. Voc\xea n\xe3o confia neles. Eles podem ver atrav\xe9s do seu disfarce. Eles podem ser intelig\xeancia estrangeira. Quando voc\xea construiu esta casa, voc\xea a encheu de c\xe2meras. Voc\xea fez experimentos em agentes estrangeiros. Voc\xea aciona um interruptor, trancando os intrusos no por\xe3o. Eles ficar\xe3o presos l\xe1 at\xe9 que voc\xea receba um briefing sobre o que fazer com eles. Voc\xea n\xe3o recebe um briefing desde, oh, 1965. Se o briefing n\xe3o vier antes que seus experimentos cheguem at\xe9 eles, ent\xe3o... ah, bem.",A.b([A.bh(B.u,"Zumbis s\xe3o mortos em vez de atordoados. Sempre que um Zumbi matar um her\xf3i, remova o cad\xe1ver do her\xf3i da casa e enterre todos os seus Itens e Press\xe1gios.",e8,"Zumbi da Guerra Fria",e8,e8,c7)],h3),22,c6,g1,"Pequenos Monstros \u2013Zumbis da Guerra Fria",d6,g,e,B.am,"Opera\xe7\xe3o: Subterr\xe2neo",e3)
-g=A.b([c5,e1,e5,"Lugar{2/3/4/5}Fichas ON em qualquer lugar da casa, distribu\xeddas da forma mais uniforme poss\xedvel entre as regi\xf5es.","Coloque uma ficha de Monstro Pequeno em cada ladrilho com uma ficha ON. Esses s\xe3o seus Assistentes Rob\xf4s."],g7)
-d=A.b([A.Y("Escolha um tile que tenha um her\xf3i nele. Mova esse tile para um local diferente na mesma regi\xe3o da casa. Esse movimento n\xe3o pode fazer com que nenhum tile fique inacess\xedvel via movimento normal. Ap\xf3s sua vez, converse com os Assistentes Rob\xf4s.","Mudar o Projeto")],h1)
-d=A.ai(B.m,"Os limites do seu poder s\xe3o infinitos. Voc\xea controla o espa\xe7o digital, dobrando Sya e o resto dos exploradores \xe0 sua vontade. O mundo est\xe1 em d\xedvida com sua grandeza enquanto voc\xea espalha sua rede por cada lar, cada conglomerado, cada cargo pol\xedtico. Voc\xea est\xe1 em todo lugar.",d0,'Voc\xea trouxe os outros aqui com rumores de uma maldi\xe7\xe3o que precisava ser expurgada, mas o que voc\xea realmente quer \xe9 carregar suas consci\xeancias para esta casa. Por qu\xea? Porque esse \xe9 o pr\xf3ximo est\xe1gio na evolu\xe7\xe3o humana, \xe9 claro! Voc\xea quer mudar o mundo com seu programa, chamado "Sya". Eles podem n\xe3o compartilhar sua vis\xe3o agora, mas entender\xe3o em breve... assim que tiverem transcendido seus corpos.',A.b([A.bh(A.b([A.Y("Escolha qualquer her\xf3i na linha de vis\xe3o. Esse her\xf3i faz um teste de Velocidade. 5+O her\xf3i se posiciona em qualquer pe\xe7a adjacente. 0\u20134O her\xf3i sofre 2 dados de dano F\xedsico.","Ligue os Lasers")],h1),"Os Assistentes Rob\xf4s n\xe3o ficam atordoados quando sofrem dano. (Eles ainda podem ficar atordoados de outras maneiras.)",e8,"Assistentes Rob\xf4s",e8,e7,e8)],h3),23,c6,d3,"N\xfamero de trilha\nTokens ON/OFF \u2013Circuitos\nPequenos tokens de monstro \u2013Rob\xf4 Assistentes",f4,g,d,B.am,"Alerta de intruso",c3)
-g=A.b([c5,e5,e1,"Se as pe\xe7as do Sal\xe3o de Baile e/ou da Capela n\xe3o tiverem sido descobertas, encontre-as na pilha de pe\xe7as e coloque-as no T\xe9rreo, seguindo as regras normais de coloca\xe7\xe3o de pe\xe7as.","Coloque seu explorador no sal\xe3o de baile, junto com{1/2/3/4}Fichas de monstros pequenos. S\xe3o Dan\xe7arinos Fae.","Deixe a ficha Dark Queen de lado. Ela pode entrar em jogo mais tarde."],g7)
-c=A.b([A.P("Se  voc\xea atacar sem uma arma, voc\xea pode atacar usando velocidade em vez de for\xe7a.\nSe voc\xea vencer, em vez de causar dano, voc\xea pode mover ambas as figuras, cada uma, um n\xfamero de pe\xe7as at\xe9 o dano que voc\xea teria causado.","Vem para a dan\xe7a"),A.P("Coloque a ficha de Rainha Negra na pe\xe7a do Sal\xe3o de Baile.","Ap\xf3s a primeira vez que um explorador morrer no sal\xe3o de baile")],g9)
-c=A.ai(B.m,"As sombras ao seu redor se espalham com flores que florescem \xe0 noite enquanto o Rei da Noite se junta a voc\xea e sua Rainha no sal\xe3o de baile. A M\xe1scara das Sombras est\xe1 pronta para come\xe7ar!",d0,"Algo toma conta de voc\xea na escurid\xe3o familiar. As sombras se abrem como cortinas, e voc\xea sabe o que est\xe1 acontecendo: voc\xea \xe9 o Arauto Umbral, e esta \xe9 uma noite para celebrar. Voc\xea trouxe novos rostos para a corte das fadas, e agora est\xe1 pronto para uma dan\xe7a que vem praticando por toda a sua vida. Os humanos ter\xe3o que morrer, \xe9 claro, mas valer\xe1 a pena invocar a Rainha da Noite para dar o passo da Dan\xe7a Eterna.",A.b([A.bh(B.u,"Ap\xf3s seu turno, os Fae Dancers fazem seus turnos um de cada vez. Mova-se e ataque com um antes que o pr\xf3ximo comece seu turno. Dan\xe7arinos Fae atacam com Velocidade. Eles n\xe3o podem atacar um her\xf3i a menos que o her\xf3i esteja no Sal\xe3o de Baile. Her\xf3is se defendem contra esses ataques com Velocidade. Se um her\xf3i for atingido, ele recebe dano F\xedsico.",e8,"Dan\xe7arina Fae",c8,e7,c8),A.bh(A.b([A.Y("Role 2 dados. Voc\xea pode mover um her\xf3i em sua regi\xe3o em qualquer dire\xe7\xe3o, at\xe9 um n\xfamero de pe\xe7as igual ao resultado daquela rolagem.","Passo a Dan\xe7a Eterna")],h1),"Ela canta em uma harmonia assustadora. Jogue com ela se ela j\xe1 esta em jogo e ap\xf3s o turno das dan\xe7arinas Fae",c7,"Rainha das Trevas",c9,e7,f8)],h3),24,c6,g2,"Fichas de fogo \u2013Chama Seelie\nFicha da Rainha Negra\nPequeno Token de Monstro \u2013Dan\xe7arina Fae",d2,g,B.u,c,"A M\xe1scara das Sombras","Maior Velocidade")
-g=A.ai(B.m,"Voc\xea veste a armadura novamente. Voc\xea a usou por s\xe9culos agora, e gra\xe7as aos tolos que continuam entrando em sua casa, voc\xea a usar\xe1 por mais s\xe9culos.",d0,"Voc\xea sabe o que aconteceu com os amigos dessas pessoas \u2014 voc\xea os for\xe7ou a vestir sua armadura. Por qu\xea? Porque ela o mant\xe9m jovem. Quando voc\xea encontrou aquela armadura h\xe1 quase 600 anos, voc\xea se vinculou a ela. Agora, se algu\xe9m ficar dentro dela, voc\xea rouba os anos restantes. Nesta casa, h\xe1 muitos anos a serem roubados.",B.w,25,c6,d7,"Fichas de For\xe7a, Velocidade, Conhecimento e de Sanidade \u2013Ingredientes do Feiti\xe7o",d8,A.b([c5,e5],g7),B.u,A.b([A.P("Se voc\xea tiver a Armadura, n\xe3o cause dano. Em vez disso, d\xea a Armadura para aquele her\xf3i.","Quando voc\xea vence um ataque de For\xe7a contra um her\xf3i"),A.P("Se voc\xea estiver morto, coloque seu explorador no mesmo ladrilho que a armadura e cure todas as suas caracteristicas. Jogue normalmente. A armadura sustenta voc\xea.","No in\xedcio do seu turno"),A.P("Se um her\xf3i tiver a armadura, ele perde 1 em cada caracteristica e voc\xea ganha 1 em cada uma das suas caracteristicas.",e2)],g9),"Tempo Emprestado",e3)
-b=A.b([c5,e1,e5,"Coloque {2/3/4/5} Pequenos marcadores de Monstro em diferentes pe\xe7as com s\xedmbolos de Press\xe1gio. Esses s\xe3o seus Parentes. Se n\xe3o houver pe\xe7as suficientes com s\xedmbolos de Press\xe1gio, coloque os Parentes restantes no Hall de Entrada.","Deixe a ficha Dark Queen de lado. Este \xe9 o The Elder. Ele entrar\xe1 em jogo mais tarde."],g7)
-a=A.b([A.P("Coloque o Anci\xe3o na pe\xe7a com o marcador de Altar.Ele se levantar\xe1 e coletar\xe1 o tributo com as pr\xf3prias m\xe3os.","No final do seu segundo turno")],g9)
-a0=A.b([A.Y("Enquanto em um azulejo de quarto,voc\xea pode colocar seu explorador em qualquer pe\xe7a.","Use passagens ocultas")],h1)
-a=A.ai(B.m,"O Anci\xe3o sorri um sorriso mais vermelho do que aqueles que voc\xea e sua fam\xedlia deram aos seus sacrif\xedcios agora frios, e suas vestes absorvem a cor e a ess\xeancia do sangue deles. Sua fam\xedlia, diante de voc\xea, est\xe1 mais uma vez no auge. A pr\xf3xima d\xe9cada servir\xe1 \xe0 sua linhagem quase t\xe3o bem quanto seus amigos acabaram de fazer.",d0,"Ao pegar o s\xedmbolo aben\xe7oado eldritch da sua fam\xedlia, tr\xeas portas escondidas se abrem ao seu redor. Sua querida fam\xedlia se adianta, adornando voc\xea com vestes que combinam com as que eles j\xe1 usam. As velhas manchas vermelhas come\xe7aram a desaparecer das vestes de todos, mas hoje \xe0 noite seus amigos fornecer\xe3o o sangue para mudar isso. O sangue deles trar\xe1 \xe0 tona o Anci\xe3o, a quem sua fam\xedlia serviu por s\xe9culos. Conforme seus parentes desaparecem nas passagens secretas da casa, voc\xea se volta para seus sacrif\xedcios. Voc\xea sabe o que fazer.",A.b([A.bh(B.u,"Depois da sua vez, jogue com seus parentes.\nParentes podem usar a a\xe7\xe3o Passagens Ocultas. Depois de jogar com seus parentes, jogue com o Anci\xe3o (se ele tiver ressuscitado).",c9,"Parente",c8,c9,c9),A.bh(B.u,"Anci\xe3o pode usar a\xe7\xe3o Passagens Ocultas.",e7,"O Anci\xe3o",e7,c7,f8)],h3),26,c6,e0,"S\xedmbolo do Altar\nPequenos tokens de monstro \u2013Parentes\nFicha da Rainha Negra \u2013O Anci\xe3o\nAzulejos para quarto:\n Quartos de h\xf3spedes: \u2013T\xe9rreo/Piso Superior\n Quarto principal \u2013Ch\xe3o/Superior Ch\xe3o\n Quarto de inverno \u2013T\xe9rreo/Piso Superior",d2,b,a0,a,"A Ben\xe7\xe3o da Fam\xedlia",c3)
-a0=A.b([c5,e5,"Encontrar{5/4/4/3}Fichas de runa e coloque-as de lado na sua frente. Essas s\xe3o Palavras Alien\xedgenas.","Coloque uma Palavra Alien\xedgena em sua pe\xe7a."],g7)
-b=A.b([A.P("\u2022 Se voc\xea estiver em uma sala com uma Alien Word, remova um dos dados do her\xf3i depois que ele rolar (e depois de qualquer nova rolagem). Dados removidos n\xe3o s\xe3o contados para o resultado de uma rolagem. No final do seu turno Se voc\xea colocasse todas as suas Palavras Alien\xedgenas na casa,voc\xea venceu!","Quando voc\xea ataca ou \xe9 atacado")],g9)
-b=A.ai(B.m,"Voc\xea rabisca a \xfaltima palavra na parede e tudo fica quieto. Um portal uivante se abre no hall de entrada, sugando todo o ar \u2014 e voc\xea \u2014 para fora da casa. Conforme voc\xea se perde no v\xe1cuo, conforme sua vis\xe3o escurece, a \xfaltima coisa que voc\xea v\xea \xe9 uma embarca\xe7\xe3o enorme surgindo \xe0 dist\xe2ncia.",d0,"Todos voc\xeas vieram aqui com vozes murmurando uma estranha l\xedngua alien\xedgena dentro de suas cabe\xe7as. As vozes se aquietaram quando voc\xeas entraram na casa, mas agora elas voltaram, mais altas do que nunca. Al\xe9m do mais, voc\xeas quase as entendem. Voc\xeas cantam junto com as s\xedlabas estranhas enquanto palavras estranhas come\xe7am a aparecer nas paredes. H\xe1 espa\xe7os vazios onde voc\xeas acham \u2014 onde voc\xeas sabem \u2014 que as palavras deveriam estar. As vozes pedem para voc\xeas complet\xe1-las, torn\xe1-las inteiras. S\xf3 voc\xeas podem fazer isso. Elas escolheram voc\xeas. Ao seu toque, as palavras come\xe7am a se espalhar. Voc\xeas devem v\xea-las se espalharem.",B.w,27,"Voc\xea vence quando coloca todas as suas Palavras Alien\xedgenas na casa ou quando todos os her\xf3is est\xe3o mortos.",g2,"Fichas de Her\xf3i \u2013Conhecimento de Alien\xedgenas\nFichas de Runa \u2013Palavras Alien\xedgenas",f4,a0,A.b([A.Y("Enquanto estiver em um tile sem um her\xf3i ou uma Alien Word, fa\xe7a um teste de Knowledge. Para cada tile adjacente com uma Alien Word, adicione 1 ao resultado do seu teste. 7+Coloque uma Palavra Alien\xedgena em sua pe\xe7a.A mensagem deve ser completada. 0\u20136Ganhe 2 Conhecimentos.Os sussurros ficam mais altos, mais insistentes. Mais compreens\xedvel.","Espalhe a palavra")],h1),b,"Palavras das estrelas",c3)
-a0=A.b(["Seu explorador foi engolido inteiro por um tubar\xe3o espectral. Coloque a ficha de Tubar\xe3o Fantasma em seu tile. Remova seu explorador e o \xcddolo do jogo. Enterre quaisquer Itens e Press\xe1gios que seu explorador tinha antes de serem engolidos.",g3,"Vire o ladrilho em que seu explorador estava. Em seguida, vire{0/1/2/3}tiles na mesma regi\xe3o. Esses tiles s\xe3o Flooded."],g7)
-a0=A.ai(B.m,"Voc\xea se banqueteia com os \xfaltimos peda\xe7os do seu almo\xe7o quente. Com sua fome saciada, pelo menos por enquanto, voc\xea observa as \xe1guas recuarem mais uma vez. Com um sorriso largo, voc\xea fica satisfeito em saber que continua sendo o prefeito de Shark City.",d0,"O som da mar\xe9 correndo envolve voc\xea enquanto a sala \xe9 inundada com \xe1gua salgada saindo do \xeddolo. Enquanto voc\xea pisa na \xe1gua para se manter \xe0 tona, voc\xea percebe uma barbatana fantasmag\xf3rica emergir da superf\xedcie. Ela come\xe7a a circular ao seu redor... CHOMP!",A.b([A.bh(A.b([A.Y("Mova para qualquer pe\xe7a inundada. No final do seu turno Se todos os azulejos da casa estiverem inundados,voc\xea venceu!","Cue M\xfasica Sinistra")],h1),"O tubar\xe3o n\xe3o pode ser atordoado.",c9,"Grande Tubar\xe3o Fantasma Branco",c9,e8,"8")],h3),28,"Voc\xea vence quando todos os her\xf3is estiverem mortos ou se todas as pe\xe7as da casa estiverem inundadas.",d3,"Ficha do Tubar\xe3o Fantasma\n5\nFichas de Armadilha \u2013Explosivos",e9,a0,B.u,B.am,"Vamos precisar de um Casa Maior",c3)
-a1=A.b([c5,e1,"Lugar{1/2/3/3}Pequenos tokens de Monstro no ladrilho com voc\xea. Estes s\xe3o os Fae."],g7)
-a2=A.b([A.P("Se voc\xea n\xe3o estiver usando uma arma, voc\xea pode atacar com Velocidade em vez de For\xe7a. Depois da sua vez, jogue com as fadas.",g4)],g9)
-a2=A.ai(B.m,"Voc\xea dan\xe7a entre os jacintos, as dedaleiras, as pe\xf4nias e passeia pelos c\xedrculos de cogumelos. Voc\xea enche a cara com comida e bebida encantadas de fadas. Voc\xea n\xe3o pode deixar a terra das fadas, mas por que voc\xea iria querer? \xc9 t\xe3o lindo aqui.",d0,'A corretora lhe ofereceu um hors d\'oeuvre. As ofertas nesta casa aberta s\xe3o estranhas: violetas cristalizadas e frutas vermelhas congeladas. "Comida de fada", ela disse, com um brilho estranho nos olhos. Voc\xea pensou que ela estava brincando. Voc\xea provou essas guloseimas e entendeu: as fadas querem resgatar esta casa do mundo dos humanos e deixar que a hera a derrube, tijolo por tijolo. "Ajude-nos", eles dizem. "Ajude-nos a transformar esta casa em um lindo jardim, e ent\xe3o voc\xea poder\xe1 se juntar a n\xf3s." Voc\xea quer se juntar a eles. E voc\xea sabe exatamente como fertilizar o jardim.',A.b([A.bh(B.u,"As fadas n\xe3o podem ser atordoadas. Os Fae usam Velocidade para atacar qualquer her\xf3i na linha de vis\xe3o.",c9,"Fae",c9,e7,e8)],h3),29,c6,f6,"Pequenos tokens de monstro \u2013Fada\nFichas de Her\xf3i \u2013Conhecimento das Fadas\n2 fichas de poder \u2013Ferro Frio",d6,a1,B.u,a2,"Um lindo jardim",c3)
-a1=A.b(["Voc\xea foi possu\xeddo por um esp\xedrito! Seu explorador ainda est\xe1 no jogo. Voc\xea \xe9 o traidor.",e1,e5,"Coloque seu explorador no Hall de Entrada.","Coloque {1/2/3/4} Pequenos tokens de Monstro em diferentes tiles com s\xedmbolos de Omen. Estes s\xe3o a Festa de Casamento. Se n\xe3o houver tiles suficientes com s\xedmbolos de Omen, coloque os membros restantes da Festa de Casamento na Escadaria do T\xe9rreo."],g7)
-a3=A.b([A.P("Voc\xea pode virar um dos Omens deles para cima. Esse Omen permanecer\xe1 para cima pelo resto do haunt.",g4),A.P("Vire todos os seus Press\xe1gios para cima.",f3),A.P("Suas caracter\xedsticas n\xe3o podem ficar abaixo dos valores iniciais. Seu amor \xe9 eterno.","Na doen\xe7a e na sa\xfade"),A.P("Uma vez que voc\xea entra no tile com o Altar, voc\xea n\xe3o pode sair daquele tile. Efeitos n\xe3o podem fazer voc\xea sair deste tile.","Para sempre e sempre")],g9)
-a3=A.ai(B.m,"Voc\xea segura as m\xe3os da sua amada e canta seus louvores em voz alta. \u201cOh Genevieve, Genevieve! Juntas novamente! De m\xe3os dadas, sempre!\u201d",d0,"O \xfaltimo corpo em que voc\xea pisou n\xe3o era adequado, mas este atender\xe1 \xe0s suas necessidades. Agora voc\xea s\xf3 precisa de mais um corpo, para o seu amor \u2014 para sua Genevieve. Ela estar\xe1 com voc\xea novamente, mas primeiro voc\xea precisar\xe1 da sua alian\xe7a de casamento. A alian\xe7a unir\xe1 voc\xea e sua Genevieve para sempre. Voc\xea se livrou da morte e a livrar\xe1 tamb\xe9m. Voc\xeas dois ser\xe3o livres nesta terra novamente. Um corpo e a alian\xe7a, \xe9 tudo o que voc\xea precisa.",A.b([A.bh(B.u,"Ap\xf3s sua vez, jogue com os monstros.\n\xc9 hora de se casar!",c8,"A Festa de Casamento",e8,c9,c7)],h3),30,"Voc\xea vence quando tem o Anel.",f6,u.O,d8,a1,B.u,a3,"At\xe9 que a morte nos separe","Menor Sanidade (al\xe9m do Revelador de Assombra\xe7\xe3o)")
-a1=A.b([c5,e1,e5,"Pegue todos os Itens e Press\xe1gios de cada jogador. Come\xe7ando com o S\xedmbolo Sagrado, defina{4/5/7/9}dessas cartas de lado, viradas para cima. Se houver menos cartas do que isso, coloque-as todas de lado.","Enterre todos os itens e press\xe1gios restantes.","Coloque um conjunto de fichas de N\xfamero no Item e Press\xe1gios reservados, depois coloque uma Ficha de N\xfamero correspondente na casa. Essas fichas representam Itens Amaldi\xe7oados. Cada Item Amaldi\xe7oado deve ser colocado em uma ficha de Item ou Press\xe1gio diferente. Se ainda houver algum item amaldi\xe7oado, coloque-o no Hall de Entrada."],g7)
-a4=A.b([A.P(g0,"Quando voc\xea ataca um her\xf3i com Poder")],g9)
-a5=A.b([A.Y("Enquanto estiver no mesmo ladrilho que um Item Amaldi\xe7oado, remova esse token e pegue a carta correspondente. Agora voc\xea carrega esse Item ou Press\xe1gio. Escolha um her\xf3i na sua regi\xe3o receba 2 dados de dano Geral.O fantasma preso no item explode para fora.","Canalize um esp\xedrito amaldi\xe7oado")],h1)
-a4=A.ai(B.m,"Que final \xe9pico para uma noite matadora de ca\xe7a a fantasmas extrema, mano! \xc9 uma pena que tenha que terminar assim, mas voc\xea d\xe1 de ombros enquanto arranca os \xfaltimos itens amaldi\xe7oados das m\xe3os frias e mortas de seus amigos. Voc\xea sai e o c\xe9u fica vermelho, e voc\xea come\xe7a a cantar em uma l\xedngua que nunca ouviu antes. Isso vai ser matador!",d0,'Voc\xea est\xe1 em uma ca\xe7ada totalmente incr\xedvel para encontrar evid\xeancias para aquele reality show escolhido, "Bros vs. Ghosts", quando voc\xea ganha na loteria mal-assombrada. Mas, tipo, \xe9 uma chatice que todos os seus amigos foram possu\xeddos por fantasmas. Este s\xedmbolo sagrado que voc\xea encontrou come\xe7a a falar na sua cabe\xe7a, todo demon\xedaco e tudo. Agora voc\xea s\xf3 precisa sair e come\xe7ar o apocalipse! Radical!',A.b([A.bh(B.u,"Se o item ou card de press\xe1gio correspondente deste monstro for uma arma, ele pode usar o ataque daquela arma. (A Adaga n\xe3o \xe9 afetada pela perda de Velocidade.)",c7,"Item Amaldi\xe7oado (Ficha Num\xe9rica)",c7,c9,c7)],h3),31,c6,e0,"2 conjuntos de Fichas Num\xe9ricas \u2013 Amaldi\xe7oados",e9,a1,a5,a4,"Um fantasma de uma chance",c3)
-a5=A.b(["Os gatos te cercam. Seu explorador morreu. Enterre seus Itens e Press\xe1gios e remova sua figura da casa. Coloque o token Bakeneko em seu ladrilho. Agora voc\xea comanda os Bakeneko e os Gatos Mortos-Vivos.",f0,"Encontre e reserve{6/5/4/3}Fichas de fogo. Coloque o resto de volta na caixa.","Lugar{3/4/5/7}Pequenos tokens de monstros na sua regi\xe3o. Esses s\xe3o seus Undead Cats."],g7)
-a1=A.b([A.P("Eles devem fazer um teste de Velocidade. 5+ Nada acontece. Eles atravessam o fogo sem problemas. 0\u20134 Eles sofrem 1 de dano F\xedsico.","Quando um her\xf3i entra em um ladrilho com um marcador de fogo"),A.P(g5,"Quando estiver em uma pe\xe7a com um s\xedmbolo de Press\xe1gio")],g9)
-a1=A.ai(B.m,"O gato fantasma caminha entre cinzas e chamas, seguido por sua comitiva de felinos mortos-vivos. A tropa se re\xfane do lado de fora da casa, juntando-se a um coro sobrenatural de uivos enquanto observam o fogo dos Bakeneko reduzir a casa a escombros.",d0,"O dono da casa era exc\xeantrico para dizer o m\xednimo, mas eles foram muito convincentes em seus contos sobre o gato fantasma que assombra a casa. Voc\xea os segue enquanto eles falam, apenas para v\xea-los se transformarem em um enorme felino espectral. A criatura sorri para voc\xea, ronronando, enquanto voc\xea \xe9 cercado por um ex\xe9rcito de gatos mortos-vivos.",A.b([A.bh(A.b([A.Y("Enquanto estiver em qualquer pe\xe7a, escolha uma pe\xe7a na linha de vis\xe3o que ainda n\xe3o tenha uma ficha de Fogo nela. Coloque uma ficha de Fogo naquela pe\xe7a. Quando voc\xea colocar a \xfaltima ficha de Fogo, voc\xea venceu!","Queime todos eles"),A.Y(g5,"Invocar Gatinhos")],h1),"O Bakeneko adiciona +1 ao seu Poder para cada Gato Morto-Vivo em sua regi\xe3o (at\xe9 um Poder m\xe1ximo de 8).",e8,"Bakeneko",e7,e7,c8),A.bh(B.u,"Gatos mortos-vivos s\xe3o mortos em vez de atordoados quando recebem dano. Eles ainda podem ser atordoados de outras maneiras. Gatos mortos-vivos atacam com Velocidade. Eles causam no m\xe1ximo 2 de dano por ataque. Gatos Mortos-Vivos n\xe3o podem atacar nenhum her\xf3i que j\xe1 tenha sofrido dano durante o turno dos Gatos Mortos-Vivos. Eles gostam de brincar com a comida.",c9,"Gatos Mortos-Vivos",e8,e7,c8)],h3),32,"Voc\xea vence quando todos os her\xf3is est\xe3o mortos ou quando a casa \xe9 incendiada.",g1,"Token Bakeneko\nPequenos tokens de monstro \u2013Gatos mortos-vivos\nFichas de fogo \u2013Quarto em chamas",e9,a5,B.u,a1,"A Cat\xe1strofe",c3)
-a5=A.b([c5,"Coloque {2/3/4/5} Pequenos tokens de Monstro em qualquer tile que n\xe3o seja entradas de \xe1rea, distribu\xeddos o mais uniformemente poss\xedvel entre as regi\xf5es. Esses s\xe3o os Fot\xf3grafos Fantasmas.","Se a C\xe2mera M\xe1gica n\xe3o tiver sido descoberta, procure-a no baralho de Itens e coloque-a virada para cima na sua frente.","D\xea a cada her\xf3i seu token de Her\xf3i correspondente. Esta \xe9 a Ess\xeancia deles."],g7)
-a6=A.b([A.P("Enquanto voc\xea tiver a C\xe2mera M\xe1gica, seus tra\xe7os n\xe3o poder\xe3o ficar abaixo do cr\xedtico.","O Fantasma dentro da c\xe2mera"),A.P("Se voc\xea tiver a Ess\xeancia daquele her\xf3i, role 2 dados adicionais. Depois da sua vez, converse com os Fot\xf3grafos Fantasmas.",g4)],g9)
-a7=A.b([A.Y("Enquanto estiver em um tile com um her\xf3i, fa\xe7a um teste de Velocidade. Se voc\xea tiver a C\xe2mera M\xe1gica, voc\xea pode fazer esse teste contra qualquer her\xf3i na linha de vis\xe3o. Voc\xea n\xe3o pode tirar uma foto de um her\xf3i que n\xe3o tenha mais sua Ess\xeancia. 6+ Pegue a ficha de Ess\xeancia do her\xf3i e aumente uma das suas caracter\xedsticas em 1. Voc\xea captura a ess\xeancia deles. 0\u20135Nada acontece.","Tire uma foto")],h1)
-a6=A.ai(B.m,"Voc\xea se senta no hall de entrada, com os olhos vazios. As c\xe2meras est\xe3o instaladas por todo lado. Em algum momento, as pessoas vir\xe3o te procurar. Ent\xe3o, as c\xe2meras ter\xe3o sua cota novamente.",d0,'Algo sai de voc\xea quando a c\xe2mera dispara. "N\xe3o deixe a c\xe2mera roubar sua alma", diz uma voz, mas agora, olhando para a c\xe2mera, voc\xea pode dizer que ela est\xe1 com fome, morrendo de fome. Ela merece ser alimentada. Ela precisa ser alimentada. Voc\xea pode dar a ela as almas e o sangue que ela quer \u2014 um instant\xe2neo aqui, uma ferida mortal ali... a c\xe2mera ter\xe1 o suficiente.',A.b([A.bh(A.b([A.Y("Se eles tiverem a Ess\xeancia, pegue-a e coloque-a no seu tabuleiro de personagem.","Se um her\xf3i terminar seu turno na linha de vis\xe3o de um Fot\xf3grafo Fantasma")],h1),"Depois da sua vez jogue com os Fot\xf3grafos Fastasmas.\n\nFot\xf3grafos Fantasmas atacam com Sanidade e podem atacar qualquer her\xf3i na linha de vis\xe3o. Se vencerem um ataque, o her\xf3i alvo recebe dano Mental.\n Se um Fot\xf3grafo Fantasma sofrer dano de um ataque de For\xe7a, ele ser\xe1 morto em vez de atordoado.",e8,"Fot\xf3grafo Fantasma",e7,"1",c9)],h3),33,c6,"\u201cDiga Xis\u201d","Pequenos tokens de monstro \u2013Fantasma Fot\xf3grafos\nFichas de Her\xf3i \u2013Ess\xeancia dos Her\xf3is",c4,a5,a7,a6,"Sorria para a c\xe2mera","Possuidor da c\xe2mera")
-a7=A.b([c5,e5,"Retorne todas as pe\xe7as em jogo para a pilha de pe\xe7as, exceto as pe\xe7as de entrada e as pe\xe7as com exploradores nelas. Embaralhe a pilha de pe\xe7as.","Organize as pe\xe7as restantes, incluindo as pe\xe7as de entrada doa forma que quiser, de modo que todas fiquem em contato e formem uma regi\xe3o s\xf3."],g7)
-a5=A.b([A.P(u.H,"Outra Dimens\xe3o"),A.P("se voc\xea esta morto, coloque seu explorador em um tile com uma porta aberta. Cure todas as suas caracteristicas e realize seu turno normalmente.","No come\xe7o do seu turno"),A.P("Voc\xea pode Manipular a Dimens\xe3o {1/1/2/2} vezes a cada turno. Se um her\xf3i estiver carregando Christina, voc\xea pode fazer esta a\xe7\xe3o uma vez adicional. Voc\xea pode fazer a mesma escolha mais de uma vez.","Mestre da manipula\xe7\xe3o")],g9)
-a5=A.ai(B.m,"O som n\xe3o pode viajar entre dimens\xf5es, ent\xe3o os gritos daqueles que voc\xea prendeu aqui foram silenciados. Voc\xea anda pelo corredor, sorrindo, enquanto a casa se constr\xf3i ao seu redor.",d0,"Voc\xea esperava que seus amigos lamentassem Christina, n\xe3o que rastreassem o local de seu desaparecimento. Ela havia encontrado seu santu\xe1rio \u2014 esta casa, cujos c\xf4modos mudam, onde o errado \xe9 certo, onde nada \xe9 o que parece \u2014 e voc\xea a prendeu aqui. Agora voc\xea prender\xe1 seus outros amigos tamb\xe9m. As paredes giram ao seu redor, voando, dobrando e mudando ao seu capricho. \xc9 uma pena que eles n\xe3o tenham apenas lamentado por ela e seguido em frente.",B.w,34,c6,d3,"N\xfamero de trilha Pequeno\nToken de Monstro \u2013 Cristina",d8,a7,A.b([A.Y("Enquanto estiver em um ladrilho com uma porta aberta, fa\xe7a um teste de Sanidade. 3+Coloque-se em qualquer ladrilho com uma porta aberta. 0\u20132 Nada acontece.","D\xea um Salto de F\xe9"),A.Y("Escolha um dos seguintes efeitos: \u2022 Cada her\xf3i recebe 1 dado de dano Geral. Voc\xea pode mover cada her\xf3i um n\xfamero de pe\xe7as em qualquer dire\xe7\xe3o, at\xe9 a quantidade de dano que ele recebeu. \u2022 Mova qualquer pe\xe7a que n\xe3o seja de entrada para outra parte da casa, de modo que ela se conecte a uma porta aberta. Voc\xea n\xe3o pode mover uma pe\xe7a se isso fizer com que outra pe\xe7a se desconecte do resto da casa. \u2022 Ganhe 2 em qualquer caracter\xedstica.","Manipular a Dimens\xe3o")],h1),a5,u.f,"Maior Conhecimento")
-a7=A.b([c5,e1,"Coloque um token de Ninho em qualquer tile de Por\xe3o. Coloque um segundo token de Ninho em qualquer tile de Andar Superior.","Coloque {2/3/4/5} Pequenos tokens de Monstro em seu tile. Estes s\xe3o Slugs."],g7)
-a8=A.b([A.P("Proteja os ninhos a todo custo","Token de ninho")],g9)
-a9=A.b([A.Y("Enquanto estiver em um ladrilho com um Ninho, coloque duas Lesmas naquele ladrilho.","Convocar a Horda")],h1)
-a8=A.ai(B.m,"Voc\xea olha pela janela, pensando em como apresentar ao mundo a vida alien\xedgena. Voc\xea ter\xe1 que pensar em um bom nome para essa esp\xe9cie.",d0,"Voc\xea nunca entendeu realmente por que sua amiga passou todo o tempo procurando meteoros, mas isso foi antes de voc\xea aprender sobre vida alien\xedgena, como as lesmas que agora escorrem da rocha escavada diante de voc\xea. \xc9 fascinante... mas aqui est\xe3o elas, e s\xe3o r\xe1pidas! Elas tamb\xe9m parecem famintas \u2014 uma das lesmas deslizou pelo seu corpo e se agarrou ao seu pesco\xe7o na base do seu c\xe9rebro, mas voc\xea n\xe3o est\xe1 muito preocupado. Al\xe9m disso, voc\xea acha que elas s\xe3o meio fofas.",A.b([A.bh(A.b([A.Y("Para cada outro Slug naquele ladrilho, adicione 1 ao resultado da jogada de ataque. Se os Slugs vencerem o ataque, aquele her\xf3i se torna Mente controladae agora \xe9 um traidor. Eles agora compartilham seus objetivos e podem ler este livro. \n\nDepois que uma lesma ataca, todas as lesmas em seu ladrilho s\xe3o mortas (independentemente de vencerem ou n\xe3o o ataque).","Sempre que uma lesma ataca um her\xf3i (ignora limite de uma ver por turno)")],h1),"Depois da sua vez, jogue com as Lesmas. Lesmas s\xe3o mortas em vez de atordoadas. Lesmas atacam com Sanidade. Todas as lesmas devem completar seu movimento antes que qualquer uma possa atacar.",c7,"Lesmas",c8,c9,c8)],h3),35,"Voc\xea vence quando todos os her\xf3is est\xe3o mortos ou com a mente controlada.",g1,"Pequenos tokens de monstro \u2013Lesmas\n2 fichas de ninho \u2013Ninho de lesmas\n5 fichas de comida \u2013Sal",d8,a7,a9,a8,"Lesmas espaciais",c3)
-a9=A.b([c5,e1,"Coloque uma ficha de Monstro Pequeno em cada pe\xe7a que tenha um s\xedmbolo de Evento. Esses s\xe3o Fantasmas."],g7)
-a7=A.b([A.P(u.W,"Quando voc\xea revela uma pe\xe7a com um s\xedmbolo de Evento"),A.P("Coloque um Fantasma no tile daquele her\xf3i. Voc\xea controla aquele Fantasma. Se voc\xea sofresse dano de um ataque Em vez disso, mova essa quantidade de pe\xe7as para longe da sua pe\xe7a atual em qualquer dire\xe7\xe3o e ganhe 1 de For\xe7a ou Conhecimento.A casa n\xe3o deixar\xe1 voc\xea morrer. Depois da sua vez, jogue com os Fantasmas.",f3),A.P("Cada her\xf3i em um bloco com qualquer n\xfamero de Fantasmas sofre 2 de dano Geral. No final do seu turno Se voc\xea atingiu a Sanidade m\xe1xima, voc\xea alcan\xe7ou a ilumina\xe7\xe3o. Voc\xea venceu!","No final do turno dos Fantasmas")],g9)
-b0=A.b([A.Y("Enquanto estiver em um ladrilho com um Fantasma, fa\xe7a um teste de Conhecimento. 4+Remova o Fantasma do ladrilho e ganhe 1 de Sanidade. 0\u20133Mova todos os Fantasmas desta pe\xe7a para qualquer pe\xe7a adjacente, ignorando as paredes.","Consuma um Fantasma")],h1)
-a7=A.ai(B.m,"Voc\xea est\xe1 saciado, por enquanto. Mas haver\xe1 mais fantasmas\u2026",d0,"Voc\xea encontrou algo aqui melhor do que uma casa aberta de corretor de im\xf3veis. Voc\xea pegou esse s\xedmbolo escuro, e ele te encheu de fome. Voc\xea pega um esp\xedrito, e voc\xea o come. Por um momento, sua fome \xe9 saciada. Mais do que isso, realmente \u2014 voc\xea se sente forte, em paz, l\xfacido. E ent\xe3o, voc\xea est\xe1 mais faminto do que nunca.",A.b([A.bh(B.u,"Fantasmas n\xe3o podem atacar nem ser atacados.",c9,"Fantasmas",c8,c8,c8)],h3),36,"Voc\xea vence quando alcan\xe7a a ilumina\xe7\xe3o OU mata todos os her\xf3is! \u2022 Consuma Fantasmas para aumentar sua Sanidade. \u2022 \u201cIlumina\xe7\xe3o\u201d significa ter o m\xe1ximo de Sanidade.",e0,"Pequenos tokens de monstro \u2013Fantasmas",d6,a9,b0,a7,"Encontrando a Paz","Menor Sanidade")
-b0=A.b([c5,"Enterre a armadura e defina todos os seus tra\xe7os para seus valores iniciais.",e1,"Coloque sua figura no Hall de Entrada, junto com{0/1/1/2}Tokens de monstros pequenos. Esses s\xe3o seus rob\xf4s de seguran\xe7a.","Cada her\xf3i coloca um Rob\xf4 de Seguran\xe7a em seu ladrilho."],g7)
-a9=A.b([A.P("\u2022Durante uma troca de corpos, os tokens de DNA v\xe3o junto com o tabuleiro de personagem dos her\xf3is, o DNA n\xe3o pode ser negociado.\u2022 O DNA s\xf3 pode ser removido de um tabuleiro de personagem quando voc\xea carregar uma amostra.","DNA"),A.P("Defina suas caracter\xedsticas para seus valores iniciais e coloque sua figura em qualquer pe\xe7a de entrada. A clonagem \xe9 uma tarefa trivial.",e6),A.P("Se ainda houver DNA no quadro de personagem atual de um her\xf3i, os tra\xe7os desse her\xf3i n\xe3o poder\xe3o ficar abaixo do cr\xedtico por nenhum motivo. Um her\xf3i cujo quadro de personagem atual n\xe3o possui DNA pode morrer normalmente.Amostra adquirida. O sujeito agora \xe9 dispens\xe1vel.","Miss\xe3o Primeiro")],g9)
-b1=A.b([A.Y("Enquanto estiver em um tile com um her\xf3i que tem o DNA deles, troque tabuleiros de personagem com esse her\xf3i, mas n\xe3o troque nenhum Item ou Press\xe1gio. Agora voc\xea controla a figura deles, e eles controlam a sua. Cure todos os tra\xe7os do seu novo personagem e termine seu turno imediatamente.","Metamorfosear um sujeito"),A.Y("\u2022 Se voc\xea estiver em um tile com um s\xedmbolo Omen e houver um marcador de DNA no seu tabuleiro de personagem atual, retorne esse DNA para a caixa do jogo. Se voc\xea tiver tirado DNA de cada her\xf3i,voc\xea venceu!","Carregar uma amostra")],h1)
-a9=A.ai(B.m,'Coisas bobas, esses esp\xe9cimes. Eles t\xeam tanta vivacidade, e suas estruturas pitorescas e fr\xe1geis t\xeam tanto potencial. Voc\xea e seus associados vieram do seu distante sistema solar com a inten\xe7\xe3o de explorar esse potencial. A quest\xe3o diante de voc\xeas \xe9: "O que faz um ser humano?"',d0,"Os esp\xe9cimes foram reunidos na instala\xe7\xe3o de experimenta\xe7\xe3o. Que estranho... humanos aparentemente n\xe3o conseguem resistir a uma casa mal-assombrada. Os rob\xf4s de seguran\xe7a que estavam camuflados como armaduras antigas ganharam vida, e seus associados voltar\xe3o para observar essa colheita em breve. Agora voc\xea pode se livrar do seu disfarce terrestre e come\xe7ar a enviar as amostras dos humanos, assim que puder colet\xe1-las.",A.b([A.bh(B.u,"Depois da sua vez jogue com os rob\xf4s\nEles t\xeam tasers com apar\xeancia furiosa. Se poss\xedvel, cada Rob\xf4 de Seguran\xe7a deve se mover em dire\xe7\xe3o a um her\xf3i diferente. Rob\xf4s de Seguran\xe7a s\xe3o mortos se sofrerem algum dano. Rob\xf4s de Seguran\xe7a n\xe3o sofrem nenhum dano de her\xf3is atacantes.",c9,"Rob\xf4 de Seguran\xe7a",c7,c7,e7)],h3),37,"Voc\xea vence quando coleta uma amostra de DNA de cada um dos her\xf3is.",d7,"Pequenos Monstros \u2013Rob\xf4s de Seguran\xe7a\nFichas de Her\xf3i \u2013DNA do her\xf3i",d2,b0,b1,a9,"Fora do corpo",c3)
-b1=A.b(["Se a pe\xe7a da Cozinha n\xe3o for descoberta, procure-a na pilha de pe\xe7as e coloque-a no T\xe9rreo, o mais longe poss\xedvel do Hall de Entrada.",e5,"Defina a trilha num\xe9rica para{2/3/4/4}.","Coloque {3/4/5/6} Pequenos marcadores de Monstro pela casa, um em cada ladrilho com um s\xedmbolo de Evento. Esses s\xe3o os Vizinhos. Se voc\xea precisar colocar mais Vizinhos do que ladrilhos com s\xedmbolos de Evento, coloque o restante desses Vizinhos no Hall de Entrada.",e1],g7)
-b0=A.b([A.P("Cure todos os seus tra\xe7os e mova seu explorador para a Cozinha. Ent\xe3o, d\xea o Anel para seu assassino. Depois da sua vez, jogue com os vizinhos.",e6),A.P("Coloque um n\xfamero de novos Vizinhos na casa, igual ao valor atual na Trilha Num\xe9rica. Coloque um desses Vizinhos em cada pe\xe7a com um s\xedmbolo de Evento. Se houver mais Vizinhos novos do que pe\xe7as com s\xedmbolos de Evento, n\xe3o coloque os Vizinhos restantes.Mais convidados!","No final da volta do monstro")],g9)
-b0=A.ai(B.m,'Que bagun\xe7a. Essas decora\xe7\xf5es quase deram mais trabalho do que valiam a pena, mas agora que pararam de se mover, a festa pode come\xe7ar para valer. Enquanto voc\xea coloca o \xfaltimo dos corpos em uma onda imaculada vis\xedvel das janelas da varanda da frente, voc\xea pensa consigo mesmo: "Preciso colocar o bolo no forno. Agora, onde est\xe1 aquele anel?"',d0,"Todo ano, seus vizinhos assam o Anel das Festas em um bolo. Quem ficar com a fatia com o anel \xe9 respons\xe1vel por hospedar a festa do ano que vem. Este ano \xe9 a sua vez, e o tempo est\xe1 ficando curto. Os convidados come\xe7aram a chegar, e tudo est\xe1 finalmente no lugar. H\xe1 um assado no forno, o jardim est\xe1 lindo, e a salada de ambrosia est\xe1 pronta. A \xfanica coisa que resta a fazer \xe9 decorar a entrada da casa. Se ao menos as decora\xe7\xf5es parassem de se mover sozinhas...",A.b([A.bh(B.u,"Ol\xe1, vizinho! Os vizinhos s\xe3o mortos em vez de atordoados.",c7,"Os Vizinhos",c8,e8,c7)],h3),38,c6,f6,u.M,d2,b1,B.u,b0,"A Soir\xe9e Sinistra",c3)
-b1=A.b(["Voc\xea completa sua metamorfose. Remova seu explorador da casa e substitua-o pela Vespa Gigante. Enterre todos os seus Itens e Press\xe1gios.",f0,"Distribua 5 fichas de Ninho em diferentes tiles de T\xe9rreo e/ou Piso Superior. Esses s\xe3o os Ovos de Vespa que os her\xf3is est\xe3o tentando destruir.","Lugar{0/2/3/5}Pequenos tokens de Monstro em seu tile. Estes s\xe3o seus Worker Wasps."],g7)
-b1=A.ai(B.m,"Seus beb\xeas finalmente eclodem dos ovos, com suas cabecinhas saindo das cascas. Eles est\xe3o com fome e v\xe3o atr\xe1s dos primeiros peda\xe7os de comida que encontram \u2014 os humanos que voc\xeas um dia chamaram de amigos. A Era das Vespas come\xe7ou!",d0,"Nos \xfaltimos anos, voc\xea tem estudado maneiras de unir c\xe9lulas de insetos e humanas. Voc\xea at\xe9 fez experimentos em si mesmo, chegando ao ponto de pedir ao Senhor das Vespas para habitar seu corpo. Voc\xea realmente come\xe7ou a ver resultados \u2014 voc\xea se tornou mais forte e r\xe1pido, e aprendeu a grudar em paredes. Mas agora, algo ainda maior aconteceu: voc\xea \xe9 capaz de invocar e controlar insetos com sua mente. Sua humanidade caiu como um exoesqueleto abandonado, revelando voc\xea como voc\xea realmente \xe9 \u2014 uma vespa gigante, l\xedder de todos os insetos. Esta casa ser\xe1 a sede do seu poder. Ser\xe1 seu ninho.",A.b([A.bh(A.b([A.Y("Cause um dado de dano F\xedsico a um her\xf3i em seu tile. Esta Vespa morreu. Remova-a da casa.","Defenda o Enxame")],h1),"As vespas oper\xe1rias s\xe3o mortas em vez de atordoadas.","1","Vespa Oper\xe1ria",c9,c7,c8),A.bh(A.b([A.Y("Enquanto estiver em um tile com um cad\xe1ver, se algum Ovo de Vespa foi removido da casa, coloque um Ovo de Vespa no tile com o cad\xe1ver. Remova o cad\xe1ver e enterre todos os seus Itens e Press\xe1gios.","P\xf4r Ovos")],h1),"No final do seu turno: Coloque uma Vespa Oper\xe1ria em cada ladrilho com um Ovo de Vespa (mesmo que esteja sendo carregado por um her\xf3i). Se houver v\xe1rios Ovos de Vespa em um ladrilho, coloque uma Vespa por Ovo. Os Ovos permanecem em jogo. Ent\xe3o, se houver ovos de vespa na casa, mova a trilha num\xe9rica para baixo em 1. Se a trilha num\xe9rica chegar a 0, voc\xea venceu!",c7,"A Vespa Gigante",c7,c7,e7)],h3),39,"Voc\xea vence quando todos os her\xf3is est\xe3o mortos ou quando o tempo acaba.",e4,u.I,f4,b1,B.u,B.am,"Mente de colmeia","Maior Conhecimento (al\xe9m do Revelador de Assombra\xe7\xf5es)")
-b2=A.b([c5,e1,e5,"Lugar{2/3/4/5}Pequenos tokens de Monstro em seu tile. Esses s\xe3o os Evil Twins dos her\xf3is.","Encontre o token de Her\xf3i correspondente de cada her\xf3i. Essas s\xe3o as Identidades dos G\xeameos. Coloque uma embaixo de cada G\xeameo Maligno."],g7)
-b3=A.b([A.Y("Enquanto estiver em um tile com um Evil Twin atordoado, vire esse Evil Twin de volta. Ele n\xe3o est\xe1 mais atordoado e pode agir normalmente em seu pr\xf3ximo turno.","Proteja sua fam\xedlia")],h1)
-b3=A.ai(B.m,"Sua casa est\xe1 segura. Voc\xea representa uma vers\xe3o da sua vida que parece quase real. Na pr\xf3xima vez que a porta da frente se abrir e voc\xea se vir entrando, voc\xea estar\xe1 pronto.",d0,"Voc\xea j\xe1 mora nesta casa, o que voc\xea descobre quando fica cara a cara com... voc\xea mesmo? Seu g\xeameo acena para que voc\xea se aproxime, e voc\xea o faz. Ele tira sua m\xe1scara \u2014 a m\xe1scara do seu pr\xf3prio rosto \u2014 e a entrega a voc\xea. Voc\xea sabe que se voc\xea coloc\xe1-la, voc\xea se tornar\xe1 a vers\xe3o de voc\xea que mora aqui, se tornar\xe1 parte da fam\xedlia cuja casa \xe9 esta. Voc\xea coloca a m\xe1scara sobre seu rosto, e seu g\xeameo n\xe3o existe mais. Voc\xea sempre viveu aqui, e voc\xea deve proteger sua casa.",A.b([A.bh(B.u,"\u2022 Cada Evil Twin tem um Reflexo, representado por seu token de her\xf3i. \u2022 As caracter\xedsticas dos Evil Twins s\xe3o iguais \xe0s caracter\xedsticas iniciais de seus Reflections. \u2022 Evil Twins n\xe3o rolam movimento. Cada Twin pode mover um n\xfamero de tiles igual \xe0 sua Velocidade. \u2022 Se um G\xeameo Maligno receber dano de seu Reflexo ou do her\xf3i que segura a M\xe1scara, o G\xeameo Maligno ser\xe1 morto em vez de atordoado. \u2022 G\xeameos Malignos podem atacar com qualquer caracter\xedstica. Estat\xedsticas iniciais dos her\xf3is: Jos\xe9 (5/4/4/3), Oliver (4/5/3/4), Jaden (3/4/4/5), Sammy (4/5/4/3), E (4/3/4/5), Warren (3/4/5/4), Michelle (5/4/3/4), Bretanha (5/3/4/4), Pers\xeafone (4/4/5/3), Stephanie (4/3/5/4), Anita (4/4/3/5), Um (3/5/4/4).",f7,"G\xeameos Malignos",f7,f7,f7)],h3),40,c6,g2,"Pequenos tokens de monstro \u2013G\xeameos do Mal\nFichas de Her\xf3i \u2013Identidades G\xeameas",d6,b2,b3,B.am,"O Retorno dos Andarilhos da Carne",c3)
-b2=A.b([c5,e1,"Coloque uma ficha de Armadilha em seu tile. Deixe as fichas de Armadilha restantes de lado.","Pegar{3/3/4/5}Fichas ON/OFF e devolva o restante para a caixa. Esses s\xe3o Geradores. Coloque um em seu ladrilho e, em seguida, um em cada ladrilho de sua escolha que tenha um s\xedmbolo de Item ou Press\xe1gio. Se sobrar alguma ficha, coloque-a em ladrilhos de Aterrissagem."],g7)
-b4=A.b([A.P("Geral. A Armadilha permanece no tile. Depois da sua vez, converse com a Casa.","Quando um her\xf3i entra em um tile com um token de Armadilha, ele recebe dois dados de dano")],g9)
-b5=A.b([A.Y("Enquanto estiver em um ladrilho com um Gerador na posi\xe7\xe3o DESLIGADO, fa\xe7a um teste de Conhecimento. 4+Coloque o gerador na posi\xe7\xe3o ON. 0\u20133Nada acontece. Desencadeando uma armadilha","Reativar Geradores")],h1)
-b4=A.ai(B.m,"A casa estremece e se acomoda. Um dia, voc\xea ajudar\xe1 a coisa que vive aqui a escapar desta gaiola. Quando o fizer, o mundo se ajoelhar\xe1 diante do poder deste deus terr\xedvel... e voc\xea ser\xe1 seu sumo sacerdote.",d0,"Voc\xea sente uma fa\xedsca el\xe9trica passar por voc\xea. Rel\xe2mpago. Trov\xe3o. H\xe1 um deus na fia\xe7\xe3o, e a casa \xe9 sua gaiola. O deus ordena que voc\xea livre a casa de intrusos. Voc\xea vai ouvir.",A.b([A.bh(A.b([A.Y("Coloque uma Armadilha em qualquer tile que n\xe3o tenha um her\xf3i ou Armadilha. Voc\xea n\xe3o pode usar Possess Electronics para colocar armadilhas em ou adjacentes a um tile com um Gerador.","Possuir Eletr\xf4nicos"),A.Y("Role 2 dados. Mova qualquer explorador at\xe9 essa quantidade de pe\xe7as em qualquer dire\xe7\xe3o. Se isso fizer com que o explorador acione uma Armadilha, ele para de se mover.","Corredores em espiral")],h1),"A Casa n\xe3o pode ser atacada ou atordoada. Ela n\xe3o se move. A Casa pode fazer um ataque de Poder contra um her\xf3i em ou adjacente a qualquer ladrilho com um Gerador LIGADO (fichas DESLIGADAS n\xe3o contam).",c7,"A Casa",c7,"0",f8)],h3),41,c6,d3,"N\xfamero de trilha\n5 fichas ON/OFF \u2013Geradores\n5 fichas de armadilha 5\nTokens Pesquisados \u2013Sabotar",d6,b2,b5,b4,"Um Deus na M\xe1quina",c3)
-b5=A.b([c5,e5,g6,"Enterre o Cachorro. Coloque a ficha do Cachorro Dem\xf4nio em sua pe\xe7a.","Lugar{0/1/1/2}Fichas de comida na Carta de Monstro. Deixe o resto de lado."],g7)
-b2=A.b([A.Y("\u2022 Se voc\xea estiver em um dosos lugares favoritos da gangue,curar todos os seus tra\xe7os. Ap\xf3s sua vez, jogue com o C\xe3o Demon\xedaco.","Visite os lugares favoritos da gangue")],h1)
-b2=A.ai(B.m,"A vit\xf3ria sempre tem um gosto t\xe3o doce. As mand\xedbulas poderosas do c\xe3o trituram os ossos do \xfaltimo sobrevivente. Ele lambe os bei\xe7os, sua fome \xe9 insaci\xe1vel. E ent\xe3o o c\xe3o pressiona seu nariz frio, \xfamido e fantasmag\xf3rico nas t\xe1buas do assoalho em busca de mais petiscos.",d0,'Voc\xea imediatamente reconhece o c\xe3o como o fiel companheiro dos ca\xe7adores de fantasmas que teriam morrido aqui. Um sorriso se espalha pelo seu rosto enquanto o canino espectral avan\xe7a com um sorriso antropom\xf3rfico. Ent\xe3o, seus olhos brilham em vermelho e ele rosna as palavras inconfund\xedveis, "Alimente-me".',A.b([A.bh(A.b([A.Y("Enquanto estiver na Despensa, pegue uma ficha de Comida (se houver alguma restante) e coloque-a na Carta de Monstro.","Pegue algo para comer")],h1),"Demon\xedaco n\xe3o pode ser atordoado. Adicione +1 ao Poder do C\xe3o Demon\xedaco para cada marcador de Comida na Carta de Monstro.",c9,"C\xe3o Demon\xedaco",c7,c9,c9)],h3),42,c6,f9,"Token pesquisado \u2013Esp\xedrito Exorcizado\nToken de c\xe3o demon\xedaco\n5 fichas de comida \u2013Comida\nO Favorito da Gangue\nLugares\nDespensa \u2013T\xe9rreo\nBiblioteca - T\xe9rreo/Piso Superior\nGin\xe1sio \u2013Por\xe3o/Terra\xe7o Ch\xe3o\nCapela \u2013T\xe9rreo",e9,b5,b2,B.am,"Ataque de lanche",c3)
-b5=A.b([c5,e1],g7)
-b6=A.b([A.P("Her\xf3is que est\xe3o escondidos n\xe3o podem ser atacados e n\xe3o contam como obst\xe1culos.","Her\xf3is Ocultos")],g9)
-b7=A.b([A.Y("Enquanto estiver em um ladrilho com um her\xf3i Oculto, fa\xe7a um teste de Sanidade. 5+O her\xf3i perde seu token oculto. 0\u20134Nada acontece.","Revele o Oculto"),A.Y("Enquanto estiver em um tile com o Lobisomem, se ele n\xe3o estiver atordoado, mova-o um tile. Ent\xe3o, fa\xe7a um ataque de Poder com o Lobisomem.","Comunique-se com os lobos"),A.Y("Enquanto estiver na linha de vis\xe3o de um her\xf3i n\xe3o Oculto, fa\xe7a um teste de Sanidade. 5+O her\xf3i escolhe e enterra uma de suas cartas de Item ou Press\xe1gio. 0\u20134 Nada acontece.","Amaldi\xe7oe seus inimigos")],h1)
-b6=A.ai(B.m,"Voc\xea \xe9 imortal agora \u2014 voc\xea pensa. Voc\xea n\xe3o tem certeza de como dizer.",d0,"Dizem que o sangue derramado nesta casa conceder\xe1 imortalidade \xe0quele que orquestrou o sacrif\xedcio. Voc\xea n\xe3o se importaria com um pouco de imortalidade, voc\xea mesmo. Ent\xe3o, quando sua amiga, Ronnie, precisou de um lugar para se trancar para, digamos... esperar a lua cheia, voc\xea teve uma \xf3tima recomenda\xe7\xe3o para ela. E quando seus outros amigos ficaram preocupados com o desaparecimento repentino de Ronnie, voc\xea organizou uma pequena equipe de resgate. Agora voc\xea s\xf3 precisa fazer um pouco de microgerenciamento (e bruxaria) para garantir que o sangue seja realmente derramado.",A.b([A.bh(A.b([A.Y("O Lobisomem uiva. Se a Trilha Num\xe9rica n\xe3o estiver em 0, cada her\xf3i deixa de lado seus tokens Ocultos. Eles n\xe3o est\xe3o mais Ocultos.","No final do turno do monstro")],h1),"Depois da sua vez, jogue com o Lobisomem.\nLobisomem n\xe3o pode atacar um her\xf3i Oculto.",c8,f2,e8,c9,f8)],h3),43,c6,f9,"N\xfamero de trilha\nToken de Lobisomem\nTokens Ocultos \u2013Escondido Her\xf3is",d8,b5,b7,b6,"Esconde-esconde e come","Possuidor de mais Press\xe1gios")
-b7=A.b([c5,e5,e1,"Coloque {1/2/3/4} Pequenos tokens de Monstros em tiles de entrada. Esses s\xe3o seus Manequins."],g7)
-b5=A.b([A.P("Os tiles em chamas s\xe3o colocadas viradas para baixo. As pe\xe7as em chamas n\xe3o s\xe3o consideradas como tendo um simbolo ou efeitos, e contam como tendo portas em todos os quatro lados.","A casa est\xe1 pegando fogo"),A.P("Her\xf3is sofrem dano quando entram em um tile em chamas, voc\xea e seus manequins n\xe3o sofrem dano de tile em chamas.","Feitos das chamas"),A.P("O dano de todos os ataques contra voc\xea \xe9 reduzido em 1.","Feito de Pl\xe1stico")],g9)
-b5=A.ai(B.m,"Voc\xea esculpe a pe\xe7a final de material para seu desfile de moda. \u201cIsso vai servir perfeitamente. Certamente ser\xe1 o assunto da pr\xf3xima Fashion Week.\u201d",d0,"Meu, meu Deus, que gente linda voc\xea tem aqui com voc\xea. E voc\xea estava t\xe3o preocupada em n\xe3o ter material suficiente para costurar! Sua m\xe3o de pl\xe1stico treme de excita\xe7\xe3o enquanto voc\xea pega uma faca. Voc\xea v\xea um dos seus convidados pegar uma m\xe1scara, e voc\xea n\xe3o consegue deixar de admirar seu pr\xf3prio trabalho. \u201cQue artesanato\u201d, voc\xea diz. \u201cN\xe3o se preocupe, voc\xea logo estar\xe1 bonita o suficiente para usar tamb\xe9m.\u201d",A.b([A.bh(B.u,"Depois da sua vez, jogue com os manequins\n* Um Manequim que come\xe7a seu turno na linha de vis\xe3o de um her\xf3i rola apenas 2 dados para seu movimento.",e8,"Manequim",c9,e7,f8)],h3),44,c6,g2,"Pequenos tokens de monstro \u2013Manequins\nFichas de fogo",d8,b7,B.u,b5,"Uma Costura Faltando",e3)
-b7=A.ai(B.m,"Um telefone toca na casa, e \xe9 a liga\xe7\xe3o que voc\xea estava esperando. Quando voc\xea atende, uma voz familiar fala: \u201cAdor\xe1vel performance. Quem \xe9 seu elenco de apoio para o epis\xf3dio 2?\u201d",d0,'Voc\xea sabia que esta era a estreia da temporada do reality show "Carnage House" e est\xe1 determinado a ser sua mais nova estrela! Voc\xea pisca para a c\xe2mera escondida, sabendo que est\xe1 piscando para todos os seus novos f\xe3s assistindo de casa. Pode ser uma improvisa\xe7\xe3o mortal, mas seu papel \xe9 claro: cortar seu elenco de apoio \u2014 permanentemente.',B.w,45,"Voc\xea vence quando todos os her\xf3is est\xe3o mortos.N\xe3o existe algo como um colega de elenco.",e4,d5,d2,A.b([c5,e5,"Se a pe\xe7a do Arsenal n\xe3o tiver sido descoberta, procure-a na pilha de pe\xe7as e coloque-a no andar t\xe9rreo da casa.","Compre cartas do baralho de itens at\xe9 que voc\xea tenha 2 armas. Pegue essas 2 armas e coloque o resto das cartas compradas no fundo do baralho de itens. Se n\xe3o houver armas restantes no baralho de itens, pule esta etapa.","Defina a trilha num\xe9rica para{2/3/4/5}."],g7),B.u,A.b([A.P("Diga \u201cCorta!\u201d Coloque seu explorador no Arsenal. Cure todos os seus tra\xe7os. Voc\xea joga o pr\xf3ximo turno. O jogo ent\xe3o continua em sentido hor\xe1rio, come\xe7ando com o jogador \xe0 sua esquerda.",e6),A.P("Enquanto voc\xea estiver em uma pe\xe7a com um simbolo de evento, e tamb\xe9m tiver um h\xe9rio nesta pe\xe7a, adicione um dado adicional a todas as suas rolagens de dados.","Cenario Preparado"),A.P("Ao causar dano, armas n\xe3o podem ser usadas para levar as caracteristica de ninguem abaixo do critico. Isso inclui voc\xea.","Armas Cinematograficas")],g9),"Uma estreia audaciosa",c3)
-b8=A.b(["Voc\xea foi consumido pelo cabelo. Substitua sua figura pelo token do Monstro de Cabelo Gigante. Enterre todos os seus Itens e Press\xe1gios.",f0,"Encontre um de cada Token Num\xe9rico rotulado de 1 a{4/6/8/10}. Estes s\xe3o Ant\xeddotos. Embaralhe-os e coloque-os virados para baixo pela casa, dispostos como quiser.","Coloque 1 ficha de Monstro Pequeno no Hall de Entrada. Este \xe9 um Monstro de Cabelo Pequeno.","Encontre e reserve{1/2/3/4}Monstros de Cabelo Pequenos adicionais."],g7)
-b9=A.b([A.P("Substitua o explorador deles por um Monstro de Pelo Pequeno. Em vez de sua vez, jogue com os Monstros de Cabelo Pequeno",f3)],g9)
-b9=A.ai(B.m,'O cabelo rasteja e se emaranha por todas as fendas da casa, deslizando em rachaduras e crescendo no encanamento. Em poucas horas, a funda\xe7\xe3o est\xe1 coberta de cabelo molhado e mofado. "Ningu\xe9m sai", a casa sibila, "N\xf3s somos a Vingan\xe7a".',d0,"Seus amigos ficaram c\xe9ticos quando voc\xea disse a eles que algo sinistro estava crescendo dentro de voc\xea. Mas agora eles finalmente entendem, enquanto voc\xea regurgita pelos que n\xe3o s\xe3o seus. Eles vivem, rastejando por todo o seu corpo, tomando conta da sua pele e ossos. Voc\xea n\xe3o \xe9 mais voc\xea. Suas mem\xf3rias, suas necessidades, seus desejos foram todos substitu\xeddos por uma fome por carne e vingan\xe7a. Voc\xea \xe9 feito dos cabelos das v\xedtimas levadas por esta casa. Voc\xea \xe9 a Vingan\xe7a.",A.b([A.bh(B.u,"Ap\xf3s completar o turno dos Monstros de Cabelo Pequeno, jogue com o",c8,"Monstro de Cabelo Pequeno",e8,f8,c7),A.bh(B.u,d0,d0,"de Cabelo Gigante.",d0,d0,d0),A.bh(A.b([A.Y("Enquanto estiver em uma pe\xe7a com um s\xedmbolo de Press\xe1gio, troque de lugar com um Monstro de Pelo Pequeno.","Mudan\xe7a de cabelo")],h1),"O Monstro Gigante de Cabelo pode se mover entre pe\xe7as com s\xedmbolos de Press\xe1gio como se fossem adjacentes. O Monstro de Cabelo Gigante s\xf3 pode receber dano de ataques de For\xe7a.",c9,"Monstro de Cabelo Gigante",e7,"1",f8)],h3),46,"Voc\xea vence quando todos os her\xf3is se transformam em Monstros de Cabelo.",g1,"Ficha de monstro de cabelo gigante\nPequenos tokens de monstro \u2013\nPequenos Monstros de Cabelo\nFichas num\xe9ricas \u2013Ant\xeddotos",f4,b8,B.u,b9,"Cabelo Fantasma",c3)
-b8=A.ai(B.m,"O cavaleiro suspira, embainhando sua espada. Hora de descansar novamente \u2014 mas por um curto per\xedodo. Voc\xea \xe9 agora, e para sempre, seu escudeiro.",d0,'Fantasmas de outrora assombram este lugar \u2014 disso, voc\xea tem certeza. Muitos outros os procuraram, apenas para desaparecer sem deixar vest\xedgios. Enquanto voc\xea se pergunta o que aconteceu com os \xfaltimos investigadores que vieram aqui, voc\xea espia uma armadura. Um portal de repente se abre, engolindo voc\xea inteiro. Do outro lado, voc\xea fica cara a cara com um cavaleiro e a ponta de sua l\xe2mina. "Voc\xea ser\xe1 meu corpo no outro reino. Envie-os aqui e eu os acabarei." Voc\xea n\xe3o tem escolha a n\xe3o ser concordar.',B.w,47,c6,d7,"Fichas de Her\xf3i \u2013Her\xf3is Presos\nTokens de Portal \u2013Portais Dimensionais",e9,A.b([c5,e5,"Encontrar{2/3/4/5}Fichas de portal. Ent\xe3o, para cada her\xf3i, coloque uma ficha de portal na regi\xe3o daquele her\xf3i no ladrilho mais distante daquele her\xf3i.","D\xea a cada her\xf3i seu token de Her\xf3i correspondente. Um her\xf3i que tem seu token de Her\xf3i \xe9 Preso."],g7),B.u,B.am,"Um Cavaleiro para Lembrar",c3)
-c0=A.b([c5,"Cure todos os seus tra\xe7os. Ganhe 1 de Poder.",e1,"Se a pe\xe7a da Sala Sangrenta n\xe3o tiver sido descoberta, procure-a na pilha de pe\xe7as e coloque-a no andar t\xe9rreo.","Coloque a ficha do Chefe da Casa na Sala Sangrenta.","Coloque a Caveira sob a Carta de Monstro. O Chefe da Casa est\xe1 carregando-a."],g7)
-c1=A.b([A.P("Se o her\xf3i estiver carregando a Caveira, ele faz um teste de Velocidade. 5+Nada acontece. 0\u20134O her\xf3i sofre 2 de dano F\xedsico.Ai, como morde!",f5),A.P("Coloque-se no ladrilho da Sala Sangrenta e cure todas as suas caracter\xedsticas. Seu servi\xe7o n\xe3o terminou.",e6)],g9)
-c2=A.b([A.Y("Se voc\xea estiver segurando a Caveira, coloque o chefe da Casa em sua pe\xe7a. Ent\xe3o, coloque a Caveira sob a Carta de Monstro. Ele volta a vida","Reviva o Host")],h1)
-c1=A.ai(B.m,"S\xe3o cinco longos minutos enquanto o Bloody Room termina sua digest\xe3o. Enquanto voc\xea est\xe1 de p\xe9 sobre seu mestre, roupas bonitas reunidas para sua chegada, carne rasteja do ch\xe3o e das paredes da casa, tecendo ao redor dele. Sua bela forma suspira para a vida enquanto voc\xea apresenta seu terno. Ele se veste elegantemente, como todas as vezes antes, e se retira para seu quarto. Voc\xea vai ter que fazer novos amigos.",d0,"Voc\xea esperava que ele n\xe3o estivesse acordado. Afinal, voc\xea gosta bastante desse grupo, j\xe1 que voc\xeas eram os que estavam antes deles. L\xe1 estava ele, no entanto, seu mestre \u2014 um simples cr\xe2nio, e voc\xea est\xe1 ligado a ele. Ele \xe9 seu anfitri\xe3o: o Chefe da Casa, e voc\xea n\xe3o o aborrece, porque voc\xea n\xe3o \xe9 nada sem ele. Ent\xe3o, em vez disso, seus amigos s\xe3o a comida do seu mestre, alimentados pela Sala Sangrenta. Por meio dele, eles nutrem voc\xea. Ele fica contente, e voc\xea fica vivo. Ent\xe3o, para o grupo voc\xea diz \u201cadeus\u201d \u2014 seu mestre est\xe1 pronto para comer.",A.b([A.bh(B.u,"Ap\xf3s sua vez, jogue com o Chefe da Casa.\n\u2022Quando o chefe da casa \xe9 derrotado por um ataque, ele \xe9 morto em vez de atordoado. Remova-o da casa e d\xea o cr\xe2nio ao atacante.","8","Chefe da Casa",e7,e7,e7)],h3),48,c6,g1,"Token do Chefe da Casa",d2,c0,c2,c1,"N\xe3o chateie o anfitri\xe3o","Maior For\xe7a")
-c2=A.b([c5,e5,g6,"Ganho{0/1/2/2}For\xe7a e velocidade.","Coloque a ficha de Dem\xf4nio no ladrilho do Por\xe3o mais distante do Patamar do Por\xe3o.","Coloque o token de Contrato no Dem\xf4nio. Ele est\xe1 segurando o Contrato."],g7)
-c0=A.b([A.P("Se voc\xea n\xe3o estiver usando uma arma, voc\xea pode atacar usando Sanity. O perdedor recebe dano Mental.Veja \u201cBenef\xedcios Especiais\u201d, no par\xe1grafo 3, subse\xe7\xe3o \u03a9. Fichas de Sangue Usado para cumprir o contrato infernal. \u2022 Se um her\xf3i morrer ou sofrer dano F\xedsico, ele deixa cair seu token de Sangue. \u2022 Se voc\xea estiver em um tile com quaisquer marcadores de Sangue, voc\xea pode peg\xe1- los. Coloque-os no seu tabuleiro de personagem. Ap\xf3s sua vez, jogue com o Dem\xf4nio.",g4),A.P("Se voc\xea tiver o marcador de Sangue de cada her\xf3i, voc\xea realizar\xe1 o ritual com sucesso.Voc\xea venceu!","Quando voc\xea entra em um ladrilho com o Dem\xf4nio")],g9)
-c0=A.ai(B.m,"O dem\xf4nio suspira e guarda o contrato de volta em um bolso escondido. De uma forma ou de outra, o contrato foi cumprido e voc\xea est\xe1 livre de cl\xe1usula 4b.",d0,"Voc\xea nunca foi de ler termos e condi\xe7\xf5es, nem mesmo quando assinava a papelada para comprar uma casa. \u201cEstou t\xe3o feliz que voc\xea concordou\u201d, diz a corretora. Espera\u2026 como voc\xea n\xe3o notou os dentes pontudos dela antes? \u201cClaro\u201d, ela continua, \u201cse voc\xea quiser cumprir o contrato e manter sua alma dentro do seu corpo, eu preciso que voc\xea complete a cl\xe1usula 4b e me traga o sangue de todos os seus amiguinhos.\u201d",A.b([A.bh(B.u,"Se o Dem\xf4nio estiver segurando o Contrato, ele n\xe3o poder\xe1 ser atordoado.",c7,"Dem\xf4nio",c9,c9,e7)],h3),49,"Voc\xea vence quando traz o sangue de todos para o Dem\xf4nio, ou quando todos os her\xf3is est\xe3o mortos.",d9,"Fichas de Sangue\nToken de contrato\nFicha Demon\xedaca",d6,c2,B.u,c0,"Termos e Condi\xe7\xf5es",c3)
-g7=A.b(["Voc\xea foi consumido. Enterre todos os seus Itens e Press\xe1gios. Remova seu explorador da casa e substitua-o pelo token Construct.","Vire a pe\xe7a em que voc\xea est\xe1 para baixo. Essa pe\xe7a foi consumida.",g3,"Defina a trilha num\xe9rica para{2/3/3/4}. Esta \xe9 a sua velocidade."],g7)
-g9=A.b([A.P("Voc\xea pode se colocar em qualquer tile com um her\xf3i. Se fizer isso, perca o resto dos seus movimentos do turno. Voc\xea pode Consumir a casa qualquer n\xfamero de vezes por turno.","Quando voc\xea consome um tile com um s\xedmbolo Omen")],g9)
-return A.av([1,h0,9,g8,10,q,11,p,12,o,13,n,14,h2,15,l,16,k,17,m,18,i,19,j,20,h,21,f,22,e,23,d,24,c,25,g,26,a,27,b,28,a0,29,a2,30,a3,31,a4,32,a1,33,a6,34,a5,35,a8,36,a7,37,a9,38,b0,39,b1,40,b3,41,b4,42,b2,43,b6,44,b5,45,b7,46,b9,47,b8,48,c1,49,c0,50,A.ai(B.m,"Voc\xea libera uma toxina gasosa e malcheirosa ao terminar de consumir todas as criaturas vivas da casa. Voc\xea estica seus tent\xe1culos carnudos dentro de sua armadura, antes de se encolher de volta para sua casa como um caranguejo eremita. Foi um dia de trabalho duro. BETRAYAL AT HOUSE ON THE HILL, AVALON HILL e HASBRO e todas as marcas registradas e logotipos relacionados s\xe3o marcas registradas da Hasbro, Inc. \xa9 2022 Hasbro. Hasbro, Pawtucket, RI 02861-1059 EUA. Fabricado por: Hasbro SA, Rue Emile-Bo\xe9chat 31, 2800 Del\xe9mont, CH.Representado por: Hasbro, De Entree 240, 1101 EE Amsterdam, NL. GBHasbro UK Ltd., PO Box 43, Newport, NP19 4YH, Reino Unido. Tel.: 00800 22427276. Contato com o consumidor: EUA/Canad\xe1: Hasbro Games, Consumer Affairs Dept., PO Box 200, Pawtucket, RI 02861-1059 EUA. TEL: 1-800-255-5516. Atendimento ao consumidor na Austr\xe1lia: https://consumercare.hasbro.com/en-au Atendimento ao consumidor na Nova Zel\xe2ndia: https://consumercare.hasbro.com/en-nz Reino Unido: consumer_affairs@hasbro.co.uk Pais: AvalonHill.com",d0,"Por dias, voc\xea e seus amigos t\xeam tido o mesmo pesadelo sobre esta mans\xe3o, sonhos sobre uma mancha de carne que consome TUDO. Voc\xea n\xe3o acreditou at\xe9 ver aquela velha armadura. Quando voc\xea se inclinou para olhar mais de perto, tent\xe1culos carnudos explodiram da placa peitoral, consumindo voc\xea em um instante.",A.b([A.bh(A.b([A.Y("\u2022 Se voc\xea estiver em um ladrilho com um cad\xe1ver, voc\xea pode remover esse cad\xe1ver da casa e enterrar os itens e itens desse explorador. Press\xe1gios. Mova a Trilha Num\xe9rica para cima em 1.Voc\xea est\xe1 ficando mais r\xe1pido. V\xe1rias vezes por turno, voc\xea pode Consuma a casa Enquanto estiver em um ladrilho que n\xe3o seja de pouso e que n\xe3o tenha sido consumido, vire aquela sala para baixo. Aquele tile foi consumido. Se todos os tiles que n\xe3o sejam de aterrissagem foram consumidos,voc\xea venceu!","Consumir Carne")],h1),"A Velocidade do Construto \xe9 igual ao n\xfamero na Trilha Num\xe9rica. (Lembre- se de rolar a cada turno para determinar seu movimento.) O Construto n\xe3o pode ser atordoado.",c9,"O Construto",c9,d0,"8")],h3),50,"Voc\xea vence quando todos os her\xf3is estiverem mortos ou quando voc\xea tiver consumido a casa inteira.",d7,u.z,f4,g7,B.u,g9,"O sabor da carne e do metal",c3)],t.S,A.ag("fo"))})
+g4=A.b([A.L("Se voc\xea vencer, poder\xe1 roubar o Contrato do Dem\xf4nio (se ele o tiver) em vez de causar dano.","Quando voc\xea ataca o dem\xf4nio com For\xe7a")],g4)
+return A.av([1,g5,2,q,3,p,4,m,5,l,6,g3,7,k,8,i,13,o,14,j,15,g,16,f,17,h,18,d,19,e,20,b,21,a,22,c,23,a0,24,a2,25,a1,26,a3,27,a5,28,a6,29,a4,30,a8,31,a9,32,b0,33,b1,34,b2,35,b3,36,b4,37,b5,38,b6,39,b7,40,b8,41,b9,42,c0,43,c1,44,c2,45,c3,46,c4,47,a7,48,c5,49,A.ai(B.m,"Voc\xea est\xe1 vivo, mas tamb\xe9m n\xe3o encontrou uma casa para comprar. Obviamente, o primeiro \xe9 mais importante \u2014 voc\xea realmente gosta de n\xe3o ser assassinado por um dem\xf4nio, mas ainda assim... voc\xea pensou que esta casa era a certa. 58",d1,'A corretora informa que sua oferta n\xe3o foi aceita. "Cheguei a um acordo bastante satisfat\xf3rio com um novo comprador", ela diz, e pela primeira vez, voc\xea percebe como seus dentes parecem afiados. "O contrato j\xe1 foi assinado, e h\xe1 uma certa pequena cl\xe1usula que me deixa particularmente animada. Ah, e n\xe3o se incomode em tentar as portas \u2014 elas j\xe1 est\xe3o trancadas." Ela se transforma em fuma\xe7a acre e afunda nas t\xe1buas do assoalho.',B.w,49,"Voc\xea vence quando queima o Contrato. \u2022 Roube o Contrato do Dem\xf4nio. \u2022 Queime o Contrato.",e6,"Token de Contrato\nFicha Demon\xedaca\nQuartos com Fogo:\nSala da Fornalha \u2013Por\xe3o\nSala Ritual \u2013Por\xe3o\nCozinha \u2013T\xe9rreo\nLaborat\xf3rio \u2013T\xe9rreo\nSala Carbonizada \u2013T\xe9rreo/Piso Superior",f3,n,A.b([A.Y("Enquanto voc\xea tem o Contrato, fa\xe7a um teste de Conhecimento. \u2022 Se voc\xea estiver em um sala com lareira,adicione 4 ao resultado do seu teste. 7+Voc\xea queima o contrato.Voc\xea venceu! 4\u20136Nada acontece. 0\u20133Sofra 1 de dano F\xedsico.Ai! Queima! Fichas de Sangue Voc\xea prefere isso dentro do seu corpo. \u2022 Fichas de Sangue n\xe3o podem ser trocadas, e um her\xf3i n\xe3o pode pegar uma ficha de Sangue que tenha sido derrubada. \u2022 Se voc\xea morrer ou sofrer dano F\xedsico, coloque sua ficha de Sangue em sua pe\xe7a. \u2022 Se voc\xea n\xe3o tiver seu token de Sangue no final do seu turno, receba 1 dado de dano Mental.","Queime o contrato"),A.Y("Se voc\xea tiver seu marcador de Sangue, receba 1 dado de dano Mental e ganhe 1 de For\xe7a.","Realizar Magia de Sangue")],g6),g4,"Termos e Condi\xe7\xf5es",c6),50,A.ai(B.m,"Voc\xea olha para tr\xe1s enquanto a casa desaba, explos\xf5es estranhas balan\xe7am sua estrutura. Nem todos voc\xeas conseguiram sair, mas pelo menos aquela coisa se foi para sempre. Voc\xea espera.",d1,"Rumores locais dizem que esta mans\xe3o j\xe1 foi invadida por algum tipo de carne viva e crescente. Todos voc\xeas presumiram que era apenas uma lenda urbana, at\xe9 que todos come\xe7aram a ter os mesmos pesadelos recorrentes que os levaram at\xe9 a casa. Voc\xea se assusta ao ouvir seu amigo come\xe7ar a gritar de algum lugar da casa, e quando os gritos param abruptamente, os pelos da sua nuca se arrepiam. Voc\xea vai ter que destruir essa coisa antes que ela pegue voc\xea tamb\xe9m.",B.w,50,"Voc\xea vence quando destr\xf3i a casa. \u2022 Coloque explosivos para preparar a casa para explodir.",f8,u.z,d3,A.b(["Deixar de lado(3/4/4/5)Fichas de armadilha. S\xe3o explosivos.",c9],g2),A.b([A.Y("Enquanto estiver em qualquer tile, enterre um Item ou Press\xe1gio. Ent\xe3o, fa\xe7a um teste de Velocidade ou Conhecimento. 6+ Coloque um Explosivo em seu tile. Se n\xe3o houver mais Explosivos, voc\xea pode mover um Explosivo j\xe1 colocado para seu tile. N\xe3o convencional, mas louco o suficiente para funcionar. 0\u20135Nada acontece. N\xe3o coloque um Explosivo.Voc\xea destr\xf3i a armadilha antes de ser definido. Quartos Consumidos O Construto est\xe1 consumindo salas. As pe\xe7as de sala consumidas s\xe3o viradas para baixo. Elas s\xe3o consideradas sem s\xedmbolos ou texto, e t\xeam portas em todos os 4 lados. As pe\xe7as de aterrissagem n\xe3o podem ser consumidas. Explosivos permanecem nas salas consumidas quando s\xe3o viradas. Voc\xea pode colocar Explosivos nas salas consumidas. No final do seu turno Se todos os explosivos foram colocados e houver pelo menos um explosivo em cada regi\xe3o,voc\xea venceu!","Definir explosivo improvisado")],g6),B.aO,"O sabor da carne e do metal",c6)],t.S,A.ag("fo"))})
+s($,"aPN","aqG",()=>{var q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,c0,c1,c2,c3="Revelador de Assombra\xe7\xe3o",c4="Nenhum",c5="Seu explorador ainda est\xe1 no jogo. Voc\xea \xe9 o traidor.",c6="Voc\xea vence quando todos os her\xf3is est\xe3o mortos.",c7="5",c8="3",c9="4",d0=null,d1="Livre para todos",d2="Um convite misterioso",d3="\xcddolo",d4=u.n,d5="N\xfamero de trilha",d6="\xc0 venda",d7="Armadura",d8="Um Estranho Desaparecimento",d9="Punhal",e0="S\xedmbolo Sagrado",e1="Coloque a Carta de Monstro \xe0 sua esquerda. Os monstros jogar\xe3o depois do seu turno.",e2="No final do seu turno",e3="Esquerda do Revelador da Assombra\xe7\xe3o",e4="Livro",e5="Cure todos os seus tra\xe7os.",e6="Quando voc\xea morre",e7="6",e8="2",e9="Investigadores Paranormais",f0="Coloque a Carta de Monstro \xe0 sua esquerda. Os monstros jogar\xe3o no lugar do seu.",f1="Fantasma",f2="Lobisomem",f3="Quando um her\xf3i morre",f4="Amaldi\xe7oado!",f5="No final do turno de cada her\xf3i",f6="Anel",f7="*",f8="7",f9="Cachorro",g0="Quando voc\xea ataca um her\xf3i com For\xe7a",g1="Se vencer, voc\xea pode roubar um Item ou Press\xe1gio daquele her\xf3i em vez de causar dano.",g2="Cr\xe2nio",g3="M\xe1scara",g4="Coloque a Carta de Monstro \xe0 sua esquerda. O monstro jogar\xe1 no lugar do seu.",g5="Quando voc\xea ataca um her\xf3i",g6="Outra Dimens\xe3o",g7="Coloque a Carta de Monstro \xe0 sua esquerda. O monstro jogar\xe1 depois do seu turno.",g8=t.s,g9=A.b([c5,"Coloque o Monster Card \xe0 sua esquerda. \xc0s vezes, o monstro joga seu turno no lugar do seu.","Cure todos os seus tra\xe7os. Ganhe{1/1/2/2}em ambas as suas caracter\xedsticas f\xedsicas."],g8),h0=t.N8,h1=A.b([A.L("Coloque o espirito do jack no ladrinho com um simbolo de Omen que esteja mais distante do seu cad\xe1ver. Repita esse processo toda vez que morrer.","Se Voc\xea Morrer")],h0),h2=t.kw,h3=A.b([A.Y("Se voc\xea ainda n\xe3o atacou e n\xe3o tem linha de vis\xe3o para um her\xf3i, voc\xea pode colocar seu explorador em qualquer pe\xe7a do andar superior ou t\xe9rreo que n\xe3o esteja na linha de vis\xe3o de um her\xf3i.","Perseguir a Presa")],h2),h4=t.rS
+h1=A.ai(B.m,"Assobie uma melodia alegre. Seus amigos foram todos cortados em peda\xe7os, e voc\xea pode novamente se instalar confortavelmente em sua antiga casa.",d0,"Enquanto voc\xea explorava a casa, seus companheiros falaram sobre Crimson Jack, o not\xf3rio serial killer que foi derrubado nesta mesma mans\xe3o h\xe1 vinte anos. Eles sabiam que o corpo de Jack havia sido morto, mas n\xe3o tinham ideia de que seu esp\xedrito ainda permanecia neste antigo lugar. Voc\xea mal consegue suprimir seu sorriso assassino ao perceber a verdade: Jack est\xe1 de volta.",A.b([A.bh(A.b([A.Y("Se o Esp\xedrito de Jack estiver no mesmo ladrilho que o cad\xe1ver do seu explorador, cure todos os seus tra\xe7os. Voc\xea controla seu explorador novamente. Remova o Esp\xedrito de Jack da casa.","No in\xedcio do turno do monstro")],h2),"O Esp\xedrito de Jack pode se mover entre pe\xe7as adjacentes n\xe3o conectadas por portas. O Esp\xedrito de Jack n\xe3o pode ser atordoado.",c9,"Esp\xedrito de Jack",c9,c8,c7)],h4),1,c6,"\u201cUm toque de carmesim\u201d",u.G,c4,g9,h3,h1,u.L,c3)
+h3=A.b(["Defina a Faixa Num\xe9rica como 1.",d4],g8)
+g9=A.b([A.L("Se voc\xea estiver segurando o \xcddolo, mova a Trilha Num\xe9rica para cima em 1. A foto muda e se transforma. H\xe1 um rosto presun\xe7oso a menos olhando para voc\xea.","Quando voc\xea mata outro explorador"),A.L("Se voc\xea estiver segurando o \xcddolo, adicione o valor da Trilha Num\xe9rica ao seu teste.","Na sua vez, quando voc\xea faz um ataque de For\xe7a"),A.L("Se voc\xea vencer, voc\xea pode roubar o \xcddolo em vez de causar dano. Se voc\xea perder, receba dano normalmente.","Quando voc\xea faz um ataque de For\xe7a contra o portador do \xcddolo"),A.L("Voc\xea pode enterrar qualquer n\xfamero de Itens que estiver segurando. Para cada Item que voc\xea enterrar, adicione 1 ao resultado da sua jogada de ataque.","Quando voc\xea faz um ataque desarmado de For\xe7a contra qualquer um")],h0)
+g9=A.ai(B.cn,"O rel\xf3gio bate meia-noite, e enquanto voc\xea anda pelo seu campo de batalha de Ano Novo, voc\xea v\xea a foto ca\xedda no ch\xe3o, ainda segurada pelo \xeddolo, mas a imagem mudou. Agora ela mostra apenas voc\xea, sorrindo, enquanto voc\xea est\xe1 de p\xe9 sobre os restos mortais de seus amigos.",d0,"\xc0 medida que a noite avan\xe7a inexoravelmente em dire\xe7\xe3o ao Ano Novo, voc\xea e seus amigos come\xe7aram a perceber o quanto se distanciaram uns dos outros. Ao olhar para uma foto do seu grupo, tudo o que voc\xea consegue ver s\xe3o os mesmos sorrisos vazios que todos os outros continuaram a usar durante a noite. Em uma prateleira empoeirada, voc\xea encontra um \xeddolo com um slot que se encaixa perfeitamente na foto. Voc\xea \xe9 compelido a colocar a foto no slot e, conforme ela desliza para o lugar, voc\xea percebe que gostaria muito mais do \xeddolo se ele fosse manchado de vermelho.",B.w,9,"Voc\xea vence quando for o \xfaltimo explorador de p\xe9.",d3,d5,d2,h3,A.b([A.Y("Enquanto estiver em um ladrilho que tenha um s\xedmbolo de Item, fa\xe7a um teste de Conhecimento. 5+Compre a carta do topo do baralho de itens. 0\u20134Nada acontece.","Pesquise nas prateleiras")],h2),g9,"Esquecer o passado",d1)
+h3=A.b(["Se o Cofre n\xe3o estiver na casa, o revelador da assombra\xe7\xe3o procura-o na pilha de pe\xe7as e o coloca no T\xe9rreo, o mais longe poss\xedvel do Hall de Entrada.","Monte dois conjuntos de fichas num\xe9ricas numeradas entre 1 e{2/3/4/5}. (Exemplo: em um jogo de 4 jogadores, pegue dois 1, dois 2 e dois 3.) Esses s\xe3o os Tesouros.","Coloque uma das fichas de Tesouro de maior n\xfamero no ladrilho do Cofre. Embaralhe o resto com a face para baixo e coloque-as aleatoriamente em ladrilhos que tenham s\xedmbolos de Omen, distribu\xeddos da forma mais uniforme poss\xedvel entre as regi\xf5es.","Defina a Faixa Num\xe9rica como 4.",d4],g8)
+q=A.b([A.L("\u2022 Mantenha quaisquer fichas de Tesouro que voc\xea pegar no seu tabuleiro de personagem, viradas para baixo. Voc\xea pode olhar suas fichas a qualquer momento. \u2022 Cada ficha de Tesouro tem valor para o Djinn. \u2022 Voc\xea pode saquear tesouros de cad\xe1veres, assim como itens e press\xe1gios. (Lembre-se, voc\xea s\xf3 pode saquear uma coisa por cad\xe1ver por turno.)","Fichas de tesouro"),A.L("Se vencer, voc\xea pode roubar um token de Tesouro aleat\xf3rio deles (se eles tiverem um) em vez de causar dano. Se voc\xea perder, voc\xea recebe dano normalmente.","Quando voc\xea faz um ataque de Poder contra outro explorador"),A.L("Mova a Faixa Num\xe9rica para baixo em 1. Uma vela se apaga. Quando a Trilha Num\xe9rica chega a 0, os her\xf3is devem apresentar suas ofertas.",u.d),A.L("Cada jogador soma o valor total de seus tokens de Tesouro. Se voc\xea estiver nas Escadas do T\xe9rreo, adicione 2 ao seu total. Ent\xe3o, cada jogador anuncia sua pontua\xe7\xe3o. \u2022 Se voc\xea for o jogador com a pontua\xe7\xe3o mais alta, voc\xea venceu! (Em caso de empate, todos os jogadores empatados dividem a vit\xf3ria.)","Quando voc\xea apresenta sua oferta")],h0)
+q=A.ai(B.cn,'A corretora revela seu verdadeiro eu, transformando-se em um Djinn \u2014 o mais caprichoso e ganancioso dos esp\xedritos. Ela mal olha para os tesouros que voc\xea ofereceu, em vez disso, olha para a destrui\xe7\xe3o que voc\xea causou. "Isso... sim, eu gosto disso." Ela fixa os olhos em voc\xea e pergunta: "Agora, o que voc\xea mais deseja?"','O Djinn olha friamente para voc\xea. "Voc\xea sabia que uma oferenda indigna me deixaria infeliz, e ainda assim \xe9 isso que voc\xea traz? Hmph. Mas voc\xea ainda pode ser \xfatil para mim." Ela estala os dedos, e voc\xea se sente puxado para dentro de uma lamparina a \xf3leo, que seu esp\xedrito acender\xe1 at\xe9 que seja queimada at\xe9 o esquecimento.',"\u201cO que voc\xea sempre quis?\u201d, pergunta a corretora, olhando intensamente para voc\xea com seus olhos de cores estranhas. \u201cA for\xe7a para esmagar um carro entre suas m\xe3os? A habilidade de fazer as pessoas fazerem coisas apenas com uma palavra?\u201d O grupo compartilha olhares confusos; ela nem sequer lhe disse quantos banheiros o lugar tem. \u201cEsta casa tem muitas riquezas escondidas dentro. Quem encontrar e me trouxer mais, eu recompensarei com os poderes de um deus.\u201d De repente, ela aparece em uma armadura radiante como um anjo antigo, mas voc\xea duvida que seja isso que ela seja. Enquanto quatro lamparinas a \xf3leo antigas e ornamentadas ganham vida ao longo da escada ao redor dela, ela diz, \u201cVoc\xea tem at\xe9 a quarta lamparina se apagar. Se eu n\xe3o tiver uma oferta adequada at\xe9 l\xe1, voc\xea perder\xe1 sua chance, e\u2014\u201d seus olhos brilham cruelmente na luz bruxuleante da lamparina, \u201ceu ficarei muito infeliz.\u201d Voc\xea olha ao redor da casa com novos olhos, focando em qualquer coisa que possa ser valiosa. Os poderes de um deus\u2026 voc\xea gosta bastante do som disso.",B.w,10,"Voc\xea ganha se o corretor aceitar sua oferta!",d7,"N\xfamero de trilha\nFichas num\xe9ricas \u2013 Tesouro",d6,h3,A.b([A.Y("Enquanto estiver em uma pe\xe7a com uma ficha de Tesouro, fa\xe7a um teste de Conhecimento. 4+ Pegue um Tesouro e coloque-o virado para baixo no seu tabuleiro de personagem. 1\u20133 Voc\xea pode olhar para um Tesouro virado para baixo nesta pe\xe7a. 0 Nada acontece.","Busca por Tesouro")],h2),q,"Uma oferta s\xe9ria",d1)
+h3=A.b(["Deixar de lado {2/3/4/5} Fichas de comida. Deixe o resto na caixa.","Coloque o Monster Card \xe0 esquerda do revelador de assombra\xe7\xe3o. As Bruxas comer\xe3o os exploradores no final do turno daquele jogador.",d4],g8)
+p=A.b([A.L("Comida para as bruxas. \u2022 Voc\xea pode ter mais de 1 ficha de Comida. \u2022 A comida pode ser negociada, e voc\xea pode saque\xe1-la de um cad\xe1ver em vez de pegar um item ou press\xe1gio. (Lembre-se, voc\xea s\xf3 pode saquear uma coisa por cad\xe1ver por turno.)","Fichas de comida"),A.L("Se vencer, voc\xea pode roubar uma ficha de Comida daquele explorador (se ele tiver alguma) em vez de causar dano.","Quando voc\xea ataca um explorador com Poder"),A.L("Se todos os marcadores de comida forem encontrados, qualquer explorador sem Comida ser\xe1 oferecido em sacrif\xedcio \xe0s Bruxas. Esses exploradores est\xe3o mortos. \u2022 Se mais de um explorador ainda estiver vivo, remova os marcadores de Comida do jogo at\xe9 que o n\xfamero de marcadores dispon\xedveis seja um a menos que o n\xfamero de exploradores vivos. \u2022 Se voc\xea for o \xfaltimo explorador vivo, voc\xea venceu!","Depois da vez do revelador da assombra\xe7\xe3o")],h0)
+p=A.ai(B.cn,"Voc\xea pula um pouco ao sair de casa. Voc\xea nunca pensou antes sobre o qu\xe3o bom \xe9 n\xe3o ser cozido em uma ca\xe7arola.",d0,"\u201cQue peda\xe7o gostoso\u201d, dizem as bruxas, olhando para voc\xea. \u201cEstamos com muita fome. N\xe3o comemos nada desde a semana passada.\u201d Voc\xea engole em seco ao pensar em seu amigo desaparecido, cuja trilha de migalhas voc\xea seguiu at\xe9 esta casa \u2014 e cujo destino agora se tornou claro. \u201cTenho certeza de que posso encontrar comida para voc\xeas nesta casa\u201d, voc\xea oferece, sua voz vacilante. Uma das bruxas funga, \u201cSim, acho que isso serviria.\u201d Outra bruxa sorri, \u201cMas s\xf3 deixaremos uma de voc\xeas ir. Precisamos de um pouco de carne para acompanhar o jantar.\u201d Voc\xea recua, determinada a ser a primeira a levar algo de volta para as bruxas. Voc\xea n\xe3o vai ser a que ser\xe1 cozida.",B.w,11,"Voc\xea vence quando \xe9 a \xfaltima pessoa viva. \u2022 Encontre comida. \u2022 Ofere\xe7a \xe0s Bruxas.",d9,"Fichas de Comida\nAzulejos com Comida:\nCozinha \u2013 T\xe9rreo\nDespensa \u2013 T\xe9rreo\nSala de Jantar \u2013 T\xe9rreo\nSala do P\xe2nico \u2013 Por\xe3o\nCemit\xe9rio \u2013 T\xe9rreo",d8,h3,A.b([A.Y("Enquanto estiver em qualquer ladrilho, fa\xe7a um teste de Conhecimento. \u2022 Se voc\xea estiver em um azulejo com comida, adicione 2 ao resultado do seu teste. 6+ Pegue uma ficha de Comida. 0\u20135 Nada acontece.","Vasculhar em busca de comida")],h2),p,"N\xe3o se deixe cozinhar",d1)
+h3=A.b(["Se ningu\xe9m tiver a carta de Item Amuleto Estranho, encontre-a no baralho de Itens e entregue-a ao revelador da assombra\xe7\xe3o.","Coloque a Carta de Monstro \xe0 esquerda do revelador da assombra\xe7\xe3o. Os monstros ter\xe3o seu turno ap\xf3s o revelador da assombra\xe7\xe3o.","Coloque uma ficha de M\xe3o de Troll no Hall de Entrada e outra na entrada do Por\xe3o.",d4],g8)
+o=A.b([A.L("Se vencer, voc\xea poder\xe1 roubar um Item ou Press\xe1gio daquele explorador em vez de causar dano a ele.","Quando voc\xea ataca outro explorador com For\xe7a"),A.L("As Troll Hands s\xe3o controladas pelo jogador que tem o Strange Amulet. Se ningu\xe9m estiver segurando o Strange Amulet no momento, pule o turno do monstro.","Ap\xf3s a vez do revelador da assombra\xe7\xe3o, as M\xe3os do Troll entram em a\xe7\xe3o.")],h0)
+o=A.ai(B.cn,"Os restos de polpa dos seus amigos desaparecem rapidamente nas m\xe3os do troll. O estrondo diminui, mas voc\xea tem a sensa\xe7\xe3o de que n\xe3o vai durar muito. Parece que voc\xea vai precisar encontrar mais comida para seu amigo, e logo. Voc\xea acha que vai cham\xe1-lo de Wilfred.",d0,"Com um grande estrondo, a casa inteira se move e grandes bra\xe7os atravessam o ch\xe3o e as paredes. A casa est\xe1 nas costas de um troll gigante! Voc\xea percebe um amuleto estranho que zumbe sempre que as m\xe3os se movem, indicando uma conex\xe3o entre ele e o troll, que est\xe1 ansioso para servir, mas com fome. Voc\xea v\xea os olhares nos olhos de seus amigos. Voc\xea sabe o que deve fazer para sobreviver.",A.b([A.bh(B.u,"As M\xe3os de Troll n\xe3o podem ser atordoadas. Se ambas as M\xe3os de Troll estiverem na mesma pe\xe7a, elas podem fazer um \xfanico ataque de For\xe7a 8 em vez de fazer dois ataques separados.",c9,"M\xe3os de Troll",c9,c8,c7)],h4),12,"Voc\xea vence se estiver segurando o Amuleto Estranho e todos os outros exploradores estiverem mortos.","\u201cA casa est\xe1 com fome\u201d","2 fichas de m\xe3o de troll",c4,h3,B.u,o,"M\xe3os que ajudam",d1)
+h3=A.b([c5,e1,"Defina a Faixa Num\xe9rica como 3. Isso representa seu Progresso Ritual.","Se as pe\xe7as da Sala de Rituais e do Abismo n\xe3o tiverem sido descobertas, encontre-as na pilha de pe\xe7as e coloque-as no Por\xe3o, seguindo as regras normais de coloca\xe7\xe3o de pe\xe7as.","Coloque {3/4/5/6} Pequenos marcadores de monstros na Sala de Rituais. Esses s\xe3o Cultistas.","Cure todos os seus tra\xe7os. Ganhe 1 de For\xe7a e 1 de Velocidade."],g8)
+n=A.b([A.L("Voc\xea pode pegar e carregar cadaveres de cultista e exploradores. Quando fizer isso, coloque a figura (ou ficha) deles no seu tabuleiro de personagem. Voc\xea s\xf3 pode carregar um cad\xe1ver por vez.","Fardo Pesado"),A.L("Cada her\xf3i sofre 1 de dano geral.Ningu\xe9m pode ignorar o Seu chamado",e2)],h0)
+m=A.b([A.Y("Enquanto estiver no bloco do Abismo, se voc\xea estiver carregando um cad\xe1ver, devolva-o \xe0 caixa do jogo e fa\xe7a um teste de Sanidade.O corpo cai no vazio. Tudo por Ela. 7+ Mova a trilha num\xe9rica para baixo em 1. Se chegar a 0,voc\xea venceu! Ela desperta! 0\u20136Ganhe 2 de Sanidade.Hmm, isso n\xe3o funcionou. Tente outro.","Alimente-a")],h2)
+n=A.ai(B.m,"O ch\xe3o treme, e as paredes tremem. A casa come\xe7a a ruir ao seu redor enquanto o abismo se abre em um abismo. \xc9 hora. Ela est\xe1 aqui. Finalmente, Ela renasce.",d0,"O plano era bem simples: tudo o que voc\xea precisava fazer era fingir o desaparecimento do seu amigo e colega membro da Ordem, convencer seus amigos n\xe3o membros em comum a irem procur\xe1-los na casa, instalar parafusos de travamento autom\xe1tico para impedir a fuga deles e, ent\xe3o, assassin\xe1-los ritualmente. E tudo isso tinha que acontecer nesta casa: o mais sagrado dos solos, covil de Aquela que Dorme Abaixo. Claro, seus amigos decidiram lutar em vez de se deixarem sacrificar em um ritual para o bem maior. Que inconveniente. Voc\xea ter\xe1 que se esfor\xe7ar muito para isso.",A.b([A.bh(B.u,"Ap\xf3s sua vez, jogue com os cultistas.\nCultistas s\xe3o mortos em vez de atordoados. Quando um Cultista \xe9 morto, vire-o para o lado atordoado. Agora ele \xe9 um cad\xe1ver que pode ser sacrificado para |Aquela Que Dorme Abaixo|.",c8,"Cultistas",c8,c8,c7)],h4),13,"Voc\xea vence quando consegue acordar |Aquela que Dorme Abaixo|, ou quando todos os her\xf3is est\xe3o mortos.",e0,"N\xfamero de trilha\nPequenos tokens de monstro \u2013 Cultistas\n8 Fichas de Runas \u2013 Conhecimento Ritual",d8,h3,m,n,"Solo Sagrado",c3)
+m=A.b([c5,e1,e5,"Encontrar{1/2/3/4}Fichas de Monstro Pequeno. Elas representam M\xf3veis Animados. Coloque uma ficha de M\xf3veis Animados em cada pe\xe7a com um her\xf3i. Se uma pe\xe7a tiver mais de um her\xf3i, coloque uma ficha para cada her\xf3i naquela pe\xe7a. N\xe3o coloque uma ficha para o her\xf3i que tem o Livro."],g8)
+h3=A.b([A.L("Se houver pelo menos uma ficha de Mob\xedlia Animada no tabuleiro, cure todos os seus tra\xe7os e coloque-se em qualquer pe\xe7a com uma delas. Devolva a ficha para a caixa. Se estiver segurando o Livro, entregue-o ao her\xf3i mais pr\xf3ximo. Se toda a Mob\xedlia Animada sumir, voc\xea continua morto.Farpas voam para todos os lados",e6),A.L("Cada her\xf3i no ladrilho sofre 1 de dano F\xedsico.","Farpas voam para todos os lados quando voc\xea sai de um m\xf3vel")],h0)
+l=A.b([A.Y("\u2022 Se voc\xea estiver em umazulejo onde h\xe1 fogo,jogue o livro no fogo. Voc\xea venceu! Depois da sua vez, experimente os M\xf3veis Animados.","Destrua o livro de feiti\xe7os")],h2)
+h3=A.ai(B.m,"A casa finalmente \xe9 sua, junto com tudo que h\xe1 nela. Tudo, isto \xe9, exceto aquele maldito livro de feiti\xe7os. Agora que ele foi destru\xeddo, voc\xea finalmente pode descansar. Contente, voc\xea se enrola em uma cadeira estofada que costumava ser de um de seus amigos.",d0,"A\xed est\xe1, finalmente! O maldito livro de feiti\xe7os que lhe escapou por tanto tempo. Voc\xea o agarra, e ele desaparece em uma nuvem de fuma\xe7a roxa e cintilante! De alguma forma, as bruxas que voc\xea eliminou encontraram uma maneira de prolongar o inevit\xe1vel, mas voc\xea pegou esta casa \u2014 e sua magia \u2014 e pretende mant\xea-la! Mas, j\xe1 que est\xe1 cuidando deste pequeno inc\xf4modo, voc\xea pode muito bem adquirir alguns m\xf3veis novos...",A.b([A.bh(B.u,"\xc9 s\xf3 mob\xedlia.",e8,"M\xf3veis Animados",c9,c8,e7)],h4),14,"Voc\xea vence quando destr\xf3i o Livro ou quando todos os her\xf3is est\xe3o mortos.",e4,"N\xfamero de trilha\nPequenos tokens de monstro \u2013 Mob\xedlia Animada\nAzulejos onde h\xe1 fogo:\nCozinha \u2013 T\xe9rreo\nSala da Fornalha \u2013 Por\xe3o\nLaborat\xf3rio \u2013 T\xe9rreo",d6,m,l,h3,"Perman\xeancia do objeto",e3)
+l=A.b(["Seu explorador morreu. Agora voc\xea controla os monstros.\nFantasmas, lobisomens e vampiros, meu Deus!",f0,"Encontre os tokens de monstro grande para o fantasma, vampiro e lobisomem. Selecione{1/2/2/3}desses tokens aleatoriamente e coloque-os no ladrilho onde seu explorador morreu. Retorne quaisquer tokens n\xe3o selecionados para a caixa do jogo."],g8)
+m=A.b([A.L("Em vez de sua vez, jogue com cada um dos monstros presentes na casa. Os monstros podem fazer seus turnos em qualquer ordem. Role a velocidade individualmente para cada monstro","Monstros")],h0)
+m=A.ai(B.m,"Voc\xea despacha o \xfaltimo dos invasores da casa. Finalmente seguro, voc\xea vira o olhar para fora da janela e percebe a exibi\xe7\xe3o espalhafatosa do gramado do novo vizinho. Qu\xe3o verdadeiramente monstruoso. Voc\xea precisar\xe1 levar isso para a associa\xe7\xe3o de moradores.",d0,'A Associa\xe7\xe3o de Propriet\xe1rios que o contratou foi bem clara em sua diretriz: despeje as for\xe7as malignas que t\xeam assombrado esta propriedade. Infelizmente, o problema pode n\xe3o ser uma entidade \xfanica. Ainda mais lament\xe1vel \xe9 que voc\xea foi escolhido como a primeira v\xedtima deles. Eles fazem um trabalho r\xe1pido com voc\xea antes de voltarem sua aten\xe7\xe3o para os outros "invasores de casa".',A.b([A.bh(A.b([A.Y("Fa\xe7a um ataque de Sanidade contra um her\xf3i em seu tile. Ent\xe3o, role a Velocidade do her\xf3i e mova-o at\xe9 essa quantidade de tiles em qualquer dire\xe7\xe3o.","Diga \u201cBu!\u201d")],h2),"O Fantasma pode se mover entre tiles adjacentes n\xe3o conectados por portas. O Fantasma n\xe3o pode ser atordoado.",c7,f1,c7,c9,c9),A.bh(A.b([A.Y("Fa\xe7a um ataque de For\xe7a contra um her\xf3i em seu tile. Para cada ficha de Sangue que voc\xea tiver, adicione 1 ao resultado da sua jogada. Ent\xe3o, pegue uma ficha de Sangue. Se voc\xea ficar sem fichas de Sangue, voc\xea pode usar qualquer outra ficha como substituta.","Mordida!")],h2),"",c7,"Vampiro",c7,c9,c7),A.bh(A.b([A.Y("Fa\xe7a um ataque de For\xe7a contra um her\xf3i em seu tile. Voc\xea pode repetir esse ataque para cada her\xf3i em seu tile.","Uivo!")],h2),"",c9,f2,c9,c9,e7)],h4),15,c6,d9,"Ficha Fantasma\nFicha de Vampiro\nToken de Lobisomem\n3 Fichas de Sangue",e9,l,B.u,m,"De monstros e caos",c3)
+l=A.b([c5,e1,e5,"Encontre um de cada Token Num\xe9rico rotulado de 1 a{4/5/6/7}. Estes s\xe3o Restos Humanos. O token rotulado como \u201c1\u201d representa os Restos do Zelador.","Coloque as fichas de Restos viradas para baixo pela casa, mantendo seus n\xfameros em segredo dos her\xf3is. (Voc\xea pode olhar para elas.) Voc\xea deve colocar pelo menos uma ficha de Restos em cada regi\xe3o da casa. N\xe3o coloque mais de uma ficha por pe\xe7a.","Coloque 2 fichas de Monstro Pequeno em qualquer pe\xe7a sem um her\xf3i. Esses s\xe3o Fantasmas Furiosos. Separe{2/3/4/5}mais fichas do Fantasma Furioso."],g8)
+k=A.b([A.L("Coloque uma ficha de Fantasma na pe\xe7a com sua figura.",e6),A.L("Coloque uma ficha de Fantasma no ladrilho com a figura dele.",f3)],h0)
+j=A.b([A.Y("Voc\xea pode mover para uma pe\xe7a com um her\xf3i desde que a pe\xe7a dele esteja adjascente a sua pe\xe7a","Quebrar parede")],h2)
+k=A.ai(B.m,"Com o \xfaltimo dos \u201ch\xf3spedes\u201d registrado, voc\xea se d\xe1 um tapinha nas costas por um trabalho bem feito. Voc\xea come\xe7a suas rondas pelo hotel e, quando chega \xe0 cozinha, o chef lhe oferece uma bebida. Voc\xea sorri apreciativamente, mas educadamente recusa, lembrando-o: \u201cN\xe3o h\xe1 descanso para os perversos\u201d.",d0,'Voc\xea n\xe3o culpa o zelador da propriedade por n\xe3o encontr\xe1-lo aqui, n\xe3o depois de saber que este velho hotel foi o local de uma s\xe9rie de assassinatos horr\xedveis \u2014 se voc\xea n\xe3o estivesse sendo pago por este trabalho, voc\xea tamb\xe9m n\xe3o gostaria de estar aqui. Enquanto seu amigo alcan\xe7a a chave sob o capacho, algu\xe9m limpa a garganta atr\xe1s de voc\xea. \xc9 o zelador. Ele sussurra para voc\xea: "Eles est\xe3o procurando meu corpo. Eles est\xe3o tentando enterr\xe1-lo no cemit\xe9rio. Voc\xea n\xe3o deve deix\xe1-los! Mate todos eles!" Voc\xea vai.',A.b([A.bh(B.u,"Depois da sua vez, jogue com os Fantasmas.\nFantasmas podem atacar com For\xe7a ou Sanidade. Um Fantasma colocado durante o turno do monstro n\xe3o pode se mover ou atacar durante esse turno.",c9,f1,c9,c9,c7)],h4),16,c6,e4,"Fichas num\xe9ricas \u2013 Restos\nPequenos tokens de monstro \u2013 Fantasmas Furiosos",e9,l,j,k,"Venha brincar conosco",c3)
+j=A.b([c5,e1,e5,"Coloque 3 fichas de Monstro Pequeno em seu tile. Esses s\xe3o os Gremlins.","Pegar{6/5/4/3}peda\xe7os de papel e escreva um \u201cX\u201d em cada peda\xe7o, exceto um. O peda\xe7o final deve dizer \u201cMORRA\u201d. Dobre esses peda\xe7os, embaralhe-os e coloque-os no topo da caixa do jogo. Eles representar\xe3o os e-mails recebidos pelos her\xf3is."],g8)
+l=A.b([A.L("Eles v\xe3o tirar uma mensagem da parte superior da caixa: \u2022 Se a mensagem tiver um X, nada acontece. Deixe essa mensagem de lado. \u2022 Se a mensagem disser \u201cMORRA\u201d, retorne todas as mensagens para o topo da caixa. Ent\xe3o, mova at\xe9 dois Gremlins n\xe3o atordoados para o ladrilho daquele her\xf3i. Cada um desses Gremlins faz um ataque de Poder contra aquele her\xf3i. Depois da sua vez, jogue com os Gremlins.",f5)],h0)
+l=A.ai(B.m,'Enquanto voc\xea fica de p\xe9 sobre os corpos sem vida dos seus amigos, mais gremlins sorridentes emergem dos cad\xe1veres \u2014 quase como se estivessem escapando de casulos. Eles cantam: "Viva! Ria! Ame! Viva! Ria! Ame!" enquanto o levantam do ch\xe3o e o jogam no ar, como o her\xf3i que voc\xea \xe9.',d0,'Voc\xea ainda est\xe1 rindo da ideia de um "e-mail amaldi\xe7oado" quando uma notifica\xe7\xe3o toca no seu telefone. \xc9 um e-mail de um remetente desconhecido. Diz: "ENCAMINHE ISTO OU MORRA. - VIVA, RIA, AME." Voc\xea percebe uma adaga na sala e sente que est\xe1 sorrindo cada vez mais. T\xe3o largo que seus l\xe1bios alcan\xe7am seus ouvidos. Voc\xea ouve risadas ao seu redor, seus pequenos amigos gremlins. Voc\xea quer passar a positividade adiante.',A.b([A.bh(B.u,"Gremlins s\xe3o mortos em vez de atordoados se tiverem uma ficha de Runa com eles.",e8,"Gremlins (tamb\xe9m conhecido como Viva, Ria e Ame)",e7,e7,c7)],h4),17,c6,d9,"3 fichas de monstro pequeno \u2013Gremlins\n3 fichas de runa",f4,j,B.u,l,"Encaminhe isto ou morra",c3)
+j=A.b(["Retire seu explorador da casa. Voc\xea \xe9 o traidor.","Coloque a Carta de Monstro \xe0 sua esquerda. Quaisquer monstros na casa jogar\xe3o no lugar do seu.",e5,"Encontre um de cada Token Num\xe9rico rotulado de 1 a{3/4/5/6}. Essas s\xe3o suas Ilus\xf5es. O token \u201c1\u201d \xe9 o seu verdadeiro eu.","Embaralhe as Ilus\xf5es viradas para baixo (voc\xea pode olhar para elas a qualquer momento) e coloque uma em seu tile. Ent\xe3o coloque o resto das Ilus\xf5es ao redor da casa, em tiles n\xe3o mais distantes do que o valor de sua caracter\xedstica de Velocidade. \nSe poss\xedvel, voc\xea deve colocar cada Ilus\xe3o em um tile diferente. Remova seu explorador da casa, agora voc\xea est\xe1 Escondido entre ilus\xf5es."],g8)
+i=A.b([A.L("\u2022O Anel permite que voc\xea quebre sua forma em muitas ilus\xf5es. Voc\xea ter\xe1 sua vez como as Ilus\xf5es ou como voc\xea mesmo, mas nunca ambos.\u2022Mantenha os tokens de ilus\xe3o virados para baixo at\xe9 que seja instruiido de outra forma. Voc\xea pode olhar os n\xfameros nesses tokens a qualquer momento. A ilus\xe3o rotulada como |1| \xe9 o seu verdadeiro eu.\u2022Her\xf3is podem tentar dissipar suas Iluss\xf5es para revelar seu explorador.","Anel das Ilus\xf5es"),A.L("Jogue como as Ilus\xf5es.","Se voc\xea estiver Oculto Entre Ilus\xf5es"),A.L("Jogue com sua miniatura de explorador","Se voc\xea for revelado"),A.L('Vire a ficha para cima e devolva-a ao seu tabuleiro de personagem. \nSe for o "1", voc\xea foi revelado. Retorne seu explorador para a casa, no mesmo ladrilho em que o marcador "1" estava.\n\n Retorne todas as Ilus\xf5es da casa para seu tabuleiro de personagem e retorne o marcador de Ilus\xe3o de maior n\xfamero para a caixa do jogo. Se voc\xea foi revelado, assuma a sua vez como traidor.',"Quando uma ilus\xe3o \xe9 dissipada")],h0)
+h=A.b([A.Y("Voc\xea n\xe3o pode realizar esta a\xe7\xe3o se n\xe3o houver fichas de Ilus\xe3o no seu tabuleiro de personagem. Embaralhe todos os marcadores de Ilus\xe3o no seu tabuleiro de personagem virados para baixo e coloque-os conforme descrito na etapa 5 da configura\xe7\xe3o. Remova seu explorador da casa e termine seu turno. As Ilus\xf5es poder\xe3o se mover e atacar no seu pr\xf3ximo turno.","Invocar Ilus\xf5es")],h2)
+i=A.ai(B.m,"O anel \xe9 seu e somente seu. Recuando para os confins mais escuros da casa, voc\xea jura proteger seu tesouro do mundo exterior. Sua \xfanica companhia agora s\xe3o seus pr\xf3prios reflexos, sussurrando em sua mente enquanto eles conspiram um contra o outro.",d0,'Ao pegar o anel, voc\xea \xe9 imediatamente levado pelo seu design e artesanato requintados. Uma palavra come\xe7a a ecoar em sua mente: "Precioso". Ao acariciar o anel com as pontas dos dedos, voc\xea de repente percebe muitos olhos olhando para voc\xea. Amigos? Bah! Eles n\xe3o podem tir\xe1-lo de voc\xea. Eles s\xe3o mais numerosos, mas o anel permitir\xe1 que voc\xea conserte isso. Voc\xea o acaricia novamente, e um par diferente de olhos aparece. Olhos familiares. Seus olhos. Voc\xea deve proteger o anel. Voc\xeas dois. Todos voc\xeas.',A.b([A.bh(B.u,"\u2022 Ilus\xf5es compartilham seus tra\xe7os atuais. Elas podem mover um n\xfamero de pe\xe7as igual \xe0 sua Velocidade. Elas n\xe3o precisam rolar para movimento. \u2022 Ilus\xf5es podem usar seus Itens e Press\xe1gios. (A Adaga e a Boneca Assustadora ainda causam perda de caracter\xedsticas.) \u2022 Ilus\xf5es n\xe3o podem negociar ou saquear corpos e n\xe3o podem explorar novos blocos. \u2022 Ilus\xf5es n\xe3o podem ser atordoadas, mas os her\xf3is podem ter maneiras de dissip\xe1-las.",f7,"Ilus\xe3o",f7,f7,f7)],h4),18,c6,f6,"Fichas num\xe9ricas \u2013Ilus\xf5es",e9,j,h,i,"Um belo toque para isso",c3)
+h=A.b([c5,"Coloque a Carta de Monstro \xe0 sua esquerda. O monstro joga seu turno depois do seu.","Ganhe 1 de Sanidade.","Defina a trilha num\xe9rica para{6/4/3/2}.","Coloque 5 fichas de fita de v\xeddeo em cinco pe\xe7as diferentes, o mais longe poss\xedvel dos her\xf3is.","Coloque o token Ghost em qualquer tile com um token Videotape. Este \xe9 o Vengeful Spirit."],g8)
+j=A.b([A.L("Voc\xea pode atacar usando Sanidade em vez disso. Se fizer isso, seu alvo tamb\xe9m rola Sanidade. O perdedor recebe dano Mental. No final do seu turno Mova a trilha num\xe9rica para baixo em 1. Se chegar a 0,voc\xea venceu! Ap\xf3s sua vez, jogue com o Esp\xedrito Vingativo.","Quando voc\xea ataca")],h0)
+j=A.ai(B.m,"Voc\xea sacrificou seus amigos para apaziguar o esp\xedrito vingativo. Voc\xea implora para que ele o deixe ir, sem sucesso. Voc\xea olha, horrorizado, enquanto sua boca se abre mais e mais, desequilibrando-se como as mand\xedbulas de uma cobra. Est\xe1tica vaza da boca escancarada e voc\xea se encontra congelado de terror enquanto ela o envolve como um cobertor. Leva apenas alguns momentos para voc\xea se render ao esquecimento do abismo.",d0,'Voc\xea est\xe1 desesperado para banir a maldi\xe7\xe3o que o seguiu pela \xfaltima semana, desde que seus amigos idiotas lhe mostraram aquela maldita fita de v\xeddeo. Voc\xea ouve o som de est\xe1tica por perto, que voc\xea descobre que vem de uma velha televis\xe3o com um s\xedmbolo vermelho pulsando na tela. Uma voz rompe a est\xe1tica. Ela sibila, "At\xe9 meia-noite. Vejo voc\xea em breve." N\xe3o \xe9 t\xe3o simples quanto os outros imaginam. Livrar-se das fitas n\xe3o quebrar\xe1 a maldi\xe7\xe3o \u2014 voc\xea ter\xe1 que matar seus amigos antes que eles piorem as coisas.',A.b([A.bh(B.u,"O Esp\xedrito Vingativo pode se mover entre pe\xe7as com marcadores de Videotape como se fossem adjacentes.",c8,"Esp\xedrito Vingativo",c9,c8,f8)],h4),19,"Voc\xea vence quando todos os her\xf3is est\xe3o mortos ou quando a Trilha Num\xe9rica chega a 0.",e0,"N\xfamero de trilha\nFichas de videocassete\nFicha Fantasma \u2013Esp\xedrito vingativo",f4,h,B.u,j,"Capturado em fita",c3)
+h=A.b([c5,e1,e5,"Escolher{2/3/4/5}c\xf4modos da casa, escreva secretamente seus nomes em uma folha de papel e numere-os. Essas pe\xe7as cont\xeam as S\xedlabas do Nome do Homem Sem Rosto. Essas pe\xe7as podem estar localizadas em qualquer ou todas as regi\xf5es da casa. (Exemplo: em um jogo de 4 jogadores, escreva os nomes de tr\xeas pe\xe7as e numere-as 1, 2 e 3.)","Coloque a ficha do Homem Sem Rosto na sua pe\xe7a."],g8)
+h=A.ai(B.m,"O Homem Sem Rosto olha para seus cora\xe7\xf5es coletados como os tesouros que eles s\xe3o. Ele embala um suavemente em sua m\xe3o, virando-o silenciosamente e estudando o sangue que escorre. Uma fenda aparece em seu rosto, ficando cada vez mais larga, at\xe9 que se abre em uma boca gigante que cobre todo o seu rosto. Seus dentes farpados brilham enquanto ele espera pela pr\xf3xima noite silenciosa \u2014 uma noite em que sua presa n\xe3o pode gritar por socorro.",d0,"\xc9 meia-noite, e tudo est\xe1 em sil\xeancio. O cachorro que vagueia pela casa late silenciosamente, e voc\xea n\xe3o consegue mais ouvir suas garras batendo no ch\xe3o. Por semanas voc\xea foi assombrada por pesadelos de um homem sem rosto, dizendo que voc\xea \xe9 especial porque ainda tem sua voz. Esta noite, ele vir\xe1 para reunir os cora\xe7\xf5es humanos que ele precisa para ficar em seu mundo para sempre.",A.b([A.bh(B.u,"Homem Sem Rosto n\xe3o pode ser atordoado. Se os her\xf3is atacarem e derrotarem o Homem Sem Rosto depois de descobrirem seu nome, ele ser\xe1 destru\xeddo.",c7,"O Homem Sem Rosto",c7,e8,c7)],h4),20,c6,f9,"Ficha do Homem Sem Rosto\nFichas de runa \u2013S\xedlabas do Nome do Homem Sem Rosto",f4,h,B.u,B.aO,"N\xe3o diga isso","Personagem mais velho")
+g=A.b([c5,e1,"Coloque o token Demon na Biblioteca. Este \xe9 Spooky McMasters.","D\xea a Spooky McMasters a carta Book Omen. Coloque-a ao lado da Carta Monster.","Coloque uma ficha de Monstro Pequeno em seu tile. Este \xe9 um Horror.",e5,"Ganho{1/1/2/3}For\xe7a e velocidade."],g8)
+f=A.b([A.L("Se voc\xea estiver no azulejo da biblioteca com o spooky, voc\xea pode devolver o livro a ele","O livro"),A.L(g1,g0)],h0)
+f=A.ai(B.m,"Seus amigos agora est\xe3o mortos. O que os monstros de romances de terror fazem quando o livro acaba?",d0,"O manuscrito do seu amigo Spooky McMasters dizia que voc\xea trairia seus outros amigos. Isso n\xe3o \xe9 algo que voc\xea queria fazer antes, mas Spooky escreveu claramente que voc\xea o encontraria na casa e o transformaria em um monstro para matar todos os outros. Ele tamb\xe9m escreveu que seus amigos tentariam queimar o manuscrito, mas voc\xea os mataria, um por um, mesmo que cada momento tenso fa\xe7a parecer que eles podem vencer.",A.b([A.bh(A.b([A.Y("Enquanto Spooky estiver com o livro, escolha uma pe\xe7a e role dois dados. 4+ Cada explorador naquele ladrilho sofre 3 de dano F\xedsico. Ventos \xc1rticos irrompem por toda a sala! 2\u20133 Cada explorador naquele ladrilho pega dois dados de Dano mental. Coloque um Horror naquele ladrilho. Fantasmas surgem! 0\u20131 Coloque 2 Horrores na pe\xe7a escolhida. Os horrores v\xeam atrav\xe9s das t\xe1buas!","Escritor Fantasma")],h2),"Depois da sua vez jogue com o Spooky.\nSpooky n\xe3o pode sair da Biblioteca. Spooky n\xe3o pode ser atordoado. Spooky pode segurar o Livro. Enquanto Spooky tem o Livro, coloque-o ao lado do Monster Card.","8","McMasters Assustadores",e7,e7,e7),A.bh(B.u,"Depois da vez do Spooky, jogue com qualquer horror",c8,"Horrores",c9,c8,c7)],h4),21,c6,e4,"Ficha Demon\xedaca \u2013 McMasters assustadores\nPequenos tokens de monstro \u2013 Horrores",d8,g,B.u,f,"Spooky McMasters apresenta...",c3)
+g=A.b([c5,e1,"Se o tile Laboratory n\xe3o tiver sido descoberto, procure-o na pilha de tiles e coloque-o no Ground Floor. Coloque seu explorador naquele tile."],g8)
+e=A.b([A.Y("Enquanto estiver no Laborat\xf3rio, voc\xea pode revelar pe\xe7as da pilha at\xe9 encontrar uma pe\xe7a do Por\xe3o. Coloque essa pe\xe7a em qualquer lugar o por\xe3o. No final do seu turno Lugar {0/0/1/1}Zumbis no Por\xe3o. Ent\xe3o, se voc\xea estiver no ladrilho do Laborat\xf3rio, coloque um Zumbi em cada ladrilho no Por\xe3o com uma porta aberta. Se voc\xea ficar sem fichas de Monstro Pequeno, n\xe3o coloque mais Zumbis. Depois da sua vez, jogue com os Zumbis da Guerra Fria.","Crie uma distra\xe7\xe3o")],h2)
+e=A.ai(B.m,"Voc\xea venceu uma batalha, mas esta \xe9 uma guerra que nunca termina.",d0,"Voc\xea observa os outros atrav\xe9s dos olhos sempre vigilantes da casa. Voc\xea n\xe3o confia neles. Eles podem ver atrav\xe9s do seu disfarce. Eles podem ser intelig\xeancia estrangeira. Quando voc\xea construiu esta casa, voc\xea a encheu de c\xe2meras. Voc\xea fez experimentos em agentes estrangeiros. Voc\xea aciona um interruptor, trancando os intrusos no por\xe3o. Eles ficar\xe3o presos l\xe1 at\xe9 que voc\xea receba um briefing sobre o que fazer com eles. Voc\xea n\xe3o recebe um briefing desde, oh, 1965. Se o briefing n\xe3o vier antes que seus experimentos cheguem at\xe9 eles, ent\xe3o... ah, bem.",A.b([A.bh(B.u,"Zumbis s\xe3o mortos em vez de atordoados. Sempre que um Zumbi matar um her\xf3i, remova o cad\xe1ver do her\xf3i da casa e enterre todos os seus Itens e Press\xe1gios.",e8,"Zumbi da Guerra Fria",e8,e8,c7)],h4),22,c6,g2,"Pequenos Monstros \u2013Zumbis da Guerra Fria",d6,g,e,B.aO,"Opera\xe7\xe3o: Subterr\xe2neo",e3)
+g=A.b([c5,e1,e5,"Lugar{2/3/4/5}Fichas ON em qualquer lugar da casa, distribu\xeddas da forma mais uniforme poss\xedvel entre as regi\xf5es.","Coloque uma ficha de Monstro Pequeno em cada ladrilho com uma ficha ON. Esses s\xe3o seus Assistentes Rob\xf4s."],g8)
+d=A.b([A.Y("Escolha um tile que tenha um her\xf3i nele. Mova esse tile para um local diferente na mesma regi\xe3o da casa. Esse movimento n\xe3o pode fazer com que nenhum tile fique inacess\xedvel via movimento normal. Ap\xf3s sua vez, converse com os Assistentes Rob\xf4s.","Mudar o Projeto")],h2)
+d=A.ai(B.m,"Os limites do seu poder s\xe3o infinitos. Voc\xea controla o espa\xe7o digital, dobrando Sya e o resto dos exploradores \xe0 sua vontade. O mundo est\xe1 em d\xedvida com sua grandeza enquanto voc\xea espalha sua rede por cada lar, cada conglomerado, cada cargo pol\xedtico. Voc\xea est\xe1 em todo lugar.",d0,'Voc\xea trouxe os outros aqui com rumores de uma maldi\xe7\xe3o que precisava ser expurgada, mas o que voc\xea realmente quer \xe9 carregar suas consci\xeancias para esta casa. Por qu\xea? Porque esse \xe9 o pr\xf3ximo est\xe1gio na evolu\xe7\xe3o humana, \xe9 claro! Voc\xea quer mudar o mundo com seu programa, chamado "Sya". Eles podem n\xe3o compartilhar sua vis\xe3o agora, mas entender\xe3o em breve... assim que tiverem transcendido seus corpos.',A.b([A.bh(A.b([A.Y("Escolha qualquer her\xf3i na linha de vis\xe3o. Esse her\xf3i faz um teste de Velocidade. 5+O her\xf3i se posiciona em qualquer pe\xe7a adjacente. 0\u20134O her\xf3i sofre 2 dados de dano F\xedsico.","Ligue os Lasers")],h2),"Os Assistentes Rob\xf4s n\xe3o ficam atordoados quando sofrem dano. (Eles ainda podem ficar atordoados de outras maneiras.)",e8,"Assistentes Rob\xf4s",e8,e7,e8)],h4),23,c6,d3,"N\xfamero de trilha\nTokens ON/OFF \u2013Circuitos\nPequenos tokens de monstro \u2013Rob\xf4 Assistentes",f4,g,d,B.aO,"Alerta de intruso",c3)
+g=A.b([c5,e5,e1,"Se as pe\xe7as do Sal\xe3o de Baile e/ou da Capela n\xe3o tiverem sido descobertas, encontre-as na pilha de pe\xe7as e coloque-as no T\xe9rreo, seguindo as regras normais de coloca\xe7\xe3o de pe\xe7as.","Coloque seu explorador no sal\xe3o de baile, junto com{1/2/3/4}Fichas de monstros pequenos. S\xe3o Dan\xe7arinos Fae.","Deixe a ficha Dark Queen de lado. Ela pode entrar em jogo mais tarde."],g8)
+c=A.b([A.L("Se  voc\xea atacar sem uma arma, voc\xea pode atacar usando velocidade em vez de for\xe7a.\nSe voc\xea vencer, em vez de causar dano, voc\xea pode mover ambas as figuras, cada uma, um n\xfamero de pe\xe7as at\xe9 o dano que voc\xea teria causado.","Vem para a dan\xe7a"),A.L("Coloque a ficha de Rainha Negra na pe\xe7a do Sal\xe3o de Baile.","Ap\xf3s a primeira vez que um explorador morrer no sal\xe3o de baile")],h0)
+c=A.ai(B.m,"As sombras ao seu redor se espalham com flores que florescem \xe0 noite enquanto o Rei da Noite se junta a voc\xea e sua Rainha no sal\xe3o de baile. A M\xe1scara das Sombras est\xe1 pronta para come\xe7ar!",d0,"Algo toma conta de voc\xea na escurid\xe3o familiar. As sombras se abrem como cortinas, e voc\xea sabe o que est\xe1 acontecendo: voc\xea \xe9 o Arauto Umbral, e esta \xe9 uma noite para celebrar. Voc\xea trouxe novos rostos para a corte das fadas, e agora est\xe1 pronto para uma dan\xe7a que vem praticando por toda a sua vida. Os humanos ter\xe3o que morrer, \xe9 claro, mas valer\xe1 a pena invocar a Rainha da Noite para dar o passo da Dan\xe7a Eterna.",A.b([A.bh(B.u,"Ap\xf3s seu turno, os Fae Dancers fazem seus turnos um de cada vez. Mova-se e ataque com um antes que o pr\xf3ximo comece seu turno. Dan\xe7arinos Fae atacam com Velocidade. Eles n\xe3o podem atacar um her\xf3i a menos que o her\xf3i esteja no Sal\xe3o de Baile. Her\xf3is se defendem contra esses ataques com Velocidade. Se um her\xf3i for atingido, ele recebe dano F\xedsico.",e8,"Dan\xe7arina Fae",c8,e7,c8),A.bh(A.b([A.Y("Role 2 dados. Voc\xea pode mover um her\xf3i em sua regi\xe3o em qualquer dire\xe7\xe3o, at\xe9 um n\xfamero de pe\xe7as igual ao resultado daquela rolagem.","Passo a Dan\xe7a Eterna")],h2),"Ela canta em uma harmonia assustadora. Jogue com ela se ela j\xe1 esta em jogo e ap\xf3s o turno das dan\xe7arinas Fae",c7,"Rainha das Trevas",c9,e7,f8)],h4),24,c6,g3,"Fichas de fogo \u2013Chama Seelie\nFicha da Rainha Negra\nPequeno Token de Monstro \u2013Dan\xe7arina Fae",d2,g,B.u,c,"A M\xe1scara das Sombras","Maior Velocidade")
+g=A.ai(B.m,"Voc\xea veste a armadura novamente. Voc\xea a usou por s\xe9culos agora, e gra\xe7as aos tolos que continuam entrando em sua casa, voc\xea a usar\xe1 por mais s\xe9culos.",d0,"Voc\xea sabe o que aconteceu com os amigos dessas pessoas \u2014 voc\xea os for\xe7ou a vestir sua armadura. Por qu\xea? Porque ela o mant\xe9m jovem. Quando voc\xea encontrou aquela armadura h\xe1 quase 600 anos, voc\xea se vinculou a ela. Agora, se algu\xe9m ficar dentro dela, voc\xea rouba os anos restantes. Nesta casa, h\xe1 muitos anos a serem roubados.",B.w,25,c6,d7,"Fichas de For\xe7a, Velocidade, Conhecimento e de Sanidade \u2013Ingredientes do Feiti\xe7o",d8,A.b([c5,e5],g8),B.u,A.b([A.L("Se voc\xea tiver a Armadura, n\xe3o cause dano. Em vez disso, d\xea a Armadura para aquele her\xf3i.","Quando voc\xea vence um ataque de For\xe7a contra um her\xf3i"),A.L("Se voc\xea estiver morto, coloque seu explorador no mesmo ladrilho que a armadura e cure todas as suas caracteristicas. Jogue normalmente. A armadura sustenta voc\xea.","No in\xedcio do seu turno"),A.L("Se um her\xf3i tiver a armadura, ele perde 1 em cada caracteristica e voc\xea ganha 1 em cada uma das suas caracteristicas.",e2)],h0),"Tempo Emprestado",e3)
+b=A.b([c5,e1,e5,"Coloque {2/3/4/5} Pequenos marcadores de Monstro em diferentes pe\xe7as com s\xedmbolos de Press\xe1gio. Esses s\xe3o seus Parentes. Se n\xe3o houver pe\xe7as suficientes com s\xedmbolos de Press\xe1gio, coloque os Parentes restantes no Hall de Entrada.","Deixe a ficha Dark Queen de lado. Este \xe9 o The Elder. Ele entrar\xe1 em jogo mais tarde."],g8)
+a=A.b([A.L("Coloque o Anci\xe3o na pe\xe7a com o marcador de Altar.Ele se levantar\xe1 e coletar\xe1 o tributo com as pr\xf3prias m\xe3os.","No final do seu segundo turno")],h0)
+a0=A.b([A.Y("Enquanto em um azulejo de quarto,voc\xea pode colocar seu explorador em qualquer pe\xe7a.","Use passagens ocultas")],h2)
+a=A.ai(B.m,"O Anci\xe3o sorri um sorriso mais vermelho do que aqueles que voc\xea e sua fam\xedlia deram aos seus sacrif\xedcios agora frios, e suas vestes absorvem a cor e a ess\xeancia do sangue deles. Sua fam\xedlia, diante de voc\xea, est\xe1 mais uma vez no auge. A pr\xf3xima d\xe9cada servir\xe1 \xe0 sua linhagem quase t\xe3o bem quanto seus amigos acabaram de fazer.",d0,"Ao pegar o s\xedmbolo aben\xe7oado eldritch da sua fam\xedlia, tr\xeas portas escondidas se abrem ao seu redor. Sua querida fam\xedlia se adianta, adornando voc\xea com vestes que combinam com as que eles j\xe1 usam. As velhas manchas vermelhas come\xe7aram a desaparecer das vestes de todos, mas hoje \xe0 noite seus amigos fornecer\xe3o o sangue para mudar isso. O sangue deles trar\xe1 \xe0 tona o Anci\xe3o, a quem sua fam\xedlia serviu por s\xe9culos. Conforme seus parentes desaparecem nas passagens secretas da casa, voc\xea se volta para seus sacrif\xedcios. Voc\xea sabe o que fazer.",A.b([A.bh(B.u,"Depois da sua vez, jogue com seus parentes.\nParentes podem usar a a\xe7\xe3o Passagens Ocultas. Depois de jogar com seus parentes, jogue com o Anci\xe3o (se ele tiver ressuscitado).",c9,"Parente",c8,c9,c9),A.bh(B.u,"Anci\xe3o pode usar a\xe7\xe3o Passagens Ocultas.",e7,"O Anci\xe3o",e7,c7,f8)],h4),26,c6,e0,"S\xedmbolo do Altar\nPequenos tokens de monstro \u2013Parentes\nFicha da Rainha Negra \u2013O Anci\xe3o\nAzulejos para quarto:\n Quartos de h\xf3spedes: \u2013T\xe9rreo/Piso Superior\n Quarto principal \u2013Ch\xe3o/Superior Ch\xe3o\n Quarto de inverno \u2013T\xe9rreo/Piso Superior",d2,b,a0,a,"A Ben\xe7\xe3o da Fam\xedlia",c3)
+a0=A.b([c5,e5,"Encontrar{5/4/4/3}Fichas de runa e coloque-as de lado na sua frente. Essas s\xe3o Palavras Alien\xedgenas.","Coloque uma Palavra Alien\xedgena em sua pe\xe7a."],g8)
+b=A.b([A.L("\u2022 Se voc\xea estiver em uma sala com uma Alien Word, remova um dos dados do her\xf3i depois que ele rolar (e depois de qualquer nova rolagem). Dados removidos n\xe3o s\xe3o contados para o resultado de uma rolagem. No final do seu turno Se voc\xea colocasse todas as suas Palavras Alien\xedgenas na casa,voc\xea venceu!","Quando voc\xea ataca ou \xe9 atacado")],h0)
+b=A.ai(B.m,"Voc\xea rabisca a \xfaltima palavra na parede e tudo fica quieto. Um portal uivante se abre no hall de entrada, sugando todo o ar \u2014 e voc\xea \u2014 para fora da casa. Conforme voc\xea se perde no v\xe1cuo, conforme sua vis\xe3o escurece, a \xfaltima coisa que voc\xea v\xea \xe9 uma embarca\xe7\xe3o enorme surgindo \xe0 dist\xe2ncia.",d0,"Todos voc\xeas vieram aqui com vozes murmurando uma estranha l\xedngua alien\xedgena dentro de suas cabe\xe7as. As vozes se aquietaram quando voc\xeas entraram na casa, mas agora elas voltaram, mais altas do que nunca. Al\xe9m do mais, voc\xeas quase as entendem. Voc\xeas cantam junto com as s\xedlabas estranhas enquanto palavras estranhas come\xe7am a aparecer nas paredes. H\xe1 espa\xe7os vazios onde voc\xeas acham \u2014 onde voc\xeas sabem \u2014 que as palavras deveriam estar. As vozes pedem para voc\xeas complet\xe1-las, torn\xe1-las inteiras. S\xf3 voc\xeas podem fazer isso. Elas escolheram voc\xeas. Ao seu toque, as palavras come\xe7am a se espalhar. Voc\xeas devem v\xea-las se espalharem.",B.w,27,"Voc\xea vence quando coloca todas as suas Palavras Alien\xedgenas na casa ou quando todos os her\xf3is est\xe3o mortos.",g3,"Fichas de Her\xf3i \u2013Conhecimento de Alien\xedgenas\nFichas de Runa \u2013Palavras Alien\xedgenas",f4,a0,A.b([A.Y("Enquanto estiver em um tile sem um her\xf3i ou uma Alien Word, fa\xe7a um teste de Knowledge. Para cada tile adjacente com uma Alien Word, adicione 1 ao resultado do seu teste. 7+Coloque uma Palavra Alien\xedgena em sua pe\xe7a.A mensagem deve ser completada. 0\u20136Ganhe 2 Conhecimentos.Os sussurros ficam mais altos, mais insistentes. Mais compreens\xedvel.","Espalhe a palavra")],h2),b,"Palavras das estrelas",c3)
+a0=A.b(["Seu explorador foi engolido inteiro por um tubar\xe3o espectral. Coloque a ficha de Tubar\xe3o Fantasma em seu tile. Remova seu explorador e o pressagio \xcddolo do jogo. Enterre quaisquer Itens e Press\xe1gios que seu explorador tinha antes de serem engolidos.",g4,"Vire o ladrilho em que seu explorador estava. Em seguida, vire{0/1/2/3}tiles na mesma regi\xe3o. Esses tiles est\xe3o inundados."],g8)
+a1=A.b([A.L("Tiles que foram viradas s\xe3o inundadas e t\xeam portas em todos os 4 lados. Tiles inundadas n\xe3o t\xeam simbolos nelas. Pisos de entradas n\xe3o podem ser inundadas.","Pe\xe7as Viradas"),A.L("Vire uma pe\xe7a que n\xe3o seja de entrada adjascente a outra pe\xe7a inundada. Se n\xe3o for possivel, inunde uma pe\xe7a adjascente a qualquer pe\xe7a de entrada.","No inicio do turno de cada her\xf3i")],h0)
+a1=A.ai(B.m,"Voc\xea se banqueteia com os \xfaltimos peda\xe7os do seu almo\xe7o quente. Com sua fome saciada, pelo menos por enquanto, voc\xea observa as \xe1guas recuarem mais uma vez. Com um sorriso largo, voc\xea fica satisfeito em saber que continua sendo o prefeito de Shark City.",d0,"O som da mar\xe9 correndo envolve voc\xea enquanto a sala \xe9 inundada com \xe1gua salgada saindo do \xeddolo. Enquanto voc\xea pisa na \xe1gua para se manter \xe0 tona, voc\xea percebe uma barbatana fantasmag\xf3rica emergir da superf\xedcie. Ela come\xe7a a circular ao seu redor... CHOMP!",A.b([A.bh(A.b([A.Y("Mova para qualquer pe\xe7a inundada.","M\xfasica Sinistra"),A.Y("Se todos os azulejos da casa estiverem inundados,voc\xea venceu!",e2)],h2),"Em vez de sua vez, jogue com o Tubar\xe3o Fantasma Branco.\n\nO tubar\xe3o n\xe3o pode ser atordoado.",c9,"Grande Tubar\xe3o Fantasma Branco",c9,e8,"8")],h4),28,"Voc\xea vence quando todos os her\xf3is estiverem mortos ou se todas as pe\xe7as da casa estiverem inundadas.",d3,u.H,e9,a0,B.u,a1,"Vamos precisar de um Casa Maior",c3)
+a0=A.b([c5,e1,"Lugar{1/2/3/3}Pequenos tokens de Monstro no ladrilho com voc\xea. Estes s\xe3o os Fae."],g8)
+a2=A.b([A.L("Se voc\xea n\xe3o estiver usando uma arma, voc\xea pode atacar com Velocidade em vez de For\xe7a. Depois da sua vez, jogue com as fadas.",g5)],h0)
+a2=A.ai(B.m,"Voc\xea dan\xe7a entre os jacintos, as dedaleiras, as pe\xf4nias e passeia pelos c\xedrculos de cogumelos. Voc\xea enche a cara com comida e bebida encantadas de fadas. Voc\xea n\xe3o pode deixar a terra das fadas, mas por que voc\xea iria querer? \xc9 t\xe3o lindo aqui.",d0,'A corretora lhe ofereceu um hors d\'oeuvre. As ofertas nesta casa aberta s\xe3o estranhas: violetas cristalizadas e frutas vermelhas congeladas. "Comida de fada", ela disse, com um brilho estranho nos olhos. Voc\xea pensou que ela estava brincando. Voc\xea provou essas guloseimas e entendeu: as fadas querem resgatar esta casa do mundo dos humanos e deixar que a hera a derrube, tijolo por tijolo. "Ajude-nos", eles dizem. "Ajude-nos a transformar esta casa em um lindo jardim, e ent\xe3o voc\xea poder\xe1 se juntar a n\xf3s." Voc\xea quer se juntar a eles. E voc\xea sabe exatamente como fertilizar o jardim.',A.b([A.bh(B.u,"As fadas n\xe3o podem ser atordoadas. Os Fae usam Velocidade para atacar qualquer her\xf3i na linha de vis\xe3o.",c9,"Fae",c9,e7,e8)],h4),29,c6,f6,"Pequenos tokens de monstro \u2013Fada\nFichas de Her\xf3i \u2013Conhecimento das Fadas\n2 fichas de poder \u2013Ferro Frio",d6,a0,B.u,a2,"Um lindo jardim",c3)
+a0=A.b(["Voc\xea foi possu\xeddo por um esp\xedrito! Seu explorador ainda est\xe1 no jogo. Voc\xea \xe9 o traidor.",e1,e5,"Coloque seu explorador no Hall de Entrada.","Coloque {1/2/3/4} Pequenos tokens de Monstro em diferentes tiles com s\xedmbolos de Omen. Estes s\xe3o a Festa de Casamento. Se n\xe3o houver tiles suficientes com s\xedmbolos de Omen, coloque os membros restantes da Festa de Casamento na Escadaria do T\xe9rreo."],g8)
+a3=A.b([A.L("Voc\xea pode virar um dos Omens deles para cima. Esse Omen permanecer\xe1 para cima pelo resto do haunt.",g5),A.L("Vire todos os seus Press\xe1gios para cima.",f3),A.L("Suas caracter\xedsticas n\xe3o podem ficar abaixo dos valores iniciais. Seu amor \xe9 eterno.","Na doen\xe7a e na sa\xfade"),A.L("Uma vez que voc\xea entra no tile com o Altar, voc\xea n\xe3o pode sair daquele tile. Efeitos n\xe3o podem fazer voc\xea sair deste tile.","Para sempre e sempre")],h0)
+a3=A.ai(B.m,"Voc\xea segura as m\xe3os da sua amada e canta seus louvores em voz alta. \u201cOh Genevieve, Genevieve! Juntas novamente! De m\xe3os dadas, sempre!\u201d",d0,"O \xfaltimo corpo em que voc\xea pisou n\xe3o era adequado, mas este atender\xe1 \xe0s suas necessidades. Agora voc\xea s\xf3 precisa de mais um corpo, para o seu amor \u2014 para sua Genevieve. Ela estar\xe1 com voc\xea novamente, mas primeiro voc\xea precisar\xe1 da sua alian\xe7a de casamento. A alian\xe7a unir\xe1 voc\xea e sua Genevieve para sempre. Voc\xea se livrou da morte e a livrar\xe1 tamb\xe9m. Voc\xeas dois ser\xe3o livres nesta terra novamente. Um corpo e a alian\xe7a, \xe9 tudo o que voc\xea precisa.",A.b([A.bh(B.u,"Ap\xf3s sua vez, jogue com os monstros.\n\xc9 hora de se casar!",c8,"A Festa de Casamento",e8,c9,c7)],h4),30,"Voc\xea vence quando tem o Anel.",f6,u.O,d8,a0,B.u,a3,"At\xe9 que a morte nos separe","Menor Sanidade (al\xe9m do Revelador de Assombra\xe7\xe3o)")
+a0=A.b([c5,e1,e5,"Pegue todos os Itens e Press\xe1gios de cada jogador. Come\xe7ando com o S\xedmbolo Sagrado, Reserve {4/5/7/9} dessas cartas de lado, viradas para cima. Se houver menos cartas do que isso, coloque-as todas de lado.","Enterre todos os itens e press\xe1gios restantes.","Coloque um conjunto de fichas de N\xfamero no Item e Press\xe1gios reservados, depois coloque uma Ficha de N\xfamero correspondente na casa em tiles com o simbolo de item ou pressagio, em tiles diferentes. Essas fichas representam Itens Amaldi\xe7oados. Se ainda houver alguma ficha, coloque-o no Hall de Entrada."],g8)
+a4=A.b([A.L(g1,g0)],h0)
+a5=A.b([A.Y("Enquanto estiver no mesmo ladrilho que um Item Amaldi\xe7oado, remova esse token e pegue a carta correspondente. Agora voc\xea carrega esse Item ou Press\xe1gio. Escolha um her\xf3i na sua regi\xe3o para receber 2 dados de dano Geral.O fantasma preso no item explode para fora.","Canalize um esp\xedrito amaldi\xe7oado")],h2)
+a4=A.ai(B.m,"Que final \xe9pico para uma noite matadora de ca\xe7a a fantasmas extrema, mano! \xc9 uma pena que tenha que terminar assim, mas voc\xea d\xe1 de ombros enquanto arranca os \xfaltimos itens amaldi\xe7oados das m\xe3os frias e mortas de seus amigos. Voc\xea sai e o c\xe9u fica vermelho, e voc\xea come\xe7a a cantar em uma l\xedngua que nunca ouviu antes. Isso vai ser matador!",d0,'Voc\xea est\xe1 em uma ca\xe7ada totalmente incr\xedvel para encontrar evid\xeancias para aquele reality show escolhido, "Bros vs. Ghosts", quando voc\xea ganha na loteria mal-assombrada. Mas, tipo, \xe9 uma chatice que todos os seus amigos foram possu\xeddos por fantasmas. Este s\xedmbolo sagrado que voc\xea encontrou come\xe7a a falar na sua cabe\xe7a, todo demon\xedaco e tudo. Agora voc\xea s\xf3 precisa sair e come\xe7ar o apocalipse! Radical!',A.b([A.bh(B.u,"Ap\xf3s sua vez, jogue com os itens amaldi\xe7oados.\nSe o item ou card de press\xe1gio correspondente deste monstro for uma arma, ele pode usar o ataque daquela arma. (A Adaga n\xe3o \xe9 afetada pela perda de Velocidade.)",c7,"Item Amaldi\xe7oado (Ficha Num\xe9rica)",c7,c9,c7)],h4),31,c6,e0,"2 conjuntos de Fichas Num\xe9ricas \u2013 Amaldi\xe7oados",e9,a0,a5,a4,"Um fantasma de uma chance",c3)
+a5=A.b(["Os gatos te cercam. Seu explorador morreu. Enterre seus Itens e Press\xe1gios e remova sua figura da casa. Coloque o token Bakeneko em seu ladrilho. Agora voc\xea comanda os Bakeneko e os Gatos Mortos-Vivos.",f0,"Encontre e reserve{6/5/4/3}Fichas de fogo. Coloque o resto de volta na caixa.","Coloque {3/4/5/7} Pequenos tokens de monstros na sua regi\xe3o. Esses s\xe3o seus Undead Cats."],g8)
+a0=A.b([A.L("Eles devem fazer um teste de Velocidade. 5+ Nada acontece. Eles atravessam o fogo sem problemas. 0\u20134 Eles sofrem 1 de dano F\xedsico.","Quando um her\xf3i entra em um ladrilho com um marcador de fogo")],h0)
+a0=A.ai(B.m,"O gato fantasma caminha entre cinzas e chamas, seguido por sua comitiva de felinos mortos-vivos. A tropa se re\xfane do lado de fora da casa, juntando-se a um coro sobrenatural de uivos enquanto observam o fogo dos Bakeneko reduzir a casa a escombros.",d0,"O dono da casa era exc\xeantrico para dizer o m\xednimo, mas eles foram muito convincentes em seus contos sobre o gato fantasma que assombra a casa. Voc\xea os segue enquanto eles falam, apenas para v\xea-los se transformarem em um enorme felino espectral. A criatura sorri para voc\xea, ronronando, enquanto voc\xea \xe9 cercado por um ex\xe9rcito de gatos mortos-vivos.",A.b([A.bh(A.b([A.Y("Enquanto estiver em qualquer pe\xe7a, escolha uma pe\xe7a na linha de vis\xe3o que ainda n\xe3o tenha uma ficha de Fogo nela. Coloque uma ficha de Fogo naquela pe\xe7a. Quando voc\xea colocar a \xfaltima ficha de Fogo, voc\xea venceu!","Queime todos eles"),A.Y("Quando estiver em uma pe\xe7a com um simbolo de Pressagio, Coloque um Gato Morto-Vivo em sua pe\xe7a.","Invocar Gatinhos")],h2),"Em vez da sua vez, jogue como o Bakeneko.\nO Bakeneko adiciona +1 a sua for\xe7a para cada Gato Morto-Vivo em sua regi\xe3o (at\xe9 um m\xe1ximo de 8 de For\xe7a).",e8,"Bakeneko",e7,e7,c8),A.bh(B.u,"Ap\xf3s o Bakeneko, jogue com os Gatos Morto-vivo.\nGatos mortos-vivos s\xe3o mortos em vez de atordoados quando recebem dano. Eles ainda podem ser atordoados de outras maneiras.\n\n Gatos mortos-vivos atacam com Velocidade. Eles causam no m\xe1ximo 2 de dano por ataque. \nGatos Mortos-Vivos n\xe3o podem atacar nenhum her\xf3i que j\xe1 tenha sofrido dano durante o turno dos Gatos Mortos-Vivos. Eles gostam de brincar com a comida.",c9,"Gatos Mortos-Vivos",e8,e7,c8)],h4),32,"Voc\xea vence quando todos os her\xf3is est\xe3o mortos ou quando a casa \xe9 incendiada.",g2,"Token Bakeneko\nPequenos tokens de monstro \u2013Gatos mortos-vivos\nFichas de fogo \u2013Quarto em chamas",e9,a5,B.u,a0,"A Cat\xe1strofe",c3)
+a5=A.b([c5,"Coloque {2/3/4/5} Pequenos tokens de Monstro em qualquer tile que n\xe3o seja entradas de \xe1rea, distribu\xeddos o mais uniformemente poss\xedvel entre as regi\xf5es. Esses s\xe3o os Fot\xf3grafos Fantasmas.","Se a C\xe2mera M\xe1gica n\xe3o tiver sido descoberta, procure-a no baralho de Itens e coloque-a virada para cima na sua frente.","D\xea a cada her\xf3i seu token de Her\xf3i correspondente. Esta \xe9 a Ess\xeancia deles."],g8)
+a6=A.b([A.L("Enquanto voc\xea tiver a C\xe2mera M\xe1gica, seus tra\xe7os n\xe3o poder\xe3o ficar abaixo do cr\xedtico.","O Fantasma dentro da c\xe2mera"),A.L("Se voc\xea tiver a Ess\xeancia daquele her\xf3i, role 2 dados adicionais. Depois da sua vez, converse com os Fot\xf3grafos Fantasmas.",g5)],h0)
+a7=A.b([A.Y("Enquanto estiver em um tile com um her\xf3i, fa\xe7a um teste de Velocidade. Se voc\xea tiver a C\xe2mera M\xe1gica, voc\xea pode fazer esse teste contra qualquer her\xf3i na linha de vis\xe3o. Voc\xea n\xe3o pode tirar uma foto de um her\xf3i que n\xe3o tenha mais sua Ess\xeancia. 6+ Pegue a ficha de Ess\xeancia do her\xf3i e aumente uma das suas caracter\xedsticas em 1. Voc\xea captura a ess\xeancia deles. 0\u20135Nada acontece.","Tire uma foto")],h2)
+a6=A.ai(B.m,"Voc\xea se senta no hall de entrada, com os olhos vazios. As c\xe2meras est\xe3o instaladas por todo lado. Em algum momento, as pessoas vir\xe3o te procurar. Ent\xe3o, as c\xe2meras ter\xe3o sua cota novamente.",d0,'Algo sai de voc\xea quando a c\xe2mera dispara. "N\xe3o deixe a c\xe2mera roubar sua alma", diz uma voz, mas agora, olhando para a c\xe2mera, voc\xea pode dizer que ela est\xe1 com fome, morrendo de fome. Ela merece ser alimentada. Ela precisa ser alimentada. Voc\xea pode dar a ela as almas e o sangue que ela quer \u2014 um instant\xe2neo aqui, uma ferida mortal ali... a c\xe2mera ter\xe1 o suficiente.',A.b([A.bh(A.b([A.Y("Se eles tiverem a Ess\xeancia, pegue-a e coloque-a no seu tabuleiro de personagem.","Se um her\xf3i terminar seu turno na linha de vis\xe3o de um Fot\xf3grafo Fantasma")],h2),"Depois da sua vez jogue com os Fot\xf3grafos Fastasmas.\n\nFot\xf3grafos Fantasmas atacam com Sanidade e podem atacar qualquer her\xf3i na linha de vis\xe3o. Se vencerem um ataque, o her\xf3i alvo recebe dano Mental.\n Se um Fot\xf3grafo Fantasma sofrer dano de um ataque de For\xe7a, ele ser\xe1 morto em vez de atordoado.",e8,"Fot\xf3grafo Fantasma",e7,"1",c9)],h4),33,c6,"\u201cDiga Xis\u201d","Pequenos tokens de monstro \u2013Fantasma Fot\xf3grafos\nFichas de Her\xf3i \u2013Ess\xeancia dos Her\xf3is",c4,a5,a7,a6,"Sorria para a c\xe2mera","Possuidor da c\xe2mera")
+a7=A.b([c5,e5,"Retorne todas as pe\xe7as em jogo para a pilha de pe\xe7as, exceto as pe\xe7as de entrada e as pe\xe7as com exploradores nelas. Embaralhe a pilha de pe\xe7as.","Organize as pe\xe7as restantes, incluindo as pe\xe7as de entrada doa forma que quiser, de modo que todas fiquem em contato e formem uma regi\xe3o s\xf3."],g8)
+a5=A.b([A.L(u.o,g6),A.L("se voc\xea esta morto, coloque seu explorador em um tile com uma porta aberta. Cure todas as suas caracteristicas e realize seu turno normalmente.","No come\xe7o do seu turno"),A.L("Voc\xea pode Manipular a Dimens\xe3o {1/1/2/2} vezes a cada turno. Se um her\xf3i estiver carregando Christina, voc\xea pode fazer esta a\xe7\xe3o uma vez adicional. Voc\xea pode fazer a mesma escolha mais de uma vez.","Mestre da manipula\xe7\xe3o")],h0)
+a5=A.ai(B.m,"O som n\xe3o pode viajar entre dimens\xf5es, ent\xe3o os gritos daqueles que voc\xea prendeu aqui foram silenciados. Voc\xea anda pelo corredor, sorrindo, enquanto a casa se constr\xf3i ao seu redor.",d0,"Voc\xea esperava que seus amigos lamentassem Christina, n\xe3o que rastreassem o local de seu desaparecimento. Ela havia encontrado seu santu\xe1rio \u2014 esta casa, cujos c\xf4modos mudam, onde o errado \xe9 certo, onde nada \xe9 o que parece \u2014 e voc\xea a prendeu aqui. Agora voc\xea prender\xe1 seus outros amigos tamb\xe9m. As paredes giram ao seu redor, voando, dobrando e mudando ao seu capricho. \xc9 uma pena que eles n\xe3o tenham apenas lamentado por ela e seguido em frente.",B.w,34,c6,d3,"N\xfamero de trilha Pequeno\nToken de Monstro \u2013 Cristina",d8,a7,A.b([A.Y("Enquanto estiver em um ladrilho com uma porta aberta, fa\xe7a um teste de Sanidade. 3+Coloque-se em qualquer ladrilho com uma porta aberta. 0\u20132 Nada acontece.","D\xea um Salto de F\xe9"),A.Y("Escolha um dos seguintes efeitos: \u2022 Cada her\xf3i recebe 1 dado de dano Geral. Voc\xea pode mover cada her\xf3i um n\xfamero de pe\xe7as em qualquer dire\xe7\xe3o, at\xe9 a quantidade de dano que ele recebeu. \u2022 Mova qualquer pe\xe7a que n\xe3o seja de entrada para outra parte da casa, de modo que ela se conecte a uma porta aberta. Voc\xea n\xe3o pode mover uma pe\xe7a se isso fizer com que outra pe\xe7a se desconecte do resto da casa. \u2022 Ganhe 2 em qualquer caracter\xedstica.","Manipular a Dimens\xe3o")],h2),a5,u.f,"Maior Conhecimento")
+a7=A.b([c5,e1,"Coloque um token de Ninho em qualquer tile de Por\xe3o. Coloque um segundo token de Ninho em qualquer tile de Andar Superior.","Coloque {2/3/4/5} Pequenos tokens de Monstro em seu tile. Estes s\xe3o Slugs."],g8)
+a8=A.b([A.L("Proteja os ninhos a todo custo","Token de ninho")],h0)
+a9=A.b([A.Y("Enquanto estiver em um ladrilho com um Ninho, coloque duas Lesmas naquele ladrilho.","Convocar a Horda")],h2)
+a8=A.ai(B.m,"Voc\xea olha pela janela, pensando em como apresentar ao mundo a vida alien\xedgena. Voc\xea ter\xe1 que pensar em um bom nome para essa esp\xe9cie.",d0,"Voc\xea nunca entendeu realmente por que sua amiga passou todo o tempo procurando meteoros, mas isso foi antes de voc\xea aprender sobre vida alien\xedgena, como as lesmas que agora escorrem da rocha escavada diante de voc\xea. \xc9 fascinante... mas aqui est\xe3o elas, e s\xe3o r\xe1pidas! Elas tamb\xe9m parecem famintas \u2014 uma das lesmas deslizou pelo seu corpo e se agarrou ao seu pesco\xe7o na base do seu c\xe9rebro, mas voc\xea n\xe3o est\xe1 muito preocupado. Al\xe9m disso, voc\xea acha que elas s\xe3o meio fofas.",A.b([A.bh(A.b([A.Y("Para cada outro Slug naquele ladrilho, adicione 1 ao resultado da jogada de ataque. Se os Slugs vencerem o ataque, aquele her\xf3i se torna Mente controladae agora \xe9 um traidor. Eles agora compartilham seus objetivos e podem ler este livro. \n\nDepois que uma lesma ataca, todas as lesmas em seu ladrilho s\xe3o mortas (independentemente de vencerem ou n\xe3o o ataque).","Sempre que uma lesma ataca um her\xf3i (ignora limite de uma ver por turno)")],h2),"Depois da sua vez, jogue com as Lesmas. Lesmas s\xe3o mortas em vez de atordoadas. Lesmas atacam com Sanidade. Todas as lesmas devem completar seu movimento antes que qualquer uma possa atacar.",c7,"Lesmas",c8,c9,c8)],h4),35,"Voc\xea vence quando todos os her\xf3is est\xe3o mortos ou com a mente controlada.",g2,"Pequenos tokens de monstro \u2013Lesmas\n2 fichas de ninho \u2013Ninho de lesmas\n5 fichas de comida \u2013Sal",d8,a7,a9,a8,"Lesmas espaciais",c3)
+a9=A.b([c5,e1,"Coloque uma ficha de Monstro Pequeno em cada pe\xe7a que tenha um s\xedmbolo de Evento. Esses s\xe3o Fantasmas."],g8)
+a7=A.b([A.L(u.W,"Quando voc\xea revela uma pe\xe7a com um s\xedmbolo de Evento"),A.L("Coloque um Fantasma no tile daquele her\xf3i. Voc\xea controla aquele Fantasma. Se voc\xea sofresse dano de um ataque Em vez disso, mova essa quantidade de pe\xe7as para longe da sua pe\xe7a atual em qualquer dire\xe7\xe3o e ganhe 1 de For\xe7a ou Conhecimento.A casa n\xe3o deixar\xe1 voc\xea morrer. Depois da sua vez, jogue com os Fantasmas.",f3),A.L("Cada her\xf3i em um bloco com qualquer n\xfamero de Fantasmas sofre 2 de dano Geral. No final do seu turno Se voc\xea atingiu a Sanidade m\xe1xima, voc\xea alcan\xe7ou a ilumina\xe7\xe3o. Voc\xea venceu!","No final do turno dos Fantasmas")],h0)
+b0=A.b([A.Y("Enquanto estiver em um ladrilho com um Fantasma, fa\xe7a um teste de Conhecimento. 4+Remova o Fantasma do ladrilho e ganhe 1 de Sanidade. 0\u20133Mova todos os Fantasmas desta pe\xe7a para qualquer pe\xe7a adjacente, ignorando as paredes.","Consuma um Fantasma")],h2)
+a7=A.ai(B.m,"Voc\xea est\xe1 saciado, por enquanto. Mas haver\xe1 mais fantasmas\u2026",d0,"Voc\xea encontrou algo aqui melhor do que uma casa aberta de corretor de im\xf3veis. Voc\xea pegou esse s\xedmbolo escuro, e ele te encheu de fome. Voc\xea pega um esp\xedrito, e voc\xea o come. Por um momento, sua fome \xe9 saciada. Mais do que isso, realmente \u2014 voc\xea se sente forte, em paz, l\xfacido. E ent\xe3o, voc\xea est\xe1 mais faminto do que nunca.",A.b([A.bh(B.u,"Fantasmas n\xe3o podem atacar nem ser atacados.",c9,"Fantasmas",c8,c8,c8)],h4),36,"Voc\xea vence quando alcan\xe7a a ilumina\xe7\xe3o OU mata todos os her\xf3is! \u2022 Consuma Fantasmas para aumentar sua Sanidade. \u2022 \u201cIlumina\xe7\xe3o\u201d significa ter o m\xe1ximo de Sanidade.",e0,"Pequenos tokens de monstro \u2013Fantasmas",d6,a9,b0,a7,"Encontrando a Paz","Menor Sanidade")
+b0=A.b([c5,"Enterre a armadura e defina todos os seus tra\xe7os para seus valores iniciais.",e1,"Coloque sua figura no Hall de Entrada, junto com{0/1/1/2}Tokens de monstros pequenos. Esses s\xe3o seus rob\xf4s de seguran\xe7a.","Cada her\xf3i coloca um Rob\xf4 de Seguran\xe7a em seu ladrilho."],g8)
+a9=A.b([A.L("\u2022Durante uma troca de corpos, os tokens de DNA v\xe3o junto com o tabuleiro de personagem dos her\xf3is, o DNA n\xe3o pode ser negociado.\u2022 O DNA s\xf3 pode ser removido de um tabuleiro de personagem quando voc\xea carregar uma amostra.","DNA"),A.L("Defina suas caracter\xedsticas para seus valores iniciais e coloque sua figura em qualquer pe\xe7a de entrada. A clonagem \xe9 uma tarefa trivial.",e6),A.L("Se ainda houver DNA no quadro de personagem atual de um her\xf3i, os tra\xe7os desse her\xf3i n\xe3o poder\xe3o ficar abaixo do cr\xedtico por nenhum motivo. Um her\xf3i cujo quadro de personagem atual n\xe3o possui DNA pode morrer normalmente.Amostra adquirida. O sujeito agora \xe9 dispens\xe1vel.","Miss\xe3o Primeiro")],h0)
+b1=A.b([A.Y("Enquanto estiver em um tile com um her\xf3i que tem o DNA deles, troque tabuleiros de personagem com esse her\xf3i, mas n\xe3o troque nenhum Item ou Press\xe1gio. Agora voc\xea controla a figura deles, e eles controlam a sua. Cure todos os tra\xe7os do seu novo personagem e termine seu turno imediatamente.","Metamorfosear um sujeito"),A.Y("\u2022 Se voc\xea estiver em um tile com um s\xedmbolo Omen e houver um marcador de DNA no seu tabuleiro de personagem atual, retorne esse DNA para a caixa do jogo. Se voc\xea tiver tirado DNA de cada her\xf3i,voc\xea venceu!","Carregar uma amostra")],h2)
+a9=A.ai(B.m,'Coisas bobas, esses esp\xe9cimes. Eles t\xeam tanta vivacidade, e suas estruturas pitorescas e fr\xe1geis t\xeam tanto potencial. Voc\xea e seus associados vieram do seu distante sistema solar com a inten\xe7\xe3o de explorar esse potencial. A quest\xe3o diante de voc\xeas \xe9: "O que faz um ser humano?"',d0,"Os esp\xe9cimes foram reunidos na instala\xe7\xe3o de experimenta\xe7\xe3o. Que estranho... humanos aparentemente n\xe3o conseguem resistir a uma casa mal-assombrada. Os rob\xf4s de seguran\xe7a que estavam camuflados como armaduras antigas ganharam vida, e seus associados voltar\xe3o para observar essa colheita em breve. Agora voc\xea pode se livrar do seu disfarce terrestre e come\xe7ar a enviar as amostras dos humanos, assim que puder colet\xe1-las.",A.b([A.bh(B.u,"Depois da sua vez jogue com os rob\xf4s\nEles t\xeam tasers com apar\xeancia furiosa. Se poss\xedvel, cada Rob\xf4 de Seguran\xe7a deve se mover em dire\xe7\xe3o a um her\xf3i diferente. Rob\xf4s de Seguran\xe7a s\xe3o mortos se sofrerem algum dano. Rob\xf4s de Seguran\xe7a n\xe3o sofrem nenhum dano de her\xf3is atacantes.",c9,"Rob\xf4 de Seguran\xe7a",c7,c7,e7)],h4),37,"Voc\xea vence quando coleta uma amostra de DNA de cada um dos her\xf3is.",d7,"Pequenos Monstros \u2013Rob\xf4s de Seguran\xe7a\nFichas de Her\xf3i \u2013DNA do her\xf3i",d2,b0,b1,a9,"Fora do corpo",c3)
+b1=A.b(["Se a pe\xe7a da Cozinha n\xe3o for descoberta, procure-a na pilha de pe\xe7as e coloque-a no T\xe9rreo, o mais longe poss\xedvel do Hall de Entrada.",e5,"Defina a trilha num\xe9rica para{2/3/4/4}.","Coloque {3/4/5/6} Pequenos marcadores de Monstro pela casa, um em cada ladrilho com um s\xedmbolo de Evento. Esses s\xe3o os Vizinhos. Se voc\xea precisar colocar mais Vizinhos do que ladrilhos com s\xedmbolos de Evento, coloque o restante desses Vizinhos no Hall de Entrada.",e1],g8)
+b0=A.b([A.L("Cure todos os seus tra\xe7os e mova seu explorador para a Cozinha. Ent\xe3o, d\xea o Anel para seu assassino. Depois da sua vez, jogue com os vizinhos.",e6),A.L("Coloque um n\xfamero de novos Vizinhos na casa, igual ao valor atual na Trilha Num\xe9rica. Coloque um desses Vizinhos em cada pe\xe7a com um s\xedmbolo de Evento. Se houver mais Vizinhos novos do que pe\xe7as com s\xedmbolos de Evento, n\xe3o coloque os Vizinhos restantes.Mais convidados!","No final da volta do monstro")],h0)
+b0=A.ai(B.m,'Que bagun\xe7a. Essas decora\xe7\xf5es quase deram mais trabalho do que valiam a pena, mas agora que pararam de se mover, a festa pode come\xe7ar para valer. Enquanto voc\xea coloca o \xfaltimo dos corpos em uma onda imaculada vis\xedvel das janelas da varanda da frente, voc\xea pensa consigo mesmo: "Preciso colocar o bolo no forno. Agora, onde est\xe1 aquele anel?"',d0,"Todo ano, seus vizinhos assam o Anel das Festas em um bolo. Quem ficar com a fatia com o anel \xe9 respons\xe1vel por hospedar a festa do ano que vem. Este ano \xe9 a sua vez, e o tempo est\xe1 ficando curto. Os convidados come\xe7aram a chegar, e tudo est\xe1 finalmente no lugar. H\xe1 um assado no forno, o jardim est\xe1 lindo, e a salada de ambrosia est\xe1 pronta. A \xfanica coisa que resta a fazer \xe9 decorar a entrada da casa. Se ao menos as decora\xe7\xf5es parassem de se mover sozinhas...",A.b([A.bh(B.u,"Ol\xe1, vizinho! Os vizinhos s\xe3o mortos em vez de atordoados.",c7,"Os Vizinhos",c8,e8,c7)],h4),38,c6,f6,u.M,d2,b1,B.u,b0,"A Soir\xe9e Sinistra",c3)
+b1=A.b(["Voc\xea completa sua metamorfose. Remova seu explorador da casa e substitua-o pela Vespa Gigante. Enterre todos os seus Itens e Press\xe1gios.",f0,"Distribua 5 fichas de Ninho em diferentes tiles de T\xe9rreo e/ou Piso Superior. Esses s\xe3o os Ovos de Vespa que os her\xf3is est\xe3o tentando destruir.","Lugar{0/2/3/5}Pequenos tokens de Monstro em seu tile. Estes s\xe3o seus Worker Wasps."],g8)
+b1=A.ai(B.m,"Seus beb\xeas finalmente eclodem dos ovos, com suas cabecinhas saindo das cascas. Eles est\xe3o com fome e v\xe3o atr\xe1s dos primeiros peda\xe7os de comida que encontram \u2014 os humanos que voc\xeas um dia chamaram de amigos. A Era das Vespas come\xe7ou!",d0,"Nos \xfaltimos anos, voc\xea tem estudado maneiras de unir c\xe9lulas de insetos e humanas. Voc\xea at\xe9 fez experimentos em si mesmo, chegando ao ponto de pedir ao Senhor das Vespas para habitar seu corpo. Voc\xea realmente come\xe7ou a ver resultados \u2014 voc\xea se tornou mais forte e r\xe1pido, e aprendeu a grudar em paredes. Mas agora, algo ainda maior aconteceu: voc\xea \xe9 capaz de invocar e controlar insetos com sua mente. Sua humanidade caiu como um exoesqueleto abandonado, revelando voc\xea como voc\xea realmente \xe9 \u2014 uma vespa gigante, l\xedder de todos os insetos. Esta casa ser\xe1 a sede do seu poder. Ser\xe1 seu ninho.",A.b([A.bh(A.b([A.Y("Cause um dado de dano F\xedsico a um her\xf3i em seu tile. Esta Vespa morreu. Remova-a da casa.","Defenda o Enxame")],h2),"As vespas oper\xe1rias s\xe3o mortas em vez de atordoadas.","1","Vespa Oper\xe1ria",c9,c7,c8),A.bh(A.b([A.Y("Enquanto estiver em um tile com um cad\xe1ver, se algum Ovo de Vespa foi removido da casa, coloque um Ovo de Vespa no tile com o cad\xe1ver. Remova o cad\xe1ver e enterre todos os seus Itens e Press\xe1gios.","P\xf4r Ovos")],h2),"No final do seu turno: Coloque uma Vespa Oper\xe1ria em cada ladrilho com um Ovo de Vespa (mesmo que esteja sendo carregado por um her\xf3i). Se houver v\xe1rios Ovos de Vespa em um ladrilho, coloque uma Vespa por Ovo. Os Ovos permanecem em jogo. Ent\xe3o, se houver ovos de vespa na casa, mova a trilha num\xe9rica para baixo em 1. Se a trilha num\xe9rica chegar a 0, voc\xea venceu!",c7,"A Vespa Gigante",c7,c7,e7)],h4),39,"Voc\xea vence quando todos os her\xf3is est\xe3o mortos ou quando o tempo acaba.",e4,u.I,f4,b1,B.u,B.aO,"Mente de colmeia","Maior Conhecimento (al\xe9m do Revelador de Assombra\xe7\xf5es)")
+b2=A.b([c5,e1,e5,"Lugar{2/3/4/5}Pequenos tokens de Monstro em seu tile. Esses s\xe3o os Evil Twins dos her\xf3is.","Encontre o token de Her\xf3i correspondente de cada her\xf3i. Essas s\xe3o as Identidades dos G\xeameos. Coloque uma embaixo de cada G\xeameo Maligno."],g8)
+b3=A.b([A.Y("Enquanto estiver em um tile com um Evil Twin atordoado, vire esse Evil Twin de volta. Ele n\xe3o est\xe1 mais atordoado e pode agir normalmente em seu pr\xf3ximo turno.","Proteja sua fam\xedlia")],h2)
+b3=A.ai(B.m,"Sua casa est\xe1 segura. Voc\xea representa uma vers\xe3o da sua vida que parece quase real. Na pr\xf3xima vez que a porta da frente se abrir e voc\xea se vir entrando, voc\xea estar\xe1 pronto.",d0,"Voc\xea j\xe1 mora nesta casa, o que voc\xea descobre quando fica cara a cara com... voc\xea mesmo? Seu g\xeameo acena para que voc\xea se aproxime, e voc\xea o faz. Ele tira sua m\xe1scara \u2014 a m\xe1scara do seu pr\xf3prio rosto \u2014 e a entrega a voc\xea. Voc\xea sabe que se voc\xea coloc\xe1-la, voc\xea se tornar\xe1 a vers\xe3o de voc\xea que mora aqui, se tornar\xe1 parte da fam\xedlia cuja casa \xe9 esta. Voc\xea coloca a m\xe1scara sobre seu rosto, e seu g\xeameo n\xe3o existe mais. Voc\xea sempre viveu aqui, e voc\xea deve proteger sua casa.",A.b([A.bh(B.u,"\u2022 Cada Evil Twin tem um Reflexo, representado por seu token de her\xf3i. \u2022 As caracter\xedsticas dos Evil Twins s\xe3o iguais \xe0s caracter\xedsticas iniciais de seus Reflections. \u2022 Evil Twins n\xe3o rolam movimento. Cada Twin pode mover um n\xfamero de tiles igual \xe0 sua Velocidade. \u2022 Se um G\xeameo Maligno receber dano de seu Reflexo ou do her\xf3i que segura a M\xe1scara, o G\xeameo Maligno ser\xe1 morto em vez de atordoado. \u2022 G\xeameos Malignos podem atacar com qualquer caracter\xedstica. Estat\xedsticas iniciais dos her\xf3is: Jos\xe9 (5/4/4/3), Oliver (4/5/3/4), Jaden (3/4/4/5), Sammy (4/5/4/3), E (4/3/4/5), Warren (3/4/5/4), Michelle (5/4/3/4), Bretanha (5/3/4/4), Pers\xeafone (4/4/5/3), Stephanie (4/3/5/4), Anita (4/4/3/5), Um (3/5/4/4).",f7,"G\xeameos Malignos",f7,f7,f7)],h4),40,c6,g3,"Pequenos tokens de monstro \u2013G\xeameos do Mal\nFichas de Her\xf3i \u2013Identidades G\xeameas",d6,b2,b3,B.aO,"O Retorno dos Andarilhos da Carne",c3)
+b2=A.b([c5,e1,"Coloque uma ficha de Armadilha em seu tile. Deixe as fichas de Armadilha restantes de lado.","Pegar{3/3/4/5}Fichas ON/OFF e devolva o restante para a caixa. Esses s\xe3o Geradores. Coloque um em seu ladrilho e, em seguida, um em cada ladrilho de sua escolha que tenha um s\xedmbolo de Item ou Press\xe1gio. Se sobrar alguma ficha, coloque-a em ladrilhos de Aterrissagem."],g8)
+b4=A.b([A.L("Geral. A Armadilha permanece no tile. Depois da sua vez, converse com a Casa.","Quando um her\xf3i entra em um tile com um token de Armadilha, ele recebe dois dados de dano")],h0)
+b5=A.b([A.Y("Enquanto estiver em um ladrilho com um Gerador na posi\xe7\xe3o DESLIGADO, fa\xe7a um teste de Conhecimento. 4+Coloque o gerador na posi\xe7\xe3o ON. 0\u20133Nada acontece. Desencadeando uma armadilha","Reativar Geradores")],h2)
+b4=A.ai(B.m,"A casa estremece e se acomoda. Um dia, voc\xea ajudar\xe1 a coisa que vive aqui a escapar desta gaiola. Quando o fizer, o mundo se ajoelhar\xe1 diante do poder deste deus terr\xedvel... e voc\xea ser\xe1 seu sumo sacerdote.",d0,"Voc\xea sente uma fa\xedsca el\xe9trica passar por voc\xea. Rel\xe2mpago. Trov\xe3o. H\xe1 um deus na fia\xe7\xe3o, e a casa \xe9 sua gaiola. O deus ordena que voc\xea livre a casa de intrusos. Voc\xea vai ouvir.",A.b([A.bh(A.b([A.Y("Coloque uma Armadilha em qualquer tile que n\xe3o tenha um her\xf3i ou Armadilha. Voc\xea n\xe3o pode usar Possess Electronics para colocar armadilhas em ou adjacentes a um tile com um Gerador.","Possuir Eletr\xf4nicos"),A.Y("Role 2 dados. Mova qualquer explorador at\xe9 essa quantidade de pe\xe7as em qualquer dire\xe7\xe3o. Se isso fizer com que o explorador acione uma Armadilha, ele para de se mover.","Corredores em espiral")],h2),"A Casa n\xe3o pode ser atacada ou atordoada. Ela n\xe3o se move. A Casa pode fazer um ataque de Poder contra um her\xf3i em ou adjacente a qualquer ladrilho com um Gerador LIGADO (fichas DESLIGADAS n\xe3o contam).",c7,"A Casa",c7,"0",f8)],h4),41,c6,d3,"N\xfamero de trilha\n5 fichas ON/OFF \u2013Geradores\n5 fichas de armadilha 5\nTokens Pesquisados \u2013Sabotar",d6,b2,b5,b4,"Um Deus na M\xe1quina",c3)
+b5=A.b([c5,e5,g7,"Enterre o Cachorro. Coloque a ficha do Cachorro Dem\xf4nio em sua pe\xe7a.","Coloque {0/1/1/2} Fichas de comida na Carta de Monstro. Deixe o resto de lado."],g8)
+b2=A.b([A.Y("\u2022 Se voc\xea estiver em um dos tile dos lugares favoritos da gangue, pode curar todos os seus tra\xe7os.","Visite os lugares favoritos da gangue")],h2)
+b2=A.ai(B.m,"A vit\xf3ria sempre tem um gosto t\xe3o doce. As mand\xedbulas poderosas do c\xe3o trituram os ossos do \xfaltimo sobrevivente. Ele lambe os bei\xe7os, sua fome \xe9 insaci\xe1vel. E ent\xe3o o c\xe3o pressiona seu nariz frio, \xfamido e fantasmag\xf3rico nas t\xe1buas do assoalho em busca de mais petiscos.",d0,'Voc\xea imediatamente reconhece o c\xe3o como o fiel companheiro dos ca\xe7adores de fantasmas que teriam morrido aqui. Um sorriso se espalha pelo seu rosto enquanto o canino espectral avan\xe7a com um sorriso antropom\xf3rfico. Ent\xe3o, seus olhos brilham em vermelho e ele rosna as palavras inconfund\xedveis, "Alimente-me".',A.b([A.bh(A.b([A.Y("Enquanto estiver na Despensa, pegue uma ficha de Comida (se houver alguma restante) e coloque-a na Carta de Monstro.","Pegue algo para comer")],h2)," Ap\xf3s sua vez, jogue com o C\xe3o Demon\xedaco.\nDemon\xedaco n\xe3o pode ser atordoado. Adicione +1 ao Poder do C\xe3o Demon\xedaco para cada marcador de Comida na Carta de Monstro.",c9,"C\xe3o Demon\xedaco",c7,c9,c9)],h4),42,c6,f9,"Token pesquisado \u2013Esp\xedrito Exorcizado\nToken de c\xe3o demon\xedaco\n5 fichas de comida \u2013Comida\nAzulejos Os Lugares Favorito da Gangue:\nDespensa \u2013T\xe9rreo\nBiblioteca - T\xe9rreo/Piso Superior\nGin\xe1sio \u2013Por\xe3o/Terra\xe7o Ch\xe3o\nCapela \u2013T\xe9rreo",e9,b5,b2,B.aO,"Ataque de lanche",c3)
+b5=A.b([c5,e1],g8)
+b6=A.b([A.L("Her\xf3is que est\xe3o escondidos n\xe3o podem ser atacados e n\xe3o contam como obst\xe1culos.","Her\xf3is Ocultos")],h0)
+b7=A.b([A.Y("Enquanto estiver em um ladrilho com um her\xf3i Oculto, fa\xe7a um teste de Sanidade. 5+O her\xf3i perde seu token oculto. 0\u20134Nada acontece.","Revele o Oculto"),A.Y("Enquanto estiver em um tile com o Lobisomem, se ele n\xe3o estiver atordoado, mova-o um tile. Ent\xe3o, fa\xe7a um ataque de Poder com o Lobisomem.","Comunique-se com os lobos"),A.Y("Enquanto estiver na linha de vis\xe3o de um her\xf3i n\xe3o Oculto, fa\xe7a um teste de Sanidade. 5+O her\xf3i escolhe e enterra uma de suas cartas de Item ou Press\xe1gio. 0\u20134 Nada acontece.","Amaldi\xe7oe seus inimigos")],h2)
+b6=A.ai(B.m,"Voc\xea \xe9 imortal agora \u2014 voc\xea pensa. Voc\xea n\xe3o tem certeza de como dizer.",d0,"Dizem que o sangue derramado nesta casa conceder\xe1 imortalidade \xe0quele que orquestrou o sacrif\xedcio. Voc\xea n\xe3o se importaria com um pouco de imortalidade, voc\xea mesmo. Ent\xe3o, quando sua amiga, Ronnie, precisou de um lugar para se trancar para, digamos... esperar a lua cheia, voc\xea teve uma \xf3tima recomenda\xe7\xe3o para ela. E quando seus outros amigos ficaram preocupados com o desaparecimento repentino de Ronnie, voc\xea organizou uma pequena equipe de resgate. Agora voc\xea s\xf3 precisa fazer um pouco de microgerenciamento (e bruxaria) para garantir que o sangue seja realmente derramado.",A.b([A.bh(A.b([A.Y("O Lobisomem uiva. Se a Trilha Num\xe9rica n\xe3o estiver em 0, cada her\xf3i deixa de lado seus tokens Ocultos. Eles n\xe3o est\xe3o mais Ocultos.","No final do turno do monstro")],h2),"Depois da sua vez, jogue com o Lobisomem.\nLobisomem n\xe3o pode atacar um her\xf3i Oculto.",c8,f2,e8,c9,f8)],h4),43,c6,f9,"N\xfamero de trilha\nToken de Lobisomem\nTokens Ocultos \u2013Escondido Her\xf3is",d8,b5,b7,b6,"Esconde-esconde e come","Possuidor de mais Press\xe1gios")
+b7=A.b([c5,e5,e1,"Coloque {1/2/3/4} Pequenos tokens de Monstros em tiles de entrada. Esses s\xe3o seus Manequins."],g8)
+b5=A.b([A.L("Os tiles em chamas s\xe3o colocadas viradas para baixo. As pe\xe7as em chamas n\xe3o s\xe3o consideradas como tendo um simbolo ou efeitos, e contam como tendo portas em todos os quatro lados.","A casa est\xe1 pegando fogo"),A.L("Her\xf3is sofrem dano quando entram em um tile em chamas, voc\xea e seus manequins n\xe3o sofrem dano de tile em chamas.","Feitos das chamas"),A.L("O dano de todos os ataques contra voc\xea \xe9 reduzido em 1.","Feito de Pl\xe1stico")],h0)
+b5=A.ai(B.m,"Voc\xea esculpe a pe\xe7a final de material para seu desfile de moda. \u201cIsso vai servir perfeitamente. Certamente ser\xe1 o assunto da pr\xf3xima Fashion Week.\u201d",d0,"Meu, meu Deus, que gente linda voc\xea tem aqui com voc\xea. E voc\xea estava t\xe3o preocupada em n\xe3o ter material suficiente para costurar! Sua m\xe3o de pl\xe1stico treme de excita\xe7\xe3o enquanto voc\xea pega uma faca. Voc\xea v\xea um dos seus convidados pegar uma m\xe1scara, e voc\xea n\xe3o consegue deixar de admirar seu pr\xf3prio trabalho. \u201cQue artesanato\u201d, voc\xea diz. \u201cN\xe3o se preocupe, voc\xea logo estar\xe1 bonita o suficiente para usar tamb\xe9m.\u201d",A.b([A.bh(B.u,"Depois da sua vez, jogue com os manequins\n* Um Manequim que come\xe7a seu turno na linha de vis\xe3o de um her\xf3i rola apenas 2 dados para seu movimento.",e8,"Manequim",c9,e7,f8)],h4),44,c6,g3,"Pequenos tokens de monstro \u2013Manequins\nFichas de fogo",d8,b7,B.u,b5,"Uma Costura Faltando",e3)
+b7=A.ai(B.m,"Um telefone toca na casa, e \xe9 a liga\xe7\xe3o que voc\xea estava esperando. Quando voc\xea atende, uma voz familiar fala: \u201cAdor\xe1vel performance. Quem \xe9 seu elenco de apoio para o epis\xf3dio 2?\u201d",d0,'Voc\xea sabia que esta era a estreia da temporada do reality show "Carnage House" e est\xe1 determinado a ser sua mais nova estrela! Voc\xea pisca para a c\xe2mera escondida, sabendo que est\xe1 piscando para todos os seus novos f\xe3s assistindo de casa. Pode ser uma improvisa\xe7\xe3o mortal, mas seu papel \xe9 claro: cortar seu elenco de apoio \u2014 permanentemente.',B.w,45,"Voc\xea vence quando todos os her\xf3is est\xe3o mortos.N\xe3o existe algo como um colega de elenco.",e4,d5,d2,A.b([c5,e5,"Se a pe\xe7a do Arsenal n\xe3o tiver sido descoberta, procure-a na pilha de pe\xe7as e coloque-a no andar t\xe9rreo da casa.","Compre cartas do baralho de itens at\xe9 que voc\xea tenha 2 armas. Pegue essas 2 armas e coloque o resto das cartas compradas no fundo do baralho de itens. Se n\xe3o houver armas restantes no baralho de itens, pule esta etapa.","Defina a trilha num\xe9rica para{2/3/4/5}."],g8),B.u,A.b([A.L("Diga \u201cCorta!\u201d Coloque seu explorador no Arsenal. Cure todos os seus tra\xe7os. Voc\xea joga o pr\xf3ximo turno. O jogo ent\xe3o continua em sentido hor\xe1rio, come\xe7ando com o jogador \xe0 sua esquerda.",e6),A.L("Enquanto voc\xea estiver em uma pe\xe7a com um simbolo de evento, e tamb\xe9m tiver um h\xe9rio nesta pe\xe7a, adicione um dado adicional a todas as suas rolagens de dados.","Cenario Preparado"),A.L("Ao causar dano, armas n\xe3o podem ser usadas para levar as caracteristica de ninguem abaixo do critico. Isso inclui voc\xea.","Armas Cinematograficas")],h0),"Uma estreia audaciosa",c3)
+b8=A.b(["Voc\xea foi consumido pelo cabelo. Substitua sua figura pelo token do Monstro de Cabelo Gigante. Enterre todos os seus Itens e Press\xe1gios.",f0,"Encontre um de cada Token Num\xe9rico rotulado de 1 a{4/6/8/10}. Estes s\xe3o Ant\xeddotos. Embaralhe-os e coloque-os virados para baixo pela casa, dispostos como quiser.","Coloque 1 ficha de Monstro Pequeno no Hall de Entrada. Este \xe9 um Monstro de Cabelo Pequeno.","Encontre e reserve{1/2/3/4}Monstros de Cabelo Pequenos adicionais."],g8)
+b9=A.b([A.L("Substitua o explorador deles por um Monstro de Pelo Pequeno. Em vez de sua vez, jogue com os Monstros de Cabelo Pequeno",f3)],h0)
+b9=A.ai(B.m,'O cabelo rasteja e se emaranha por todas as fendas da casa, deslizando em rachaduras e crescendo no encanamento. Em poucas horas, a funda\xe7\xe3o est\xe1 coberta de cabelo molhado e mofado. "Ningu\xe9m sai", a casa sibila, "N\xf3s somos a Vingan\xe7a".',d0,"Seus amigos ficaram c\xe9ticos quando voc\xea disse a eles que algo sinistro estava crescendo dentro de voc\xea. Mas agora eles finalmente entendem, enquanto voc\xea regurgita pelos que n\xe3o s\xe3o seus. Eles vivem, rastejando por todo o seu corpo, tomando conta da sua pele e ossos. Voc\xea n\xe3o \xe9 mais voc\xea. Suas mem\xf3rias, suas necessidades, seus desejos foram todos substitu\xeddos por uma fome por carne e vingan\xe7a. Voc\xea \xe9 feito dos cabelos das v\xedtimas levadas por esta casa. Voc\xea \xe9 a Vingan\xe7a.",A.b([A.bh(B.u,"Ap\xf3s completar o turno dos Monstros de Cabelo Pequeno, jogue com o",c8,"Monstro de Cabelo Pequeno",e8,f8,c7),A.bh(B.u,d0,d0,"de Cabelo Gigante.",d0,d0,d0),A.bh(A.b([A.Y("Enquanto estiver em uma pe\xe7a com um s\xedmbolo de Press\xe1gio, troque de lugar com um Monstro de Pelo Pequeno.","Mudan\xe7a de cabelo")],h2),"O Monstro Gigante de Cabelo pode se mover entre pe\xe7as com s\xedmbolos de Press\xe1gio como se fossem adjacentes. O Monstro de Cabelo Gigante s\xf3 pode receber dano de ataques de For\xe7a.",c9,"Monstro de Cabelo Gigante",e7,"1",f8)],h4),46,"Voc\xea vence quando todos os her\xf3is se transformam em Monstros de Cabelo.",g2,"Ficha de monstro de cabelo gigante\nPequenos tokens de monstro \u2013\nPequenos Monstros de Cabelo\nFichas num\xe9ricas \u2013Ant\xeddotos",f4,b8,B.u,b9,"Cabelo Fantasma",c3)
+b8=A.ai(B.m,"O cavaleiro suspira, embainhando sua espada. Hora de descansar novamente \u2014 mas por um curto per\xedodo. Voc\xea \xe9 agora, e para sempre, seu escudeiro.",d0,'Fantasmas de outrora assombram este lugar \u2014 disso, voc\xea tem certeza. Muitos outros os procuraram, apenas para desaparecer sem deixar vest\xedgios. Enquanto voc\xea se pergunta o que aconteceu com os \xfaltimos investigadores que vieram aqui, voc\xea espia uma armadura. Um portal de repente se abre, engolindo voc\xea inteiro. Do outro lado, voc\xea fica cara a cara com um cavaleiro e a ponta de sua l\xe2mina. "Voc\xea ser\xe1 meu corpo no outro reino. Envie-os aqui e eu os acabarei." Voc\xea n\xe3o tem escolha a n\xe3o ser concordar.',B.w,47,c6,d7,"Fichas de Her\xf3i \u2013Her\xf3is Presos\nTokens de Portal \u2013Portais Dimensionais",e9,A.b([c5,e5,"Encontrar{2/3/4/5}Fichas de portal. Ent\xe3o, para cada her\xf3i, coloque uma ficha de portal na regi\xe3o daquele her\xf3i no ladrilho mais distante daquele her\xf3i.","D\xea a cada her\xf3i seu token de Her\xf3i correspondente. Um her\xf3i que tem seu token de Her\xf3i \xe9 Preso."],g8),B.u,A.b([A.L("Um Her\xf3i que tem seu token de Her\xf3i est\xe1 preso. Her\xf3is presos n\xe3o podem negociar com her\xf3is que n\xe3o est\xe3o presos.",g6),A.L("Voc\xea pode atacar uma vez no seu turno para cada her\xf3i vivo, mas n\xe3o pode atacar nenhum her\xf3i mais de uma vez por turno. O tipo de ataque que voc\xea \xe9 determinado se o her\xf3i est\xe1 preso ou n\xe3o preso.\u2022Her\xf3is presos - Ataque de sanidade\nAdicione 2 ao resultado da sua jogada. Se voc\xea vencer, o her\xf3i recebe dano f\xedsico.\u2022Her\xf3is n\xe3o presos - Ataque de Poder\nSe voc\xea vencer, voc\xea n\xe3o causa dano. Em vez disso, d\xea ao seu alvo o token de preso. Esse her\xf3i est\xe1 preso. Voc\xea n\xe3o sofre dano se perder este ataque","Que Cavaleiro Cruel"),A.L("Em vez disso, cure todas as suas caracteristicas. O cavaleiro cruel \xe9 invecivel.","Se voc\xea morresse")],h0),"Um Cavaleiro para Lembrar",c3)
+c0=A.b([c5,"Cure todos os seus tra\xe7os. Ganhe 1 de Poder.",e1,"Se a pe\xe7a da Sala Sangrenta n\xe3o tiver sido descoberta, procure-a na pilha de pe\xe7as e coloque-a no andar t\xe9rreo.","Coloque a ficha do Chefe da Casa na Sala Sangrenta.","Coloque a Caveira sob a Carta de Monstro. O Chefe da Casa est\xe1 carregando-a."],g8)
+c1=A.b([A.L("Se o her\xf3i estiver carregando a Caveira, ele faz um teste de Velocidade. 5+Nada acontece. 0\u20134O her\xf3i sofre 2 de dano F\xedsico.Ai, como morde!",f5),A.L("Coloque-se no ladrilho da Sala Sangrenta e cure todas as suas caracter\xedsticas. Seu servi\xe7o n\xe3o terminou.",e6)],h0)
+c2=A.b([A.Y("Se voc\xea estiver segurando a Caveira, coloque o chefe da Casa em sua pe\xe7a. Ent\xe3o, coloque a Caveira sob a Carta de Monstro. Ele volta a vida","Reviva o Host")],h2)
+c1=A.ai(B.m,"S\xe3o cinco longos minutos enquanto o Bloody Room termina sua digest\xe3o. Enquanto voc\xea est\xe1 de p\xe9 sobre seu mestre, roupas bonitas reunidas para sua chegada, carne rasteja do ch\xe3o e das paredes da casa, tecendo ao redor dele. Sua bela forma suspira para a vida enquanto voc\xea apresenta seu terno. Ele se veste elegantemente, como todas as vezes antes, e se retira para seu quarto. Voc\xea vai ter que fazer novos amigos.",d0,"Voc\xea esperava que ele n\xe3o estivesse acordado. Afinal, voc\xea gosta bastante desse grupo, j\xe1 que voc\xeas eram os que estavam antes deles. L\xe1 estava ele, no entanto, seu mestre \u2014 um simples cr\xe2nio, e voc\xea est\xe1 ligado a ele. Ele \xe9 seu anfitri\xe3o: o Chefe da Casa, e voc\xea n\xe3o o aborrece, porque voc\xea n\xe3o \xe9 nada sem ele. Ent\xe3o, em vez disso, seus amigos s\xe3o a comida do seu mestre, alimentados pela Sala Sangrenta. Por meio dele, eles nutrem voc\xea. Ele fica contente, e voc\xea fica vivo. Ent\xe3o, para o grupo voc\xea diz \u201cadeus\u201d \u2014 seu mestre est\xe1 pronto para comer.",A.b([A.bh(B.u,"Ap\xf3s sua vez, jogue com o Chefe da Casa.\n\u2022Quando o chefe da casa \xe9 derrotado por um ataque, ele \xe9 morto em vez de atordoado. Remova-o da casa e d\xea o cr\xe2nio ao atacante.","8","Chefe da Casa",e7,e7,e7)],h4),48,c6,g2,"Token do Chefe da Casa",d2,c0,c2,c1,"N\xe3o chateie o anfitri\xe3o","Maior For\xe7a")
+c2=A.b([c5,e5,g7,"Ganho{0/1/2/2}For\xe7a e velocidade.","Coloque a ficha de Dem\xf4nio no ladrilho do Por\xe3o mais distante do Patamar do Por\xe3o.","Coloque o token de Contrato no Dem\xf4nio. Ele est\xe1 segurando o Contrato."],g8)
+c0=A.b([A.L("Se voc\xea n\xe3o estiver usando uma arma, voc\xea pode atacar usando Sanity. O perdedor recebe dano Mental.Veja \u201cBenef\xedcios Especiais\u201d, no par\xe1grafo 3, subse\xe7\xe3o \u03a9. Fichas de Sangue Usado para cumprir o contrato infernal. \u2022 Se um her\xf3i morrer ou sofrer dano F\xedsico, ele deixa cair seu token de Sangue. \u2022 Se voc\xea estiver em um tile com quaisquer marcadores de Sangue, voc\xea pode peg\xe1- los. Coloque-os no seu tabuleiro de personagem. Ap\xf3s sua vez, jogue com o Dem\xf4nio.",g5),A.L("Se voc\xea tiver o marcador de Sangue de cada her\xf3i, voc\xea realizar\xe1 o ritual com sucesso.Voc\xea venceu!","Quando voc\xea entra em um ladrilho com o Dem\xf4nio")],h0)
+c0=A.ai(B.m,"O dem\xf4nio suspira e guarda o contrato de volta em um bolso escondido. De uma forma ou de outra, o contrato foi cumprido e voc\xea est\xe1 livre de cl\xe1usula 4b.",d0,"Voc\xea nunca foi de ler termos e condi\xe7\xf5es, nem mesmo quando assinava a papelada para comprar uma casa. \u201cEstou t\xe3o feliz que voc\xea concordou\u201d, diz a corretora. Espera\u2026 como voc\xea n\xe3o notou os dentes pontudos dela antes? \u201cClaro\u201d, ela continua, \u201cse voc\xea quiser cumprir o contrato e manter sua alma dentro do seu corpo, eu preciso que voc\xea complete a cl\xe1usula 4b e me traga o sangue de todos os seus amiguinhos.\u201d",A.b([A.bh(B.u,"Se o Dem\xf4nio estiver segurando o Contrato, ele n\xe3o poder\xe1 ser atordoado.",c7,"Dem\xf4nio",c9,c9,e7)],h4),49,"Voc\xea vence quando traz o sangue de todos para o Dem\xf4nio, ou quando todos os her\xf3is est\xe3o mortos.",d9,"Fichas de Sangue\nToken de contrato\nFicha Demon\xedaca",d6,c2,B.u,c0,"Termos e Condi\xe7\xf5es",c3)
+g8=A.b(["Voc\xea foi consumido. Enterre todos os seus Itens e Press\xe1gios. Remova seu explorador da casa e substitua-o pelo token Construct.","Vire a pe\xe7a em que voc\xea est\xe1 para baixo. Essa pe\xe7a foi consumida.",g4,"Defina a trilha num\xe9rica para{2/3/3/4}. Esta \xe9 a sua velocidade."],g8)
+h0=A.b([A.L("Voc\xea pode se colocar em qualquer tile com um her\xf3i. Se fizer isso, perca o resto dos seus movimentos do turno. Voc\xea pode Consumir a casa qualquer n\xfamero de vezes por turno.","Quando voc\xea consome um tile com um s\xedmbolo Omen")],h0)
+return A.av([1,h1,9,g9,10,q,11,p,12,o,13,n,14,h3,15,m,16,k,17,l,18,i,19,j,20,h,21,f,22,e,23,d,24,c,25,g,26,a,27,b,28,a1,29,a2,30,a3,31,a4,32,a0,33,a6,34,a5,35,a8,36,a7,37,a9,38,b0,39,b1,40,b3,41,b4,42,b2,43,b6,44,b5,45,b7,46,b9,47,b8,48,c1,49,c0,50,A.ai(B.m,"Voc\xea libera uma toxina gasosa e malcheirosa ao terminar de consumir todas as criaturas vivas da casa. Voc\xea estica seus tent\xe1culos carnudos dentro de sua armadura, antes de se encolher de volta para sua casa como um caranguejo eremita. Foi um dia de trabalho duro. BETRAYAL AT HOUSE ON THE HILL, AVALON HILL e HASBRO e todas as marcas registradas e logotipos relacionados s\xe3o marcas registradas da Hasbro, Inc. \xa9 2022 Hasbro. Hasbro, Pawtucket, RI 02861-1059 EUA. Fabricado por: Hasbro SA, Rue Emile-Bo\xe9chat 31, 2800 Del\xe9mont, CH.Representado por: Hasbro, De Entree 240, 1101 EE Amsterdam, NL. GBHasbro UK Ltd., PO Box 43, Newport, NP19 4YH, Reino Unido. Tel.: 00800 22427276. Contato com o consumidor: EUA/Canad\xe1: Hasbro Games, Consumer Affairs Dept., PO Box 200, Pawtucket, RI 02861-1059 EUA. TEL: 1-800-255-5516. Atendimento ao consumidor na Austr\xe1lia: https://consumercare.hasbro.com/en-au Atendimento ao consumidor na Nova Zel\xe2ndia: https://consumercare.hasbro.com/en-nz Reino Unido: consumer_affairs@hasbro.co.uk Pais: AvalonHill.com",d0,"Por dias, voc\xea e seus amigos t\xeam tido o mesmo pesadelo sobre esta mans\xe3o, sonhos sobre uma mancha de carne que consome TUDO. Voc\xea n\xe3o acreditou at\xe9 ver aquela velha armadura. Quando voc\xea se inclinou para olhar mais de perto, tent\xe1culos carnudos explodiram da placa peitoral, consumindo voc\xea em um instante.",A.b([A.bh(A.b([A.Y("\u2022 Se voc\xea estiver em um ladrilho com um cad\xe1ver, voc\xea pode remover esse cad\xe1ver da casa e enterrar os itens e itens desse explorador. Press\xe1gios. Mova a Trilha Num\xe9rica para cima em 1.Voc\xea est\xe1 ficando mais r\xe1pido. V\xe1rias vezes por turno, voc\xea pode Consuma a casa Enquanto estiver em um ladrilho que n\xe3o seja de pouso e que n\xe3o tenha sido consumido, vire aquela sala para baixo. Aquele tile foi consumido. Se todos os tiles que n\xe3o sejam de aterrissagem foram consumidos,voc\xea venceu!","Consumir Carne")],h2),"A Velocidade do Construto \xe9 igual ao n\xfamero na Trilha Num\xe9rica. (Lembre- se de rolar a cada turno para determinar seu movimento.) O Construto n\xe3o pode ser atordoado.",c9,"O Construto",c9,d0,"8")],h4),50,"Voc\xea vence quando todos os her\xf3is estiverem mortos ou quando voc\xea tiver consumido a casa inteira.",d7,u.z,f4,g8,B.u,h0,"O sabor da carne e do metal",c3)],t.S,A.ag("fo"))})
 s($,"aPI","azN",()=>{var q=null,p=t.yo
 p=A.b([A.xd(q,new A.amL(),"/",B.hd),A.xd(q,new A.amM(),"/sobrevivente",A.b([A.xd(q,new A.amN(),":id",B.hd)],p)),A.xd(q,new A.amO(),"/traidor",A.b([A.xd(q,new A.amP(),":id",B.hd)],p))],p)
 return A.aCr(!1,q,q,q,q,q,q,q,q,!1,q,!0,q,!1,new A.Nh(new A.a83(p,A.aKP(),5)))})
@@ -85786,7 +85791,7 @@ r($,"aN_","ay3",()=>B.Cz)
 r($,"aN1","ay5",()=>{var q=null
 return A.auq(q,B.mw,q,q,q,q,"sans-serif",q,q,18,q,q,q,q,q,q,q,q,q,q,q)})
 r($,"aN0","ay4",()=>{var q=null
-return A.atm(q,q,q,q,q,q,q,q,q,B.f2,B.aC,q)})
+return A.atm(q,q,q,q,q,q,q,q,q,B.f2,B.aB,q)})
 s($,"aNX","ayE",()=>A.aD8())
 s($,"aN2","ay6",()=>A.aoP(65532))
 s($,"aNV","FE",()=>A.aoP(65532))
@@ -85825,7 +85830,7 @@ r($,"aNz","ayq",()=>{var q=A.ag("~(aQ<aK>)")
 return A.av([B.SD,A.arP(!0),B.Sr,A.arP(!1),B.T0,new A.Kf(A.yq(q)),B.SR,new A.J6(A.yq(q)),B.SV,new A.Jz(A.yq(q)),B.ze,new A.ww(!1,A.yq(q)),B.lp,A.aEN(),B.SW,new A.JD(A.yq(q)),B.Tg,new A.M7(A.yq(q))],t.u,t.od)})
 s($,"aLw","amW",()=>{var q,p,o,n=t.C,m=A.q(t.Vz,n)
 for(q=A.ag("a6"),p=0;p<2;++p){o=B.kh[p]
-m.P(0,A.av([A.dW(B.aP,!1,!1,!1,o),B.je,A.dW(B.aP,!1,!0,!1,o),B.jh,A.dW(B.aP,!0,!1,!1,o),B.jf,A.dW(B.aG,!1,!1,!1,o),B.ef,A.dW(B.aG,!1,!0,!1,o),B.eg,A.dW(B.aG,!0,!1,!1,o),B.jg],q,n))}m.m(0,B.hY,B.dk)
+m.P(0,A.av([A.dW(B.aP,!1,!1,!1,o),B.je,A.dW(B.aP,!1,!0,!1,o),B.jh,A.dW(B.aP,!0,!1,!1,o),B.jf,A.dW(B.aF,!1,!1,!1,o),B.ef,A.dW(B.aF,!1,!0,!1,o),B.eg,A.dW(B.aF,!0,!1,!1,o),B.jg],q,n))}m.m(0,B.hY,B.dk)
 m.m(0,B.hZ,B.dl)
 m.m(0,B.i_,B.dp)
 m.m(0,B.i0,B.dq)
@@ -85885,7 +85890,7 @@ q.m(0,B.kZ,B.fX)
 return q})
 s($,"aLC","aqd",()=>{var q,p,o,n=t.C,m=A.q(t.Vz,n)
 for(q=A.ag("a6"),p=0;p<2;++p){o=B.kh[p]
-m.P(0,A.av([A.dW(B.aP,!1,!1,!1,o),B.je,A.dW(B.aP,!0,!1,!1,o),B.jh,A.dW(B.aP,!1,!1,!0,o),B.jf,A.dW(B.aG,!1,!1,!1,o),B.ef,A.dW(B.aG,!0,!1,!1,o),B.eg,A.dW(B.aG,!1,!1,!0,o),B.jg],q,n))}m.m(0,B.hY,B.dk)
+m.P(0,A.av([A.dW(B.aP,!1,!1,!1,o),B.je,A.dW(B.aP,!0,!1,!1,o),B.jh,A.dW(B.aP,!1,!1,!0,o),B.jf,A.dW(B.aF,!1,!1,!1,o),B.ef,A.dW(B.aF,!0,!1,!1,o),B.eg,A.dW(B.aF,!1,!1,!0,o),B.jg],q,n))}m.m(0,B.hY,B.dk)
 m.m(0,B.hZ,B.dl)
 m.m(0,B.i_,B.dp)
 m.m(0,B.i0,B.dq)
@@ -85948,7 +85953,7 @@ q.m(0,B.kZ,B.fX)
 return q})
 s($,"aLD","aqe",()=>{var q,p,o,n=t.C,m=A.q(t.Vz,n)
 for(q=A.ag("a6"),p=0;p<2;++p){o=B.kh[p]
-m.P(0,A.av([A.dW(B.aP,!1,!1,!1,o),B.q,A.dW(B.aG,!1,!1,!1,o),B.q,A.dW(B.aP,!0,!1,!1,o),B.q,A.dW(B.aG,!0,!1,!1,o),B.q,A.dW(B.aP,!1,!0,!1,o),B.q,A.dW(B.aG,!1,!0,!1,o),B.q,A.dW(B.aP,!1,!1,!0,o),B.q,A.dW(B.aG,!1,!1,!0,o),B.q],q,n))}m.P(0,B.tM)
+m.P(0,A.av([A.dW(B.aP,!1,!1,!1,o),B.q,A.dW(B.aF,!1,!1,!1,o),B.q,A.dW(B.aP,!0,!1,!1,o),B.q,A.dW(B.aF,!0,!1,!1,o),B.q,A.dW(B.aP,!1,!0,!1,o),B.q,A.dW(B.aF,!1,!0,!1,o),B.q,A.dW(B.aP,!1,!1,!0,o),B.q,A.dW(B.aF,!1,!1,!0,o),B.q],q,n))}m.P(0,B.tM)
 m.m(0,B.yd,B.q)
 m.m(0,B.ya,B.q)
 m.m(0,B.yc,B.q)
