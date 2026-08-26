@@ -266,10 +266,10 @@ final Map<int, Haunt> traitorHaunts = {
     objective: 'Você vence quando todos os heróis estão mortos.',
     requiredMarkers: '3 fichas de monstro pequeno –Gremlins\n3 fichas de runa',
     specialRules: [
-      SpecialRule(title: 'No final do turno de cada herói', description: 'Eles vão tirar uma mensagem da parte superior da caixa: • Se a mensagem tiver um X, nada acontece. Deixe essa mensagem de lado. • Se a mensagem disser “MORRA”, retorne todas as mensagens para o topo da caixa. Então, mova até dois Gremlins não atordoados para o ladrilho daquele herói. Cada um desses Gremlins faz um ataque de Poder contra aquele herói. Depois da sua vez, jogue com os Gremlins.'),
+      SpecialRule(title: 'No final do turno de cada herói', description: 'Eles vão tirar uma mensagem da parte superior da caixa: • Se a mensagem tiver um X, nada acontece. Deixe essa mensagem de lado. • Se a mensagem disser “MORRA”, retorne todas as mensagens para o topo da caixa. Então, mova até dois Gremlins não atordoados para o ladrilho daquele herói. Cada um desses Gremlins faz um ataque de Poder contra aquele herói.'),
     ],
     monsters: [
-      Monster(name: 'Gremlins (também conhecido como Viva, Ria e Ame)', strength: '5', speed: '6', sanity: '6', knowledge: '2', description: 'Gremlins são mortos em vez de atordoados se tiverem uma ficha de Runa com eles.'),
+      Monster(name: 'Gremlins (também conhecido como Viva, Ria e Ame)', strength: '5', speed: '6', sanity: '6', knowledge: '2', description: 'Depois da sua vez, jogue com os Gremlins.\nGremlins são mortos em vez de atordoados se tiverem uma ficha de Runa com eles.'),
     ],
     conclusion: 'Enquanto você fica de pé sobre os corpos sem vida dos seus amigos, mais gremlins sorridentes emergem dos cadáveres — quase como se estivessem escapando de casulos. Eles cantam: "Viva! Ria! Ame! Viva! Ria! Ame!" enquanto o levantam do chão e o jogam no ar, como o herói que você é.',
   ),
@@ -318,15 +318,16 @@ final Map<int, Haunt> traitorHaunts = {
       'Ganhe 1 de Sanidade.',
       'Defina a trilha numérica para{6/4/3/2}.',
       'Coloque 5 fichas de fita de vídeo em cinco peças diferentes, o mais longe possível dos heróis.',
-      'Coloque o token Ghost em qualquer tile com um token Videotape. Este é o Vengeful Spirit.',
+      'Coloque o token Ghost em qualquer tile com um token Videotape. Este é o Espirito Vingativo.',
     ],
     objective: 'Você vence quando todos os heróis estão mortos ou quando a Trilha Numérica chega a 0.',
     requiredMarkers: 'Número de trilha\nFichas de videocassete\nFicha Fantasma –Espírito vingativo',
     specialRules: [
-      SpecialRule(title: 'Quando você ataca', description: 'Você pode atacar usando Sanidade em vez disso. Se fizer isso, seu alvo também rola Sanidade. O perdedor recebe dano Mental. No final do seu turno Mova a trilha numérica para baixo em 1. Se chegar a 0,você venceu! Após sua vez, jogue com o Espírito Vingativo.'),
+      SpecialRule(title: 'Quando você ataca', description: 'Você pode atacar usando Sanidade em vez disso. Se fizer isso, seu alvo também rola Sanidade. O perdedor recebe dano Mental.'),
+      SpecialRule(title: 'No final do seu turno', description: 'Mova a trilha numérica para baixo em 1. Se chegar a 0,você venceu!')
     ],
     monsters: [
-      Monster(name: 'Espírito Vingativo', strength: '7', speed: '3', sanity: '4', knowledge: '3', description: 'O Espírito Vingativo pode se mover entre peças com marcadores de Videotape como se fossem adjacentes.'),
+      Monster(name: 'Espírito Vingativo', strength: '7', speed: '3', sanity: '4', knowledge: '3', description: 'Após a sua vez, jogue com o Espirito vingativo.\nO Espírito Vingativo pode se mover entre peças com marcadores de Videotape como se fossem adjacentes.'),
     ],
     conclusion: 'Você sacrificou seus amigos para apaziguar o espírito vingativo. Você implora para que ele o deixe ir, sem sucesso. Você olha, horrorizado, enquanto sua boca se abre mais e mais, desequilibrando-se como as mandíbulas de uma cobra. Estática vaza da boca escancarada e você se encontra congelado de terror enquanto ela o envolve como um cobertor. Leva apenas alguns momentos para você se render ao esquecimento do abismo.',
   ),
@@ -347,8 +348,12 @@ final Map<int, Haunt> traitorHaunts = {
     ],
     objective: 'Você vence quando todos os heróis estão mortos.',
     requiredMarkers: 'Ficha do Homem Sem Rosto\nFichas de runa –Sílabas do Nome do Homem Sem Rosto',
+    specialRules: [
+      SpecialRule(title: 'Adivinhe o nome do homem sem rosto', description: 'Os Heróis estão tentando adivinhar a ordem dos tiles que você anotou durante a preparação'),
+      SpecialRule(title: 'Na vez de cada jogador Herói', description: 'Eles podem perguntar se estão no tile correto. Eles estão corretos se estiverem no tile de menor valor da sua lista que você ainda não riscou. Caso contrário, eles estão incorretos.•Se um jogador estiver correto, diga isso a ele e risque essa peça da sua lista.•Se um jogador estiver incorreto, faça o seguinte em ordem.\n\n1) Diga a eles se estão na região correta ou não.\n\n2) Se eles estiverm na região correta, diga a eles quantos movimentos eles levariam para chegar ao tile correto. Não leve em consideração o movimento normal sem efeitos,a penas contando o numero de tiles de distância.\n\n3) Coloque o Homem sem Rosto no tile daquele herói. O Homem sem Rosto faz um ataque de força contra aquele herói.')
+    ],
     monsters: [
-      Monster(name: 'O Homem Sem Rosto', strength: '5', speed: '2', sanity: '5', knowledge: '5', description: 'Homem Sem Rosto não pode ser atordoado. Se os heróis atacarem e derrotarem o Homem Sem Rosto depois de descobrirem seu nome, ele será destruído.'),
+      Monster(name: 'O Homem Sem Rosto', strength: '5', speed: '2', sanity: '5', knowledge: '5', description: 'Depois da sua vez, jogue com o Homem Sem Rosto.\nHomem Sem Rosto não pode ser atordoado.\nSe os heróis atacarem e derrotarem o Homem Sem Rosto depois de descobrirem seu nome, ele será destruído.'),
     ],
     conclusion: 'O Homem Sem Rosto olha para seus corações coletados como os tesouros que eles são. Ele embala um suavemente em sua mão, virando-o silenciosamente e estudando o sangue que escorre. Uma fenda aparece em seu rosto, ficando cada vez mais larga, até que se abre em uma boca gigante que cobre todo o seu rosto. Seus dentes farpados brilham enquanto ele espera pela próxima noite silenciosa — uma noite em que sua presa não pode gritar por socorro.',
   ),
@@ -416,16 +421,20 @@ final Map<int, Haunt> traitorHaunts = {
       'Seu explorador ainda está no jogo. Você é o traidor.',
       'Coloque a Carta de Monstro à sua esquerda. Os monstros jogarão depois do seu turno.',
       'Cure todos os seus traços.',
-      'Lugar{2/3/4/5}Fichas ON em qualquer lugar da casa, distribuídas da forma mais uniforme possível entre as regiões.',
+      'Coloque {2/3/4/5} Fichas ON em qualquer lugar da casa, distribuídas da forma mais uniforme possível entre as regiões.',
       'Coloque uma ficha de Monstro Pequeno em cada ladrilho com uma ficha ON. Esses são seus Assistentes Robôs.',
     ],
     objective: 'Você vence quando todos os heróis estão mortos.',
     requiredMarkers: 'Número de trilha\nTokens ON/OFF –Circuitos\nPequenos tokens de monstro –Robô Assistentes',
+    specialRules: [
+      SpecialRule(title: 'Quartos Destruidos', description: 'Tiles de sala destruidas são viradas para baixo. Tiles destruidos não são considerados como tendo simbolos ou efeitos, e contam como tendo portas em todos os quatros lados.'),
+     
+    ],
     specialActions: [
-      SpecialAction(title: 'Mudar o Projeto', description: 'Escolha um tile que tenha um herói nele. Mova esse tile para um local diferente na mesma região da casa. Esse movimento não pode fazer com que nenhum tile fique inacessível via movimento normal. Após sua vez, converse com os Assistentes Robôs.'),
+      SpecialAction(title: 'Mudar o Projeto', description: 'Escolha um tile que tenha um herói nele. Mova esse tile para um local diferente na mesma região da casa. Esse movimento não pode fazer com que nenhum tile fique inacessível via movimento normal.'),
     ],
     monsters: [
-      Monster(name: 'Assistentes Robôs', strength: '2', speed: '6', sanity: '2', knowledge: '2', description: 'Os Assistentes Robôs não ficam atordoados quando sofrem dano. (Eles ainda podem ficar atordoados de outras maneiras.)', actions: [SpecialAction(title: 'Ligue os Lasers', description: 'Escolha qualquer herói na linha de visão. Esse herói faz um teste de Velocidade. 5+O herói se posiciona em qualquer peça adjacente. 0–4O herói sofre 2 dados de dano Físico.')]),
+      Monster(name: 'Assistentes Robôs', strength: '2', speed: '6', sanity: '2', knowledge: '2', description: ' Após sua vez, jogue com os Assistentes Robôs.\nOs Assistentes Robôs não ficam atordoados quando sofrem dano. (Eles ainda podem ficar atordoados de outras maneiras.)', actions: [SpecialAction(title: 'Ligue os Lasers', description: 'Escolha qualquer herói na linha de visão. Esse herói faz um teste de Velocidade. 5+O herói se posiciona em qualquer peça adjacente. 0–4O herói sofre 2 dados de dano Físico.')]),
     ],
     conclusion: 'Os limites do seu poder são infinitos. Você controla o espaço digital, dobrando Sya e o resto dos exploradores à sua vontade. O mundo está em dívida com sua grandeza enquanto você espalha sua rede por cada lar, cada conglomerado, cada cargo político. Você está em todo lugar.',
   ),
@@ -525,10 +534,12 @@ final Map<int, Haunt> traitorHaunts = {
     objective: 'Você vence quando coloca todas as suas Palavras Alienígenas na casa ou quando todos os heróis estão mortos.',
     requiredMarkers: 'Fichas de Herói –Conhecimento de Alienígenas\nFichas de Runa –Palavras Alienígenas',
     specialRules: [
-      SpecialRule(title: 'Quando você ataca ou é atacado', description: '• Se você estiver em uma sala com uma Alien Word, remova um dos dados do herói depois que ele rolar (e depois de qualquer nova rolagem). Dados removidos não são contados para o resultado de uma rolagem. No final do seu turno Se você colocasse todas as suas Palavras Alienígenas na casa,você venceu!'),
+      SpecialRule(title: 'Palavras Alienigenas', description: '•Não podem ser coletadas•Os herois gastam dois movimentos para sair de um tile com uma palavra alienigena•palavras alienigenas machucam os herois proximos.'),
+      SpecialRule(title: 'Quando você ataca ou é atacado', description: '• Se você estiver em uma sala com uma palavra alienigena, remova um dos dados do herói depois que ele rolar (e depois de qualquer nova rolagem). Dados removidos não são contados para o resultado de uma rolagem.'),
+      SpecialRule(title: 'No final do seu turno', description: 'Se você colocasse todas as suas Palavras Alienígenas na casa,você venceu!')
     ],
     specialActions: [
-      SpecialAction(title: 'Espalhe a palavra', description: 'Enquanto estiver em um tile sem um herói ou uma Alien Word, faça um teste de Knowledge. Para cada tile adjacente com uma Alien Word, adicione 1 ao resultado do seu teste. 7+Coloque uma Palavra Alienígena em sua peça.A mensagem deve ser completada. 0–6Ganhe 2 Conhecimentos.Os sussurros ficam mais altos, mais insistentes. Mais compreensível.'),
+      SpecialAction(title: 'Espalhe a palavra', description: 'Enquanto estiver em um tile sem um herói ou uma palavra alienigena, faça um teste de conhecimento. Para cada tile adjacente com uma Alien Word, adicione 1 ao resultado do seu teste. 7+Coloque uma Palavra Alienígena em sua peça.A mensagem deve ser completada. 0–6Ganhe 2 Conhecimentos.Os sussurros ficam mais altos, mais insistentes. Mais compreensível.'),
     ],
     conclusion: 'Você rabisca a última palavra na parede e tudo fica quieto. Um portal uivante se abre no hall de entrada, sugando todo o ar — e você — para fora da casa. Conforme você se perde no vácuo, conforme sua visão escurece, a última coisa que você vê é uma embarcação enorme surgindo à distância.',
   ),
@@ -840,13 +851,16 @@ final Map<int, Haunt> traitorHaunts = {
       'Você completa sua metamorfose. Remova seu explorador da casa e substitua-o pela Vespa Gigante. Enterre todos os seus Itens e Presságios.',
       'Coloque a Carta de Monstro à sua esquerda. Os monstros jogarão no lugar do seu.',
       'Distribua 5 fichas de Ninho em diferentes tiles de Térreo e/ou Piso Superior. Esses são os Ovos de Vespa que os heróis estão tentando destruir.',
-      'Lugar{0/2/3/5}Pequenos tokens de Monstro em seu tile. Estes são seus Worker Wasps.',
+      'Coloque {0/2/3/5} Pequenos tokens de Monstro em seu tile. Estes são suas Vespas operarias.',
     ],
     objective: 'Você vence quando todos os heróis estão mortos ou quando o tempo acaba.',
     requiredMarkers: 'Número de trilha\nToken de Vespa Gigante\nPequenos tokens de monstro –Trabalhador Vespas\nTokens de ninho –Ovos de vespa',
+    specialRules: [
+      SpecialRule(title: 'No final do seu turno', description: 'Coloque uma Vespa Operária em cada ladrilho com um Ovo de Vespa (mesmo que esteja sendo carregado por um herói). \nSe houver vários Ovos de Vespa em um ladrilho, coloque uma Vespa por Ovo. Os Ovos permanecem em jogo.\n Então, se houver ovos de vespa na casa, mova a trilha numérica para baixo em 1. Se a trilha numérica chegar a 0, você venceu!')
+    ],
     monsters: [
       Monster(name: 'Vespa Operária', strength: '3', speed: '5', sanity: '4', knowledge: '1', description: 'As vespas operárias são mortas em vez de atordoadas.', actions: [SpecialAction(title: 'Defenda o Enxame', description: 'Cause um dado de dano Físico a um herói em seu tile. Esta Vespa morreu. Remova-a da casa.')]),
-      Monster(name: 'A Vespa Gigante', strength: '6', speed: '5', sanity: '5', knowledge: '5', description: 'No final do seu turno: Coloque uma Vespa Operária em cada ladrilho com um Ovo de Vespa (mesmo que esteja sendo carregado por um herói). Se houver vários Ovos de Vespa em um ladrilho, coloque uma Vespa por Ovo. Os Ovos permanecem em jogo. Então, se houver ovos de vespa na casa, mova a trilha numérica para baixo em 1. Se a trilha numérica chegar a 0, você venceu!', actions: [SpecialAction(title: 'Pôr Ovos', description: 'Enquanto estiver em um tile com um cadáver, se algum Ovo de Vespa foi removido da casa, coloque um Ovo de Vespa no tile com o cadáver. Remova o cadáver e enterre todos os seus Itens e Presságios.')]),
+      Monster(name: 'A Vespa Gigante', strength: '6', speed: '5', sanity: '5', knowledge: '5', description: 'Jogue após o turno das vespas operarias', actions: [SpecialAction(title: 'Pôr Ovos', description: 'Enquanto estiver em um tile com um cadáver, se algum Ovo de Vespa foi removido da casa, coloque um Ovo de Vespa no tile com o cadáver. Remova o cadáver e enterre todos os seus Itens e Presságios.')]),
     ],
     conclusion: 'Seus bebês finalmente eclodem dos ovos, com suas cabecinhas saindo das cascas. Eles estão com fome e vão atrás dos primeiros pedaços de comida que encontram — os humanos que vocês um dia chamaram de amigos. A Era das Vespas começou!',
   ),
@@ -1020,14 +1034,13 @@ final Map<int, Haunt> traitorHaunts = {
       'Encontre e reserve{1/2/3/4}Monstros de Cabelo Pequenos adicionais.',
     ],
     objective: 'Você vence quando todos os heróis se transformam em Monstros de Cabelo.',
-    requiredMarkers: 'Ficha de monstro de cabelo gigante\nPequenos tokens de monstro –\nPequenos Monstros de Cabelo\nFichas numéricas –Antídotos',
+    requiredMarkers: 'Ficha de monstro de cabelo gigante\nPequenos tokens de monstro –Pequenos Monstros de Cabelo\nFichas numéricas –Antídotos',
     specialRules: [
-      SpecialRule(title: 'Quando um herói morre', description: 'Substitua o explorador deles por um Monstro de Pelo Pequeno. Em vez de sua vez, jogue com os Monstros de Cabelo Pequeno'),
+      SpecialRule(title: 'Quando um herói morre', description: 'Substitua o explorador deles por um pequeno Monstro do cabelo.'),
     ],
     monsters: [
-      Monster(name: 'Monstro de Cabelo Pequeno', strength: '5', speed: '7', sanity: '2', knowledge: '3', description: 'Após completar o turno dos Monstros de Cabelo Pequeno, jogue com o'),
-      Monster(name: 'de Cabelo Gigante.'),
-      Monster(name: 'Monstro de Cabelo Gigante', strength: '7', speed: '1', sanity: '6', knowledge: '4', description: 'O Monstro Gigante de Cabelo pode se mover entre peças com símbolos de Presságio como se fossem adjacentes. O Monstro de Cabelo Gigante só pode receber dano de ataques de Força.', actions: [SpecialAction(title: 'Mudança de cabelo', description: 'Enquanto estiver em uma peça com um símbolo de Presságio, troque de lugar com um Monstro de Pelo Pequeno.')]),
+      Monster(name: 'Pequeno Monstro de Cabelo', strength: '5', speed: '7', sanity: '2', knowledge: '3', description: 'Em vez de sua vez, jogue com os pequenos Monstros de Cabelo.'),
+      Monster(name: 'Gigante Monstro do Cabelo', strength: '7', speed: '1', sanity: '6', knowledge: '4', description: 'Após completar o turno dos Pequenos Monstros do Cabelo, jogue com o Gigante Monstro do Cabelo\n\n pode se mover entre peças com símbolos de Presságio como se fossem adjacentes.\nsó pode receber dano de ataques de Força.', actions: [SpecialAction(title: 'Mudança de cabelo', description: 'Enquanto estiver em uma peça com um símbolo de Presságio, troque de lugar com um pequenoMonstro do cabelo.')]),
     ],
     conclusion: 'O cabelo rasteja e se emaranha por todas as fendas da casa, deslizando em rachaduras e crescendo no encanamento. Em poucas horas, a fundação está coberta de cabelo molhado e mofado. "Ninguém sai", a casa sibila, "Nós somos a Vingança".',
   ),
@@ -1048,7 +1061,9 @@ final Map<int, Haunt> traitorHaunts = {
     objective: 'Você vence quando todos os heróis estão mortos.',
     requiredMarkers: 'Fichas de Herói –Heróis Presos\nTokens de Portal –Portais Dimensionais',
     specialRules: [
+      
       SpecialRule(title: 'Outra Dimensão', description: 'Um Herói que tem seu token de Herói está preso. Heróis presos não podem negociar com heróis que não estão presos.'),
+      SpecialRule(title: 'Salte através de um Portal', description: 'No inicio do seu turno, faça um teste de velocidade para determinar o quão longe você consegue se mover (minimo sendo sua velocidade).'),
       SpecialRule(title: 'Que Cavaleiro Cruel', description: 'Você pode atacar uma vez no seu turno para cada herói vivo, mas não pode atacar nenhum herói mais de uma vez por turno. O tipo de ataque que você é determinado se o herói está preso ou não preso.•Heróis presos - Ataque de sanidade\nAdicione 2 ao resultado da sua jogada. Se você vencer, o herói recebe dano físico.•Heróis não presos - Ataque de Poder\nSe você vencer, você não causa dano. Em vez disso, dê ao seu alvo o token de preso. Esse herói está preso. Você não sofre dano se perder este ataque'),
       SpecialRule(title: 'Se você morresse', description: 'Em vez disso, cure todas as suas caracteristicas. O cavaleiro cruel é invecivel.')
     ],
@@ -1129,11 +1144,11 @@ final Map<int, Haunt> traitorHaunts = {
     objective: 'Você vence quando todos os heróis estiverem mortos ou quando você tiver consumido a casa inteira.',
     requiredMarkers: 'Número de trilha\nConstruir Token\nFichas de Armadilha –Explosivos',
     specialRules: [
-      SpecialRule(title: 'Quando você consome um tile com um símbolo Omen', description: 'Você pode se colocar em qualquer tile com um herói. Se fizer isso, perca o resto dos seus movimentos do turno. Você pode Consumir a casa qualquer número de vezes por turno.'),
+      SpecialRule(title: 'Quartos consumidos', description: ' As peças de sala consumidas são viradas para baixo. Elas são consideradas sem símbolos ou texto, e têm portas em todos os 4 lados.'),
     ],
     monsters: [
-      Monster(name: 'O Construto', strength: '8', sanity: '4', knowledge: '4', description: 'A Velocidade do Construto é igual ao número na Trilha Numérica. (Lembre- se de rolar a cada turno para determinar seu movimento.) O Construto não pode ser atordoado.', actions: [SpecialAction(title: 'Consumir Carne', description: '• Se você estiver em um ladrilho com um cadáver, você pode remover esse cadáver da casa e enterrar os itens e itens desse explorador. Presságios. Mova a Trilha Numérica para cima em 1.Você está ficando mais rápido. Várias vezes por turno, você pode Consuma a casa Enquanto estiver em um ladrilho que não seja de pouso e que não tenha sido consumido, vire aquela sala para baixo. Aquele tile foi consumido. Se todos os tiles que não sejam de aterrissagem foram consumidos,você venceu!')]),
+      Monster(name: 'O Construto', strength: '8',speed: '*', sanity: '4', knowledge: '4', description: 'Em vez de jogar, jogue como o construtor.\nA Velocidade do Construto é igual ao número na Trilha Numérica. (Lembre- se de rolar a cada turno para determinar seu movimento.) O Construto não pode ser atordoado.', actions: [SpecialAction(title: 'Consumir Carne', description: '• Se você estiver em um ladrilho com um cadáver, você pode remover esse cadáver da casa e enterrar os itens e presságios desse explorador. Mova a Trilha Numérica para cima em 1.Você está ficando mais rápido.'),SpecialAction(title: 'Consuma a casa', description: 'Qualquer número de vezes por turno, você pode usar essa ação.\nEnquanto estiver em um ladrilho que não seja de entrada e que não tenha sido consumido, vire aquela sala para baixo. Aquele tile foi consumido. Se todos os tiles que não sejam de entrada foram consumidos,você venceu!\n\nQuando consome um tile com um simbolo de Omen, você pode se colocar em qualquer tile com um herói. Se fizer isso, perca o resto dos seus movimentos do turno.')]),
     ],
-    conclusion: 'Você libera uma toxina gasosa e malcheirosa ao terminar de consumir todas as criaturas vivas da casa. Você estica seus tentáculos carnudos dentro de sua armadura, antes de se encolher de volta para sua casa como um caranguejo eremita. Foi um dia de trabalho duro. BETRAYAL AT HOUSE ON THE HILL, AVALON HILL e HASBRO e todas as marcas registradas e logotipos relacionados são marcas registradas da Hasbro, Inc. © 2022 Hasbro. Hasbro, Pawtucket, RI 02861-1059 EUA. Fabricado por: Hasbro SA, Rue Emile-Boéchat 31, 2800 Delémont, CH.Representado por: Hasbro, De Entree 240, 1101 EE Amsterdam, NL. GBHasbro UK Ltd., PO Box 43, Newport, NP19 4YH, Reino Unido. Tel.: 00800 22427276. Contato com o consumidor: EUA/Canadá: Hasbro Games, Consumer Affairs Dept., PO Box 200, Pawtucket, RI 02861-1059 EUA. TEL: 1-800-255-5516. Atendimento ao consumidor na Austrália: https://consumercare.hasbro.com/en-au Atendimento ao consumidor na Nova Zelândia: https://consumercare.hasbro.com/en-nz Reino Unido: consumer_affairs@hasbro.co.uk Pais: AvalonHill.com',
+    conclusion: 'Você libera uma toxina gasosa e malcheirosa ao terminar de consumir todas as criaturas vivas da casa. Você estica seus tentáculos carnudos dentro de sua armadura, antes de se encolher de volta para sua casa como um caranguejo eremita. Foi um dia de trabalho duro.',
   ),
 };

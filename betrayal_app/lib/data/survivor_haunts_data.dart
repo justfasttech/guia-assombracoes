@@ -339,8 +339,12 @@ final Map<int, Haunt> survivorHaunts = {
     ],
     objective: 'Você vence quando mata o traidor e todos os Gremlins da casa.',
     requiredMarkers: '3 Fichas de Monstro Pequeno –Gremlins\n3 Fichas de Runa\nAzulejos onde você pode obter um sinal:\nTorre –Piso Superior\nGaleria –Piso Superior\nObservatório –Piso Superior',
+    specialRules: [
+      SpecialRule(title: 'Mágica Gremlin', description: '•Você não pode atacar um gremlin que não tenha uma ficha de Runa.•Se você atacar um Gremlin que tenha uma ficha de Runa, ele será morto em vez de atordoado.'),
+      SpecialRule(title: 'No final do seu turno', description: 'Tire uma mensagem do chapéu e mostre ao traidor. Você recebe um email.')
+    ],
     specialActions: [
-      SpecialAction(title: 'Faça uma pesquisa no seu telefone', description: 'Enquanto em umladrilho onde você pode obter um sinal,faça um teste de Conhecimento. Tem que haver mais informações sobre esses gremlins… . 5+ Coloque uma ficha de Runa em um Gremlin. Agora você pode atacar esse Gremlin. Em um ataque bem-sucedido, ele será morto em vez de atordoado. 0–4Sofra 1 de dano Mental. No final do seu turno Tire uma mensagem do chapéu e mostre ao traidor. YVocê recebe um e- mail.'),
+      SpecialAction(title: 'Faça uma pesquisa no seu telefone', description: 'Enquanto em um ladrilho onde você pode obter um sinal,faça um teste de Conhecimento. Tem que haver mais informações sobre esses gremlins… . 5+ Coloque uma ficha de Runa em um Gremlin. Agora você pode atacar esse Gremlin. Em um ataque bem-sucedido, ele será morto em vez de atordoado. 0–4Sofra 1 de dano Mental.'),
     ],
     conclusion: 'Você descobre que a fúria assassina do seu amigo veio de um e-mail amaldiçoado que ele recebeu no telefone. Depois de pesquisar um pouco, você descobre que veio daqueles gremlins — de alguma forma, aquelas pragas antigas aprenderam a usar a internet. Embora você tenha posto um fim às palhaçadas dos gremlins, sua vitória veio ao custo da vida do seu amigo. Ao fechar os olhos sem vida deles, você estremece com o sorriso largo demais ainda congelado no rosto deles. Você se assusta quando o telefone deles vibra com uma notificação: “FWD: ABRA ISSO!! URGENTE!!”',
   ),
@@ -381,11 +385,14 @@ final Map<int, Haunt> survivorHaunts = {
       'Os heróis não têm etapas de configuração adicionais.',
       'O jogador à esquerda do traidor jogará o primeiro turno após a preparação.',
     ],
-    objective: 'Você vence se conseguir destruir todas as fitas de vídeo e escapar da casa pelo patamar antes que a maldição tome conta. • Destrua todas as fitas de vídeo. • Vá para o bloco de aterrissagem.',
+    objective: 'Você vence se conseguir destruir todas as fitas de vídeo e escapar da casa por um tile de entrada antes que a maldição tome conta. • Destrua todas as fitas de vídeo. • Vá para um tile de entrada.',
     requiredMarkers: 'Número de trilha\nFichas de videocassete\nFicha Fantasma –Espírito Vingativo',
+    specialRules: [
+      SpecialRule(title: 'No final do seu turno', description: 'Se todas as fitas de vídeo foram destruídas e pelo menos 1 herói estiver no ladrilho do Hall de Entrada,você venceu!')
+    ],
     specialActions: [
-      SpecialAction(title: 'Destrua as fitas', description: 'Enquanto estiver em qualquer peça com uma fita de vídeo, faça um teste de Potência. 4+ A fita de vídeo é destruída. Remova o token do jogo. Faz um crocante satisfatório. E… um grito fraco? 0–3Nada acontece.'),
-      SpecialAction(title: 'Afaste a Maldição', description: 'Enquanto estiver em uma peça com o Espírito Vingativo, role um dado. 2 Mova a Trilha Numérica para cima em 1. 1 Mova a Trilha Numérica para cima em 1 e termine seu turno. 0 Termine seu turno. No final do seu turno Se todas as fitas de vídeo foram destruídas e pelo menos 1 herói estiver no ladrilho do Hall de Entrada,você venceu!'),
+      SpecialAction(title: 'Destrua as fitas', description: 'Enquanto estiver em qualquer peça com uma fita de vídeo, faça um teste de Força. 4+ A fita de vídeo é destruída. Remova o token do jogo. Faz um crocante satisfatório. E… um grito fraco? 0–3Nada acontece.'),
+      SpecialAction(title: 'Afaste a Maldição', description: 'Enquanto estiver em uma peça com o Espírito Vingativo, role um dado.\n 2 - Mova a Trilha Numérica para cima em 1. 1 - Mova a Trilha Numérica para cima em 1 e termine seu turno. 0 - Termine seu turno.'),
     ],
     conclusion: 'Você destruiu as fitas e escapou da casa, mas teve que deixar seu amigo para trás. Embora possa ouvir os gritos deles, você não ousa olhar para trás. O espírito vingativo os reivindicou, e você tem sorte de ter escapado com vida. Depois de chegar a uma distância segura da casa, você faz uma pausa para recuperar o fôlego. De repente, seu telefone toca e você atende. Do outro lado, você ouve estática e uma voz que sussurra: "Vejo você em breve".',
   ),
@@ -398,7 +405,7 @@ final Map<int, Haunt> survivorHaunts = {
     omenTrigger: 'Cachorro',
     introduction: 'Você vê um cachorro rosnando no canto. Pelo menos, você acha que ele está rosnando. Seus lábios estão curvados para trás em um rosnado, e ele se move como se fosse latir, mas nenhum som sai. Parece que o cachorro foi afetado pela mesma maldição que tem atormentado esta cidade nas últimas duas semanas. Toda noite à meia-noite, os moradores perdem suas vozes até de manhã. Depois de dias inquietos de pesquisa, você aprendeu que depois desta noite todos na cidade perderão suas vozes para sempre. Algo está roubando o som do mundo. Algo sem rosto.',
     setup: [
-      'Se houver menos de cinco peças que não sejam de aterrissagem na casa, retire peças da pilha de peças e coloque-as na casa até que haja cinco.',
+      'Se houver menos de cinco peças que não sejam de entrada na casa, retire peças da pilha de peças e coloque-as na casa até que haja cinco.',
       'Deixar de lado{2/3/4/5}Fichas de runas. Estas são as sílabas do nome do homem sem rosto.',
       'O jogador à esquerda do traidor jogará o primeiro turno após a preparação.',
     ],
@@ -471,9 +478,13 @@ final Map<int, Haunt> survivorHaunts = {
     ],
     objective: 'Você vence quando todos os marcadores de Máquina estiverem DESLIGADOS e você tiver destruído o número necessário de peças.',
     requiredMarkers: 'Número de trilha\nTokens ON/OFF –Circuitos\nFichas de Monstros Pequenos –Assistentes de Robôs',
+    specialRules: [
+      SpecialRule(title: 'Quartos Destruidos', description: 'Tiles de sala destruidas são viradas para baixo. Tiles destruidos não são considerados como tendo simbolos ou efeitos, e contam como tendo portas em todos os quatros lados.'),
+      SpecialRule(title: 'No final do seu turno', description: 'se todos os tokens de maquinas estiverem DESLIGADOS e a trilha numerica estiver em zero, voce venceu!')
+    ],
     specialActions: [
       SpecialAction(title: 'Desligue a máquina', description: 'Se você estiver no mesmo ladrilho que uma Ficha LIGADA, faça um teste de Conhecimento. 5+ Vire o token para o lado OFF. Atordoe um robô na região. A máquina foi desligada. 0–4Nada acontece.'),
-      SpecialAction(title: 'Destrua a casa', description: 'Enquanto estiver em qualquer peça com um Símbolo de Presságio, faça um teste de Potência. 4+Vire a peça. Ela está destruída. Mova a trilha numérica para baixo em 1. 0–3Nada acontece. Quartos Destruídos Tiles de sala destruídas são viradas para baixo. Tiles destruídas não são consideradas como tendo símbolos ou efeitos, e contam como tendo portas em todos os quatro lados. No final do seu turno Se todos os tokens da Máquina estiverem DESLIGADOS e a Trilha Numérica estiver em 0,você venceu!'),
+      SpecialAction(title: 'Destrua a casa', description: 'Enquanto estiver em qualquer peça com um Símbolo de Presságio, faça um teste de Força. 4+Vire a peça. Ela está destruída. Mova a trilha numérica para baixo em 1. 0–3Nada acontece.'),
     ],
     conclusion: '"Adeus", a voz de Sya desaparece no silêncio enquanto você desliga a máquina final. A luz do ídolo morre e você sente um peso sendo tirado da casa, mas seu "companheiro" não está em lugar nenhum. Você olha pela janela para ver a eletricidade retornando às casas e empresas locais. Você finalmente baniu a maldição da cidade, mas quem sabe se essa tecnologia cairá nas mãos erradas no futuro?',
   ),
@@ -560,10 +571,12 @@ final Map<int, Haunt> survivorHaunts = {
     objective: 'Você vence quando o traidor está morto.',
     requiredMarkers: 'Azulejos com notas sobre o idioma:\nBiblioteca –Térreo/Piso Superior\nObservatório –Piso Superior\nTorre –Piso Superior\nLaboratório –Térreo\nSala de Amostras –Térreo/Piso Superior',
     specialRules: [
+      SpecialRule(title: 'Palavras Alienigenas', description: '•palavras alienigenas não podem ser coletadas ou negociadas.•Os heróis custam dois movimentos para sair de qualquer ladrilho com uma palavra alienigena.'),
       SpecialRule(title: 'Quando você ataca o traidor', description: 'Se você tiver Conhecimento de Alienígenas, você pode rolar novamente até dois dos seus dados.'),
+      SpecialRule(title: 'No final do seu turno', description: 'Se você estiver em um tile ou adjascente a um tile com uma palavra alienigina, receba 1 de dano mental. As palavras pulsam em seu cerebro.')
     ],
     specialActions: [
-      SpecialAction(title: 'Aprenda a língua', description: 'Enquanto em umazulejo com notas sobre o idioma,faça um teste de Conhecimento. 4+ Pegue o token de Herói correspondente do seu herói (se você ainda não tiver um). Este token representa seu Conhecimento de Alienígenas.As coisas estão começando a fazer sentido. 0–3Coloque uma Palavra Alienígena da pilha dos heróis nesta sala. Se houver já existe uma Palavra Alienígena nesta sala, coloque uma Palavra Alienígena em uma sala adjacente.As palavras estão se espalhando.'),
+      SpecialAction(title: 'Aprenda a língua', description: 'Enquanto em um azulejo com notas sobre o idioma,faça um teste de Conhecimento. 4+ Pegue o token de Herói correspondente do seu herói (se você ainda não tiver um). Este token representa seu Conhecimento de Alienígenas.As coisas estão começando a fazer sentido. 0–3Coloque uma Palavra Alienígena da pilha dos heróis nesta sala. Se houver já existe uma Palavra Alienígena nesta sala, coloque uma Palavra Alienígena em uma sala adjacente.As palavras estão se espalhando.'),
     ],
     conclusion: 'Enquanto você vai se perguntar para sempre sobre o significado dessas palavras alienígenas, você também será eternamente grato por nunca ter descoberto. E quando o silêncio aperta e você ouve sussurros fracos, que podem ser apenas frutos da sua imaginação, você liga o rádio e tenta abafá-los.',
   ),
@@ -847,6 +860,7 @@ final Map<int, Haunt> survivorHaunts = {
     objective: 'Você vence quando mata a Vespa Gigante.',
     requiredMarkers: 'Número de trilha\nToken de Vespa Gigante\nPequenos tokens de monstro –Trabalhador Vespas\nTokens de ninho –Ovos de vespa',
     specialRules: [
+      SpecialRule(title: 'Ovo de Vespa', description: '•Os heróis podem pegar fichas de de ninho. São ovos de vespa.•Os herois podem negociar ovos, usando as regras normais de negociação'),
       SpecialRule(title: 'Quando você ataca a Vespa Gigante', description: 'Para cada Ovo de Vespa na casa (incluindo aqueles mantidos por heróis), subtraia 1 do resultado do seu teste. Se você atacar com sucesso a Vespa Gigante, você venceu!'),
     ],
     specialActions: [
@@ -1014,14 +1028,12 @@ final Map<int, Haunt> survivorHaunts = {
     objective: 'Você vence quando consegue curar o traidor. • Encontre o verdadeiro antídoto. • Derrote o Monstro Gigante de Cabelo enquanto você tem o Antídoto real.',
     requiredMarkers: 'Ficha de Monstro de Cabelo Gigante\nPequenos tokens de monstro –Pequenos Monstros de Cabelo\nFichas Numéricas –Antídotos',
     specialRules: [
+      SpecialRule(title: 'Antidoto', description: '•O token numerico |1| é o verdadeiro antidoto•Se você tiver o antidoto real, poderá troca-lo usando as regras normais de negociação.'),
       SpecialRule(title: 'Quando você ataca o Monstro de Cabelo Gigante', description: '• Se você tiver o Antídoto real, adicione 3 ao seu resultado. Se você atacar com sucesso o Monstro de Cabelo Gigante enquanto tiver o Antídoto real, você venceu!'),
     ],
     specialActions: [
       SpecialAction(title: 'Aprenda sobre a Maldição', description: 'Enquanto estiver na Biblioteca, faça um teste de Conhecimento. 5+Vire uma ficha de Antídoto virada para baixo para seu lado virado para cima. 0–4 Nada acontece.'),
       SpecialAction(title: 'Faça uma descoberta', description: 'Enquanto estiver em um tile com um token de Antídoto, você pode virá-lo para ver se é o Antídoto real. Se for, você pode pegá-lo.'),
-    ],
-    monsters: [
-      Monster(name: 'Monstro de Cabelo Gigante', description: ''),
     ],
     conclusion: 'Você joga o antídoto em todo o seu amigo e nas paredes da casa, que agora estão emaranhadas com cabelos molhados e mofados. Os cabelos recuam até desaparecerem, devolvendo seu amigo para você. Ao sair de casa, você tira um cabelo da boca. Você tem certeza de que não é nada.',
   ),
@@ -1041,7 +1053,6 @@ final Map<int, Haunt> survivorHaunts = {
     requiredMarkers: 'Fichas de Herói -Heróis presos\nTokens de Portal –Portais Dimensionais',
     specialRules: [
       SpecialRule(title: 'Outra Dimensão', description: 'Um herói com uma de Herói está preso. Heróis presos não podem negociar com heróis não presos.'),
-      SpecialRule(title: 'Salte através de um Portal', description: 'No inicio do seu turno, faça um teste de velocidade para determinar o quão longe você consegue se mover (minimo de 1 peça).')
     ],
     specialActions: [
       SpecialAction(title: 'Fuja do Portal', description: 'Enquanto estiver em um ladrilho com um token de Portal (e você está preso), faça um teste de Conhecimento. Se houver um herói não Preso em seu tile, adicione 2 ao seu teste. 6+ Dê ao traidor seu token de Herói. Você não está mais Preso. Consegui! 0–5Ganhe 1 Conhecimento.Não foi o suficiente, mas você ganhou alguma percepção...'),
@@ -1107,8 +1118,12 @@ final Map<int, Haunt> survivorHaunts = {
     ],
     objective: 'Você vence quando destrói a casa. • Coloque explosivos para preparar a casa para explodir.',
     requiredMarkers: 'Número de trilha\nConstruir Token\nFichas de Armadilha –Explosivos',
+    specialRules: [
+      SpecialRule(title: 'Quartos consumidos', description: 'O Construto está consumindo salas. As peças de sala consumidas são viradas para baixo. Elas são consideradas sem símbolos ou texto, e têm portas em todos os 4 lados. As peças de aterrissagem não podem ser consumidas. Explosivos permanecem nas salas consumidas quando são viradas. Você pode colocar Explosivos nas salas consumidas.'),
+      SpecialRule(title: 'No final do seu turno', description: 'Se todos os explosivos foram colocados e houver pelo menos um explosivo em cada região, você venceu!')
+    ],
     specialActions: [
-      SpecialAction(title: 'Definir explosivo improvisado', description: 'Enquanto estiver em qualquer tile, enterre um Item ou Presságio. Então, faça um teste de Velocidade ou Conhecimento. 6+ Coloque um Explosivo em seu tile. Se não houver mais Explosivos, você pode mover um Explosivo já colocado para seu tile. Não convencional, mas louco o suficiente para funcionar. 0–5Nada acontece. Não coloque um Explosivo.Você destrói a armadilha antes de ser definido. Quartos Consumidos O Construto está consumindo salas. As peças de sala consumidas são viradas para baixo. Elas são consideradas sem símbolos ou texto, e têm portas em todos os 4 lados. As peças de aterrissagem não podem ser consumidas. Explosivos permanecem nas salas consumidas quando são viradas. Você pode colocar Explosivos nas salas consumidas. No final do seu turno Se todos os explosivos foram colocados e houver pelo menos um explosivo em cada região,você venceu!'),
+      SpecialAction(title: 'Definir explosivo improvisado', description: 'Enquanto estiver em qualquer tile, enterre um Item ou Presságio. Então, faça um teste de Velocidade ou Conhecimento. 6+ Coloque um Explosivo em seu tile. Se não houver mais Explosivos, você pode mover um Explosivo já colocado para seu tile. Não convencional, mas louco o suficiente para funcionar. 0–5Nada acontece. Não coloque um Explosivo.'),
     ],
     conclusion: 'Você olha para trás enquanto a casa desaba, explosões estranhas balançam sua estrutura. Nem todos vocês conseguiram sair, mas pelo menos aquela coisa se foi para sempre. Você espera.',
   ),
