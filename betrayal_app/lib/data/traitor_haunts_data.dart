@@ -182,14 +182,13 @@ final Map<int, Haunt> traitorHaunts = {
     objective: 'Você vence quando destrói o Livro ou quando todos os heróis estão mortos.',
     requiredMarkers: 'Número de trilha\nPequenos tokens de monstro – Mobília Animada\nAzulejos onde há fogo:\nCozinha – Térreo\nSala da Fornalha – Porão\nLaboratório – Térreo',
     specialRules: [
-      SpecialRule(title: 'Quando você morre', description: 'Se houver pelo menos uma ficha de Mobília Animada no tabuleiro, cure todos os seus traços e coloque-se em qualquer peça com uma delas. Devolva a ficha para a caixa. Se estiver segurando o Livro, entregue-o ao herói mais próximo. Se toda a Mobília Animada sumir, você continua morto.Farpas voam para todos os lados'),
-      SpecialRule(title: 'Farpas voam para todos os lados quando você sai de um móvel', description: 'Cada herói no ladrilho sofre 1 de dano Físico.'),
+      SpecialRule(title: 'Quando você morre', description: 'Se houver pelo menos uma ficha de Mobília Animada no tabuleiro, cure todos os seus traços e coloque-se em qualquer peça com uma delas. Devolva a ficha para a caixa. Se estiver segurando o Livro, entregue-o ao herói mais próximo. Se não tiver nenhuma Mobília Animada quando você morreu, você continua morto.Farpas voam para todos os lados'),
     ],
     specialActions: [
-      SpecialAction(title: 'Destrua o livro de feitiços', description: '• Se você estiver em umazulejo onde há fogo,jogue o livro no fogo. Você venceu! Depois da sua vez, experimente os Móveis Animados.'),
+      SpecialAction(title: 'Destrua o livro de feitiços', description: '• Se você estiver em um azulejo onde há fogo,jogue o livro no fogo. Você venceu!'),
     ],
     monsters: [
-      Monster(name: 'Móveis Animados', strength: '6', speed: '3', sanity: '4', knowledge: '2', description: 'É só mobília.'),
+      Monster(name: 'Móveis Animados', strength: '6', speed: '3', sanity: '4', knowledge: '2', description: ' Depois da sua vez, experimente os Móveis Animados.\nÉ só mobília.'),
     ],
     conclusion: 'A casa finalmente é sua, junto com tudo que há nela. Tudo, isto é, exceto aquele maldito livro de feitiços. Agora que ele foi destruído, você finalmente pode descansar. Contente, você se enrola em uma cadeira estofada que costumava ser de um de seus amigos.',
   ),
@@ -401,11 +400,15 @@ final Map<int, Haunt> traitorHaunts = {
     ],
     objective: 'Você vence quando todos os heróis estão mortos.',
     requiredMarkers: 'Pequenos Monstros –Zumbis da Guerra Fria',
+    specialRules: [
+      SpecialRule(title: 'Missão primeiro', description: 'Você não pode sair do Laboratorio até que um heroi chegue ao terreo.'),
+      SpecialRule(title: 'No final do turno', description: 'Coloque {0/0/1/1}Zumbis no Porão. Então, se você estiver no ladrilho do Laboratório, coloque um Zumbi em cada ladrilho no Porão com uma porta aberta. Se você ficar sem fichas de Monstro Pequeno, não coloque mais Zumbis.')
+    ],
     specialActions: [
-      SpecialAction(title: 'Crie uma distração', description: 'Enquanto estiver no Laboratório, você pode revelar peças da pilha até encontrar uma peça do Porão. Coloque essa peça em qualquer lugar o porão. No final do seu turno Lugar {0/0/1/1}Zumbis no Porão. Então, se você estiver no ladrilho do Laboratório, coloque um Zumbi em cada ladrilho no Porão com uma porta aberta. Se você ficar sem fichas de Monstro Pequeno, não coloque mais Zumbis. Depois da sua vez, jogue com os Zumbis da Guerra Fria.'),
+      SpecialAction(title: 'Crie uma distração', description: 'Enquanto estiver no Laboratório, você pode revelar peças da pilha até encontrar uma peça do Porão. Coloque essa peça em qualquer lugar o porão.'),
     ],
     monsters: [
-      Monster(name: 'Zumbi da Guerra Fria', strength: '5', speed: '2', sanity: '2', knowledge: '2', description: 'Zumbis são mortos em vez de atordoados. Sempre que um Zumbi matar um herói, remova o cadáver do herói da casa e enterre todos os seus Itens e Presságios.'),
+      Monster(name: 'Zumbi da Guerra Fria', strength: '5', speed: '2', sanity: '2', knowledge: '2', description: 'Depois da sua vez, jogue com os Zumbis.\nZumbis são mortos em vez de atordoados. Sempre que um Zumbi matar um herói, remova o cadáver do herói da casa e enterre todos os seus Itens e Presságios.'),
     ],
     conclusion: 'Você venceu uma batalha, mas esta é uma guerra que nunca termina.',
   ),
@@ -578,15 +581,15 @@ final Map<int, Haunt> traitorHaunts = {
     setup: [
       'Seu explorador ainda está no jogo. Você é o traidor.',
       'Coloque a Carta de Monstro à sua esquerda. Os monstros jogarão depois do seu turno.',
-      'Lugar{1/2/3/3}Pequenos tokens de Monstro no ladrilho com você. Estes são os Fae.',
+      'Coloque {1/2/3/3} Pequenos tokens de Monstro no ladrilho com você. Estas são as Fadas.',
     ],
     objective: 'Você vence quando todos os heróis estão mortos.',
     requiredMarkers: 'Pequenos tokens de monstro –Fada\nFichas de Herói –Conhecimento das Fadas\n2 fichas de poder –Ferro Frio',
     specialRules: [
-      SpecialRule(title: 'Quando você ataca um herói', description: 'Se você não estiver usando uma arma, você pode atacar com Velocidade em vez de Força. Depois da sua vez, jogue com as fadas.'),
+      SpecialRule(title: 'Quando você ataca um herói', description: 'Se você não estiver usando uma arma, você pode atacar com Velocidade em vez de Força.'),
     ],
     monsters: [
-      Monster(name: 'Fae', strength: '2', speed: '6', sanity: '4', knowledge: '4', description: 'As fadas não podem ser atordoadas. Os Fae usam Velocidade para atacar qualquer herói na linha de visão.'),
+      Monster(name: 'Fadas', strength: '2', speed: '6', sanity: '4', knowledge: '4', description: 'Depois da sua vez, jogue com as fadas.\nAs fadas não podem ser atordoadas. \nAs fadas usam Velocidade para atacar qualquer herói na linha de visão.'),
     ],
     conclusion: 'Você dança entre os jacintos, as dedaleiras, as peônias e passeia pelos círculos de cogumelos. Você enche a cara com comida e bebida encantadas de fadas. Você não pode deixar a terra das fadas, mas por que você iria querer? É tão lindo aqui.',
   ),
@@ -771,14 +774,15 @@ final Map<int, Haunt> traitorHaunts = {
     requiredMarkers: 'Pequenos tokens de monstro –Fantasmas',
     specialRules: [
       SpecialRule(title: 'Quando você revela uma peça com um símbolo de Evento', description: 'Não compre uma carta de Evento. Em vez disso, coloque um Fantasma na nova peça.'),
-      SpecialRule(title: 'Quando um herói morre', description: 'Coloque um Fantasma no tile daquele herói. Você controla aquele Fantasma. Se você sofresse dano de um ataque Em vez disso, mova essa quantidade de peças para longe da sua peça atual em qualquer direção e ganhe 1 de Força ou Conhecimento.A casa não deixará você morrer. Depois da sua vez, jogue com os Fantasmas.'),
-      SpecialRule(title: 'No final do turno dos Fantasmas', description: 'Cada herói em um bloco com qualquer número de Fantasmas sofre 2 de dano Geral. No final do seu turno Se você atingiu a Sanidade máxima, você alcançou a iluminação. Você venceu!'),
+      SpecialRule(title: 'Quando um herói morre', description: 'Coloque um Fantasma no tile daquele herói. Você controla aquele Fantasma.'),
+      SpecialRule(title: 'Se você sofresse dano de um ataque', description: 'Em vez disso, mova essa quantidade de peças para longe da sua peça atual em qualquer direção e ganhe 1 de Força ou Conhecimento.A casa não deixará você morrer.'),
+      SpecialRule(title: 'No final do seu turno', description: 'Se você atingiu a sanidade máxima. Você alcançou a iluminação, você venceu!')
     ],
     specialActions: [
       SpecialAction(title: 'Consuma um Fantasma', description: 'Enquanto estiver em um ladrilho com um Fantasma, faça um teste de Conhecimento. 4+Remova o Fantasma do ladrilho e ganhe 1 de Sanidade. 0–3Mova todos os Fantasmas desta peça para qualquer peça adjacente, ignorando as paredes.'),
     ],
     monsters: [
-      Monster(name: 'Fantasmas', strength: '3', speed: '3', sanity: '3', knowledge: '4', description: 'Fantasmas não podem atacar nem ser atacados.'),
+      Monster(name: 'Fantasmas', strength: '3', speed: '3', sanity: '3', knowledge: '4', description: 'Após usa vez, jogue com os Fantasmas.\nFantasmas não podem atacar nem ser atacados.',actions: [SpecialAction(title: 'No final do turno dos Fantasmas', description: 'Cada herói em um bloco com qualquer número de Fantasmas sofre 2 de dano Geral.')]),
     ],
     conclusion: 'Você está saciado, por enquanto. Mas haverá mais fantasmas…',
   ),
@@ -876,16 +880,16 @@ final Map<int, Haunt> traitorHaunts = {
       'Seu explorador ainda está no jogo. Você é o traidor.',
       'Coloque a Carta de Monstro à sua esquerda. Os monstros jogarão depois do seu turno.',
       'Cure todos os seus traços.',
-      'Lugar{2/3/4/5}Pequenos tokens de Monstro em seu tile. Esses são os Evil Twins dos heróis.',
+      'Coloque {2/3/4/5} Pequenos tokens de Monstro em seu tile. Esses são os gêmeos malignos dos heróis.',
       'Encontre o token de Herói correspondente de cada herói. Essas são as Identidades dos Gêmeos. Coloque uma embaixo de cada Gêmeo Maligno.',
     ],
     objective: 'Você vence quando todos os heróis estão mortos.',
     requiredMarkers: 'Pequenos tokens de monstro –Gêmeos do Mal\nFichas de Herói –Identidades Gêmeas',
     specialActions: [
-      SpecialAction(title: 'Proteja sua família', description: 'Enquanto estiver em um tile com um Evil Twin atordoado, vire esse Evil Twin de volta. Ele não está mais atordoado e pode agir normalmente em seu próximo turno.'),
+      SpecialAction(title: 'Proteja sua família', description: 'Enquanto estiver em um tile com um gêmeo maligno atordoado, vire esse gêmeo maligno de volta. Ele não está mais atordoado e pode agir normalmente em seu próximo turno.'),
     ],
     monsters: [
-      Monster(name: 'Gêmeos Malignos', strength: '*', speed: '*', sanity: '*', knowledge: '*', description: '• Cada Evil Twin tem um Reflexo, representado por seu token de herói. • As características dos Evil Twins são iguais às características iniciais de seus Reflections. • Evil Twins não rolam movimento. Cada Twin pode mover um número de tiles igual à sua Velocidade. • Se um Gêmeo Maligno receber dano de seu Reflexo ou do herói que segura a Máscara, o Gêmeo Maligno será morto em vez de atordoado. • Gêmeos Malignos podem atacar com qualquer característica. Estatísticas iniciais dos heróis: José (5/4/4/3), Oliver (4/5/3/4), Jaden (3/4/4/5), Sammy (4/5/4/3), E (4/3/4/5), Warren (3/4/5/4), Michelle (5/4/3/4), Bretanha (5/3/4/4), Persêfone (4/4/5/3), Stephanie (4/3/5/4), Anita (4/4/3/5), Um (3/5/4/4).'),
+      Monster(name: 'Gêmeos Malignos', strength: '*', speed: '*', sanity: '*', knowledge: '*', description: 'Depois da sua vez, jogue com os gêmeos malignos.\n• Cada gêmeo maligns tem um Reflexo, representado por seu token de herói.\n• As características dos gêmeos malignos são iguais às características iniciais de seus Reflections.\n• gêmeos malignos não rolam movimento. Cada Twin pode mover um número de tiles igual à sua Velocidade.\n• Se um Gêmeo Maligno receber dano de seu Reflexo ou do herói que segura a Máscara, o Gêmeo Maligno será morto em vez de atordoado.\n• Gêmeos Malignos podem atacar com qualquer característica. \n\nEstatísticas iniciais dos heróis {Força / Velocidade / Conhecimento / Sanidade}: \n\nJosé/Vermelho (5/4/4/3), \n\nOliver/Vermelho (4/5/3/4), \n\nJaden/Verde (3/4/4/5), \n\nSammy/Verda (4/5/4/3), \n\nDan/Branco (4/3/4/5), \n\nWarren/Branco (3/4/5/4), \n\nMichelle/Roxo (5/4/3/4), \n\nBritanni/Roxo (5/3/4/4), \n\nPersêfone/Azul (4/4/5/3), \n\nStephanie/Azul (4/3/5/4), \n\nAnita/Amarelo (4/4/3/5), \n\nIsa/Amarelo (3/5/4/4).'),
     ],
     conclusion: 'Sua casa está segura. Você representa uma versão da sua vida que parece quase real. Na próxima vez que a porta da frente se abrir e você se vir entrando, você estará pronto.',
   ),
@@ -901,18 +905,18 @@ final Map<int, Haunt> traitorHaunts = {
       'Seu explorador ainda está no jogo. Você é o traidor.',
       'Coloque a Carta de Monstro à sua esquerda. Os monstros jogarão depois do seu turno.',
       'Coloque uma ficha de Armadilha em seu tile. Deixe as fichas de Armadilha restantes de lado.',
-      'Pegar{3/3/4/5}Fichas ON/OFF e devolva o restante para a caixa. Esses são Geradores. Coloque um em seu ladrilho e, em seguida, um em cada ladrilho de sua escolha que tenha um símbolo de Item ou Presságio. Se sobrar alguma ficha, coloque-a em ladrilhos de Aterrissagem.',
+      'Pegar {3/3/4/5} Fichas ON/OFF e devolva o restante para a caixa. Esses são Geradores. Coloque um em seu ladrilho e, em seguida, um em cada ladrilho de sua escolha que tenha um símbolo de Item ou Presságio. Se sobrar alguma ficha, coloque-a em Tiles Iniciais.',
     ],
     objective: 'Você vence quando todos os heróis estão mortos.',
     requiredMarkers: 'Número de trilha\n5 fichas ON/OFF –Geradores\n5 fichas de armadilha 5\nTokens Pesquisados –Sabotar',
     specialRules: [
-      SpecialRule(title: 'Quando um herói entra em um tile com um token de Armadilha, ele recebe dois dados de dano', description: 'Geral. A Armadilha permanece no tile. Depois da sua vez, converse com a Casa.'),
+      SpecialRule(title: 'Quando um herói entra em um tile com um token de Armadilha', description: 'ele recebe dois dados de dano Geral. A Armadilha permanece no tile.'),
     ],
     specialActions: [
       SpecialAction(title: 'Reativar Geradores', description: 'Enquanto estiver em um ladrilho com um Gerador na posição DESLIGADO, faça um teste de Conhecimento. 4+Coloque o gerador na posição ON. 0–3Nada acontece. Desencadeando uma armadilha'),
     ],
     monsters: [
-      Monster(name: 'A Casa', strength: '7', speed: '0', sanity: '5', knowledge: '5', description: 'A Casa não pode ser atacada ou atordoada. Ela não se move. A Casa pode fazer um ataque de Poder contra um herói em ou adjacente a qualquer ladrilho com um Gerador LIGADO (fichas DESLIGADAS não contam).', actions: [SpecialAction(title: 'Possuir Eletrônicos', description: 'Coloque uma Armadilha em qualquer tile que não tenha um herói ou Armadilha. Você não pode usar Possess Electronics para colocar armadilhas em ou adjacentes a um tile com um Gerador.'), SpecialAction(title: 'Corredores em espiral', description: 'Role 2 dados. Mova qualquer explorador até essa quantidade de peças em qualquer direção. Se isso fizer com que o explorador acione uma Armadilha, ele para de se mover.')]),
+      Monster(name: 'A Casa', strength: '7', speed: '0', sanity: '5', knowledge: '5', description: 'Depois da sua vez, jogue com a Casa.\nA Casa não pode ser atacada ou atordoada. Ela não se move. \nA Casa pode fazer um ataque de Força contra um herói em um tile ou adjacente, que possua um token de Gerador LIGADO (fichas DESLIGADAS não contam).', actions: [SpecialAction(title: 'Possuir Eletrônicos', description: 'Coloque uma Armadilha em qualquer tile que não tenha um herói ou Armadilha. Você não pode colocar armadilhas em um tile com um Gerador ou adjacentes.'), SpecialAction(title: 'Corredores em espiral', description: 'Role 2 dados. Mova qualquer explorador até essa quantidade de peças em qualquer direção. Se isso fizer com que o explorador acione uma Armadilha, ele para de se mover.')]),
     ],
     conclusion: 'A casa estremece e se acomoda. Um dia, você ajudará a coisa que vive aqui a escapar desta gaiola. Quando o fizer, o mundo se ajoelhará diante do poder deste deus terrível... e você será seu sumo sacerdote.',
   ),
@@ -1112,18 +1116,19 @@ final Map<int, Haunt> traitorHaunts = {
       'Seu explorador ainda está no jogo. Você é o traidor.',
       'Cure todos os seus traços.',
       'Coloque a Carta de Monstro à sua esquerda. O monstro jogará depois do seu turno.',
-      'Ganho{0/1/2/2}Força e velocidade.',
-      'Coloque a ficha de Demônio no ladrilho do Porão mais distante do Patamar do Porão.',
+      'Ganhe {0/1/2/2} Força e velocidade.',
+      'Coloque a ficha de Demônio no ladrilho do Porão mais distante da entrada do Porão.',
       'Coloque o token de Contrato no Demônio. Ele está segurando o Contrato.',
     ],
     objective: 'Você vence quando traz o sangue de todos para o Demônio, ou quando todos os heróis estão mortos.',
     requiredMarkers: 'Fichas de Sangue\nToken de contrato\nFicha Demoníaca',
     specialRules: [
-      SpecialRule(title: 'Quando você ataca um herói', description: 'Se você não estiver usando uma arma, você pode atacar usando Sanity. O perdedor recebe dano Mental.Veja “Benefícios Especiais”, no parágrafo 3, subseção Ω. Fichas de Sangue Usado para cumprir o contrato infernal. • Se um herói morrer ou sofrer dano Físico, ele deixa cair seu token de Sangue. • Se você estiver em um tile com quaisquer marcadores de Sangue, você pode pegá- los. Coloque-os no seu tabuleiro de personagem. Após sua vez, jogue com o Demônio.'),
+      SpecialRule(title: 'Quando você ataca um herói', description: 'Se você não estiver usando uma arma, você pode atacar usando Sanidade. O perdedor recebe dano Mental.'),
+      SpecialRule(title: 'Tokens de Sangue', description: '• Se um herói morrer ou sofrer dano Físico, ele deixa cair seu token de Sangue. • Se você estiver em um tile com quaisquer marcadores de Sangue, você pode pegá- los. Coloque-os no seu tabuleiro de personagem.'),
       SpecialRule(title: 'Quando você entra em um ladrilho com o Demônio', description: 'Se você tiver o marcador de Sangue de cada herói, você realizará o ritual com sucesso.Você venceu!'),
     ],
     monsters: [
-      Monster(name: 'Demônio', strength: '6', speed: '4', sanity: '4', knowledge: '5', description: 'Se o Demônio estiver segurando o Contrato, ele não poderá ser atordoado.'),
+      Monster(name: 'Demônio', strength: '6', speed: '4', sanity: '4', knowledge: '5', description: 'Após sua vez, jogue com o Demônio.\nSe o Demônio estiver segurando o Contrato, ele não poderá ser atordoado.'),
     ],
     conclusion: 'O demônio suspira e guarda o contrato de volta em um bolso escondido. De uma forma ou de outra, o contrato foi cumprido e você está livre de cláusula 4b.',
   ),
@@ -1150,5 +1155,37 @@ final Map<int, Haunt> traitorHaunts = {
       Monster(name: 'O Construto', strength: '8',speed: '*', sanity: '4', knowledge: '4', description: 'Em vez de jogar, jogue como o construtor.\nA Velocidade do Construto é igual ao número na Trilha Numérica. (Lembre- se de rolar a cada turno para determinar seu movimento.) O Construto não pode ser atordoado.', actions: [SpecialAction(title: 'Consumir Carne', description: '• Se você estiver em um ladrilho com um cadáver, você pode remover esse cadáver da casa e enterrar os itens e presságios desse explorador. Mova a Trilha Numérica para cima em 1.Você está ficando mais rápido.'),SpecialAction(title: 'Consuma a casa', description: 'Qualquer número de vezes por turno, você pode usar essa ação.\nEnquanto estiver em um ladrilho que não seja de entrada e que não tenha sido consumido, vire aquela sala para baixo. Aquele tile foi consumido. Se todos os tiles que não sejam de entrada foram consumidos,você venceu!\n\nQuando consome um tile com um simbolo de Omen, você pode se colocar em qualquer tile com um herói. Se fizer isso, perca o resto dos seus movimentos do turno.')]),
     ],
     conclusion: 'Você libera uma toxina gasosa e malcheirosa ao terminar de consumir todas as criaturas vivas da casa. Você estica seus tentáculos carnudos dentro de sua armadura, antes de se encolher de volta para sua casa como um caranguejo eremita. Foi um dia de trabalho duro.',
+  ),
+  51: Haunt(
+    number: 51,
+    title: 'Henry a caça',
+    category: HauntCategory.revelacaoClassica,
+    traitorType: 'Menor Força',
+    scenarioCard: 'Bem Vindo a Darryl',
+    omenTrigger: 'Um toque de vermelho/Faca na escuridão',
+    introduction: 'Você é Henry Bowers, depois te ter visto um balão vermelho flutuando pela janela da prisão psiquiatrica, você respira o ar puro da liberdade do outro lado da cerca. Cara, sua antiga faca foi bem util na fuga deste lugar! Agora você esta dirigindo o carro ao lado do seu amigo, Patrick Hockstetter, que tem um buraco na mandibule e buraco escuro onde deveria estar seu olho. Patrick dirige até a casa e desliga o motor. Então você entra em crava sua primeira vitima bem rapido. Você tem uma lista de assassinato e risca o primeiro nele. Talvez os outros dêm mais trabalho.',
+    setup: [
+      'Coloque a miniatura do Henry em seu tile.',
+      'Vire a miniatura do seu sobrevivente, ele está morto. Você agora é o traidor, mantenha seus itens, pressagios e seu tabuleiro de personagem.',
+      'Insira o cartao do Henry no seu tabuleiro e cure todas as suas caracteristicas',
+      'Aumente sua força até você ter {5/5/6/6} de força',
+      'Coloque o token de zombie Patrick no seu tile',
+      'Coloque a Carta de Monstro à sua direita. O monstro jogará antes de você.',
+      'Pegue todos os tokens de heróis, então aleatoriamente pegue um e esconda o resto, ainda não mostre para ninguem o token selecionado.'
+
+    ],
+    objective: 'Você vence quando todos os heróis estiverem mortos.',
+    requiredMarkers: 'Token de Monstro Zombie - Zombie Patrick\nTokens de Heróis - Lista de assassinato\nFichas de procurado - Tiles que já pesquisou por armas',
+    specialRules: [
+      SpecialRule(title: 'Antes do seu turno, jogue com o Patrick', description: 'Se Patrick não está no tabuleiro, os herois colocam o Patrick zombie em qualquer tile com uma porta aberta, então jogue um turno com o monstro normalmente.'),
+      SpecialRule(title: 'Após Patrick jogue como Henry', description: 'para se mover use o valor da sua velocidade como um explorador.'),
+      SpecialRule(title: 'Quando você é atacado', description: '• Se o Zombie Patrick está no seu tile, você pode trocar o alvo do ataque para ele, isso deve ser feito antes do atacante rolar os dados.• Se o Zombie Patrick esta no tabuleiro mas não no seu tile, você pode move-lo até 3 espaços em sua direção.'),
+      SpecialRule(title: 'Quando você mata o herói o qual você tem o token', description: 'Revele o token e cure uma das suas caracteristicas, então escolha uma nova vitima (token).'),
+      SpecialRule(title: 'No final do seu turno', description: 'Se não atacou um herói neste turno, leve 1 dano mental.')
+    ],
+    monsters: [
+      Monster(name: 'Zombie Patrick', strength: '5',speed: '4', sanity: '4', knowledge: '5', description: 'Patrick não pode atacar.\nSe Patrick levar tomar qualquer dano, remova ele do tabuleiro', actions: [SpecialAction(title: 'Der uma mão para o Henry', description: '• Enquanto esta no mesmo tile com o Henry.• Use qualquer valor de velocidade restante para mover o Henry aquela quantidade de tiles.• Revele a carta do topo do deck de item e der ao Henry.')]),
+    ],
+    conclusion: 'Você esta suando e coberto de sangue, mas foi o ultimo nome na sua lista! Aquele ultimo realmente deu trabalho. Eles todos flutuaram agora, assim como os outros, assim como o Georgie. Enquanto as autoridades levam você para longe, você apenas sorri, pensando que talvez você possa ter uma nova lista algum dia.',
   ),
 };

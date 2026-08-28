@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import '../data/cards_data.dart';
 import '../models/game_card.dart';
 import '../theme/app_colors.dart';
 
 const _itemColor = Color(0xFF8D6E63);
 const _omenColor = Color(0xFF4CAF50);
+const _favColor = Color(0xFFE53935);
+const _favKey = 'favorite_cards';
 
-enum _Filter { all, items, omens }
+enum _Filter { all, items, omens, favorites }
 
 class CardsPage extends StatefulWidget {
   const CardsPage({super.key});
@@ -21,12 +24,41 @@ class _CardsPageState extends State<CardsPage> {
   String _search = '';
   final _searchController = TextEditingController();
   bool _showSearch = false;
+  Set<String> _favorites = {};
+
+  @override
+  void initState() {
+    super.initState();
+    _loadFavorites();
+  }
+
+  Future<void> _loadFavorites() async {
+    final prefs = await SharedPreferences.getInstance();
+    setState(() {
+      _favorites = (prefs.getStringList(_favKey) ?? []).toSet();
+    });
+  }
+
+  Future<void> _toggleFavorite(String title) async {
+    final prefs = await SharedPreferences.getInstance();
+    setState(() {
+      if (_favorites.contains(title)) {
+        _favorites.remove(title);
+      } else {
+        _favorites.add(title);
+      }
+    });
+    await prefs.setStringList(_favKey, _favorites.toList());
+  }
 
   List<GameCard> get _filteredCards {
     final cards = switch (_filter) {
       _Filter.all => [...allItems, ...allOmens],
       _Filter.items => allItems,
       _Filter.omens => allOmens,
+      _Filter.favorites => [...allItems, ...allOmens]
+          .where((c) => _favorites.contains(c.title))
+          .toList(),
     };
     if (_search.isEmpty) return cards;
     final query = _search.toLowerCase();
@@ -56,19 +88,42 @@ class _CardsPageState extends State<CardsPage> {
                   ? Center(
                       child: Padding(
                         padding: const EdgeInsets.all(40),
-                        child: Text(
-                          'Nenhuma carta encontrada.',
-                          style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                                color: AppColors.textSecondary,
+                        child: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            if (_filter == _Filter.favorites) ...[
+                              const Icon(Icons.favorite_border,
+                                  size: 48, color: AppColors.textSecondary),
+                              const SizedBox(height: 16),
+                              Text(
+                                'Nenhum favorito ainda.\nToque no coração para adicionar.',
+                                textAlign: TextAlign.center,
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .bodyLarge
+                                    ?.copyWith(color: AppColors.textSecondary),
                               ),
+                            ] else
+                              Text(
+                                'Nenhuma carta encontrada.',
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .bodyLarge
+                                    ?.copyWith(color: AppColors.textSecondary),
+                              ),
+                          ],
                         ),
                       ),
                     )
                   : ListView.builder(
                       padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
                       itemCount: cards.length,
-                      itemBuilder: (context, index) =>
-                          _GameCardWidget(card: cards[index]),
+                      itemBuilder: (context, index) => _GameCardWidget(
+                        card: cards[index],
+                        isFavorite: _favorites.contains(cards[index].title),
+                        onToggleFavorite: () =>
+                            _toggleFavorite(cards[index].title),
+                      ),
                     ),
             ),
           ],
@@ -125,7 +180,8 @@ class _CardsPageState extends State<CardsPage> {
             }),
             icon: Icon(
               _showSearch ? Icons.search_off : Icons.search,
-              color: _showSearch ? AppColors.primaryLight : AppColors.textSecondary,
+              color:
+                  _showSearch ? AppColors.primaryLight : AppColors.textSecondary,
             ),
           ),
         ],
@@ -143,8 +199,10 @@ class _CardsPageState extends State<CardsPage> {
         style: const TextStyle(color: AppColors.textPrimary, fontSize: 14),
         decoration: InputDecoration(
           hintText: 'Pesquisar pelo título...',
-          hintStyle: TextStyle(color: AppColors.textSecondary.withValues(alpha: 0.6)),
-          prefixIcon: const Icon(Icons.search, size: 20, color: AppColors.textSecondary),
+          hintStyle:
+              TextStyle(color: AppColors.textSecondary.withValues(alpha: 0.6)),
+          prefixIcon:
+              const Icon(Icons.search, size: 20, color: AppColors.textSecondary),
           suffixIcon: _search.isNotEmpty
               ? IconButton(
                   icon: const Icon(Icons.clear, size: 18),
@@ -177,29 +235,40 @@ class _CardsPageState extends State<CardsPage> {
   Widget _buildFilters() {
     return Padding(
       padding: const EdgeInsets.fromLTRB(20, 0, 20, 12),
-      child: Row(
-        children: [
-          _FilterChip(
-            label: 'Todos',
-            selected: _filter == _Filter.all,
-            color: AppColors.textPrimary,
-            onTap: () => setState(() => _filter = _Filter.all),
-          ),
-          const SizedBox(width: 8),
-          _FilterChip(
-            label: 'Equipamentos',
-            selected: _filter == _Filter.items,
-            color: _itemColor,
-            onTap: () => setState(() => _filter = _Filter.items),
-          ),
-          const SizedBox(width: 8),
-          _FilterChip(
-            label: 'Presságios',
-            selected: _filter == _Filter.omens,
-            color: _omenColor,
-            onTap: () => setState(() => _filter = _Filter.omens),
-          ),
-        ],
+      child: SingleChildScrollView(
+        scrollDirection: Axis.horizontal,
+        child: Row(
+          children: [
+            _FilterChip(
+              label: 'Todos',
+              selected: _filter == _Filter.all,
+              color: AppColors.textPrimary,
+              onTap: () => setState(() => _filter = _Filter.all),
+            ),
+            const SizedBox(width: 8),
+            _FilterChip(
+              label: 'Equipamentos',
+              selected: _filter == _Filter.items,
+              color: _itemColor,
+              onTap: () => setState(() => _filter = _Filter.items),
+            ),
+            const SizedBox(width: 8),
+            _FilterChip(
+              label: 'Presságios',
+              selected: _filter == _Filter.omens,
+              color: _omenColor,
+              onTap: () => setState(() => _filter = _Filter.omens),
+            ),
+            const SizedBox(width: 8),
+            _FilterChip(
+              label: '♥ Favoritos',
+              selected: _filter == _Filter.favorites,
+              color: _favColor,
+              count: _favorites.length,
+              onTap: () => setState(() => _filter = _Filter.favorites),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -210,12 +279,14 @@ class _FilterChip extends StatelessWidget {
   final bool selected;
   final Color color;
   final VoidCallback onTap;
+  final int? count;
 
   const _FilterChip({
     required this.label,
     required this.selected,
     required this.color,
     required this.onTap,
+    this.count,
   });
 
   @override
@@ -231,13 +302,37 @@ class _FilterChip extends StatelessWidget {
             color: selected ? color.withValues(alpha: 0.5) : AppColors.divider,
           ),
         ),
-        child: Text(
-          label,
-          style: TextStyle(
-            color: selected ? color : AppColors.textSecondary,
-            fontWeight: selected ? FontWeight.bold : FontWeight.normal,
-            fontSize: 13,
-          ),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text(
+              label,
+              style: TextStyle(
+                color: selected ? color : AppColors.textSecondary,
+                fontWeight: selected ? FontWeight.bold : FontWeight.normal,
+                fontSize: 13,
+              ),
+            ),
+            if (count != null && count! > 0) ...[
+              const SizedBox(width: 6),
+              Container(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 6, vertical: 1),
+                decoration: BoxDecoration(
+                  color: color.withValues(alpha: selected ? 0.25 : 0.1),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Text(
+                  '$count',
+                  style: TextStyle(
+                    color: selected ? color : AppColors.textSecondary,
+                    fontSize: 11,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ],
+          ],
         ),
       ),
     );
@@ -246,8 +341,14 @@ class _FilterChip extends StatelessWidget {
 
 class _GameCardWidget extends StatelessWidget {
   final GameCard card;
+  final bool isFavorite;
+  final VoidCallback onToggleFavorite;
 
-  const _GameCardWidget({required this.card});
+  const _GameCardWidget({
+    required this.card,
+    required this.isFavorite,
+    required this.onToggleFavorite,
+  });
 
   Color get _accentColor =>
       card.type == GameCardType.item ? _itemColor : _omenColor;
@@ -303,10 +404,30 @@ class _GameCardWidget extends StatelessWidget {
       decoration: BoxDecoration(
         color: _accentColor.withValues(alpha: 0.08),
         borderRadius: const BorderRadius.vertical(top: Radius.circular(11)),
-        border: Border(bottom: BorderSide(color: _accentColor.withValues(alpha: 0.2))),
+        border: Border(
+            bottom: BorderSide(color: _accentColor.withValues(alpha: 0.2))),
       ),
       child: Row(
         children: [
+          GestureDetector(
+            onTap: onToggleFavorite,
+            child: Padding(
+              padding: const EdgeInsets.only(right: 10),
+              child: AnimatedSwitcher(
+                duration: const Duration(milliseconds: 200),
+                transitionBuilder: (child, animation) => ScaleTransition(
+                  scale: animation,
+                  child: child,
+                ),
+                child: Icon(
+                  isFavorite ? Icons.favorite : Icons.favorite_border,
+                  key: ValueKey(isFavorite),
+                  color: isFavorite ? _favColor : AppColors.textSecondary.withValues(alpha: 0.4),
+                  size: 20,
+                ),
+              ),
+            ),
+          ),
           Expanded(
             child: Text(
               card.title,
@@ -339,7 +460,8 @@ class _GameCardWidget extends StatelessWidget {
             decoration: BoxDecoration(
               color: _accentColor.withValues(alpha: 0.08),
               borderRadius: BorderRadius.circular(6),
-              border: Border.all(color: _accentColor.withValues(alpha: 0.2)),
+              border:
+                  Border.all(color: _accentColor.withValues(alpha: 0.2)),
             ),
             child: Text(
               card.type == GameCardType.item ? 'Equipamento' : 'Presságio',
@@ -369,7 +491,8 @@ class _GameCardWidget extends StatelessWidget {
             final result = entry.value;
             return Container(
               width: double.infinity,
-              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
               color: isEven ? AppColors.surface : AppColors.background,
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -378,7 +501,8 @@ class _GameCardWidget extends StatelessWidget {
                     width: 50,
                     padding: const EdgeInsets.only(right: 8),
                     child: Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 6, vertical: 2),
                       decoration: BoxDecoration(
                         color: _accentColor.withValues(alpha: 0.15),
                         borderRadius: BorderRadius.circular(4),
@@ -386,11 +510,12 @@ class _GameCardWidget extends StatelessWidget {
                       child: Text(
                         result.range,
                         textAlign: TextAlign.center,
-                        style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                              fontWeight: FontWeight.bold,
-                              color: _accentColor,
-                              fontSize: 13,
-                            ),
+                        style:
+                            Theme.of(context).textTheme.bodySmall?.copyWith(
+                                  fontWeight: FontWeight.bold,
+                                  color: _accentColor,
+                                  fontSize: 13,
+                                ),
                       ),
                     ),
                   ),
@@ -400,13 +525,19 @@ class _GameCardWidget extends StatelessWidget {
                       children: [
                         Text(
                           result.effect,
-                          style: Theme.of(context).textTheme.bodyMedium?.copyWith(fontSize: 13),
+                          style: Theme.of(context)
+                              .textTheme
+                              .bodyMedium
+                              ?.copyWith(fontSize: 13),
                         ),
                         if (result.flavorText != null) ...[
                           const SizedBox(height: 2),
                           Text(
                             result.flavorText!,
-                            style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                            style: Theme.of(context)
+                                .textTheme
+                                .bodySmall
+                                ?.copyWith(
                                   fontStyle: FontStyle.italic,
                                   color: AppColors.textSecondary,
                                   fontSize: 11,
@@ -437,7 +568,8 @@ class _GameCardWidget extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Icon(Icons.info_outline, size: 14, color: AppColors.orange.withValues(alpha: 0.8)),
+          Icon(Icons.info_outline,
+              size: 14, color: AppColors.orange.withValues(alpha: 0.8)),
           const SizedBox(width: 8),
           Expanded(
             child: Text(
@@ -466,7 +598,8 @@ class _GameCardWidget extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Icon(Icons.warning_amber, size: 14, color: _omenColor.withValues(alpha: 0.8)),
+          Icon(Icons.warning_amber,
+              size: 14, color: _omenColor.withValues(alpha: 0.8)),
           const SizedBox(width: 8),
           Expanded(
             child: Text(
