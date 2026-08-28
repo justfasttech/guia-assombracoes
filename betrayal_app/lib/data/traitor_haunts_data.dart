@@ -1,6 +1,8 @@
 import '../models/haunt.dart';
 import '../models/haunt_category.dart';
 import '../models/monster.dart';
+import '../models/monster_room.dart';
+import '../models/nightmare_room.dart';
 import '../models/special_action.dart';
 import '../models/special_rule.dart';
 
@@ -1185,6 +1187,236 @@ final Map<int, Haunt> traitorHaunts = {
     ],
     monsters: [
       Monster(name: 'Zombie Patrick', strength: '5',speed: '4', sanity: '4', knowledge: '5', description: 'Patrick não pode atacar.\nSe Patrick levar tomar qualquer dano, remova ele do tabuleiro', actions: [SpecialAction(title: 'Der uma mão para o Henry', description: '• Enquanto esta no mesmo tile com o Henry.• Use qualquer valor de velocidade restante para mover o Henry aquela quantidade de tiles.• Revele a carta do topo do deck de item e der ao Henry.')]),
+    ],
+    conclusion: 'Você esta suando e coberto de sangue, mas foi o ultimo nome na sua lista! Aquele ultimo realmente deu trabalho. Eles todos flutuaram agora, assim como os outros, assim como o Georgie. Enquanto as autoridades levam você para longe, você apenas sorri, pensando que talvez você possa ter uma nova lista algum dia.',
+  ),
+   52: Haunt(
+    number: 52,
+    title: 'Pesadelos Separados',
+    category: HauntCategory.revelacaoClassica,
+    traitorType: 'Revelador da Assombração',
+    scenarioCard: 'Bem Vindo a Darryl',
+    omenTrigger: 'Um Salão Extenso/Tentaculos de Sangue',
+    introduction: 'As parede ao redor de você começam a escorrer um liquido podre. - pequenos monstros, ou insetos gigantes? você tenta correr, mas rapidamente percebe que você esta presso em uma sala de vidro sem portas... era como se estivesse no habitat dos monstros para ser seu alimento. Puro medo corre atraves de suas veias enquanto você se enconta na parede e espera seu destino.',
+    setup: [
+      'Coloque 5 pequenos tokens de monstro no tile que você estava. Esses são os pequenos monstros que te devoraram.',
+      'Remova sua miniatura do tabuleiro, você foi consumido, agora você é o traidor.',
+      'Coloque a Carta de Monstro à sua esquerda. Você jogará como o monstro.',
+      'Retorne o deck de evento para a caixa'
+    ],
+    objective: 'Você vence quando todos os heróis estiverem mortos.',
+    requiredMarkers: 'Token de Monstro grande - Grandes Terrores\nToken de Monstro pequeno - Pequenos Terrores',
+    specialRules: [
+      SpecialRule(title: 'A casa esta se movendo, faça isso parar...', description: '•Todos os tiles agora estão no piso terreo, as outras regioes não existem mais. Entre tanto, tiles ou cartas que movem você para o tile inical do porão, ainda leva.• Qualquer tile conectado, como as escadas do terreo e andar superior, continua conectados.• O elevador Mystico apenas move em rolagens 2 ou 4.'),
+      SpecialRule(title: 'Em vez do seu turno', description: 'Jogue com os pequenos terrores e depois com os grandes horrores. Role velocidade individualmente para cada.'),
+      SpecialRule(title: 'No final do seu turno', description: 'Se um grande terror ou grupo de pequenos terrores não esta na linha de visão de nenhum heroi você pode move eles para outro tile que não esta na linha de visão de nenhum heroi'),
+      SpecialRule(title: 'Quando um herói explorar', description: '•Sempre use a peça do topo do deck, indepedente da regiao.• Depois de você entrar em uma sala e antes de puxar uma carta ou resolver efeitos do tile, consulte a tabela de pesadelos.•Encontre a sala e descreva o terror que espera eles.• Se você não consegue encontrar o tile na tabela de pesadelos, fale para eles, "nada acontece, parece que esta seguro por enquanto". Então ele continua resolvendo qualquer efeito da sala descoberta.'),
+    ],
+    monsters: [
+      Monster(name: 'Pequenos Terrores', strength: 'até 6',speed: '5', sanity: '3', knowledge: '2', description: 'Move todos os pequenos terrores antes de atacar com qualquer um deles.\n\npequenos terrores no mesmo tile, atacam e defendem como um grupo. Sua força é igual ao numero de terrores no tile, até 6.\n\nPequenos Terrores não podem ser nocateados, mas sempre que eles atacarem ou defenderem, remova um dos pequenos terrores.\n\n(só leia essa parte caso um jogador usar dinamite).\nis dinamite foir usada nos pequenos terrores, não jogue o dado. Todos eles são removidos.'),
+      Monster(name: 'Grandes Terrores', strength: '5',speed: '4',sanity: '4',knowledge: '4',description: 'Grandes Horrores não podem ser nocateados enquanto atacam.\n\nO Zombie e o Construtor add mais 1 para o resultado da suas rolagens de força.\n\nO Fantasma e Tubarão Fantasma podem se move atraves de paredes e não podem ser nocateados enquanto defedem.\n\nO Homem sem Face e Demonio ataca com sanidade.\n\nO Grande Monstro do cabelo e Vespa Gigante ataca com velocidade.')
+    ],
+    nightmareRooms: [
+      NightmareRoom(
+        name: 'Sala Sangrenta (Bloody Room)',
+        description: 'Litros de sangue jorram por cada fresta — por baixo da porta, entre as paredes, pelas frestas do teto. O sangue enche a sala, ameaçando afogá-lo.',
+        rollType: 'Força',
+        successRange: '5+',
+        successEffect: 'Continue seu turno.',
+        failRange: '0-4',
+        failEffect: 'Receba 1 dado de dano Mental. Encerre seu turno.',
+      ),
+      NightmareRoom(
+        name: 'Catacumbas (Catacombs)',
+        description: 'Você tem caminhado pelo que parecem ser dias, mas não se sente nem um pouco mais perto de escapar das entranhas deste lugar.',
+        rollType: 'Conhecimento',
+        successRange: '5+',
+        successEffect: 'Continue seu turno.',
+        failRange: '0-4',
+        failEffect: 'Receba 2 de dano Físico. Encerre seu turno.',
+      ),
+      NightmareRoom(
+        name: 'Sala Carbonizada (Charred Room)',
+        description: 'A porta se fecha atrás de você e a sala explode em chamas. O que vai matá-lo primeiro, a fumaça ou o fogo?',
+        rollType: 'Velocidade',
+        successRange: '5+',
+        successEffect: 'Continue seu turno.',
+        failRange: '0-4',
+        failEffect: 'Receba 1 dado de dano Físico. Encerre seu turno.',
+      ),
+      NightmareRoom(
+        name: 'Abismo (Chasm)',
+        description: 'Você encontra uma ponte improvisada de tábuas frágeis sobre um abismo escuro. Você respira fundo. Um pé na frente do outro.',
+        rollType: 'Velocidade',
+        successRange: '5+',
+        successEffect: 'Continue seu turno.',
+        failRange: '0-4',
+        failEffect: 'Receba 1 de dano Mental. Encerre seu turno.',
+      ),
+      NightmareRoom(
+        name: 'Sala Desabada (Collapsed Room)',
+        description: 'Um tremor profundo sacode a fundação da casa, e terra começa a cair do teto, enchendo a sala. O chão sob seus pés desaparece.',
+        rollType: 'Força',
+        successRange: '5+',
+        successEffect: 'Continue seu turno.',
+        failRange: '0-4',
+        failEffect: 'Receba 1 de dano Físico. Encerre seu turno.',
+      ),
+      NightmareRoom(
+        name: 'Passagem Estreita (Cramped Passageway)',
+        description: 'A passagem parece ficar cada vez menor conforme você avança, como se as paredes estivessem se fechando. Não é sua imaginação — as paredes estão se fechando!',
+        rollType: 'Velocidade',
+        successRange: '5+',
+        successEffect: 'Continue seu turno.',
+        failRange: '0-4',
+        failEffect: 'Receba 1 de dano Físico. Encerre seu turno.',
+      ),
+      NightmareRoom(
+        name: 'Sala da Fornalha (Furnace Room)',
+        description: 'A porta da fornalha range ao abrir, e tudo na sala começa a se mover em direção às chamas rugindo... incluindo seus pertences.',
+        rollType: 'Conhecimento',
+        successRange: '4+',
+        successEffect: 'Continue seu turno.',
+        failRange: '0-3',
+        failEffect: 'Enterre um item ou presságio. Encerre seu turno.',
+      ),
+      NightmareRoom(
+        name: 'Laboratório (Laboratory)',
+        description: 'Os equipamentos do laboratório parecem não ter sido tocados em décadas... até que os béqueres e tubos de ensaio começam a borbulhar e explodir, enchendo a sala com gases tóxicos.',
+        rollType: 'Velocidade',
+        successRange: '5+',
+        successEffect: 'Continue seu turno.',
+        failRange: '0-4',
+        failEffect: 'Receba 1 de dano Físico. Encerre seu turno.',
+      ),
+      NightmareRoom(
+        name: 'Duto de Lavanderia (Laundry Chute)',
+        description: 'Você não vê outra opção a não ser se jogar pelo duto. Imediatamente percebe seu erro enquanto rola sem parar, batendo em cada curva do tubo de metal.',
+        rollType: 'Conhecimento',
+        successRange: '6+',
+        successEffect: 'Continue seu turno.',
+        failRange: '0-5',
+        failEffect: 'Não saia deste azulejo. Encerre seu turno.',
+      ),
+      NightmareRoom(
+        name: 'Observatório (Observatory)',
+        description: 'Desejando lembrar de um mundo fora desta casa, você se atreve a olhar pelo telescópio. Três luzes brilhantes e alaranjadas estão se movendo em sua direção.',
+        rollType: 'Conhecimento',
+        successRange: '5+',
+        successEffect: 'Continue seu turno.',
+        failRange: '0-4',
+        failEffect: 'Receba 2 de dano Mental. Encerre seu turno.',
+      ),
+      NightmareRoom(
+        name: 'Teatro de Operações (Operating Theatre)',
+        description: 'Exausto, você se senta na mesa de operações. As correias da mesa disparam e prendem seus pulsos e tornozelos, forçando-o a se tornar o próximo paciente.',
+        rollType: 'Força',
+        successRange: '5+',
+        successEffect: 'Continue seu turno.',
+        failRange: '0-4',
+        failEffect: 'Receba 1 dado de dano Físico. Encerre seu turno.',
+      ),
+      NightmareRoom(
+        name: 'Cofre (Vault)',
+        description: 'Para seu desespero, você ouve a pesada porta de metal atrás de você raspar pelo chão e bater com força. O trinco estala. Ótimo, como você vai sair dessa?',
+        rollType: 'Conhecimento',
+        successRange: '5+',
+        successEffect: 'Continue seu turno.',
+        failRange: '0-4',
+        failEffect: 'Receba 1 de dano Mental. Encerre seu turno.',
+      ),
+    ],
+    monsterRooms: [
+      MonsterRoom(
+        name: 'Arsenal (Armory)',
+        monsterType: '4 Pequenos Terrores',
+        description: 'As espadas, machados e maças penduradas na parede se chocam ruidosamente enquanto se soltam e voam em sua direção.',
+      ),
+      MonsterRoom(
+        name: 'Salão de Baile (Ballroom)',
+        monsterType: 'Fantasma',
+        description: 'Uma valsa estranha e sinistra toca enquanto seres transparentes se materializam e dançam ao seu redor. Então, o disco arranha. Todos se viram para você.',
+      ),
+      MonsterRoom(
+        name: 'Conservatório (Conservatory)',
+        monsterType: '4 Pequenos Terrores',
+        description: 'A vegetação ao seu redor parece tranquila o suficiente... até que cipós emergem do subsolo e envolvem seus tornozelos.',
+      ),
+      MonsterRoom(
+        name: 'Espaço Apertado (Crawlspace)',
+        monsterType: '3 Pequenos Terrores',
+        description: 'No espaço escuro como breu, tudo que você consegue ouvir é o arrastar de garras — ao seu redor.',
+      ),
+      MonsterRoom(
+        name: 'Sala de Jantar (Dining Room)',
+        monsterType: '4 Pequenos Terrores',
+        description: 'Você sente o fedor assim que entra... a mesa está posta com uma refeição apodrecida. Criaturas que reviram seu estômago emergem da comida.',
+      ),
+      MonsterRoom(
+        name: 'Cemitério (Graveyard)',
+        monsterType: '5 Pequenos Terrores',
+        description: 'A terra sob seus pés geme enquanto restos humanos — crânios, espinhas, dentes, dedos — emergem e correm em sua direção sobre pernas de inseto.',
+      ),
+      MonsterRoom(
+        name: 'Sala de Tralhas (Junk Room)',
+        monsterType: 'Construtor',
+        description: 'Nada para ver aqui, apenas um monte de lixo. Espere um minuto, as pilhas estão... olhando para você?',
+      ),
+      MonsterRoom(
+        name: 'Cozinha (Kitchen)',
+        monsterType: 'Zumbi',
+        description: 'Você ouve um ritmado toc, toc, toc... o cadáver pútrido fazendo marcas no balcão com uma faca enferrujada se vira, pronto para fazer de você sua próxima refeição.',
+      ),
+      MonsterRoom(
+        name: 'Despensa (Larder)',
+        monsterType: '4 Pequenos Terrores',
+        description: 'Gordura animal repugnante escorre das gavetas que chacoalham. Você se prepara para o que mais possa estar lá dentro.',
+      ),
+      MonsterRoom(
+        name: 'Quarto do Bebê (Nursery)',
+        monsterType: '5 Pequenos Terrores',
+        description: 'Uma canção de ninar abafada ecoa pelas paredes enquanto você ouve algo se mexendo no berço. Muitas coisas. Estão chorando. Estão com fome.',
+      ),
+      MonsterRoom(
+        name: 'Sala do Órgão (Organ Room)',
+        monsterType: '4 Pequenos Terrores',
+        description: 'Notas discordantes escapam dos tubos trepidantes do órgão. Parece haver algo vivo dentro de cada um deles, subindo... e saindo.',
+      ),
+      MonsterRoom(
+        name: 'Quarto Principal (Primary Bedroom)',
+        monsterType: 'Monstro de Cabelo Gigante',
+        description: 'Você ouve batidas vindas do armário e se abriga embaixo da cama. Então, sente algo longo e sedoso roçar sua bochecha direita. Você não está sozinho.',
+      ),
+      MonsterRoom(
+        name: 'Sala Ritual (Ritual Room)',
+        monsterType: 'Demônio',
+        description: 'Sangue seco colore o chão e o altar... tudo que resta de um ritual que deu terrivelmente errado. Você ouve um gemido gutural acima e olha para cima. O que os matou não foi embora.',
+      ),
+      MonsterRoom(
+        name: 'Sala de Espécimes (Specimen Room)',
+        monsterType: 'Vespa Gigante',
+        description: 'Uma impressionante coleção de insetos em caixas de vidro forra as paredes. De repente, a maior vespa que você já viu ganha vida e se choca contra o vidro repetidamente até que ele se estilhaça.',
+      ),
+      MonsterRoom(
+        name: 'Corredor das Estátuas (Statuary Corridor)',
+        monsterType: 'Homem sem Face',
+        description: 'Você ouve o som de pedra se desmoronando e vê uma estátua em tamanho real sair de seu pedestal, empunhando sem esforço uma enorme lâmina de mármore. Ela avança.',
+      ),
+      MonsterRoom(
+        name: 'Torre (Tower)',
+        monsterType: '5 Pequenos Terrores',
+        description: 'Enquanto sobe a torre, o bater incessante de asas o faz parar. Um zumbido alto se move em sua direção, inconfundivelmente um enxame se aproximando.',
+      ),
+      MonsterRoom(
+        name: 'Caverna Subterrânea (Underground Cavern)',
+        monsterType: '6 Pequenos Terrores',
+        description: 'Por um tempo, tudo que você ouve é um gotejamento intermitente e seus próprios passos. Então, um grito arrepiante das profundezas. Vários gritos.',
+      ),
+      MonsterRoom(
+        name: 'Lago Subterrâneo (Underground Lake)',
+        monsterType: 'Tubarão Fantasma',
+        description: 'Uma pequena ondulação perturba a superfície plácida do lago. Abaixo, uma sombra enorme aparece. Então uma barbatana de tubarão saliente, de quase três metros de altura.',
+      ),
     ],
     conclusion: 'Você esta suando e coberto de sangue, mas foi o ultimo nome na sua lista! Aquele ultimo realmente deu trabalho. Eles todos flutuaram agora, assim como os outros, assim como o Georgie. Enquanto as autoridades levam você para longe, você apenas sorri, pensando que talvez você possa ter uma nova lista algum dia.',
   ),

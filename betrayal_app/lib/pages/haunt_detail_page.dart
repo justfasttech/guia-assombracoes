@@ -5,6 +5,8 @@ import '../data/haunts_repository.dart';
 import '../models/haunt.dart';
 import '../models/haunt_category.dart';
 import '../models/haunt_role.dart';
+import '../models/monster_room.dart';
+import '../models/nightmare_room.dart';
 import '../data/tile_translations.dart';
 import '../theme/app_colors.dart';
 import '../widgets/formatted_text.dart';
@@ -87,6 +89,10 @@ class _HauntDetailPageState extends State<HauntDetailPage> {
                   _buildSpecialActions(context, haunt),
                 if (haunt.monsters.isNotEmpty)
                   _buildMonsters(context, haunt),
+                if (haunt.nightmareRooms.isNotEmpty)
+                  _NightmareRoomsSection(rooms: haunt.nightmareRooms),
+                if (haunt.monsterRooms.isNotEmpty)
+                  _MonsterRoomsSection(rooms: haunt.monsterRooms),
                 if (haunt.conclusion != null &&
                     haunt.conclusion!.isNotEmpty)
                   _buildConclusion(context, haunt),
@@ -655,6 +661,345 @@ class _MetadataItem extends StatelessWidget {
           style: Theme.of(context).textTheme.titleMedium,
         ),
       ],
+    );
+  }
+}
+
+class _NightmareRoomsSection extends StatefulWidget {
+  final List<NightmareRoom> rooms;
+  const _NightmareRoomsSection({required this.rooms});
+
+  @override
+  State<_NightmareRoomsSection> createState() => _NightmareRoomsSectionState();
+}
+
+class _NightmareRoomsSectionState extends State<_NightmareRoomsSection> {
+  int? _expandedIndex;
+
+  @override
+  Widget build(BuildContext context) {
+    const color = Color(0xFFCE93D8);
+    return SectionCard(
+      title: 'Salas de Pesadelo',
+      accentColor: color,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Container(
+            padding: const EdgeInsets.all(10),
+            margin: const EdgeInsets.only(bottom: 12),
+            decoration: BoxDecoration(
+              color: color.withValues(alpha: 0.08),
+              borderRadius: BorderRadius.circular(8),
+              border: Border.all(color: color.withValues(alpha: 0.2)),
+            ),
+            child: Text(
+              'Quando um herói explora e revela uma dessas salas, ele deve fazer a rolagem indicada antes de resolver quaisquer outros efeitos. Se falhar, ele não resolve nenhum efeito da descoberta do azulejo.',
+              style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                    color: color,
+                    fontSize: 12,
+                    height: 1.4,
+                  ),
+            ),
+          ),
+          ...widget.rooms.asMap().entries.map((entry) {
+            final i = entry.key;
+            final room = entry.value;
+            final isExpanded = _expandedIndex == i;
+            return Container(
+              margin: const EdgeInsets.only(bottom: 8),
+              decoration: BoxDecoration(
+                color: AppColors.background,
+                borderRadius: BorderRadius.circular(8),
+                border: Border.all(
+                  color: isExpanded
+                      ? color.withValues(alpha: 0.4)
+                      : AppColors.divider,
+                ),
+              ),
+              child: Column(
+                children: [
+                  InkWell(
+                    onTap: () => setState(() {
+                      _expandedIndex = isExpanded ? null : i;
+                    }),
+                    borderRadius: BorderRadius.circular(8),
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 14, vertical: 12),
+                      child: Row(
+                        children: [
+                          Container(
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 8, vertical: 3),
+                            decoration: BoxDecoration(
+                              color: color.withValues(alpha: 0.12),
+                              borderRadius: BorderRadius.circular(6),
+                            ),
+                            child: Text(
+                              room.rollType,
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .bodySmall
+                                  ?.copyWith(
+                                    color: color,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 10,
+                                  ),
+                            ),
+                          ),
+                          const SizedBox(width: 10),
+                          Expanded(
+                            child: Text(
+                              room.name,
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .titleSmall
+                                  ?.copyWith(fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                          AnimatedRotation(
+                            turns: isExpanded ? 0.5 : 0,
+                            duration: const Duration(milliseconds: 200),
+                            child: Icon(
+                              Icons.expand_more,
+                              size: 20,
+                              color: AppColors.textSecondary
+                                  .withValues(alpha: 0.6),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  AnimatedCrossFade(
+                    firstChild: const SizedBox(width: double.infinity),
+                    secondChild: Padding(
+                      padding:
+                          const EdgeInsets.fromLTRB(14, 0, 14, 14),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            room.description,
+                            style: Theme.of(context)
+                                .textTheme
+                                .bodyMedium
+                                ?.copyWith(
+                                  fontStyle: FontStyle.italic,
+                                  color: AppColors.textSecondary,
+                                  height: 1.5,
+                                  fontSize: 13,
+                                ),
+                          ),
+                          const SizedBox(height: 10),
+                          Text(
+                            'Faça uma rolagem de ${room.rollType}.',
+                            style: Theme.of(context)
+                                .textTheme
+                                .bodyMedium
+                                ?.copyWith(
+                                  fontWeight: FontWeight.w600,
+                                  fontSize: 13,
+                                ),
+                          ),
+                          const SizedBox(height: 6),
+                          _rollResult(context, room.successRange,
+                              room.successEffect, const Color(0xFF66BB6A)),
+                          const SizedBox(height: 4),
+                          _rollResult(context, room.failRange,
+                              room.failEffect, const Color(0xFFEF5350)),
+                        ],
+                      ),
+                    ),
+                    crossFadeState: isExpanded
+                        ? CrossFadeState.showSecond
+                        : CrossFadeState.showFirst,
+                    duration: const Duration(milliseconds: 200),
+                  ),
+                ],
+              ),
+            );
+          }),
+        ],
+      ),
+    );
+  }
+
+  Widget _rollResult(
+      BuildContext context, String range, String effect, Color color) {
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Container(
+          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+          decoration: BoxDecoration(
+            color: color.withValues(alpha: 0.15),
+            borderRadius: BorderRadius.circular(4),
+          ),
+          child: Text(
+            range,
+            style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                  fontWeight: FontWeight.bold,
+                  color: color,
+                  fontSize: 12,
+                ),
+          ),
+        ),
+        const SizedBox(width: 10),
+        Expanded(
+          child: Padding(
+            padding: const EdgeInsets.only(top: 2),
+            child: Text(
+              effect,
+              style: Theme.of(context)
+                  .textTheme
+                  .bodyMedium
+                  ?.copyWith(fontSize: 13),
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+class _MonsterRoomsSection extends StatefulWidget {
+  final List<MonsterRoom> rooms;
+  const _MonsterRoomsSection({required this.rooms});
+
+  @override
+  State<_MonsterRoomsSection> createState() => _MonsterRoomsSectionState();
+}
+
+class _MonsterRoomsSectionState extends State<_MonsterRoomsSection> {
+  int? _expandedIndex;
+
+  @override
+  Widget build(BuildContext context) {
+    const color = Color(0xFFEF5350);
+    return SectionCard(
+      title: 'Salas de Monstros',
+      accentColor: color,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Container(
+            padding: const EdgeInsets.all(10),
+            margin: const EdgeInsets.only(bottom: 12),
+            decoration: BoxDecoration(
+              color: color.withValues(alpha: 0.08),
+              borderRadius: BorderRadius.circular(8),
+              border: Border.all(color: color.withValues(alpha: 0.2)),
+            ),
+            child: Text(
+              'Quando um herói explora e revela uma dessas salas, coloque os tokens de monstro indicados no azulejo dele.\n\nSe todos os 20 tokens de Pequenos Terrores já estiverem em jogo, você pode pegar a quantidade necessária de qualquer outro azulejo e colocá-los no azulejo do herói.',
+              style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                    color: color,
+                    fontSize: 12,
+                    height: 1.4,
+                  ),
+            ),
+          ),
+          ...widget.rooms.asMap().entries.map((entry) {
+            final i = entry.key;
+            final room = entry.value;
+            final isExpanded = _expandedIndex == i;
+            return Container(
+              margin: const EdgeInsets.only(bottom: 8),
+              decoration: BoxDecoration(
+                color: AppColors.background,
+                borderRadius: BorderRadius.circular(8),
+                border: Border.all(
+                  color: isExpanded
+                      ? color.withValues(alpha: 0.4)
+                      : AppColors.divider,
+                ),
+              ),
+              child: Column(
+                children: [
+                  InkWell(
+                    onTap: () => setState(() {
+                      _expandedIndex = isExpanded ? null : i;
+                    }),
+                    borderRadius: BorderRadius.circular(8),
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 14, vertical: 12),
+                      child: Row(
+                        children: [
+                          Container(
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 8, vertical: 3),
+                            decoration: BoxDecoration(
+                              color: color.withValues(alpha: 0.12),
+                              borderRadius: BorderRadius.circular(6),
+                            ),
+                            child: Text(
+                              room.monsterType,
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .bodySmall
+                                  ?.copyWith(
+                                    color: color,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 10,
+                                  ),
+                            ),
+                          ),
+                          const SizedBox(width: 10),
+                          Expanded(
+                            child: Text(
+                              room.name,
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .titleSmall
+                                  ?.copyWith(fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                          AnimatedRotation(
+                            turns: isExpanded ? 0.5 : 0,
+                            duration: const Duration(milliseconds: 200),
+                            child: Icon(
+                              Icons.expand_more,
+                              size: 20,
+                              color: AppColors.textSecondary
+                                  .withValues(alpha: 0.6),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  AnimatedCrossFade(
+                    firstChild: const SizedBox(width: double.infinity),
+                    secondChild: Padding(
+                      padding:
+                          const EdgeInsets.fromLTRB(14, 0, 14, 14),
+                      child: Text(
+                        room.description,
+                        style: Theme.of(context)
+                            .textTheme
+                            .bodyMedium
+                            ?.copyWith(
+                              fontStyle: FontStyle.italic,
+                              color: AppColors.textSecondary,
+                              height: 1.5,
+                              fontSize: 13,
+                            ),
+                      ),
+                    ),
+                    crossFadeState: isExpanded
+                        ? CrossFadeState.showSecond
+                        : CrossFadeState.showFirst,
+                    duration: const Duration(milliseconds: 200),
+                  ),
+                ],
+              ),
+            );
+          }),
+        ],
+      ),
     );
   }
 }

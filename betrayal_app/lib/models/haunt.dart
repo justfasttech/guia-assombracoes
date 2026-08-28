@@ -1,5 +1,7 @@
 import 'haunt_category.dart';
 import 'monster.dart';
+import 'monster_room.dart';
+import 'nightmare_room.dart';
 import 'special_action.dart';
 import 'special_rule.dart';
 
@@ -17,6 +19,8 @@ class Haunt {
   final List<SpecialRule> specialRules;
   final List<SpecialAction> specialActions;
   final List<Monster> monsters;
+  final List<NightmareRoom> nightmareRooms;
+  final List<MonsterRoom> monsterRooms;
   final String? conclusion;
   final String? defeatConclusion;
 
@@ -34,6 +38,8 @@ class Haunt {
     this.specialRules = const [],
     this.specialActions = const [],
     this.monsters = const [],
+    this.nightmareRooms = const [],
+    this.monsterRooms = const [],
     this.conclusion,
     this.defeatConclusion,
   });
