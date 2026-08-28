@@ -465,9 +465,12 @@ final Map<int, Haunt> traitorHaunts = {
       SpecialRule(title: 'Vem para a dança', description: 'Se  você atacar sem uma arma, você pode atacar usando velocidade em vez de força.\nSe você vencer, em vez de causar dano, você pode mover ambas as figuras, cada uma, um número de peças até o dano que você teria causado.'),
       SpecialRule(title: 'Após a primeira vez que um explorador morrer no salão de baile', description: 'Coloque a ficha de Rainha Negra na peça do Salão de Baile.')
     ],
+    specialActions: [
+      SpecialAction(title: 'Passo a Dança Eterna', description: 'Role 2 dados. Você pode mover um herói em sua região em qualquer direção, até um número de peças igual ao resultado daquela rolagem.')
+    ],
     monsters: [
       Monster(name: 'Dançarina Fae', strength: '3', speed: '6', sanity: '3', knowledge: '2', description: 'Após seu turno, os Fae Dancers fazem seus turnos um de cada vez. Mova-se e ataque com um antes que o próximo comece seu turno. Dançarinos Fae atacam com Velocidade. Eles não podem atacar um herói a menos que o herói esteja no Salão de Baile. Heróis se defendem contra esses ataques com Velocidade. Se um herói for atingido, ele recebe dano Físico.'),
-      Monster(name: 'Rainha das Trevas', strength: '7', speed: '6', sanity: '4', knowledge: '5', description: 'Ela canta em uma harmonia assustadora. Jogue com ela se ela já esta em jogo e após o turno das dançarinas Fae', actions: [SpecialAction(title: 'Passo a Dança Eterna', description: 'Role 2 dados. Você pode mover um herói em sua região em qualquer direção, até um número de peças igual ao resultado daquela rolagem.')]),
+      Monster(name: 'Rainha das Trevas', strength: '7', speed: '6', sanity: '4', knowledge: '5', description: 'Ela canta em uma harmonia assustadora. Jogue com ela se ela já esta em jogo e após o turno das dançarinas Fae'),
     ],
     conclusion: 'As sombras ao seu redor se espalham com flores que florescem à noite enquanto o Rei da Noite se junta a você e sua Rainha no salão de baile. A Máscara das Sombras está pronta para começar!',
   ),

@@ -1153,4 +1153,32 @@ final Map<int, Haunt> survivorHaunts = {
     ],
     conclusion: 'Henry pode ter uma lista de assassinatos, mas é você quem tem a palavra final! O seu antigo bully que te assustava com sua lâmina a centimetros dos seus olhos. Mas agora ele se foi bem diante de você, seu olhos já sem vida, vazios. Isso significa que ele esta em paz? O zombie do Patrick desapareceu nas sombras, e sem sinal do palhaço infernal, talvez o terror tenha acabado... ou talvez você terá que esperar outros 27 anos, e tudo vai começar de novo. Se isso acontecer, reze para estar preparado.',
   ),
+  
+    52: Haunt(
+    number: 52,
+    title: 'Pesadelos Separados',
+    category: HauntCategory.revelacaoClassica,
+    traitorType: 'Revelador da Assombração',
+    scenarioCard: 'Bem Vindo a Darryl',
+    omenTrigger: 'Um Salão Extenso/Tentaculos de Sangue',
+    introduction: 'Sua cabeça vira em direção a um grito agonizante que ecoa pela casa, e derrepente foi cortado por silência devastador. Você percebe que a vida de um dos seus amigos teve fim. Quando seus olhos piscam, o quarto envolta de você derrepente se transforma em seu pior pesadelo - um banheiro cheio de sangue, uma cabana desabando encima de você, um porão inundado. Seja qual for a forma que seu pesadelo tomou, você sabe que precisa encontrar uma forma de sair desta sala e desta casa. - agora!',
+    setup: [
+      'Remova do tabuleiro todos os tiles, exceto pelas peças iniciais e tiles com herois ou monstros nelas. Embaralhe os tiles',
+      'Deixe todos os tiles separados, de forma que nenhum esteja conectado.',
+      'Ajuste trilha numerica para o valor {6/7/8/9}.',
+      'O jogador à esquerda do traidor jogará o primeiro turno após a preparação.',
+    ],
+    objective: 'Os heróis ganham quando eles escapam voltando para a peça do hall de entrada.• Explore a casa e encontre uma forma de voltar para o hall de entrada.• Sobreviva as salas de pesadelos, pequenos terrores e grande terrores até escapar.',
+    requiredMarkers: 'Token de Monstro grande - Grandes Terrores\nToken de Monstro pequeno - Pequenos Terrores',
+    specialRules: [
+      SpecialRule(title: 'A casa esta se movendo, faça isso parar...', description: '•Todos os tiles agora estão no piso terreo, as outras regioes não existem mais. Entre tanto, tiles ou cartas que movem você para o tile inical do porão, ainda leva.• Qualquer tile conectado, como as escadas do terreo e andar superior, continua conectados.• O elevador Mystico apenas move em rolagens 2 ou 4.'),
+      SpecialRule(title: 'Quando você explorar', description: '•Sempre use a peça do topo do deck, indepedente da regiao.• Depois de você entrar em uma sala e antes de puxar uma carta ou resolver efeitos do tile, o traidor pode informa a você de efeitos adicionais.• Se o tile tem um simbolo de item ou pressagio, puxe uma carta normalmente.•Se um tile tem um ou mais simbolos de eventos, move a trilha numerica em um para baixo para cada simbolo de evento.'),
+    ],
+    specialActions: [
+      SpecialAction(title: 'Encontre um caminho atráves', description: 'Você pode tentar encontrar uma maneira de sair.\nFaça um teste de conhecimento ou sanidade. Subtraia do resultado o valor que esta na trilha numerica.4+O traidor conecta sua peça a peça inicial tripla ou a um tile que esta conectado a peça inicial tripla. Não ajuste a rotação do tile, apenas conecte ele a com o resto da casa.0-3Nada acontece.Porque isso não funcionou?'),
+      SpecialAction(title: 'Ajudar outro Herói', description: 'Enquanto esta na peça inicial tripla, faça um teste de conhecimento ou sanidade, subtraia do resultado o valor da trilha numerica.4+Coloque seu explorador em qualquer tile com outro heroi nele. Termina seu turno. Talvez você possa ajudar eles.0-3Nada acontece, você não consegue voltar'),
+      SpecialAction(title: 'Encontre uma forma de Sair', description: 'Quando todos os herois restantes estão no tile do hall de entrada, todos fazem um teste de sanidade. Adicione o maior e o menor resultado.8+Os Heróis Vencem.0-3Nada acontece. A porta não abre')
+    ],
+    conclusion: 'Você vê o hall de entrada na sua frente, mas pennywise dança no seu caminho. Você olha em volta freneticamente. Uma coisa alcança sua visão, um pedaço de madeira da cerca, um presente da sua antiga amiga bev. "Isso mata monstros, basta acredito" disse ela. Você pega o pedaço de cerca e corre em direção ao pennywise e grava-o em seu peito com tudo sua força, ele cai no chão enquanto a casa desaba ao redor de vocês. É agora ou nunca, você acelera em direção a saida deixando poeira para trás. A casa almaldiçoada colapsa atrá de você, você conseguiu, você está fora, acabou. ',
+  ),
 };
