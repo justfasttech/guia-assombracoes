@@ -2,10 +2,12 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import '../data/events_data.dart';
+import '../data/pennywise_data.dart';
 import '../models/event_card.dart';
 import '../theme/app_colors.dart';
 
 const _eventYellow = Color(0xFFD4A017);
+const _pennywiseRed = Color(0xFFE53935);
 
 class EventsPage extends StatefulWidget {
   const EventsPage({super.key});
@@ -20,17 +22,37 @@ class _EventsPageState extends State<EventsPage> {
   String _search = '';
   final _searchController = TextEditingController();
   bool _showSearch = false;
+  bool _showPennywise = false;
+
+  List<EventCard> get _activeList =>
+      _showPennywise ? allPennywiseEncounters : allEvents;
+
+  Color get _activeColor => _showPennywise ? _pennywiseRed : _eventYellow;
 
   List<EventCard> get _filteredEvents {
-    if (_search.isEmpty) return allEvents;
+    final source = _activeList;
+    if (_search.isEmpty) return source;
     final query = _search.toLowerCase();
-    return allEvents.where((e) => e.title.toLowerCase().contains(query)).toList();
+    return source.where((e) => e.title.toLowerCase().contains(query)).toList();
   }
 
   void _drawRandom() {
+    final source = _activeList;
     setState(() {
-      _drawnEvent = allEvents[Random().nextInt(allEvents.length)];
+      _drawnEvent = source[Random().nextInt(source.length)];
       _showList = false;
+    });
+  }
+
+  void _switchSection(bool pennywise) {
+    if (_showPennywise == pennywise) return;
+    setState(() {
+      _showPennywise = pennywise;
+      _drawnEvent = null;
+      _showList = false;
+      _search = '';
+      _searchController.clear();
+      _showSearch = false;
     });
   }
 
@@ -47,6 +69,7 @@ class _EventsPageState extends State<EventsPage> {
         child: Column(
           children: [
             _buildHeader(),
+            _buildSectionTabs(),
             if (_showSearch) _buildSearchBar(),
             _buildActions(),
             const Divider(color: AppColors.divider, height: 1),
@@ -58,6 +81,14 @@ class _EventsPageState extends State<EventsPage> {
   }
 
   Widget _buildHeader() {
+    final color = _activeColor;
+    final title = _showPennywise ? 'Encontros do Pennywise' : 'Cartas de Evento';
+    final count = _activeList.length;
+    final subtitle = _showPennywise
+        ? '$count encontros disponíveis'
+        : '$count eventos disponíveis';
+    final icon = _showPennywise ? Icons.mood_bad : Icons.auto_stories;
+
     return Padding(
       padding: const EdgeInsets.fromLTRB(8, 8, 12, 8),
       child: Row(
@@ -69,10 +100,10 @@ class _EventsPageState extends State<EventsPage> {
           Container(
             padding: const EdgeInsets.all(8),
             decoration: BoxDecoration(
-              color: _eventYellow.withValues(alpha: 0.15),
+              color: color.withValues(alpha: 0.15),
               borderRadius: BorderRadius.circular(10),
             ),
-            child: const Icon(Icons.auto_stories, color: _eventYellow, size: 22),
+            child: Icon(icon, color: color, size: 22),
           ),
           const SizedBox(width: 12),
           Expanded(
@@ -80,15 +111,15 @@ class _EventsPageState extends State<EventsPage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Cartas de Evento',
+                  title,
                   style: Theme.of(context).textTheme.titleLarge?.copyWith(
                         fontWeight: FontWeight.bold,
-                        color: _eventYellow,
+                        color: color,
                         fontSize: 18,
                       ),
                 ),
                 Text(
-                  '${allEvents.length} eventos disponíveis',
+                  subtitle,
                   style: Theme.of(context).textTheme.bodySmall?.copyWith(
                         color: AppColors.textSecondary,
                       ),
@@ -106,7 +137,36 @@ class _EventsPageState extends State<EventsPage> {
             }),
             icon: Icon(
               _showSearch ? Icons.search_off : Icons.search,
-              color: _showSearch ? _eventYellow : AppColors.textSecondary,
+              color: _showSearch ? color : AppColors.textSecondary,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildSectionTabs() {
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(20, 0, 20, 8),
+      child: Row(
+        children: [
+          Expanded(
+            child: _SectionTab(
+              label: 'Eventos',
+              icon: Icons.auto_stories,
+              selected: !_showPennywise,
+              color: _eventYellow,
+              onTap: () => _switchSection(false),
+            ),
+          ),
+          const SizedBox(width: 10),
+          Expanded(
+            child: _SectionTab(
+              label: 'Pennywise',
+              icon: Icons.mood_bad,
+              selected: _showPennywise,
+              color: _pennywiseRed,
+              onTap: () => _switchSection(true),
             ),
           ),
         ],
@@ -115,6 +175,7 @@ class _EventsPageState extends State<EventsPage> {
   }
 
   Widget _buildSearchBar() {
+    final color = _activeColor;
     return Padding(
       padding: const EdgeInsets.fromLTRB(20, 0, 20, 8),
       child: TextField(
@@ -148,7 +209,7 @@ class _EventsPageState extends State<EventsPage> {
           ),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
-            borderSide: const BorderSide(color: _eventYellow),
+            borderSide: BorderSide(color: color),
           ),
         ),
       ),
@@ -156,6 +217,7 @@ class _EventsPageState extends State<EventsPage> {
   }
 
   Widget _buildActions() {
+    final color = _activeColor;
     return Padding(
       padding: const EdgeInsets.fromLTRB(20, 8, 20, 16),
       child: Row(
@@ -166,6 +228,7 @@ class _EventsPageState extends State<EventsPage> {
               label: 'Sortear',
               selected: !_showList,
               onTap: _drawRandom,
+              color: color,
             ),
           ),
           const SizedBox(width: 12),
@@ -178,6 +241,7 @@ class _EventsPageState extends State<EventsPage> {
                 _showList = true;
                 _drawnEvent = null;
               }),
+              color: color,
             ),
           ),
         ],
@@ -186,6 +250,8 @@ class _EventsPageState extends State<EventsPage> {
   }
 
   Widget _buildContent() {
+    final color = _activeColor;
+
     if (_showList) {
       final events = _filteredEvents;
       if (events.isEmpty) {
@@ -193,7 +259,9 @@ class _EventsPageState extends State<EventsPage> {
           child: Padding(
             padding: const EdgeInsets.all(40),
             child: Text(
-              'Nenhum evento encontrado.',
+              _showPennywise
+                  ? 'Nenhum encontro encontrado.'
+                  : 'Nenhum evento encontrado.',
               style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                     color: AppColors.textSecondary,
                   ),
@@ -204,26 +272,36 @@ class _EventsPageState extends State<EventsPage> {
       return ListView.builder(
         padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
         itemCount: events.length,
-        itemBuilder: (context, index) => _EventCardWidget(event: events[index]),
+        itemBuilder: (context, index) =>
+            _EventCardWidget(event: events[index], themeColor: color),
       );
     }
 
     if (_drawnEvent != null) {
       return SingleChildScrollView(
         padding: const EdgeInsets.fromLTRB(16, 8, 16, 24),
-        child: _EventCardWidget(event: _drawnEvent!, highlighted: true),
+        child: _EventCardWidget(
+            event: _drawnEvent!, highlighted: true, themeColor: color),
       );
     }
+
+    final emptyText = _showPennywise
+        ? 'Toque em "Sortear" para revelar um encontro aleatório do Pennywise ou veja a lista completa.'
+        : 'Toque em "Sortear" para revelar um evento aleatório ou veja a lista completa.';
 
     return Padding(
       padding: const EdgeInsets.all(40),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Icon(Icons.touch_app, size: 48, color: _eventYellow.withValues(alpha: 0.3)),
+          Icon(
+            _showPennywise ? Icons.mood_bad : Icons.touch_app,
+            size: 48,
+            color: color.withValues(alpha: 0.3),
+          ),
           const SizedBox(height: 16),
           Text(
-            'Toque em "Sortear" para revelar um evento aleatório ou veja a lista completa.',
+            emptyText,
             textAlign: TextAlign.center,
             style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                   color: AppColors.textSecondary,
@@ -235,24 +313,79 @@ class _EventsPageState extends State<EventsPage> {
   }
 }
 
-class _ActionButton extends StatelessWidget {
-  final IconData icon;
+class _SectionTab extends StatelessWidget {
   final String label;
+  final IconData icon;
   final bool selected;
+  final Color color;
   final VoidCallback onTap;
 
-  const _ActionButton({
-    required this.icon,
+  const _SectionTab({
     required this.label,
+    required this.icon,
     required this.selected,
+    required this.color,
     required this.onTap,
   });
 
   @override
   Widget build(BuildContext context) {
     return Material(
+      color: selected ? color.withValues(alpha: 0.12) : Colors.transparent,
+      borderRadius: BorderRadius.circular(10),
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(10),
+        child: Container(
+          padding: const EdgeInsets.symmetric(vertical: 10),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(10),
+            border: Border.all(
+              color: selected ? color.withValues(alpha: 0.5) : AppColors.divider,
+              width: selected ? 1.5 : 1,
+            ),
+          ),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(icon, size: 16, color: selected ? color : AppColors.textSecondary),
+              const SizedBox(width: 6),
+              Text(
+                label,
+                style: TextStyle(
+                  color: selected ? color : AppColors.textSecondary,
+                  fontWeight: selected ? FontWeight.bold : FontWeight.normal,
+                  fontSize: 13,
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _ActionButton extends StatelessWidget {
+  final IconData icon;
+  final String label;
+  final bool selected;
+  final VoidCallback onTap;
+  final Color color;
+
+  const _ActionButton({
+    required this.icon,
+    required this.label,
+    required this.selected,
+    required this.onTap,
+    required this.color,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Material(
       color: selected
-          ? _eventYellow.withValues(alpha: 0.15)
+          ? color.withValues(alpha: 0.15)
           : AppColors.surface,
       borderRadius: BorderRadius.circular(12),
       child: InkWell(
@@ -264,19 +397,19 @@ class _ActionButton extends StatelessWidget {
             borderRadius: BorderRadius.circular(12),
             border: Border.all(
               color: selected
-                  ? _eventYellow.withValues(alpha: 0.5)
+                  ? color.withValues(alpha: 0.5)
                   : AppColors.divider,
             ),
           ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Icon(icon, size: 18, color: selected ? _eventYellow : AppColors.textSecondary),
+              Icon(icon, size: 18, color: selected ? color : AppColors.textSecondary),
               const SizedBox(width: 8),
               Text(
                 label,
                 style: TextStyle(
-                  color: selected ? _eventYellow : AppColors.textSecondary,
+                  color: selected ? color : AppColors.textSecondary,
                   fontWeight: selected ? FontWeight.bold : FontWeight.normal,
                   fontSize: 14,
                 ),
@@ -292,8 +425,13 @@ class _ActionButton extends StatelessWidget {
 class _EventCardWidget extends StatelessWidget {
   final EventCard event;
   final bool highlighted;
+  final Color themeColor;
 
-  const _EventCardWidget({required this.event, this.highlighted = false});
+  const _EventCardWidget({
+    required this.event,
+    this.highlighted = false,
+    this.themeColor = _eventYellow,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -305,7 +443,7 @@ class _EventCardWidget extends StatelessWidget {
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
           color: highlighted
-              ? _eventYellow.withValues(alpha: 0.5)
+              ? themeColor.withValues(alpha: 0.5)
               : AppColors.divider,
           width: highlighted ? 1.5 : 1,
         ),
@@ -342,15 +480,15 @@ class _EventCardWidget extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.all(14),
       decoration: BoxDecoration(
-        color: _eventYellow.withValues(alpha: 0.08),
+        color: themeColor.withValues(alpha: 0.08),
         borderRadius: const BorderRadius.vertical(top: Radius.circular(11)),
-        border: Border(bottom: BorderSide(color: _eventYellow.withValues(alpha: 0.2))),
+        border: Border(bottom: BorderSide(color: themeColor.withValues(alpha: 0.2))),
       ),
       child: Text(
         event.title,
         style: Theme.of(context).textTheme.titleMedium?.copyWith(
               fontWeight: FontWeight.bold,
-              color: _eventYellow,
+              color: themeColor,
               fontSize: 16,
             ),
       ),
@@ -415,19 +553,19 @@ class _EventCardWidget extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
         decoration: BoxDecoration(
-          color: _eventYellow.withValues(alpha: 0.08),
+          color: themeColor.withValues(alpha: 0.08),
           borderRadius: BorderRadius.circular(6),
         ),
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            const Icon(Icons.casino, size: 14, color: _eventYellow),
+            Icon(Icons.casino, size: 14, color: themeColor),
             const SizedBox(width: 6),
             Flexible(
               child: Text(
                 label,
                 style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                      color: _eventYellow,
+                      color: themeColor,
                       fontWeight: FontWeight.w600,
                       fontSize: 12,
                     ),
@@ -496,7 +634,7 @@ class _EventCardWidget extends StatelessWidget {
                       child: Container(
                         padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
                         decoration: BoxDecoration(
-                          color: _eventYellow.withValues(alpha: 0.15),
+                          color: themeColor.withValues(alpha: 0.15),
                           borderRadius: BorderRadius.circular(4),
                         ),
                         child: Text(
@@ -504,7 +642,7 @@ class _EventCardWidget extends StatelessWidget {
                           textAlign: TextAlign.center,
                           style: Theme.of(context).textTheme.bodySmall?.copyWith(
                                 fontWeight: FontWeight.bold,
-                                color: _eventYellow,
+                                color: themeColor,
                                 fontSize: 13,
                               ),
                         ),

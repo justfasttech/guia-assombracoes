@@ -41,18 +41,21 @@ final Map<int, Haunt> survivorHaunts = {
     setup: [
       'Encontre os tokens numéricos rotulados de 1 a{3/4/5/6}e embaralhe-as, viradas para baixo. Dê uma para cada jogador.',
       'Cada jogador então olha para seu token, sem revelá-lo a mais ninguém. O jogador com o token marcado como 1 é o traidor.',
-      'Defina a trilha numérica para{6/5/4/3}.',
+      'Cada explorador voltam para um tile de entrada a sua escolha, começando pelo revelador e continuando no sentido normal do jogo.'
+      'Embaralhes todos os azulejos com pertubação temporal que estão fora do jogo, e coloqueo no jogo o mais longe possivel do hall de entrada, seguindo as regras normais, até o minimo desses azulejos igual ao numero de jogadores - 1. remova do jogo o resto.'
+      'Defina a trilha numérica para{1/2/3/4}.',
       'O jogador à esquerda do revelador da assombração fará o primeiro turno após a preparação.',
     ],
-    objective: 'Os heróis vencem quando o Anel é destruído OU quando o traidor está morto. O traidor vence quando todos os heróis estiverem mortos, OU quando a Trilha Numérica estiver em 0.',
+    objective: 'Os heróis vencem quando o traidor está morto. O traidor vence quando {1/2/3/4} heróis estiverem mortos, OU quando a Trilha Numérica estiver em 0.',
     requiredMarkers: 'Número de trilha\nFichas numéricas\nAzulejos com Perturbações Temporais:\nSala do Pânico –Porão\nSala da Fornalha –Porão\nSalão de Baile –Térreo\nSala de Cirurgia –Cave/Piso Superior\nSala de Lixo –Térreo/Piso Superior',
     specialRules: [
       SpecialRule(title: 'Traidor Oculto', description: 'O traidor começa essa assombração escondido do resto dos exploradores. • O jogador que tem o token rotulado "1" é o traidor. Os jogadores podem olhar seus próprios tokens a qualquer momento. • Você não pode revelar seus tokens numéricos para outros jogadores, a menos que seja instruído, mas pode alegar ter qualquer número(s). • Todos os exploradores podem atacar outros exploradores. • Custa dois movimentos para deixar um ladrilho ocupado por outro explorador. Após o traidor ser revelado, os heróis não agem mais como obstáculos uns aos outros. (Eles ainda agirão como obstáculos para o traidor.)'),
-      SpecialRule(title: 'No final da vez do revelador da assombração', description: 'Mova a Trilha Numérica para baixo em 1. Então, cada herói pode retornar a uma peça de Aterrissagem; qualquer herói que não o fizer sofre 2 de dano Mental.'),
-      SpecialRule(title: 'Se você é o traidor', description: '• Você pode revelar seu token de número antes que alguém consiga Destruir o Anel! Se você fizer isso, retorne todos os heróis para qualquer Landing tile de sua escolha. O herói que iria tentar Destruir o Anel! falha como resultado. • Quando você se revelar o traidor, cure todos os seus traços e ganhe 1 de Força. • Se você se revelou, você não sofre dano se não retornar a uma peça de Aterrissagem no final do turno do revelador da assombração.'),
+      SpecialRule(title: 'Tiles De Pertubação Temporal', description: 'Só pode um unico jogador fica sobre cada tile desse tipo.'),
+      SpecialRule(title: 'No final da vez do revelador da assombração', description: '•Se todos os tile com pertubação temporal estão ocupados, quem não tiver em um morre e enterre todos os seus itens e pressagios, revele sua ficha, se era o traidor, parabens os herois venceram. \n\nCaso não for, remova aleatoriamente um dos azulejos com pertubação temporal, mova a trilha numerica em um, e todos voltam para um tile de entrada.\n• heróis que não estão em um tile com pertubação temporal pode retornar a uma peça de Aterrissagem, se não o fizer sofre 1 de dano Geral.'),
+      SpecialRule(title:'Ao atacar um explorador',description: 'antes de atacar declare se vai empurrar ou atacar, ao inves de causar dano você pode empurrar o explorador o numero de tiles equivalente a metade do dano causade arrendondando para cima. não leva dano ou é empurrado caso o empurrão falhar'),
     ],
     specialActions: [
-      SpecialAction(title: 'Destrua o Anel!', description: 'Enquanto segura o Anel, você pode fazer um teste de Velocidade ou Conhecimento. Adicione 1 ao resultado do seu teste para cada herói em um azulejo com perturbação temporal. 7+ Se o traidor estiver morto, você venceu! Se o traidor não estiver morto, ele deve se revelar agora. O Anel foi destruído! 0–6 Receba 6 de dano Geral. Coloque seu explorador em qualquer peça de Aterrissagem. O que deu errado?'),
+      SpecialAction(title: 'Controle temporal', description: 'Enquanto em um tile com pertubação temporal, você pode fazer um teste de Conhecimento. 6+ mova algum explorador que não esta em um tile pertubação temporal até 2 espaço. 3+ mova algum explorador que não esta em um tile pertubação temporal 1 espaço. 0–2 Receba 2 de dano Geral.'),
     ],
     conclusion: 'Durante todo esse tempo você achou estranho que seu amigo estivesse tão quieto ultimamente. Você imaginou que ele estava apenas um pouco bravo com algo que você disse, mas você não achou que ele ficaria bravo o suficiente para prendê-lo em um loop temporal só para que ele pudesse matá-lo repetidamente. Você pode ter perdido um amigo, mas depois de destruir o anel, o tempo pode finalmente avançar novamente.',
     defeatConclusion: 'Você descobriu que podia controlar o tempo com o anel. Por sorte, seus "amigos" irritantes não perceberam que você é quem criou o loop temporal. Eles não sabiam que essa não era a primeira vez que você os assassinava... e agora eles nunca saberão.',
@@ -323,9 +326,9 @@ final Map<int, Haunt> survivorHaunts = {
       SpecialRule(title: 'No inicio da vez do traidor', description: 'Cada herói sofre 1 de dano Mental para cada marcador de Restos Mortais em seu tabuleiro de personagem.Os espíritos dos mortos clamam.')
     ],
     specialActions: [
-      SpecialAction(title: 'Desenterrar Restos', description: 'Quando estiver em uma peça com uma ficha de Restos Mortais virada para baixo,coloque-a no seu tabuleiro de personagem e vire-a para cima (não tem como descartar).'),
-      SpecialAction(title: 'Identificar Restos Mortais', description: 'Enquanto estiver em um ladrilho com um marcador de Restos, faça um teste de Conhecimento: 5+ Vire a ficha de Restos Mortais para cima. Se for Restos Mortais do Zelador (a ficha “1”), coloque-a no seu tabuleiro de personagem. 0–4Você não aprende nada.'),
-      SpecialAction(title: 'Consagrar Restos Mortais', description: 'Se você estiver no ladrilho do Cemitério e tiver os Restos Mortais do Zelador (o marcador “1”), faça um teste de Sanidade. 5+ Você venceu!Você coloca os restos mortais em uma cova aberta. A velha casa fica em silêncio. 0–4Sofra 2 de dano Mental.'),
+      SpecialAction(title: 'Desenterrar Restos', description: 'Quando estiver em uma peça com uma ficha de Restos Mortais virada para baixo,coloque-a no seu tabuleiro de personagem (não tem como descartar).'),
+      SpecialAction(title: 'Identificar Restos Mortais', description: 'Enquanto estiver em um ladrilho com um marcador de Restos ou possui um no seu tabuleiro, faça um teste de Conhecimento: 5+ Vire a ficha de Restos Mortais para cima. Se for Restos Mortais do Zelador (a ficha “1”), coloque-a no seu tabuleiro de personagem. 0–4Você não aprende nada.'),
+      SpecialAction(title: 'Consagrar Restos Mortais', description: 'Se você estiver no ladrilho do Cemitério e tiver os Restos Mortais do Zelador (o marcador “1”), faça um teste de Sanidade. 5+ Você venceu!Você coloca os restos mortais em uma cova aberta. A velha casa fica em silêncio. 0–4Sofra 1 de dano Mental.'),
     ],
     conclusion: 'Você enterra os restos mortais do zelador, acompanhando-o até seu descanso final. Depois desse trabalho, você vai precisar de uma pausa para descansar e recarregar as energias, mas a ideia de fazer check-in em qualquer lugar faz você pensar duas vezes. Talvez umas férias em casa sejam necessárias. 24',
   ),
@@ -858,7 +861,7 @@ final Map<int, Haunt> survivorHaunts = {
     omenTrigger: 'Livro',
     introduction: 'Mariposas, cigarras, abelhas. Ultimamente, todos os tipos de insetos voadores têm encoberto os céus da cidade, e todas as noites eles se aglomeram nesta casa. Você decidiu saciar sua curiosidade sobre esse estranho fenômeno procurando pistas na casa. Indo de cômodo em cômodo, você finalmente descobre um caderno velho e esfarrapado cheio de termos científicos, desenhos anatômicos detalhados de vespas e rabiscos inescrutáveis. Uma página chama sua atenção — diz: "Anotações de laboratório híbrido humano/inseto". Atrás de você, você ouve um zumbido e o bater de asas...',
     setup: [
-      'Defina a trilha numérica para{5/4/4/3}.',
+      'Defina a trilha numérica para{7/6/6/5}.',
       'O jogador à esquerda do traidor jogará o primeiro turno após a preparação.',
     ],
     objective: 'Você vence quando mata a Vespa Gigante.',

@@ -157,6 +157,7 @@ final Map<int, Haunt> traitorHaunts = {
     requiredMarkers: 'Número de trilha\nPequenos tokens de monstro – Cultistas\n8 Fichas de Runas – Conhecimento Ritual',
     specialRules: [
       SpecialRule(title: 'Fardo Pesado', description: 'Você pode pegar e carregar cadaveres de cultista e exploradores. Quando fizer isso, coloque a figura (ou ficha) deles no seu tabuleiro de personagem. Você só pode carregar um cadáver por vez.'),
+      SpecialRule(title:'Atalhos',description:'O traidor tem +4 no total ao se mover.'),
       SpecialRule(title: 'No final do seu turno', description: 'Cada herói sofre 1 de dano geral.Ninguém pode ignorar o Seu chamado')
     ],
     specialActions: [
@@ -205,7 +206,7 @@ final Map<int, Haunt> traitorHaunts = {
     setup: [
       'Seu explorador morreu. Agora você controla os monstros.\nFantasmas, lobisomens e vampiros, meu Deus!',
       'Coloque a Carta de Monstro à sua esquerda. Os monstros jogarão no lugar do seu.',
-      'Encontre os tokens de monstro grande para o fantasma, vampiro e lobisomem. Selecione{1/2/2/3}desses tokens aleatoriamente e coloque-os no ladrilho onde seu explorador morreu. Retorne quaisquer tokens não selecionados para a caixa do jogo.',
+      'Encontre os tokens de monstro grande para o fantasma, vampiro e lobisomem.coloque-os no ladrilho onde seu explorador morreu. Retorne quaisquer tokens não selecionados para a caixa do jogo.',
     ],
     objective: 'Você vence quando todos os heróis estão mortos.',
     requiredMarkers: 'Ficha Fantasma\nFicha de Vampiro\nToken de Lobisomem\n3 Fichas de Sangue',
@@ -214,9 +215,9 @@ final Map<int, Haunt> traitorHaunts = {
       SpecialRule(title: 'Monstros', description: 'Em vez de sua vez, jogue com cada um dos monstros presentes na casa. Os monstros podem fazer seus turnos em qualquer ordem. Role a velocidade individualmente para cada monstro')
     ],
     monsters: [
-      Monster(name: 'Fantasma', strength: '4', speed: '4', sanity: '5', knowledge: '5', description: 'O Fantasma pode se mover entre tiles adjacentes não conectados por portas. O Fantasma não pode ser atordoado.', actions: [SpecialAction(title: 'Diga “Bu!”', description: 'Faça um ataque de Sanidade contra um herói em seu tile. Então, role a Velocidade do herói e mova-o até essa quantidade de tiles em qualquer direção.')]),
-      Monster(name: 'Vampiro', strength: '5', speed: '4', sanity: '5', knowledge: '5', description: '', actions: [SpecialAction(title: 'Mordida!', description: 'Faça um ataque de Força contra um herói em seu tile. Para cada ficha de Sangue que você tiver, adicione 1 ao resultado da sua jogada. Então, pegue uma ficha de Sangue. Se você ficar sem fichas de Sangue, você pode usar qualquer outra ficha como substituta.')]),
-      Monster(name: 'Lobisomem', strength: '6', speed: '4', sanity: '4', knowledge: '4', description: '', actions: [SpecialAction(title: 'Uivo!', description: 'Faça um ataque de Força contra um herói em seu tile. Você pode repetir esse ataque para cada herói em seu tile.')]),
+      Monster(name: 'Fantasma', strength: '4', speed: '*', sanity: '5', knowledge: '5', description: 'Velocidade {2,3,3,4}.\nO Fantasma pode se mover entre tiles adjacentes não conectados por portas. O Fantasma não pode ser atordoado.', actions: [SpecialAction(title: 'Diga “Bu!”', description: 'Faça um ataque de Sanidade contra um herói em seu tile. Então, role a Velocidade do herói e mova-o até essa quantidade de tiles em qualquer direção.')]),
+      Monster(name: 'Vampiro', strength: '5', speed: '*', sanity: '5', knowledge: '5', description: 'Velocidade {2,3,3,4}.', actions: [SpecialAction(title: 'Mordida!', description: 'Faça um ataque de Força contra um herói em seu tile. Para cada ficha de Sangue que você tiver, adicione 1 ao resultado da sua jogada. Então, pegue uma ficha de Sangue. Se você ficar sem fichas de Sangue, você pode usar qualquer outra ficha como substituta.')]),
+      Monster(name: 'Lobisomem', strength: '6', speed: '*', sanity: '4', knowledge: '4', description: 'Velocidade {2,3,3,4}.', actions: [SpecialAction(title: 'Uivo!', description: 'Faça um ataque de Força contra um herói em seu tile. Você pode repetir esse ataque para cada herói em seu tile.')]),
     ],
   ),
   16: Haunt(
@@ -267,10 +268,10 @@ final Map<int, Haunt> traitorHaunts = {
     objective: 'Você vence quando todos os heróis estão mortos.',
     requiredMarkers: '3 fichas de monstro pequeno –Gremlins\n3 fichas de runa',
     specialRules: [
-      SpecialRule(title: 'No final do turno de cada herói', description: 'Eles vão tirar uma mensagem da parte superior da caixa: • Se a mensagem tiver um X, nada acontece. Deixe essa mensagem de lado. • Se a mensagem disser “MORRA”, retorne todas as mensagens para o topo da caixa. Então, mova até dois Gremlins não atordoados para o ladrilho daquele herói. Cada um desses Gremlins faz um ataque de Poder contra aquele herói.'),
+      SpecialRule(title: 'No final do turno de cada herói', description: 'Eles vão tirar uma mensagem da parte superior da caixa: • Se a mensagem tiver um X, nada acontece. Deixe essa mensagem de lado. • Se a mensagem disser “MORRA”, retorne todas as mensagens para o topo da caixa. Então, mova até dois Gremlins não atordoados para o ladrilho daquele herói. Cada um desses Gremlins faz um ataque de Poder contra aquele herói com força 5.'),
     ],
     monsters: [
-      Monster(name: 'Gremlins (também conhecido como Viva, Ria e Ame)', strength: '5', speed: '6', sanity: '6', knowledge: '2', description: 'Depois da sua vez, jogue com os Gremlins.\nGremlins são mortos em vez de atordoados se tiverem uma ficha de Runa com eles.'),
+      Monster(name: 'Gremlins (também conhecido como Viva, Ria e Ame)', strength: '4', speed: '6', sanity: '6', knowledge: '2', description: 'Depois da sua vez, jogue com os Gremlins.\nGremlins são mortos em vez de atordoados se tiverem uma ficha de Runa com eles.'),
     ],
     conclusion: 'Enquanto você fica de pé sobre os corpos sem vida dos seus amigos, mais gremlins sorridentes emergem dos cadáveres — quase como se estivessem escapando de casulos. Eles cantam: "Viva! Ria! Ame! Viva! Ria! Ame!" enquanto o levantam do chão e o jogam no ar, como o herói que você é.',
   ),
@@ -517,7 +518,7 @@ final Map<int, Haunt> traitorHaunts = {
       SpecialRule(title: 'No final do seu segundo turno', description: 'Coloque o Ancião na peça com o marcador de Altar.Ele se levantará e coletará o tributo com as próprias mãos.')
     ],
     specialActions: [
-      SpecialAction(title: 'Use passagens ocultas', description: 'Enquanto em um azulejo de quarto,você pode colocar seu explorador em qualquer peça.'),
+      SpecialAction(title: 'Use passagens ocultas', description: '(somente os monstros) Enquanto dos monstros esta em um azulejo de quarto,você pode colocar seu explorador em qualquer peça.'),
     ],
     monsters: [
       Monster(name: 'Parente', strength: '4', speed: '4', sanity: '3', knowledge: '4', description: 'Depois da sua vez, jogue com seus parentes.\nParentes podem usar a ação Passagens Ocultas. Depois de jogar com seus parentes, jogue com o Ancião (se ele tiver ressuscitado).'),
@@ -818,7 +819,7 @@ final Map<int, Haunt> traitorHaunts = {
       SpecialAction(title: 'Carregar uma amostra', description: '• Se você estiver em um tile com um símbolo Omen e houver um marcador de DNA no seu tabuleiro de personagem atual, retorne esse DNA para a caixa do jogo. Se você tiver tirado DNA de cada herói,você venceu!'),
     ],
     monsters: [
-      Monster(name: 'Robô de Segurança', strength: '6', speed: '5', sanity: '5', knowledge: '4', description: 'Depois da sua vez jogue com os robôs\nEles têm tasers com aparência furiosa. Se possível, cada Robô de Segurança deve se mover em direção a um herói diferente. Robôs de Segurança são mortos se sofrerem algum dano. Robôs de Segurança não sofrem nenhum dano de heróis atacantes.'),
+      Monster(name: 'Robô de Segurança', strength: '5', speed: '5', sanity: '5', knowledge: '4', description: 'Depois da sua vez jogue com os robôs\nEles têm tasers com aparência furiosa. Se possível, cada Robô de Segurança deve se mover em direção a um herói diferente. Robôs de Segurança não são atordoados.'),
     ],
     conclusion: 'Coisas bobas, esses espécimes. Eles têm tanta vivacidade, e suas estruturas pitorescas e frágeis têm tanto potencial. Você e seus associados vieram do seu distante sistema solar com a intenção de explorar esse potencial. A questão diante de vocês é: "O que faz um ser humano?"',
   ),
@@ -841,10 +842,10 @@ final Map<int, Haunt> traitorHaunts = {
     requiredMarkers: 'Número de trilha\nPequenos tokens de monstro –Vizinhos',
     specialRules: [
       SpecialRule(title: 'Quando você morre', description: 'Cure todos os seus traços e mova seu explorador para a Cozinha. Então, dê o Anel para seu assassino. Depois da sua vez, jogue com os vizinhos.'),
-      SpecialRule(title: 'No final da volta do monstro', description: 'Coloque um número de novos Vizinhos na casa, igual ao valor atual na Trilha Numérica. Coloque um desses Vizinhos em cada peça com um símbolo de Evento. Se houver mais Vizinhos novos do que peças com símbolos de Evento, não coloque os Vizinhos restantes.Mais convidados!'),
+      SpecialRule(title: 'No final da volta do monstro', description: 'Coloque um número de novos Vizinhos na casa (5 de força), igual ao valor atual na Trilha Numérica. Coloque um desses Vizinhos em cada peça com um símbolo de Evento. Se houver mais Vizinhos novos do que peças com símbolos de Evento, não coloque os Vizinhos restantes.Mais convidados!'),
     ],
     monsters: [
-      Monster(name: 'Os Vizinhos', strength: '5', speed: '2', sanity: '3', knowledge: '5', description: 'Olá, vizinho! Os vizinhos são mortos em vez de atordoados.'),
+      Monster(name: 'Os Vizinhos', strength: '4', speed: '2', sanity: '3', knowledge: '5', description: 'Olá, vizinho! Os vizinhos são mortos em vez de atordoados.'),
     ],
     conclusion: 'Que bagunça. Essas decorações quase deram mais trabalho do que valiam a pena, mas agora que pararam de se mover, a festa pode começar para valer. Enquanto você coloca o último dos corpos em uma onda imaculada visível das janelas da varanda da frente, você pensa consigo mesmo: "Preciso colocar o bolo no forno. Agora, onde está aquele anel?"',
   ),
@@ -1072,7 +1073,8 @@ final Map<int, Haunt> traitorHaunts = {
     specialRules: [
       
       SpecialRule(title: 'Outra Dimensão', description: 'Um Herói que tem seu token de Herói está preso. Heróis presos não podem negociar com heróis que não estão presos.'),
-      SpecialRule(title: 'Salte através de um Portal', description: 'No inicio do seu turno, faça um teste de velocidade para determinar o quão longe você consegue se mover (minimo sendo sua velocidade).'),
+      SpecialRule(title:'Teleporta dimensional',description: 'Pode andar entre tiles com portal como se fosse adjascente.'),
+      SpecialRule(title: 'Salte através de um Portal', description: 'No inicio do seu turno, faça um teste de velocidade para determinar o quão longe você consegue se mover (minimo de 3).'),
       SpecialRule(title: 'Que Cavaleiro Cruel', description: 'Você pode atacar uma vez no seu turno para cada herói vivo, mas não pode atacar nenhum herói mais de uma vez por turno. O tipo de ataque que você é determinado se o herói está preso ou não preso.•Heróis presos - Ataque de sanidade\nAdicione 2 ao resultado da sua jogada. Se você vencer, o herói recebe dano físico.•Heróis não presos - Ataque de Poder\nSe você vencer, você não causa dano. Em vez disso, dê ao seu alvo o token de preso. Esse herói está preso. Você não sofre dano se perder este ataque'),
       SpecialRule(title: 'Se você morresse', description: 'Em vez disso, cure todas as suas caracteristicas. O cavaleiro cruel é invecivel.')
     ],
