@@ -26,6 +26,7 @@ class _HauntListPageState extends State<HauntListPage> {
   String _searchQuery = '';
   int? _selectedRange;
   bool _isItACoisaFilter = false;
+  bool _isClassicFilter = false;
   bool _showBalloons = false;
   final _searchController = TextEditingController();
 
@@ -50,6 +51,9 @@ class _HauntListPageState extends State<HauntListPage> {
     if (_isItACoisaFilter) {
       haunts =
           haunts.where((h) => h.number >= 51 && h.number <= 55).toList();
+    } else if (_isClassicFilter) {
+      haunts =
+          haunts.where((h) => h.number >= 56 && h.number <= 156).toList();
     } else if (_selectedRange != null) {
       final start = _selectedRange!;
       final end = start + 9;
@@ -79,8 +83,19 @@ class _HauntListPageState extends State<HauntListPage> {
         _isItACoisaFilter = false;
       } else {
         _isItACoisaFilter = true;
+        _isClassicFilter = false;
         _selectedRange = null;
         _showBalloons = true;
+      }
+    });
+  }
+
+  void _onClassicTap() {
+    setState(() {
+      _isClassicFilter = !_isClassicFilter;
+      if (_isClassicFilter) {
+        _isItACoisaFilter = false;
+        _selectedRange = null;
       }
     });
   }
@@ -89,7 +104,15 @@ class _HauntListPageState extends State<HauntListPage> {
     setState(() {
       _selectedRange = range;
       _isItACoisaFilter = false;
+      _isClassicFilter = false;
     });
+  }
+
+  void _onRandomHaunt() {
+    final haunt = HauntsRepository.getRandomHaunt(widget.role);
+    if (haunt != null) {
+      context.go('/${widget.role.urlPath}/${haunt.number}');
+    }
   }
 
   @override
@@ -97,6 +120,15 @@ class _HauntListPageState extends State<HauntListPage> {
     final grouped = _groupedHaunts;
 
     return Scaffold(
+      floatingActionButton: FloatingActionButton.extended(
+        onPressed: _onRandomHaunt,
+        backgroundColor: AppColors.primary,
+        icon: const Icon(Icons.casino, color: Colors.white),
+        label: const Text(
+          'Sortear',
+          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+        ),
+      ),
       body: SafeArea(
         child: Stack(
           children: [
@@ -192,9 +224,18 @@ class _HauntListPageState extends State<HauntListPage> {
                   SliverToBoxAdapter(
                     child: Padding(
                       padding: const EdgeInsets.only(bottom: 16),
-                      child: _ItACoisaChip(
-                        selected: _isItACoisaFilter,
-                        onTap: _onItACoisaTap,
+                      child: Row(
+                        children: [
+                          _ItACoisaChip(
+                            selected: _isItACoisaFilter,
+                            onTap: _onItACoisaTap,
+                          ),
+                          const SizedBox(width: 8),
+                          _ClassicChip(
+                            selected: _isClassicFilter,
+                            onTap: _onClassicTap,
+                          ),
+                        ],
                       ),
                     ),
                   ),
@@ -260,6 +301,44 @@ class _HauntListPageState extends State<HauntListPage> {
                 ),
               ),
           ],
+        ),
+      ),
+    );
+  }
+}
+
+class _ClassicChip extends StatelessWidget {
+  final bool selected;
+  final VoidCallback onTap;
+
+  const _ClassicChip({required this.selected, required this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: onTap,
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 200),
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+        decoration: BoxDecoration(
+          color: selected
+              ? AppColors.primary.withValues(alpha: 0.2)
+              : AppColors.surface,
+          borderRadius: BorderRadius.circular(20),
+          border: Border.all(
+            color: selected
+                ? AppColors.primary.withValues(alpha: 0.6)
+                : AppColors.divider,
+            width: selected ? 1.5 : 1,
+          ),
+        ),
+        child: Text(
+          'Versão Clássica',
+          style: TextStyle(
+            color: selected ? AppColors.primaryLight : AppColors.textSecondary,
+            fontWeight: selected ? FontWeight.bold : FontWeight.normal,
+            fontSize: 13,
+          ),
         ),
       ),
     );

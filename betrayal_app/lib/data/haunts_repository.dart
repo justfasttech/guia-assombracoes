@@ -1,12 +1,24 @@
+import 'dart:math';
+
 import '../models/haunt.dart';
 import '../models/haunt_category.dart';
 import '../models/haunt_role.dart';
+import 'new_survivor_haunts_data.dart';
+import 'new_traitor_haunts_data.dart';
 import 'survivor_haunts_data.dart';
 import 'traitor_haunts_data.dart';
 
 class HauntsRepository {
   static Map<int, Haunt> _getMap(HauntRole role) =>
-      role == HauntRole.survivor ? survivorHaunts : traitorHaunts;
+      role == HauntRole.survivor
+          ? {...survivorHaunts, ...newSurvivorHaunts}
+          : {...traitorHaunts, ...newTraitorHaunts};
+
+  static Haunt? getRandomHaunt(HauntRole role) {
+    final haunts = getHaunts(role);
+    if (haunts.isEmpty) return null;
+    return haunts[Random().nextInt(haunts.length)];
+  }
 
   static List<Haunt> getHaunts(HauntRole role) =>
       _getMap(role).values.toList()
