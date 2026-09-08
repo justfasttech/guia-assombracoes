@@ -1184,4 +1184,94 @@ final Map<int, Haunt> survivorHaunts = {
     ],
     conclusion: 'Você vê o hall de entrada na sua frente, mas pennywise dança no seu caminho. Você olha em volta freneticamente. Uma coisa alcança sua visão, um pedaço de madeira da cerca, um presente da sua antiga amiga bev. "Isso mata monstros, basta acredito" disse ela. Você pega o pedaço de cerca e corre em direção ao pennywise e grava-o em seu peito com tudo sua força, ele cai no chão enquanto a casa desaba ao redor de vocês. É agora ou nunca, você acelera em direção a saida deixando poeira para trás. A casa almaldiçoada colapsa atrá de você, você conseguiu, você está fora, acabou. ',
   ),
+   53: Haunt(
+    number: 53,
+    title: 'Todos os seres vivos devem obedecer',
+    category: HauntCategory.revelacaoClassica,
+    traitorType: 'Revelador da Assombração',
+    scenarioCard: 'Bem Vindo a Darryl',
+    omenTrigger: 'Bom Garoto / Hora de Afundar',
+    introduction: 'Se sentindo sem esperança, você se pergunta se existe motivo para continuar tentando. Essa coisa realmente morre? e oque faz você pensar que é você quem vai fazer isso? Mas enquanto lentamente avança, você tem uma memoria da infância e uma voz te lembra que a criatura a sua frente é apenas carne e sangue, um prisioneiro da sua forma atual. Qual sua fraqueza? quais são seu medos? é melhor você pensar rapido.',
+    setup: [
+      'Ajuste a trilha numerica para {2/3/4/5}',
+      'O jogador à esquerda do traidor jogará o primeiro turno após a preparação.',
+    ],
+    objective: 'Os heróis ganham quando eles matam o monstro em todas as suas formas.• Nocateie o monstro e então bana-o removendo do jogo e retornando para a caixa.• Repita o processo ele está morto.• Aprende a fraqueza de cada monstro para ficar mais facil de nocatear.',
+    requiredMarkers: 'Token de Monstro grande - Cabeça do Stan, Demonio, Cachorro Demonio, Fantasma do Georgie, Zombie, Tubarão Fantasma, Lobisomem, Vampiro\nTrilha numerica - formas restantes.\nTokens de procurado - fraqueza revelada\nAzulejos com Pistas:\nSala do Ritual (Ritual Room/Basement)\nBiblioteca (Library/upper, ground)\nSala de especime (Specimen Room/upper, ground)\nGaleria (Gallery/upper)\nLaboratorio (Laboratory/ground)',
+    specialRules: [
+      SpecialRule(title: 'Fraquezas',description: 'Cada monstro tem uma fraqueza, o qual foi nocautea-lo, é possivel nocautear sem a fraqueza, mas obter a fraqueza torna as coisas mais faceis.'),
+
+    ],
+    specialActions: [
+      SpecialAction(title: 'Descobrir Fraquezas', description: 'Enquanto em um tile com pistas que ainda não possui um token de procurado, faça um teste de conhecimento. Você apenas pode fazer isso se existe um monstros no tabuleiro.5+Coloque um token de procurado no tile (se ainda tiver token). O traidor revela a fraqueza da forma atual.0-4 nada util, continue procurando.'),
+      SpecialAction(title: 'Procurar algo para matar', description: 'Enquanto esta no tile triplo inicial, faça o teste de conhecimento ou sanidade. Subtraia o numero que está na trilha numerica.4+ coloque um token de procurado no tile. Então olhe as 3 cartas do topo do baralho de item ou de pressagios, pegue um e enterre o resto.0-3 coloque um token de procurado no tile, nada lá, se não tem mais tokens de procurados, o traidor remove um do tabuleiro e coloca no seu tile.'),
+      SpecialAction(title: 'Banir Forma', description: 'Enquanto em um tile com um monstro nocauteado, faça um ataque de sanidade contra o monstro (ele defende com sanidade). Você pode fazer isso mesmo se já atacou nesse turno.•Se você ganhou o ataque.\nremova o monstro do tabuleiro e mova a trilha em um, se a trilha chegar em 0, os herois vencem.• se você perder o ataque.\nvocê não recebe dano, termine seu turno.')
+    ],
+    conclusion: 'Você confronta cada monstro que foi manifestado. Está morto... por enquanto. Você percebe que as cicatrizes na sua mão do pacto de sangue que você fez há 27 anos desapareceu. Isso deve significar que realmente acabou. Você, seus amigos e a proxima geração de crianças... estão finalmente livres.',
+  ),
+     54: Haunt(
+    number: 54,
+    title: 'O Ritual de Chüd',
+    category: HauntCategory.semTraidor,
+    traitorType: 'Nenhum Traidor',
+    scenarioCard: 'Bem Vindo a Darryl',
+    omenTrigger: 'Visão embaçada / Luzes Flutuantes',
+    introduction: 'No passado, muito tempo atrás, varios shamans e um ritual tribal. Eles realizaram uma tentativa de para-lo. Matar ele, mas falharam, Consumido pelo medo e denter afiados. Agora você deve continuar oque começaram, memoria é a chave. Cada um de vocês precisam ir atrás dos seus artefatos, deve encontrar eles e usar para realizar o ritual. É assim que vai quebrar o ciclo, é assim que vai mata-lo... sem volta dessa vez.',
+    setup: [
+      'Pegue os tokens de herois e deixe separado, esses são os artefatos de cada um',
+      'Coloque a miniatura do pennywise no tile onde iniciou a assombração',
+      'Dê a carta do monstro para o jogador a esquerda do revelador da assombração. Aquele jogador é o alvo do pennywise. Pennywise jogará após o turno dele.',
+      'Se o poço (old well), antigo covil (ancient den), sala do ritual, berçario (nursery) e sala ensanguentada foram todas descobertas, embaralhe uma delas na pilha, reogarnize a casa se necessario, sem quebrar a casa.',
+      'O jogador à esquerda do revelador jogará o primeiro turno após a preparação.',
+    ],
+    objective: 'Os heróis ganham quando eles completam o ritual em uma sala com altar.• Explore a casa e encontre os artefatos.• Encontre uma sala onde você pode realizar um ritual.• use os artefatos para completar o ritual.',
+    requiredMarkers: 'Tokens de Herois - artefatos\nToken do Altar - o local do ritual\nAzulejos que pode realizar o ritual:\nSala do Ritual (Ritual Room/Basement)\nBerçario (Nursery/upper, basement)\nPoço (Old Well/basement)\nAntigo covil (Ancient Den/basement)\nSala ensanguentada (Bloody Room/upper,ground)',
+    specialRules: [
+      SpecialRule(title: 'A carta do Monstro',description: '•Quem tem a carta do monstro é o alvo do pennywise, Pennywise joga após o turno daquele jogador.•No turno do Pennywise, ele se move em diração ao alvo e ataca ele se alcançar o tile.'),
+      SpecialRule(title: 'Se outro jogador tomar a carta do monstro', description: 'Ele é agora o novo alvo, Pennywise joga após o novo jogador, mesmo se pennywise já jogou neste turno.•Se um heroi morrer enquanto tem a carta do monstro, passe a carta para o jogador a esquerda.'),
+      SpecialRule(title: 'Quando explorar um tile com simbolo de evento', description: '•Pegue a carta do monstro, pennywise tem você como alvo agora.•Se você precisar fazer qualquer rolagem na carta do evento, ignore o dado de maior valor.'),
+      SpecialRule(title: 'Quando explorar um tile com simbolo de item ou pressagio', description: '•Você pode encontrar seu artefato ao inves do item ou pressagio, pegue seu token de herois.•Se outro heroi esta morto e não tem seu artefato, você pode obter seu artafato ao inves da carta de item ou pressagio, Pegue o token de heroi correspondente.•Artefatos não podem ser trocados com outro jogador ao menos que o heroi correspondente não esteja mais vivo.'),
+      SpecialRule(title: 'Quando explorar um tile onde pode realizar o ritual', description: '•Pegue a carta do monstro, Pennywise tem você como alvo.•Coloque o token do altar no seu tile, caso ele ainda não tenha sido colocada.')
+
+    ],
+    specialActions: [
+      SpecialAction(title: 'Depositar um artefato', description: 'Enquanto estiver em um tile com o token do altar, faça um teste de sanidade. Você não pode fazer isso se o pennywise está em seu tile.(pode depositar depositar o artefato de outro jogador, contato que ele esteja morto, e você encontrou seu artefato ou obteve do seu corpo.).4+Retorne seu artefato para a caixa. Um passo mais perto...0-3Pegue a carta do monstro e termine seu turno. Pennywise tem você como alvo agora.'),
+      SpecialAction(title: 'Complete o Ritual', description: 'Enquanto em um tile com o token do altar, e depois de todos os artefatos forem depositados, pegua a carta do monstro e role para começar o ritual.\n\nCada explorador restante pega um dado e rola.•Se a soma total é menor que o numero de dados rolados, o jogador que fez a ação recebe dano mental igual ao resultado e o ritual falha.•Se o total é igual ou maior do que o numero de dados rolados, o ritual esta completo e os herois vencem.'),
+    ],
+    monsters: [
+      Monster(name: 'Pennywise o Palhaço',strength: '5',speed: '4',knowledge: '4',sanity: '5',description: 'No turno do jogador, ele não pode mover para o tile do pennywise ou atacar ele, sem primeiro passar em um teste de sanidade de 5 ou mais. Se você falhar, não pode tentar novamente até seu proximo turno. Se você conseguir, você pode entrar no tile e atacar.\n\nPennywise não pode ser nocauteado, mas se você causar dano a ele, mova ele essa quantidade de espaços.\n\nPennywise não pode usar o elevador mistico.')
+    ],
+    conclusion: 'Enquanto o artefato queima no centro do altar, vocês todos seguram as mãos em circulo e começa o encantamento. Você olha para cima, 3 luzes brilhantes estão descendo em sua direção. As luzes da morte. Banindo a escuridão, enquanto elas ficam maiores e mais intensas. Vocês todos ficam tenso, coração batendo, acreditando que juntos podem para-lo. As luzes desaparecem, e a escuridão recai sobre você. Tudo esta quieto e calmo, o Ritual deve ter funcionado.',
+    defeatConclusion: 'Você esta no centro e começa o cantico enquanto os artefatos queimam. As luzes da morte aparecem acima de você, elas ficam maiores e então desaparecem. O ritual funcionou? acabou? derrepente, um balão vermelho aparece no altar, crescendo e empurrando vocês em direção as paredes. e então estoura, Pennywise ri, seu ritual idiota não funcionou, agora é hora de flutuar.'
+  ),
+       55: Haunt(
+    number: 55,
+    title: 'Vamos matar o palhaço',
+    category: HauntCategory.semTraidor,
+    traitorType: 'Nenhum Traidor',
+    scenarioCard: 'Bem Vindo a Darryl',
+    omenTrigger: 'Visão embaçada / Luzes Flutuantes',
+    introduction: 'Pennywise ri de você atraves das sombras. Ele estava esperando por um longo tempo. 27 ano. Ele pode sentir o cheiro do seu medo, ele se alimenta dele, faz ele crescer e ficar mais monstruoso. Ele sai das sombras como um grotesco... palhaço... aranha? então suas mãos se transformam em garras gigantes, e vem para impalar você, ele erra, mas foi por pouco. Agora é hora de correr... e pensar, pensar como mata-lo. Vocês devem trabalhar juntos para fazer o pennywise menor, ou pelo menos faze-lo acreditar que é menor. Ele é apenas um palhaço idiota, você não tem medo dele mais, tem?',
+    setup: [
+      'Ajuste a trilha numerica para {5/6/7/8}',
+      'Deixe a carta do monstro de lado, Pennywise joga após o turno de CADA explorador',
+      'Embaralhe as cartas de encontro com pennywise para formar um deck com 10 cartas.',
+      'Coloque a miniatura do pennywise aranha no tile onde iniciou a assombração',
+      'O jogador a esquerda do revelador da assombração, recebe o token de balão vermelho. Aquele jogador é o alvo do pennywise (por agora).',
+      'O jogador à esquerda do revelador jogará o primeiro turno após a preparação.',
+    ],
+    objective: 'Os heróis ganham quando eles matam o Pennywise• Esmague o Pennywise para matar ele.• Provoque Pennywise para ficar mais facil de esmaga-lo.',
+    requiredMarkers: 'Token de balão vermelho - alvo do pennywise',
+    specialRules: [
+      SpecialRule(title: 'No começo do seu turno', description: 'se você estava nocauteado pelas luzes da morte, você gasta todo o turno se recuperando. Retorne o token de nocauteado para a pilha. Pennywise ainda joga após você.'),
+      SpecialRule(title: 'O Balão Vermelho', description: 'Quem tem o token do balão vermelho é o alvo do pennywise. Pennywise irá mover em sua direção e então atacar quando instruido fazer pelas cartas de encontro com o pennywise.\n\nSe o heroi morrer enquanto tem o token do balão, passe o token para o jogador a esquerda.')
+    ],
+    specialActions: [
+      SpecialAction(title: 'Provocar o Pennywise', description: 'Enquanto esta no campo de visão do pennywise, faça um teste de conhecimento ou sanidade. Adicione 1 para sua rolagem se você esta no mesmo tile com o jogador que esta com o token do balao.4+Pegue o token do balão para você, move a trilha numerica para baixo um espaço, mas não abaixo de um.0-3 Termine seu turno.'),
+      SpecialAction(title: 'Esmagar o Pennywise', description: '(Só pode fazer essa ação se o Pennywise está nocauteado)\n Enquanto esta no mesmo tile que o pennywise, faça um teste de força. Adicione 1 para suas rolagens para outro heroi no tile.\nVocê não pode usar item ou pressagios para modificar ou afetar suas rolagens.\nSubtraia do resultado numero que esta na trilha numerica.5+Os herois vencem.0-4Pegue o token de balao vermelho. Mova a trilha numerica acima em um espaço.'),],
+    monsters: [
+      Monster(name: 'Pennywise o Palhaço',strength: '6',speed: '6',knowledge: '6',sanity: '6',description: 'Se nocautear o Pennywise, coloque um token de monstro grande virado para baixo no topo do deck de encontros.\nPennywise não pode usar o elevador mistico.\nSe Pennywise atacar um explorador nocauteado, ele joga 8 dados.\n\nPennyWise joga após o turno de cada jogador.•Puxe a carta do topo do deck de encontros e leia o texto no final para ver oque o pennywise vai fazer. Se pennywise esta nocauteado, não puxe uma carta, ao inves disso remova o token de monstro grando do topo do deck de encontros.•Se pennywise precisar se mover, role 3 dados, ele pode mover até essa quantidade de espaços, e ele sempre move em direção ao heroi com o token de balão vermelho.\n\nSe pennywise usar as luzes da morte, cada jogador na sua linha de visão é nocauteado. Coloque um token de monstro grande virado para baixo em frente ao jogador para lembrar que ele esta nocauteado.')
+    ],
+   conclusion: 'Enquanto provocam ele juntos, pennywise treme. Ele tenta se arrastar para longe, não é mais o monstro sanguinario como antes. Sua transformação desaparece e você consegue ouvir o coração dele batendo. A batida fica mais forte, mais rapida, ele sente medo agora. Pennywise te encara uma ultima vez, "Olhe para você, está tão crescido", você esmaga o coração dele em suas mãos, o batimento para, pennywise faz seu ultimo suspiro.',
+   defeatConclusion: 'O Devorador de mundo vem em sua direção, se alimentando do seu medo, então uma garra atravessa seu peito. Enquanto cospe sangue, você encara as luzes da morte, seus olhos perdem o brilho. Agora você flutua como todos os outros... para sempre, enquanto pennywise descansa se preparando para sua proxima vinda para se alimentar novamente de mais carne fresca.' ),
 };
